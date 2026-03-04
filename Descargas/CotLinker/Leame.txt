@@ -1,9 +1,0 @@
-CotLinker - Interfaz COM para Remito Electrònico (COT) de ARBA
-
-Paasos para instalación:
-
-- Ingrese en la ventana de comandos CMD como administrador(click derecho -> Ejecutar como administrador).
-- Utilice los ejemplos según el lenguaje
-
-www.bitingenieria.com.ar
-soporte: contacto@bitingenieria.com.ar 

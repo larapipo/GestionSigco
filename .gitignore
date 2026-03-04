@@ -17,6 +17,14 @@
 /Win32/Release/
 /Win64/Debug/
 /Win64/Release/
+Tabla IB/
+Debug/
+Release/
+Papelera/
+Descargas/
+FEAFIP V4/
+FEAFIP V5/
+HistoralConsultaCajas/
 
 # Historial del IDE
 /__history/
