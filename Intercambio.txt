@@ -1,0 +1,1 @@
+select * from mov_retenciones where id_cpbte=:id AND TIPOCPBTE='GX'

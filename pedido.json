@@ -1,0 +1,192 @@
+{
+    "id": 23547,
+    "parent_id": 0,
+    "status": "on-hold",
+    "currency": "ARS",
+    "version": "10.4.3",
+    "prices_include_tax": false,
+    "date_created": "2026-01-20T09:37:12",
+    "date_modified": "2026-01-20T09:37:13",
+    "discount_total": "0",
+    "discount_tax": "0",
+    "shipping_total": "8468",
+    "shipping_tax": "0",
+    "cart_tax": "0",
+    "total": "29168",
+    "total_tax": "0",
+    "customer_id": 0,
+    "order_key": "wc_order_5UV0ln868SWka",
+    "billing": {
+        "first_name": "Natalia",
+        "last_name": "Del Sole Frioni",
+        "company": "",
+        "address_1": "1",
+        "address_2": "",
+        "city": "Mar del Plata",
+        "state": "B",
+        "postcode": "7600",
+        "country": "AR",
+        "email": "natidelsole@gmail.com",
+        "phone": "+542235441070"
+    },
+    "shipping": {
+        "first_name": "Natalia",
+        "last_name": "Del Sole Frioni",
+        "company": "",
+        "address_1": "1",
+        "address_2": "",
+        "city": "Mar del Plata",
+        "state": "B",
+        "postcode": "7600",
+        "country": "AR",
+        "phone": ""
+    },
+    "payment_method": "bacs",
+    "payment_method_title": "Transferencia",
+    "transaction_id": "",
+    "customer_ip_address": "186.182.66.37",
+    "customer_user_agent": "Mozilla\/5.0 (Linux; Android 10; K) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/143.0.0.0 Mobile Safari\/537.36",
+    "created_via": "checkout",
+    "customer_note": "",
+    "date_completed": null,
+    "date_paid": null,
+    "cart_hash": "5bcce193beb5badd52a35272d793944d",
+    "number": "23547",
+    "meta_data": [
+        {
+            "id": 381,
+            "key": "_billing_dni",
+            "value": "28608208"
+        },
+        {
+            "id": 392,
+            "key": "_wc_order_attribution_device_type",
+            "value": "Mobile"
+        },
+        {
+            "id": 390,
+            "key": "_wc_order_attribution_session_count",
+            "value": "1"
+        },
+        {
+            "id": 387,
+            "key": "_wc_order_attribution_session_entry",
+            "value": "https:\/\/karel.open24.com.ar\/"
+        },
+        {
+            "id": 389,
+            "key": "_wc_order_attribution_session_pages",
+            "value": "3"
+        },
+        {
+            "id": 388,
+            "key": "_wc_order_attribution_session_start_time",
+            "value": "2026-01-20 12:36:09"
+        },
+        {
+            "id": 385,
+            "key": "_wc_order_attribution_source_type",
+            "value": "typein"
+        },
+        {
+            "id": 391,
+            "key": "_wc_order_attribution_user_agent",
+            "value": "Mozilla\/5.0 (Linux; Android 10; K) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/143.0.0.0 Mobile Safari\/537.36"
+        },
+        {
+            "id": 386,
+            "key": "_wc_order_attribution_utm_source",
+            "value": "(direct)"
+        },
+        {
+            "id": 382,
+            "key": "is_vat_exempt",
+            "value": "no"
+        }
+    ],
+    "line_items": [
+        {
+            "id": 62,
+            "name": "Pasta Frola (6 porciones)",
+            "product_id": 23298,
+            "variation_id": 0,
+            "quantity": 1,
+            "tax_class": "",
+            "subtotal": "20700",
+            "subtotal_tax": "0",
+            "total": "20700",
+            "total_tax": "0",
+            "taxes": [
+            ],
+            "meta_data": [
+            ],
+            "sku": "",
+            "global_unique_id": "",
+            "price": 20700,
+            "image": {
+                "id": "23308",
+                "src": "https:\/\/karel.open24.com.ar\/wp-content\/uploads\/2025\/12\/0006_9.1-Pastafrola.jpg"
+            },
+            "parent_name": null
+        }
+    ],
+    "tax_lines": [
+    ],
+    "shipping_lines": [
+        {
+            "id": 63,
+            "method_title": "OCA - Domicilio 4 a 7 dias habiles",
+            "method_id": "oca_epak",
+            "instance_id": "3",
+            "total": "8468",
+            "total_tax": "0",
+            "taxes": [
+            ],
+            "tax_status": "taxable",
+            "meta_data": [
+            ]
+        }
+    ],
+    "fee_lines": [
+    ],
+    "coupon_lines": [
+    ],
+    "refunds": [
+    ],
+    "payment_url": "https:\/\/karel.open24.com.ar\/finalizar-comprar\/order-pay\/23547\/?pay_for_order=true&key=wc_order_5UV0ln868SWka",
+    "is_editable": true,
+    "needs_payment": false,
+    "needs_processing": true,
+    "date_created_gmt": "2026-01-20T12:37:12",
+    "date_modified_gmt": "2026-01-20T12:37:13",
+    "date_completed_gmt": null,
+    "date_paid_gmt": null,
+    "currency_symbol": "$",
+    "_links": {
+        "self": [
+            {
+                "href": "https:\/\/karel.open24.com.ar\/wp-json\/wc\/v3\/orders\/23547",
+                "targetHints": {
+                    "allow": [
+                        "GET",
+                        "POST",
+                        "PUT",
+                        "PATCH",
+                        "DELETE"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https:\/\/karel.open24.com.ar\/wp-json\/wc\/v3\/orders"
+            }
+        ],
+        "email_templates": [
+            {
+                "embeddable": true,
+                "href": "https:\/\/karel.open24.com.ar\/wp-json\/wc\/v3\/orders\/23547\/actions\/email_templates"
+            }
+        ]
+    }
+}

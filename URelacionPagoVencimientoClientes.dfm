@@ -1,0 +1,1921 @@
+inherited FormRelacionPagoSClientes: TFormRelacionPagoSClientes
+  Left = 340
+  Top = 108
+  Caption = 'Relaci'#243'n Pago-Vencimiento de Facturas de Venta'
+  ClientHeight = 704
+  ClientWidth = 844
+  ExplicitWidth = 862
+  ExplicitHeight = 745
+  TextHeight = 13
+  object Label1: TLabel [0]
+    Left = 272
+    Top = 296
+    Width = 32
+    Height = 13
+    Caption = 'Label1'
+  end
+  inherited pnPrincipal: TPanel
+    Width = 844
+    Height = 553
+    ExplicitWidth = 844
+    ExplicitHeight = 553
+    object lbPromedio: TLabel
+      Left = 367
+      Top = 440
+      Width = 52
+      Height = 13
+      Caption = 'lbPromedio'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clTeal
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      ParentFont = False
+    end
+    object lbItems: TLabel
+      Left = 672
+      Top = 536
+      Width = 33
+      Height = 13
+      Caption = 'lbItems'
+    end
+    object Label2: TLabel
+      Left = 312
+      Top = 296
+      Width = 44
+      Height = 13
+      Caption = 'Promedio'
+    end
+    object RxLabel4: TJvLabel
+      Left = 8
+      Top = 8
+      Width = 34
+      Height = 13
+      Caption = 'Cliente'
+      ShadowSize = 1
+      ShadowPos = spLeftTop
+      Transparent = True
+    end
+    object RxLabel3: TJvLabel
+      Left = 260
+      Top = 5
+      Width = 103
+      Height = 13
+      Caption = 'Per'#237'odo selecionado:'
+      ShadowSize = 1
+      ShadowPos = spLeftTop
+      Transparent = True
+    end
+    object RxLabel1: TJvLabel
+      Left = 489
+      Top = 6
+      Width = 33
+      Height = 13
+      Caption = 'Desde'
+      ShadowSize = 1
+      ShadowPos = spLeftTop
+      Transparent = True
+    end
+    object RxLabel2: TJvLabel
+      Left = 590
+      Top = 8
+      Width = 30
+      Height = 13
+      Caption = 'Hasta'
+      ShadowSize = 1
+      ShadowPos = spLeftTop
+      Transparent = True
+    end
+    object JvLabel1: TJvLabel
+      Left = 609
+      Top = 536
+      Width = 46
+      Height = 13
+      Caption = 'Registros'
+      ShadowSize = 1
+      ShadowPos = spLeftTop
+      Transparent = True
+    end
+    object JvLabel2: TJvLabel
+      Left = 289
+      Top = 440
+      Width = 46
+      Height = 13
+      Caption = 'Promedio'
+      ShadowSize = 1
+      ShadowPos = spLeftTop
+      Transparent = True
+    end
+    object edNombreCliente: TEdit
+      Left = 88
+      Top = 24
+      Width = 257
+      Height = 21
+      TabStop = False
+      Color = clInfoBk
+      Enabled = False
+      TabOrder = 1
+    end
+    object chTodos: TCheckBox
+      Left = 363
+      Top = 24
+      Width = 121
+      Height = 17
+      Caption = 'Todos los Clientes'
+      Checked = True
+      State = cbChecked
+      TabOrder = 4
+    end
+    object UpDown1: TUpDown
+      Left = 689
+      Top = 24
+      Width = 16
+      Height = 20
+      Hint = 'Cambia el Per'#237'odo'
+      Max = 10000
+      ParentShowHint = False
+      Position = 100
+      ShowHint = True
+      TabOrder = 5
+      OnClick = UpDown1Click
+    end
+    object Desde: TJvDateEdit
+      Left = 490
+      Top = 24
+      Width = 94
+      Height = 21
+      Date = 37257.000000000000000000
+      Glyph.Data = {
+        76050000424D760500000000000036000000280000001C0000000C0000000100
+        2000000000004005000000000000000000000000000000000000FF00FF00FF00
+        FF00FF00FF008080800080808000808080008080800080808000808080008080
+        800080808000808080008080800080808000FF00FF00FF00FF00FFFFFF00FFFF
+        FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+        FF00FFFFFF00FFFFFF00FF00FF00FF00FF000000000000000000800000000000
+        0000800000008000000000000000800000000000000000000000800000008080
+        8000FF00FF008080800080808000808080008080800080808000808080008080
+        80008080800080808000808080008080800080808000FFFFFF00FF00FF00FF00
+        FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+        FF00FFFFFF00FFFFFF008000000080808000FF00FF0080808000FFFFFF00FF00
+        FF00FFFFFF00FFFFFF00FFFFFF00FF00FF00FFFFFF00FFFFFF00FFFFFF00FF00
+        FF0080808000FFFFFF00FF00FF00FF00FF00FFFFFF0000000000000000000000
+        0000FFFFFF00000000000000000000000000C0C0C000FFFFFF00800000008080
+        8000FF00FF0080808000FFFFFF00808080008080800080808000FF00FF008080
+        80008080800080808000FF00FF00FFFFFF0080808000FFFFFF00FF00FF00FF00
+        FF00FFFFFF00FFFFFF0000000000FFFFFF00FFFFFF00C0C0C000FFFFFF00C0C0
+        C00000000000FFFFFF008000000080808000FF00FF0080808000FFFFFF00FF00
+        FF0080808000FFFFFF00FF00FF00FF00FF00FF00FF00FF00FF0080808000FFFF
+        FF0080808000FFFFFF00FF00FF00FF00FF00FFFFFF00FFFFFF0000000000FFFF
+        FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF0000000000FFFFFF00800000008080
+        8000FF00FF0080808000FFFFFF00FF00FF0080808000FFFFFF00FF00FF00FF00
+        FF00FFFFFF00FFFFFF0080808000FF00FF0080808000FFFFFF00FF00FF00FF00
+        FF00FFFFFF00FFFFFF0000000000FFFFFF00FFFFFF0000000000000000000000
+        0000C0C0C000FFFFFF008000000080808000FF00FF0080808000FFFFFF00FF00
+        FF0080808000FFFFFF00FF00FF00808080008080800080808000FF00FF00FF00
+        FF0080808000FFFFFF00FF00FF00FF00FF00FFFFFF000000000000000000FFFF
+        FF00FFFFFF0000000000FFFFFF00FFFFFF00FFFFFF00FFFFFF00800000008080
+        8000FF00FF0080808000FFFFFF008080800080808000FFFFFF00FF00FF008080
+        8000FFFFFF00FFFFFF00FFFFFF00FFFFFF0080808000FFFFFF00FF00FF00FF00
+        FF00FFFFFF00FFFFFF0000000000FFFFFF00FFFFFF0000000000000000000000
+        000000000000FFFFFF008000000080808000FF00FF0080808000FFFFFF00FF00
+        FF0080808000FF00FF00FF00FF0080808000808080008080800080808000FF00
+        FF0080808000FFFFFF00FF00FF00FF00FF00FFFFFF00FFFFFF00FFFFFF00FFFF
+        FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00800000008080
+        8000FF00FF0080808000FFFFFF00FF00FF00FF00FF00FF00FF00FF00FF00FF00
+        FF00FF00FF00FF00FF00FF00FF00FF00FF0080808000FFFFFF00FF00FF00FF00
+        FF00FFFFFF00C0C0C000C0C0C000C0C0C000C0C0C000C0C0C000C0C0C000C0C0
+        C000C0C0C000FFFFFF008000000080808000FF00FF0080808000FFFFFF00FFFF
+        FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+        FF0080808000FFFFFF00FF00FF00FF00FF000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000FF00FF00FF00
+        FF00FF00FF008080800080808000808080008080800080808000808080008080
+        80008080800080808000808080008080800080808000FF00FF00}
+      ImageKind = ikCustom
+      NumGlyphs = 2
+      PopupColor = clBtnFace
+      ShowNullDate = False
+      YearDigits = dyFour
+      TabOrder = 2
+    end
+    object Hasta: TJvDateEdit
+      Left = 588
+      Top = 24
+      Width = 97
+      Height = 21
+      Date = 37621.000000000000000000
+      Glyph.Data = {
+        76050000424D760500000000000036000000280000001C0000000C0000000100
+        2000000000004005000000000000000000000000000000000000FF00FF00FF00
+        FF00FF00FF008080800080808000808080008080800080808000808080008080
+        800080808000808080008080800080808000FF00FF00FF00FF00FFFFFF00FFFF
+        FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+        FF00FFFFFF00FFFFFF00FF00FF00FF00FF000000000000000000800000000000
+        0000800000008000000000000000800000000000000000000000800000008080
+        8000FF00FF008080800080808000808080008080800080808000808080008080
+        80008080800080808000808080008080800080808000FFFFFF00FF00FF00FF00
+        FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+        FF00FFFFFF00FFFFFF008000000080808000FF00FF0080808000FFFFFF00FF00
+        FF00FFFFFF00FFFFFF00FFFFFF00FF00FF00FFFFFF00FFFFFF00FFFFFF00FF00
+        FF0080808000FFFFFF00FF00FF00FF00FF00FFFFFF0000000000000000000000
+        0000FFFFFF00000000000000000000000000C0C0C000FFFFFF00800000008080
+        8000FF00FF0080808000FFFFFF00808080008080800080808000FF00FF008080
+        80008080800080808000FF00FF00FFFFFF0080808000FFFFFF00FF00FF00FF00
+        FF00FFFFFF00FFFFFF0000000000FFFFFF00FFFFFF00C0C0C000FFFFFF00C0C0
+        C00000000000FFFFFF008000000080808000FF00FF0080808000FFFFFF00FF00
+        FF0080808000FFFFFF00FF00FF00FF00FF00FF00FF00FF00FF0080808000FFFF
+        FF0080808000FFFFFF00FF00FF00FF00FF00FFFFFF00FFFFFF0000000000FFFF
+        FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF0000000000FFFFFF00800000008080
+        8000FF00FF0080808000FFFFFF00FF00FF0080808000FFFFFF00FF00FF00FF00
+        FF00FFFFFF00FFFFFF0080808000FF00FF0080808000FFFFFF00FF00FF00FF00
+        FF00FFFFFF00FFFFFF0000000000FFFFFF00FFFFFF0000000000000000000000
+        0000C0C0C000FFFFFF008000000080808000FF00FF0080808000FFFFFF00FF00
+        FF0080808000FFFFFF00FF00FF00808080008080800080808000FF00FF00FF00
+        FF0080808000FFFFFF00FF00FF00FF00FF00FFFFFF000000000000000000FFFF
+        FF00FFFFFF0000000000FFFFFF00FFFFFF00FFFFFF00FFFFFF00800000008080
+        8000FF00FF0080808000FFFFFF008080800080808000FFFFFF00FF00FF008080
+        8000FFFFFF00FFFFFF00FFFFFF00FFFFFF0080808000FFFFFF00FF00FF00FF00
+        FF00FFFFFF00FFFFFF0000000000FFFFFF00FFFFFF0000000000000000000000
+        000000000000FFFFFF008000000080808000FF00FF0080808000FFFFFF00FF00
+        FF0080808000FF00FF00FF00FF0080808000808080008080800080808000FF00
+        FF0080808000FFFFFF00FF00FF00FF00FF00FFFFFF00FFFFFF00FFFFFF00FFFF
+        FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00800000008080
+        8000FF00FF0080808000FFFFFF00FF00FF00FF00FF00FF00FF00FF00FF00FF00
+        FF00FF00FF00FF00FF00FF00FF00FF00FF0080808000FFFFFF00FF00FF00FF00
+        FF00FFFFFF00C0C0C000C0C0C000C0C0C000C0C0C000C0C0C000C0C0C000C0C0
+        C000C0C0C000FFFFFF008000000080808000FF00FF0080808000FFFFFF00FFFF
+        FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+        FF0080808000FFFFFF00FF00FF00FF00FF000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000FF00FF00FF00
+        FF00FF00FF008080800080808000808080008080800080808000808080008080
+        80008080800080808000808080008080800080808000FF00FF00}
+      ImageKind = ikCustom
+      NumGlyphs = 2
+      PopupColor = clBtnFace
+      ShowNullDate = False
+      YearDigits = dyFour
+      TabOrder = 3
+    end
+    object ceCliente: TJvComboEdit
+      Left = 8
+      Top = 24
+      Width = 73
+      Height = 21
+      ButtonWidth = 16
+      ClickKey = 16397
+      Glyph.Data = {
+        4E000000424D4E000000000000003E000000280000000A000000040000000100
+        010000000000100000000000000000000000020000000200000000000000FFFF
+        FF00FFC000003300000033000000FFC00000}
+      TabOrder = 0
+      Text = ''
+      OnButtonClick = BuscarClientesExecute
+      OnKeyDown = ceClienteKeyDown
+    end
+    object PageControl1: TPageControl
+      Left = 0
+      Top = 51
+      Width = 832
+      Height = 483
+      ActivePage = TabSheet1
+      TabOrder = 6
+      object TabSheet1: TTabSheet
+        Caption = 'TabSheet1'
+        object tvMovimientos: TTreeView
+          Left = 0
+          Top = 0
+          Width = 824
+          Height = 455
+          Align = alClient
+          AutoExpand = True
+          HotTrack = True
+          Indent = 50
+          TabOrder = 0
+          TabStop = False
+          OnDblClick = tvMovimientosDblClick
+        end
+      end
+      object TabSheet2: TTabSheet
+        Caption = 'TabSheet2'
+        ImageIndex = 1
+        object cxGrid1: TcxGrid
+          Left = 0
+          Top = 0
+          Width = 824
+          Height = 452
+          Align = alTop
+          TabOrder = 0
+          object cxGrid1DBTableView1: TcxGridDBTableView
+            Navigator.Buttons.CustomButtons = <>
+            ScrollbarAnnotations.CustomAnnotations = <>
+            DataController.DataSource = DSMovCC
+            DataController.Summary.DefaultGroupSummaryItems = <>
+            DataController.Summary.FooterSummaryItems = <>
+            DataController.Summary.SummaryGroups = <>
+            OptionsSelection.CellSelect = False
+            OptionsView.GroupByBox = False
+            object cxGrid1DBTableView1ID_MOVCCVTA: TcxGridDBColumn
+              DataBinding.FieldName = 'ID_MOVCCVTA'
+              HeaderAlignmentHorz = taCenter
+            end
+            object cxGrid1DBTableView1TIPOCPBTE: TcxGridDBColumn
+              DataBinding.FieldName = 'TIPOCPBTE'
+              HeaderAlignmentHorz = taCenter
+              Width = 54
+            end
+            object cxGrid1DBTableView1FECHAVTA: TcxGridDBColumn
+              DataBinding.FieldName = 'FECHAVTA'
+              HeaderAlignmentHorz = taCenter
+              Width = 100
+            end
+            object cxGrid1DBTableView1FECHAVTO: TcxGridDBColumn
+              DataBinding.FieldName = 'FECHAVTO'
+              HeaderAlignmentHorz = taCenter
+              Width = 106
+            end
+            object cxGrid1DBTableView1DETALLE: TcxGridDBColumn
+              DataBinding.FieldName = 'DETALLE'
+              HeaderAlignmentHorz = taCenter
+            end
+            object cxGrid1DBTableView1PERIODO: TcxGridDBColumn
+              DataBinding.FieldName = 'PERIODO'
+              HeaderAlignmentHorz = taCenter
+            end
+            object cxGrid1DBTableView1DEBE: TcxGridDBColumn
+              DataBinding.FieldName = 'DEBE'
+              HeaderAlignmentHorz = taCenter
+            end
+          end
+          object cxGrid1DBTableView2: TcxGridDBTableView
+            Navigator.Buttons.CustomButtons = <>
+            ScrollbarAnnotations.CustomAnnotations = <>
+            DataController.DataSource = DSAplicaciones
+            DataController.DetailKeyFieldNames = 'ID_MOVCCVTA'
+            DataController.MasterKeyFieldNames = 'ID_MOVCCVTA'
+            DataController.Summary.DefaultGroupSummaryItems = <>
+            DataController.Summary.FooterSummaryItems = <>
+            DataController.Summary.SummaryGroups = <>
+            OptionsSelection.CellSelect = False
+            OptionsView.GroupByBox = False
+            object cxGrid1DBTableView2Mora: TcxGridDBColumn
+              DataBinding.FieldName = 'Mora'
+              HeaderAlignmentHorz = taCenter
+            end
+            object cxGrid1DBTableView2ID_CPBTE: TcxGridDBColumn
+              DataBinding.FieldName = 'ID_CPBTE'
+              HeaderAlignmentHorz = taCenter
+            end
+            object cxGrid1DBTableView2TIPOCPBTE: TcxGridDBColumn
+              DataBinding.FieldName = 'TIPOCPBTE'
+              HeaderAlignmentHorz = taCenter
+            end
+            object cxGrid1DBTableView2ID_MOVCCVTA: TcxGridDBColumn
+              DataBinding.FieldName = 'ID_MOVCCVTA'
+              HeaderAlignmentHorz = taCenter
+            end
+            object cxGrid1DBTableView2FECHA: TcxGridDBColumn
+              DataBinding.FieldName = 'FECHA'
+              HeaderAlignmentHorz = taCenter
+            end
+            object cxGrid1DBTableView2NUMEROCPBTE: TcxGridDBColumn
+              DataBinding.FieldName = 'NUMEROCPBTE'
+              HeaderAlignmentHorz = taCenter
+            end
+            object cxGrid1DBTableView2IMPORTE: TcxGridDBColumn
+              DataBinding.FieldName = 'IMPORTE'
+              HeaderAlignmentHorz = taCenter
+            end
+          end
+          object cxGrid1DBTableView3: TcxGridDBTableView
+            Navigator.Buttons.CustomButtons = <>
+            ScrollbarAnnotations.CustomAnnotations = <>
+            DataController.DataSource = DSCajaMov
+            DataController.DetailKeyFieldNames = 'ID_COMPROBANTE'
+            DataController.MasterKeyFieldNames = 'ID_CPBTE'
+            DataController.Summary.DefaultGroupSummaryItems = <>
+            DataController.Summary.FooterSummaryItems = <>
+            DataController.Summary.SummaryGroups = <>
+            OptionsSelection.CellSelect = False
+            OptionsView.GroupByBox = False
+            object cxGrid1DBTableView3ID_MOV_CAJA: TcxGridDBColumn
+              DataBinding.FieldName = 'ID_MOV_CAJA'
+              HeaderAlignmentHorz = taCenter
+            end
+            object cxGrid1DBTableView3FECHA_EMISION: TcxGridDBColumn
+              DataBinding.FieldName = 'FECHA_EMISION'
+              DataBinding.IsNullValueType = True
+              HeaderAlignmentHorz = taCenter
+            end
+            object cxGrid1DBTableView3FECHA_COBRO: TcxGridDBColumn
+              DataBinding.FieldName = 'FECHA_COBRO'
+              DataBinding.IsNullValueType = True
+              HeaderAlignmentHorz = taCenter
+            end
+            object cxGrid1DBTableView3ORIGEN: TcxGridDBColumn
+              DataBinding.FieldName = 'ORIGEN'
+              DataBinding.IsNullValueType = True
+              HeaderAlignmentHorz = taCenter
+            end
+            object cxGrid1DBTableView3IMPORTE: TcxGridDBColumn
+              DataBinding.FieldName = 'IMPORTE'
+              DataBinding.IsNullValueType = True
+              HeaderAlignmentHorz = taCenter
+            end
+            object cxGrid1DBTableView3NOMBRE: TcxGridDBColumn
+              DataBinding.FieldName = 'NOMBRE'
+              DataBinding.IsNullValueType = True
+              HeaderAlignmentHorz = taCenter
+            end
+            object cxGrid1DBTableView3NUMERO: TcxGridDBColumn
+              DataBinding.FieldName = 'NUMERO'
+              DataBinding.IsNullValueType = True
+              HeaderAlignmentHorz = taCenter
+            end
+            object cxGrid1DBTableView3Mora: TcxGridDBColumn
+              DataBinding.FieldName = 'Mora'
+              DataBinding.IsNullValueType = True
+              HeaderAlignmentHorz = taCenter
+            end
+          end
+          object cxGrid1DBTableView4: TcxGridDBTableView
+            Navigator.Buttons.CustomButtons = <>
+            ScrollbarAnnotations.CustomAnnotations = <>
+            DataController.DataSource = DSValores
+            DataController.DetailKeyFieldNames = 'ID_MOV_CAJA'
+            DataController.MasterKeyFieldNames = 'ID_MOV_CAJA'
+            DataController.Summary.DefaultGroupSummaryItems = <>
+            DataController.Summary.FooterSummaryItems = <>
+            DataController.Summary.SummaryGroups = <>
+            object cxGrid1DBTableView4ID_MOV_CAJA: TcxGridDBColumn
+              DataBinding.FieldName = 'ID_MOV_CAJA'
+            end
+            object cxGrid1DBTableView4FECHA_EMISION: TcxGridDBColumn
+              DataBinding.FieldName = 'FECHA_EMISION'
+            end
+            object cxGrid1DBTableView4FECHA_COBRO: TcxGridDBColumn
+              DataBinding.FieldName = 'FECHA_COBRO'
+            end
+            object cxGrid1DBTableView4ORIGEN: TcxGridDBColumn
+              DataBinding.FieldName = 'ORIGEN'
+            end
+            object cxGrid1DBTableView4NUMERO: TcxGridDBColumn
+              DataBinding.FieldName = 'NUMERO'
+            end
+            object cxGrid1DBTableView4NOMBRE: TcxGridDBColumn
+              DataBinding.FieldName = 'NOMBRE'
+            end
+            object cxGrid1DBTableView4IMPORTE: TcxGridDBColumn
+              DataBinding.FieldName = 'IMPORTE'
+            end
+            object cxGrid1DBTableView4Mora: TcxGridDBColumn
+              DataBinding.FieldName = 'Mora'
+            end
+          end
+          object cxGrid1Level1: TcxGridLevel
+            GridView = cxGrid1DBTableView1
+            object cxGrid1Level2: TcxGridLevel
+              GridView = cxGrid1DBTableView2
+              object cxGrid1Level3: TcxGridLevel
+                GridView = cxGrid1DBTableView3
+                object cxGrid1Level4: TcxGridLevel
+                  GridView = cxGrid1DBTableView4
+                end
+              end
+            end
+          end
+        end
+      end
+      object TabSheet3: TTabSheet
+        Caption = 'TabSheet3'
+        ImageIndex = 2
+        object cxGrid2: TcxGrid
+          Left = 259
+          Top = 3
+          Width = 250
+          Height = 200
+          TabOrder = 0
+          object cxGrid2DBTableView1: TcxGridDBTableView
+            Navigator.Buttons.CustomButtons = <>
+            ScrollbarAnnotations.CustomAnnotations = <>
+            DataController.DataSource = DSAplicaciones
+            DataController.Summary.DefaultGroupSummaryItems = <>
+            DataController.Summary.FooterSummaryItems = <>
+            DataController.Summary.SummaryGroups = <>
+            object cxGrid2DBTableView1ID_CPBTE: TcxGridDBColumn
+              DataBinding.FieldName = 'ID_CPBTE'
+            end
+            object cxGrid2DBTableView1ID_MOVCCVTA: TcxGridDBColumn
+              DataBinding.FieldName = 'ID_MOVCCVTA'
+            end
+            object cxGrid2DBTableView1TIPOCPBTE: TcxGridDBColumn
+              DataBinding.FieldName = 'TIPOCPBTE'
+            end
+            object cxGrid2DBTableView1FECHA: TcxGridDBColumn
+              DataBinding.FieldName = 'FECHA'
+            end
+            object cxGrid2DBTableView1NUMEROCPBTE: TcxGridDBColumn
+              DataBinding.FieldName = 'NUMEROCPBTE'
+            end
+            object cxGrid2DBTableView1IMPORTE: TcxGridDBColumn
+              DataBinding.FieldName = 'IMPORTE'
+            end
+            object cxGrid2DBTableView1Mora: TcxGridDBColumn
+              DataBinding.FieldName = 'Mora'
+            end
+          end
+          object cxGrid2Level1: TcxGridLevel
+            GridView = cxGrid2DBTableView1
+          end
+        end
+        object cxGrid3: TcxGrid
+          Left = 543
+          Top = 3
+          Width = 250
+          Height = 200
+          TabOrder = 1
+          object cxGrid3DBTableView1: TcxGridDBTableView
+            Navigator.Buttons.CustomButtons = <>
+            ScrollbarAnnotations.CustomAnnotations = <>
+            DataController.DataSource = DSCajaMov
+            DataController.Summary.DefaultGroupSummaryItems = <>
+            DataController.Summary.FooterSummaryItems = <>
+            DataController.Summary.SummaryGroups = <>
+            object cxGrid3DBTableView1ID_MOV_CAJA: TcxGridDBColumn
+              DataBinding.FieldName = 'ID_MOV_CAJA'
+            end
+            object cxGrid3DBTableView1FECHA_OPERACION: TcxGridDBColumn
+              DataBinding.FieldName = 'FECHA_OPERACION'
+            end
+            object cxGrid3DBTableView1TIPO_OPERACION: TcxGridDBColumn
+              DataBinding.FieldName = 'TIPO_OPERACION'
+            end
+            object cxGrid3DBTableView1ID_COMPROBANTE: TcxGridDBColumn
+              DataBinding.FieldName = 'ID_COMPROBANTE'
+            end
+            object cxGrid3DBTableView1TIPO_COMPROB: TcxGridDBColumn
+              DataBinding.FieldName = 'TIPO_COMPROB'
+            end
+            object cxGrid3DBTableView1DEBE: TcxGridDBColumn
+              DataBinding.FieldName = 'DEBE'
+            end
+            object cxGrid3DBTableView1HABER: TcxGridDBColumn
+              DataBinding.FieldName = 'HABER'
+            end
+          end
+          object cxGrid3Level1: TcxGridLevel
+            GridView = cxGrid3DBTableView1
+          end
+        end
+        object cxGrid4: TcxGrid
+          Left = 3
+          Top = 3
+          Width = 250
+          Height = 200
+          TabOrder = 2
+          object cxGrid4DBTableView1: TcxGridDBTableView
+            Navigator.Buttons.CustomButtons = <>
+            ScrollbarAnnotations.CustomAnnotations = <>
+            DataController.DataSource = DSMovCC
+            DataController.Summary.DefaultGroupSummaryItems = <>
+            DataController.Summary.FooterSummaryItems = <>
+            DataController.Summary.SummaryGroups = <>
+            object cxGrid4DBTableView1ID_MOVCCVTA: TcxGridDBColumn
+              DataBinding.FieldName = 'ID_MOVCCVTA'
+            end
+            object cxGrid4DBTableView1TIPOCPBTE: TcxGridDBColumn
+              DataBinding.FieldName = 'TIPOCPBTE'
+            end
+            object cxGrid4DBTableView1FECHAVTA: TcxGridDBColumn
+              DataBinding.FieldName = 'FECHAVTA'
+            end
+            object cxGrid4DBTableView1FECHAVTO: TcxGridDBColumn
+              DataBinding.FieldName = 'FECHAVTO'
+            end
+            object cxGrid4DBTableView1DETALLE: TcxGridDBColumn
+              DataBinding.FieldName = 'DETALLE'
+            end
+            object cxGrid4DBTableView1PERIODO: TcxGridDBColumn
+              DataBinding.FieldName = 'PERIODO'
+            end
+            object cxGrid4DBTableView1DEBE: TcxGridDBColumn
+              DataBinding.FieldName = 'DEBE'
+            end
+          end
+          object cxGrid4Level1: TcxGridLevel
+            GridView = cxGrid4DBTableView1
+          end
+        end
+        object cxGrid5: TcxGrid
+          Left = 543
+          Top = 221
+          Width = 250
+          Height = 200
+          TabOrder = 3
+          object cxGrid5DBTableView1: TcxGridDBTableView
+            Navigator.Buttons.CustomButtons = <>
+            ScrollbarAnnotations.CustomAnnotations = <>
+            DataController.DataSource = DSValores
+            DataController.Summary.DefaultGroupSummaryItems = <>
+            DataController.Summary.FooterSummaryItems = <>
+            DataController.Summary.SummaryGroups = <>
+            object cxGrid5DBTableView1ID_MOV_CAJA: TcxGridDBColumn
+              DataBinding.FieldName = 'ID_MOV_CAJA'
+            end
+            object cxGrid5DBTableView1FECHA_EMISION: TcxGridDBColumn
+              DataBinding.FieldName = 'FECHA_EMISION'
+            end
+            object cxGrid5DBTableView1FECHA_COBRO: TcxGridDBColumn
+              DataBinding.FieldName = 'FECHA_COBRO'
+            end
+            object cxGrid5DBTableView1ORIGEN: TcxGridDBColumn
+              DataBinding.FieldName = 'ORIGEN'
+            end
+            object cxGrid5DBTableView1NUMERO: TcxGridDBColumn
+              DataBinding.FieldName = 'NUMERO'
+            end
+            object cxGrid5DBTableView1NOMBRE: TcxGridDBColumn
+              DataBinding.FieldName = 'NOMBRE'
+            end
+            object cxGrid5DBTableView1IMPORTE: TcxGridDBColumn
+              DataBinding.FieldName = 'IMPORTE'
+            end
+            object cxGrid5DBTableView1Mora: TcxGridDBColumn
+              DataBinding.FieldName = 'Mora'
+            end
+          end
+          object cxGrid5Level1: TcxGridLevel
+            GridView = cxGrid5DBTableView1
+          end
+        end
+      end
+    end
+  end
+  inherited ToolBar1: TToolBar
+    Top = 553
+    Width = 844
+    ButtonHeight = 28
+    ExplicitTop = 553
+    ExplicitWidth = 844
+    inherited btConfirma: TBitBtn
+      Width = 23
+      Height = 28
+      Visible = False
+      ExplicitWidth = 23
+      ExplicitHeight = 28
+    end
+    inherited btNuevo: TBitBtn
+      Left = 25
+      Width = 32
+      Height = 28
+      Visible = False
+      ExplicitLeft = 25
+      ExplicitWidth = 32
+      ExplicitHeight = 28
+    end
+    inherited btCancelar: TBitBtn
+      Left = 57
+      Width = 32
+      Height = 28
+      Visible = False
+      ExplicitLeft = 57
+      ExplicitWidth = 32
+      ExplicitHeight = 28
+    end
+    inherited btModificar: TBitBtn
+      Left = 89
+      Height = 28
+      Visible = False
+      ExplicitLeft = 89
+      ExplicitHeight = 28
+    end
+    inherited Pr: TSpeedButton
+      Left = 164
+      Height = 28
+      ExplicitLeft = 164
+      ExplicitHeight = 28
+    end
+    inherited btBuscar: TBitBtn
+      Left = 179
+      Height = 28
+      ExplicitLeft = 179
+      ExplicitHeight = 28
+    end
+    inherited Ne: TSpeedButton
+      Left = 254
+      Height = 28
+      ExplicitLeft = 254
+      ExplicitHeight = 28
+    end
+    inherited btBorrar: TBitBtn
+      Left = 269
+      Height = 28
+      Visible = False
+      ExplicitLeft = 269
+      ExplicitHeight = 28
+    end
+    inherited btSalir: TBitBtn
+      Left = 344
+      Height = 28
+      ExplicitLeft = 344
+      ExplicitHeight = 28
+    end
+    object btImprimir: TBitBtn
+      Left = 419
+      Top = 0
+      Width = 75
+      Height = 28
+      Action = Imprimir
+      Caption = '&Imprimir'
+      Glyph.Data = {
+        76010000424D7601000000000000760000002800000020000000100000000100
+        04000000000000010000130B0000130B00001000000000000000000000000000
+        800000800000008080008000000080008000808000007F7F7F00BFBFBF000000
+        FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFFFF00300000000000
+        00033FFFFFFFFFFFFFFF0888888888888880777777777777777F088888888888
+        8880777777777777777F0000000000000000FFFFFFFFFFFFFFFF0F8F8F8F8F8F
+        8F80777777777777777F08F8F8F8F8F8F9F0777777777777777F0F8F8F8F8F8F
+        8F807777777777777F7F0000000000000000777777777777777F3330FFFFFFFF
+        03333337F3FFFF3F7F333330F0000F0F03333337F77773737F333330FFFFFFFF
+        03333337F3FF3FFF7F333330F00F000003333337F773777773333330FFFF0FF0
+        33333337F3FF7F3733333330F08F0F0333333337F7737F7333333330FFFF0033
+        33333337FFFF7733333333300000033333333337777773333333}
+      NumGlyphs = 2
+      TabOrder = 7
+    end
+  end
+  inherited Panel1: TPanel
+    Top = 583
+    Width = 844
+    ExplicitTop = 583
+    ExplicitWidth = 844
+    inherited DBStatusLabel1: TJvDBStatusLabel
+      Visible = False
+    end
+    inherited sbEstado: TStatusBar
+      Width = 682
+      OnDblClick = sbEstadoDblClick
+      ExplicitWidth = 682
+    end
+  end
+  inherited ActionList1: TActionList
+    inherited Prev: TAction
+      Visible = False
+    end
+    inherited Next: TAction
+      Visible = False
+    end
+    object BuscarClientes: TAction
+      Caption = 'BuscarClientes'
+      OnExecute = BuscarClientesExecute
+    end
+    object Imprimir: TAction
+      Caption = '&Imprimir'
+      OnExecute = ImprimirExecute
+    end
+  end
+  inherited DSBase: TDataSource
+    Left = 496
+    Top = 56
+  end
+  inherited ImageList1: TImageList
+    Left = 224
+    Top = 144
+    Bitmap = {
+      494C01010A000C00040010001000FFFFFFFFFF10FFFFFFFFFFFFFFFF424D3600
+      0000000000003600000028000000400000003000000001002000000000000030
+      0000000000000000000000000000000000000000000000000000000000000000
+      00000000000004490600055B0900066C0C00066C0C00055E0A00044C06000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      00006C6A6A006C6A6A0000000000000000006C6A6A006C6A6A00000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000560
+      0900056009000891130009B0180009B31A0009B3190009B11900079614000568
+      0C0005680C000000000000000000000000000000000000000000000000006C6A
+      6A00AAA7A700A19F9F006C6A6A006C6A6A006C6A6A00E5E3E3006C6A6A006C6A
+      6A006C6A6A000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      00000000000000000000000000000000000000000000000000000A6A15000A7F
+      15000BB61C0009B91A0008B4180007B2160009B3190009B4190009B81A0009B9
+      1A0007831000044D0600000000000000000000000000000000006C6A6A00DAD9
+      D900A19F9F00A19F9F00A19F9F0037363600353535006C6D6D00BFBFBF00E1E2
+      E200B7B6B6006C6A6A006C6A6A006C6A6A000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      000000000000000000000000000000000000000000000B6A15000F85220016BD
+      340011B727000BB21C0007B1160008B1170009B2190009B2190009B2190009B4
+      190009BA1A000784100006670C0000000000000000006C6A6A00D4D3D300CACA
+      CA008E8C8C008E8C8C008E8C8C003C3B3B000A090A00070707000B0B0B000707
+      07007A7A7A00BBBBBB006C6A6A00000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      000000000000000000000000000000000000000000000B6A150020BE49001BBD
+      400014B730000AB21F0028BC3600DFF5E100EEFAEF0063CE6D0009B2190009B2
+      190009B3190009BA1A0006670C00000000006C6A6A00CACACA00CACACA008E8C
+      8C00D7D4D400CECBCB00BFBCBC00B1AFAF00A3A0A000888686005E5B5C000707
+      070009090900080808006C6A6A00767373000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      000000000000000000000000000000000000087210001B9A3A002AC65B001DBB
+      45000EB425000BB31B0011B421009ADFA000FFFFFF00F7FDF8005ACB650009B2
+      190009B2190009B81A0008941300045D09006C6A6A00CACACA008E8C8C00EFEE
+      EE00FFFEFE00FBFAFA00E3E0E100DEDEDE00DEDDDD00CFCECE00BDBCBC00ADAB
+      AB008B898900585656007A787800757373000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      000000000000000000000000000000000000087210002AB65B002CC5650022BD
+      4D000FB422000AB21A000CB31C000AB219008DDB9500FDFEFD00F6FCF70058CB
+      630009B2190009B51A0008AB1700045D09006C6A6A008E8C8C00FFFFFF00FEFC
+      FC00FAFAFA00D5D4D50098919300A0989900B2ABAC00C4C0C100D7D7D700D8D8
+      D800C7C6C600B7B6B600918F8F006C6969000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000F821C0037C26C0033C76C00CDF1
+      DA00C9EFD300C7EED000C8EFD200C5EED000C7EECF00F8FDF900FFFFFF00F2FB
+      F3006FD2790008B4190009B3190005650B00000000006C6A6A006C6A6A00EDEB
+      EB00B1A6A7007A6F72008A83880096929500969091009D9798009A9395009E98
+      9900BBBABA00D1D1D100C2C2C2006C6A6A000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      000000000000000000000000000000000000138D230058CC830042C97700FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FDFEFD00FFFFFF00FFFF
+      FF00BCEAC1000AB41A0009B31900066D0D000000000000000000000000006C6A
+      6A00BB897F00A7876D008B6F64007D6760006F626500797379008F8B8E00A9A3
+      A400CBCACA00C1C1C1006C6A6A00000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000F911D006FD293005FD38D006DD4
+      950072D6990071D6980072D6990064D28C0092DFA800FBFEFB00FFFFFF00ACE5
+      B8002EBF4C0011B82B0008B1190005610A000000000000000000000000000000
+      0000BD828100FFE3B400FFD39F00E9B28100C9997300BA916C00BD828100807D
+      7E006C6A6A006C6A6A0000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000F911D0067CC83009BE5BA0038C6
+      700030C3690038C56F0038C56F0070D69700E8F8EE00FFFFFF009FE2B10020BD
+      48001AB93E0010BA290008A3170005610A000000000000000000000000000000
+      0000BD828100FFE0B800FFD3A700FFD09D00FFCE9000FFC68800BD8281000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000025AE3900BCEDD20082DB
+      A40028C063002FC2670053CD8200F7FDF900FFFFFF009CE2B20022BC4B001DBA
+      410018B7360014C030000A85170000000000000000000000000000000000C086
+      8300FFE7CF00FFE0C000FFD9B200FFD3A500FFD09900BD828100000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000025AE390071D28C00D2F4
+      E10080DAA30036C46D0039C56F00BCECCE00ABE6C2002DC2630024BE560023BC
+      4D001FC1460016AE34000A85170000000000000000000000000000000000BD82
+      8100FEEBD800FFE6CC00FFDEBD00FFD8B100FED3A400BD828100000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      000000000000000000000000000000000000000000000000000025AE390084D8
+      9F00DBF7EA00AFE8C6006BD4930052CC810044C9780049CA7B0048CB780039CB
+      6A0021B649000F7C1F0000000000000000000000000000000000BD828100FFFF
+      F200FFFFF200FFEBD800FFE5CA00FFE1BD00F3C7A700BD828100000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      00000000000000000000000000000000000000000000000000000000000025AE
+      390025AE3900ADE8C500CCF2DE00BAEDD100A6E7C20091E2B30064D492002FB1
+      57002FB157000000000000000000000000000000000000000000BD828100BD82
+      8100BD828100FBEFE200FBE3CF00FBDDC200BD82810000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      00000000000032B74E0025AE390025AE390025AE390025AE390024A342000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      000000000000BD828100BD828100BD8281000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      00000000000001079F000313A9000418AE000419AE000313A9000108A0000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000007D2C05006B250800521E1500551F13006D2607007E2D05000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      000000000000521E15006B2508007D2C05007E2D05006D260700551F13000000
+      0000000000000000000000000000000000000000000000000000006600000066
+      0000B59A9B00B59A9B00B59A9B00B59A9B00B59A9B00B59A9B00B59A9B000066
+      0000006600000000000000000000000000000000000000000000000000000104
+      9D00041CB1000730C0000734C4000735C5000735C5000734C3000731C100041F
+      B30001069E000000000000000000000000000000000000000000000000008932
+      040055211700BF5C1500E1985500EFBD8A00F0BF8C00E29D5B00C2621800541F
+      1600903503000000000000000000000000000000000000000000000000005521
+      170089320400BF5C1500E1985500EFBD8A00F0BF8C00E29D5B00C26218009035
+      0300541F16000000000000000000000000000000000000660000009900000099
+      0000E5DEDF000066000000660000E4E7E700E0E3E600D9DFE000CCC9CC000066
+      0000037D030000660000000000000000000000000000000000000109A100052B
+      C3000735C7000733C2000732C2000732C2000732C2000732C2000733C3000735
+      C400062DBE00020CA400000000000000000000000000000000006C290E00AF47
+      0400EBB17900FFFEF800FEF8F400F2DAC400F2D9C200FCF6F000FFFFFC00EEBA
+      8700B64E070060231100000000000000000000000000000000006C290E00AF47
+      0400EBB17900FFFEF800FEF8F400F2DAC400F2D9C200FCF6F000FFFFFC00EEBA
+      8700B64E07006023110000000000000000000000000000660000009900000099
+      0000E9E2E2000066000000660000E2E1E300E2E6E800DDE2E400CFCCCF000066
+      0000037D03000066000000000000000000000000000001049B00052BCA000636
+      D8000431CD000027C400032EC1000732C2000732C2000430C1000027BF00042F
+      C1000735C400072EBE0001069E000000000000000000732D0D00B0460200F4D0
+      AB00FFFFFE00D4884600BD4E0400BA470000BA460000C0530700D4844200FCF8
+      F300F8DDBD00B64D0500903502000000000000000000732D0D00B0460200F4D0
+      AB00FFFEFE00D78C4E00C0540900BA460000BA460000BD4F0400D07E3900FCF8
+      F400F8DDBD00B64D0500541F1600000000000000000000660000009900000099
+      0000ECE4E4000066000000660000DFDDDF00E1E6E800E0E5E700D3D0D2000066
+      0000037D030000660000000000000000000000000000031ABA000537E7000331
+      DD00123DD8006480E0001840CB00002CC100022DC0000F38C4006580D9001B43
+      C700052FC1000735C500051FB30000000000000000009A380000E6AB7200FFFF
+      FF00CC732800C9682000CE752A00BB480000BC4B0000B8430000B8420000CA6C
+      1F00FCF8F400EFBC8800541F160000000000000000009A380000E6AB7200FFFF
+      FF00CF762D00B8410000BA430000BC4A0000BB470000C6631500CE753100C96B
+      1F00FCF8F400EFBC880090350200000000000000000000660000009900000099
+      0000EFE6E600EDE5E500E5DEDF00E0DDDF00DFE0E200E0E1E300D6D0D2000066
+      0000037D030000660000000000000000000001049E000430E4000436F100002A
+      E4005070E900FFFFFF00B7C4F1000D36CA00042DC300A2B2E800FFFFFF006984
+      DA000026BE000733C3000731C1000108A000A9440300C05C1100FFFCFA00E1A3
+      6A00BF480000EECBA900F0D5BA00BD4A0000B8420000CA6C2000E9BD9300BA46
+      0000D4884300FFFFFF00C16016007B2C040089340600C05C1100FFFCFA00E1A3
+      6A00C04C0000FFFFFF00D3803800BC470000B8420000DC995E00FFFFFF00B843
+      0000D4874300FFFFFF00C1601600551F13000000000000660000009900000099
+      0000009900000099000000990000009900000099000000990000009900000099
+      000000990000006600000000000000000000020FAF000336FA000335F8000232
+      EE000A35E8008CA2F200FFFFFF00B4C2F100A9B8ED00FFFFFF00A7B7E900133A
+      C400052FC1000732C2000734C4000313AA009A3B0200DD955400FFFFFF00D376
+      2800CC600E00EFCBA900F0D3B400C2510100D5864100FAF2E900F7E7D900BC4B
+      0000BF510300FCF8F300E29D5A006D2607009A3B0200DD955400FFFFFF00D376
+      2800CC600D00FFFFFF00FFFFFF00DC955400BC450000DA965800FFFFFF00BC4B
+      0000BF510300FCF8F300E29D5A006D260700000000000066000000990000B1D0
+      B100B1D0B100B1D0B100B1D0B100B1D0B100B1D0B100B1D0B100B1D0B100B1D0
+      B100009900000066000000000000000000000619BC001747FE00093AFC000435
+      F8000131F000002BE80091A5F400FFFFFF00FFFFFF00ABBAEF00062FC500022D
+      C0000732C2000732C2000736C5000419AE0089340600EBBB8A00FBF0E700D87A
+      2B00D7742200F3D1B000F2D1B400E6AC7600FFFFFF00FFFFFF00F3DEC700BD4D
+      0100BA450000F2DAC200EFC08E00551F1300A9440300EBBB8A00FBF0E700D87A
+      2B00D7742200FFFFFF00FFFFFF00FFFFFF00E5AF7B00E0A16800FFFFFF00BD4D
+      0100BA450000F2DAC200EFC08E007D2C0400000000000066000000990000F9F9
+      F900F9F9F900F9F9F900F9F9F900F9F9F900F9F9F900F9F9F900F9F9F900F9F9
+      F900009900000066000000000000000000000B1DBE004168FE001C49FC000335
+      FB000031F9000531F200A4B5F700FFFFFF00FFFFFF00B9C6F2000D36D000002C
+      C6000732C2000732C2000736C5000418AD00AD450200EEBF9000FCF4EB00E28A
+      3E00E1843500F6D8B800F3D7BA00E5A36500FCF3EB00FFFFFF00F3DEC900BD4D
+      0100BA460000F3DEC700EFBD8A00521F1600B04A0600EEBF9000FCF4EB00E28A
+      3E00E1843500FFFFFF00FFFFFF00FFFFFF00EDC59E00E5AA7500FFFFFF00BD4D
+      0100BA460000F3DEC700EFBD8A007B2C0400000000000066000000990000F9F9
+      F900F9F9F900F9F9F900F9F9F900F9F9F900F9F9F900F9F9F900F9F9F900F9F9
+      F900009900000066000000000000000000000613B4005B7CFC00486CFD000133
+      FB00113CFB00A1B4FE00FFFFFF00A4B6F80092A7F500FFFFFF00B6C4F2001A41
+      D300042FC8000732C4000734C3000212A900B0490500E9AA6E00FFFFFF00EDA4
+      6200EA954700F8DEC200F7DEC600D9742100DC883F00F7E3D100F7EADC00BC4B
+      0000C0540500FEFBF800E09752006B240800B0490500E9AA6E00FFFFFF00EDA4
+      6200EA934600FFFFFF00FFFFFF00EDBA8800D0671300E3A66D00FFFFFF00BC4B
+      0000C0540500FEFBF800E09752006B240800000000000066000000990000F9F9
+      F900CDCDCD00CDCDCD00CDCDCD00CDCDCD00CDCDCD00CDCDCD00CDCDCD00F9F9
+      F900009900000066000000000000000000000003A0004A6AF3008FA6FF001F46
+      FB004C6FFC00FFFFFF00A7B8FE000733F600002AED008CA2F600FFFFFF00627F
+      E7000028D0000734CC000730C30000069F00B04A0600DD893F00FFFCF800FAD7
+      B400F4A35900FCE6D000F8E3CE00E1843500D7722000D3752700E3AC7800BB47
+      0000D9935400FFFFFE00BD5A10007B2C0400AD450200DD893F00FFFCF800FAD7
+      B400F4A55B00FFFFFF00F0BB8700DE813000D56E1D00E7AF7A00FFFFFF00BA44
+      0000D9935300FFFFFE00BD5A1000521F1600000000000066000000990000F9F9
+      F900F9F9F900F9F9F900F9F9F900F9F9F900F9F9F900F9F9F900F9F9F900F9F9
+      F90000990000006600000000000000000000000000001A2FCB0099AFFF008BA2
+      FE00214DFB004D71FC000E3DFB000030FB000031F7000636F1004C6EF100103C
+      E3000432DB000636D700041CB5000000000000000000C9651800F8CEA500FFFF
+      FF00FED0A300F8BA7F00EFAD7000E2883B00D9792A00CE651200C04C0000D07A
+      3100FFFFFF00EAAF7300501F18000000000000000000C9651800F8CEA500FFFF
+      FF00FED1A600F6A96300EB964800E2893C00D8772600D77B2E00D1782D00D07A
+      3200FFFFFF00EAAF73008931030000000000000000000066000000990000F9F9
+      F900CDCDCD00CDCDCD00CDCDCD00CDCDCD00CDCDCD00CDCDCD00CDCDCD00F9F9
+      F90000990000006600000000000000000000000000000004A000415EEC00B8C7
+      FF009CAFFD003A5CFC000A3AFB000335FB000335FB000133F900052FF2000635
+      EB000537E900052CCD0000049C000000000000000000B2470100E0873B00FEE5
+      CB00FFFFFF00FAD3AC00EDA15C00E28B3F00D97B2D00D4782A00E1A46B00FFFF
+      FF00F3CCA400AC440200893103000000000000000000B2470100E0873B00FEE5
+      CB00FFFFFF00FAD5B100EDA56300E28B3F00D97B2D00D3752600DE9D6200FFFF
+      FF00F3CCA400AC440200501F180000000000000000000066000000990000F9F9
+      F900F9F9F900F9F9F900F9F9F900F9F9F900F9F9F900F9F9F900F9F9F900F9F9
+      F9000099000000660000000000000000000000000000000000000309A5004260
+      EC00A9BBFF00BDCAFF008EA5FE006483FD005073FC004A6EFD003961FD001444
+      F900042CD7000109A20000000000000000000000000000000000B64C0400DE87
+      3B00F8CEA300FFFAF300FFFFFF00FEF6EE00FCF3EA00FFFFFF00FEF7EE00E6A5
+      6A00AC4403005A22140000000000000000000000000000000000B64C0400DE87
+      3B00F8CEA300FFFAF300FFFFFF00FEF6EE00FCF3EA00FFFFFF00FEF7EE00E6A5
+      6A00AC4403005A2214000000000000000000000000000000000000660000F9F9
+      F900F9F9F900F9F9F900F9F9F900F9F9F900F9F9F900F9F9F900F9F9F900F9F9
+      F900006600000000000000000000000000000000000000000000000000000004
+      A0001E32CD005876F600859EFE008BA3FF007994FE005376FC00234AF000051E
+      C50001049C00000000000000000000000000000000000000000000000000AF45
+      0100C5641800DC884000E9A76C00EEBB8900EBB58100DC914D00BD590F005D23
+      150090340200000000000000000000000000000000000000000000000000AF45
+      0100C5641800DC884000E9A76C00EEBB8900EBB58100DC914D00BD590F009034
+      02005D2315000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000004A0000917B6001022C3000D1FC2000311B40001059F000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      000000000000A3410300A5450700A64608009E4006008B350500752D0C000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      000000000000A3410300A5450700A64608009E4006008B350500752D0C000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      000000000000000000006D7C94006F7C88000000000000000000000000000000
+      0000000000000000000000000000000000000000000008750D0008750D000875
+      0D0008750D000000000000000000000000000000000000000000000000000000
+      0000000000000000000099330000993300009933000099330000993300009933
+      0000993300009933000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      00000000000000000000000000000000000000000000000000000D7FA9000E80
+      AA000D7FA9000E80AA000E80AA001081AB000000000000000000000000000000
+      000000000000788295001F89E00059A9DC0000000000000000000E80AA000E80
+      AA000E80AA000E80AA000E80AA000E80AA000000000008750D0013AA220010A6
+      1D0008750D0000000000000000000000000000000000000000000E80AA000E80
+      AA000E80AA000E80AA0099330000FDFEFE00FDFEFE00FDFEFE008EA4FD00B8C6
+      FD00FDFEFE009933000000000000000000000000000000000000000000000D80
+      AA000D80AA000D80AA000D80AA000D80AA000D80AA0000000000000000000000
+      00000000000000000000000000000000000000000000048CB90048D5EE0022D7
+      FC0035D8FD006FE6FF008DE6FA0044BADD000E80AA0000000000000000000000
+      0000788295002087DE004EB7FF0057AEF40000000000078DBB0049D5EE0023D7
+      FE0036D8FD006FE6FF008DE7FA0044BADD000E80AA0008750D001AB12D0013AA
+      220008750D0000000000000000000000000000000000078DBB0049D5EE0023D7
+      FE0036D9FE006FE6FF0099330000FDFEFE00FDFEFE007E98FC000335FB00597A
+      FC00FDFEFE009933000000000000000000000000000000000000078DBB0049D5
+      EE0023D6FD0036D9FE006FE6FF008DE7FA0044BADD000D80AA00000000000000
+      000000000000000000000000000000000000048CB9008CFAFD0058E9FD0022D7
+      FC0035D8FD0070E6FF008DE6FA004ABFE0000F9DCE001180A700000000008B86
+      97001F7ECE004EB7FF0057AEF40000000000078DBB008CFBFE0059EAFE0023D7
+      FE0036D8FD006FE6FF0008750D0008750D0008750D0008750D0025BD3E001CB4
+      310008750D0008750D0008750D0008750D00078DBB008CFBFE0059EAFE0023D7
+      FE0036D9FE006FE6FF0099330000D6DEFE004368FC000335FB004368FC000335
+      FB00D9E0FE0099330000000000000000000000000000078DBB008CFBFE0059EA
+      FE0023D6FD0035D3F70000009A0000009A0000009A0000009A0000009A000000
+      9A0000009A0000009A000000000000000000088EBC008CFAFD0058E9FD0022D7
+      FC0035D8FD0075D3E900B1979400C2A69A00C6AEA000AE877C008C6B6C006092
+      BD004EB7FF004EB7FF000000000000000000078DBB008CFBFE0059EAFE0023D7
+      FE0036D8FD006FE6FF0008750D003CD4620035CE590030C952002CC3490026BE
+      410025BD3E001AB12D0017AF2A0008750D00078DBB008CFBFE0059EAFE0023D7
+      FE0036D9FE006FE6FF00993300005274FC001442FB00BCC9FD00EFF2FE001A47
+      FB004F72FC0097330400000000000000000000000000078DBB008CFBFE0059EA
+      FE0023D6FD0035D3F70000009A003E6EFF00285BFF001248FF000236FF000029
+      F900001DEC0000009A000000000000000000088EBC008CFAFD0058E9FD0024D8
+      FD0046C6E400AB939500ECDDCC00FEFED600FFFFE400F7F2D900CFB7A100AD85
+      80004EB7FF00000000000000000000000000078DBB008CFBFE0059EAFE0023D7
+      FE0036D8FD006FE6FF0008750D0041DA6D0041DA6D0038D15E0035CE59002CC3
+      49002AC1470025BD3E0020B8360008750D00078DBB008CFBFE0059EAFE0023D7
+      FE0036D9FE006FE6FF0099330000E4EAFE00D9E0FE00FDFEFE00FDFEFE0098AC
+      FD000335FB0064345900000000000000000000000000078DBB008CFBFE0059EA
+      FE0023D6FD0035D4F80000009A004474FF003264FF001B50FF00083CFF000029
+      F9000022F10000009A000000000000000000048CB900B4FFFF00B6F6FF00C6F5
+      FF00B5A09F00E8DDD600FFFFF400FEFED600FFFEDD00FEFED600FFF2BA00CAA0
+      8C0000000000000000000000000000000000078DBB00B3FCFE00B6F6FF00C6F5
+      FF00E3FAFF00E9F9FD0008750D0008750D0008750D0008750D003FD868003CD4
+      620008750D0008750D0008750D0008750D00078DBB00B3FCFE00B6F6FF00C6F5
+      FF00E3FAFF00EBFBFF0099330000FDFEFE00FDFEFE00FDFEFE00FDFEFE00FDFE
+      FE005274FC000335FB00000000000000000000000000078DBB00B3FCFE00B6F6
+      FF00C6F5FF00E1F8FD0000009A0000009A0000009A0000009A0000009A000000
+      9A0000009A0000009A000000000000000000048CB900B8EDF60030BCDC0011A7
+      D1009C919000FFFFE400FFFEDD00FEFED600FFFEDD00FCF5CD00F8D09800ECD1
+      AC00AD858000000000000000000000000000078DBB00BAEEF60030BCDD0011A7
+      D200129FCB0020A1CA0035A7CD002692BF0092CEE40008750D0045DD710041DA
+      6D0008750D00000000000000000000000000078DBB00BAEEF60030BCDD0011A7
+      D200129FCB0020A2CB0099330000993300009933000099330000993300009933
+      00008F3311002235C8000335FB000000000000000000078DBB00BAEEF60030BC
+      DD0011A7D200129ECA0020A2CB0035A7CD002692BF0092CEE4000D80AA000000
+      000000000000000000000000000000000000088EBC004BC6DC0058E9FD0022D7
+      FC00A49E9900FFFEDD00FFFEDD00FFFEDD00FFFEDD00F6DAAB00F3BE8000F5DE
+      B500AD858000000000000000000000000000078DBB004AC5DD0059EAFE0023D7
+      FE0036D8FD006FE6FF008DE7FA0049C1E3000682B60008750D004DE67F004DE6
+      7F0008750D00000000000000000000000000078DBB004AC5DD0059EAFE0023D7
+      FE0036D9FE006FE6FF008DE7FA0049C1E3000682B6000E80AA00000000000000
+      000000000000000000000335FB000335FB0000000000078DBB004AC5DD0059EA
+      FE0023D6FD0036D9FE006FE6FF008DE7FA0049C1E3000682B6000D80AA000000
+      000000000000000000000000000000000000048CB9008CFAFD0058E9FD0024D8
+      FD0096959400FAF6D600FFFEDD00FAF6D600F9E1B100F5CB9A00FEEAB900E4CC
+      A900AD858000000000000000000000000000078DBB008CFBFE0059EAFE0023D7
+      FE0036D8FD006FE6FF008DE7FA0049C1E300089CCE0008750D0008750D000875
+      0D0008750D00000000000000000000000000078DBB008CFBFE0059EAFE0023D7
+      FE0036D9FE006FE6FF008DE7FA0049C1E300089DCF000E80AA00000000000000
+      00000000000000000000000000000335FB0000000000078DBB008CFBFE0059EA
+      FE0023D6FD0036D9FE006FE6FF008DE7FA0049C1E300089DCF000D80AA000000
+      000000000000000000000000000000000000048CB9008CFAFD0058E9FD0024D8
+      FD005EA8BE00D3BBA200FFF7C600F8D09800F4C88E00FEF7E000F9F6F200AD85
+      800000000000000000000000000000000000078DBB008CFBFE0059EAFE0023D7
+      FE0036D8FD006FE6FF008DE7FA0049C1E300089CCE000E7FA900000000000000
+      000000000000000000000000000000000000078DBB008CFBFE0059EAFE0023D7
+      FE0036D9FE006FE6FF008DE7FA0049C1E300089DCF000E80AA00000000000000
+      00000000000000000000000000000000000000000000078DBB008CFBFE0059EA
+      FE0023D6FD0036D9FE006FE6FF008DE7FA0049C1E300089DCF000D80AA000000
+      000000000000000000000000000000000000048CB9008CFAFD0058E9FD0024D8
+      FD0039D7FB008AA5AD00CDAC9300ECD1AC00F5E1B600DAC5B700AD858000AD85
+      800000000000000000000000000000000000078DBB008CFBFE0059EAFE0023D7
+      FE0036D8FD006FE6FF008DE7FA0049C1E300089CCE000E80AA00000000000000
+      000000000000000000000000000000000000078DBB008CFBFE0059EAFE0023D7
+      FE0036D9FE006FE6FF008DE7FA0049C1E300089DCF000E80AA00000000000000
+      00000000000000000000000000000000000000000000078DBB008CFBFE0059EA
+      FE0023D6FD0036D9FE006FE6FF008DE7FA0049C1E300089DCF000D80AA000000
+      000000000000000000000000000000000000088EBC008CFAFD0081F8FE0071F9
+      FE007BFFFF0097FCFD00A1C6C8008F989B008683880087707000000000000000
+      000000000000000000000000000000000000078DBB0091FCFE0082F8FF006FF8
+      FF007AFEFF0091FCFE00A0FCFE0063DAF5000DA2D4000E80AA00000000000000
+      000000000000000000000000000000000000078DBB0091FCFE0082F8FF006FF8
+      FF007AFEFF0091FCFE00A0FCFE0063DAF5000DA2D4000E80AA00000000000000
+      00000000000000000000000000000000000000000000078DBB0091FCFE0082F8
+      FF006FF8FF007AFEFF0091FCFE00A0FCFE0063DAF5000DA2D4000D80AA000000
+      000000000000000000000000000000000000048CB900FBFFFF00F5FFFE00D2FF
+      FF00B4FFFF00ADFFFE00ADFFFE00ADFFFE0071F9FE000E80AA00000000000000
+      000000000000000000000000000000000000078DBB00FCFFFF00F4FFFF00D3FF
+      FF00B3FCFE00B3FCFE00ADFFFF00ADFFFF006FF8FF000E80AA00000000000000
+      000000000000000000000000000000000000078DBB00FDFEFE00F4FFFF00D3FF
+      FF00B3FCFE00B3FCFE00ADFFFF00ADFFFF006FF8FF000E80AA00000000000000
+      00000000000000000000000000000000000000000000078DBB00FCFFFF00F4FF
+      FF00D3FFFF00B3FCFE00B3FCFE00ADFFFF00ADFFFF006FF8FF000D80AA000000
+      000000000000000000000000000000000000000000000A91C100F5FFFE00E3FE
+      FF00C6FEFF00ADFFFE00A7FFFF009BFBFD001285B00000000000000000000000
+      000000000000000000000000000000000000000000000C92C000F4FFFF00E3FA
+      FF00C7FFFF00ADFFFF00A0FCFE009BFBFC001385AF0000000000000000000000
+      000000000000000000000000000000000000000000000C92C000F4FFFF00E3FA
+      FF00C7FFFF00ADFFFF00A0FCFE009BFBFC001385AF0000000000000000000000
+      00000000000000000000000000000000000000000000000000000C92C000F4FF
+      FF00E1F8FD00C7FFFF00ADFFFF00A0FCFE009BFBFC001385AF00000000000000
+      0000000000000000000000000000000000000000000000000000088EBC00088E
+      BC00048CB900088EBC00088EBC00088EBC000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000078DBB00078D
+      BB00078DBB00078DBB00078DBB00078DBB000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000078DBB00078D
+      BB00078DBB00078DBB00078DBB00078DBB000000000000000000000000000000
+      000000000000000000000000000000000000000000000000000000000000078D
+      BB00078DBB00078DBB00078DBB00078DBB00078DBB0000000000000000000000
+      000000000000000000000000000000000000424D3E000000000000003E000000
+      2800000040000000300000000100010000000000800100000000000000000000
+      000000000000000000000000FFFFFF00F81FF33F00000000E007E00700000000
+      C003C00000000000800180010000000080010000000000000000000000000000
+      000000000000000000008000000000000000E001000000000000F00300000000
+      0000F01F000000008001E03F000000008001E03F00000000C003C03F00000000
+      E007C07F00000000F81FF8FF00000000FFFFF81FF81FF81FC007E007E007E007
+      8003C003C003C003800380018001800180038001800180018003000000000000
+      8003000000000000800300000000000080030000000000008003000000000000
+      8003000000000000800380018001800180038001800180018003C003C003C003
+      C007E007E007E007FFFFF81FF81FF81FFFFCFF87FC03FFFFC0F8C087C003E07F
+      807080078003C03F002100000003800300030000000380030007000000038003
+      000F000000038003000700070001801F00070007003C801F00070007003E801F
+      000F003F003F801F000F003F003F801F003F003F003F801F003F003F003F801F
+      807F807F807FC03FC0FFC0FFC0FFE07F00000000000000000000000000000000
+      000000000000}
+  end
+  inherited JvFormStorage: TJvFormStorage
+    Left = 416
+    Top = 152
+  end
+  inherited QBrowse: TSQLQuery
+    Left = 16
+    Top = 656
+  end
+  inherited QUltimoCodigo: TSQLQuery
+    Top = 664
+  end
+  inherited JvAppIniFileStorage1: TJvAppIniFileStorage
+    Left = 368
+    Top = 168
+  end
+  inherited ComBuscadorBase: TComBuscador
+    Left = 568
+    Top = 208
+  end
+  inherited QBrowse2: TFDQuery
+    Left = 80
+    Top = 568
+  end
+  inherited QUltimoCodigo2: TFDQuery
+    Left = 32
+    Top = 568
+  end
+  object DSPClientes: TDataSetProvider
+    DataSet = DMMain_2.QClientes
+    Left = 80
+    Top = 96
+  end
+  object CDSClientes: TClientDataSet
+    Aggregates = <>
+    Params = <
+      item
+        DataType = ftString
+        Name = 'codigo'
+        ParamType = ptUnknown
+      end>
+    ProviderName = 'DSPClientes'
+    Left = 144
+    Top = 80
+    object CDSClientesCODIGO: TStringField
+      FieldName = 'CODIGO'
+      Required = True
+      Size = 6
+    end
+    object CDSClientesNOMBRE: TStringField
+      FieldName = 'NOMBRE'
+      Required = True
+      Size = 35
+    end
+    object CDSClientesRAZON_SOCIAL: TStringField
+      FieldName = 'RAZON_SOCIAL'
+      Size = 35
+    end
+    object CDSClientesDIRECCION_PARTICULAR: TStringField
+      FieldName = 'DIRECCION_PARTICULAR'
+      Size = 35
+    end
+    object CDSClientesDIRECCION_COMERCIAL: TStringField
+      FieldName = 'DIRECCION_COMERCIAL'
+      Size = 35
+    end
+    object CDSClientesTELEFONO_PARTICULAR: TStringField
+      FieldName = 'TELEFONO_PARTICULAR'
+      Size = 10
+    end
+    object CDSClientesTELEFONO_COMERCIAL_1: TStringField
+      FieldName = 'TELEFONO_COMERCIAL_1'
+      Size = 10
+    end
+    object CDSClientesTELEFONO_COMERCIAL_2: TStringField
+      FieldName = 'TELEFONO_COMERCIAL_2'
+      Size = 10
+    end
+    object CDSClientesTELEFONO_CELULAR: TStringField
+      FieldName = 'TELEFONO_CELULAR'
+      Size = 11
+    end
+    object CDSClientesID_COD_POSTAL: TIntegerField
+      FieldName = 'ID_COD_POSTAL'
+    end
+    object CDSClientesCPOSTAL: TStringField
+      FieldName = 'CPOSTAL'
+      Size = 8
+    end
+    object CDSClientesLOCALIDAD: TStringField
+      FieldName = 'LOCALIDAD'
+      Size = 15
+    end
+    object CDSClientesCONDICION_IVA: TIntegerField
+      FieldName = 'CONDICION_IVA'
+      Required = True
+    end
+    object CDSClientesEMITE_REMITO: TStringField
+      FieldName = 'EMITE_REMITO'
+      FixedChar = True
+      Size = 1
+    end
+    object CDSClientesEMITE_FACTURA: TStringField
+      FieldName = 'EMITE_FACTURA'
+      FixedChar = True
+      Size = 1
+    end
+    object CDSClientesNRO_DE_CUIT: TStringField
+      FieldName = 'NRO_DE_CUIT'
+      Size = 13
+    end
+    object CDSClientesACTIVO: TStringField
+      FieldName = 'ACTIVO'
+      FixedChar = True
+      Size = 1
+    end
+    object CDSClientesLIMITE_CREDITO: TFMTBCDField
+      FieldName = 'LIMITE_CREDITO'
+      Precision = 15
+      Size = 3
+    end
+    object CDSClientesSALDOINICIAL: TFMTBCDField
+      FieldName = 'SALDOINICIAL'
+      Precision = 15
+      Size = 3
+    end
+    object CDSClientesOBSERVACIONES: TMemoField
+      FieldName = 'OBSERVACIONES'
+      BlobType = ftMemo
+      Size = 1
+    end
+    object CDSClientesFECHAULTIMACOMPRA: TSQLTimeStampField
+      FieldName = 'FECHAULTIMACOMPRA'
+    end
+    object CDSClientesFECHAALTA: TSQLTimeStampField
+      FieldName = 'FECHAALTA'
+    end
+    object CDSClientesSUCURSAL: TIntegerField
+      FieldName = 'SUCURSAL'
+    end
+    object CDSClientesZONA: TIntegerField
+      FieldName = 'ZONA'
+    end
+    object CDSClientesVENDEDOR: TStringField
+      FieldName = 'VENDEDOR'
+      Size = 6
+    end
+    object CDSClientesULTIMOPAGO: TSQLTimeStampField
+      FieldName = 'ULTIMOPAGO'
+    end
+    object CDSClientesLISTAPRECIOS: TIntegerField
+      FieldName = 'LISTAPRECIOS'
+    end
+    object CDSClientesFECHANACIMIENTO: TSQLTimeStampField
+      FieldName = 'FECHANACIMIENTO'
+    end
+    object CDSClientesTIPODOCUMENTO: TSmallintField
+      FieldName = 'TIPODOCUMENTO'
+    end
+    object CDSClientesNRODOCUMENTO: TStringField
+      FieldName = 'NRODOCUMENTO'
+      Size = 15
+    end
+    object CDSClientesCORREOELECTRONICO: TStringField
+      FieldName = 'CORREOELECTRONICO'
+      Size = 100
+    end
+    object CDSClientesID_FACTURAPORDEFECTO: TIntegerField
+      FieldName = 'ID_FACTURAPORDEFECTO'
+    end
+    object CDSClientesID_FACTURACONTADOPORDEFECTO: TIntegerField
+      FieldName = 'ID_FACTURACONTADOPORDEFECTO'
+    end
+    object CDSClientesID_NOTADEBITOPORDEFECTO: TIntegerField
+      FieldName = 'ID_NOTADEBITOPORDEFECTO'
+    end
+    object CDSClientesID_NOTACREDITOPORDEFECTO: TIntegerField
+      FieldName = 'ID_NOTACREDITOPORDEFECTO'
+    end
+    object CDSClientesID_TIKETPORDEFECTO: TIntegerField
+      FieldName = 'ID_TIKETPORDEFECTO'
+    end
+    object CDSClientesPERCIBIR_IB: TStringField
+      FieldName = 'PERCIBIR_IB'
+      Required = True
+      FixedChar = True
+      Size = 1
+    end
+    object CDSClientesINSCRIPTO_MULTICONVENIO: TStringField
+      FieldName = 'INSCRIPTO_MULTICONVENIO'
+      Required = True
+      FixedChar = True
+      Size = 1
+    end
+    object CDSClientesFECHA_VENCIMI_DDJJ_MULTI: TSQLTimeStampField
+      FieldName = 'FECHA_VENCIMI_DDJJ_MULTI'
+    end
+    object CDSClientesCONTACTO: TStringField
+      FieldName = 'CONTACTO'
+      Size = 50
+    end
+    object CDSClientesTELEFONO_CONTACTO: TStringField
+      FieldName = 'TELEFONO_CONTACTO'
+      Size = 50
+    end
+    object CDSClientesCOBRADOR: TStringField
+      FieldName = 'COBRADOR'
+      Size = 6
+    end
+    object CDSClientesCATEGORIA: TIntegerField
+      FieldName = 'CATEGORIA'
+    end
+    object CDSClientesLONGITUD: TStringField
+      FieldName = 'LONGITUD'
+      Size = 25
+    end
+    object CDSClientesLATITUD: TStringField
+      FieldName = 'LATITUD'
+      Size = 25
+    end
+    object CDSClientesDIRECCION_CALLE: TStringField
+      FieldName = 'DIRECCION_CALLE'
+      Size = 40
+    end
+    object CDSClientesDIRECCION_NUMERO: TStringField
+      FieldName = 'DIRECCION_NUMERO'
+      Size = 10
+    end
+    object CDSClientesDIRECCION_PISO: TStringField
+      FieldName = 'DIRECCION_PISO'
+      Size = 10
+    end
+    object CDSClientesDIRECCION_DEPTO: TStringField
+      FieldName = 'DIRECCION_DEPTO'
+      Size = 10
+    end
+    object CDSClientesDEUDAMAYOR30: TStringField
+      FieldName = 'DEUDAMAYOR30'
+      Required = True
+      FixedChar = True
+      Size = 1
+    end
+    object CDSClientesMUESTRATELEDISCADO: TStringField
+      FieldName = 'MUESTRATELEDISCADO'
+      Size = 6
+    end
+    object CDSClientesMUESTRAVENDEDOR: TStringField
+      FieldName = 'MUESTRAVENDEDOR'
+      Size = 50
+    end
+    object CDSClientesMUESTRACOBRADOR: TStringField
+      FieldName = 'MUESTRACOBRADOR'
+      Size = 50
+    end
+    object CDSClientesTIPOABONO: TStringField
+      FieldName = 'TIPOABONO'
+      Required = True
+      FixedChar = True
+      Size = 1
+    end
+    object CDSClientesFECHA_INCIO_FC_ABONO: TSQLTimeStampField
+      FieldName = 'FECHA_INCIO_FC_ABONO'
+    end
+    object CDSClientesMES_ABONOANUAL: TIntegerField
+      FieldName = 'MES_ABONOANUAL'
+    end
+  end
+  object DSPMovCC: TDataSetProvider
+    DataSet = QMovCC
+    Options = []
+    Left = 120
+    Top = 288
+  end
+  object DSPAplicaciones: TDataSetProvider
+    DataSet = QAplicaciones
+    Options = []
+    Left = 136
+    Top = 352
+  end
+  object DSPCajaMov: TDataSetProvider
+    DataSet = QCajaMov
+    Options = []
+    Left = 128
+    Top = 408
+  end
+  object CDSMovCC: TClientDataSet
+    Aggregates = <>
+    Params = <
+      item
+        DataType = ftString
+        Name = 'codigo'
+        ParamType = ptInput
+      end
+      item
+        DataType = ftString
+        Name = 'codigo'
+        ParamType = ptInput
+      end
+      item
+        DataType = ftDate
+        Name = 'desde'
+        ParamType = ptInput
+      end
+      item
+        DataType = ftDate
+        Name = 'hasta'
+        ParamType = ptInput
+      end>
+    ProviderName = 'DSPMovCC'
+    OnCalcFields = CDSMovCCCalcFields
+    Left = 216
+    Top = 288
+    object CDSMovCCID_MOVCCVTA: TIntegerField
+      DisplayLabel = 'Id'
+      FieldName = 'ID_MOVCCVTA'
+      Origin = 'ID_MOVCCVTA'
+      ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
+      Required = True
+    end
+    object CDSMovCCTIPOCPBTE: TStringField
+      Alignment = taRightJustify
+      DisplayLabel = 'Tp'
+      FieldName = 'TIPOCPBTE'
+      Origin = 'TIPOCPBTE'
+      Size = 2
+    end
+    object CDSMovCCDETALLE: TStringField
+      DisplayLabel = 'Detalle'
+      FieldName = 'DETALLE'
+      Origin = 'DETALLE'
+    end
+    object CDSMovCCPERIODO: TFloatField
+      Alignment = taLeftJustify
+      DisplayLabel = 'Periodo'
+      FieldKind = fkCalculated
+      FieldName = 'PERIODO'
+      Calculated = True
+    end
+    object CDSMovCCDEBE: TFloatField
+      DisplayLabel = 'Debe'
+      FieldName = 'DEBE'
+      Origin = 'DEBE'
+      DisplayFormat = ',0.00;-,0.00;-'
+    end
+    object CDSMovCCFECHAVTA: TSQLTimeStampField
+      DisplayLabel = 'Fecha Vta'
+      FieldName = 'FECHAVTA'
+      Origin = 'FECHAVTA'
+    end
+    object CDSMovCCFECHAVTO: TSQLTimeStampField
+      DisplayLabel = 'Fecha Vto'
+      FieldName = 'FECHAVTO'
+      Origin = 'FECHAVTO'
+    end
+  end
+  object CDSAplicaciones: TClientDataSet
+    Aggregates = <>
+    Params = <
+      item
+        DataType = ftInteger
+        Name = 'id_desde'
+        ParamType = ptInput
+      end
+      item
+        DataType = ftInteger
+        Name = 'id_hasta'
+        ParamType = ptInput
+      end>
+    ProviderName = 'DSPAplicaciones'
+    OnCalcFields = CDSAplicacionesCalcFields
+    Left = 224
+    Top = 344
+    object CDSAplicacionesID_CPBTE: TIntegerField
+      DisplayLabel = 'Id'
+      FieldName = 'ID_CPBTE'
+      Origin = 'ID_CPBTE'
+      Required = True
+    end
+    object CDSAplicacionesID_MOVCCVTA: TIntegerField
+      DisplayLabel = 'Id Mov'
+      FieldName = 'ID_MOVCCVTA'
+      Origin = 'ID_MOVCCVTA'
+      Required = True
+    end
+    object CDSAplicacionesTIPOCPBTE: TStringField
+      DisplayLabel = 'TP'
+      FieldName = 'TIPOCPBTE'
+      Origin = 'TIPOCPBTE'
+      Required = True
+      Size = 2
+    end
+    object CDSAplicacionesNUMEROCPBTE: TStringField
+      DisplayLabel = 'Nro.Cpbte'
+      FieldName = 'NUMEROCPBTE'
+      Origin = 'NUMEROCPBTE'
+      Required = True
+      Size = 13
+    end
+    object CDSAplicacionesIMPORTE: TFloatField
+      DisplayLabel = 'Importe'
+      FieldName = 'IMPORTE'
+      Origin = 'IMPORTE'
+      DisplayFormat = ',0.00;-,0.00;-'
+    end
+    object CDSAplicacionesMora: TFloatField
+      DisplayWidth = 10
+      FieldKind = fkCalculated
+      FieldName = 'Mora'
+      Calculated = True
+    end
+    object CDSAplicacionesPONDERADO: TFloatField
+      FieldKind = fkCalculated
+      FieldName = 'PONDERADO'
+      Calculated = True
+    end
+    object CDSAplicacionesFECHA: TSQLTimeStampField
+      DisplayLabel = 'Fecha'
+      FieldName = 'FECHA'
+      Origin = 'FECHA'
+    end
+  end
+  object CDSCajaMov: TClientDataSet
+    Aggregates = <>
+    Params = <
+      item
+        DataType = ftInteger
+        Name = 'id_desde'
+        ParamType = ptInput
+      end
+      item
+        DataType = ftInteger
+        Name = 'id_hasta'
+        ParamType = ptInput
+      end>
+    ProviderName = 'DSPCajaMov'
+    Left = 224
+    Top = 400
+    object CDSCajaMovID_MOV_CAJA: TIntegerField
+      DisplayLabel = 'Id M.Caja'
+      FieldName = 'ID_MOV_CAJA'
+      Origin = 'ID_MOV_CAJA'
+      ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
+      Required = True
+    end
+    object CDSCajaMovTIPO_OPERACION: TStringField
+      DisplayLabel = 'Tp.Op'
+      FieldName = 'TIPO_OPERACION'
+      Origin = 'TIPO_OPERACION'
+      Size = 1
+    end
+    object CDSCajaMovID_COMPROBANTE: TIntegerField
+      DisplayLabel = 'Id Cpb'
+      FieldName = 'ID_COMPROBANTE'
+      Origin = 'ID_COMPROBANTE'
+      Required = True
+    end
+    object CDSCajaMovTIPO_COMPROB: TStringField
+      DisplayLabel = 'Tp.Comp'
+      FieldName = 'TIPO_COMPROB'
+      Origin = 'TIPO_COMPROB'
+      Required = True
+      Size = 2
+    end
+    object CDSCajaMovDEBE: TFloatField
+      DisplayLabel = 'Debe'
+      FieldName = 'DEBE'
+      Origin = 'DEBE'
+      DisplayFormat = ',0.00'
+    end
+    object CDSCajaMovHABER: TFloatField
+      DisplayLabel = 'Haber'
+      FieldName = 'HABER'
+      Origin = 'HABER'
+      DisplayFormat = ',0.00'
+    end
+    object CDSCajaMovFECHA_OPERACION: TSQLTimeStampField
+      DisplayLabel = 'Fecha'
+      FieldName = 'FECHA_OPERACION'
+      Origin = 'FECHA_OPERACION'
+    end
+  end
+  object DSMovCC: TDataSource
+    DataSet = CDSMovCC
+    Left = 312
+    Top = 280
+  end
+  object DSAplicaciones: TDataSource
+    DataSet = CDSAplicaciones
+    Left = 320
+    Top = 360
+  end
+  object DSCajaMov: TDataSource
+    DataSet = CDSCajaMov
+    Left = 320
+    Top = 408
+  end
+  object DSValores: TDataSource
+    DataSet = CDSValores
+    Left = 312
+    Top = 472
+  end
+  object CDSValores: TClientDataSet
+    Aggregates = <>
+    Params = <
+      item
+        DataType = ftInteger
+        Name = 'id_desde'
+        ParamType = ptInput
+      end
+      item
+        DataType = ftInteger
+        Name = 'id_hasta'
+        ParamType = ptInput
+      end>
+    ProviderName = 'DSPValores'
+    OnCalcFields = CDSValoresCalcFields
+    Left = 232
+    Top = 472
+    object CDSValoresID_MOV_CAJA: TIntegerField
+      DisplayLabel = 'Id'
+      FieldName = 'ID_MOV_CAJA'
+      Origin = 'ID_MOV_CAJA'
+      Required = True
+    end
+    object CDSValoresORIGEN: TStringField
+      DisplayLabel = 'Origen'
+      FieldName = 'ORIGEN'
+      Origin = 'ORIGEN'
+      Size = 30
+    end
+    object CDSValoresNUMERO: TIntegerField
+      DisplayLabel = 'Numero'
+      FieldName = 'NUMERO'
+      Origin = 'NUMERO'
+    end
+    object CDSValoresNOMBRE: TStringField
+      DisplayLabel = 'Nombre'
+      FieldName = 'NOMBRE'
+      Origin = 'NOMBRE'
+      ProviderFlags = []
+    end
+    object CDSValoresIMPORTE: TFloatField
+      DisplayLabel = 'Importe'
+      FieldName = 'IMPORTE'
+      Origin = 'IMPORTE'
+      DisplayFormat = ',0.00'
+    end
+    object CDSValoresMora: TFloatField
+      DisplayWidth = 10
+      FieldKind = fkCalculated
+      FieldName = 'Mora'
+      DisplayFormat = ',0.00'
+      Calculated = True
+    end
+    object CDSValoresFECHA_EMISION: TSQLTimeStampField
+      DisplayLabel = 'F.Emision'
+      FieldName = 'FECHA_EMISION'
+      Origin = 'FECHA_EMISION'
+    end
+    object CDSValoresFECHA_COBRO: TSQLTimeStampField
+      DisplayLabel = 'F.Cobro'
+      FieldName = 'FECHA_COBRO'
+      Origin = 'FECHA_COBRO'
+    end
+  end
+  object DSPValores: TDataSetProvider
+    DataSet = QValores
+    Options = []
+    Left = 136
+    Top = 472
+  end
+  object frxReporte: TfrxReport
+    Version = '2022.2.3'
+    DotMatrixReport = False
+    IniFile = '\Software\Fast Reports'
+    PreviewOptions.Buttons = [pbPrint, pbLoad, pbSave, pbExport, pbZoom, pbFind, pbOutline, pbPageSetup, pbTools, pbEdit, pbNavigator, pbExportQuick]
+    PreviewOptions.Zoom = 1.000000000000000000
+    PrintOptions.Printer = 'Por defecto'
+    PrintOptions.PrintOnSheet = 0
+    ReportOptions.CreateDate = 39638.785465856480000000
+    ReportOptions.LastChange = 39638.785465856480000000
+    ScriptLanguage = 'PascalScript'
+    ScriptText.Strings = (
+      'begin'
+      ''
+      'end.')
+    Left = 648
+    Top = 376
+    Datasets = <>
+    Variables = <>
+    Style = <>
+  end
+  object frdbMovcc: TfrxDBDataset
+    UserName = 'frdbMovcc'
+    CloseDataSource = False
+    DataSource = DSMovCC
+    BCDToCurrency = False
+    DataSetOptions = []
+    Left = 488
+    Top = 291
+  end
+  object frdbAplicaciones: TfrxDBDataset
+    UserName = 'frdbAplicaciones'
+    CloseDataSource = False
+    DataSource = DSAplicaciones
+    BCDToCurrency = False
+    DataSetOptions = []
+    Left = 496
+    Top = 352
+  end
+  object frdbCajaMov: TfrxDBDataset
+    UserName = 'frdbCajaMov'
+    CloseDataSource = False
+    DataSource = DSCajaMov
+    BCDToCurrency = False
+    DataSetOptions = []
+    Left = 496
+    Top = 416
+  end
+  object frdbValores: TfrxDBDataset
+    UserName = 'frdbValores'
+    CloseDataSource = False
+    DataSource = DSValores
+    BCDToCurrency = False
+    DataSetOptions = []
+    Left = 488
+    Top = 472
+  end
+  object QMovCC: TFDQuery
+    Connection = DMMain_FD.fdcGestion
+    SQL.Strings = (
+      
+        'select id_movccvta,detalle,fechavta,fechavto,debe,tipocpbte from' +
+        ' movccvta where'
+      
+        'tipocpbte in ('#39'FC'#39','#39'ND'#39') and (saldo<>debe) and ((cliente=:codigo' +
+        ') or (:codigo = '#39'******'#39')) and'
+      'fechavta>=:desde and fechavta<=:hasta')
+    Left = 52
+    Top = 291
+    ParamData = <
+      item
+        Position = 1
+        Name = 'codigo'
+        DataType = ftString
+        ParamType = ptInput
+      end
+      item
+        Position = 2
+        Name = 'codigo'
+        DataType = ftString
+        ParamType = ptInput
+      end
+      item
+        Position = 3
+        Name = 'desde'
+        DataType = ftDate
+        ParamType = ptInput
+      end
+      item
+        Position = 4
+        Name = 'hasta'
+        DataType = ftDate
+        ParamType = ptInput
+      end>
+  end
+  object QAplicaciones: TFDQuery
+    Connection = DMMain_FD.fdcGestion
+    SQL.Strings = (
+      
+        'select id_cpbte, tipocpbte, id_movccvta,fecha,numerocpbte,import' +
+        'e from movaplicaccvta '
+      'where id_movccvta  between :id_desde and :id_hasta')
+    Left = 52
+    Top = 347
+    ParamData = <
+      item
+        Position = 1
+        Name = 'id_desde'
+        DataType = ftInteger
+        ParamType = ptInput
+      end
+      item
+        Position = 2
+        Name = 'id_hasta'
+        DataType = ftInteger
+        ParamType = ptInput
+      end>
+  end
+  object QValores: TFDQuery
+    Connection = DMMain_FD.fdcGestion
+    SQL.Strings = (
+      
+        'select che.id_mov_caja,che.fecha_emision,che.fecha_cobro,che.ori' +
+        'gen,che.importe,b.nombre,che.numero from cheque_tercero che'
+      'left join bancos b on b.id_banco=che.id_banco'
+      'where che.id_mov_caja BETWEEN :id_desde and :id_hasta')
+    Left = 52
+    Top = 467
+    ParamData = <
+      item
+        Position = 1
+        Name = 'id_desde'
+        DataType = ftInteger
+        ParamType = ptInput
+      end
+      item
+        Position = 2
+        Name = 'id_hasta'
+        DataType = ftInteger
+        ParamType = ptInput
+      end>
+  end
+  object QCajaMov: TFDQuery
+    Connection = DMMain_FD.fdcGestion
+    SQL.Strings = (
+      
+        'select id_mov_caja,fecha_operacion,tipo_operacion,id_comprobante' +
+        ',tipo_comprob,haber,debe from caja_mov '
+      'where id_comprobante  between :id_desde and :id_hasta')
+    Left = 52
+    Top = 411
+    ParamData = <
+      item
+        Position = 1
+        Name = 'id_desde'
+        DataType = ftInteger
+        ParamType = ptInput
+      end
+      item
+        Position = 2
+        Name = 'id_hasta'
+        DataType = ftInteger
+        ParamType = ptInput
+      end>
+  end
+end

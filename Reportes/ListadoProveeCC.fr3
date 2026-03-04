@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<TfrxReport Version="2024.1.8" DotMatrixReport="False" IniFile="\Software\Fast Reports" PreviewOptions.Buttons="167935" PreviewOptions.Zoom="1" PrintOptions.Copies="0" PrintOptions.Printer="Por defecto" PrintOptions.PrintOnSheet="0" ReportOptions.CreateDate="39638.121847581" ReportOptions.Description.Text="" ReportOptions.LastChange="46077.4706683565" ScriptLanguage="PascalScript" ScriptText.Text="&#13;&#10;procedure PageHeader1OnBeforePrint(Sender: TfrxComponent);&#13;&#10;begin&#13;&#10;&#13;&#10;end;&#13;&#10;&#13;&#10;procedure MasterData1OnBeforePrint(Sender: TfrxComponent);&#13;&#10;begin&#13;&#10;&#13;&#10;end;&#13;&#10;&#13;&#10;begin&#13;&#10;&#13;&#10;end.">
+  <Datasets>
+    <item DataSet="frxDBDataset1" DataSetName="frxDBDataset1"/>
+  </Datasets>
+  <Variables>
+    <item Name="MascaraUnitario" Value="',0.000'"/>
+    <item Name="MascaraCantidad" Value="',0.000'"/>
+    <item Name="MascaraTotal" Value="',0.00'"/>
+    <item Name="MascaraTotalGral" Value="',0.00'"/>
+    <item Name="MascaraIvaTasa" Value="'0.0'"/>
+    <item Name="MascaraIvaImporte" Value="',0.00'"/>
+    <item Name="SaldoAnterior" Value="'Saldo'"/>
+    <item Name="ImprimirSaldo" Value="'S'"/>
+    <item Name="Copyname0"/>
+    <item Name="copyname1" Value="ORIGINAL"/>
+    <item Name="copyname2" Value="TRIPLICADO"/>
+    <item Name="AduanaOrigen" Value="''"/>
+    <item Name="AduanaDestino" Value="''"/>
+    <item Name="Borrador" Value="'N'"/>
+  </Variables>
+  <TfrxDataPage Name="Data" HGuides.Text="" VGuides.Text="" Height="1000" Left="0" Top="0" Width="1000"/>
+  <TfrxReportPage Name="Page1" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="Arial" Font.Style="0" HGuides.Text="" VGuides.Text="" PaperWidth="185" PaperHeight="245" PaperSize="256" LeftMargin="10" RightMargin="10" TopMargin="10" BottomMargin="10" ColumnWidth="0" ColumnPositions.Text="" Frame.Typ="0" MirrorMode="0">
+    <TfrxPageHeader Name="PageHeader1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Frame.Typ="8" Height="109.60637407" Left="0" Top="18.89765" Width="623.62245" OnBeforePrint="PageHeader1OnBeforePrint">
+      <TfrxMemoView Name="Memo1" AllowVectorExport="True" Left="3.77953005" Top="0" Width="309.92145644" Height="64.25200977" ContentScaleOptions.Constraints.MaxIterationValue="0" ContentScaleOptions.Constraints.MinIterationValue="0" Font.Charset="1" Font.Color="0" Font.Height="-29" Font.Name="Arial" Font.Style="1" Frame.Typ="0" ParentFont="False" Text="Composicion CC Proveedores"/>
+      <TfrxMemoView Name="Memo2" AllowVectorExport="True" Left="7.55906005" Top="90.70872326" Width="45.35435644" Height="15.11811404" ContentScaleOptions.Constraints.MaxIterationValue="0" ContentScaleOptions.Constraints.MinIterationValue="0" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="Arial" Font.Style="1" Frame.Typ="0" ParentFont="False" Text="Codigo"/>
+      <TfrxMemoView Name="Memo3" AllowVectorExport="True" Left="86.92919159" Top="90.70871902" Width="94.4882431" Height="15.11811404" ContentScaleOptions.Constraints.MaxIterationValue="0" ContentScaleOptions.Constraints.MinIterationValue="0" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="Arial" Font.Style="1" Frame.Typ="0" ParentFont="False" Text="Proveedor"/>
+      <TfrxMemoView Name="Memo4" AllowVectorExport="True" Left="385.51207142" Top="90.7087224" Width="37.79530073" Height="15.11812167" ContentScaleOptions.Constraints.MaxIterationValue="0" ContentScaleOptions.Constraints.MinIterationValue="0" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="Arial" Font.Style="1" Frame.Typ="0" ParentFont="False" Text="Haber"/>
+      <TfrxMemoView Name="Memo5" AllowVectorExport="True" Left="476.22078" Top="90.70872" Width="37.79530073" Height="15.11812167" ContentScaleOptions.Constraints.MaxIterationValue="0" ContentScaleOptions.Constraints.MinIterationValue="0" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="Arial" Font.Style="1" Frame.Typ="0" ParentFont="False" Text="Debe"/>
+      <TfrxMemoView Name="Memo6" AllowVectorExport="True" Left="563.14997" Top="90.70872" Width="37.79530073" Height="15.11812167" ContentScaleOptions.Constraints.MaxIterationValue="0" ContentScaleOptions.Constraints.MinIterationValue="0" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="Arial" Font.Style="1" Frame.Typ="0" ParentFont="False" Text="Saldo"/>
+    </TfrxPageHeader>
+    <TfrxMasterData Name="MasterData1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Frame.Typ="0" Height="18.89765" Left="0" Top="188.9765" Width="623.62245" OnBeforePrint="MasterData1OnBeforePrint" ColumnWidth="0" ColumnGap="0" DataSet="frxDBDataset1" DataSetName="frxDBDataset1" RowCount="0">
+      <TfrxMemoView Name="frxDBDataset1CODIGO" IndexTag="1" AllowVectorExport="True" Left="3.77953" Top="0" Width="79.37013" Height="18.89765" ContentScaleOptions.Constraints.MaxIterationValue="0" ContentScaleOptions.Constraints.MinIterationValue="0" DataField="CODIGO" DataSet="frxDBDataset1" DataSetName="frxDBDataset1" Frame.Typ="0" Text="[frxDBDataset1.&#34;CODIGO&#34;]"/>
+      <TfrxMemoView Name="frxDBDataset1NOMBRE" IndexTag="1" AllowVectorExport="True" Left="86.92919" Top="0" Width="279.68522" Height="18.89765" ContentScaleOptions.Constraints.MaxIterationValue="0" ContentScaleOptions.Constraints.MinIterationValue="0" DataField="NOMBRE" DataSet="frxDBDataset1" DataSetName="frxDBDataset1" Frame.Typ="0" Text="[frxDBDataset1.&#34;NOMBRE&#34;]"/>
+      <TfrxMemoView Name="frxDBDataset1DEBE" IndexTag="1" AllowVectorExport="True" Left="457.32313" Top="0" Width="83.14966" Height="18.89765" ContentScaleOptions.Constraints.MaxIterationValue="0" ContentScaleOptions.Constraints.MinIterationValue="0" DataField="DEBE" DataSet="frxDBDataset1" DataSetName="frxDBDataset1" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="Arial" Font.Style="0" Frame.Typ="0" HAlign="haRight" ParentFont="False" Text="[frxDBDataset1.&#34;DEBE&#34;]"/>
+      <TfrxMemoView Name="frxDBDataset1SALDO" IndexTag="1" AllowVectorExport="True" Left="544.25232" Top="0" Width="79.37013" Height="18.89765" ContentScaleOptions.Constraints.MaxIterationValue="0" ContentScaleOptions.Constraints.MinIterationValue="0" DataField="SALDO" DataSet="frxDBDataset1" DataSetName="frxDBDataset1" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="Arial" Font.Style="0" Frame.Typ="0" HAlign="haRight" ParentFont="False" Text="[frxDBDataset1.&#34;SALDO&#34;]"/>
+      <TfrxMemoView Name="frxDBDataset1HABER" IndexTag="1" AllowVectorExport="True" Left="366.61441" Top="0" Width="86.92919" Height="18.89765" ContentScaleOptions.Constraints.MaxIterationValue="0" ContentScaleOptions.Constraints.MinIterationValue="0" DataField="HABER" DataSet="frxDBDataset1" DataSetName="frxDBDataset1" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="Arial" Font.Style="0" Frame.Typ="0" HAlign="haRight" ParentFont="False" Text="[frxDBDataset1.&#34;HABER&#34;]"/>
+    </TfrxMasterData>
+  </TfrxReportPage>
+</TfrxReport>

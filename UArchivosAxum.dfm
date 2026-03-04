@@ -1,0 +1,2068 @@
+inherited FormAxum: TFormAxum
+  Caption = 'Axum'
+  ClientHeight = 667
+  ClientWidth = 1025
+  ExplicitWidth = 1043
+  ExplicitHeight = 708
+  TextHeight = 13
+  inherited pnPrincipal: TPanel
+    Width = 1025
+    Height = 614
+    Align = alClient
+    ExplicitLeft = 0
+    ExplicitTop = 0
+    ExplicitWidth = 1025
+    ExplicitHeight = 614
+    object PageControl1: TPageControl
+      Left = 0
+      Top = 0
+      Width = 1025
+      Height = 560
+      ActivePage = pagArticulos
+      Align = alClient
+      TabOrder = 0
+      OnChange = PageControl1Change
+      object pagClientes: TTabSheet
+        Caption = 'Clientes'
+        object pnClientes: TPanel
+          Left = 0
+          Top = 0
+          Width = 1017
+          Height = 41
+          Align = alTop
+          BevelOuter = bvNone
+          Caption = 'Clientes'
+          Color = clMenuHighlight
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWhite
+          Font.Height = -19
+          Font.Name = 'MS Sans Serif'
+          Font.Style = [fsBold]
+          ParentBackground = False
+          ParentFont = False
+          TabOrder = 0
+          DesignSize = (
+            1017
+            41)
+          object btClientes: TButton
+            Left = 919
+            Top = 9
+            Width = 91
+            Height = 25
+            Anchors = [akTop, akRight]
+            Caption = 'Buscar'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWhite
+            Font.Height = -13
+            Font.Name = 'MS Sans Serif'
+            Font.Style = []
+            ParentFont = False
+            TabOrder = 0
+            OnClick = btClientesClick
+          end
+        end
+        object dbgClientes: TDBAdvGrid
+          Left = 0
+          Top = 41
+          Width = 1017
+          Height = 491
+          Align = alClient
+          ColCount = 2
+          DefaultColWidth = 70
+          DrawingStyle = gdsClassic
+          FixedColor = clWhite
+          FixedCols = 0
+          RowCount = 2
+          FixedRows = 1
+          Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goRangeSelect, goColSizing, goRowSelect, goFixedRowDefAlign]
+          TabOrder = 1
+          GridLineColor = 13948116
+          GridFixedLineColor = 11250603
+          HintShowLargeText = True
+          OnSaveCell = dbgClientesSaveCell
+          ActiveCellFont.Charset = DEFAULT_CHARSET
+          ActiveCellFont.Color = 4474440
+          ActiveCellFont.Height = -12
+          ActiveCellFont.Name = 'Segoe UI'
+          ActiveCellFont.Style = [fsBold]
+          ActiveCellColor = 11565130
+          ActiveCellColorTo = 11565130
+          BorderColor = 11250603
+          ControlLook.FixedGradientFrom = clWhite
+          ControlLook.FixedGradientTo = clWhite
+          ControlLook.FixedGradientHoverFrom = clGray
+          ControlLook.FixedGradientHoverTo = clWhite
+          ControlLook.FixedGradientHoverMirrorFrom = clWhite
+          ControlLook.FixedGradientHoverMirrorTo = clWhite
+          ControlLook.FixedGradientHoverBorder = 11645361
+          ControlLook.FixedGradientDownFrom = clWhite
+          ControlLook.FixedGradientDownTo = clWhite
+          ControlLook.FixedGradientDownMirrorFrom = clWhite
+          ControlLook.FixedGradientDownMirrorTo = clWhite
+          ControlLook.FixedGradientDownBorder = 11250603
+          ControlLook.DropDownHeader.Font.Charset = DEFAULT_CHARSET
+          ControlLook.DropDownHeader.Font.Color = clWindowText
+          ControlLook.DropDownHeader.Font.Height = -11
+          ControlLook.DropDownHeader.Font.Name = 'Segoe UI'
+          ControlLook.DropDownHeader.Font.Style = []
+          ControlLook.DropDownHeader.Visible = True
+          ControlLook.DropDownHeader.Buttons = <>
+          ControlLook.DropDownFooter.Font.Charset = DEFAULT_CHARSET
+          ControlLook.DropDownFooter.Font.Color = clWindowText
+          ControlLook.DropDownFooter.Font.Height = -11
+          ControlLook.DropDownFooter.Font.Name = 'Segoe UI'
+          ControlLook.DropDownFooter.Font.Style = []
+          ControlLook.DropDownFooter.Visible = True
+          ControlLook.DropDownFooter.Buttons = <>
+          ControlLook.ToggleSwitch.BackgroundBorderWidth = 1.000000000000000000
+          ControlLook.ToggleSwitch.ButtonBorderWidth = 1.000000000000000000
+          ControlLook.ToggleSwitch.CaptionFont.Charset = DEFAULT_CHARSET
+          ControlLook.ToggleSwitch.CaptionFont.Color = clWindowText
+          ControlLook.ToggleSwitch.CaptionFont.Height = -12
+          ControlLook.ToggleSwitch.CaptionFont.Name = 'Segoe UI'
+          ControlLook.ToggleSwitch.CaptionFont.Style = []
+          ControlLook.ToggleSwitch.Shadow = False
+          EnhTextSize = True
+          Filter = <>
+          FilterDropDown.Font.Charset = DEFAULT_CHARSET
+          FilterDropDown.Font.Color = clWindowText
+          FilterDropDown.Font.Height = -12
+          FilterDropDown.Font.Name = 'Segoe UI'
+          FilterDropDown.Font.Style = []
+          FilterDropDown.TextChecked = 'Checked'
+          FilterDropDown.TextUnChecked = 'Unchecked'
+          FilterDropDownClear = '(All)'
+          FilterEdit.TypeNames.Strings = (
+            'Starts with'
+            'Ends with'
+            'Contains'
+            'Not contains'
+            'Equal'
+            'Not equal'
+            'Larger than'
+            'Smaller than'
+            'Clear')
+          FixedColWidth = 70
+          FixedRowHeight = 22
+          FixedFont.Charset = DEFAULT_CHARSET
+          FixedFont.Color = 3881787
+          FixedFont.Height = -11
+          FixedFont.Name = 'Segoe UI'
+          FixedFont.Style = [fsBold]
+          FloatFormat = '%.2f'
+          HoverButtons.Buttons = <>
+          HTMLSettings.ImageFolder = 'images'
+          HTMLSettings.ImageBaseName = 'img'
+          Look = glCustom
+          PrintSettings.DateFormat = 'dd/mm/yyyy'
+          PrintSettings.Font.Charset = DEFAULT_CHARSET
+          PrintSettings.Font.Color = clWindowText
+          PrintSettings.Font.Height = -12
+          PrintSettings.Font.Name = 'Segoe UI'
+          PrintSettings.Font.Style = []
+          PrintSettings.FixedFont.Charset = DEFAULT_CHARSET
+          PrintSettings.FixedFont.Color = clWindowText
+          PrintSettings.FixedFont.Height = -12
+          PrintSettings.FixedFont.Name = 'Segoe UI'
+          PrintSettings.FixedFont.Style = []
+          PrintSettings.HeaderFont.Charset = DEFAULT_CHARSET
+          PrintSettings.HeaderFont.Color = clWindowText
+          PrintSettings.HeaderFont.Height = -12
+          PrintSettings.HeaderFont.Name = 'Segoe UI'
+          PrintSettings.HeaderFont.Style = []
+          PrintSettings.FooterFont.Charset = DEFAULT_CHARSET
+          PrintSettings.FooterFont.Color = clWindowText
+          PrintSettings.FooterFont.Height = -12
+          PrintSettings.FooterFont.Name = 'Segoe UI'
+          PrintSettings.FooterFont.Style = []
+          PrintSettings.PageNumSep = '/'
+          SearchFooter.ColorTo = clNone
+          SearchFooter.FindNextCaption = 'Find &next'
+          SearchFooter.FindPrevCaption = 'Find &previous'
+          SearchFooter.Font.Charset = DEFAULT_CHARSET
+          SearchFooter.Font.Color = clWindowText
+          SearchFooter.Font.Height = -12
+          SearchFooter.Font.Name = 'Segoe UI'
+          SearchFooter.Font.Style = []
+          SearchFooter.HighLightCaption = 'Highlight'
+          SearchFooter.HintClose = 'Close'
+          SearchFooter.HintFindNext = 'Find next occurrence'
+          SearchFooter.HintFindPrev = 'Find previous occurrence'
+          SearchFooter.HintHighlight = 'Highlight occurrences'
+          SearchFooter.MatchCaseCaption = 'Match case'
+          SearchFooter.ResultFormat = '(%d of %d)'
+          SelectionColor = 13744549
+          SortSettings.HeaderColor = clWhite
+          SortSettings.HeaderColorTo = clWhite
+          SortSettings.HeaderMirrorColor = clWhite
+          SortSettings.HeaderMirrorColorTo = clWhite
+          Version = '2.5.1.20'
+          WordWrap = False
+          AutoCreateColumns = True
+          AutoRemoveColumns = True
+          Columns = <
+            item
+              Borders = []
+              BorderPen.Color = clSilver
+              ButtonHeight = 18
+              CheckFalse = 'N'
+              CheckTrue = 'Y'
+              Color = clWindow
+              EditLength = 6
+              Font.Charset = DEFAULT_CHARSET
+              Font.Color = clWindowText
+              Font.Height = -11
+              Font.Name = 'MS Sans Serif'
+              Font.Style = []
+              HeaderFont.Charset = DEFAULT_CHARSET
+              HeaderFont.Color = 3881787
+              HeaderFont.Height = -12
+              HeaderFont.Name = 'Segoe UI'
+              HeaderFont.Style = []
+              PrintBorders = [cbTop, cbLeft, cbRight, cbBottom]
+              PrintFont.Charset = DEFAULT_CHARSET
+              PrintFont.Color = clWindowText
+              PrintFont.Height = -12
+              PrintFont.Name = 'Segoe UI'
+              PrintFont.Style = []
+              Width = 70
+            end
+            item
+              Borders = []
+              BorderPen.Color = clSilver
+              ButtonHeight = 18
+              CheckFalse = 'N'
+              CheckTrue = 'Y'
+              Color = clWindow
+              EditLength = 35
+              Font.Charset = DEFAULT_CHARSET
+              Font.Color = clWindowText
+              Font.Height = -11
+              Font.Name = 'MS Sans Serif'
+              Font.Style = []
+              HeaderFont.Charset = DEFAULT_CHARSET
+              HeaderFont.Color = 3881787
+              HeaderFont.Height = -12
+              HeaderFont.Name = 'Segoe UI'
+              HeaderFont.Style = []
+              PrintBorders = [cbTop, cbLeft, cbRight, cbBottom]
+              PrintFont.Charset = DEFAULT_CHARSET
+              PrintFont.Color = clWindowText
+              PrintFont.Height = -12
+              PrintFont.Name = 'Segoe UI'
+              PrintFont.Style = []
+              Width = 70
+            end>
+          DataSource = DSClientes
+          InvalidPicture.Data = {
+            055449636F6E0000010001002020200000000000A81000001600000028000000
+            2000000040000000010020000000000000100000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000006A6A6B256A6A6B606A6A6B946A6A6BC06A6A6BE1
+            6A6A6BF86A6A6BF86A6A6BE16A6A6BC06A6A6B946A6A6B606A6A6B2500000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            000000006A6A6B407575769E787879F19F9F9FF6C0C0C0FDDADADAFFEDEDEEFF
+            FBFBFBFFFBFBFBFFEDEDEEFFDADADAFFC0C0C0FD9F9F9FF6787879F17575769E
+            6A6A6B4000000000000000000000000000000000000000000000000000000000
+            000000000000000000000000000000000000000000000000000000006A6A6B22
+            7C7C7C98888889F0BDBDBDFCE9E9EBFED9D9E9FEB5B5DDFE8B8BCDFE595AB7FF
+            3739A8FF2B2CA4FF4A49B1FF7171C1FFA1A2D7FFD3D3E8FFEAEAEBFEBEBEBFFC
+            888889F07C7C7C986A6A6B220000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000006A6A6B43838383D8
+            B7B7B8FAECECEFFEC0C0DFFF7977C4FF2221A0FF12129BFF1010A4FF0C0CA8FF
+            0A0AACFF0A0AB4FF0A0AB9FF0D0DBEFF0F0FB1FF1111A6FF5656B8FFAEADDCFF
+            ECECEFFEB7B7B8FA838383D86A6A6B4300000000000000000000000000000000
+            00000000000000000000000000000000000000006A6A6B4E878788EAD3D3D3FE
+            CACAE8FF4443B0FF171799FF11119CFF0C0C98FF0B0B9BFF0B0BA0FF0A0AA6FF
+            0909ACFF0909B2FF0808BAFF0707BFFF0B09C8FF0D0DCEFF1111CCFF1010AFFF
+            4A49B2FFCFCFEBFFD3D3D3FE878788EA6A6A6B4E000000000000000000000000
+            000000000000000000000000000000006A6A6B43878788EAE1E1E1FFA8A8DAFF
+            2323A0FF15159CFF0D0D92FF0C0C95FF0C0C99FF0B0B9EFF0B0BA0FF0A0AA6FF
+            0909ACFF0909B2FF0808B8FF0808BCFF0808C3FF0C0CC9FF0C0CD0FF0D0DD6FF
+            1313CFFF2222A9FFAFAFDEFFE1E1E1FF878788EA6A6A6B430000000000000000
+            0000000000000000000000006A6A6B22838383D8D3D3D3FEA8A8D9FF2020A4FF
+            13139BFF0C0C92FF0C0C95FF0C0C97FF0C0C99FF0B0B9EFF0B0BA0FF0A0AA4FF
+            0A0AA9FF0909B0FF0808B4FF0808BBFF0707C0FF0A0AC6FF0909CCFF0C0CD3FF
+            0D0DD8FF1313D3FF1A1AA8FFAEADDEFFD4D4D4FE838383D86A6A6B2200000000
+            0000000000000000000000007C7C7C98B7B7B8FACACAE8FF2524A3FF13139FFF
+            0C0C97FF0C0C95FF0C0C95FF0C0C91FF0C0C95FF0B0B9EFF0B0BA0FF0A0AA4FF
+            0A0AA8FF0909ADFF0909B2FF0808B8FF0808BCFF0707C0FF0808BCFF0707C5FF
+            0C0CD3FF0D0DD7FF1212D1FF2020A7FFCDCDEBFFB8B8B9FA7C7C7C9800000000
+            00000000000000006A6A6B40888889F0ECECEFFE4545B1FF1616A4FF0B0B9BFF
+            0C0C99FF0C0C96FF3333A2FFB9B9D0FF393A9BFF0C0C95FF0B0BA1FF0A0AA4FF
+            0A0AA7FF0A0AABFF0909B0FF0808B4FF0808B7FF2F2FC2FFAEAEE2FF4B4BBFFF
+            0707BEFF0B0BD1FF0C0CD3FF1413CCFF4848B1FFECECEFFE888889F06A6A6B40
+            00000000000000007575769EBFBFBFFD9B9BD5FF1C1CA6FF0C0CA1FF0B0B9FFF
+            0B0B9AFF3535A7FFB5B5BEFFE6E6DFFFEDEDEFFF3C3C9CFF0C0C97FF0A0AA4FF
+            0A0AA6FF0A0AA9FF0909ADFF0909B0FF2626B5FFCECEDEFFFFFFFBFFEEEEF1FF
+            4848BAFF0808BCFF0A0ACDFF0B0BCEFF1111ABFFBEC0E0FFBFC0BFFD7575769E
+            000000006A6A6B25787879F1E3E3E5FE4646B2FF1414A8FF0A0AA4FF0B0BA0FF
+            2121A9FFBDBDCAFFD0D0C8FFC5C5C5FFE3E3E1FFEDEDEFFF3E3E9EFF0C0C98FF
+            0A0AA6FF0A0AA8FF0A0AA9FF2B2BB0FFC0C0CDFFEAEAE2FFEBEBEBFFFEFEF8FF
+            EDEDEEFF2828BDFF0707C4FF0809C7FF0F0FC4FF8788CBFFEBEBECFE79797AF1
+            6A6A6B256A6A6B609D9E9DF6D6D7E4FF3A3AB3FF1212ADFF0A0AA8FF0A0AA4FF
+            1313AAFFABABCFFFD6D6CBFFCACACAFFC6C6C6FFE4E4E0FFEEEEEFFF3F3FA0FF
+            0C0C99FF0A0AA6FF2828ABFFB2B2BFFFD8D8CEFFD6D6D8FFE0E0E0FFF6F5EDFF
+            D1D1EDFF1E1CC0FF0707BEFF0707BFFF0707C0FF2120AAFFD3D5E9FE9FA0A0F6
+            6A6A6B606A6A6B94BDBDBDFBBABBDCFF3A39B7FF2F2FB8FF0909ADFF0A0AA9FF
+            0A0AA6FF1515ACFFADADCFFFD6D6CBFFCBCBCAFFC6C6C6FFE4E4E1FFEEEEEFFF
+            3838A1FF2222A2FFACABB8FFC8C8C0FFC7C7C8FFCDCDCDFFE1E1D9FFC8CAE1FF
+            2424BCFF0808B4FF0808B9FF0808BAFF0808BBFF0F0EABFFA1A2D5FEC0C0C0FC
+            6A6A6B946A6A6BC0D9D8D7FE9999D1FF3838BBFF3636BCFF2C2CB7FF0909ADFF
+            0A0AA9FF0A0AA4FF1C1CAFFFB1B1CFFFD6D6CBFFCCCCCBFFC7C7C7FFE4E4E1FF
+            ECECEEFFACACB7FFC2C2BCFFBEBEBFFFC0C0C0FFCFCFC6FFC1C1D5FF2727B8FF
+            0909ACFF0909B2FF0909B2FF0909B4FF0808B4FF0E0EB5FF6E6EBFFFD9D9D9FE
+            6A6A6BC06A6A6BE1EBEAEBFF7D7CC7FF3838BFFF3434BEFF3536BEFF2A2AB8FF
+            0909B0FF0909ACFF0A0AA8FF1C1CB1FFB2B2D0FFD7D7CCFFCBCBCBFFC7C7C8FF
+            C8C8C3FFC6C6C3FFBFBFC1FFBDBDBDFFC5C5BCFFB8B8CEFF2929B5FF0A0AA8FF
+            0909ACFF0909ADFF0909AFFF0909AFFF0909AFFF0C0CB0FF4747AFFFECECEDFF
+            6A6A6BE16A6A6BF8F9F9F9FF6666C1FF3838C4FF3535C2FF3434C0FF3535BEFF
+            3030BCFF1313B4FF0909ADFF0A0AA8FF1E1EB3FFAAAAD0FFD3D3CDFFCCCCCCFF
+            C8C8C8FFC3C3C3FFC2C2C1FFC4C4BFFFB2B2CBFF2B2BB4FF0A0AA4FF0A0AA8FF
+            0A0AA8FF0A0AA9FF0A0AA9FF0A0AA9FF0A0AA9FF0B0BA9FF3131A6FFFAFAFAFF
+            6A6A6BF86A6A6BF8FBFBFBFF5959BEFF3B3BCAFF3A3AC8FF3737C4FF3535C2FF
+            3636C0FF3636BEFF2323B8FF0909B1FF0A0AA7FF4949BEFFD6D6D4FFD3D3D1FF
+            CDCDCDFFC8C8C8FFC4C4C3FFEDEDEDFF5F5FB3FF0C0C98FF0A0AA7FF0A0AA6FF
+            0A0AA6FF0A0AA6FF0A0AA4FF0A0AA6FF0A0AA4FF0B0BA4FF2D2DA6FFFBFBFBFF
+            6A6A6BF86A6A6BE1EDEDEEFF7F80CBFF4041CCFF3C3CCAFF3A3AC8FF383AC8FF
+            3838C4FF3636C2FF3939C0FF2123B7FF4A4AC2FFCBCBDEFFE0E0DCFFD6D6D6FF
+            D2D2D3FFCDCDCEFFC9C9C9FFE2E2E1FFF1F1F2FF4242A3FF0C0C99FF0A0AA4FF
+            0A0AA4FF0A0AA4FF0B0BA3FF0B0BA3FF0B0BA1FF0E0EA1FF4443B0FFEDEDEEFF
+            6A6A6BE16A6A6BC0DADADAFF9C9BD5FE4949CDFF3E3DD0FF3C3DCEFF3C3CCAFF
+            3A3AC8FF3B39C7FF2828BDFF5C5CCCFFE5E5EDFFF4F4EDFFE5E5E6FFDEDEDEFF
+            DCDCD9FFD9D9D3FFCDCDCDFFC8C8C8FFE5E5E1FFF1F1F3FF3F3FA0FF0C0C99FF
+            0A0AA4FF0B0BA1FF0B0BA0FF0B0BA0FF0B0B9FFF1313A2FF6B6BC0FFDADADAFF
+            6A6A6BC06A6A6B94C0C0C0FDBDBAE1FE5655CFFF4141D4FF3F3FD2FF3F3FCEFF
+            3D3DCCFF2C2AC3FF5E5ED3FFEBEBF6FFFFFFFAFFF1F1F1FFEDEDEEFFF0F0E9FF
+            D2D2E6FFBDBDD6FFDADAD3FFCFCFCFFFC9C9CAFFE5E5E2FFF1F1F3FF3A3AA0FF
+            0C0C98FF0B0BA3FF0B0B9FFF0B0B9EFF0B0B9EFF1C1CA4FF9C9CD3FFC1C1C1FD
+            6A6A6B946A6A6B609F9F9FF6DAD9EAFF6B6BCFFF4444D7FF4143D6FF4242D3FF
+            3434CDFF6464DBFFEFEFFFFFFFFFFFFFFCFCFCFFF6F6F6FFFCFCF4FFE2E1F0FF
+            5050CCFF4040C1FFC3C3DBFFE1E1D8FFD4D4D5FFCFCFCFFFE8E8E5FFF2F2F4FF
+            4040A2FF0C0C99FF0F0FA2FF0F0FA0FF0F0F9DFF302FA9FFD1D1E8FEA0A0A0F6
+            6A6A6B606A6A6B25787879F1E9E9EBFEA7A7DAFF6060DBFF4547DBFF3C3CD6FF
+            5857DEFFF2F2FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFE8E8F8FF5B5BD4FF
+            2828BDFF2A2BBDFF4949C5FFC3C3DBFFE4E4DAFFD5D5D5FFCECED0FFE8E8E5FF
+            F4F4F4FF4949AFFF2121A6FF2A2AA6FF2C2BA9FF5557B8FFEAEAECFE787879F1
+            6A6A6B25000000007575769EBEBEBEFDC9CAE6FF7A79DBFF4C4CDFFF4141DBFF
+            5757E0FFEAEAFFFFFFFFFFFFFFFFFFFFFFFFFFFFE8E7FFFF5B5BD7FF2E2EC6FF
+            3E3EC9FF3A3AC5FF2C2EC1FF4A49C8FFC2C2DDFFE3E3DAFFD5D5D4FFDADAD3FF
+            CACBD9FF4747BBFF2525ADFF2C2BACFF3332AEFFA5A4D8FFBFBFBFFD7575769E
+            00000000000000006A6A6B40888889F0ECECEFFE9696D6FF7B7BE3FF4D4BE0FF
+            4141DBFF5F5FE6FFE7E7FFFFFFFFFFFFE9E9FFFF5A5ADCFF3333CAFF4242CFFF
+            4040CBFF3D3DC9FF3D3EC8FF3030C2FF4848C9FFC0C0DDFFECEEDEFFD0D0E0FF
+            5554C7FF2828B3FF3232B4FF3434B1FF5453B7FFECECEFFE888889F06A6A6B40
+            0000000000000000000000007C7C7C98B7B7B8FAD0D0ECFF8F8FDBFF6868E3FF
+            4E4EE2FF3E40DBFF6565E9FFB2B2F7FF6565E4FF393BD2FF4646D7FF4343D4FF
+            4343D1FF4242CFFF4040CBFF3F3FCAFF3333C4FF4E4ECBFF9E9EE2FF5C5BCFFF
+            292ABAFF3636BCFF3938B8FF3F3EB1FFCBCBE9FFB7B7B8FA7C7C7C9800000000
+            0000000000000000000000006A6A6B22838383D8D3D3D3FEB5B5E2FF9E9EE4FF
+            6766E2FF4E50E6FF4646E0FF3D3DDAFF4444DCFF4B4BDCFF4848DBFF4847D9FF
+            4646D5FF4443D3FF4343D1FF4242CFFF4143CDFF3A3AC8FF312FC5FF3535C3FF
+            3C3CC3FF3D3DBEFF403FB5FFACACDCFFD3D3D3FE838383D86A6A6B2200000000
+            000000000000000000000000000000006A6A6B43878788EAE1E1E1FFB5B5E2FF
+            A7A6E4FF7877E5FF5151E5FF4F4FE4FF4E4EE2FF4D4DE0FF4C4CDEFF4B4BDCFF
+            4949DBFF4848D7FF4747D5FF4545D3FF4545D1FF4343CFFF4242CCFF3F3FCBFF
+            4343C2FF4645B6FFADADDCFFE1E1E1FF878788EA6A6A6B430000000000000000
+            00000000000000000000000000000000000000006A6A6B4E878788EAD3D3D3FE
+            D0D0ECFFAAA9DFFFA2A2ECFF6565E3FF5151E6FF4F4FE4FF4F4DE4FF4D4DE0FF
+            4D4DDFFF4D4DDCFF4C49DBFF4A4AD8FF4749D6FF4747D4FF4949CBFF4B4BC3FF
+            8E8ED0FFCDCCE8FFD3D3D3FE878788EA6A6A6B4E000000000000000000000000
+            0000000000000000000000000000000000000000000000006A6A6B43838383D8
+            B7B7B8FAECECEFFEC3C2E5FFADAEE1FF9E9DE8FF6F6FE0FF5C5CE1FF5452E2FF
+            5051E1FF4F4FDFFF4F4FDBFF5150D6FF5151CFFF5F5FC8FFA1A1D3FEC7C8E0FE
+            E4E4E7FEB7B7B8FA838383D86A6A6B4300000000000000000000000000000000
+            000000000000000000000000000000000000000000000000000000006A6A6B22
+            7C7C7C98888889F0BFBFBFFDEBEBECFED8D9EBFEBDBDE4FEA8A7DCFF9695D7FF
+            8886D4FF7F7DCEFF8C8BD2FFA1A2D9FFC0BEE1FED9D9EAFEEAEAECFEBFBFBFFD
+            888889F07C7C7C986A6A6B220000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            000000006A6A6B407575769E787879F19F9F9FF6C0C0C0FDDADADAFFEDEDEEFF
+            FBFBFBFFFBFBFBFFEDEDEEFFDADADAFFC0C0C0FD9F9F9FF6787879F17575769E
+            6A6A6B4000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000006A6A6B256A6A6B606A6A6B946A6A6BC06A6A6BE1
+            6A6A6BF86A6A6BF86A6A6BE16A6A6BC06A6A6B946A6A6B606A6A6B2500000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            00000000FFC003FFFF0000FFFC00003FF800001FF000000FE0000007C0000003
+            C000000380000001800000010000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000080000001
+            80000001C0000003C0000003E0000007F000000FF800001FFC00003FFF0000FF
+            FFC003FF}
+          ShowUnicode = False
+          ColWidths = (
+            70
+            70)
+          RowHeights = (
+            22
+            22)
+        end
+      end
+      object pagArticulos: TTabSheet
+        Caption = 'Articulos'
+        ImageIndex = 1
+        object Panel2: TPanel
+          Left = 0
+          Top = 0
+          Width = 1017
+          Height = 41
+          Align = alTop
+          BevelOuter = bvNone
+          Caption = 'Articulos'
+          Color = clMenuHighlight
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWhite
+          Font.Height = -19
+          Font.Name = 'MS Sans Serif'
+          Font.Style = [fsBold]
+          ParentBackground = False
+          ParentFont = False
+          TabOrder = 0
+          DesignSize = (
+            1017
+            41)
+          object btArticulos: TButton
+            Left = 912
+            Top = 8
+            Width = 91
+            Height = 25
+            Anchors = [akTop, akRight]
+            Caption = 'Buscar'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWhite
+            Font.Height = -13
+            Font.Name = 'MS Sans Serif'
+            Font.Style = []
+            ParentFont = False
+            TabOrder = 0
+            OnClick = btArticulosClick
+          end
+        end
+        object dbgArticulos: TDBAdvGrid
+          Left = 0
+          Top = 41
+          Width = 1017
+          Height = 491
+          Align = alClient
+          ColCount = 2
+          DrawingStyle = gdsClassic
+          FixedColor = clWhite
+          FixedCols = 0
+          RowCount = 2
+          FixedRows = 1
+          Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goRangeSelect, goColSizing, goFixedRowDefAlign]
+          TabOrder = 1
+          GridLineColor = 13948116
+          GridFixedLineColor = 11250603
+          OnSaveCell = dbgArticulosSaveCell
+          ActiveCellFont.Charset = DEFAULT_CHARSET
+          ActiveCellFont.Color = 4474440
+          ActiveCellFont.Height = -12
+          ActiveCellFont.Name = 'Segoe UI'
+          ActiveCellFont.Style = [fsBold]
+          ActiveCellColor = 11565130
+          ActiveCellColorTo = 11565130
+          BorderColor = 11250603
+          ColumnSize.Stretch = True
+          ControlLook.FixedGradientFrom = clWhite
+          ControlLook.FixedGradientTo = clWhite
+          ControlLook.FixedGradientHoverFrom = clGray
+          ControlLook.FixedGradientHoverTo = clWhite
+          ControlLook.FixedGradientHoverMirrorFrom = clWhite
+          ControlLook.FixedGradientHoverMirrorTo = clWhite
+          ControlLook.FixedGradientHoverBorder = 11645361
+          ControlLook.FixedGradientDownFrom = clWhite
+          ControlLook.FixedGradientDownTo = clWhite
+          ControlLook.FixedGradientDownMirrorFrom = clWhite
+          ControlLook.FixedGradientDownMirrorTo = clWhite
+          ControlLook.FixedGradientDownBorder = 11250603
+          ControlLook.DropDownHeader.Font.Charset = DEFAULT_CHARSET
+          ControlLook.DropDownHeader.Font.Color = clWindowText
+          ControlLook.DropDownHeader.Font.Height = -11
+          ControlLook.DropDownHeader.Font.Name = 'Segoe UI'
+          ControlLook.DropDownHeader.Font.Style = []
+          ControlLook.DropDownHeader.Visible = True
+          ControlLook.DropDownHeader.Buttons = <>
+          ControlLook.DropDownFooter.Font.Charset = DEFAULT_CHARSET
+          ControlLook.DropDownFooter.Font.Color = clWindowText
+          ControlLook.DropDownFooter.Font.Height = -11
+          ControlLook.DropDownFooter.Font.Name = 'Segoe UI'
+          ControlLook.DropDownFooter.Font.Style = []
+          ControlLook.DropDownFooter.Visible = True
+          ControlLook.DropDownFooter.Buttons = <>
+          ControlLook.ToggleSwitch.BackgroundBorderWidth = 1.000000000000000000
+          ControlLook.ToggleSwitch.ButtonBorderWidth = 1.000000000000000000
+          ControlLook.ToggleSwitch.CaptionFont.Charset = DEFAULT_CHARSET
+          ControlLook.ToggleSwitch.CaptionFont.Color = clWindowText
+          ControlLook.ToggleSwitch.CaptionFont.Height = -12
+          ControlLook.ToggleSwitch.CaptionFont.Name = 'Segoe UI'
+          ControlLook.ToggleSwitch.CaptionFont.Style = []
+          ControlLook.ToggleSwitch.Shadow = False
+          Filter = <>
+          FilterDropDown.Font.Charset = DEFAULT_CHARSET
+          FilterDropDown.Font.Color = clWindowText
+          FilterDropDown.Font.Height = -12
+          FilterDropDown.Font.Name = 'Segoe UI'
+          FilterDropDown.Font.Style = []
+          FilterDropDown.TextChecked = 'Checked'
+          FilterDropDown.TextUnChecked = 'Unchecked'
+          FilterDropDownClear = '(All)'
+          FilterEdit.TypeNames.Strings = (
+            'Starts with'
+            'Ends with'
+            'Contains'
+            'Not contains'
+            'Equal'
+            'Not equal'
+            'Larger than'
+            'Smaller than'
+            'Clear')
+          FixedColWidth = 97
+          FixedRowHeight = 22
+          FixedFont.Charset = DEFAULT_CHARSET
+          FixedFont.Color = 3881787
+          FixedFont.Height = -11
+          FixedFont.Name = 'Segoe UI'
+          FixedFont.Style = [fsBold]
+          FloatFormat = '%.2f'
+          HoverButtons.Buttons = <>
+          HTMLSettings.ImageFolder = 'images'
+          HTMLSettings.ImageBaseName = 'img'
+          Look = glCustom
+          PrintSettings.DateFormat = 'dd/mm/yyyy'
+          PrintSettings.Font.Charset = DEFAULT_CHARSET
+          PrintSettings.Font.Color = clWindowText
+          PrintSettings.Font.Height = -12
+          PrintSettings.Font.Name = 'Segoe UI'
+          PrintSettings.Font.Style = []
+          PrintSettings.FixedFont.Charset = DEFAULT_CHARSET
+          PrintSettings.FixedFont.Color = clWindowText
+          PrintSettings.FixedFont.Height = -12
+          PrintSettings.FixedFont.Name = 'Segoe UI'
+          PrintSettings.FixedFont.Style = []
+          PrintSettings.HeaderFont.Charset = DEFAULT_CHARSET
+          PrintSettings.HeaderFont.Color = clWindowText
+          PrintSettings.HeaderFont.Height = -12
+          PrintSettings.HeaderFont.Name = 'Segoe UI'
+          PrintSettings.HeaderFont.Style = []
+          PrintSettings.FooterFont.Charset = DEFAULT_CHARSET
+          PrintSettings.FooterFont.Color = clWindowText
+          PrintSettings.FooterFont.Height = -12
+          PrintSettings.FooterFont.Name = 'Segoe UI'
+          PrintSettings.FooterFont.Style = []
+          PrintSettings.PageNumSep = '/'
+          SearchFooter.ColorTo = clNone
+          SearchFooter.FindNextCaption = 'Find &next'
+          SearchFooter.FindPrevCaption = 'Find &previous'
+          SearchFooter.Font.Charset = DEFAULT_CHARSET
+          SearchFooter.Font.Color = clWindowText
+          SearchFooter.Font.Height = -12
+          SearchFooter.Font.Name = 'Segoe UI'
+          SearchFooter.Font.Style = []
+          SearchFooter.HighLightCaption = 'Highlight'
+          SearchFooter.HintClose = 'Close'
+          SearchFooter.HintFindNext = 'Find next occurrence'
+          SearchFooter.HintFindPrev = 'Find previous occurrence'
+          SearchFooter.HintHighlight = 'Highlight occurrences'
+          SearchFooter.MatchCaseCaption = 'Match case'
+          SearchFooter.ResultFormat = '(%d of %d)'
+          SelectionColor = 13744549
+          SortSettings.HeaderColor = clWhite
+          SortSettings.HeaderColorTo = clWhite
+          SortSettings.HeaderMirrorColor = clWhite
+          SortSettings.HeaderMirrorColorTo = clWhite
+          Version = '2.5.1.20'
+          AutoCreateColumns = True
+          AutoRemoveColumns = True
+          Columns = <
+            item
+              Borders = []
+              BorderPen.Color = clSilver
+              ButtonHeight = 18
+              CheckFalse = 'N'
+              CheckTrue = 'Y'
+              Color = clWindow
+              EditLength = 8
+              Font.Charset = DEFAULT_CHARSET
+              Font.Color = clWindowText
+              Font.Height = -11
+              Font.Name = 'MS Sans Serif'
+              Font.Style = []
+              HeaderFont.Charset = DEFAULT_CHARSET
+              HeaderFont.Color = 3881787
+              HeaderFont.Height = -12
+              HeaderFont.Name = 'Segoe UI'
+              HeaderFont.Style = []
+              PrintBorders = [cbTop, cbLeft, cbRight, cbBottom]
+              PrintFont.Charset = DEFAULT_CHARSET
+              PrintFont.Color = clWindowText
+              PrintFont.Height = -12
+              PrintFont.Name = 'Segoe UI'
+              PrintFont.Style = []
+              Width = 97
+            end
+            item
+              Borders = []
+              BorderPen.Color = clSilver
+              ButtonHeight = 18
+              CheckFalse = 'N'
+              CheckTrue = 'Y'
+              Color = clWindow
+              EditLength = 45
+              Font.Charset = DEFAULT_CHARSET
+              Font.Color = clWindowText
+              Font.Height = -11
+              Font.Name = 'MS Sans Serif'
+              Font.Style = []
+              HeaderFont.Charset = DEFAULT_CHARSET
+              HeaderFont.Color = 3881787
+              HeaderFont.Height = -12
+              HeaderFont.Name = 'Segoe UI'
+              HeaderFont.Style = []
+              PrintBorders = [cbTop, cbLeft, cbRight, cbBottom]
+              PrintFont.Charset = DEFAULT_CHARSET
+              PrintFont.Color = clWindowText
+              PrintFont.Height = -12
+              PrintFont.Name = 'Segoe UI'
+              PrintFont.Style = []
+              Width = 916
+            end>
+          DataSource = DSArticulos
+          InvalidPicture.Data = {
+            055449636F6E0000010001002020200000000000A81000001600000028000000
+            2000000040000000010020000000000000100000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000006A6A6B256A6A6B606A6A6B946A6A6BC06A6A6BE1
+            6A6A6BF86A6A6BF86A6A6BE16A6A6BC06A6A6B946A6A6B606A6A6B2500000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            000000006A6A6B407575769E787879F19F9F9FF6C0C0C0FDDADADAFFEDEDEEFF
+            FBFBFBFFFBFBFBFFEDEDEEFFDADADAFFC0C0C0FD9F9F9FF6787879F17575769E
+            6A6A6B4000000000000000000000000000000000000000000000000000000000
+            000000000000000000000000000000000000000000000000000000006A6A6B22
+            7C7C7C98888889F0BDBDBDFCE9E9EBFED9D9E9FEB5B5DDFE8B8BCDFE595AB7FF
+            3739A8FF2B2CA4FF4A49B1FF7171C1FFA1A2D7FFD3D3E8FFEAEAEBFEBEBEBFFC
+            888889F07C7C7C986A6A6B220000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000006A6A6B43838383D8
+            B7B7B8FAECECEFFEC0C0DFFF7977C4FF2221A0FF12129BFF1010A4FF0C0CA8FF
+            0A0AACFF0A0AB4FF0A0AB9FF0D0DBEFF0F0FB1FF1111A6FF5656B8FFAEADDCFF
+            ECECEFFEB7B7B8FA838383D86A6A6B4300000000000000000000000000000000
+            00000000000000000000000000000000000000006A6A6B4E878788EAD3D3D3FE
+            CACAE8FF4443B0FF171799FF11119CFF0C0C98FF0B0B9BFF0B0BA0FF0A0AA6FF
+            0909ACFF0909B2FF0808BAFF0707BFFF0B09C8FF0D0DCEFF1111CCFF1010AFFF
+            4A49B2FFCFCFEBFFD3D3D3FE878788EA6A6A6B4E000000000000000000000000
+            000000000000000000000000000000006A6A6B43878788EAE1E1E1FFA8A8DAFF
+            2323A0FF15159CFF0D0D92FF0C0C95FF0C0C99FF0B0B9EFF0B0BA0FF0A0AA6FF
+            0909ACFF0909B2FF0808B8FF0808BCFF0808C3FF0C0CC9FF0C0CD0FF0D0DD6FF
+            1313CFFF2222A9FFAFAFDEFFE1E1E1FF878788EA6A6A6B430000000000000000
+            0000000000000000000000006A6A6B22838383D8D3D3D3FEA8A8D9FF2020A4FF
+            13139BFF0C0C92FF0C0C95FF0C0C97FF0C0C99FF0B0B9EFF0B0BA0FF0A0AA4FF
+            0A0AA9FF0909B0FF0808B4FF0808BBFF0707C0FF0A0AC6FF0909CCFF0C0CD3FF
+            0D0DD8FF1313D3FF1A1AA8FFAEADDEFFD4D4D4FE838383D86A6A6B2200000000
+            0000000000000000000000007C7C7C98B7B7B8FACACAE8FF2524A3FF13139FFF
+            0C0C97FF0C0C95FF0C0C95FF0C0C91FF0C0C95FF0B0B9EFF0B0BA0FF0A0AA4FF
+            0A0AA8FF0909ADFF0909B2FF0808B8FF0808BCFF0707C0FF0808BCFF0707C5FF
+            0C0CD3FF0D0DD7FF1212D1FF2020A7FFCDCDEBFFB8B8B9FA7C7C7C9800000000
+            00000000000000006A6A6B40888889F0ECECEFFE4545B1FF1616A4FF0B0B9BFF
+            0C0C99FF0C0C96FF3333A2FFB9B9D0FF393A9BFF0C0C95FF0B0BA1FF0A0AA4FF
+            0A0AA7FF0A0AABFF0909B0FF0808B4FF0808B7FF2F2FC2FFAEAEE2FF4B4BBFFF
+            0707BEFF0B0BD1FF0C0CD3FF1413CCFF4848B1FFECECEFFE888889F06A6A6B40
+            00000000000000007575769EBFBFBFFD9B9BD5FF1C1CA6FF0C0CA1FF0B0B9FFF
+            0B0B9AFF3535A7FFB5B5BEFFE6E6DFFFEDEDEFFF3C3C9CFF0C0C97FF0A0AA4FF
+            0A0AA6FF0A0AA9FF0909ADFF0909B0FF2626B5FFCECEDEFFFFFFFBFFEEEEF1FF
+            4848BAFF0808BCFF0A0ACDFF0B0BCEFF1111ABFFBEC0E0FFBFC0BFFD7575769E
+            000000006A6A6B25787879F1E3E3E5FE4646B2FF1414A8FF0A0AA4FF0B0BA0FF
+            2121A9FFBDBDCAFFD0D0C8FFC5C5C5FFE3E3E1FFEDEDEFFF3E3E9EFF0C0C98FF
+            0A0AA6FF0A0AA8FF0A0AA9FF2B2BB0FFC0C0CDFFEAEAE2FFEBEBEBFFFEFEF8FF
+            EDEDEEFF2828BDFF0707C4FF0809C7FF0F0FC4FF8788CBFFEBEBECFE79797AF1
+            6A6A6B256A6A6B609D9E9DF6D6D7E4FF3A3AB3FF1212ADFF0A0AA8FF0A0AA4FF
+            1313AAFFABABCFFFD6D6CBFFCACACAFFC6C6C6FFE4E4E0FFEEEEEFFF3F3FA0FF
+            0C0C99FF0A0AA6FF2828ABFFB2B2BFFFD8D8CEFFD6D6D8FFE0E0E0FFF6F5EDFF
+            D1D1EDFF1E1CC0FF0707BEFF0707BFFF0707C0FF2120AAFFD3D5E9FE9FA0A0F6
+            6A6A6B606A6A6B94BDBDBDFBBABBDCFF3A39B7FF2F2FB8FF0909ADFF0A0AA9FF
+            0A0AA6FF1515ACFFADADCFFFD6D6CBFFCBCBCAFFC6C6C6FFE4E4E1FFEEEEEFFF
+            3838A1FF2222A2FFACABB8FFC8C8C0FFC7C7C8FFCDCDCDFFE1E1D9FFC8CAE1FF
+            2424BCFF0808B4FF0808B9FF0808BAFF0808BBFF0F0EABFFA1A2D5FEC0C0C0FC
+            6A6A6B946A6A6BC0D9D8D7FE9999D1FF3838BBFF3636BCFF2C2CB7FF0909ADFF
+            0A0AA9FF0A0AA4FF1C1CAFFFB1B1CFFFD6D6CBFFCCCCCBFFC7C7C7FFE4E4E1FF
+            ECECEEFFACACB7FFC2C2BCFFBEBEBFFFC0C0C0FFCFCFC6FFC1C1D5FF2727B8FF
+            0909ACFF0909B2FF0909B2FF0909B4FF0808B4FF0E0EB5FF6E6EBFFFD9D9D9FE
+            6A6A6BC06A6A6BE1EBEAEBFF7D7CC7FF3838BFFF3434BEFF3536BEFF2A2AB8FF
+            0909B0FF0909ACFF0A0AA8FF1C1CB1FFB2B2D0FFD7D7CCFFCBCBCBFFC7C7C8FF
+            C8C8C3FFC6C6C3FFBFBFC1FFBDBDBDFFC5C5BCFFB8B8CEFF2929B5FF0A0AA8FF
+            0909ACFF0909ADFF0909AFFF0909AFFF0909AFFF0C0CB0FF4747AFFFECECEDFF
+            6A6A6BE16A6A6BF8F9F9F9FF6666C1FF3838C4FF3535C2FF3434C0FF3535BEFF
+            3030BCFF1313B4FF0909ADFF0A0AA8FF1E1EB3FFAAAAD0FFD3D3CDFFCCCCCCFF
+            C8C8C8FFC3C3C3FFC2C2C1FFC4C4BFFFB2B2CBFF2B2BB4FF0A0AA4FF0A0AA8FF
+            0A0AA8FF0A0AA9FF0A0AA9FF0A0AA9FF0A0AA9FF0B0BA9FF3131A6FFFAFAFAFF
+            6A6A6BF86A6A6BF8FBFBFBFF5959BEFF3B3BCAFF3A3AC8FF3737C4FF3535C2FF
+            3636C0FF3636BEFF2323B8FF0909B1FF0A0AA7FF4949BEFFD6D6D4FFD3D3D1FF
+            CDCDCDFFC8C8C8FFC4C4C3FFEDEDEDFF5F5FB3FF0C0C98FF0A0AA7FF0A0AA6FF
+            0A0AA6FF0A0AA6FF0A0AA4FF0A0AA6FF0A0AA4FF0B0BA4FF2D2DA6FFFBFBFBFF
+            6A6A6BF86A6A6BE1EDEDEEFF7F80CBFF4041CCFF3C3CCAFF3A3AC8FF383AC8FF
+            3838C4FF3636C2FF3939C0FF2123B7FF4A4AC2FFCBCBDEFFE0E0DCFFD6D6D6FF
+            D2D2D3FFCDCDCEFFC9C9C9FFE2E2E1FFF1F1F2FF4242A3FF0C0C99FF0A0AA4FF
+            0A0AA4FF0A0AA4FF0B0BA3FF0B0BA3FF0B0BA1FF0E0EA1FF4443B0FFEDEDEEFF
+            6A6A6BE16A6A6BC0DADADAFF9C9BD5FE4949CDFF3E3DD0FF3C3DCEFF3C3CCAFF
+            3A3AC8FF3B39C7FF2828BDFF5C5CCCFFE5E5EDFFF4F4EDFFE5E5E6FFDEDEDEFF
+            DCDCD9FFD9D9D3FFCDCDCDFFC8C8C8FFE5E5E1FFF1F1F3FF3F3FA0FF0C0C99FF
+            0A0AA4FF0B0BA1FF0B0BA0FF0B0BA0FF0B0B9FFF1313A2FF6B6BC0FFDADADAFF
+            6A6A6BC06A6A6B94C0C0C0FDBDBAE1FE5655CFFF4141D4FF3F3FD2FF3F3FCEFF
+            3D3DCCFF2C2AC3FF5E5ED3FFEBEBF6FFFFFFFAFFF1F1F1FFEDEDEEFFF0F0E9FF
+            D2D2E6FFBDBDD6FFDADAD3FFCFCFCFFFC9C9CAFFE5E5E2FFF1F1F3FF3A3AA0FF
+            0C0C98FF0B0BA3FF0B0B9FFF0B0B9EFF0B0B9EFF1C1CA4FF9C9CD3FFC1C1C1FD
+            6A6A6B946A6A6B609F9F9FF6DAD9EAFF6B6BCFFF4444D7FF4143D6FF4242D3FF
+            3434CDFF6464DBFFEFEFFFFFFFFFFFFFFCFCFCFFF6F6F6FFFCFCF4FFE2E1F0FF
+            5050CCFF4040C1FFC3C3DBFFE1E1D8FFD4D4D5FFCFCFCFFFE8E8E5FFF2F2F4FF
+            4040A2FF0C0C99FF0F0FA2FF0F0FA0FF0F0F9DFF302FA9FFD1D1E8FEA0A0A0F6
+            6A6A6B606A6A6B25787879F1E9E9EBFEA7A7DAFF6060DBFF4547DBFF3C3CD6FF
+            5857DEFFF2F2FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFE8E8F8FF5B5BD4FF
+            2828BDFF2A2BBDFF4949C5FFC3C3DBFFE4E4DAFFD5D5D5FFCECED0FFE8E8E5FF
+            F4F4F4FF4949AFFF2121A6FF2A2AA6FF2C2BA9FF5557B8FFEAEAECFE787879F1
+            6A6A6B25000000007575769EBEBEBEFDC9CAE6FF7A79DBFF4C4CDFFF4141DBFF
+            5757E0FFEAEAFFFFFFFFFFFFFFFFFFFFFFFFFFFFE8E7FFFF5B5BD7FF2E2EC6FF
+            3E3EC9FF3A3AC5FF2C2EC1FF4A49C8FFC2C2DDFFE3E3DAFFD5D5D4FFDADAD3FF
+            CACBD9FF4747BBFF2525ADFF2C2BACFF3332AEFFA5A4D8FFBFBFBFFD7575769E
+            00000000000000006A6A6B40888889F0ECECEFFE9696D6FF7B7BE3FF4D4BE0FF
+            4141DBFF5F5FE6FFE7E7FFFFFFFFFFFFE9E9FFFF5A5ADCFF3333CAFF4242CFFF
+            4040CBFF3D3DC9FF3D3EC8FF3030C2FF4848C9FFC0C0DDFFECEEDEFFD0D0E0FF
+            5554C7FF2828B3FF3232B4FF3434B1FF5453B7FFECECEFFE888889F06A6A6B40
+            0000000000000000000000007C7C7C98B7B7B8FAD0D0ECFF8F8FDBFF6868E3FF
+            4E4EE2FF3E40DBFF6565E9FFB2B2F7FF6565E4FF393BD2FF4646D7FF4343D4FF
+            4343D1FF4242CFFF4040CBFF3F3FCAFF3333C4FF4E4ECBFF9E9EE2FF5C5BCFFF
+            292ABAFF3636BCFF3938B8FF3F3EB1FFCBCBE9FFB7B7B8FA7C7C7C9800000000
+            0000000000000000000000006A6A6B22838383D8D3D3D3FEB5B5E2FF9E9EE4FF
+            6766E2FF4E50E6FF4646E0FF3D3DDAFF4444DCFF4B4BDCFF4848DBFF4847D9FF
+            4646D5FF4443D3FF4343D1FF4242CFFF4143CDFF3A3AC8FF312FC5FF3535C3FF
+            3C3CC3FF3D3DBEFF403FB5FFACACDCFFD3D3D3FE838383D86A6A6B2200000000
+            000000000000000000000000000000006A6A6B43878788EAE1E1E1FFB5B5E2FF
+            A7A6E4FF7877E5FF5151E5FF4F4FE4FF4E4EE2FF4D4DE0FF4C4CDEFF4B4BDCFF
+            4949DBFF4848D7FF4747D5FF4545D3FF4545D1FF4343CFFF4242CCFF3F3FCBFF
+            4343C2FF4645B6FFADADDCFFE1E1E1FF878788EA6A6A6B430000000000000000
+            00000000000000000000000000000000000000006A6A6B4E878788EAD3D3D3FE
+            D0D0ECFFAAA9DFFFA2A2ECFF6565E3FF5151E6FF4F4FE4FF4F4DE4FF4D4DE0FF
+            4D4DDFFF4D4DDCFF4C49DBFF4A4AD8FF4749D6FF4747D4FF4949CBFF4B4BC3FF
+            8E8ED0FFCDCCE8FFD3D3D3FE878788EA6A6A6B4E000000000000000000000000
+            0000000000000000000000000000000000000000000000006A6A6B43838383D8
+            B7B7B8FAECECEFFEC3C2E5FFADAEE1FF9E9DE8FF6F6FE0FF5C5CE1FF5452E2FF
+            5051E1FF4F4FDFFF4F4FDBFF5150D6FF5151CFFF5F5FC8FFA1A1D3FEC7C8E0FE
+            E4E4E7FEB7B7B8FA838383D86A6A6B4300000000000000000000000000000000
+            000000000000000000000000000000000000000000000000000000006A6A6B22
+            7C7C7C98888889F0BFBFBFFDEBEBECFED8D9EBFEBDBDE4FEA8A7DCFF9695D7FF
+            8886D4FF7F7DCEFF8C8BD2FFA1A2D9FFC0BEE1FED9D9EAFEEAEAECFEBFBFBFFD
+            888889F07C7C7C986A6A6B220000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            000000006A6A6B407575769E787879F19F9F9FF6C0C0C0FDDADADAFFEDEDEEFF
+            FBFBFBFFFBFBFBFFEDEDEEFFDADADAFFC0C0C0FD9F9F9FF6787879F17575769E
+            6A6A6B4000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000006A6A6B256A6A6B606A6A6B946A6A6BC06A6A6BE1
+            6A6A6BF86A6A6BF86A6A6BE16A6A6BC06A6A6B946A6A6B606A6A6B2500000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            00000000FFC003FFFF0000FFFC00003FF800001FF000000FE0000007C0000003
+            C000000380000001800000010000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000080000001
+            80000001C0000003C0000003E0000007F000000FF800001FFC00003FFF0000FF
+            FFC003FF}
+          ShowUnicode = False
+          ExplicitTop = 39
+          ExplicitWidth = 1097
+          ExplicitHeight = 504
+          ColWidths = (
+            97
+            916)
+          RowHeights = (
+            22
+            22)
+        end
+      end
+      object pagStock: TTabSheet
+        Caption = 'Stock'
+        ImageIndex = 2
+        object Panel3: TPanel
+          Left = 0
+          Top = 0
+          Width = 1017
+          Height = 41
+          Align = alTop
+          BevelOuter = bvNone
+          Caption = 'Stock'
+          Color = clMenuHighlight
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWhite
+          Font.Height = -19
+          Font.Name = 'MS Sans Serif'
+          Font.Style = [fsBold]
+          ParentBackground = False
+          ParentFont = False
+          TabOrder = 0
+          DesignSize = (
+            1017
+            41)
+          object btStock: TButton
+            Left = 912
+            Top = 8
+            Width = 91
+            Height = 25
+            Anchors = [akTop, akRight]
+            Caption = 'Buscar'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWhite
+            Font.Height = -13
+            Font.Name = 'MS Sans Serif'
+            Font.Style = []
+            ParentFont = False
+            TabOrder = 0
+            OnClick = btStockClick
+          end
+        end
+        object dbgStock: TDBAdvGrid
+          Left = 0
+          Top = 41
+          Width = 1017
+          Height = 491
+          Align = alClient
+          ColCount = 2
+          Ctl3D = False
+          DrawingStyle = gdsClassic
+          FixedColor = clWhite
+          FixedCols = 0
+          RowCount = 2
+          FixedRows = 1
+          Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goRangeSelect, goColSizing, goFixedRowDefAlign]
+          ParentCtl3D = False
+          TabOrder = 1
+          GridLineColor = 13948116
+          GridFixedLineColor = 11250603
+          OnGetFormat = dbgStockGetFormat
+          OnSaveCell = dbgStockSaveCell
+          ActiveCellFont.Charset = DEFAULT_CHARSET
+          ActiveCellFont.Color = 4474440
+          ActiveCellFont.Height = -12
+          ActiveCellFont.Name = 'Segoe UI'
+          ActiveCellFont.Style = [fsBold]
+          ActiveCellColor = 11565130
+          ActiveCellColorTo = 11565130
+          AutoNumAlign = True
+          AutoSize = True
+          BorderColor = 11250603
+          ColumnSize.StretchAll = True
+          ColumnSize.SynchWithGrid = True
+          ControlLook.FixedGradientFrom = clWhite
+          ControlLook.FixedGradientTo = clWhite
+          ControlLook.FixedGradientHoverFrom = clGray
+          ControlLook.FixedGradientHoverTo = clWhite
+          ControlLook.FixedGradientHoverMirrorFrom = clWhite
+          ControlLook.FixedGradientHoverMirrorTo = clWhite
+          ControlLook.FixedGradientHoverBorder = 11645361
+          ControlLook.FixedGradientDownFrom = clWhite
+          ControlLook.FixedGradientDownTo = clWhite
+          ControlLook.FixedGradientDownMirrorFrom = clWhite
+          ControlLook.FixedGradientDownMirrorTo = clWhite
+          ControlLook.FixedGradientDownBorder = 11250603
+          ControlLook.DropDownHeader.Font.Charset = DEFAULT_CHARSET
+          ControlLook.DropDownHeader.Font.Color = clWindowText
+          ControlLook.DropDownHeader.Font.Height = -11
+          ControlLook.DropDownHeader.Font.Name = 'Segoe UI'
+          ControlLook.DropDownHeader.Font.Style = []
+          ControlLook.DropDownHeader.Visible = True
+          ControlLook.DropDownHeader.Buttons = <>
+          ControlLook.DropDownFooter.Font.Charset = DEFAULT_CHARSET
+          ControlLook.DropDownFooter.Font.Color = clWindowText
+          ControlLook.DropDownFooter.Font.Height = -11
+          ControlLook.DropDownFooter.Font.Name = 'Segoe UI'
+          ControlLook.DropDownFooter.Font.Style = []
+          ControlLook.DropDownFooter.Visible = True
+          ControlLook.DropDownFooter.Buttons = <>
+          ControlLook.ToggleSwitch.BackgroundBorderWidth = 1.000000000000000000
+          ControlLook.ToggleSwitch.ButtonBorderWidth = 1.000000000000000000
+          ControlLook.ToggleSwitch.CaptionFont.Charset = DEFAULT_CHARSET
+          ControlLook.ToggleSwitch.CaptionFont.Color = clWindowText
+          ControlLook.ToggleSwitch.CaptionFont.Height = -12
+          ControlLook.ToggleSwitch.CaptionFont.Name = 'Segoe UI'
+          ControlLook.ToggleSwitch.CaptionFont.Style = []
+          ControlLook.ToggleSwitch.Shadow = False
+          Filter = <>
+          FilterDropDown.Font.Charset = DEFAULT_CHARSET
+          FilterDropDown.Font.Color = clWindowText
+          FilterDropDown.Font.Height = -12
+          FilterDropDown.Font.Name = 'Segoe UI'
+          FilterDropDown.Font.Style = []
+          FilterDropDown.TextChecked = 'Checked'
+          FilterDropDown.TextUnChecked = 'Unchecked'
+          FilterDropDownClear = '(All)'
+          FilterEdit.TypeNames.Strings = (
+            'Starts with'
+            'Ends with'
+            'Contains'
+            'Not contains'
+            'Equal'
+            'Not equal'
+            'Larger than'
+            'Smaller than'
+            'Clear')
+          FixedColWidth = 11
+          FixedRowHeight = 22
+          FixedFont.Charset = DEFAULT_CHARSET
+          FixedFont.Color = 3881787
+          FixedFont.Height = -11
+          FixedFont.Name = 'Segoe UI'
+          FixedFont.Style = [fsBold]
+          Flat = True
+          FloatFormat = '%.2f'
+          HoverButtons.Buttons = <>
+          HTMLSettings.ImageFolder = 'images'
+          HTMLSettings.ImageBaseName = 'img'
+          Look = glCustom
+          PrintSettings.DateFormat = 'dd/mm/yyyy'
+          PrintSettings.Font.Charset = DEFAULT_CHARSET
+          PrintSettings.Font.Color = clWindowText
+          PrintSettings.Font.Height = -12
+          PrintSettings.Font.Name = 'Segoe UI'
+          PrintSettings.Font.Style = []
+          PrintSettings.FixedFont.Charset = DEFAULT_CHARSET
+          PrintSettings.FixedFont.Color = clWindowText
+          PrintSettings.FixedFont.Height = -12
+          PrintSettings.FixedFont.Name = 'Segoe UI'
+          PrintSettings.FixedFont.Style = []
+          PrintSettings.HeaderFont.Charset = DEFAULT_CHARSET
+          PrintSettings.HeaderFont.Color = clWindowText
+          PrintSettings.HeaderFont.Height = -12
+          PrintSettings.HeaderFont.Name = 'Segoe UI'
+          PrintSettings.HeaderFont.Style = []
+          PrintSettings.FooterFont.Charset = DEFAULT_CHARSET
+          PrintSettings.FooterFont.Color = clWindowText
+          PrintSettings.FooterFont.Height = -12
+          PrintSettings.FooterFont.Name = 'Segoe UI'
+          PrintSettings.FooterFont.Style = []
+          PrintSettings.PageNumSep = '/'
+          SearchFooter.ColorTo = clNone
+          SearchFooter.FindNextCaption = 'Find &next'
+          SearchFooter.FindPrevCaption = 'Find &previous'
+          SearchFooter.Font.Charset = DEFAULT_CHARSET
+          SearchFooter.Font.Color = clWindowText
+          SearchFooter.Font.Height = -12
+          SearchFooter.Font.Name = 'Segoe UI'
+          SearchFooter.Font.Style = []
+          SearchFooter.HighLightCaption = 'Highlight'
+          SearchFooter.HintClose = 'Close'
+          SearchFooter.HintFindNext = 'Find next occurrence'
+          SearchFooter.HintFindPrev = 'Find previous occurrence'
+          SearchFooter.HintHighlight = 'Highlight occurrences'
+          SearchFooter.MatchCaseCaption = 'Match case'
+          SearchFooter.ResultFormat = '(%d of %d)'
+          SelectionColor = 13744549
+          SortSettings.HeaderColor = clWhite
+          SortSettings.HeaderColorTo = clWhite
+          SortSettings.HeaderMirrorColor = clWhite
+          SortSettings.HeaderMirrorColorTo = clWhite
+          Version = '2.5.1.20'
+          AutoCreateColumns = True
+          AutoRemoveColumns = True
+          Columns = <
+            item
+              Borders = []
+              BorderPen.Color = clSilver
+              ButtonHeight = 18
+              CheckFalse = 'N'
+              CheckTrue = 'Y'
+              Color = clWindow
+              EditLength = 8
+              Font.Charset = DEFAULT_CHARSET
+              Font.Color = clWindowText
+              Font.Height = -11
+              Font.Name = 'MS Sans Serif'
+              Font.Style = []
+              HeaderFont.Charset = DEFAULT_CHARSET
+              HeaderFont.Color = 3881787
+              HeaderFont.Height = -12
+              HeaderFont.Name = 'Segoe UI'
+              HeaderFont.Style = []
+              PrintBorders = [cbTop, cbLeft, cbRight, cbBottom]
+              PrintFont.Charset = DEFAULT_CHARSET
+              PrintFont.Color = clWindowText
+              PrintFont.Height = -12
+              PrintFont.Name = 'Segoe UI'
+              PrintFont.Style = []
+              Width = 11
+            end
+            item
+              Alignment = taRightJustify
+              Borders = []
+              BorderPen.Color = clSilver
+              ButtonHeight = 18
+              CheckFalse = 'N'
+              CheckTrue = 'Y'
+              Color = clWindow
+              Font.Charset = DEFAULT_CHARSET
+              Font.Color = clWindowText
+              Font.Height = -11
+              Font.Name = 'MS Sans Serif'
+              Font.Style = []
+              HeaderFont.Charset = DEFAULT_CHARSET
+              HeaderFont.Color = 3881787
+              HeaderFont.Height = -12
+              HeaderFont.Name = 'Segoe UI'
+              HeaderFont.Style = []
+              PrintBorders = [cbTop, cbLeft, cbRight, cbBottom]
+              PrintFont.Charset = DEFAULT_CHARSET
+              PrintFont.Color = clWindowText
+              PrintFont.Height = -12
+              PrintFont.Name = 'Segoe UI'
+              PrintFont.Style = []
+              Width = 12
+            end>
+          DataSource = DSStock
+          InvalidPicture.Data = {
+            055449636F6E0000010001002020200000000000A81000001600000028000000
+            2000000040000000010020000000000000100000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000006A6A6B256A6A6B606A6A6B946A6A6BC06A6A6BE1
+            6A6A6BF86A6A6BF86A6A6BE16A6A6BC06A6A6B946A6A6B606A6A6B2500000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            000000006A6A6B407575769E787879F19F9F9FF6C0C0C0FDDADADAFFEDEDEEFF
+            FBFBFBFFFBFBFBFFEDEDEEFFDADADAFFC0C0C0FD9F9F9FF6787879F17575769E
+            6A6A6B4000000000000000000000000000000000000000000000000000000000
+            000000000000000000000000000000000000000000000000000000006A6A6B22
+            7C7C7C98888889F0BDBDBDFCE9E9EBFED9D9E9FEB5B5DDFE8B8BCDFE595AB7FF
+            3739A8FF2B2CA4FF4A49B1FF7171C1FFA1A2D7FFD3D3E8FFEAEAEBFEBEBEBFFC
+            888889F07C7C7C986A6A6B220000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000006A6A6B43838383D8
+            B7B7B8FAECECEFFEC0C0DFFF7977C4FF2221A0FF12129BFF1010A4FF0C0CA8FF
+            0A0AACFF0A0AB4FF0A0AB9FF0D0DBEFF0F0FB1FF1111A6FF5656B8FFAEADDCFF
+            ECECEFFEB7B7B8FA838383D86A6A6B4300000000000000000000000000000000
+            00000000000000000000000000000000000000006A6A6B4E878788EAD3D3D3FE
+            CACAE8FF4443B0FF171799FF11119CFF0C0C98FF0B0B9BFF0B0BA0FF0A0AA6FF
+            0909ACFF0909B2FF0808BAFF0707BFFF0B09C8FF0D0DCEFF1111CCFF1010AFFF
+            4A49B2FFCFCFEBFFD3D3D3FE878788EA6A6A6B4E000000000000000000000000
+            000000000000000000000000000000006A6A6B43878788EAE1E1E1FFA8A8DAFF
+            2323A0FF15159CFF0D0D92FF0C0C95FF0C0C99FF0B0B9EFF0B0BA0FF0A0AA6FF
+            0909ACFF0909B2FF0808B8FF0808BCFF0808C3FF0C0CC9FF0C0CD0FF0D0DD6FF
+            1313CFFF2222A9FFAFAFDEFFE1E1E1FF878788EA6A6A6B430000000000000000
+            0000000000000000000000006A6A6B22838383D8D3D3D3FEA8A8D9FF2020A4FF
+            13139BFF0C0C92FF0C0C95FF0C0C97FF0C0C99FF0B0B9EFF0B0BA0FF0A0AA4FF
+            0A0AA9FF0909B0FF0808B4FF0808BBFF0707C0FF0A0AC6FF0909CCFF0C0CD3FF
+            0D0DD8FF1313D3FF1A1AA8FFAEADDEFFD4D4D4FE838383D86A6A6B2200000000
+            0000000000000000000000007C7C7C98B7B7B8FACACAE8FF2524A3FF13139FFF
+            0C0C97FF0C0C95FF0C0C95FF0C0C91FF0C0C95FF0B0B9EFF0B0BA0FF0A0AA4FF
+            0A0AA8FF0909ADFF0909B2FF0808B8FF0808BCFF0707C0FF0808BCFF0707C5FF
+            0C0CD3FF0D0DD7FF1212D1FF2020A7FFCDCDEBFFB8B8B9FA7C7C7C9800000000
+            00000000000000006A6A6B40888889F0ECECEFFE4545B1FF1616A4FF0B0B9BFF
+            0C0C99FF0C0C96FF3333A2FFB9B9D0FF393A9BFF0C0C95FF0B0BA1FF0A0AA4FF
+            0A0AA7FF0A0AABFF0909B0FF0808B4FF0808B7FF2F2FC2FFAEAEE2FF4B4BBFFF
+            0707BEFF0B0BD1FF0C0CD3FF1413CCFF4848B1FFECECEFFE888889F06A6A6B40
+            00000000000000007575769EBFBFBFFD9B9BD5FF1C1CA6FF0C0CA1FF0B0B9FFF
+            0B0B9AFF3535A7FFB5B5BEFFE6E6DFFFEDEDEFFF3C3C9CFF0C0C97FF0A0AA4FF
+            0A0AA6FF0A0AA9FF0909ADFF0909B0FF2626B5FFCECEDEFFFFFFFBFFEEEEF1FF
+            4848BAFF0808BCFF0A0ACDFF0B0BCEFF1111ABFFBEC0E0FFBFC0BFFD7575769E
+            000000006A6A6B25787879F1E3E3E5FE4646B2FF1414A8FF0A0AA4FF0B0BA0FF
+            2121A9FFBDBDCAFFD0D0C8FFC5C5C5FFE3E3E1FFEDEDEFFF3E3E9EFF0C0C98FF
+            0A0AA6FF0A0AA8FF0A0AA9FF2B2BB0FFC0C0CDFFEAEAE2FFEBEBEBFFFEFEF8FF
+            EDEDEEFF2828BDFF0707C4FF0809C7FF0F0FC4FF8788CBFFEBEBECFE79797AF1
+            6A6A6B256A6A6B609D9E9DF6D6D7E4FF3A3AB3FF1212ADFF0A0AA8FF0A0AA4FF
+            1313AAFFABABCFFFD6D6CBFFCACACAFFC6C6C6FFE4E4E0FFEEEEEFFF3F3FA0FF
+            0C0C99FF0A0AA6FF2828ABFFB2B2BFFFD8D8CEFFD6D6D8FFE0E0E0FFF6F5EDFF
+            D1D1EDFF1E1CC0FF0707BEFF0707BFFF0707C0FF2120AAFFD3D5E9FE9FA0A0F6
+            6A6A6B606A6A6B94BDBDBDFBBABBDCFF3A39B7FF2F2FB8FF0909ADFF0A0AA9FF
+            0A0AA6FF1515ACFFADADCFFFD6D6CBFFCBCBCAFFC6C6C6FFE4E4E1FFEEEEEFFF
+            3838A1FF2222A2FFACABB8FFC8C8C0FFC7C7C8FFCDCDCDFFE1E1D9FFC8CAE1FF
+            2424BCFF0808B4FF0808B9FF0808BAFF0808BBFF0F0EABFFA1A2D5FEC0C0C0FC
+            6A6A6B946A6A6BC0D9D8D7FE9999D1FF3838BBFF3636BCFF2C2CB7FF0909ADFF
+            0A0AA9FF0A0AA4FF1C1CAFFFB1B1CFFFD6D6CBFFCCCCCBFFC7C7C7FFE4E4E1FF
+            ECECEEFFACACB7FFC2C2BCFFBEBEBFFFC0C0C0FFCFCFC6FFC1C1D5FF2727B8FF
+            0909ACFF0909B2FF0909B2FF0909B4FF0808B4FF0E0EB5FF6E6EBFFFD9D9D9FE
+            6A6A6BC06A6A6BE1EBEAEBFF7D7CC7FF3838BFFF3434BEFF3536BEFF2A2AB8FF
+            0909B0FF0909ACFF0A0AA8FF1C1CB1FFB2B2D0FFD7D7CCFFCBCBCBFFC7C7C8FF
+            C8C8C3FFC6C6C3FFBFBFC1FFBDBDBDFFC5C5BCFFB8B8CEFF2929B5FF0A0AA8FF
+            0909ACFF0909ADFF0909AFFF0909AFFF0909AFFF0C0CB0FF4747AFFFECECEDFF
+            6A6A6BE16A6A6BF8F9F9F9FF6666C1FF3838C4FF3535C2FF3434C0FF3535BEFF
+            3030BCFF1313B4FF0909ADFF0A0AA8FF1E1EB3FFAAAAD0FFD3D3CDFFCCCCCCFF
+            C8C8C8FFC3C3C3FFC2C2C1FFC4C4BFFFB2B2CBFF2B2BB4FF0A0AA4FF0A0AA8FF
+            0A0AA8FF0A0AA9FF0A0AA9FF0A0AA9FF0A0AA9FF0B0BA9FF3131A6FFFAFAFAFF
+            6A6A6BF86A6A6BF8FBFBFBFF5959BEFF3B3BCAFF3A3AC8FF3737C4FF3535C2FF
+            3636C0FF3636BEFF2323B8FF0909B1FF0A0AA7FF4949BEFFD6D6D4FFD3D3D1FF
+            CDCDCDFFC8C8C8FFC4C4C3FFEDEDEDFF5F5FB3FF0C0C98FF0A0AA7FF0A0AA6FF
+            0A0AA6FF0A0AA6FF0A0AA4FF0A0AA6FF0A0AA4FF0B0BA4FF2D2DA6FFFBFBFBFF
+            6A6A6BF86A6A6BE1EDEDEEFF7F80CBFF4041CCFF3C3CCAFF3A3AC8FF383AC8FF
+            3838C4FF3636C2FF3939C0FF2123B7FF4A4AC2FFCBCBDEFFE0E0DCFFD6D6D6FF
+            D2D2D3FFCDCDCEFFC9C9C9FFE2E2E1FFF1F1F2FF4242A3FF0C0C99FF0A0AA4FF
+            0A0AA4FF0A0AA4FF0B0BA3FF0B0BA3FF0B0BA1FF0E0EA1FF4443B0FFEDEDEEFF
+            6A6A6BE16A6A6BC0DADADAFF9C9BD5FE4949CDFF3E3DD0FF3C3DCEFF3C3CCAFF
+            3A3AC8FF3B39C7FF2828BDFF5C5CCCFFE5E5EDFFF4F4EDFFE5E5E6FFDEDEDEFF
+            DCDCD9FFD9D9D3FFCDCDCDFFC8C8C8FFE5E5E1FFF1F1F3FF3F3FA0FF0C0C99FF
+            0A0AA4FF0B0BA1FF0B0BA0FF0B0BA0FF0B0B9FFF1313A2FF6B6BC0FFDADADAFF
+            6A6A6BC06A6A6B94C0C0C0FDBDBAE1FE5655CFFF4141D4FF3F3FD2FF3F3FCEFF
+            3D3DCCFF2C2AC3FF5E5ED3FFEBEBF6FFFFFFFAFFF1F1F1FFEDEDEEFFF0F0E9FF
+            D2D2E6FFBDBDD6FFDADAD3FFCFCFCFFFC9C9CAFFE5E5E2FFF1F1F3FF3A3AA0FF
+            0C0C98FF0B0BA3FF0B0B9FFF0B0B9EFF0B0B9EFF1C1CA4FF9C9CD3FFC1C1C1FD
+            6A6A6B946A6A6B609F9F9FF6DAD9EAFF6B6BCFFF4444D7FF4143D6FF4242D3FF
+            3434CDFF6464DBFFEFEFFFFFFFFFFFFFFCFCFCFFF6F6F6FFFCFCF4FFE2E1F0FF
+            5050CCFF4040C1FFC3C3DBFFE1E1D8FFD4D4D5FFCFCFCFFFE8E8E5FFF2F2F4FF
+            4040A2FF0C0C99FF0F0FA2FF0F0FA0FF0F0F9DFF302FA9FFD1D1E8FEA0A0A0F6
+            6A6A6B606A6A6B25787879F1E9E9EBFEA7A7DAFF6060DBFF4547DBFF3C3CD6FF
+            5857DEFFF2F2FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFE8E8F8FF5B5BD4FF
+            2828BDFF2A2BBDFF4949C5FFC3C3DBFFE4E4DAFFD5D5D5FFCECED0FFE8E8E5FF
+            F4F4F4FF4949AFFF2121A6FF2A2AA6FF2C2BA9FF5557B8FFEAEAECFE787879F1
+            6A6A6B25000000007575769EBEBEBEFDC9CAE6FF7A79DBFF4C4CDFFF4141DBFF
+            5757E0FFEAEAFFFFFFFFFFFFFFFFFFFFFFFFFFFFE8E7FFFF5B5BD7FF2E2EC6FF
+            3E3EC9FF3A3AC5FF2C2EC1FF4A49C8FFC2C2DDFFE3E3DAFFD5D5D4FFDADAD3FF
+            CACBD9FF4747BBFF2525ADFF2C2BACFF3332AEFFA5A4D8FFBFBFBFFD7575769E
+            00000000000000006A6A6B40888889F0ECECEFFE9696D6FF7B7BE3FF4D4BE0FF
+            4141DBFF5F5FE6FFE7E7FFFFFFFFFFFFE9E9FFFF5A5ADCFF3333CAFF4242CFFF
+            4040CBFF3D3DC9FF3D3EC8FF3030C2FF4848C9FFC0C0DDFFECEEDEFFD0D0E0FF
+            5554C7FF2828B3FF3232B4FF3434B1FF5453B7FFECECEFFE888889F06A6A6B40
+            0000000000000000000000007C7C7C98B7B7B8FAD0D0ECFF8F8FDBFF6868E3FF
+            4E4EE2FF3E40DBFF6565E9FFB2B2F7FF6565E4FF393BD2FF4646D7FF4343D4FF
+            4343D1FF4242CFFF4040CBFF3F3FCAFF3333C4FF4E4ECBFF9E9EE2FF5C5BCFFF
+            292ABAFF3636BCFF3938B8FF3F3EB1FFCBCBE9FFB7B7B8FA7C7C7C9800000000
+            0000000000000000000000006A6A6B22838383D8D3D3D3FEB5B5E2FF9E9EE4FF
+            6766E2FF4E50E6FF4646E0FF3D3DDAFF4444DCFF4B4BDCFF4848DBFF4847D9FF
+            4646D5FF4443D3FF4343D1FF4242CFFF4143CDFF3A3AC8FF312FC5FF3535C3FF
+            3C3CC3FF3D3DBEFF403FB5FFACACDCFFD3D3D3FE838383D86A6A6B2200000000
+            000000000000000000000000000000006A6A6B43878788EAE1E1E1FFB5B5E2FF
+            A7A6E4FF7877E5FF5151E5FF4F4FE4FF4E4EE2FF4D4DE0FF4C4CDEFF4B4BDCFF
+            4949DBFF4848D7FF4747D5FF4545D3FF4545D1FF4343CFFF4242CCFF3F3FCBFF
+            4343C2FF4645B6FFADADDCFFE1E1E1FF878788EA6A6A6B430000000000000000
+            00000000000000000000000000000000000000006A6A6B4E878788EAD3D3D3FE
+            D0D0ECFFAAA9DFFFA2A2ECFF6565E3FF5151E6FF4F4FE4FF4F4DE4FF4D4DE0FF
+            4D4DDFFF4D4DDCFF4C49DBFF4A4AD8FF4749D6FF4747D4FF4949CBFF4B4BC3FF
+            8E8ED0FFCDCCE8FFD3D3D3FE878788EA6A6A6B4E000000000000000000000000
+            0000000000000000000000000000000000000000000000006A6A6B43838383D8
+            B7B7B8FAECECEFFEC3C2E5FFADAEE1FF9E9DE8FF6F6FE0FF5C5CE1FF5452E2FF
+            5051E1FF4F4FDFFF4F4FDBFF5150D6FF5151CFFF5F5FC8FFA1A1D3FEC7C8E0FE
+            E4E4E7FEB7B7B8FA838383D86A6A6B4300000000000000000000000000000000
+            000000000000000000000000000000000000000000000000000000006A6A6B22
+            7C7C7C98888889F0BFBFBFFDEBEBECFED8D9EBFEBDBDE4FEA8A7DCFF9695D7FF
+            8886D4FF7F7DCEFF8C8BD2FFA1A2D9FFC0BEE1FED9D9EAFEEAEAECFEBFBFBFFD
+            888889F07C7C7C986A6A6B220000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            000000006A6A6B407575769E787879F19F9F9FF6C0C0C0FDDADADAFFEDEDEEFF
+            FBFBFBFFFBFBFBFFEDEDEEFFDADADAFFC0C0C0FD9F9F9FF6787879F17575769E
+            6A6A6B4000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000006A6A6B256A6A6B606A6A6B946A6A6BC06A6A6BE1
+            6A6A6BF86A6A6BF86A6A6BE16A6A6BC06A6A6B946A6A6B606A6A6B2500000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            00000000FFC003FFFF0000FFFC00003FF800001FF000000FE0000007C0000003
+            C000000380000001800000010000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000080000001
+            80000001C0000003C0000003E0000007F000000FF800001FFC00003FFF0000FF
+            FFC003FF}
+          ShowUnicode = False
+          ColWidths = (
+            11
+            12)
+          RowHeights = (
+            22
+            22)
+        end
+      end
+      object pagPedidos: TTabSheet
+        Caption = 'Importacion Pedidos'
+        ImageIndex = 3
+        object Panel4: TPanel
+          Left = 0
+          Top = 491
+          Width = 1017
+          Height = 41
+          Align = alBottom
+          BevelOuter = bvNone
+          Color = clMenuHighlight
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWhite
+          Font.Height = -20
+          Font.Name = 'MS Sans Serif'
+          Font.Style = [fsBold]
+          ParentBackground = False
+          ParentFont = False
+          TabOrder = 0
+          DesignSize = (
+            1017
+            41)
+          object btImportarPedidos: TBitBtn
+            Left = 856
+            Top = 6
+            Width = 146
+            Height = 31
+            Anchors = [akTop, akRight]
+            Caption = 'Importar Pedidos'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Height = -13
+            Font.Name = 'MS Sans Serif'
+            Font.Style = []
+            ParentFont = False
+            TabOrder = 0
+            OnClick = btImportarPedidosClick
+          end
+        end
+        object sgPedidos: TAdvStringGrid
+          Left = 0
+          Top = 41
+          Width = 1017
+          Height = 450
+          Align = alClient
+          DrawingStyle = gdsClassic
+          FixedColor = clWhite
+          FixedCols = 0
+          FixedRows = 0
+          Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goRangeSelect, goColSizing, goFixedRowDefAlign]
+          TabOrder = 1
+          GridLineColor = 13948116
+          GridFixedLineColor = 11250603
+          ActiveCellFont.Charset = DEFAULT_CHARSET
+          ActiveCellFont.Color = 4474440
+          ActiveCellFont.Height = -12
+          ActiveCellFont.Name = 'Segoe UI'
+          ActiveCellFont.Style = [fsBold]
+          ActiveCellColor = 11565130
+          ActiveCellColorTo = 11565130
+          BorderColor = 11250603
+          ColumnSize.StretchAll = True
+          ControlLook.FixedGradientFrom = clWhite
+          ControlLook.FixedGradientTo = clWhite
+          ControlLook.FixedGradientHoverFrom = clGray
+          ControlLook.FixedGradientHoverTo = clWhite
+          ControlLook.FixedGradientHoverMirrorFrom = clWhite
+          ControlLook.FixedGradientHoverMirrorTo = clWhite
+          ControlLook.FixedGradientHoverBorder = 11645361
+          ControlLook.FixedGradientDownFrom = clWhite
+          ControlLook.FixedGradientDownTo = clWhite
+          ControlLook.FixedGradientDownMirrorFrom = clWhite
+          ControlLook.FixedGradientDownMirrorTo = clWhite
+          ControlLook.FixedGradientDownBorder = 11250603
+          ControlLook.DropDownHeader.Font.Charset = DEFAULT_CHARSET
+          ControlLook.DropDownHeader.Font.Color = clWindowText
+          ControlLook.DropDownHeader.Font.Height = -11
+          ControlLook.DropDownHeader.Font.Name = 'Segoe UI'
+          ControlLook.DropDownHeader.Font.Style = []
+          ControlLook.DropDownHeader.Visible = True
+          ControlLook.DropDownHeader.Buttons = <>
+          ControlLook.DropDownFooter.Font.Charset = DEFAULT_CHARSET
+          ControlLook.DropDownFooter.Font.Color = clWindowText
+          ControlLook.DropDownFooter.Font.Height = -11
+          ControlLook.DropDownFooter.Font.Name = 'Segoe UI'
+          ControlLook.DropDownFooter.Font.Style = []
+          ControlLook.DropDownFooter.Visible = True
+          ControlLook.DropDownFooter.Buttons = <>
+          ControlLook.ToggleSwitch.BackgroundBorderWidth = 1.000000000000000000
+          ControlLook.ToggleSwitch.ButtonBorderWidth = 1.000000000000000000
+          ControlLook.ToggleSwitch.CaptionFont.Charset = DEFAULT_CHARSET
+          ControlLook.ToggleSwitch.CaptionFont.Color = clWindowText
+          ControlLook.ToggleSwitch.CaptionFont.Height = -12
+          ControlLook.ToggleSwitch.CaptionFont.Name = 'Segoe UI'
+          ControlLook.ToggleSwitch.CaptionFont.Style = []
+          ControlLook.ToggleSwitch.Shadow = False
+          Filter = <>
+          FilterDropDown.Font.Charset = DEFAULT_CHARSET
+          FilterDropDown.Font.Color = clWindowText
+          FilterDropDown.Font.Height = -12
+          FilterDropDown.Font.Name = 'Segoe UI'
+          FilterDropDown.Font.Style = []
+          FilterDropDown.TextChecked = 'Checked'
+          FilterDropDown.TextUnChecked = 'Unchecked'
+          FilterDropDownClear = '(All)'
+          FilterEdit.TypeNames.Strings = (
+            'Starts with'
+            'Ends with'
+            'Contains'
+            'Not contains'
+            'Equal'
+            'Not equal'
+            'Larger than'
+            'Smaller than'
+            'Clear')
+          FixedColWidth = 74
+          FixedRowHeight = 22
+          FixedFont.Charset = DEFAULT_CHARSET
+          FixedFont.Color = 3881787
+          FixedFont.Height = -11
+          FixedFont.Name = 'Segoe UI'
+          FixedFont.Style = [fsBold]
+          FloatFormat = '%.2f'
+          HoverButtons.Buttons = <>
+          HTMLSettings.ImageFolder = 'images'
+          HTMLSettings.ImageBaseName = 'img'
+          Look = glCustom
+          PrintSettings.DateFormat = 'dd/mm/yyyy'
+          PrintSettings.Font.Charset = DEFAULT_CHARSET
+          PrintSettings.Font.Color = clWindowText
+          PrintSettings.Font.Height = -12
+          PrintSettings.Font.Name = 'Segoe UI'
+          PrintSettings.Font.Style = []
+          PrintSettings.FixedFont.Charset = DEFAULT_CHARSET
+          PrintSettings.FixedFont.Color = clWindowText
+          PrintSettings.FixedFont.Height = -12
+          PrintSettings.FixedFont.Name = 'Segoe UI'
+          PrintSettings.FixedFont.Style = []
+          PrintSettings.HeaderFont.Charset = DEFAULT_CHARSET
+          PrintSettings.HeaderFont.Color = clWindowText
+          PrintSettings.HeaderFont.Height = -12
+          PrintSettings.HeaderFont.Name = 'Segoe UI'
+          PrintSettings.HeaderFont.Style = []
+          PrintSettings.FooterFont.Charset = DEFAULT_CHARSET
+          PrintSettings.FooterFont.Color = clWindowText
+          PrintSettings.FooterFont.Height = -12
+          PrintSettings.FooterFont.Name = 'Segoe UI'
+          PrintSettings.FooterFont.Style = []
+          PrintSettings.PageNumSep = '/'
+          SearchFooter.ColorTo = clNone
+          SearchFooter.FindNextCaption = 'Find &next'
+          SearchFooter.FindPrevCaption = 'Find &previous'
+          SearchFooter.Font.Charset = DEFAULT_CHARSET
+          SearchFooter.Font.Color = clWindowText
+          SearchFooter.Font.Height = -12
+          SearchFooter.Font.Name = 'Segoe UI'
+          SearchFooter.Font.Style = []
+          SearchFooter.HighLightCaption = 'Highlight'
+          SearchFooter.HintClose = 'Close'
+          SearchFooter.HintFindNext = 'Find next occurrence'
+          SearchFooter.HintFindPrev = 'Find previous occurrence'
+          SearchFooter.HintHighlight = 'Highlight occurrences'
+          SearchFooter.MatchCaseCaption = 'Match case'
+          SearchFooter.ResultFormat = '(%d of %d)'
+          SelectionColor = 13744549
+          SortSettings.HeaderColor = clWhite
+          SortSettings.HeaderColorTo = clWhite
+          SortSettings.HeaderMirrorColor = clWhite
+          SortSettings.HeaderMirrorColorTo = clWhite
+          Version = '9.0.0.0'
+          ColWidths = (
+            74
+            98
+            87
+            96
+            103)
+          RowHeights = (
+            22
+            22
+            22
+            22
+            22
+            22
+            22
+            22
+            22
+            22)
+        end
+        object Panel5: TPanel
+          Left = 0
+          Top = 0
+          Width = 1017
+          Height = 41
+          Align = alTop
+          BevelOuter = bvNone
+          Caption = 'Lectura de Pedidos de AXUN'
+          Color = clMenuHighlight
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWhite
+          Font.Height = -20
+          Font.Name = 'MS Sans Serif'
+          Font.Style = [fsBold]
+          ParentBackground = False
+          ParentFont = False
+          TabOrder = 2
+          DesignSize = (
+            1017
+            41)
+          object btBuscarPedidos: TButton
+            Left = 911
+            Top = 9
+            Width = 91
+            Height = 25
+            Anchors = [akTop, akRight]
+            Caption = 'Buscar'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWhite
+            Font.Height = -13
+            Font.Name = 'MS Sans Serif'
+            Font.Style = []
+            ParentFont = False
+            TabOrder = 0
+            OnClick = btBuscarPedidosClick
+          end
+          object chHostLocal: TCheckBox
+            Left = 778
+            Top = 14
+            Width = 121
+            Height = 17
+            Caption = 'Leer Host Local'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWhite
+            Font.Height = -13
+            Font.Name = 'MS Sans Serif'
+            Font.Style = []
+            ParentFont = False
+            TabOrder = 1
+          end
+        end
+      end
+    end
+    object pnPie: TPanel
+      Left = 0
+      Top = 560
+      Width = 1025
+      Height = 54
+      Align = alBottom
+      TabOrder = 1
+      DesignSize = (
+        1025
+        54)
+      object Label47: TLabel
+        Left = 7
+        Top = 6
+        Width = 137
+        Height = 13
+        Caption = 'Directorio Guardado Listados'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clBlack
+        Font.Height = -11
+        Font.Name = 'MS Sans Serif'
+        Font.Style = []
+        ParentFont = False
+        ParentShowHint = False
+        ShowHint = True
+      end
+      object spPathListados: TSpeedButton
+        Left = 446
+        Top = 20
+        Width = 19
+        Height = 21
+        Flat = True
+        Glyph.Data = {
+          36030000424D3603000000000000360000002800000010000000100000000100
+          18000000000000030000120B0000120B00000000000000000000FF00FF078DBE
+          078DBE078DBE078DBE078DBE078DBE078DBE078DBE078DBE078DBE078DBE078D
+          BE078DBEFF00FFFF00FF078DBE63CBF8078DBEA3E1FB66CDF965CDF865CDF965
+          CDF965CDF865CDF965CDF866CDF83AADD8ACE7F5078DBEFF00FF078DBE6AD1F9
+          078DBEA8E5FC6FD4FA6FD4F96ED4FA6FD4F96FD4FA6FD4FA6FD4FA6ED4F93EB1
+          D9B1EAF5078DBEFF00FF078DBE72D6FA078DBEAEEAFC79DCFB79DCFB79DCFB79
+          DCFB79DCFB7ADCFB79DCFA79DCFA44B5D9B6EEF6078DBEFF00FF078DBE79DDFB
+          078DBEB5EEFD83E4FB84E4FB83E4FC83E4FC84E4FC83E4FC83E4FB84E5FC48B9
+          DABBF2F6078DBEFF00FF078DBE82E3FC078DBEBAF3FD8DEBFC8DEBFC8DEBFC8D
+          EBFD8DEBFD8DEBFC8DEBFD8DEBFC4CBBDABEF4F7078DBEFF00FF078DBE8AEAFC
+          078DBEFFFFFFC9F7FEC8F7FEC9F7FEC9F7FEC9F7FEC8F7FEC9F7FEC8F7FE9BD5
+          E7DEF9FB078DBEFF00FF078DBE93F0FE078DBE078DBE078DBE078DBE078DBE07
+          8DBE078DBE078DBE078DBE078DBE078DBE078DBE078DBEFF00FF078DBE9BF5FE
+          9AF6FE9AF6FE9BF5FD9BF6FE9AF6FE9BF5FE9AF6FD9BF5FE9AF6FE9AF6FE0989
+          BAFF00FFFF00FFFF00FF078DBEFEFEFEA0FBFFA0FBFEA0FBFEA1FAFEA1FBFEA0
+          FAFEA1FBFEA1FBFFA0FBFFA1FBFF0989BAFF00FFFF00FFFF00FFFF00FF078DBE
+          FEFEFEA5FEFFA5FEFFA5FEFF078DBE078DBE078DBE078DBE078DBE078DBEFF00
+          FFFF00FFFF00FFFF00FFFF00FFFF00FF078DBE078DBE078DBE078DBEFF00FFFF
+          00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FF
+          FF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00
+          FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF
+          00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FF
+          FF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00
+          FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF
+          00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FF}
+        OnClick = spPathListadosClick
+      end
+      object btExportarCSV: TButton
+        Left = 915
+        Top = 6
+        Width = 99
+        Height = 25
+        Anchors = [akTop, akRight]
+        Caption = 'Exportar CSV'
+        TabOrder = 0
+        OnClick = btExportarCSVClick
+      end
+      object edPathListados: TEdit
+        Left = 7
+        Top = 20
+        Width = 433
+        Height = 21
+        TabOrder = 1
+        Text = 'Directorios Listado'
+        TextHint = 'Directorios Listado'
+      end
+    end
+  end
+  inherited ToolBar1: TToolBar
+    Top = 614
+    Width = 1025
+    Align = alBottom
+    ExplicitTop = 614
+    ExplicitWidth = 1025
+    inherited btConfirma: TBitBtn
+      Visible = False
+    end
+    inherited btNuevo: TBitBtn
+      Visible = False
+    end
+    inherited btCancelar: TBitBtn
+      Visible = False
+    end
+    inherited btModificar: TBitBtn
+      Visible = False
+    end
+    inherited Pr: TSpeedButton
+      Visible = False
+    end
+    inherited Ne: TSpeedButton
+      Visible = False
+    end
+    inherited btBorrar: TBitBtn
+      Visible = False
+    end
+  end
+  inherited Panel1: TPanel
+    Top = 644
+    Width = 1025
+    Align = alBottom
+    ExplicitTop = 644
+    ExplicitWidth = 1025
+    inherited sbEstado: TStatusBar
+      Width = 863
+      ExplicitWidth = 863
+    end
+  end
+  inherited DSBase: TDataSource
+    Left = 560
+    Top = 96
+  end
+  inherited ImageList1: TImageList
+    Top = 128
+  end
+  inherited JvFormStorage: TJvFormStorage
+    PreventResize = False
+  end
+  object QClientes: TFDQuery
+    Connection = DMMain_FD.fdcGestion
+    FormatOptions.AssignedValues = [fvStrsTrim, fvDefaultParamDataType, fvStrsTrim2Len]
+    FormatOptions.StrsTrim = False
+    FormatOptions.StrsTrim2Len = True
+    FormatOptions.DefaultParamDataType = ftString
+    SQL.Strings = (
+      
+        'select c.codigo,Trim(c.nombre) as razon_social ,(case coalesce( ' +
+        'Trim(ldr.direccion),'#39#39') when '#39#39' Then '#39'//'#39' else Trim(ldr.direccio' +
+        'n) end ) as direccion,'
+      
+        '        ( case coalesce(z.detalle,'#39#39') when '#39#39' Then '#39'1'#39' else z.de' +
+        'talle end) as zona,(case coalesce(c.vendedor,'#39#39') when '#39#39' then '#39'0' +
+        '00001'#39
+      
+        '                                                                ' +
+        '                                   else c.vendedor end) as vende' +
+        'dor ,'
+      '       c.telefono_comercial_1 as telefono,'
+      
+        '       (case coalesce(c.listaprecios,'#39#39') when '#39#39' then 1 else c.l' +
+        'istaprecios end) as lista, 1 as orden,1 as ramo,cp.detalle_posta' +
+        'l as localidad,'
+      '       0 as cobraIB, case c.condicion_iva when 1 then 4'
+      '                                          when 2 then 5'
+      '                                          when 3 then 1'
+      '                                          when 4 then 6'
+      '                                          when 5 then 5'
+      '                                          when 6 then 2'
+      
+        '                                          when 7 then 7 end as c' +
+        'ondiva,1 as tablabonif,100000 as topeVenta,50 as margen,'
+      
+        '        0 as percepid,c.nro_de_cuit as cuit,c.correoelectronico ' +
+        'as email,'#39'contado'#39' as condicionpago,'
+      
+        '        '#39'0;0'#39' as coordenadas, 1 as habilitacion,1 as esfoco, '#39'A'#39 +
+        ' as segmentacion,cp.codigo_postal as codigopostal,'#39'Argentina'#39' as' +
+        ' pais,'
+      
+        '        pr.nombre as provincia, cp.detalle_postal as ciudad,coal' +
+        'esce(c.listaprecios,'#39'1'#39') as listasaseleccionar,0 ivatasacero,100' +
+        '0 as minventa'
+      '             from clientes c'
+      'left join zona z on z.id_zona=c.zona'
+      'left join c_postal cp on cp.id_postal=c.id_cod_postal'
+      'left join provincia pr on pr.id_pro=cp.provincia'
+      
+        'left join ldrcliente ldr on ldr.codigo_cliente=c.codigo and ldr.' +
+        'codigo_ldr=0'
+      'where c.activo='#39'S'#39)
+    Left = 964
+    Top = 121
+    object QClientesCODIGO: TStringField
+      FieldName = 'CODIGO'
+      Origin = 'CODIGO'
+      ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
+      Required = True
+      Size = 6
+    end
+    object QClientesRAZON_SOCIAL: TStringField
+      FieldName = 'RAZON_SOCIAL'
+      Origin = 'RAZON_SOCIAL'
+      Size = 35
+    end
+    object QClientesDIRECCION: TStringField
+      FieldName = 'DIRECCION'
+      Origin = 'DIRECCION_COMERCIAL'
+      Size = 35
+    end
+    object QClientesZONA: TStringField
+      AutoGenerateValue = arDefault
+      FieldName = 'ZONA'
+      Origin = 'DETALLE'
+      ProviderFlags = []
+      ReadOnly = True
+      Size = 25
+    end
+    object QClientesVENDEDOR: TStringField
+      AutoGenerateValue = arDefault
+      FieldName = 'VENDEDOR'
+      Origin = 'VENDEDOR'
+      ProviderFlags = []
+      ReadOnly = True
+      Size = 6
+    end
+    object QClientesTELEFONO: TStringField
+      FieldName = 'TELEFONO'
+      Origin = 'TELEFONO_COMERCIAL_1'
+      Size = 10
+    end
+    object QClientesLISTA: TIntegerField
+      AutoGenerateValue = arDefault
+      FieldName = 'LISTA'
+      Origin = 'LISTA'
+      ProviderFlags = []
+      ReadOnly = True
+    end
+    object QClientesORDEN: TIntegerField
+      AutoGenerateValue = arDefault
+      FieldName = 'ORDEN'
+      Origin = 'ORDEN'
+      ProviderFlags = []
+      ReadOnly = True
+    end
+    object QClientesRAMO: TIntegerField
+      AutoGenerateValue = arDefault
+      FieldName = 'RAMO'
+      Origin = 'RAMO'
+      ProviderFlags = []
+      ReadOnly = True
+    end
+    object QClientesLOCALIDAD: TStringField
+      AutoGenerateValue = arDefault
+      FieldName = 'LOCALIDAD'
+      Origin = 'DETALLE_POSTAL'
+      ProviderFlags = []
+      ReadOnly = True
+      Size = 25
+    end
+    object QClientesCOBRAIB: TIntegerField
+      AutoGenerateValue = arDefault
+      FieldName = 'COBRAIB'
+      Origin = 'COBRAIB'
+      ProviderFlags = []
+      ReadOnly = True
+    end
+    object QClientesCONDIVA: TIntegerField
+      AutoGenerateValue = arDefault
+      FieldName = 'CONDIVA'
+      Origin = 'CONDIVA'
+      ProviderFlags = []
+      ReadOnly = True
+    end
+    object QClientesTABLABONIF: TIntegerField
+      AutoGenerateValue = arDefault
+      FieldName = 'TABLABONIF'
+      Origin = 'TABLABONIF'
+      ProviderFlags = []
+      ReadOnly = True
+    end
+    object QClientesTOPEVENTA: TIntegerField
+      AutoGenerateValue = arDefault
+      FieldName = 'TOPEVENTA'
+      Origin = 'TOPEVENTA'
+      ProviderFlags = []
+      ReadOnly = True
+    end
+    object QClientesMARGEN: TIntegerField
+      AutoGenerateValue = arDefault
+      FieldName = 'MARGEN'
+      Origin = 'MARGEN'
+      ProviderFlags = []
+      ReadOnly = True
+    end
+    object QClientesPERCEPID: TIntegerField
+      AutoGenerateValue = arDefault
+      FieldName = 'PERCEPID'
+      Origin = 'PERCEPID'
+      ProviderFlags = []
+      ReadOnly = True
+    end
+    object QClientesCUIT: TStringField
+      FieldName = 'CUIT'
+      Origin = 'NRO_DE_CUIT'
+      Size = 13
+    end
+    object QClientesEMAIL: TStringField
+      FieldName = 'EMAIL'
+      Origin = 'CORREOELECTRONICO'
+      Size = 100
+    end
+    object QClientesCONDICIONPAGO: TStringField
+      AutoGenerateValue = arDefault
+      FieldName = 'CONDICIONPAGO'
+      Origin = 'CONDICIONPAGO'
+      ProviderFlags = []
+      ReadOnly = True
+      FixedChar = True
+      Size = 7
+    end
+    object QClientesCOORDENADAS: TStringField
+      AutoGenerateValue = arDefault
+      FieldName = 'COORDENADAS'
+      Origin = 'COORDENADAS'
+      ProviderFlags = []
+      ReadOnly = True
+      FixedChar = True
+      Size = 3
+    end
+    object QClientesHABILITACION: TIntegerField
+      AutoGenerateValue = arDefault
+      FieldName = 'HABILITACION'
+      Origin = 'HABILITACION'
+      ProviderFlags = []
+      ReadOnly = True
+    end
+    object QClientesESFOCO: TIntegerField
+      AutoGenerateValue = arDefault
+      FieldName = 'ESFOCO'
+      Origin = 'ESFOCO'
+      ProviderFlags = []
+      ReadOnly = True
+    end
+    object QClientesSEGMENTACION: TStringField
+      AutoGenerateValue = arDefault
+      FieldName = 'SEGMENTACION'
+      Origin = 'SEGMENTACION'
+      ProviderFlags = []
+      ReadOnly = True
+      FixedChar = True
+      Size = 1
+    end
+    object QClientesCODIGOPOSTAL: TStringField
+      AutoGenerateValue = arDefault
+      FieldName = 'CODIGOPOSTAL'
+      Origin = 'CODIGO_POSTAL'
+      ProviderFlags = []
+      ReadOnly = True
+      Size = 8
+    end
+    object QClientesPAIS: TStringField
+      AutoGenerateValue = arDefault
+      FieldName = 'PAIS'
+      Origin = 'PAIS'
+      ProviderFlags = []
+      ReadOnly = True
+      FixedChar = True
+      Size = 9
+    end
+    object QClientesPROVINCIA: TStringField
+      AutoGenerateValue = arDefault
+      FieldName = 'PROVINCIA'
+      Origin = 'NOMBRE'
+      ProviderFlags = []
+      ReadOnly = True
+    end
+    object QClientesCIUDAD: TStringField
+      AutoGenerateValue = arDefault
+      FieldName = 'CIUDAD'
+      Origin = 'DETALLE_POSTAL'
+      ProviderFlags = []
+      ReadOnly = True
+      Size = 25
+    end
+    object QClientesLISTASASELECCIONAR: TStringField
+      AutoGenerateValue = arDefault
+      FieldName = 'LISTASASELECCIONAR'
+      Origin = 'LISTASASELECCIONAR'
+      ProviderFlags = []
+      ReadOnly = True
+      Size = 11
+    end
+    object QClientesIVATASACERO: TIntegerField
+      AutoGenerateValue = arDefault
+      FieldName = 'IVATASACERO'
+      Origin = 'IVATASACERO'
+      ProviderFlags = []
+      ReadOnly = True
+    end
+    object QClientesMINVENTA: TIntegerField
+      AutoGenerateValue = arDefault
+      FieldName = 'MINVENTA'
+      Origin = 'MINVENTA'
+      ProviderFlags = []
+      ReadOnly = True
+    end
+  end
+  object DSClientes: TDataSource
+    DataSet = QClientes
+    Left = 1052
+    Top = 113
+  end
+  object QArticulos: TFDQuery
+    Connection = DMMain_FD.fdcGestion
+    SQL.Strings = (
+      'select s.codigo_stk as codigo,'
+      '       coalesce(l1.precio_gravado,0) as Lista1,'
+      '       coalesce(l2.precio_gravado,0) as Lista2,'
+      '       coalesce(l3.precio_gravado,0) as Lista3,'
+      '       coalesce(l4.precio_gravado,0) as Lista4,'
+      '       coalesce(l5.precio_gravado,0) as Lista5,'
+      
+        '       s.detalle_stk as descripcion, sr.detalle_subrubro as line' +
+        'a,r.detalle_rubro as rubro,'
+      
+        '       1 as capacidad, s.presentacion_cantidad as pack, s.impues' +
+        'to_internos as impuestosint, 0 as topedesc,s.fijacion_precio_tot' +
+        'al as costo,'
+      
+        '       s.tasa_iva as codigoiva,(select max(cb.codigobarra) from ' +
+        'codigobarra cb where cb.codigo_stk=s.codigo_stk) as codbarra,0 a' +
+        's codbarrapack,m.descripcion_marca as marca,'
+      '       0 as peso,'#39#39' as proveedor,0 as ivatasacero,'#39#39' as grupo'
+      '   from stock s'
+      'left join rubros r on r.codigo_rubro=s.rubro_stk'
+      'left join subrubros sr on sr.codigo_subrubro=s.subrubro_stk'
+      'left join marcas m on m.marca_stk=s.marca_stk'
+      
+        'left join listaprecioespecialart L1 on l1.codigoarticulo=s.codig' +
+        'o_stk and l1.id_cab=1'
+      
+        'left join listaprecioespecialart L2 on l2.codigoarticulo=s.codig' +
+        'o_stk and l2.id_cab=2'
+      
+        'left join listaprecioespecialart L3 on l3.codigoarticulo=s.codig' +
+        'o_stk and l3.id_cab=3'
+      
+        'left join listaprecioespecialart L4 on l4.codigoarticulo=s.codig' +
+        'o_stk and l4.id_cab=4'
+      
+        'left join listaprecioespecialart L5 on l5.codigoarticulo=s.codig' +
+        'o_stk and l5.id_cab=5'
+      'where s.clase_articulo in (1,3)')
+    Left = 972
+    Top = 233
+    object QArticulosCODIGO: TStringField
+      FieldName = 'CODIGO'
+      Origin = 'CODIGO_STK'
+      Required = True
+      Size = 8
+    end
+    object QArticulosLISTA1: TFloatField
+      AutoGenerateValue = arDefault
+      FieldName = 'LISTA1'
+      Origin = 'LISTA1'
+      ProviderFlags = []
+      ReadOnly = True
+      DisplayFormat = '0.00'
+    end
+    object QArticulosLISTA2: TFloatField
+      AutoGenerateValue = arDefault
+      FieldName = 'LISTA2'
+      Origin = 'LISTA2'
+      ProviderFlags = []
+      ReadOnly = True
+      DisplayFormat = '0.00'
+    end
+    object QArticulosLISTA3: TFloatField
+      AutoGenerateValue = arDefault
+      FieldName = 'LISTA3'
+      Origin = 'LISTA3'
+      ProviderFlags = []
+      ReadOnly = True
+      DisplayFormat = '0.00'
+    end
+    object QArticulosLISTA4: TFloatField
+      AutoGenerateValue = arDefault
+      FieldName = 'LISTA4'
+      Origin = 'LISTA4'
+      ProviderFlags = []
+      ReadOnly = True
+      DisplayFormat = '0.00'
+    end
+    object QArticulosLISTA5: TFloatField
+      AutoGenerateValue = arDefault
+      FieldName = 'LISTA5'
+      Origin = 'LISTA5'
+      ProviderFlags = []
+      ReadOnly = True
+      DisplayFormat = '0.00'
+    end
+    object QArticulosDESCRIPCION: TStringField
+      FieldName = 'DESCRIPCION'
+      Origin = 'DETALLE_STK'
+      Size = 45
+    end
+    object QArticulosLINEA: TStringField
+      AutoGenerateValue = arDefault
+      FieldName = 'LINEA'
+      Origin = 'DETALLE_SUBRUBRO'
+      ProviderFlags = []
+      ReadOnly = True
+      Size = 45
+    end
+    object QArticulosRUBRO: TStringField
+      AutoGenerateValue = arDefault
+      FieldName = 'RUBRO'
+      Origin = 'DETALLE_RUBRO'
+      ProviderFlags = []
+      ReadOnly = True
+      Size = 35
+    end
+    object QArticulosCAPACIDAD: TIntegerField
+      AutoGenerateValue = arDefault
+      FieldName = 'CAPACIDAD'
+      Origin = 'CAPACIDAD'
+      ProviderFlags = []
+      ReadOnly = True
+      DisplayFormat = '0.00'
+    end
+    object QArticulosPACK: TFloatField
+      FieldName = 'PACK'
+      Origin = 'PRESENTACION_CANTIDAD'
+      Required = True
+    end
+    object QArticulosIMPUESTOSINT: TFloatField
+      FieldName = 'IMPUESTOSINT'
+      Origin = 'IMPUESTO_INTERNOS'
+    end
+    object QArticulosTOPEDESC: TIntegerField
+      AutoGenerateValue = arDefault
+      FieldName = 'TOPEDESC'
+      Origin = 'TOPEDESC'
+      ProviderFlags = []
+      ReadOnly = True
+    end
+    object QArticulosCOSTO: TFloatField
+      FieldName = 'COSTO'
+      Origin = 'FIJACION_PRECIO_TOTAL'
+      Required = True
+      DisplayFormat = '0.00'
+    end
+    object QArticulosCODIGOIVA: TIntegerField
+      FieldName = 'CODIGOIVA'
+      Origin = 'TASA_IVA'
+      Required = True
+    end
+    object QArticulosCODBARRA: TStringField
+      AutoGenerateValue = arDefault
+      FieldName = 'CODBARRA'
+      Origin = 'CODBARRA'
+      ProviderFlags = []
+      ReadOnly = True
+      Size = 50
+    end
+    object QArticulosCODBARRAPACK: TIntegerField
+      AutoGenerateValue = arDefault
+      FieldName = 'CODBARRAPACK'
+      Origin = 'CODBARRAPACK'
+      ProviderFlags = []
+      ReadOnly = True
+    end
+    object QArticulosMARCA: TStringField
+      AutoGenerateValue = arDefault
+      FieldName = 'MARCA'
+      Origin = 'DESCRIPCION_MARCA'
+      ProviderFlags = []
+      ReadOnly = True
+      Size = 25
+    end
+    object QArticulosPESO: TIntegerField
+      AutoGenerateValue = arDefault
+      FieldName = 'PESO'
+      Origin = 'PESO'
+      ProviderFlags = []
+      ReadOnly = True
+    end
+    object QArticulosPROVEEDOR: TStringField
+      AutoGenerateValue = arDefault
+      FieldName = 'PROVEEDOR'
+      Origin = 'PROVEEDOR'
+      ProviderFlags = []
+      ReadOnly = True
+      FixedChar = True
+      Size = 0
+    end
+    object QArticulosIVATASACERO: TIntegerField
+      AutoGenerateValue = arDefault
+      FieldName = 'IVATASACERO'
+      Origin = 'IVATASACERO'
+      ProviderFlags = []
+      ReadOnly = True
+    end
+    object QArticulosGRUPO: TStringField
+      AutoGenerateValue = arDefault
+      FieldName = 'GRUPO'
+      Origin = 'GRUPO'
+      ProviderFlags = []
+      ReadOnly = True
+      FixedChar = True
+      Size = 0
+    end
+  end
+  object DSArticulos: TDataSource
+    DataSet = QArticulos
+    Left = 1052
+    Top = 249
+  end
+  object QStock: TFDQuery
+    AfterOpen = QStockAfterOpen
+    Connection = DMMain_FD.fdcGestion
+    SQL.Strings = (
+      
+        'select d.codigo_stk as codart,d.codigo_deposito as codigodeposit' +
+        'o, d.fisico as stockini,d.minimo as stockmin'
+      'from stock s'
+      'left join depositostk d on d.codigo_stk=s.codigo_stk'
+      'where s.clase_articulo in (1,3)'
+      ''
+      ''
+      '')
+    Left = 956
+    Top = 369
+    object QStockCODART: TStringField
+      DisplayWidth = 15
+      FieldName = 'CODART'
+      Origin = 'CODIGO_STK'
+      Required = True
+      Size = 8
+    end
+    object QStockSTOCKINI: TFloatField
+      AutoGenerateValue = arDefault
+      DisplayWidth = 12
+      FieldName = 'STOCKINI'
+      Origin = 'STOCKINI'
+      ProviderFlags = []
+      ReadOnly = True
+      DisplayFormat = '0.00'
+    end
+    object QStockCODIGODEPOSITO: TIntegerField
+      FieldName = 'CODIGODEPOSITO'
+      Origin = 'CODIGODEPOSITO'
+    end
+    object QStockSTOCKMIN: TFloatField
+      DisplayWidth = 12
+      FieldName = 'STOCKMIN'
+      Origin = 'MINIMO'
+      DisplayFormat = '0.00'
+    end
+  end
+  object DSStock: TDataSource
+    DataSet = QStock
+    Left = 1028
+    Top = 377
+  end
+  object SaveDialog: TSaveDialog
+    Left = 764
+    Top = 353
+  end
+  object OpenDialog1: TOpenDialog
+    Left = 828
+    Top = 449
+  end
+end

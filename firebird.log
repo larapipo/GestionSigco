@@ -1,0 +1,1166 @@
+
+NOTEASUS	Tue Jan 05 13:05:21 2021
+	INET/inet_error: send errno = 10054, server host = Localhost, address = ::1/3051
+
+
+NOTEASUS	Tue Jan 05 13:06:48 2021
+	INET/inet_error: send errno = 10054, server host = Localhost, address = ::1/3051
+
+
+NOTEASUS	Tue Jan 05 13:06:48 2021
+	REMOTE INTERFACE/gds__detach: Unsuccesful detach from database.
+	Uncommitted work may have been lost.
+	Error writing data to the connection.
+
+
+NOTEASUS	Tue Jan 05 13:07:02 2021
+	REMOTE INTERFACE/gds__detach: Unsuccesful detach from database.
+	Uncommitted work may have been lost.
+	Error writing data to the connection.
+
+
+NOTEASUS	Wed Jan 20 14:28:43 2021
+	INET/INET_connect: getaddrinfo(Localhost,3051) failed: El nombre solicitado es válido pero no se encontraron datos del tipo solicitado. 
+
+
+NOTEASUS	Sun Jan 24 12:01:58 2021
+	INET/inet_error: read errno = 10054, server host = 192.168.21.30, address = 192.168.21.30/3050
+
+
+NOTEASUS	Sun Jan 24 12:01:59 2021
+	REMOTE INTERFACE/gds__detach: Unsuccesful detach from database.
+	Uncommitted work may have been lost.
+	Error writing data to the connection.
+
+
+NOTEASUS	Tue Jan 26 10:31:50 2021
+	INET/inet_error: send errno = 10054, server host = 192.168.21.30, address = 192.168.21.30/3050
+
+
+NOTEASUS	Tue Jan 26 10:31:50 2021
+	REMOTE INTERFACE/gds__detach: Unsuccesful detach from database.
+	Uncommitted work may have been lost.
+	Error writing data to the connection.
+
+
+NOTEASUS	Sat Feb 06 22:31:33 2021
+	INET/INET_connect: getaddrinfo(Localhost,3051) failed: El nombre solicitado es válido pero no se encontraron datos del tipo solicitado. 
+
+
+NOTEASUS	Sun Feb 07 14:40:53 2021
+	INET/INET_connect: getaddrinfo(Localhost,3051) failed: El nombre solicitado es válido pero no se encontraron datos del tipo solicitado. 
+
+
+NOTEASUS	Sun Feb 07 14:40:54 2021
+	INET/INET_connect: getaddrinfo(Localhost,3051) failed: El nombre solicitado es válido pero no se encontraron datos del tipo solicitado. 
+
+
+NOTEASUS	Wed Mar 10 10:22:36 2021
+	INET/inet_error: read errno = 10054, server host = 192.168.21.32, address = 192.168.21.32/3051
+
+
+NOTEASUS	Wed Mar 10 10:22:36 2021
+	REMOTE INTERFACE/gds__detach: Unsuccesful detach from database.
+	Uncommitted work may have been lost.
+	Error writing data to the connection.
+
+
+NOTEASUS	Mon Mar 29 14:28:45 2021
+	INET/INET_connect: getaddrinfo(Localhost,3051) failed: El nombre solicitado es válido pero no se encontraron datos del tipo solicitado. 
+
+
+NOTEASUS	Tue Mar 30 14:07:09 2021
+	INET/inet_error: send errno = 10054, server host = Localhost, address = ::1/3051
+
+
+NOTEASUS	Tue Mar 30 14:07:09 2021
+	REMOTE INTERFACE/gds__detach: Unsuccesful detach from database.
+	Uncommitted work may have been lost.
+	Error writing data to the connection.
+
+
+NOTEASUS	Tue Mar 30 14:07:11 2021
+	INET/inet_error: send errno = 10054, server host = Localhost, address = ::1/3051
+
+
+NOTEASUS	Tue Mar 30 14:08:09 2021
+	REMOTE INTERFACE/gds__detach: Unsuccesful detach from database.
+	Uncommitted work may have been lost.
+	Error writing data to the connection.
+
+
+NOTEASUS	Mon Apr 05 11:56:14 2021
+	INET/inet_error: send errno = 10054, server host = Localhost, address = ::1/3051
+
+
+NOTEASUS	Mon Apr 05 11:56:53 2021
+	INET/inet_error: send errno = 10054, server host = Localhost, address = ::1/3051
+
+
+NOTEASUS	Mon Apr 05 11:56:53 2021
+	REMOTE INTERFACE/gds__detach: Unsuccesful detach from database.
+	Uncommitted work may have been lost.
+	Error writing data to the connection.
+
+
+NOTEASUS	Mon Apr 05 11:57:22 2021
+	REMOTE INTERFACE/gds__detach: Unsuccesful detach from database.
+	Uncommitted work may have been lost.
+	Error writing data to the connection.
+
+
+NOTEASUS	Sat Apr 24 07:28:28 2021
+	INET/INET_connect: getaddrinfo(majo,gds_db) failed: Host desconocido. 
+
+
+NOTEASUS	Sat Apr 24 07:29:18 2021
+	INET/INET_connect: getaddrinfo(majo,gds_db) failed: Host desconocido. 
+
+
+NOTEASUS	Sat Apr 24 07:35:54 2021
+	INET/INET_connect: getaddrinfo(majo,gds_db) failed: Host desconocido. 
+
+
+NOTEASUS	Sat Apr 24 08:13:45 2021
+	INET/INET_connect: getaddrinfo(majo,gds_db) failed: Host desconocido. 
+
+
+NOTEASUS	Sat Apr 24 08:47:33 2021
+	INET/INET_connect: getaddrinfo(majo,gds_db) failed: Host desconocido. 
+
+
+NOTEASUS	Sun May 02 19:43:29 2021
+	INET/inet_error: send errno = 10054, server host = Localhost, address = ::1/3051
+
+
+NOTEASUS	Sun May 02 19:43:29 2021
+	REMOTE INTERFACE/gds__detach: Unsuccesful detach from database.
+	Uncommitted work may have been lost.
+	Error writing data to the connection.
+
+
+NOTEASUS	Sun May 02 19:43:40 2021
+	INET/inet_error: send errno = 10054, server host = Localhost, address = ::1/3051
+
+
+NOTEASUS	Sun May 02 19:43:40 2021
+	REMOTE INTERFACE/gds__detach: Unsuccesful detach from database.
+	Uncommitted work may have been lost.
+	Error writing data to the connection.
+
+
+PCLUISI7	Wed Sep 15 12:20:17 2021
+	INET/inet_error: read errno = 10054, server host = 26.125.247.137, address = 26.125.247.137/3051
+
+
+PCLUISI7	Wed Sep 15 12:20:23 2021
+	REMOTE INTERFACE/gds__detach: Unsuccesful detach from database.
+	Uncommitted work may have been lost.
+	Error writing data to the connection.
+
+
+PCLUISI7	Wed Sep 15 13:26:48 2021
+	INET/inet_error: read errno = 10054, server host = 26.125.247.137, address = 26.125.247.137/3051
+
+
+PCLUISI7	Wed Sep 15 13:26:48 2021
+	REMOTE INTERFACE/gds__detach: Unsuccesful detach from database.
+	Uncommitted work may have been lost.
+	Error writing data to the connection.
+
+
+PCLUISI7	Tue Oct 26 09:49:46 2021
+	INET/INET_connect: getaddrinfo(NOTEI7,3050) failed: Host desconocido. 
+
+
+PCLUISI7	Tue Oct 26 09:50:02 2021
+	INET/INET_connect: getaddrinfo(NOTEI7,3050) failed: Host desconocido. 
+
+
+PCLUISI7	Wed Feb 23 07:24:46 2022
+	INET/INET_connect: getaddrinfo(a,192.168.50.240,3050) failed: Host desconocido. 
+
+
+PCLUISI7	Tue Mar 08 16:48:56 2022
+	INET/inet_error: read errno = 10054, server host = huechemdp.ddns.net, address = 181.117.194.39/3050
+
+
+PCLUISI7	Tue Mar 08 16:48:56 2022
+	REMOTE INTERFACE/gds__detach: Unsuccesful detach from database.
+	Uncommitted work may have been lost.
+	Error writing data to the connection.
+
+
+PCLUISI7	Tue Mar 08 16:49:22 2022
+	INET/inet_error: read errno = 10054, server host = huechemdp.ddns.net, address = 181.117.194.39/3050
+
+
+PCLUISI7	Tue Mar 08 16:51:13 2022
+	REMOTE INTERFACE/gds__detach: Unsuccesful detach from database.
+	Uncommitted work may have been lost.
+	Error writing data to the connection.
+
+
+PCLUISI7	Mon Mar 14 16:07:24 2022
+	INET/inet_error: read errno = 10054, server host = huechemdp.ddns.net, address = 181.117.194.39/3050
+
+
+PCLUISI7	Mon Mar 14 16:07:24 2022
+	REMOTE INTERFACE/gds__detach: Unsuccesful detach from database.
+	Uncommitted work may have been lost.
+	Error reading data from the connection.
+
+
+PCLUISI7	Tue Mar 15 19:24:12 2022
+	INET/inet_error: read errno = 10054, server host = huechemdp.ddns.net, address = 181.117.194.39/3050
+
+
+PCLUISI7	Tue Mar 15 19:24:12 2022
+	REMOTE INTERFACE/gds__detach: Unsuccesful detach from database.
+	Uncommitted work may have been lost.
+	Error writing data to the connection.
+
+
+PCLUISI7	Tue Mar 15 19:24:32 2022
+	INET/inet_error: read errno = 10054, server host = huechemdp.ddns.net, address = 181.117.194.39/3050
+
+
+PCLUISI7	Tue Mar 15 19:24:32 2022
+	REMOTE INTERFACE/gds__detach: Unsuccesful detach from database.
+	Uncommitted work may have been lost.
+	Error reading data from the connection.
+
+
+PCLUISI7	Sun Apr 03 18:26:27 2022
+	INET/inet_error: send errno = 10054, server host = huechemdp.ddns.net, address = 181.117.194.39/3050
+
+
+PCLUISI7	Sun Apr 03 18:26:27 2022
+	REMOTE INTERFACE/gds__detach: Unsuccesful detach from database.
+	Uncommitted work may have been lost.
+	Error writing data to the connection.
+
+
+PCLUISI7	Mon Apr 04 16:54:59 2022
+	INET/inet_error: send errno = 10054, server host = huechemdp.ddns.net, address = 181.117.194.39/3050
+
+
+PCLUISI7	Mon Apr 04 16:54:59 2022
+	REMOTE INTERFACE/gds__detach: Unsuccesful detach from database.
+	Uncommitted work may have been lost.
+	Error writing data to the connection.
+
+
+PCLUISI7	Tue Apr 19 15:41:48 2022
+	INET/INET_connect: getaddrinfo(huechemdp.ddns.net,3050) failed: Host desconocido. 
+
+
+PCLUISI7	Mon Apr 25 14:13:23 2022
+	INET/INET_connect: getaddrinfo(huechemdp.ddns.net,3050) failed: Host desconocido. 
+
+
+PCLUISI7	Mon Apr 25 14:14:14 2022
+	INET/inet_error: read errno = 10054, server host = huechemdp.ddns.net, address = 181.117.194.39/3050
+
+
+PCLUISI7	Mon Apr 25 14:14:18 2022
+	REMOTE INTERFACE/gds__detach: Unsuccesful detach from database.
+	Uncommitted work may have been lost.
+	Error writing data to the connection.
+
+
+PCLUISI7	Tue Apr 26 12:09:15 2022
+	INET/inet_error: read errno = 10054, server host = huechemdp.ddns.net, address = 181.117.194.39/3050
+
+
+PCLUISI7	Wed Apr 27 07:10:53 2022
+	REMOTE INTERFACE/gds__detach: Unsuccesful detach from database.
+	Uncommitted work may have been lost.
+	Error reading data from the connection.
+
+
+PCLUISI7	Wed Apr 27 07:10:53 2022
+	REMOTE INTERFACE/gds__detach: Unsuccesful detach from database.
+	Uncommitted work may have been lost.
+	Error reading data from the connection.
+
+
+PCLUISI7	Fri Apr 29 07:52:33 2022
+	INET/INET_connect: getaddrinfo(elcondoralem.no-ip.org,3050) failed: Host desconocido. 
+
+
+PCLUISI7	Fri Apr 29 07:52:49 2022
+	INET/INET_connect: getaddrinfo(gomeriadamico.no-ip.org,3050) failed: Host desconocido. 
+
+
+PCLUISI7	Fri Apr 29 19:04:24 2022
+	INET/inet_error: read errno = 10054, server host = 26.251.49.199, address = 26.251.49.199/3050
+
+
+PCLUISI7	Fri Apr 29 19:04:24 2022
+	REMOTE INTERFACE/gds__detach: Unsuccesful detach from database.
+	Uncommitted work may have been lost.
+	Error writing data to the connection.
+
+
+PCLUISI7	Thu May 05 08:09:20 2022
+	INET/inet_error: read errno = 10054, server host = 26.198.210.47, address = 26.198.210.47/3050
+
+
+PCLUISI7	Thu May 05 08:09:20 2022
+	REMOTE INTERFACE/gds__detach: Unsuccesful detach from database.
+	Uncommitted work may have been lost.
+	Error writing data to the connection.
+
+
+PCLUISI7	Tue May 31 08:19:20 2022
+	INET/inet_error: read errno = 10054, server host = 26.109.142.119, address = 26.109.142.119/3050
+
+
+PCLUISI7	Tue May 31 08:25:09 2022
+	REMOTE INTERFACE/gds__detach: Unsuccesful detach from database.
+	Uncommitted work may have been lost.
+	Error writing data to the connection.
+
+
+PCLUISI7	Fri Jun 03 19:44:14 2022
+	INET/inet_error: read errno = 10054, server host = huechemdp.ddns.net, address = 181.117.194.39/3050
+
+
+PCLUISI7	Fri Jun 03 19:44:14 2022
+	REMOTE INTERFACE/gds__detach: Unsuccesful detach from database.
+	Uncommitted work may have been lost.
+	Error writing data to the connection.
+
+
+PCLUISI7	Fri Jun 03 19:44:20 2022
+	INET/inet_error: send errno = 10054, server host = huechemdp.ddns.net, address = 181.117.194.39/3050
+
+
+PCLUISI7	Fri Jun 03 19:44:20 2022
+	REMOTE INTERFACE/gds__detach: Unsuccesful detach from database.
+	Uncommitted work may have been lost.
+	Error writing data to the connection.
+
+
+PCLUISI7	Mon Jul 04 09:33:34 2022
+	INET/inet_error: read errno = 10054, server host = 192.168.21.30, address = 192.168.21.30/3050
+
+
+PCLUISI7	Mon Jul 04 09:33:34 2022
+	REMOTE INTERFACE/gds__detach: Unsuccesful detach from database.
+	Uncommitted work may have been lost.
+	Error writing data to the connection.
+
+
+PCLUISI7	Fri Jul 08 13:44:01 2022
+	INET/inet_error: send errno = 10054, server host = 192.168.21.32, address = 192.168.21.32/3051
+
+
+PCLUISI7	Fri Jul 08 13:44:01 2022
+	REMOTE INTERFACE/gds__detach: Unsuccesful detach from database.
+	Uncommitted work may have been lost.
+	Error writing data to the connection.
+
+
+DESKTOP-278K01C	Sat Jul 16 11:04:37 2022
+	INET/INET_connect: getaddrinfo(Localhost,3050) failed: El nombre solicitado es válido pero no se encontraron datos del tipo solicitado. 
+
+
+DESKTOP-278K01C	Sat Jul 16 11:05:13 2022
+	INET/INET_connect: getaddrinfo(Localhost,3050) failed: El nombre solicitado es válido pero no se encontraron datos del tipo solicitado. 
+
+
+DESKTOP-278K01C	Mon Jul 18 16:03:37 2022
+	INET/INET_connect: getaddrinfo(server,3050) failed: Host desconocido. 
+
+
+DESKTOP-278K01C	Mon Jul 18 16:04:30 2022
+	INET/INET_connect: getaddrinfo(server,3050) failed: Host desconocido. 
+
+
+DESKTOP-278K01C	Mon Jul 18 16:06:40 2022
+	INET/INET_connect: getaddrinfo(Localhost,3050) failed: El nombre solicitado es válido pero no se encontraron datos del tipo solicitado. 
+
+
+DESKTOP-278K01C	Mon Jul 18 16:08:41 2022
+	INET/inet_error: read errno = 10054, server host = server, address = fe80::5447:df3e:26ac:bbd6%14/3050
+
+
+DESKTOP-278K01C	Mon Jul 18 16:08:41 2022
+	REMOTE INTERFACE/gds__detach: Unsuccesful detach from database.
+	Uncommitted work may have been lost.
+	Error writing data to the connection.
+
+
+DESKTOP-278K01C	Mon Jul 18 18:04:10 2022
+	INET/INET_connect: getaddrinfo(server,3050) failed: Host desconocido. 
+
+
+PCLUIS-D11	Wed Oct 05 11:46:38 2022
+	INET/inet_error: send errno = 10054, server host = 26.224.189.225, address = 26.224.189.225/3050
+
+
+PCLUIS-D11	Wed Oct 05 11:46:38 2022
+	REMOTE INTERFACE/gds__detach: Unsuccesful detach from database.
+	Uncommitted work may have been lost.
+	Error writing data to the connection.
+
+
+PCLUIS-D11	Tue Oct 11 07:35:22 2022
+	INET/inet_error: send errno = 10054, server host = 26.224.189.225, address = 26.224.189.225/3050
+
+
+PCLUIS-D11	Tue Oct 11 07:36:28 2022
+	REMOTE INTERFACE/gds__detach: Unsuccesful detach from database.
+	Uncommitted work may have been lost.
+	Error writing data to the connection.
+
+
+PCLUIS-D11	Wed Oct 12 17:19:06 2022
+	INET/inet_error: read errno = 10054, server host = 26.224.189.225, address = 26.224.189.225/3050
+
+
+PCLUIS-D11	Wed Oct 12 17:19:06 2022
+	REMOTE INTERFACE/gds__detach: Unsuccesful detach from database.
+	Uncommitted work may have been lost.
+	Error writing data to the connection.
+
+
+PCLUIS-D11	Thu Oct 13 06:54:32 2022
+	INET/inet_error: send errno = 10054, server host = 26.224.189.225, address = 26.224.189.225/3050
+
+
+PCLUIS-D11	Thu Oct 13 06:54:32 2022
+	REMOTE INTERFACE/gds__detach: Unsuccesful detach from database.
+	Uncommitted work may have been lost.
+	Error writing data to the connection.
+
+
+PCLUIS-D11	Fri Oct 14 07:03:34 2022
+	INET/inet_error: send errno = 10054, server host = 26.224.189.225, address = 26.224.189.225/3050
+
+
+PCLUIS-D11	Fri Oct 14 07:03:34 2022
+	REMOTE INTERFACE/gds__detach: Unsuccesful detach from database.
+	Uncommitted work may have been lost.
+	Error writing data to the connection.
+
+
+PCLUIS-D11	Fri Oct 14 07:03:34 2022
+	INET/inet_error: send errno = 10054, server host = 26.224.189.225, address = 26.224.189.225/3050
+
+
+PCLUIS-D11	Fri Oct 14 07:03:34 2022
+	REMOTE INTERFACE/gds__detach: Unsuccesful detach from database.
+	Uncommitted work may have been lost.
+	Error writing data to the connection.
+
+
+PCLUIS-D11	Sat Oct 15 07:26:03 2022
+	INET/inet_error: send errno = 10054, server host = 26.224.189.225, address = 26.224.189.225/3050
+
+
+PCLUIS-D11	Sat Oct 15 07:26:03 2022
+	REMOTE INTERFACE/gds__detach: Unsuccesful detach from database.
+	Uncommitted work may have been lost.
+	Error writing data to the connection.
+
+
+PCLUIS-D11	Sat Nov 05 13:54:18 2022
+	INET/inet_error: read errno = 10054, server host = 26.17.207.66, address = 26.17.207.66/3050
+
+
+PCLUIS-D11	Sat Nov 05 13:54:18 2022
+	REMOTE INTERFACE/gds__detach: Unsuccesful detach from database.
+	Uncommitted work may have been lost.
+	Error writing data to the connection.
+
+
+PCLUIS-D11	Fri Dec 02 09:47:49 2022
+	INET/inet_error: read errno = 10054, server host = 26.109.142.119, address = 26.109.142.119/3050
+
+
+PCLUIS-D11	Fri Dec 02 09:47:49 2022
+	REMOTE INTERFACE/gds__detach: Unsuccesful detach from database.
+	Uncommitted work may have been lost.
+	Error writing data to the connection.
+
+
+PCLUIS-D11	Fri Dec 02 21:04:41 2022
+	INET/inet_error: read errno = 10054, server host = 26.167.122.96, address = 26.167.122.96/3050
+
+
+PCLUIS-D11	Fri Dec 02 22:44:40 2022
+	REMOTE INTERFACE/gds__detach: Unsuccesful detach from database.
+	Uncommitted work may have been lost.
+	Error writing data to the connection.
+
+
+PCLUIS-D11	Mon Dec 05 10:21:32 2022
+	INET/inet_error: read errno = 10054, server host = 26.109.142.119, address = 26.109.142.119/3050
+
+
+PCLUIS-D11	Mon Dec 05 10:21:32 2022
+	REMOTE INTERFACE/gds__detach: Unsuccesful detach from database.
+	Uncommitted work may have been lost.
+	Error writing data to the connection.
+
+
+PCLUIS-D11	Mon Dec 05 10:21:53 2022
+	INET/inet_error: read errno = 10054, server host = 26.109.142.119, address = 26.109.142.119/3050
+
+
+PCLUIS-D11	Mon Dec 05 10:21:53 2022
+	REMOTE INTERFACE/gds__detach: Unsuccesful detach from database.
+	Uncommitted work may have been lost.
+	Error reading data from the connection.
+
+
+PCLUIS-D11	Wed Dec 07 12:36:43 2022
+	INET/inet_error: read errno = 10054, server host = 26.225.202.190, address = 26.225.202.190/3050
+
+
+PCLUIS-D11	Wed Dec 07 12:36:43 2022
+	REMOTE INTERFACE/gds__detach: Unsuccesful detach from database.
+	Uncommitted work may have been lost.
+	Error writing data to the connection.
+
+
+PCLUIS-D11	Mon Dec 12 10:04:51 2022
+	INET/inet_error: read errno = 10054, server host = 26.225.202.190, address = 26.225.202.190/3050
+
+
+PCLUIS-D11	Mon Dec 12 10:06:18 2022
+	INET/inet_error: read errno = 10054, server host = 26.225.202.190, address = 26.225.202.190/3050
+
+
+PCLUIS-D11	Mon Jan 02 10:18:47 2023
+	INET/inet_error: read errno = 10054, server host = 26.225.202.190, address = 26.225.202.190/3050
+
+
+PCLUIS-D11	Mon Jan 02 10:22:01 2023
+	INET/inet_error: read errno = 10054, server host = 26.225.202.190, address = 26.225.202.190/3050
+
+
+PCLUIS-D11	Mon Jan 02 10:23:21 2023
+	INET/inet_error: read errno = 10054, server host = 26.225.202.190, address = 26.225.202.190/3050
+
+
+PCLUIS-D11	Mon Jan 02 10:31:50 2023
+	INET/inet_error: read errno = 10054, server host = 26.225.202.190, address = 26.225.202.190/3050
+
+
+PCLUIS-D11	Mon Jan 02 10:37:51 2023
+	WNET/wnet_error: ReadFile end-of-file errno = 109
+
+
+PCLUIS-D11	Mon Jan 02 12:57:51 2023
+	INET/inet_error: read errno = 10054, server host = 26.225.202.190, address = 26.225.202.190/3050
+
+
+PCLUIS-D11	Sat Jan 14 11:05:25 2023
+	INET/inet_error: send errno = 10054, server host = 192.168.21.30, address = 192.168.21.30/3050
+
+
+PCLUIS-D11	Sat Jan 14 11:05:46 2023
+	REMOTE INTERFACE/gds__detach: Unsuccesful detach from database.
+	Uncommitted work may have been lost.
+	Error writing data to the connection.
+
+
+PCLUIS-D11	Wed Jan 25 16:53:50 2023
+	INET/inet_error: read errno = 10054, server host = 26.214.54.44, address = 26.214.54.44/3050
+
+
+PCLUIS-D11	Mon Jul 24 12:29:18 2023
+	INET/INET_connect: getaddrinfo(server02,3051) failed: Host desconocido. 
+
+
+PCLUIS-D11	Mon Jul 24 12:29:21 2023
+	INET/INET_connect: getaddrinfo(server02,3051) failed: Host desconocido. 
+
+
+PCLUIS-D11	Mon Jul 24 12:29:26 2023
+	INET/INET_connect: getaddrinfo(server02,3051) failed: Host desconocido. 
+
+
+PCLUIS-D11	Mon Jul 24 12:29:31 2023
+	INET/INET_connect: getaddrinfo(server02,3051) failed: Host desconocido. 
+
+
+PCLUIS-D11	Mon Jul 31 19:12:17 2023
+	INET/inet_error: read errno = 10054, server host = 26.32.142.126, address = 26.32.142.126/3050
+
+
+PCLUIS-D11	Mon Jul 31 19:12:25 2023
+	REMOTE INTERFACE/gds__detach: Unsuccesful detach from database.
+	Uncommitted work may have been lost.
+	Error writing data to the connection.
+
+
+HPCOREI7	Thu Aug 10 16:10:14 2023
+	INET/inet_error: read errno = 10054, server host = 26.89.49.55, address = 26.89.49.55/3050
+
+
+HPCOREI7	Thu Aug 10 16:10:14 2023
+	REMOTE INTERFACE/gds__detach: Unsuccesful detach from database.
+	Uncommitted work may have been lost.
+	Error writing data to the connection.
+
+
+HPCOREI7	Fri Aug 11 09:33:26 2023
+	INET/inet_error: read errno = 10054, server host = 26.198.210.47, address = 26.198.210.47/3050
+
+
+HPCOREI7	Fri Aug 11 09:33:28 2023
+	REMOTE INTERFACE/gds__detach: Unsuccesful detach from database.
+	Uncommitted work may have been lost.
+	Error writing data to the connection.
+
+
+HPCOREI7	Tue Aug 15 21:15:08 2023
+	INET/inet_error: read errno = 10054, server host = 26.198.210.47, address = 26.198.210.47/3050
+
+
+HPCOREI7	Tue Aug 15 21:15:09 2023
+	REMOTE INTERFACE/gds__detach: Unsuccesful detach from database.
+	Uncommitted work may have been lost.
+	Error writing data to the connection.
+
+
+HPCOREI7	Tue Aug 15 21:16:16 2023
+	INET/inet_error: read errno = 10054, server host = 26.198.210.47, address = 26.198.210.47/3050
+
+
+HPCOREI7	Tue Aug 15 21:16:16 2023
+	REMOTE INTERFACE/gds__detach: Unsuccesful detach from database.
+	Uncommitted work may have been lost.
+	Error writing data to the connection.
+
+
+HPCOREI7	Tue Aug 15 21:16:23 2023
+	INET/inet_error: read errno = 10054, server host = 26.198.210.47, address = 26.198.210.47/3050
+
+
+HPCOREI7	Tue Aug 15 21:16:23 2023
+	REMOTE INTERFACE/gds__detach: Unsuccesful detach from database.
+	Uncommitted work may have been lost.
+	Error writing data to the connection.
+
+
+HPCOREI7	Tue Aug 15 21:22:24 2023
+	INET/inet_error: read errno = 10054, server host = 26.198.210.47, address = 26.198.210.47/3050
+
+
+HPCOREI7	Tue Aug 15 21:27:57 2023
+	INET/inet_error: send errno = 10054, server host = 26.198.210.47, address = 26.198.210.47/3050
+
+
+HPCOREI7	Tue Aug 15 21:27:57 2023
+	REMOTE INTERFACE/gds__detach: Unsuccesful detach from database.
+	Uncommitted work may have been lost.
+	Error writing data to the connection.
+
+
+HPCOREI7	Tue Aug 15 21:27:57 2023
+	INET/inet_error: send errno = 10054, server host = 26.198.210.47, address = 26.198.210.47/3050
+
+
+HPCOREI7	Tue Aug 15 21:27:57 2023
+	REMOTE INTERFACE/gds__detach: Unsuccesful detach from database.
+	Uncommitted work may have been lost.
+	Error writing data to the connection.
+
+
+PCLUIS-D11	Thu Sep 21 10:37:36 2023
+	INET/inet_error: read errno = 10054, server host = 26.191.249.21, address = 26.191.249.21/3050
+
+
+PCLUIS-D11	Thu Sep 21 10:37:36 2023
+	REMOTE INTERFACE/gds__detach: Unsuccesful detach from database.
+	Uncommitted work may have been lost.
+	Error writing data to the connection.
+
+
+PCLUIS-D11	Thu Oct 26 17:49:19 2023
+	INET/INET_connect: getaddrinfo(26.104.99.208C,3050) failed: Host desconocido. 
+
+
+PCLUIS-D11	Thu Oct 26 17:49:19 2023
+	INET/INET_connect: getaddrinfo(26.104.99.208C,3050) failed: Host desconocido. 
+
+
+PCLUIS-D11	Thu Oct 26 17:49:22 2023
+	INET/INET_connect: getaddrinfo(26.104.99.208C,3050) failed: Host desconocido. 
+
+
+PCLUIS-D11	Thu Oct 26 17:49:25 2023
+	INET/INET_connect: getaddrinfo(26.104.99.208C,3050) failed: Host desconocido. 
+
+
+PCLUIS-D11	Mon Nov 06 17:33:22 2023
+	REMOTE INTERFACE/gds__detach: Unsuccesful detach from database.
+	Uncommitted work may have been lost.
+	Error reading data from the connection.
+
+
+PCLUIS-D11	Mon Nov 06 17:33:24 2023
+	REMOTE INTERFACE/gds__detach: Unsuccesful detach from database.
+	Uncommitted work may have been lost.
+	Error writing data to the connection.
+
+
+PCLUIS-D11	Mon Nov 06 17:33:24 2023
+	REMOTE INTERFACE/gds__detach: Unsuccesful detach from database.
+	Uncommitted work may have been lost.
+	Error reading data from the connection.
+
+
+HPCOREI7	Mon Jan 29 09:02:32 2024
+	INET/inet_error: send errno = 10054, server host = 26.99.243.45, address = 26.99.243.45/3050
+
+
+PCDELPHI12	Mon Sep 23 12:56:53 2024
+	INET/inet_error: send errno = 10053, server host = 26.89.49.55, address = 26.89.49.55/3050
+
+
+PCDELPHI12	Mon Sep 23 12:56:53 2024
+	REMOTE INTERFACE/gds__detach: Unsuccesful detach from database.
+	Uncommitted work may have been lost.
+	Error writing data to the connection.
+
+
+PCDELPHI12	Mon Sep 23 13:01:30 2024
+	INET/inet_error: send errno = 10053, server host = 26.89.49.55, address = 26.89.49.55/3050
+
+
+PCDELPHI12	Mon Sep 23 13:01:30 2024
+	REMOTE INTERFACE/gds__detach: Unsuccesful detach from database.
+	Uncommitted work may have been lost.
+	Error writing data to the connection.
+
+
+PCDELPHI12	Mon Sep 23 13:01:30 2024
+	INET/inet_error: send errno = 10053, server host = 26.89.49.55, address = 26.89.49.55/3050
+
+
+PCDELPHI12	Mon Sep 23 13:01:30 2024
+	REMOTE INTERFACE/gds__detach: Unsuccesful detach from database.
+	Uncommitted work may have been lost.
+	Error writing data to the connection.
+
+
+PCDELPHI12	Mon Oct 07 08:07:30 2024
+	INET/inet_error: read errno = 10054, server host = 192.168.21.30, address = 192.168.21.30/3050
+
+
+PCDELPHI12	Mon Oct 07 08:07:30 2024
+	REMOTE INTERFACE/gds__detach: Unsuccesful detach from database.
+	Uncommitted work may have been lost.
+	Error writing data to the connection.
+
+
+PCDELPHI12	Mon Oct 07 08:10:54 2024
+	INET/inet_error: send errno = 10054, server host = 192.168.21.30, address = 192.168.21.30/3050
+
+
+PCDELPHI12	Mon Oct 07 08:10:54 2024
+	REMOTE INTERFACE/gds__detach: Unsuccesful detach from database.
+	Uncommitted work may have been lost.
+	Error writing data to the connection.
+
+
+PCDELPHI12	Mon Oct 07 08:10:55 2024
+	INET/inet_error: send errno = 10054, server host = 192.168.21.30, address = 192.168.21.30/3050
+
+
+PCDELPHI12	Mon Oct 07 08:10:55 2024
+	REMOTE INTERFACE/gds__detach: Unsuccesful detach from database.
+	Uncommitted work may have been lost.
+	Error writing data to the connection.
+
+
+PCDELPHI12	Mon Oct 07 08:10:55 2024
+	INET/inet_error: send errno = 10054, server host = 192.168.21.30, address = 192.168.21.30/3050
+
+
+PCDELPHI12	Mon Oct 07 08:10:55 2024
+	REMOTE INTERFACE/gds__detach: Unsuccesful detach from database.
+	Uncommitted work may have been lost.
+	Error writing data to the connection.
+
+
+PCDELPHI12	Wed Mar 12 10:27:20 2025
+	REMOTE INTERFACE/gds__detach: Unsuccesful detach from database.
+	Uncommitted work may have been lost.
+	Error writing data to the connection.
+
+
+PCDELPHI12	Fri Mar 28 13:54:25 2025
+	INET/inet_error: read errno = 10054, server host = 26.48.130.123, address = 26.48.130.123/3050
+
+
+PCDELPHI12	Fri Mar 28 13:54:29 2025
+	REMOTE INTERFACE/gds__detach: Unsuccesful detach from database.
+	Uncommitted work may have been lost.
+	Error writing data to the connection.
+
+
+PCDELPHI12	Fri Mar 28 14:59:22 2025
+	INET/inet_error: read errno = 10054, server host = 26.48.130.123, address = 26.48.130.123/3050
+
+
+PCDELPHI12	Fri Mar 28 14:59:22 2025
+	REMOTE INTERFACE/gds__detach: Unsuccesful detach from database.
+	Uncommitted work may have been lost.
+	Error writing data to the connection.
+
+
+PCDELPHI12	Fri Mar 28 15:06:49 2025
+	INET/inet_error: read errno = 10054, server host = 26.48.130.123, address = 26.48.130.123/3050
+
+
+PCDELPHI12	Thu Jun 05 14:45:24 2025
+	INET/inet_error: read errno = 10054, server host = 26.125.247.137, address = 26.125.247.137/3051
+
+
+PCDELPHI12	Thu Jul 17 15:27:06 2025
+	INET/inet_error: read errno = 10054, server host = 26.48.130.123, address = 26.48.130.123/3050
+
+
+PCDELPHI12	Thu Jul 17 15:27:14 2025
+	INET/inet_error: read errno = 10054, server host = 26.48.130.123, address = 26.48.130.123/3050
+
+
+PCDELPHI12	Thu Jul 17 15:28:17 2025
+	REMOTE INTERFACE/gds__detach: Unsuccesful detach from database.
+	Uncommitted work may have been lost.
+	Error writing data to the connection.
+
+
+PCDELPHI12	Wed Aug 20 11:49:51 2025
+	INET/inet_error: send errno = 10054, server host = 192.168.41.32, address = 192.168.41.32/3051
+
+
+PCDELPHI12	Wed Aug 20 11:50:09 2025
+	REMOTE INTERFACE/gds__detach: Unsuccesful detach from database.
+	Uncommitted work may have been lost.
+	Error writing data to the connection.
+
+
+PCDELPHI12	Wed Aug 20 12:46:14 2025
+	INET/inet_error: send errno = 10054, server host = 192.168.41.32, address = 192.168.41.32/3051
+
+
+PCDELPHI12	Wed Aug 20 12:46:53 2025
+	REMOTE INTERFACE/gds__detach: Unsuccesful detach from database.
+	Uncommitted work may have been lost.
+	Error writing data to the connection.
+
+
+PCDELPHI12	Wed Aug 20 12:52:38 2025
+	INET/inet_error: send errno = 10054, server host = 192.168.41.32, address = 192.168.41.32/3051
+
+
+PCDELPHI12	Wed Aug 20 12:52:38 2025
+	REMOTE INTERFACE/gds__detach: Unsuccesful detach from database.
+	Uncommitted work may have been lost.
+	Error writing data to the connection.
+
+
+PCDELPHI12	Wed Aug 20 12:52:39 2025
+	INET/inet_error: send errno = 10054, server host = 192.168.41.32, address = 192.168.41.32/3051
+
+
+PCDELPHI12	Wed Aug 20 12:52:39 2025
+	REMOTE INTERFACE/gds__detach: Unsuccesful detach from database.
+	Uncommitted work may have been lost.
+	Error writing data to the connection.
+
+
+PCDELPHI12	Sun Aug 24 14:49:19 2025
+	INET/INET_connect: getaddrinfo(chiarco3.mine.nu,3050) failed: Host desconocido. 
+
+
+PCDELPHI12	Fri Sep 12 10:02:51 2025
+	INET/inet_error: read errno = 10054, server host = 26.39.87.105, address = 26.39.87.105/3050
+
+
+PCDELPHI12	Fri Sep 12 10:02:51 2025
+	REMOTE INTERFACE/gds__detach: Unsuccesful detach from database.
+	Uncommitted work may have been lost.
+	Error reading data from the connection.
+
+
+PCDELPHI12	Fri Sep 12 10:03:10 2025
+	INET/inet_error: read errno = 10054, server host = 26.39.87.105, address = 26.39.87.105/3050
+
+
+PCDELPHI12	Fri Sep 12 10:03:10 2025
+	REMOTE INTERFACE/gds__detach: Unsuccesful detach from database.
+	Uncommitted work may have been lost.
+	Error reading data from the connection.
+
+
+PCDELPHI12	Fri Sep 12 10:03:29 2025
+	INET/inet_error: read errno = 10054, server host = 26.39.87.105, address = 26.39.87.105/3050
+
+
+PCDELPHI12	Fri Sep 12 10:03:29 2025
+	REMOTE INTERFACE/gds__detach: Unsuccesful detach from database.
+	Uncommitted work may have been lost.
+	Error reading data from the connection.
+
+
+PCDELPHI12	Wed Sep 17 18:08:16 2025
+	INET/inet_error: send errno = 10054, server host = 192.168.41.32, address = 192.168.41.32/3051
+
+
+PCDELPHI12	Wed Sep 17 18:08:16 2025
+	REMOTE INTERFACE/gds__detach: Unsuccesful detach from database.
+	Uncommitted work may have been lost.
+	Error writing data to the connection.
+
+
+PCDELPHI12	Wed Sep 17 18:09:25 2025
+	INET/inet_error: send errno = 10054, server host = 192.168.41.32, address = 192.168.41.32/3051
+
+
+PCDELPHI12	Wed Sep 17 18:09:25 2025
+	REMOTE INTERFACE/gds__detach: Unsuccesful detach from database.
+	Uncommitted work may have been lost.
+	Error writing data to the connection.
+
+
+PCDELPHI12	Wed Sep 17 18:09:25 2025
+	INET/inet_error: send errno = 10054, server host = 192.168.41.32, address = 192.168.41.32/3051
+
+
+PCDELPHI12	Wed Sep 17 18:09:25 2025
+	REMOTE INTERFACE/gds__detach: Unsuccesful detach from database.
+	Uncommitted work may have been lost.
+	Error writing data to the connection.
+
+
+PCDELPHI12	Fri Oct 03 16:45:42 2025
+	INET/inet_error: read errno = 10054, server host = 26.157.37.87, address = 26.157.37.87/3050
+
+
+PCDELPHI12	Fri Oct 03 16:45:42 2025
+	REMOTE INTERFACE/gds__detach: Unsuccesful detach from database.
+	Uncommitted work may have been lost.
+	Error reading data from the connection.
+
+
+PCDELPHI12	Sun Oct 05 13:29:54 2025
+	INET/inet_error: send errno = 10054, server host = 26.157.37.87, address = 26.157.37.87/3050
+
+
+PCDELPHI12	Mon Oct 06 09:26:05 2025
+	INET/inet_error: read errno = 10054, server host = 10.50.50.5, address = 10.50.50.5/3050
+
+
+PCDELPHI12	Mon Oct 06 09:26:05 2025
+	REMOTE INTERFACE/gds__detach: Unsuccesful detach from database.
+	Uncommitted work may have been lost.
+	Error writing data to the connection.
+
+
+PCDELPHI12	Mon Oct 06 09:27:51 2025
+	INET/inet_error: read errno = 10054, server host = 10.50.50.5, address = 10.50.50.5/3050
+
+
+PCDELPHI12	Mon Oct 06 09:27:53 2025
+	REMOTE INTERFACE/gds__detach: Unsuccesful detach from database.
+	Uncommitted work may have been lost.
+	Error writing data to the connection.
+
+
+PCDELPHI12	Mon Oct 06 09:51:04 2025
+	INET/inet_error: read errno = 10054, server host = 10.50.50.5, address = 10.50.50.5/3050
+
+
+PCDELPHI12	Mon Oct 06 09:56:19 2025
+	REMOTE INTERFACE/gds__detach: Unsuccesful detach from database.
+	Uncommitted work may have been lost.
+	Error writing data to the connection.
+
+
+PCDELPHI12	Wed Oct 08 13:16:31 2025
+	INET/inet_error: read errno = 10054, server host = 26.208.142.247, address = 26.208.142.247/3050
+
+
+PCDELPHI12	Fri Oct 10 00:34:35 2025
+	INET/inet_error: read errno = 10054, server host = 26.208.142.247, address = 26.208.142.247/3050
+
+
+PCDELPHI12	Fri Oct 10 00:34:47 2025
+	INET/inet_error: read errno = 10054, server host = 26.208.142.247, address = 26.208.142.247/3050
+
+
+PCDELPHI12	Fri Oct 10 00:34:48 2025
+	INET/inet_error: read errno = 10054, server host = 26.208.142.247, address = 26.208.142.247/3050
+
+
+PCDELPHI12	Fri Oct 10 00:34:53 2025
+	REMOTE INTERFACE/gds__detach: Unsuccesful detach from database.
+	Uncommitted work may have been lost.
+	Error writing data to the connection.
+
+
+PCDELPHI12	Fri Oct 10 00:34:53 2025
+	REMOTE INTERFACE/gds__detach: Unsuccesful detach from database.
+	Uncommitted work may have been lost.
+	Error writing data to the connection.
+
+
+PCDELPHI12	Tue Oct 14 23:15:43 2025
+	INET/inet_error: read errno = 10054, server host = 26.208.142.247, address = 26.208.142.247/3050
+
+
+PCDELPHI12	Wed Oct 15 00:19:12 2025
+	INET/inet_error: send errno = 10054, server host = 26.208.142.247, address = 26.208.142.247/3050
+
+
+PCDELPHI12	Wed Oct 15 00:19:12 2025
+	REMOTE INTERFACE/gds__detach: Unsuccesful detach from database.
+	Uncommitted work may have been lost.
+	Error writing data to the connection.
+
+
+PCDELPHI12	Wed Oct 15 00:19:12 2025
+	INET/inet_error: send errno = 10054, server host = 26.208.142.247, address = 26.208.142.247/3050
+
+
+PCDELPHI12	Wed Oct 15 00:19:12 2025
+	REMOTE INTERFACE/gds__detach: Unsuccesful detach from database.
+	Uncommitted work may have been lost.
+	Error writing data to the connection.
+
+
+PCDELPHI12	Wed Oct 15 00:19:12 2025
+	INET/inet_error: send errno = 10054, server host = 26.208.142.247, address = 26.208.142.247/3050
+
+
+PCDELPHI12	Wed Oct 15 00:19:12 2025
+	REMOTE INTERFACE/gds__detach: Unsuccesful detach from database.
+	Uncommitted work may have been lost.
+	Error writing data to the connection.
+
+
+PCDELPHI12	Wed Oct 29 15:45:55 2025
+	INET/INET_connect: getaddrinfo(Server01,3050) failed: Host desconocido. 
+
+
+PCDELPHI12	Wed Oct 29 15:46:04 2025
+	INET/INET_connect: getaddrinfo(Server01,3050) failed: Host desconocido. 
+
+
+PCDELPHI12	Wed Oct 29 15:46:14 2025
+	INET/INET_connect: getaddrinfo(Server01,3050) failed: Host desconocido. 
+
+
+PCDELPHI12	Wed Oct 29 15:46:31 2025
+	INET/INET_connect: getaddrinfo(Server01,3050) failed: Host desconocido. 
+
+
+PCDELPHI12	Thu Nov 06 12:29:25 2025
+	INET/INET_connect: getaddrinfo(D,3050) failed: Host desconocido. 
+
+
+PCDELPHI12	Tue Nov 18 14:16:06 2025
+	INET/inet_error: read errno = 10054, server host = 26.48.130.123, address = 26.48.130.123/3050
+
+
+PCDELPHI12	Tue Nov 18 14:16:44 2025
+	REMOTE INTERFACE/gds__detach: Unsuccesful detach from database.
+	Uncommitted work may have been lost.
+	Error writing data to the connection.
+
+
+PCDELPHI12	Thu Nov 20 14:15:39 2025
+	INET/inet_error: read errno = 10054, server host = 26.7.104.124, address = 26.7.104.124/3050
+
+
+PCDELPHI12	Mon Nov 24 11:25:03 2025
+	REMOTE INTERFACE/gds__detach: Unsuccesful detach from database.
+	Uncommitted work may have been lost.
+	Error writing data to the connection.
+
+
+PCDELPHI12	Mon Nov 24 11:25:04 2025
+	REMOTE INTERFACE/gds__detach: Unsuccesful detach from database.
+	Uncommitted work may have been lost.
+	Error reading data from the connection.
+
+
+PCDELPHI12	Mon Nov 24 11:25:04 2025
+	REMOTE INTERFACE/gds__detach: Unsuccesful detach from database.
+	Uncommitted work may have been lost.
+	Error reading data from the connection.
+
+
+PCDELPHI12	Sat Dec 06 10:18:29 2025
+	INET/inet_error: send errno = 10054, server host = 192.168.21.30, address = 192.168.21.30/3050
+
+
+PCDELPHI12	Tue Dec 16 23:19:18 2025
+	INET/inet_error: send errno = 10053, server host = 26.66.211.101, address = 26.66.211.101/3050
+
+
+PCDELPHI12	Tue Dec 16 23:19:19 2025
+	REMOTE INTERFACE/gds__detach: Unsuccesful detach from database.
+	Uncommitted work may have been lost.
+	Error writing data to the connection.
+
+
+PCDELPHI12	Tue Dec 16 23:20:10 2025
+	INET/inet_error: send errno = 10053, server host = 26.66.211.101, address = 26.66.211.101/3050
+
+
+PCDELPHI12	Tue Dec 16 23:20:10 2025
+	REMOTE INTERFACE/gds__detach: Unsuccesful detach from database.
+	Uncommitted work may have been lost.
+	Error writing data to the connection.
+
+
+PCDELPHI12	Tue Dec 16 23:20:10 2025
+	INET/inet_error: send errno = 10053, server host = 26.66.211.101, address = 26.66.211.101/3050
+
+
+PCDELPHI12	Tue Dec 16 23:20:10 2025
+	REMOTE INTERFACE/gds__detach: Unsuccesful detach from database.
+	Uncommitted work may have been lost.
+	Error writing data to the connection.
+
+
+PCDELPHI12	Mon Jan 19 09:50:45 2026
+	INET/inet_error: send errno = 10054, server host = 26.7.104.124, address = 26.7.104.124/3050
+
+
+PCDELPHI12	Mon Jan 19 09:50:45 2026
+	REMOTE INTERFACE/gds__detach: Unsuccesful detach from database.
+	Uncommitted work may have been lost.
+	Error writing data to the connection.
+
+
+PCDELPHI12	Tue Mar 03 11:38:13 2026
+	INET/inet_error: read errno = 10054, server host = 26.222.30.53, address = 26.222.30.53/3050
+
+
+PCDELPHI12	Tue Mar 03 11:38:13 2026
+	REMOTE INTERFACE/gds__detach: Unsuccesful detach from database.
+	Uncommitted work may have been lost.
+	Error writing data to the connection.
+
+
+PCDELPHI12	Tue Mar 03 11:39:42 2026
+	INET/inet_error: read errno = 10054, server host = 26.222.30.53, address = 26.222.30.53/3050
+
+
+PCDELPHI12	Tue Mar 03 11:39:42 2026
+	REMOTE INTERFACE/gds__detach: Unsuccesful detach from database.
+	Uncommitted work may have been lost.
+	Error reading data from the connection.
+

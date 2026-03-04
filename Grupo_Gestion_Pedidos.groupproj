@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{551E246D-776D-40D7-9529-EC750BC88700}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="Menu.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\NotaPedido\Pedidos.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="Menu">
+        <MSBuild Projects="Menu.dproj"/>
+    </Target>
+    <Target Name="Menu:Clean">
+        <MSBuild Projects="Menu.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Menu:Make">
+        <MSBuild Projects="Menu.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Pedidos">
+        <MSBuild Projects="..\NotaPedido\Pedidos.dproj"/>
+    </Target>
+    <Target Name="Pedidos:Clean">
+        <MSBuild Projects="..\NotaPedido\Pedidos.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Pedidos:Make">
+        <MSBuild Projects="..\NotaPedido\Pedidos.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="Menu;Pedidos"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="Menu:Clean;Pedidos:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="Menu:Make;Pedidos:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

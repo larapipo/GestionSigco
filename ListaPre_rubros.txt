@@ -1,0 +1,886 @@
+001  INDUMENTARIA                    01   DELANTALES DE PVC             
+001  INDUMENTARIA                    02   PANTALONES Y BERMUDAS DE GOMA 
+001  INDUMENTARIA                    03   BUFANDAS, GORRO Y CUELLOS     
+001  INDUMENTARIA                    04   CAMISA Y CASACAS DE TRABAJO   
+001  INDUMENTARIA                    05   BOTAS  GOMA 1/2 CANA  GOCER   
+001  INDUMENTARIA                    06   CAMPERAS TERMICAS Y CHALECOS  
+002  GUANTES                         01   GUANTES DE MANIOBRA           
+002  GUANTES                         02   GUANTES DE LATEX              
+002  GUANTES                         03   GUANTES TEJIDOS               
+002  GUANTES                         04   GUANTES VARIOS                
+003  SEGURIDAD IND. Y NAV            01   PROTECTOR OCULAR              
+003  SEGURIDAD IND. Y NAV            02   PROTECTOR AUDITIVO            
+003  SEGURIDAD IND. Y NAV            04   PROTECTOR CORPORAL            
+003  SEGURIDAD IND. Y NAV            05   VARIOS                        
+018  ELECTRICIDAD                    21   ARRANCADORES, ZOCALOS Y ACCESO
+018  ELECTRICIDAD                    23   VARIOS                        
+005  ELEMENTOS DE NAVEGAC            22   TRITURADORAS DE ALIMENTO      
+016  FERRETERIA                      52   FERODO                        
+016  FERRETERIA                      53   GUARDACABOS                   
+003  SEGURIDAD IND. Y NAV            11   PROTECTOR RESPIRATORIO        
+003  SEGURIDAD IND. Y NAV            34   PRIMEROS AUXILIOS             
+022  ACEROS - HIERROS Y CHAPAS       07   CODOS NEGROS                  
+007  PLANTA DE FILETEADO             14   VAINA                         
+043  QUIMICOS Y LIMPIADOR            14   LINEA INDUSOL                 
+003  SEGURIDAD IND. Y NAV            15   PROTECCION AMBIENTAL          
+004  HERRAJES NAVALES                01   ANILLAS SIMPLES               
+004  HERRAJES NAVALES                02   BARRETAS Y CABILLAS           
+004  HERRAJES NAVALES                03   GANCHOS VULCAN                
+004  HERRAJES NAVALES                04   PASTECAS                      
+004  HERRAJES NAVALES                05   TRIANGULOS Y OCHOS            
+004  HERRAJES NAVALES                06   BOTELLONES Y CARRITOS         
+004  HERRAJES NAVALES                07   MALLAS FALSAS                 
+004  HERRAJES NAVALES                08   HERRAJES VARIOS               
+005  ELEMENTOS DE NAVEGAC            01   LIBRERIA NAVAL                
+016  FERRETERIA                      54   TENSORES                      
+021  SOLDADURA                       10   VIDRIOS                       
+005  ELEMENTOS DE NAVEGAC            02   SEGURIDAD NAVAL               
+045  ELECTRODOMESTICOS               05   CALEFON                       
+005  ELEMENTOS DE NAVEGAC            04   VARIOS                        
+005  ELEMENTOS DE NAVEGAC            05   BANDERAS                      
+055  ARTE DE PESCA GG                03   CANASTOS, CAJONES Y CANALETAS 
+057  PLOMERIA                        04   ACCESORIOS                    
+005  ELEMENTOS DE NAVEGAC            08   REGISTRADORES DE TEMPERATURA  
+004  HERRAJES NAVALES                20   GRILLETE DERECHO C/C R/C      
+004  HERRAJES NAVALES                17   GRILLETE CORAZON C/C R/C      
+004  HERRAJES NAVALES                21   GRILLETE DERECHO C/C R/R      
+005  ELEMENTOS DE NAVEGAC            20   BALANZAS  Y BASCULAS          
+016  FERRETERIA                      34   TIJERAS - PINZAS CORTA PERNOS 
+042  ARTE DE PESCA POTERO            06   VARIOS                        
+004  HERRAJES NAVALES                25   GRILLETES PARA PORTON         
+004  HERRAJES NAVALES                31   GRAMPINES                     
+004  HERRAJES NAVALES                16   CADENAS                       
+007  PLANTA DE FILETEADO             01   CUCHILLAS MANGO MADERA        
+007  PLANTA DE FILETEADO             02   CUCHILLAS MANGO PLASTICO      
+007  PLANTA DE FILETEADO             03   CUCHILLOS MANGO MADERA        
+007  PLANTA DE FILETEADO             04   CUCHILLOS MANGO PLASTICO      
+007  PLANTA DE FILETEADO             05   CHAIRAS ESKILTUNA             
+007  PLANTA DE FILETEADO             06   PIEDRAS DE AFILAR             
+045  ELECTRODOMESTICOS               11   LICUADORAS                    
+004  HERRAJES NAVALES                32   LLAVES - PUNZONES             
+007  PLANTA DE FILETEADO             07   TABLAS Y GOMAS P/FILETEROS    
+016  FERRETERIA                      60   CERA PARA CORREA              
+007  PLANTA DE FILETEADO             08   DESCAMADORES Y UNAS           
+007  PLANTA DE FILETEADO             09   NAVAJAS                       
+008  CABLES DE ACERO                 01   CABLE, TRAMO Y ESLINGA 6X19   
+008  CABLES DE ACERO                 02   CABLE, TRAMO Y ESLINGA 6X24   
+008  CABLES DE ACERO                 03   ACCESORIOS PARA CABLES        
+008  CABLES DE ACERO                 04   CABLE COMB. ALMA ACERO        
+008  CABLES DE ACERO                 05   CABLE COMB. ALMA TEXTIL       
+009  HILOS  CABOS  PANOS             01   HILOS DE POLIETILENO          
+009  HILOS  CABOS  PANOS             02   CABOS DE POLIETILENO          
+016  FERRETERIA                      33   MOSQUETONES                   
+009  HILOS  CABOS  PANOS             03   HILOS DE NYLON                
+009  HILOS  CABOS  PANOS             04   CABOS DE NYLON                
+009  HILOS  CABOS  PANOS             05   HILOS DE POLYSTEEL            
+009  HILOS  CABOS  PANOS             06   CABOS DE POLYESTEEL           
+009  HILOS  CABOS  PANOS             07   PANO DE POLIETILENO           
+009  HILOS  CABOS  PANOS             08   PANOS DE NYLON                
+009  HILOS  CABOS  PANOS             09   PANOS DE POLYSTEEL            
+009  HILOS  CABOS  PANOS             10   CABO DE POLIPROP.             
+009  HILOS  CABOS  PANOS             11   CABOS POWER CORD              
+009  HILOS  CABOS  PANOS             12   PANO POWER CORD               
+009  HILOS  CABOS  PANOS             13   VARIOS                        
+010  PINTURAS                        01   ESMALTES GANADOR              
+010  PINTURAS                        02   LATEX EXTERIOR - INTERIOR     
+010  PINTURAS                        03   BARNICES                      
+010  PINTURAS                        04   ANTIOXIDOS Y CONVERTIDORES    
+010  PINTURAS                        05   DILUYENTES, AGUARRAS Y THINNER
+010  PINTURAS                        06   ESMALTES Y PINTURAS ESPECIALES
+016  FERRETERIA                      99   PINCELES Y RODILLOS PINGUINO  
+021  SOLDADURA                       14   ELECTRODOS BOEHLER            
+010  PINTURAS                        09   ELEMENTOS VARIOS              
+011  LUBR., GRASAS Y ADIT            01   LINEA BARDHAL                 
+017  ADHESIVOS- SELLADOR-H           17   DILUYENTES                    
+027  REPUESTOS                       05   CABLES                        
+027  REPUESTOS                       06   CONECTOR                      
+043  QUIMICOS Y LIMPIADOR            10   LINEA TECNIFER                
+011  LUBR., GRASAS Y ADIT            07   LINEA  WD-40                  
+011  LUBR., GRASAS Y ADIT            08   LIMPIADORES BARDAHL           
+021  SOLDADURA                       15   ELECTRODOS INDURA             
+011  LUBR., GRASAS Y ADIT            10   LINEA MOLYKOTE                
+011  LUBR., GRASAS Y ADIT            11   LINEA PENETRIT                
+036  INSTRUMENTAL                    01   PRESOSTATOS                   
+011  LUBR., GRASAS Y ADIT            13   LIMPIA CONTACTOS              
+012  TEXTIL                          01   TRAPOS Y ESTOPA               
+012  TEXTIL                          02   COLCHONES - ALMOHADAS         
+018  ELECTRICIDAD                    10   FUSIBLES                      
+012  TEXTIL                          03   TOALLAS, FUNDAS Y FRAZADAS    
+011  LUBR., GRASAS Y ADIT            22   LUBR., GRASAS Y ADIT. VARIAS  
+013  ART. DE GOMA Y PVC              01   GOMA EN PLANCHA               
+013  ART. DE GOMA Y PVC              02   BURLETES DE GOMA              
+013  ART. DE GOMA Y PVC              03   CORREAS A                     
+013  ART. DE GOMA Y PVC              04   CORREAS B                     
+013  ART. DE GOMA Y PVC              06   Canos PVC Corrugados Industria
+013  ART. DE GOMA Y PVC              07   CANO P/RIEGO PVC CRISTAL      
+013  ART. DE GOMA Y PVC              08   CANO PVC CRISTAL              
+027  REPUESTOS                       07   VARIOS                        
+013  ART. DE GOMA Y PVC              09   MANGUERA GOMA Y TELA          
+014  PRODUCTOS TEXACO                01   ACEITES MOTORES NAFTEROS      
+014  PRODUCTOS TEXACO                02   ACEITES MOTORES A G.N.C       
+014  PRODUCTOS TEXACO                03   ACEITES MOTORES DIESEL        
+014  PRODUCTOS TEXACO                04   ACEITES TRANSM./DIFEREREN.    
+014  PRODUCTOS TEXACO                05   ACEITES INDUSTRIALES          
+038  FILTROS                         18   FILTROS CATERPILLAR DE ACEITE 
+012  TEXTIL                          07   SERVICIO DE VALET             
+043  QUIMICOS Y LIMPIADOR            15   LINEA ASHLAND                 
+010  PINTURAS                        17   LATEX EXTERIOR                
+014  PRODUCTOS TEXACO                10   GRASA LITIO EXT.PRESION       
+015  HERRAMIENTAS                    77   LINEA CROSS                   
+014  PRODUCTOS TEXACO                13   GRASAS CON DISULFURO          
+014  PRODUCTOS TEXACO                18   TAMBORES VENTA MAYORISTA      
+015  HERRAMIENTAS                    01   LLAVES COMBINADAS TOPMAN      
+015  HERRAMIENTAS                    02   LLAVES COMB. MM - BAHCO       
+015  HERRAMIENTAS                    03   LLAVES COMB.MM -NICHOLSON     
+015  HERRAMIENTAS                    04   LLAVES COMB.PULG.FOY          
+015  HERRAMIENTAS                    05   LLAVES COMB.PULGADA. -BAHCO   
+015  HERRAMIENTAS                    06   LLAVES COMB.PULG. -NICHOLSON  
+015  HERRAMIENTAS                    07   LLAVES AJUSTABLES - FOY       
+015  HERRAMIENTAS                    08   LLAVES AJUSTABLES - BAHCO     
+015  HERRAMIENTAS                    09   LLAVES P/CANOS-BAHCO          
+015  HERRAMIENTAS                    82   PUNTA PARA TORNILLO           
+015  HERRAMIENTAS                    93   ACCESORIOS IRIMO              
+015  HERRAMIENTAS                    10   PINZAS-UNIV., PICO LORO-ALICAT
+015  HERRAMIENTAS                    11   BOCALLAVE ESTRIADA ? BAHCO    
+015  HERRAMIENTAS                    12   campera austral xxl           
+015  HERRAMIENTAS                    13   BOCALLAVE ENC. ? NICHOLSON    
+015  HERRAMIENTAS                    14   MANIJA CRIQUE NICHOLSON       
+015  HERRAMIENTAS                    15   EXTENSIONES NICHOLSON         
+015  HERRAMIENTAS                    16   PINZA SEGUER NICHOLSON        
+015  HERRAMIENTAS                    17   ALICATES NICHOLSON            
+015  HERRAMIENTAS                    18   CORTA HIERROS                 
+015  HERRAMIENTAS                    19   PINZAS FIMACO                 
+015  HERRAMIENTAS                    20   ALICATES FIMACO               
+015  HERRAMIENTAS                    21   TENAZA CARPINTERO             
+015  HERRAMIENTAS                    22   MARTILLOS - MAZAS             
+015  HERRAMIENTAS                    23   MAZAS                         
+015  HERRAMIENTAS                    24   SERRUCHOS                     
+015  HERRAMIENTAS                    25   DESTORNILLADORES CELESTAL     
+015  HERRAMIENTAS                    26   PALAS                         
+015  HERRAMIENTAS                    27   REMACHADORAS-SOPLETES         
+015  HERRAMIENTAS                    28   TIJERAS PARA CHAPA            
+015  HERRAMIENTAS                    29   MAQ. ELECTRICAS DE MANO       
+015  HERRAMIENTAS                    30   DESTORNILLADORES BAHCO        
+015  HERRAMIENTAS                    31   LLAVES COMBINADAS WILLIAMS    
+015  HERRAMIENTAS                    32   BOCALLAVE ENC. ? WILLIAMS     
+015  HERRAMIENTAS                    33   ACCESORIO ENC. 1/2  WILLIAMS  
+015  HERRAMIENTAS                    34   SET. LLAVES-BOCALL. WILLIAMS  
+015  HERRAMIENTAS                    35   VARIOS                        
+016  FERRETERIA                      01   ABRAZADERAS TIPO AMERICANA    
+016  FERRETERIA                      02   MECHAS DORMER                 
+016  FERRETERIA                      03   CANDADOS                      
+016  FERRETERIA                      04   GAS-OXIGENO-ACETILENO-NITROGEN
+016  FERRETERIA                      05   METROS - CINTAS METRICAS      
+016  FERRETERIA                      06   BULONES-TORNILLOS             
+016  FERRETERIA                      07   CINTAS TEFLON                 
+016  FERRETERIA                      08   EMPAQUETADURA ALGODON ENSEBADA
+016  FERRETERIA                      09   PALAS CARBONERAS - PALEAR     
+016  FERRETERIA                      10   CLAVOS                        
+016  FERRETERIA                      11   VIRUTAS                       
+016  FERRETERIA                      12   CEPILLOS DE ACERO CON MANGO   
+016  FERRETERIA                      13   PINCELES ROSAPIN              
+016  FERRETERIA                      14   VARIOS                        
+016  FERRETERIA                      15   HOJAS DE SIERRA - SIERRA DE CO
+016  FERRETERIA                      16   KLINGER                       
+016  FERRETERIA                      17   ADAMITES                      
+016  FERRETERIA                      18   ABRAZADERA CARBIZ             
+016  FERRETERIA                      19   LIJAS                         
+023  ART DE LIMPIEZA                 22   BALDES, FUENTONES Y EMBUDOS   
+021  SOLDADURA                       18   CORTADORAS ACET.              
+017  ADHESIVOS- SELLADOR-H           02   ADHESIVOS DE CONTACTO         
+017  ADHESIVOS- SELLADOR-H           03   SELLADOR DE SILICONAS         
+017  ADHESIVOS- SELLADOR-H           04   ADHESIVOS METALICOS           
+017  ADHESIVOS- SELLADOR-H           05   ADHESIVOS PARA P V C          
+017  ADHESIVOS- SELLADOR-H           06   ADHESIVOS INSTANTANEOS        
+017  ADHESIVOS- SELLADOR-H           07   ADHESIVO EPOXI                
+017  ADHESIVOS- SELLADOR-H           08   COLAS VINILICAS               
+017  ADHESIVOS- SELLADOR-H           09   SELLADORES ALTA TEMP.         
+017  ADHESIVOS- SELLADOR-H           10   VARIOS                        
+015  HERRAMIENTAS                    80   LINEA TOP TOOLS               
+018  ELECTRICIDAD                    00   PILAS-BATERIAS-LINTERNAS      
+018  ELECTRICIDAD                    01   CABLES                        
+045  ELECTRODOMESTICOS               03   VIDEO                         
+018  ELECTRICIDAD                    02   TOMA, ADAPTADORES Y FICHAS    
+018  ELECTRICIDAD                    03   CINTAS, PRECINTOS Y PRENSAS   
+018  ELECTRICIDAD                    04   ARTEFACTOS DE ILUMUNACION Y AC
+018  ELECTRICIDAD                    05   INSTRUMENTAL                  
+018  ELECTRICIDAD                    06   TERMICAS-LLAVES-INTERRUPTORES 
+018  ELECTRICIDAD                    07   LAMPARAS Y TUBOS FLUORECENTES 
+046  HERR. PARA SOLDADURA            00   PICO DE CORTE                 
+021  SOLDADURA                       01   ELECTRODOS CONARCO            
+021  SOLDADURA                       02   ELECTRODOS HYUNDAI            
+021  SOLDADURA                       03   ELECTRODOS HYUNDAI AC/INOX    
+021  SOLDADURA                       04   BRIDAS                        
+022  ACEROS - HIERROS Y CHAPAS       01   HIERROS ANGULO                
+022  ACEROS - HIERROS Y CHAPAS       02   CHAPAS RECTAS                 
+022  ACEROS - HIERROS Y CHAPAS       03   PLANCHUELAS                   
+022  ACEROS - HIERROS Y CHAPAS       04   CHAPAS NEGRAS                 
+021  SOLDADURA                       11   INSUMOS                       
+023  ART DE LIMPIEZA                 01   LIMPIADORES                   
+023  ART DE LIMPIEZA                 02   PRODUCTOS VARIOS              
+023  ART DE LIMPIEZA                 03   DETERGENTES - LAVANDINAS-DESEN
+023  ART DE LIMPIEZA                 04   CEPILLOS-ESCOBAS- SECADORES-PA
+023  ART DE LIMPIEZA                 07   TRAPOS DE PISO Y REJILLAS     
+024  LIBRERIA                        00   CARPETAS Y BLOCKS             
+024  LIBRERIA                        01   BOLIGRAFOS, PORTAMINAS Y LAPIZ
+024  LIBRERIA                        02   RESMAS                        
+024  LIBRERIA                        03   PEGAMENTOS Y CINTAS ADHESIVAS 
+024  LIBRERIA                        04   MAQUINAS VARIAS               
+024  LIBRERIA                        05   CRAYONES, TINTAS Y SELLOS     
+005  ELEMENTOS DE NAVEGAC            21   EMBALAJE                      
+025  COMPUTACION                     00   EQUIPOS E IMPRESORAS          
+025  COMPUTACION                     01   INSUMOS Y ACCESORIOS          
+038  FILTROS                         05   FILTROS CUMMINS DE ACEITE     
+038  FILTROS                         07   FILTROS CATERPILLAR DE COMBUST
+038  FILTROS                         06   FILTROS FAMEL DE AGUA         
+027  REPUESTOS                       01   RODAMIENTOS                   
+038  FILTROS                         17   FILTROS CUMMINS DE AGUA       
+015  HERRAMIENTAS                    36   LIMAS  NICHOLSON              
+014  PRODUCTOS TEXACO                19   ACEITE MARINO                 
+000  SIN CLASIFICAR ....             00   SIN CATEGORIA                 
+013  ART. DE GOMA Y PVC              10   CORREAS C                     
+018  ELECTRICIDAD                    11   TERMINALES Y UNIONES AISL.    
+013  ART. DE GOMA Y PVC              11   MANGUERA PVC                  
+013  ART. DE GOMA Y PVC              12   PISOS                         
+015  HERRAMIENTAS                    37   PINZAS TOPMAN                 
+015  HERRAMIENTAS                    38   DESTORNILLADORES CELESTAL     
+043  QUIMICOS Y LIMPIADOR            12   LINEA ALPROS                  
+021  SOLDADURA                       12   PINZA PORTA ELECTRODOS - VARIO
+021  SOLDADURA                       13   MAQUINAS - CABLES             
+016  FERRETERIA                      35   EXTRACTORES                   
+021  SOLDADURA                       05   PRODUCTOS AGA                 
+013  ART. DE GOMA Y PVC              13   CANOS CURVOS                  
+024  LIBRERIA                        08   SOBRES , FOLIOS Y ETIQUETAS   
+024  LIBRERIA                        09   COMPACES,REGLAS,PIZARRAS, TIJE
+016  FERRETERIA                      36   SACABOCADOS                   
+015  HERRAMIENTAS                    39   BOCALLAVES TOP MAN            
+023  ART DE LIMPIEZA                 08   LIMPIAMANOS                   
+015  HERRAMIENTAS                    40   PINZAS SEGER BAHCO            
+015  HERRAMIENTAS                    41   ACEITERAS                     
+009  HILOS  CABOS  PANOS             14   CABOS COMBINADOS              
+016  FERRETERIA                      37   MACHOS                        
+015  HERRAMIENTAS                    75   SACAFILTROS                   
+015  HERRAMIENTAS                    42   JUEGO BOCALLAVES TODAS LAS MAR
+015  HERRAMIENTAS                    45   LLAVES AJUSTABLES TOP MAN     
+012  TEXTIL                          04   REPASADORES                   
+023  ART DE LIMPIEZA                 12   TACHOS Y TAMBORES             
+024  LIBRERIA                        07   VARIOS                        
+031  ART. DE CONSTRUCCION            03   HERRAMIENTAS                  
+055  ARTE DE PESCA GG                01   ANZUELOS                      
+042  ARTE DE PESCA POTERO            03   LAMPARAS Y ACCESORIOS         
+031  ART. DE CONSTRUCCION            04   VARIOS                        
+003  SEGURIDAD IND. Y NAV            31   ELEMENTOS CONTRA INCENDIO     
+005  ELEMENTOS DE NAVEGAC            19   INSTRUMENTAL                  
+004  HERRAJES NAVALES                15   CONECTORES, REPUESTOS Y SEGURO
+016  FERRETERIA                      44   GRASERAS - ACEITERAS          
+009  HILOS  CABOS  PANOS             16   HILO POWER CORD               
+002  GUANTES                         07   GUANTES ESPECIALES            
+027  REPUESTOS                       03   RETENES                       
+015  HERRAMIENTAS                    48   PINZAS GEDORE                 
+013  ART. DE GOMA Y PVC              16   MANGUERA                      
+015  HERRAMIENTAS                    49   LLAVES GEDORE                 
+023  ART DE LIMPIEZA                 15   CERAS - LUSTRA MUEBLES        
+004  HERRAJES NAVALES                18   GRILLETE DERECHO C/ESC.       
+029  TELAS                           02   LONA                          
+015  HERRAMIENTAS                    50   LLAVES ESTRIADAS BAHCO        
+011  LUBR., GRASAS Y ADIT            16   LINEA SHELL                   
+008  CABLES DE ACERO                 06   CABLE DE ACERO FORRADO        
+043  QUIMICOS Y LIMPIADOR            13   LINEA DEM                     
+013  ART. DE GOMA Y PVC              17   CORREAS O                     
+016  FERRETERIA                      45   CHAVETAS                      
+027  REPUESTOS                       04   RULEMANES                     
+016  FERRETERIA                      55   PINCELES Y RODILLOS ATLAS     
+013  ART. DE GOMA Y PVC              19   CANO HIDROTRENZ               
+042  ARTE DE PESCA POTERO            01   POTERAS                       
+015  HERRAMIENTAS                    60   MANGOS Y CABOS DE MADERA      
+004  HERRAJES NAVALES                33   CADENAS ALTA RESISTENCIA      
+030  BAZAR                           13   CUBIERTOS Y ACCESORIOS        
+030  BAZAR                           14   PLATOS                        
+023  ART DE LIMPIEZA                 17   DESINFECTANTES - DESODORANTES 
+015  HERRAMIENTAS                    52   OTRAS PINZAS                  
+013  ART. DE GOMA Y PVC              20   CANO DE GOMA NAYADE           
+021  SOLDADURA                       07   ELECTRODOS SIDERAL REST       
+004  HERRAJES NAVALES                24   GRILLETE ESPANOL              
+015  HERRAMIENTAS                    81   LINEA RUHLMAN                 
+004  HERRAJES NAVALES                19   GRILLETE CORAZON C/C R/R      
+016  FERRETERIA                      46   CALIBRES - SONDAS             
+018  ELECTRICIDAD                    20   FUENTES DE ALIMENTACION       
+030  BAZAR                           15   VASOS                         
+010  PINTURAS                        12   PINTURAS EN AEROSOL           
+007  PLANTA DE FILETEADO             10   CHAIRAS BIASSONI              
+016  FERRETERIA                      47   MECHA DE WIDIA                
+015  HERRAMIENTAS                    53   BOCALLAVE HEXAGONAL ? BAHCO   
+023  ART DE LIMPIEZA                 18   ROLLOS DE PAPEL-SERVILLETAS   
+015  HERRAMIENTAS                    54   DESTORNILLADOR WILLIAMS       
+015  HERRAMIENTAS                    55   TENAZA P/ARMADOR              
+016  FERRETERIA                      48   CUTER                         
+009  HILOS  CABOS  PANOS             17   HILOS LUPOLINO                
+015  HERRAMIENTAS                    56   JUEGO TUBOS + CRIQUET         
+015  HERRAMIENTAS                    57   ACCESORIOS 3/4" BAHCO         
+016  FERRETERIA                      49   PLANCHA CORCHO Y GOMA         
+055  ARTE DE PESCA GG                04   VARIOS                        
+004  HERRAJES NAVALES                26   GANCHOS VARIOS                
+030  BAZAR                           19   VARIOS                        
+030  BAZAR                           20   PIZZERA PLANCHUELAS Y ASADERAS
+016  FERRETERIA                      79   PITONES                       
+030  BAZAR                           22   FILTRO, COLADORES Y PAPEL     
+001  INDUMENTARIA                    15   CAMPERA DE PVC                
+038  FILTROS                         15   FILTROS RAMA DE AIRE          
+038  FILTROS                         16   FILTROS RAMA DE COMBUSTIBLE   
+038  FILTROS                         00   FILTROS ERCIF DE ACEITE       
+015  HERRAMIENTAS                    94   LLAVES COMB. STANLEY          
+038  FILTROS                         01   FILTROS ERCIF DE COMBUSTIBLE  
+038  FILTROS                         02   FILTROS FAMEL DE ACEITE       
+038  FILTROS                         03   FILTROS FAMEL DE AIRE         
+038  FILTROS                         04   FILTROS FAMEL DE COMBUSTIBLE  
+029  TELAS                           00   TELA DE P.V.C                 
+004  HERRAJES NAVALES                27   GANCHOS CON Y SIN GIRATORIO   
+023  ART DE LIMPIEZA                 09   JABONES                       
+001  INDUMENTARIA                    16   BUZOS, POLERAS Y PULLOVERS    
+022  ACEROS - HIERROS Y CHAPAS       05   VARILLAS RODONDA EN PULGADA   
+015  HERRAMIENTAS                    47   PISTOLAS APLICADORAS          
+015  HERRAMIENTAS                    64   TORQUIMETROS                  
+016  FERRETERIA                      43   GRAMPAS                       
+017  ADHESIVOS- SELLADOR-H           12   CATALIZADORES                 
+017  ADHESIVOS- SELLADOR-H           13   RODAMIENTOS-POLEAS-ROTORES    
+010  PINTURAS                        10   ENDUIDOS Y FONDOS             
+010  PINTURAS                        11   IMPREGNANTES                  
+015  HERRAMIENTAS                    43   BOCALLAVE ENC. 3/4 BAHCO      
+016  FERRETERIA                      38   ARCOS DE SIERRA               
+016  FERRETERIA                      39   MORSAS                        
+016  FERRETERIA                      40   PINCELES TOP MAN              
+016  FERRETERIA                      41   LIMAS                         
+013  ART. DE GOMA Y PVC              23   CANO DE GOMA                  
+021  SOLDADURA                       06   ELECTRODO RANLEIGH            
+038  FILTROS                         13   FILTROS RAMA DE AGUA          
+015  HERRAMIENTAS                    44   PESTANADORAS-CORTACANOS       
+016  FERRETERIA                      42   REMACHES - GRAMPAS P/ENGRAMPAD
+043  QUIMICOS Y LIMPIADOR            06   LINEA KUBO                    
+015  HERRAMIENTAS                    69   ALBANILERIA                   
+004  HERRAJES NAVALES                28   ANILLAS DOBLES                
+015  HERRAMIENTAS                    46   LLAVES ALLEN                  
+001  INDUMENTARIA                    17   MEDIAS Y CALZONCILLOS         
+029  TELAS                           01   TELAS ALGODON                 
+031  ART. DE CONSTRUCCION            01   BREAS Y MASILLAS              
+009  HILOS  CABOS  PANOS             15   REDES                         
+055  ARTE DE PESCA GG                02   BOYAS                         
+023  ART DE LIMPIEZA                 11   ESPONJAS-FRANELAS Y REP.      
+018  ELECTRICIDAD                    12   LLAVES TERMICAS E INTERRUPTORE
+030  BAZAR                           11   PAVAS, TERMOS, JARRAS Y CAFETE
+031  ART. DE CONSTRUCCION            02   ARENA - CEMENTOS - YESOS      
+005  ELEMENTOS DE NAVEGAC            13   CUERNOS, BOSINAS Y MEGAFONOS  
+018  ELECTRICIDAD                    13   ALAMBRE, ESTANO Y DECAPANTES  
+003  SEGURIDAD IND. Y NAV            32   PROTECTOR FACIAL              
+015  HERRAMIENTAS                    51   LLAVES AJUSTABLES WILLAMS     
+004  HERRAJES NAVALES                09   CALONES                       
+018  ELECTRICIDAD                    22   ELEM. DE SENALIZACION VISUAL Y
+003  SEGURIDAD IND. Y NAV            16   PROTECTOR LUMBAR              
+004  HERRAJES NAVALES                23   GRILL.ALTA RESISTENCIA        
+004  HERRAJES NAVALES                22   GRILL.ACERO INOXIDABLE        
+023  ART DE LIMPIEZA                 19   BOLSAS VARIAS                 
+015  HERRAMIENTAS                    61   EXTENSIONES                   
+013  ART. DE GOMA Y PVC              21   m                             
+016  FERRETERIA                      50   JUEGO DE MECHAS               
+015  HERRAMIENTAS                    58   LLAVES TORX                   
+015  HERRAMIENTAS                    59   MANIJAS ENC 1/2               
+016  FERRETERIA                      51   BOMBAS                        
+004  HERRAJES NAVALES                29   ANILLAS TRIPLES               
+017  ADHESIVOS- SELLADOR-H           15   FORMADORES DE JUNTAS          
+013  ART. DE GOMA Y PVC              26   VARIOS                        
+013  ART. DE GOMA Y PVC              22   CORREA AV                     
+043  QUIMICOS Y LIMPIADOR            11   LINEA COR                     
+017  ADHESIVOS- SELLADOR-H           16   TRABA ROSCAS                  
+015  HERRAMIENTAS                    62   BOCALLAVE HEX. ENC. 1/2"      
+011  LUBR., GRASAS Y ADIT            18   LIMPIADOR DESENGRASANTE       
+036  INSTRUMENTAL                    00   MANOMETROS                    
+016  FERRETERIA                      56   RUEDAS                        
+016  FERRETERIA                      73   CAJAS P / HERRAMIENTAS - ORGAN
+015  HERRAMIENTAS                    63   PICO DE LORO GHERARDI         
+046  HERR. PARA SOLDADURA            01   ACOPLES                       
+016  FERRETERIA                      57   CINTA MEDICION DE TANQUE      
+011  LUBR., GRASAS Y ADIT            21   LINEA AX6                     
+057  PLOMERIA                        10   INODORO Y ACCESORIOS          
+030  BAZAR                           29   BOLSO MATERO                  
+016  FERRETERIA                      58   PORTA CANDADOS-BISAGRAS       
+022  ACEROS - HIERROS Y CHAPAS       08   CODO SCHEDULE  P/S            
+002  GUANTES                         05   GUANTES DE NITRILO            
+003  SEGURIDAD IND. Y NAV            33   PROTECTOR CRANEAL             
+016  FERRETERIA                      59   AISLANTES , AMIANTO - SOGAS AM
+038  FILTROS                         11   FILTROS PARA FREON            
+015  HERRAMIENTAS                    65   LLAVES P/CANO TOP MAN         
+049  MATERIA PRIMA                   00   PRODUCTOS METALURGICOS        
+015  HERRAMIENTAS                    66   LLAVES FIJA BAHCO MILIMETRICA 
+016  FERRETERIA                      61   PULVERIZADORES - ROCIADORES   
+015  HERRAMIENTAS                    67   DESTORNILLADORES VARIOS       
+050  GASTOS DEL PERIODO              00   GTOS.DE FABRICACION           
+050  GASTOS DEL PERIODO              01   GTOS.DE ADMINISTRACION        
+050  GASTOS DEL PERIODO              02   GTOS.COMERCIALIZACION MDP     
+016  FERRETERIA                      74   ARANDELAS                     
+050  GASTOS DEL PERIODO              03   GTOS.COMERCIALIZACION P.MADRYN
+050  GASTOS DEL PERIODO              04   GTOS.COMERCIALIZACION CALETA  
+050  GASTOS DEL PERIODO              05   GTOS.FINANCIEROS              
+005  ELEMENTOS DE NAVEGAC            15   LUCES QUIMICAS Y FAROLES      
+049  MATERIA PRIMA                   01   PRODUCTOS TEXTILES            
+001  INDUMENTARIA                    18   CHOMBAS, REMERAS Y CAMISETAS  
+049  MATERIA PRIMA                   02   PRODUCTOS ARTES PESCA         
+003  SEGURIDAD IND. Y NAV            22   SENALIZACION                  
+022  ACEROS - HIERROS Y CHAPAS       06   CANOS Y TUBOS VARIOS          
+038  FILTROS                         12   FILTROS MAN DE AIRE           
+012  TEXTIL                          06   DELANTALES                    
+030  BAZAR                           23   CACEROLA, OLLAS Y SARTENES    
+016  FERRETERIA                      63   ESCALERAS                     
+053  JARDINERIA                      00   ASPERSOR                      
+053  JARDINERIA                      01   PISTOLA DE RIEGO              
+016  FERRETERIA                      64   ALAMBRES                      
+001  INDUMENTARIA                    19   MAMELUCOS DE TRABAJO          
+011  LUBR., GRASAS Y ADIT            23   LINEA YPF                     
+005  ELEMENTOS DE NAVEGAC            16   BINOCULARES, PRISMATICOS      
+016  FERRETERIA                      68   HACHA                         
+001  INDUMENTARIA                    07   ROPA SPORT                    
+004  HERRAJES NAVALES                30   ANILLAS VARIAS                
+016  FERRETERIA                      65   PASADORES                     
+016  FERRETERIA                      98   ESPATULAS                     
+030  BAZAR                           27   ENCENDEDORES Y FOSFOROS       
+016  FERRETERIA                      66   WATA                          
+016  FERRETERIA                      67   ASFALTO EN PAN Y MEMBRANAS    
+013  ART. DE GOMA Y PVC              27   MANGUERAS ESPECIALES          
+042  ARTE DE PESCA POTERO            04   BAINERAS                      
+053  JARDINERIA                      02   REGADERAS                     
+016  FERRETERIA                      69   TERRAJAS                      
+016  FERRETERIA                      70   TERMOSTATO                    
+058  GASES                           00   CARGA - ACETILENO GAS NITROGEN
+053  JARDINERIA                      03   PIEDRA DE AFILAR              
+016  FERRETERIA                      75   TUERCAS                       
+016  FERRETERIA                      76   CINTAS DE ENMASCARAR          
+005  ELEMENTOS DE NAVEGAC            18   LAMPARAS                      
+010  PINTURAS                        13   REMOVEDOR                     
+042  ARTE DE PESCA POTERO            05   PLOMADAS                      
+013  ART. DE GOMA Y PVC              24   CORREAS DE GOMA               
+053  JARDINERIA                      04   HORQUILLA                     
+053  JARDINERIA                      05   MACHETES                      
+053  JARDINERIA                      06   TIJARA DE PODA                
+053  JARDINERIA                      07   ARCO DE SIERRA                
+053  JARDINERIA                      08   RASTRILLOS                    
+015  HERRAMIENTAS                    68   BARRETAS                      
+057  PLOMERIA                        05   CANOS Y FLEXIBLES             
+013  ART. DE GOMA Y PVC              25   CORREAS PLANAS                
+015  HERRAMIENTAS                    70   PICO PALA Y HACHA             
+056  BS.DE  USO                      00   RODADOS                       
+056  BS.DE  USO                      01   INSTALACIONES                 
+056  BS.DE  USO                      02   MUEBLES Y UTILES              
+015  HERRAMIENTAS                    71   APAREJOS                      
+016  FERRETERIA                      71   GRAMPAS OMEGA                 
+016  FERRETERIA                      72   CARRETILLAS                   
+015  HERRAMIENTAS                    72   REPUESTOS VARIOS              
+001  INDUMENTARIA                    20   CAPOTAS DE GOMA               
+057  PLOMERIA                        00   ROSCA C/TUERCA                
+057  PLOMERIA                        01   BUJE DE REDUCCION             
+057  PLOMERIA                        02   UNIONES                       
+057  PLOMERIA                        03   CUPLAS                        
+043  QUIMICOS Y LIMPIADOR            04   LINEA BARDHAL                 
+058  GASES                           01   REGULADORES                   
+043  QUIMICOS Y LIMPIADOR            03   LINEA VARIAS                  
+004  HERRAJES NAVALES                36   ARANDELA P/BOTELLON           
+058  GASES                           02   ALQUILER DE ENVASES           
+016  FERRETERIA                      94   BROCAS                        
+007  PLANTA DE FILETEADO             15   PUNTA MOTEADA                 
+016  FERRETERIA                      80   NUMEROS - LETRAS - REGLAS     
+016  FERRETERIA                      81   BARRAS Y PANES DE ZINC        
+058  GASES                           03   GAS FREON - GAS NECTRON       
+016  FERRETERIA                      77   EMPAQUETADURA GRAFITADA       
+016  FERRETERIA                      78   ALEMITES                      
+015  HERRAMIENTAS                    73   LINEA BULIT                   
+004  HERRAJES NAVALES                10   ESLABONES                     
+004  HERRAJES NAVALES                11   GANCHOS DE SEGURIDAD          
+004  HERRAJES NAVALES                12   GANCHOS VIKING                
+004  HERRAJES NAVALES                13   GIRATORIOS                    
+004  HERRAJES NAVALES                14   GIRATORIOS INOXIDABLES        
+015  HERRAMIENTAS                    74   LINEA TOP MAN                 
+036  INSTRUMENTAL                    07   GPS                           
+060  CARPINTERIA                     01   GUILLERMINA                   
+016  FERRETERIA                      90   DISCOS CARBORUNDUM            
+016  FERRETERIA                      82   DISCOS BOSCH                  
+043  QUIMICOS Y LIMPIADOR            08   LINEA GARVEY                  
+016  FERRETERIA                      83   DISCOS GRIDEST                
+016  FERRETERIA                      84   DISCOS TYROLIT                
+016  FERRETERIA                      85   DISCOS WALTER                 
+016  FERRETERIA                      86   DISCOS NORTON                 
+016  FERRETERIA                      87   DISCOS DIAMANTADOS            
+016  FERRETERIA                      88   DISCOS DE FIBRA               
+053  JARDINERIA                      09   HERRAMIENTAS DE LIMPIEZA      
+023  ART DE LIMPIEZA                 21   VENENOS Y TRAMPAS             
+016  FERRETERIA                      89   DISCOS VARIOS                 
+045  ELECTRODOMESTICOS               04   CALOVENTORES                  
+001  INDUMENTARIA                    08   BOTINES   MAINCAL             
+001  INDUMENTARIA                    09   BORCEGUIES TREPADOR           
+001  INDUMENTARIA                    10   BOTAS Y ZAPATOS MARASCO       
+001  INDUMENTARIA                    11   BOTINES   DENEB               
+057  PLOMERIA                        06   CODOS Y CURVAS                
+057  PLOMERIA                        07   NIPLES                        
+015  HERRAMIENTAS                    76   PISTOLAS PARA PINTOR          
+001  INDUMENTARIA                    14   BORCEGUIES Y BOTINES BORIS    
+029  TELAS                           03   VARIAS                        
+021  SOLDADURA                       08   SOPLETES                      
+057  PLOMERIA                        08   TAPAS, TAPONES Y TEE          
+001  INDUMENTARIA                    21   DELANTALES DE GOMA            
+024  LIBRERIA                        10   CUADERNOS Y LIBRETAS          
+016  FERRETERIA                      91   MECHAS EZETA                  
+016  FERRETERIA                      92   MECHAS IRWIN                  
+057  PLOMERIA                        09   VALVULAS                      
+001  INDUMENTARIA                    22   POLLERAS DE GOMA              
+038  FILTROS                         08   FILTROS CUMMINS DE COMBUSTIBLE
+038  FILTROS                         09   FILTROS VARIOS DE COMBUSTIBLES
+038  FILTROS                         10   FILTROS MAN DE COMBUSTIBLES   
+038  FILTROS                         14   FILTROS RAMA DE ACEITE        
+001  INDUMENTARIA                    23   MANGAS DE GOMA                
+024  LIBRERIA                        11   MARCADORES, RESALTADORES      
+002  GUANTES                         06   GUANTES DE ABRIGO             
+001  INDUMENTARIA                    34   MAMELUCOS TERMICOS            
+053  JARDINERIA                      10   SERRUCHOS DE PODA             
+016  FERRETERIA                      95   CEPILLOS ACERO PARA AMOLADORA 
+016  FERRETERIA                      96   CEPILLOS CIRCULARES DE ACERO  
+010  PINTURAS                        15   ESMALTES RIO PINT             
+016  FERRETERIA                      97   TELAS ESMERILES               
+010  PINTURAS                        16   ESMALTES VARIOS               
+021  SOLDADURA                       09   ELECTRODOS MESSER             
+016  FERRETERIA                      00   PINCELES Y RODILLOS VARIOS    
+055  ARTE DE PESCA GG                05   SENALES                       
+016  FERRETERIA                      01   PINCELES Y RODILLOS ACPIN     
+007  PLANTA DE FILETEADO             11   CHAIRAS MUNDIAL               
+001  INDUMENTARIA                    35   PANTALONES TERMICOS           
+007  PLANTA DE FILETEADO             12   CHAIRAS TRAMONTINA            
+007  PLANTA DE FILETEADO             13   CHAIRAS TOP MAN               
+001  INDUMENTARIA                    36   EQUIPOS DE PVC                
+001  INDUMENTARIA                    37   PANTALON DE PVC               
+001  INDUMENTARIA                    24   MANGA DESCARNE                
+001  INDUMENTARIA                    25   MANGA DE PVC                  
+001  INDUMENTARIA                    26   PANTALONES DE TRABAJO         
+001  INDUMENTARIA                    27   POLAINAS Y RODILLERAS         
+001  INDUMENTARIA                    28   CAMPERA DESCARNE              
+001  INDUMENTARIA                    29   CHAQUETAS Y CHALECOS          
+001  INDUMENTARIA                    31   GUARDAPOLVOS                  
+001  INDUMENTARIA                    32   COFIAS                        
+001  INDUMENTARIA                    33   DELANTALES DESCARNE           
+001  INDUMENTARIA                    12   VARIOS                        
+001  INDUMENTARIA                    13   BOTAS CALFOR                  
+016  FERRETERIA                      93   TARUGOS                       
+010  PINTURAS                        18   ESMALTES  ALBA                
+021  SOLDADURA                       16   ELECTRODOS VARIOS             
+010  PINTURAS                        19   ENTONADORES                   
+015  HERRAMIENTAS                    78   LINEA PZA                     
+059  MAQUINARIAS                     00   MAQUINAS VARIAS               
+045  ELECTRODOMESTICOS               06   TERMOTANQUES                  
+045  ELECTRODOMESTICOS               07   VENTILADORES                  
+015  HERRAMIENTAS                    79   LLAVES AJUSTABLES ACESA       
+045  ELECTRODOMESTICOS               08   TELEVISION                    
+045  ELECTRODOMESTICOS               09   LAVARROPAS                    
+045  ELECTRODOMESTICOS               10   HELADERAS                     
+001  INDUMENTARIA                    38   BOTAS BATA                    
+017  ADHESIVOS- SELLADOR-H           18   ENDURECEDORES                 
+016  FERRETERIA                      00   MECHAS DEWALT                 
+038  FILTROS                         19   FILTROS FLEETGUARD            
+001  INDUMENTARIA                    39   BOTAS UNPAR                   
+021  SOLDADURA                       17   PICO CALENTADOR P/SOLDADURA   
+008  CABLES DE ACERO                 07   CABLE ACERO GALV.             
+013  ART. DE GOMA Y PVC              28   LONAS VARIAS                  
+038  FILTROS                         20   FILTROS GUASCOR DE ACEITE     
+038  FILTROS                         21   FILTROS GUASCOR DE COMBUSTIBLE
+015  HERRAMIENTAS                    83   BOCALLAVE STANLEY             
+038  FILTROS                         22   FILTRO MAXFIL DE ACEITE       
+036  INSTRUMENTAL                    02   MARCADOR DE ACEITE            
+036  INSTRUMENTAL                    03   MARCADOR TEMP. DE AGUA        
+036  INSTRUMENTAL                    04   MICROMETRO                    
+036  INSTRUMENTAL                    05   ALESAMETRO                    
+017  ADHESIVOS- SELLADOR-H           19   ADHESIVO PARA PISO            
+015  HERRAMIENTAS                    84   ALICATES RUHLMANN             
+010  PINTURAS                        20   PINTURA ASFALTICA             
+057  PLOMERIA                        11   TERMOFUSONADOR                
+058  GASES                           04   ACCESORIOS                    
+015  HERRAMIENTAS                    85   LLAVES COMB. CROSMAN          
+050  GASTOS DEL PERIODO              06   GTOS COMERC.PTO.DESEADO       
+004  HERRAJES NAVALES                34   ANCLAS                        
+056  BS.DE  USO                      03   MAQUINARIAS                   
+018  ELECTRICIDAD                    24   CONTACTORES Y RELEVOS TERMICOS
+022  ACEROS - HIERROS Y CHAPAS       09   NIPLES                        
+036  INSTRUMENTAL                    06   TERMOMETROS                   
+013  ART. DE GOMA Y PVC              29   CORREAS D                     
+016  FERRETERIA                      20   MECHAS ESSAMET                
+058  GASES                           05   OXIGENO MEDICINAL             
+060  CARPINTERIA                     00   FENOLICOS                     
+013  ART. DE GOMA Y PVC              30   CANO PVC HIDROCARBURO         
+016  FERRETERIA                      23   MECHAS BIASSONI               
+016  FERRETERIA                      33   MECHAS VARIAS                 
+016  FERRETERIA                      06   ROLDANAS                      
+022  ACEROS - HIERROS Y CHAPAS       10   MALLAS                        
+058  GASES                           06   TUBOS DE AMONIACO             
+053  JARDINERIA                      11   AZADA                         
+015  HERRAMIENTAS                    86   LLAVES AJUST. FOSF EVOLUTION  
+008  CABLES DE ACERO                 08   CABLE, TRAMO Y ESLINGA 6X36   
+010  PINTURAS                        21   PINTURA AL AGUA               
+016  FERRETERIA                      07   MECHAS ALPEN                  
+024  LIBRERIA                        12   FIBRAS Y MICROFIBRAS          
+038  FILTROS                         23   FILTROS VARIOS DE ACEITE      
+015  HERRAMIENTAS                    87   TIJERAS VARIAS                
+024  LIBRERIA                        13   CARTUCHERAS Y CANOPLAS        
+015  HERRAMIENTAS                    88   LLAVE AJUSTABLE METZ          
+004  HERRAJES NAVALES                35   GRILLETES NAVALES             
+013  ART. DE GOMA Y PVC              31   LATEX EN PLANCHA              
+009  HILOS  CABOS  PANOS             18   PANOS A.LINE                  
+050  GASTOS DEL PERIODO              07   COSTO DE VENTAS               
+015  HERRAMIENTAS                    89   LLAVES COMBINADAS IRIMO       
+015  HERRAMIENTAS                    90   LLAVE AJUSTABLE IRIMO         
+010  PINTURAS                        22   ESMALTES VITREAUX             
+015  HERRAMIENTAS                    91   BOCALLAVE IRIMO ENC.1/2 HEX.  
+015  HERRAMIENTAS                    92   BOCALLAVE IRIMO ENC.1/2 ESTRIA
+056  BS.DE  USO                      04   OBRA EN CONSTRUCCION          
+004  HERRAJES NAVALES                38   GRILLETE DER C/C R/C  VIC     
+001  INDUMENTARIA                    40   BOTAS L-39                    
+001  INDUMENTARIA                    41   BOTINES PEGASO                
+004  HERRAJES NAVALES                39   LINEA CONECTORES Y GANCHOS NEH
+016  FERRETERIA                      09   EMPAQUETADURA TEFLONADA       
+061  VARIOS                          00   VARIOS                        
+016  FERRETERIA                      08   ABRAZADERAS INOXIDABLES       
+023  ART DE LIMPIEZA                 23   REPASADOR                     
+015  HERRAMIENTAS                    95   PINZAS SEGUER                 
+030  BAZAR                           28   BALANZA DE COCINA             
+056  BS.DE  USO                      05   INMUEBLES                     
+015  HERRAMIENTAS                    96   MAQUINAS ELECT. DE BANCO      
+015  HERRAMIENTAS                    97   LLAVES T                      
+015  HERRAMIENTAS                    98   LLAVES AJUSTABLES IREGA       
+001  INDUMENTARIA                    42   DELANTAL DE TELA              
+015  HERRAMIENTAS                    99   LLAVE AJUSTABLE STANLEY       
+004  HERRAJES NAVALES                37   GRILLETE LINEA NEHUEN         
+062  CHEQUES RECHAZADOS              00   CH.RECHAZADOS                 
+015  HERRAMIENTAS                    01   BOCALLAVE ENC.3/8 BAHCO       
+022  ACEROS - HIERROS Y CHAPAS       11   VARILLAS REDONDA INOX         
+045  ELECTRODOMESTICOS               12   PAVAS Y TERMOS ELECTRICOS     
+050  GASTOS DEL PERIODO              08   GTOS.COMERCIALIZACION CAPITAL 
+063  CUENTAS PARTICULARES SOCIOS     00   GASTOS PERSONALES SOCIO JOSE L
+063  CUENTAS PARTICULARES SOCIOS     01   GASTOS PERSONALES SOCIO EDUARD
+063  CUENTAS PARTICULARES SOCIOS     02   GASTOS PERSONALES JORGE DANIEL
+015  HERRAMIENTAS                    02   ACCESORIOS STANLEY WKM        
+021  SOLDADURA                       19   ELECTRODOS LINCOLN            
+064  OTROS INGRESOS                  00   ALQUILER A COBRAR INMUEBLE MAG
+023  ART DE LIMPIEZA                 24   SOPAPAS                       
+009  HILOS  CABOS  PANOS             19   CABO DE POLIPROPILENO         
+015  HERRAMIENTAS                    03   LLAVE MUNDIAL                 
+007  PLANTA DE FILETEADO             16   CHAIRAS CARNIC                
+004  HERRAJES NAVALES                40   GRILLETE CORAZON C/ESC        
+046  HERR. PARA SOLDADURA            02   MICRO SOLDADOR                
+022  ACEROS - HIERROS Y CHAPAS       12   CANOS GALVANIZADOS            
+022  ACEROS - HIERROS Y CHAPAS       13   CANOS Y TUBOS SCHEDULE 40     
+022  ACEROS - HIERROS Y CHAPAS       14   CANOS Y TUBOS SCHEDULE 80     
+022  ACEROS - HIERROS Y CHAPAS       15   CANOS ESTRUCTURALES           
+022  ACEROS - HIERROS Y CHAPAS       16   REDUCCIONES  SCHEDULE 40 - 80 
+022  ACEROS - HIERROS Y CHAPAS       17   TEE SCHEDULE 40 - 80          
+022  ACEROS - HIERROS Y CHAPAS       18   BARRA DE ACERO REDONDO        
+022  ACEROS - HIERROS Y CHAPAS       19   BRIDAS                        
+018  ELECTRICIDAD                    25   CANOS                         
+022  ACEROS - HIERROS Y CHAPAS       24   CODOS NEGROS                  
+043  QUIMICOS Y LIMPIADOR            16   LINEA  SAN FRANCISCO          
+001  INDUMENTARIA                    43   BORCEGUI GOCER                
+001  INDUMENTARIA                    44   BOTAS LARGAS - SUP. LARGAS  GO
+001  INDUMENTARIA                    45   BOTAS PARA FRIO  GOCER        
+001  INDUMENTARIA                    46   BORCEGUI   DENEB              
+001  INDUMENTARIA                    47   BOTAS PETROLERAS   DENEB      
+001  INDUMENTARIA                    48   ZAPATOS   DENEB               
+065  ALMACEN                         00   ACEITES                       
+001  INDUMENTARIA                    49   BORCEGUI   MAINCAL            
+001  INDUMENTARIA                    50   BOTAS PETROLERAS   MAINCAL    
+001  INDUMENTARIA                    51   ZAPATOS   MAINCAL             
+001  INDUMENTARIA                    52   ZAPATILLAS   MAINCAL          
+001  INDUMENTARIA                    53   BOTINES   UNPAR               
+022  ACEROS - HIERROS Y CHAPAS       25   VARIOS                        
+022  ACEROS - HIERROS Y CHAPAS       26   CURVAS                        
+022  ACEROS - HIERROS Y CHAPAS       20   VARILLA REDONDA  MILIMETRICA  
+022  ACEROS - HIERROS Y CHAPAS       21   VARILLAS ROSCADAS INOX        
+022  ACEROS - HIERROS Y CHAPAS       22   VARILLA ROSCADA MILIMETRICAS  
+022  ACEROS - HIERROS Y CHAPAS       23   VARILLA ROSCADAS EN PULGADAS  
+065  ALMACEN                         01   ARROZ-LEGUMBRES               
+063  CUENTAS PARTICULARES SOCIOS     02   AZUCARES                      
+065  ALMACEN                         03   CAFE                          
+065  ALMACEN                         04   CARAMELOS                     
+065  ALMACEN                         05   CEREALES                      
+065  ALMACEN                         06   CHOCOLATES                    
+065  ALMACEN                         07   CONDIMENTOS                   
+065  ALMACEN                         08   CONSEVAS PESCADOR             
+065  ALMACEN                         09   CALDOS Y SOPAS                
+065  ALMACEN                         10   CONSERVAS EN LATA             
+065  ALMACEN                         11   FRUTAS EN LATA                
+065  ALMACEN                         12   PURES                         
+065  ALMACEN                         13   CONSERVAS ROJAS               
+065  ALMACEN                         14   COPETIN                       
+065  ALMACEN                         15   DULCES                        
+065  ALMACEN                         16   ENCURTIDOS                    
+065  ALMACEN                         17   ESENCIAS Y COLORANTES         
+065  ALMACEN                         18   FRUTAS SECAS                  
+065  ALMACEN                         19   GALLETITAS                    
+065  ALMACEN                         20   HARINAS                       
+002  GUANTES                         21   INFUSIONES                    
+065  ALMACEN                         22   REBOZADORES                   
+065  ALMACEN                         23   PASTAS SECAS                  
+065  ALMACEN                         24   POSTRES Y FLANES              
+065  ALMACEN                         25   SALZAS Y ADEREZOS             
+068  FIAMBRERIA                      00   EMBUTIDOS                     
+068  FIAMBRERIA                      01   FIAMBRES                      
+069  CONGELADOS                      00   AVES CONGELADAS               
+069  CONGELADOS                      01   FRUTAS Y VERDURAS CONGELADAS  
+066  BEBIDAS SIN ALCOHOL             00   JUGOS - AGUAS - SABORIZADAS - 
+066  BEBIDAS SIN ALCOHOL             01   GASEOSAS                      
+002  GUANTES                         00   APERITIVOS                    
+067  BEBIDAS ALCOHOLICAS             01   OTRAS                         
+067  BEBIDAS ALCOHOLICAS             02   CHAMPAGNE                     
+067  BEBIDAS ALCOHOLICAS             03   LICORES                       
+067  BEBIDAS ALCOHOLICAS             04   SIDRAS - SABORES              
+067  BEBIDAS ALCOHOLICAS             05   WHISKIES                      
+002  GUANTES                         06   VINOS                         
+069  CONGELADOS                      02   HELADOS                       
+069  CONGELADOS                      03   PAPAS CONGELADAS              
+069  CONGELADOS                      04   PRODUCT.CARNES CONGELADAS     
+069  CONGELADOS                      05   PRODUTOS DE SOJA CONGELADOS   
+070  LACTEOS                         00   LECHES FLUIDAS                
+070  LACTEOS                         01   LECHE EN POLVO                
+070  LACTEOS                         02   MANTECAS                      
+070  LACTEOS                         03   QUESOS                        
+070  LACTEOS                         04   CREMAS                        
+071  FRUTAS Y HORTALIZAS             00   HORTALIZAS                    
+071  FRUTAS Y HORTALIZAS             01   HOJAS VERDES                  
+071  FRUTAS Y HORTALIZAS             02   VERDURAS                      
+071  FRUTAS Y HORTALIZAS             03   FRUTAS                        
+072  CARNES                          00   CARNES VACUNAS                
+072  CARNES                          01   PRODUCTOS DE GRANJA           
+072  CARNES                          02   MENUDENCIAS                   
+072  CARNES                          03   EMBUTIDOS FRESCOS             
+067  BEBIDAS ALCOHOLICAS             07   AMARGOS                       
+002  GUANTES                         08   CERVEZAS                      
+073  GOLOSINAS                       00   CHOCOLATES                    
+073  GOLOSINAS                       01   CARMELOS                      
+065  ALMACEN                         26   PANIFICADOS                   
+065  ALMACEN                         27   ACCESORIOS                    
+065  ALMACEN                         28   GELATINAS                     
+065  ALMACEN                         29   BIZCOCHUELOS                  
+015  HERRAMIENTAS                    04   CRIQUES HIDRAULICOS           
+065  ALMACEN                         30   LACTEOS                       
+065  ALMACEN                         31   PASTAS FRESCAS                
+065  ALMACEN                         32   LEVADURAS                     
+065  ALMACEN                         33   HAMBURGUESAS                  
+065  ALMACEN                         34   HUEVOS                        
+072  CARNES                          04   CARNES PORCINAS               
+074  PRODUCCION                      00   GRILLETERIA                   
+074  PRODUCCION                      01   BOTA Y ROPA DE GOMA           
+074  PRODUCCION                      02   ROPA DE PVC                   
+074  PRODUCCION                      03   PRODUCCION TEXTIL             
+074  PRODUCCION                      04   ARTES DE PESCA                
+045  ELECTRODOMESTICOS               13   BATIDORAS                     
+060  CARPINTERIA                     02   PINO SIN CEPILLAR             
+016  FERRETERIA                      10   HERRAMIENTAS PARA TORNO       
+064  OTROS INGRESOS                  01   INGRESOS POR FINANCIACION     
+009  HILOS  CABOS  PANOS             20   CABOS DE POLIESTER            
+038  FILTROS                         24   FILTROS FRAM                  
+045  ELECTRODOMESTICOS               14   TOSTADORAS ELECTRICAS         
+015  HERRAMIENTAS                    05   LLAVES COMBINADAS FMT         
+045  ELECTRODOMESTICOS               15   PROCESADORAS DE ALIMENTOS     
+015  HERRAMIENTAS                    06   HERRAMIENTAS NEUMATICAS       
+045  ELECTRODOMESTICOS               16   AIRE ACONDICIONADO            
+015  HERRAMIENTAS                    07   DESTORNILLADORES MOTA         
+001  INDUMENTARIA                    54   BERMUDAS CARGO                
+045  ELECTRODOMESTICOS               17   FREIDORAS                     
+038  FILTROS                         25   FILTROS VARIOS DE AIRE        
+012  TEXTIL                          08   BORDADOS Y ESTAMPADOS         
+015  HERRAMIENTAS                    08   FORMONES                      
+060  CARPINTERIA                     03   FIBROFACIL                    
+045  ELECTRODOMESTICOS               18   ASPIRADORAS                   
+015  HERRAMIENTAS                    09   LLAVES COMBINADAS GRIPWELL    
+012  TEXTIL                          09   ACCESORIOS MERCERIA           
+045  ELECTRODOMESTICOS               19   AUDIO                         
+005  ELEMENTOS DE NAVEGAC            23   EQUIPOS DE COMUNICACION       
+016  FERRETERIA                      11   GRAMPAS PARA CORREA           
+060  CARPINTERIA                     04   PINO CEPILLADO                
+056  BS.DE  USO                      06   LICENCIAS                     
+007  PLANTA DE FILETEADO             17   EMBALAJE                      
+045  ELECTRODOMESTICOS               20   HORNOS MICROONDAS             
+076  ALIMENTOS                       00   COMIDAS ENVASADAS             
+058  GASES                           07   RECARGA MATAFUEGOS            
+013  ART. DE GOMA Y PVC              32   CAMARAS DE NEUMATICO          
+016  FERRETERIA                      12   TORNILLOS                     
+077  COMERCIALIZACION DE PESCADO     00   PESCADO                       
+085  VITREAUX                        01   ESMALTE                       
+077  COMERCIALIZACION DE PESCADO     02   GASTOS DE PROCESAMIENTO PESCAD
+077  COMERCIALIZACION DE PESCADO     05   GASTOS DE PESAJE DE PESCADO   
+070  LACTEOS                         05   YOGURT                        
+085  VITREAUX                        02   CONVERTIDORES Y FONDOS        
+078  SERVICIO DE TERCEROS            02   PRODUCCION TEXTIL             
+085  VITREAUX                        03   MADERAS                       
+038  FILTROS                         26   FILTROS MANN ACEITE           
+015  HERRAMIENTAS                    10   BATERIAS P/MAQUINAS PORT.     
+053  JARDINERIA                      12   CORTADORAS DE CESPED          
+016  FERRETERIA                      13   PANOS ABRASIVOS               
+003  SEGURIDAD IND. Y NAV            35   SENALES LUMINICAS             
+003  SEGURIDAD IND. Y NAV            36   ART DESCARNE                  
+078  SERVICIO DE TERCEROS            00   CABLES Y ESLINGAS             
+003  SEGURIDAD IND. Y NAV            37   SENALES AUDITIVAS             
+073  GOLOSINAS                       02   TURRONES                      
+001  INDUMENTARIA                    55   MANGAS DE TELA                
+015  HERRAMIENTAS                    11   LLAVES MOTA                   
+078  SERVICIO DE TERCEROS            01   ARTICULOS DE GOMA Y PVC       
+010  PINTURAS                        23   LATEX INTERIOR                
+004  HERRAJES NAVALES                41   REPUESTOS Y SEGUROS PARA CONEC
+004  HERRAJES NAVALES                42   GANCHOS DE SEGURIDAD NEHUEN   
+060  CARPINTERIA                     05   MADERAS DURAS Y SEMIDURAS     
+030  BAZAR                           30   CUCHILLOS Y CUCHILLAS DE COCIN
+015  HERRAMIENTAS                    12   ALICATES                      
+045  ELECTRODOMESTICOS               21   PLANCHAS P/ROPA               
+045  ELECTRODOMESTICOS               22   EXPRIMIDORES                  
+065  ALMACEN                         35   GOLOSINAS                     
+038  FILTROS                         27   FILTROS PARKER                
+079  PERFUMERIA                      00   DESODORANTES PERSONALES       
+073  GOLOSINAS                       03   CHICLES                       
+073  GOLOSINAS                       04   CHUPETINES                    
+079  PERFUMERIA                      01   MAQUINAS DE AFEITAR           
+073  GOLOSINAS                       05   PASTILLAS                     
+079  PERFUMERIA                      02   CEPILLO DE DIENTES            
+065  ALMACEN                         36   PRODUCTOS CHINOS              
+001  INDUMENTARIA                    56   BOTAS PVC MAXAR               
+002  GUANTES                         08   ALFAJORES                     
+002  GUANTES                         09   RUBRO                         
+002  GUANTES                         10   DESAYUNO 1 PERS.              
+002  GUANTES                         11   DESAYUNO 2 PERS.              
+002  GUANTES                         12   SUPER CABRALES                
+002  GUANTES                         13   DESCAFEINADOS Y LECH          
+002  GUANTES                         14   NESPRESSO                     
+002  GUANTES                         15   DESAYUNOS/MERIENDAS           
+002  GUANTES                         16   CAFETERIA ESPECIAL            
+002  GUANTES                         17   CAFE ESPECIAL FRIO            
+002  GUANTES                         18   PASTELERIA CLASICA            
+002  GUANTES                         19   PASTELERIA GOURMET            
+002  GUANTES                         20   TARTAS Y TARTAS INDI          
+002  GUANTES                         21   SNACKS Y SANDWICHS            
+002  GUANTES                         22   BOCADILLOS                    
+002  GUANTES                         23   ENSALADAS                     
+002  GUANTES                         24   TARTAS SALADAS                
+002  GUANTES                         25   PIZZAS                        
+002  GUANTES                         26   SANDWICHS CALIENTES           
+002  GUANTES                         27   PASTAS                        
+002  GUANTES                         28   TABLAS DE QUESOS Y F          
+002  GUANTES                         29   MENU INFANTIL                 
+002  GUANTES                         30   POSTRES                       
+002  GUANTES                         31   BEBIDAS                       
+002  GUANTES                         32   ESPUMANTES                    
+002  GUANTES                         33   ESPIRITUOSAS                  
+002  GUANTES                         34   WHISKYS                       
+002  GUANTES                         35   SIN ALCOHOL                   
+002  GUANTES                         36   CLASICOS                      
+002  GUANTES                         37   COCKTAILS                     
+002  GUANTES                         38   ADICIONALES                   
+080  FABRICA                         00   PRODUCTOS DE FABRICA          
+085  VITREAUX                        04   PREPARADOR DE SUPERFICIE      
+085  VITREAUX                        05   PILETAS                       
+085  VITREAUX                        06   PISOS                         
+085  VITREAUX                        07   TECHOS                        
+085  VITREAUX                        08   MUROS                         
+085  VITREAUX                        09   LADRILLOS                     
+085  VITREAUX                        10   LATEX                         
+084  RUBRO FINAL                     01   FIN DE RUBROS                 
+075  MADERAS                         01   PINO                          
+083  RUBRO_1                         01   SUBRUBRO_1                    
+075  MADERAS                         00   MACHIMBRE                     

@@ -1,0 +1,155 @@
+THIS IS AN AUTO-GENERATED MESSAGE - PLEASE DO NOT REPLY TO THIS MESSAGE
+
+
+Delphi 2007 for Win32 Professional R2
+Numero serie: 34DS-82D7CT-ATA5PK-2BKD
+
+
+Thank you for registering! The attached file (reg881.txt) activates your copy of Embarcadero product. 
+
+INSTRUCTIONS:
+
+1. First place the file into any folder on your hard drive, My Documents for example.
+2. Then launch the product. If your copy has not been activated before, the Embarcadero Product Registration Dialog will come up.
+3. Select the "I have received an activation file (*.slip or reg*.txt)" option, click Browse button (...) and navigate to the activation file.
+If the product is already running, go to the <install root>\bin directory and run LicenseManager.exe, select License | Import and navigate to the activation file.
+
+Although it rarely happens, if this e-mail has no attachments, save this entire e-mail as a text file named (reg881.txt) and follow the instructions above. 
+
+The contents of this e-mail and the attached file are for your exclusive use and should not be shared with others.
+For Customer Support visit http://support.codegear.com/
+
+Thank you for choosing Embarcadero award-winning products.  You have joined millions of developers worldwide who are creating great software with our tools.  We appreciate your business and welcome you to our community.
+ 
+Kind regards,
+
+The Embarcadero Team
+
+
+-----BEGIN BLOCK-----
+
+%90%12K%82%00%00%05%8C%D6%E0%2
+3o%D6%83%D2D%8Eeg%C1%91%D1U%E3
+%02%23%EF%F6%CCe%B9%7FV%ED%C0%
+CAW%B7C%5C%A1%A9%A67%F6%13a%CB
+%F8%9FP%83%5Bc%B5%9D%BBk%A9I0%
+82%9E%E9R%A0%14F%B2%CD%8DT%83%
+29%29%A5%89%ED%40%C0ET%C6%F7%C
+FX%A5%24c%D3%EE%E2%5C%FBSu%AB%
+C8%86%1E%80%1F%11%CA%A3%DA%28%
+F1Li%E4%A1%D3%10%9EmK%9E%D2%C1
+%7F%BC%28Y%ED%B6%AC%29%94%3DQ%
+CE%91%A4%0C%D3FK%B5%EB%B2%03%B
+7pS%84%C0%CE%25%A61%22%A6%87%E
+AK%A7%17%3D%FE%A3%9B_%A0xz%9C%
+FB%CAn%EB%23z%93%D4%B66%A7F%5C
+%FC%F5%DE%7F%95%18%10%F5%8F%AB
+%5E%91Es%D1%D8%90C%B7c%29%9C%B
+8%B8K%CCl%18%89%DB%D6-%83%12E%
+CA%B6%9B%22%842U%AC%83%9B%3B%D
+1EJ%F2%8F%A6V%8A%19%2F%D9%87%A
+7%12%B9%10%12%D5%94%C7%2B%EC%2
+B%1B%CC%E4%B1E%85%05%3F%85%CD%
+A0R%BB3%03%F7%90%8E%1D%91%16%0
+9%CB%E8%EDZ%9C%60S%DF%A2%C2m%9
+A%21F%FE%B3%FD%01%DDCd%9D%FB%C
+3%1F%C7%248%C0%A8%FE%1A%F1%02%
+7F%F3%90%D0%1C%9EZ5%83%84%90I%
+EES4%AE%A1%9E%0E%AFeD%F8%D4%D2
+5%C4%1Cc%97%B1%F6%1C%CC_%04%CF
+%FF%A3%26%CF5B%C5%DE%A8%17%E6v
+G%FF%D2%CFK%DDV%1F%C9%E5%BDL%8
+77%0C%CB%B7%CAz%9F%7BW%B8%FE%D
+9%0D%C0wt%92%89%F2%11%E6E%19%C
+5%A2%9C%1B%F0i9%80%F1%FA8%8Ay%
+7D%D7%E4%F7D%C1%0D%5D%EE%9E%C9
+A%EA%14%09%B3%F8%F5%3B%F6Td%F5
+%9A%970%D1sC%E5%A4%D2N%DF1%00%
+9C%8A%88%0C%F2%02n%F7%F7%8Eb%9
+9%3Cj%F0%CE%FE%08%D6%5B%5E%B3%
+9A%9FL%BF%04.%F0%BD%C8%2F%B6q%
+06%F0%9E%E3%0B%F4%23%7E%FE%D5%
+A1y%C9z%23%B4%AD%9Am%E692%8B%B
+4%D8L%A6%16I%E4%CE%B6Q%C6at%C9
+%E0%8D8%8B94%A5%B1%E1w%D2Sz%AA
+%BB%D6D%C8mm%F6%89%F3%02%80%60
+%08%EC%E5%86%00%98%24*%DC%86%C
+9I%E7%10%11%AB%E6%E5H%A3j%14%B
+2%9C%B9a%91fz%9E%F2%F2%00%9E%1
+11%86%87%D9r%FE5r%8C%CB%C2-%B4
+ER%C1%A8%FF%7E%C0%08%3B%BE%F9%
+CAf%ABV0%D3%BC%C4r%95iR%F0%E2%
+D2%23%ACQ%0B%F7%A0%CB%06%B9p%2
+5%A1%DF%81d%8BI%20%EF%A9%A4%27
+%BAaI%9C%C7%D8%20%B9%0D%02%FC%
+A8%FF%09%CA%40%1E%AD%D0%F6%01%
+BF%27%02%BE%98%E0%08%88%3Dt%92
+%BC%AA%1F%BAI%10%8E%AA%B8m%AD%
+050%BB%CE%A3%02%9DxF%8E%FA%AD0
+%99W%0B%91%FF%83T%91%3DI%C4%C3
+%D4%08%E0%1B-%FD%F9%D3%29%94t%
+7C%AC%8F%B5H%DC%26%00%9C%84%90
+%19%F6%7B4%88%8D%ACA%F2%0A%07%
+A2%FF%C8Z%C9%00f%93%AA%A1%0D%D
+E%07Z%B0%D9%AE%05%F0f7%C5%9F%A
+7w%894c%BC%E5%F17%B4Bf%C6%F6%E
+AY%D3%0F%29%C3%E2%98B%98O%24%C
+C%D8%9E%0A%F9C%24%CF%E9%FE%40%
+F9L*%A1%CD%C0%1F%8Aww%ED%E9%EB
+g%83S%1D%F7%BF%F3l%A8F%7C%BD%B
+6%98Z%CB%15I%F2%99%DAv%AFTG%C4
+%DA%FD%7E%FA1l%EB%88%F5-%A0z%2
+C%85%D5%AF_%A6s%0F%C3%86%DCm%C
+4XB%B3%81%E0g%8E%3B%24%D3%B0%E
+1%04%A6%00Z%F2%A6%F7%17%FEb%1D
+%E8%94%88%0E%87%15x%8E%AF%D7I%
+8A%13%60%D6%91%88K%B8%19S%B5%E
+A%E9%19%E6HM%86%B1%F0%28%B1zz%
+FD%F3%98%40%99%3Cf%B2%CD%F0U%8
+4O%1A%B4%DC%A6%40%9Ad%08%B1%AC
+%F5K%87%1A%3F%D4%9B%CDj%F2%0F%
+0D%A0%C5%A5%0C%DB%1EM%D3%C3%B1
+v%8E5%5B%F5%DF%D7%3E%CE%08%03%
+F9%C1%E9%01%A1mn%AB%A7%ABW%E4g
+T%DE%94%A9%2B%DC%3C%7F%F4%E6%A
+1z%E9C%3A%FA%F3%ED%3D%93%40F%A
+F%D1%FA%10%9C%25%11%88%A7%F7c%
+D0%5EQ%B3%E5%DC%17%CFC%16%D6%F
+2%BC%3C%C8W%13%AA%D8%DC%3C%D0P
+a%FA%83%DD%7D%BF%5DL%CD%D8%EE%
+15%CC6%04%A3%D6%C1%3E%8A%0D%06
+%DA%82%E58%C9*s%B5%D9%94%7B%D1
+%12%7E%AF%D2%88%23%933%18%EB%F
+4%EA%3E%A2%5Cp%F2%FB%C2f%FB%28
+g%85%DB%B6%27%A1%06H%86%A7%CB%
+1D%D2%20k%97%AB%A3%11%BA%7C%3F
+%81%FF%8Ak%EFp%0F%9F%88%9Ey%96
+Wy%EA%B9%8C%02%A9%24j%BC%93%A7
+%02%CF%3EM%F7%F1%E7w%EE%15%03%
+AC%FA%F5_%A3%12G%F9%D4%B6N%DA%
+03%10%83%B7%B6%3B%86%3Cs%B7%BA
+%B0%01%B9%5B%0B%DB%F0%A63%D2%3
+D5%BB%C4%AEo%8C%1C%29%F9%EB%AC
+F%9BP%00%C5%DA%B0V%E7x%19%D8%A
+7%AF%1E%B1%08%0F%CE%B8%97a%F37
+%05%9C%D1%CF%7C%B4q%12%B1%D4%F
+3%1E%FD%27%0E%E1%D2%A8Y%B6ka%A
+D%BA%F5%2F%EAG%0E%D0%BC%B1%1B%
+93fb%83%F5%98%26%8EuM%A1%98%C7
+%1F%D696%AA%DF%F9j%F0%0A%60%D6
+%B8%CD%10%86g%5B%E2%93%C3_%B8z
+%25%D2%C3%BC%07%E4bV%E6%C9%F7%
+1C%B6j4%F1%B7%B9B%E0e%1D%D8%D2
+%FF.%E1%2FV%9E%A0%95X%83L-%D1%
+D3%E7%5E%98oF%B4%94%91t%ED%3E%
+0D%8D%CE%EDn%BE8j%C0%E9%EE%02%
+83%3B%14%8A%B0%DFg%CCfN%AB%90%
+84E%9Aj%3C%D3%EA%B4%15%AF%1D%0
+4%E6%88%E3%1C%9DQQ%C1%9C%FF%3D
+%E26%0E%DD%D5%CF%24%F3%1E%1D%D
+6%EA%C1q%83%7F%24%F3%E9%AC%2C%
+E7E%7F%A4%E4%8Ex%BF%2CB%85%EA%
+8E2%8C%1Dx%E3%F5
+
+-----END BLOCK-----
+

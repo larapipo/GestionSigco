@@ -1,0 +1,13 @@
+C:\Users\elect\OneDrive\Documentos\Embarcadero\Studio\Projects\mllib\mllib\Ejemplos\Clover\VBNET\CloverExample\bin\Debug\CloverExample.exe
+C:\Users\elect\OneDrive\Documentos\Embarcadero\Studio\Projects\mllib\mllib\Ejemplos\Clover\VBNET\CloverExample\bin\Debug\CloverExample.pdb
+C:\Users\elect\OneDrive\Documentos\Embarcadero\Studio\Projects\mllib\mllib\Ejemplos\Clover\VBNET\CloverExample\bin\Debug\CloverExample.xml
+C:\Users\elect\OneDrive\Documentos\Embarcadero\Studio\Projects\mllib\mllib\Ejemplos\Clover\VBNET\CloverExample\obj\Debug\Interop.mllib.dll
+C:\Users\elect\OneDrive\Documentos\Embarcadero\Studio\Projects\mllib\mllib\Ejemplos\Clover\VBNET\CloverExample\obj\Debug\CloverExample.vbproj.ResolveComReference.cache
+C:\Users\elect\OneDrive\Documentos\Embarcadero\Studio\Projects\mllib\mllib\Ejemplos\Clover\VBNET\CloverExample\obj\Debug\CloverExample.Form1.resources
+C:\Users\elect\OneDrive\Documentos\Embarcadero\Studio\Projects\mllib\mllib\Ejemplos\Clover\VBNET\CloverExample\obj\Debug\CloverExample.Resources.resources
+C:\Users\elect\OneDrive\Documentos\Embarcadero\Studio\Projects\mllib\mllib\Ejemplos\Clover\VBNET\CloverExample\obj\Debug\CloverExample.vbproj.GenerateResource.Cache
+C:\Users\elect\OneDrive\Documentos\Embarcadero\Studio\Projects\mllib\mllib\Ejemplos\Clover\VBNET\CloverExample\obj\Debug\CloverExample.exe
+C:\Users\elect\OneDrive\Documentos\Embarcadero\Studio\Projects\mllib\mllib\Ejemplos\Clover\VBNET\CloverExample\obj\Debug\CloverExample.xml
+C:\Users\elect\OneDrive\Documentos\Embarcadero\Studio\Projects\mllib\mllib\Ejemplos\Clover\VBNET\CloverExample\obj\Debug\CloverExample.pdb
+C:\Users\elect\OneDrive\Documentos\Embarcadero\Studio\Projects\mllib\mllib\Ejemplos\Clover\VBNET\CloverExample\obj\Debug\CloverExample.vbproj.AssemblyReference.cache
+C:\Users\elect\OneDrive\Documentos\Embarcadero\Studio\Projects\mllib\mllib\Ejemplos\Clover\VBNET\CloverExample\obj\Debug\CloverExample.vbproj.CoreCompileInputs.cache

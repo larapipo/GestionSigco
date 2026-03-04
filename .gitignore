@@ -1,0 +1,39 @@
+# Ejecutables
+*.exe
+*.dll
+*.bpl
+
+# Compilados Delphi
+*.dcu
+*.dcp
+
+# Archivos temporales del IDE
+*.identcache
+*.local
+*.stat
+
+# Directorios de compilación
+/Win32/Debug/
+/Win32/Release/
+/Win64/Debug/
+/Win64/Release/
+
+# Historial del IDE
+/__history/
+/__recovery/
+
+# Archivos de backup
+*.~*
+
+# Delphi outputs
+*.exe
+*.dll
+*.bpl
+*.dcu
+*.dcp
+*.map
+*.drc
+
+# Firebird databases (NO subir)
+*.fdb
+*.fbk

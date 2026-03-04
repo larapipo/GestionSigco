@@ -1,0 +1,67 @@
+<XmlTransformation Version="1.0"><Transform Direction="ToCds"><SelectEach dest="DATAPACKET\ROWDATA\ROW" from="\EXPORT"><Select dest="@Fecha" Format_Date="dd/MM/yyyy" from="@Fecha"/><Select dest="@Hora" Format_Time="h:mm" from="@Hora"/><Select dest="@Sucursal" from="@Sucursal"/></SelectEach></Transform><XmlSchema RootName="EXPORT"><![CDATA[<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="EXPORT" type="EXPORTType"/>
+  <xs:complexType name="EXPORTType">
+    <xs:sequence>
+      <xs:element name="ST_PRODUCTOS" type="ST_PRODUCTOSType"/>
+      <xs:element name="PROD_VENDIDOS" type="PROD_VENDIDOSType"/>
+      <xs:element name="FORMAS_DE_PAGO" type="FORMAS_DE_PAGOType"/>
+    </xs:sequence>
+    <xs:attribute name="Fecha" type="xs:date"/>
+    <xs:attribute name="Hora" type="xs:time"/>
+    <xs:attribute name="Exportado" type="xs:string"/>
+    <xs:attribute name="Sucursal" type="xs:string"/>
+  </xs:complexType>
+  <xs:element name="ST_PRODUCTOS" type="ST_PRODUCTOSType"/>
+  <xs:complexType name="ST_PRODUCTOSType">
+    <xs:sequence>
+      <xs:element name="ROW" type="ROWType" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+    <xs:attribute name="MODO" type="xs:string"/>
+    <xs:attribute name="KEYFIELD" type="xs:string"/>
+  </xs:complexType>
+  <xs:element name="ROW" type="ROWType"/>
+  <xs:complexType name="ROWType">
+    <xs:sequence/>
+    <xs:attribute name="COD_ARTICU" type="xs:string"/>
+    <xs:attribute name="COD_RUBRO" type="xs:string"/>
+    <xs:attribute name="RUBRO" type="xs:string"/>
+    <xs:attribute name="DESCRIPCION" type="xs:string"/>
+    <xs:attribute name="IMPORTE1" type="xs:string"/>
+    <xs:attribute name="IMPORTE2" type="xs:string"/>
+  </xs:complexType>
+  <xs:element name="PROD_VENDIDOS" type="PROD_VENDIDOSType"/>
+  <xs:complexType name="PROD_VENDIDOSType">
+    <xs:sequence>
+      <xs:element name="ROW" type="ROWType" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+    <xs:attribute name="MODO" type="xs:string"/>
+    <xs:attribute name="KEYFIELD" type="xs:string"/>
+  </xs:complexType>
+  <xs:element name="ROW" type="ROWType"/>
+  <xs:complexType name="ROWType">
+    <xs:sequence/>
+    <xs:attribute name="COD_RUBRO" type="xs:string"/>
+    <xs:attribute name="RUBRO" type="xs:string"/>
+    <xs:attribute name="COD_ARTICU" type="xs:string"/>
+    <xs:attribute name="DESCRIPCION" type="xs:string"/>
+    <xs:attribute name="UNITARIO" type="xs:string"/>
+    <xs:attribute name="CANTIDAD" type="xs:string"/>
+    <xs:attribute name="IMPORTE_C_DESCUENTO" type="xs:string"/>
+  </xs:complexType>
+  <xs:element name="FORMAS_DE_PAGO" type="FORMAS_DE_PAGOType"/>
+  <xs:complexType name="FORMAS_DE_PAGOType">
+    <xs:sequence>
+      <xs:element name="ROW" type="ROWType" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+    <xs:attribute name="MODO" type="xs:string"/>
+    <xs:attribute name="KEYFIELD" type="xs:string"/>
+  </xs:complexType>
+  <xs:element name="ROW" type="ROWType"/>
+  <xs:complexType name="ROWType">
+    <xs:sequence/>
+    <xs:attribute name="FORMAPAGO" type="xs:string"/>
+    <xs:attribute name="IMPORTE" type="xs:string"/>
+    <xs:attribute name="DB_KEY" type="xs:string"/>
+  </xs:complexType>
+</xs:schema>]]></XmlSchema><CdsSkeleton/><XslTransform/><Skeleton><![CDATA[<?xml version="1.0"?><DATAPACKET Version="2.0"><METADATA><FIELDS><FIELD attrname="Fecha" fieldtype="date"/><FIELD attrname="Hora" fieldtype="time"/><FIELD attrname="Sucursal" fieldtype="string" WIDTH="15"/></FIELDS><PARAMS/></METADATA><ROWDATA/><METADATA><FIELDS><FIELD attrname="Fecha" fieldtype="date"/><FIELD attrname="Hora" fieldtype="time"/><FIELD attrname="Sucursal" fieldtype="string" WIDTH="15"/></FIELDS><PARAMS/></METADATA><ROWDATA/></DATAPACKET>
+]]></Skeleton></XmlTransformation>

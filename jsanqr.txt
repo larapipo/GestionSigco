@@ -1,0 +1,63 @@
+const
+  Codes64 = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz+/';
+
+
+
+Function TDMMain_FD.GetQRAfip(Fecha,Cuit,PtoVta,CodAfip,NroCpbte,Importe,Moneda,Cotizacion,TipoDoc,NroDoc,CAE:string):string;
+var QRJSon: TJSonObject;
+begin
+/////////     DEVUELVE EL CODIGO JSON CON LOS DATOS PARA EL QR DE LA FACTURA ELECTRONICA, CODIFICADO EN BASE64
+  try
+    QRJson      :=  TJSonObject.Create;
+    Result      :=  '';
+    QRJson.AddPair( TJSONPair.Create('ver','1'));
+    QRJson.AddPair( TJSONPair.Create('fecha',Fecha));
+    QRJson.AddPair( TJSONPair.Create('cuit',Cuit));
+    QRJson.AddPair( TJSONPair.Create('ptoVta',PtoVta));
+    QRJson.AddPair( TJSONPair.Create('tipoCmp',CodAfip));
+    QRJson.AddPair( TJSONPair.Create('nroCmp',NroCpbte));
+    QRJson.AddPair( TJSONPair.Create('importe',Importe));
+    QRJson.AddPair( TJSONPair.Create('moneda',Moneda));
+    QRJson.AddPair( TJSONPair.Create('ctz',Cotizacion));
+    QRJson.AddPair( TJSONPair.Create('tipoDocRec',TipoDoc));
+    QRJson.AddPair( TJSONPair.Create('nroDocRec',NroDoc));
+    QRJson.AddPair( TJSONPair.Create('tipoCodAut','E'));
+    QRJson.AddPair( TJSONPair.Create('codAut',CAE));
+
+    Result      :=  Encode64(QRJson.ToString);
+
+  finally
+ //   QRJson.Destroy;
+    QRJson.Free;
+  end;
+end;
+
+function TDMMain_FD.Encode64(S: string): string;
+var
+  i: Integer;
+  a: Integer;
+  x: Integer;
+  b: Integer;
+begin
+  Result := '';
+  a := 0;
+  b := 0;
+  for i := 1 to Length(s) do
+  begin
+    x := Ord(s[i]);
+    b := b * 256 + x;
+    a := a + 8;
+    while a >= 6 do
+    begin
+      a := a - 6;
+      x := b div (1 shl a);
+      b := b mod (1 shl a);
+      Result := Result + Codes64[x + 1];
+    end;
+  end;
+  if a > 0 then
+  begin
+    x := b shl (6 - a);
+    Result := Result + Codes64[x + 1];
+  end;
+end;

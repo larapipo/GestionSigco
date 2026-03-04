@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{829AE139-EAE6-43C3-A387-835A98DC67C0}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="Menu.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\ExportadorLista\ExporadorLista.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="Menu">
+        <MSBuild Projects="Menu.dproj"/>
+    </Target>
+    <Target Name="Menu:Clean">
+        <MSBuild Projects="Menu.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Menu:Make">
+        <MSBuild Projects="Menu.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="ExporadorLista">
+        <MSBuild Projects="..\ExportadorLista\ExporadorLista.dproj"/>
+    </Target>
+    <Target Name="ExporadorLista:Clean">
+        <MSBuild Projects="..\ExportadorLista\ExporadorLista.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ExporadorLista:Make">
+        <MSBuild Projects="..\ExportadorLista\ExporadorLista.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="Menu;ExporadorLista"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="Menu:Clean;ExporadorLista:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="Menu:Make;ExporadorLista:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

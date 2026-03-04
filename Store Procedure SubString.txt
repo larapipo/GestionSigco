@@ -1,0 +1,191 @@
+CREATE PROCEDURE SP_SUBSTRING (
+    SRC VARCHAR(255),
+    START_AT INTEGER,
+    NLEN INTEGER)
+RETURNS (
+    RESULT VARCHAR(255))
+AS
+DECLARE VARIABLE II INTEGER;
+DECLARE VARIABLE VGL VARCHAR(255);
+DECLARE VARIABLE PFX VARCHAR(255);
+DECLARE VARIABLE C CHAR(1);
+BEGIN
+
+   /* Version : 1 */
+   /* Author: LUC, 08.01.2003*/
+   /* Description: */
+   /*            */
+
+  IF ( START_AT <= 0 ) THEN START_AT = 1;
+  IF ( START_AT > 255 ) THEN START_AT = 255;
+
+  IF ( NLEN > 255 ) THEN NLEN = 255;
+  IF ( NLEN < 1 OR NLEN IS NULL ) THEN NLEN = 1;
+
+  VGL = '';
+  RESULT = '';
+  PFX = '';
+
+   IF ( START_AT > 1 ) THEN
+   BEGIN
+     II = 1;
+     WHILE ( II < START_AT ) DO
+     BEGIN
+       PFX = PFX || '_';
+       II = II + 1;
+     END
+   END
+
+   II = START_AT;
+   WHILE ( II < NLEN + START_AT ) DO
+   BEGIN
+     /* WHAT DOES THE STRING LOOK LIKE AT THE CURRENT POSITION, I.E. QUERY THE CURRENT CHARACTER */
+    C = ' ';
+
+     IF ( SRC LIKE PFX || ' %' ) THEN C = ' ';
+     ELSE IF ( SRC LIKE PFX || 'A%' ) THEN C = 'A';
+     ELSE IF ( SRC LIKE PFX || 'B%' ) THEN C = 'B';
+     ELSE IF ( SRC LIKE PFX || 'C%' ) THEN C = 'C';
+     ELSE IF ( SRC LIKE PFX || 'D%' ) THEN C = 'D';
+     ELSE IF ( SRC LIKE PFX || 'E%' ) THEN C = 'E';
+     ELSE IF ( SRC LIKE PFX || 'F%' ) THEN C = 'F';
+     ELSE IF ( SRC LIKE PFX || 'G%' ) THEN C = 'G';
+     ELSE IF ( SRC LIKE PFX || 'H%' ) THEN C = 'H';
+     ELSE IF ( SRC LIKE PFX || 'I%' ) THEN C = 'I';
+     ELSE IF ( SRC LIKE PFX || 'J%' ) THEN C = 'J';
+     ELSE IF ( SRC LIKE PFX || 'K%' ) THEN C = 'K';
+     ELSE IF ( SRC LIKE PFX || 'L%' ) THEN C = 'L';
+     ELSE IF ( SRC LIKE PFX || 'M%' ) THEN C = 'M';
+     ELSE IF ( SRC LIKE PFX || 'N%' ) THEN C = 'N';
+     ELSE IF ( SRC LIKE PFX || 'O%' ) THEN C = 'O';
+     ELSE IF ( SRC LIKE PFX || 'P%' ) THEN C = 'P';
+     ELSE IF ( SRC LIKE PFX || 'Q%' ) THEN C = 'Q';
+     ELSE IF ( SRC LIKE PFX || 'R%' ) THEN C = 'R';
+     ELSE IF ( SRC LIKE PFX || 'S%' ) THEN C = 'S';
+     ELSE IF ( SRC LIKE PFX || 'T%' ) THEN C = 'T';
+     ELSE IF ( SRC LIKE PFX || 'U%' ) THEN C = 'U';
+     ELSE IF ( SRC LIKE PFX || 'V%' ) THEN C = 'V';
+     ELSE IF ( SRC LIKE PFX || 'W%' ) THEN C = 'W';
+     ELSE IF ( SRC LIKE PFX || 'X%' ) THEN C = 'X';
+     ELSE IF ( SRC LIKE PFX || 'Y%' ) THEN C = 'Y';
+     ELSE IF ( SRC LIKE PFX || 'Z%' ) THEN C = 'Z';
+
+     ELSE IF ( SRC LIKE PFX || 'a%' ) THEN C = 'a';
+     ELSE IF ( SRC LIKE PFX || 'b%' ) THEN C = 'b';
+     ELSE IF ( SRC LIKE PFX || 'c%' ) THEN C = 'c';
+     ELSE IF ( SRC LIKE PFX || 'd%' ) THEN C = 'd';
+     ELSE IF ( SRC LIKE PFX || 'e%' ) THEN C = 'e';
+     ELSE IF ( SRC LIKE PFX || 'f%' ) THEN C = 'f';
+     ELSE IF ( SRC LIKE PFX || 'g%' ) THEN C = 'g';
+     ELSE IF ( SRC LIKE PFX || 'h%' ) THEN C = 'h';
+     ELSE IF ( SRC LIKE PFX || 'i%' ) THEN C = 'i';
+     ELSE IF ( SRC LIKE PFX || 'j%' ) THEN C = 'j';
+     ELSE IF ( SRC LIKE PFX || 'k%' ) THEN C = 'k';
+     ELSE IF ( SRC LIKE PFX || 'l%' ) THEN C = 'l';
+     ELSE IF ( SRC LIKE PFX || 'm%' ) THEN C = 'm';
+     ELSE IF ( SRC LIKE PFX || 'n%' ) THEN C = 'n';
+     ELSE IF ( SRC LIKE PFX || 'o%' ) THEN C = 'o';
+     ELSE IF ( SRC LIKE PFX || 'p%' ) THEN C = 'p';
+     ELSE IF ( SRC LIKE PFX || 'q%' ) THEN C = 'q';
+     ELSE IF ( SRC LIKE PFX || 'r%' ) THEN C = 'r';
+     ELSE IF ( SRC LIKE PFX || 's%' ) THEN C = 's';
+     ELSE IF ( SRC LIKE PFX || 't%' ) THEN C = 't';
+     ELSE IF ( SRC LIKE PFX || 'u%' ) THEN C = 'u';
+     ELSE IF ( SRC LIKE PFX || 'v%' ) THEN C = 'v';
+     ELSE IF ( SRC LIKE PFX || 'w%' ) THEN C = 'w';
+     ELSE IF ( SRC LIKE PFX || 'x%' ) THEN C = 'x';
+     ELSE IF ( SRC LIKE PFX || 'y%' ) THEN C = 'y';
+     ELSE IF ( SRC LIKE PFX || 'z%' ) THEN C = 'z';
+
+     ELSE IF ( SRC LIKE PFX || '0%' ) THEN C = '0';
+     ELSE IF ( SRC LIKE PFX || '1%' ) THEN C = '1';
+     ELSE IF ( SRC LIKE PFX || '2%' ) THEN C = '2';
+     ELSE IF ( SRC LIKE PFX || '3%' ) THEN C = '3';
+     ELSE IF ( SRC LIKE PFX || '4%' ) THEN C = '4';
+     ELSE IF ( SRC LIKE PFX || '5%' ) THEN C = '5';
+     ELSE IF ( SRC LIKE PFX || '6%' ) THEN C = '6';
+     ELSE IF ( SRC LIKE PFX || '7%' ) THEN C = '7';
+     ELSE IF ( SRC LIKE PFX || '8%' ) THEN C = '8';
+     ELSE IF ( SRC LIKE PFX || '9%' ) THEN C = '9';
+
+     /*
+     ELSE IF ( SRC LIKE PFX || 'ä%' ) THEN C = 'ä';
+     ELSE IF ( SRC LIKE PFX || 'ö%' ) THEN C = 'ö';
+     ELSE IF ( SRC LIKE PFX || 'ü%' ) THEN C = 'ü';
+     ELSE IF ( SRC LIKE PFX || 'Ä%' ) THEN C = 'Ä';
+     ELSE IF ( SRC LIKE PFX || 'Ö%' ) THEN C = 'Ö';
+     ELSE IF ( SRC LIKE PFX || 'Ü%' ) THEN C = 'Ü';
+     ELSE IF ( SRC LIKE PFX || 'ß%' ) THEN C = 'ß';
+      */
+
+     /*ELSE IF ( SRC LIKE PFX || '!%' ) THEN C = '!';
+     ELSE IF ( SRC LIKE PFX || '"%' ) THEN C = '"';
+     ELSE IF ( SRC LIKE PFX || '§%' ) THEN C = '§';
+     ELSE IF ( SRC LIKE PFX || '$%' ) THEN C = '$';
+     ELSE IF ( SRC LIKE PFX || '&%' ) THEN C = '&';
+     ELSE IF ( SRC LIKE PFX || '/%' ) THEN C = '/';
+     ELSE IF ( SRC LIKE PFX || '(%' ) THEN C = '(';
+     ELSE IF ( SRC LIKE PFX || ')%' ) THEN C = ')';
+     ELSE IF ( SRC LIKE PFX || '=%' ) THEN C = '=';
+      */
+     ELSE IF ( SRC LIKE PFX || '@%' ) THEN C = '@';
+     ELSE IF ( SRC LIKE PFX || '%' ) THEN C = '';
+     ELSE IF ( SRC LIKE PFX || '*%' ) THEN C = '*';
+     /*
+     ELSE IF ( SRC LIKE PFX || '~%' ) THEN C = '~';
+     ELSE IF ( SRC LIKE PFX || '#%' ) THEN C = '#';
+     ELSE IF ( SRC LIKE PFX || '%' ) THEN C = '´';
+     ELSE IF ( SRC LIKE PFX || '%' ) THEN C = '';
+
+     ELSE IF ( SRC LIKE PFX || 'Á%' ) THEN C = 'Á';
+     ELSE IF ( SRC LIKE PFX || 'É%' ) THEN C = 'É';
+     ELSE IF ( SRC LIKE PFX || 'Í%' ) THEN C = 'Í';
+     ELSE IF ( SRC LIKE PFX || 'Ó%' ) THEN C = 'Ó';
+     ELSE IF ( SRC LIKE PFX || 'Ú%' ) THEN C = 'Ú';
+     ELSE IF ( SRC LIKE PFX || 'á%' ) THEN C = 'á';
+     ELSE IF ( SRC LIKE PFX || 'é%' ) THEN C = 'é';
+     ELSE IF ( SRC LIKE PFX || 'í%' ) THEN C = 'í';
+     ELSE IF ( SRC LIKE PFX || 'ó%' ) THEN C = 'ó';
+     ELSE IF ( SRC LIKE PFX || 'ú%' ) THEN C = 'ú';
+
+
+     ELSE IF ( SRC LIKE PFX || 'À%' ) THEN C = 'À';
+     ELSE IF ( SRC LIKE PFX || 'È%' ) THEN C = 'È';
+     ELSE IF ( SRC LIKE PFX || 'Ì%' ) THEN C = 'Ì';
+     ELSE IF ( SRC LIKE PFX || 'Ò%' ) THEN C = 'Ò';
+     ELSE IF ( SRC LIKE PFX || 'Ù%' ) THEN C = 'Ù';
+     ELSE IF ( SRC LIKE PFX || 'à%' ) THEN C = 'à';
+     ELSE IF ( SRC LIKE PFX || 'è%' ) THEN C = 'è';
+     ELSE IF ( SRC LIKE PFX || 'ì%' ) THEN C = 'ì';
+     ELSE IF ( SRC LIKE PFX || 'ò%' ) THEN C = 'ò';
+     ELSE IF ( SRC LIKE PFX || 'ù%' ) THEN C = 'ù';
+
+     ELSE IF ( SRC LIKE PFX || 'Â%' ) THEN C = 'Â';
+     ELSE IF ( SRC LIKE PFX || 'Ê%' ) THEN C = 'Ê';
+     ELSE IF ( SRC LIKE PFX || 'Î%' ) THEN C = 'Î';
+     ELSE IF ( SRC LIKE PFX || 'Ô%' ) THEN C = 'Ô';
+     ELSE IF ( SRC LIKE PFX || 'Û%' ) THEN C = 'Û';
+     ELSE IF ( SRC LIKE PFX || 'â%' ) THEN C = 'â';
+     ELSE IF ( SRC LIKE PFX || 'ê%' ) THEN C = 'ê';
+     ELSE IF ( SRC LIKE PFX || 'î%' ) THEN C = 'î';
+     ELSE IF ( SRC LIKE PFX || 'ô%' ) THEN C = 'ô';
+     ELSE IF ( SRC LIKE PFX || 'û%' ) THEN C = 'û';
+     */
+     ELSE IF ( SRC LIKE PFX || '{%' ) THEN C = '{';
+     ELSE IF ( SRC LIKE PFX || '}%' ) THEN C = '}';
+     ELSE IF ( SRC LIKE PFX || '[%' ) THEN C = '[';
+     ELSE IF ( SRC LIKE PFX || ']%' ) THEN C = ']';
+     ELSE C=' ';
+
+     RESULT = RESULT || :C;
+
+     PFX = PFX || '_';
+     II = II + 1;
+     IF ( II > 255 ) THEN
+     BEGIN
+       SUSPEND;
+       EXIT;
+     END
+   END
+    SUSPEND;
+ END

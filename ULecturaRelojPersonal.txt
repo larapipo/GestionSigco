@@ -1,0 +1,324 @@
+unit ULecturaRelojPersonal;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, UABMBase, Data.FMTBcd,
+  FireDAC.Stan.Intf, FireDAC.Stan.Option, FireDAC.Stan.Param,
+  FireDAC.Stan.Error, FireDAC.DatS, FireDAC.Phys.Intf, FireDAC.DApt.Intf,
+  FireDAC.Stan.Async, FireDAC.DApt, FireDAC.Comp.DataSet, FireDAC.Comp.Client,
+  CompBuscador, JvAppStorage, JvAppIniStorage, Data.DB, Data.SqlExpr,
+  JvComponentBase, JvFormPlacement, System.ImageList, Vcl.ImgList,
+  System.Actions, Vcl.ActnList, Vcl.ComCtrls, JvLabel, JvDBControls,
+  JvExControls, JvGradient, Vcl.Buttons, Vcl.StdCtrls, Vcl.ToolWin, Vcl.ExtCtrls,
+  AdvUtil, Vcl.Grids, AdvObj, BaseGrid, AdvGrid,DateUtils, JvDialogs, Vcl.Menus,
+  AdvGridWorkbook, AdvSprd;
+
+type
+  TFormLectorRelojPersonal = class(TFormABMBase)
+    pnPie: TPanel;
+    pnCabecera: TPanel;
+    btCargarExcel: TBitBtn;
+    CargarExcel: TAction;
+    OpenDialog: TOpenDialog;
+    pcLectura: TPageControl;
+    pagMovimientos: TTabSheet;
+    sgLectura: TAdvStringGrid;
+    pagResumen: TTabSheet;
+    sgResumen: TAdvStringGrid;
+    Button1: TButton;
+    GenerarResumen: TAction;
+    ToolButton1: TToolButton;
+    ExportarXLS: TAction;
+    BitBtn1: TBitBtn;
+    SaveDialog1: TSaveDialog;
+    PopupMenu1: TPopupMenu;
+    GenerarResumen1: TMenuItem;
+    pagPersonal: TTabSheet;
+    gwPersonal: TAdvGridWorkbook;
+    procedure CargarExcelExecute(Sender: TObject);
+    procedure sgLecturaGetFormat(Sender: TObject; ACol: Integer;
+      var AStyle: TSortStyle; var aPrefix, aSuffix: string);
+    procedure GenerarResumenExecute(Sender: TObject);
+    procedure FormCreate(Sender: TObject);
+    procedure FormClose(Sender: TObject; var Action: TCloseAction);
+    procedure FormDestroy(Sender: TObject);
+    procedure ExportarXLSExecute(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  FormLectorRelojPersonal: TFormLectorRelojPersonal;
+
+implementation
+
+{$R *.dfm}
+
+procedure TFormLectorRelojPersonal.CargarExcelExecute(Sender: TObject);
+var
+  I: Integer;
+  Aux:String;
+begin
+  inherited;
+  if OpenDialog.Execute then
+    if OpenDialog.FileName<>'' then
+      begin
+        sgLectura.RowCount  := 2;
+        sgLectura.FixedRows := 1;
+        sgLectura.LoadFromXLS(OpenDialog.FileName);
+        sgLectura.Options:=sgLectura.Options+[goColSizing];
+      end;
+  sgLectura.AddColumn;
+  sgLectura.AddColumn;
+  sgLectura.cells[sgLectura.ColCount-2,0]:= 'Hora';
+  sgLectura.cells[sgLectura.ColCount-1,0]:= 'Fecha';
+  sgLectura.AddColumn;
+  sgLectura.cells[sgLectura.ColCount-1,0]:= 'Referencia';
+
+  for I := 1 to sgLectura.RowCount-2 do
+    begin
+      sgLectura.cells[sgLectura.ColCount-3,I]:= FormatDateTime('hh:mm',sgLectura.DateTimes[2,i]);//  copy(sgLectura.cells[2,i] ,12,5);
+      sgLectura.cells[sgLectura.ColCount-2,I]:= FormatDateTime('dd/mm/yyyy',sgLectura.DateTimes[2,i]); //copy(sgLectura.cells[2,i] , 1,10);
+      sgLectura.cells[sgLectura.ColCount-1,I]:= sgLectura.Cells[4,i]+FormatDateTime('yyyymmdd',sgLectura.DateTimes[2,i]) + sgLectura.Cells[0,i];
+    end;
+
+  sgLectura.AutoSizeColumns(true,20);
+  if sgLectura.Cells[0,sgLectura.RowCount-1]='' then
+    sgLectura.RowCount:=sgLectura.RowCount-1;
+
+ // if MessageDlg('generar resumen de Movimientos',mtConfirmation,mbYesNo,0)=mrYes then
+
+  if sgLectura.RowCount>3 then
+    begin
+      GenerarResumen.Execute;
+      pcLectura.ActivePageIndex:=1;
+    end;
+end;
+
+
+procedure TFormLectorRelojPersonal.ExportarXLSExecute(Sender: TObject);
+begin
+  inherited;
+  if pcLectura.ActivePageIndex=1 then
+    if SaveDialog1.Execute then
+      sgResumen.SaveToXLS(SaveDialog1.FileName);
+  if pcLectura.ActivePageIndex=2 then
+    if SaveDialog1.Execute then
+      gwPersonal.Grid.SaveToXLS(SaveDialog1.FileName);
+
+end;
+
+procedure TFormLectorRelojPersonal.FormClose(Sender: TObject;
+  var Action: TCloseAction);
+begin
+  inherited;
+  Action:=caFree;
+end;
+
+procedure TFormLectorRelojPersonal.FormCreate(Sender: TObject);
+begin
+  inherited;
+  AutoSize:=False;
+end;
+
+procedure TFormLectorRelojPersonal.FormDestroy(Sender: TObject);
+begin
+  inherited;
+  FormLectorRelojPersonal:=nil;
+end;
+
+procedure TFormLectorRelojPersonal.GenerarResumenExecute(Sender: TObject);
+VAR c,r,r2,c2:Integer;
+Loc     :TPoint;
+id      :string;
+FechaStr:String[10];
+FirstDate,LastDate:TDateTime;
+CantDias:Integer;
+Cadena:String;
+
+begin
+  inherited;
+
+  sgResumen.ColCount  := 2;
+  id                  := '';
+  r2                  := 2;
+  FechaStr            := Copy(sgLectura.Cells[2,0],1,10);
+  FirstDate := sgLectura.DateTimes[2,1];
+  LastDate  := sgLectura.DateTimes[2,sgLectura.RowCount-1];
+
+  Cursor:=crHourGlass;
+  gwPersonal.Sheets.Clear;
+  // aca lleno los Empleados
+  for r := 2 to sgLectura.RowCount-1 do
+    begin
+      if sgLectura.Cells[0,r]<>id then
+        begin
+          sgResumen.AddRow;
+          sgResumen.Cells[0,r2]         := sgLectura.Cells[0,r];
+          sgResumen.Cells[1,r2]         := sgLectura.Cells[1,r];
+          sgResumen.Alignments[0,r2]    := taRightJustify;
+          sgResumen.Alignments[1,r2]    := taLeftJustify;
+
+          gwPersonal.Sheets.Add.Name    := sgLectura.Cells[1,r];
+          gwPersonal.ActiveSheet        := gwPersonal.Sheets.Count-1;
+          gwPersonal.Grid.RowCount      := 2;
+          gwPersonal.Grid.Cells[0,0]    := sgLectura.Cells[1,r];
+          gwPersonal.Grid.MergeCells(0,0,2,1);
+          gwPersonal.Grid.Cells[0,1]  := 'Fecha';
+          gwPersonal.Grid.MergeCells(0,1,2,1);
+          gwPersonal.Grid.Cells[2,1]  := 'Entrada';
+          gwPersonal.Grid.Cells[3,1]  := 'Salida';
+
+          gwPersonal.Grid.Cells[4,1]  := 'Total';
+          gwPersonal.Grid.Cells[5,1]  := 'Diferencia';
+
+          gwPersonal.Grid.Alignments[0,1] := taCenter;
+          gwPersonal.Grid.Alignments[2,1] := taCenter;
+          gwPersonal.Grid.Alignments[3,1] := taCenter;
+          gwPersonal.Grid.Alignments[4,1] := taCenter;
+          gwPersonal.Grid.Alignments[5,1] := taCenter;
+
+
+          gwPersonal.Grid.FixedRows     := 1;
+
+
+          id := sgLectura.Cells[0,r];
+          r2 := r2+1;
+        end;
+    end;
+
+  id                     := sgLectura.Cells[0,1];
+  gwPersonal.ActiveSheet := 0;    // me posociono en la primera menos 1
+  FechaStr               := '';
+  for r := 1 to sgLectura.RowCount-1 do
+    begin
+      if id <> sgLectura.Cells[0,r] then
+        begin
+          id := sgLectura.Cells[0,r];
+          gwPersonal.ActiveSheet:=gwPersonal.ActiveSheet+1;
+          FechaStr:='';
+        end;
+
+      if id = sgLectura.Cells[0,r] then
+        begin
+          if FechaStr<>sgLectura.Cells[6,r] then
+            begin
+              FechaStr :=sgLectura.Cells[6,r];
+              gwPersonal.Grid.AddRow;
+            end;
+
+          if FechaStr=sgLectura.Cells[6,r] then
+            begin
+              gwPersonal.Grid.Cells[0,gwPersonal.Grid.RowCount-1]    := sgLectura.Cells[6,r];
+              gwPersonal.Grid.MergeCells(0,gwPersonal.Grid.RowCount-1,2,1);
+
+              if sgLectura.Cells[4,r]='0' then
+                gwPersonal.Grid.Cells[2,gwPersonal.Grid.RowCount-1]  := sgLectura.Cells[5,r]
+              else
+                if sgLectura.Cells[4,r]='1' then
+                  gwPersonal.Grid.Cells[3,gwPersonal.Grid.RowCount-1] := sgLectura.Cells[5,r];
+
+              if (Trim(gwPersonal.Grid.Cells[2,gwPersonal.Grid.RowCount-1])<>'') and
+                 (Trim(gwPersonal.Grid.Cells[3,gwPersonal.Grid.RowCount-1])<>'')  then
+              begin
+                gwPersonal.Grid.Cells[4,gwPersonal.Grid.RowCount-1] :=
+                FormatDateTime('HH:MM',(gwPersonal.Grid.Times[3,gwPersonal.Grid.RowCount-1]) -
+                                       (gwPersonal.Grid.Times[2,gwPersonal.Grid.RowCount-1]));
+
+                if Trim(gwPersonal.Grid.Cells[4,gwPersonal.Grid.RowCount-1])<>''  then
+                   gwPersonal.Grid.Cells[5,gwPersonal.Grid.RowCount-1] :=
+                     FormatDateTime('HH:MM',( StrToTime('08:00') - gwPersonal.Grid.Times[4,gwPersonal.Grid.RowCount-1]));
+
+              end;
+            end;
+        end;
+
+
+      //FechaStr:=sgLectura.Cells[0,6];
+    end;
+
+
+
+  CantDias                   := DaysBetween(LastDate,FirstDate);
+  sgResumen.ColCount         := (sgResumen.ColCount+CantDias)*3;
+
+  for c := 2 to (sgResumen.ColCount)-1 do
+    begin
+      if (c mod 3)=0 then
+        begin
+          sgResumen.Cells[c-1,0]     := FormatDateTime('dd/MM/yyyy', FirstDate);
+          sgResumen.Alignments[c-1,0]:= taCenter;
+          sgResumen.MergeCells(c-1,0,3,1);
+
+          sgResumen.Cells[c-1,1]     := 'Entrada';
+          sgResumen.Cells[c  ,1]     := 'Salida';
+          sgResumen.Cells[c+1,1]     := 'Total';
+
+          sgResumen.Alignments[c-1,1]:= taCenter;
+          sgResumen.Alignments[c  ,1]:= taCenter;
+          sgResumen.Alignments[c+1,1]:= taCenter;
+
+          FirstDate := IncDay(FirstDate,1);
+        end;
+      gwPersonal.ActiveSheet:=gwPersonal.ActiveSheet+1;
+    end;
+
+
+  sgResumen.AutoSizeColumns(true,20);
+
+
+  sgResumen.FixedRows:=2;
+
+  for r := 2 to sgResumen.RowCount do
+    begin
+
+      Loc    := Point(6,-1);
+      C:=2;
+      while c < sgresumen.ColCount do
+        begin
+
+          Cadena := '0'+ FormatDateTime('yyyymmdd', sgResumen.DateTimes[C,0]) + sgResumen.Cells[0,r];
+
+          loc    := sgLectura.Find(loc,cadena,[fnMatchCase]);
+          if (loc.X>-1) and (loc.Y>-1) and (Trim(sgLectura.cells[5,loc.y])<>'') then
+            sgResumen.cells[C,r]:=(sgLectura.cells[5,loc.y]);
+
+          Cadena := '1'+ FormatDateTime('yyyymmdd', sgResumen.DateTimes[C,0]) + sgResumen.Cells[0,r];
+
+          loc    := sgLectura.Find(loc,cadena,[fnMatchCase]);
+          if (loc.X>-1) and (loc.Y>-1) and (Trim(sgLectura.cells[5,loc.y])<>'') then
+            sgResumen.cells[C+1,r]:=(sgLectura.cells[5,loc.y]);
+
+          if (sgResumen.Cells[c,r]<>'') and (sgResumen.Cells[c+1,r]<>'') then
+            sgResumen.cells[C+2,r]:= FormatDateTime('HH:MM', sgResumen.Times[C+1,r] - sgResumen.Times[C,r]);
+
+          sgResumen.Alignments[C,  r] := taCenter;
+          sgResumen.Alignments[C+1,r] := taCenter;
+          sgResumen.Alignments[C+2,r] := taCenter;
+
+          c:=C+3;
+
+        end;
+    end;
+  gwPersonal.ActiveSheet     :=0;
+
+  Cursor  := crDefault;
+
+end;
+
+procedure TFormLectorRelojPersonal.sgLecturaGetFormat(Sender: TObject;
+  ACol: Integer; var AStyle: TSortStyle; var aPrefix, aSuffix: string);
+begin
+  inherited;
+  if ACol=2 then
+    AStyle :=ssDateTime;
+  if ACol=5 then
+    AStyle :=ssTime;
+
+end;
+
+end.

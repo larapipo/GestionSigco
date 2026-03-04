@@ -1,0 +1,2 @@
+  MODULE('COT001.CLW')
+  END

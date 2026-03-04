@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<TfrxReport Version="2024.1.8" DotMatrixReport="False" IniFile="\Software\Fast Reports" PreviewOptions.Buttons="167935" PreviewOptions.Zoom="1" PrintOptions.Printer="Default" PrintOptions.PrintOnSheet="0" PrintOptions.ShowDialog="False" ReportOptions.CreateDate="45978.9074456134" ReportOptions.Description.Text="" ReportOptions.LastChange="45979.5498112732" ScriptLanguage="PascalScript" ScriptText.Text="&#13;&#10;begin&#13;&#10;&#13;&#10;end.">
+  <Datasets>
+    <item DataSet="frDetalle" DataSetName="frDetalle"/>
+    <item DataSet="frRegistro" DataSetName="frRegistro"/>
+  </Datasets>
+  <Variables>
+    <item Name="Fecha" Value="'18/11/2025'"/>
+    <item Name="FechaVencimiento" Value="'28/11/2025'"/>
+  </Variables>
+  <TfrxDataPage Name="Data" HGuides.Text="" VGuides.Text="" Height="1000" Left="0" Top="0" Width="1000"/>
+  <TfrxReportPage Name="Page1" HGuides.Text="" VGuides.Text="" PaperWidth="100" PaperHeight="50" PaperSize="256" LeftMargin="0" RightMargin="0" TopMargin="0" BottomMargin="0" ColumnWidth="0" ColumnPositions.Text="" Frame.Typ="0" MirrorMode="0">
+    <TfrxMemoView Name="frDetalleDETALLE_STK" IndexTag="1" AllowVectorExport="True" Left="11.33859" Top="7.55906" Width="359.05535" Height="18.89765" ContentScaleOptions.Constraints.MaxIterationValue="0" ContentScaleOptions.Constraints.MinIterationValue="0" DataField="DETALLE_STK" DataSet="frDetalle" DataSetName="frDetalle" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="Arial" Font.Style="0" Frame.Typ="0" ParentFont="False" Text="[frDetalle.&#34;DETALLE_STK&#34;]"/>
+    <TfrxBarCodeView Name="BarCode1" AllowVectorExport="True" Left="52.91342326" Top="37.79529388" Width="162" Height="86.9291993" BarType="bcCode128" DataField="CODIGOBARRA" DataSet="frDetalle" DataSetName="frDetalle" Frame.Typ="0" Rotation="0" ShowText="False" TestLine="False" Text="12345678" WideBarRatio="2" Zoom="2" ColorBar="0" BarcodeText.TextSettings.Font.Charset="1" BarcodeText.TextSettings.Font.Color="-16777208" BarcodeText.TextSettings.Font.Height="-12" BarcodeText.TextSettings.Font.Name="Arial" BarcodeText.TextSettings.Font.Style="0" BarcodeText.TextSettings.BarTextPos="btpBottom" BarcodeText.SupSettings.Font.Charset="1" BarcodeText.SupSettings.Font.Color="-16777208" BarcodeText.SupSettings.Font.Height="-9" BarcodeText.SupSettings.Font.Name="Arial" BarcodeText.SupSettings.Font.Style="0" BarcodeText.SupSettings.BarTextPos="btpTop"/>
+    <TfrxMemoView Name="FechaVencimiento" IndexTag="1" AllowVectorExport="True" Left="264.5671" Top="158.74026" Width="79.37013" Height="18.89765" ContentScaleOptions.Constraints.MaxIterationValue="0" ContentScaleOptions.Constraints.MinIterationValue="0" Frame.Typ="0" Text="[FechaVencimiento]"/>
+    <TfrxMemoView Name="Fecha" IndexTag="1" AllowVectorExport="True" Left="26.45671" Top="158.74026" Width="79.37013" Height="18.89765" ContentScaleOptions.Constraints.MaxIterationValue="0" ContentScaleOptions.Constraints.MinIterationValue="0" Frame.Typ="0" Text="[Fecha]"/>
+  </TfrxReportPage>
+</TfrxReport>

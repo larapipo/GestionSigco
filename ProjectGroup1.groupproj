@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{10E3B1B4-5DD9-4F01-B00A-2D9B1A7B720B}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="Menu.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\Ejemplos JSONResources\JsonWriting\JsonWriting.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="Menu">
+        <MSBuild Projects="Menu.dproj"/>
+    </Target>
+    <Target Name="Menu:Clean">
+        <MSBuild Projects="Menu.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Menu:Make">
+        <MSBuild Projects="Menu.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="JsonWriting">
+        <MSBuild Projects="..\Ejemplos JSONResources\JsonWriting\JsonWriting.dproj"/>
+    </Target>
+    <Target Name="JsonWriting:Clean">
+        <MSBuild Projects="..\Ejemplos JSONResources\JsonWriting\JsonWriting.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="JsonWriting:Make">
+        <MSBuild Projects="..\Ejemplos JSONResources\JsonWriting\JsonWriting.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="Menu;JsonWriting"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="Menu:Clean;JsonWriting:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="Menu:Make;JsonWriting:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

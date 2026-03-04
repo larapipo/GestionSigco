@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<TfrxReport Version="2022.2.3" DotMatrixReport="False" IniFile="\Software\Fast Reports" PreviewOptions.Buttons="4095" PreviewOptions.Zoom="1" PrintOptions.Printer="Por defecto" PrintOptions.PrintOnSheet="0" ReportOptions.CreateDate="39638.1218210417" ReportOptions.Description.Text="" ReportOptions.LastChange="45043.7751572454" ScriptLanguage="PascalScript" ScriptText.Text="&#13;&#10;&#13;&#10;begin&#13;&#10;&#13;&#10;end.">
+  <Variables>
+    <item Name="CODIGO" Value="'00000036'"/>
+    <item Name="DETALLE" Value="'DELANTAL PVC RECT.AMAR. 0.75 X 1.20 HUINCA S'"/>
+    <item Name="PRECIO" Value="'302.50'"/>
+    <item Name="CODIGOBARRA" Value="'100101026'"/>
+  </Variables>
+  <TfrxDataPage Name="Data" HGuides.Text="" VGuides.Text="" Height="1000" Left="0" Top="0" Width="1000"/>
+  <TfrxReportPage Name="Page1" HGuides.Text="" VGuides.Text="" PaperWidth="53" PaperHeight="25" PaperSize="256" LeftMargin="0" RightMargin="0" TopMargin="0.5" BottomMargin="1" ColumnWidth="204" ColumnPositions.Text="0" Frame.Typ="0" MirrorMode="0">
+    <TfrxBarCodeView Name="BarCode1" AllowVectorExport="True" Left="49.13389" Top="22.67718" Width="81" Height="34.01577" BarType="bcCode128" Expression="&#60;CODIGO&#62;" Frame.Typ="0" Rotation="0" ShowText="False" TestLine="False" Text="12345678" WideBarRatio="2" Zoom="1" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="Arial" Font.Style="0" ColorBar="0"/>
+    <TfrxMemoView Name="Memo1" AllowVectorExport="True" Left="7.55906" Top="56.69295" Width="181.41744" Height="26.45671" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" Frame.Typ="0" ParentFont="False" Text="[DETALLE]"/>
+    <TfrxMemoView Name="Memo2" AllowVectorExport="True" Left="3.77953" Top="3.77953" Width="94.48825" Height="18.89765" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="1" Frame.Typ="0" ParentFont="False" Text="[CODIGO]"/>
+  </TfrxReportPage>
+</TfrxReport>

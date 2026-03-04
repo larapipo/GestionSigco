@@ -1,0 +1,248 @@
+﻿[Main]
+Version=2
+
+[cxDBPivotGrid2: TcxDBPivotGrid]
+=
+Prefilter="Hex:FEFFFFFF0000000000"
+PrefilterActive="False"
+
+[cxDBPivotGrid2/cxDBPivotGridField1: TcxDBPivotGridField]
+=
+SortOrder="soNone"
+GroupExpanded="True"
+Visible="True"
+Width=0
+Area="faFilter"
+AreaIndex=0
+Filter="Hex:0000000000"
+
+[cxDBPivotGrid2/cxDBPivotGridField2: TcxDBPivotGridField]
+=
+SortOrder="soNone"
+GroupExpanded="True"
+Visible="True"
+Width=0
+Area="faFilter"
+AreaIndex=1
+Filter="Hex:0000000000"
+
+[cxDBPivotGrid2/cxDBPivotGridField3: TcxDBPivotGridField]
+=
+SortOrder="soNone"
+GroupExpanded="True"
+Visible="True"
+Width=183
+Area="faRow"
+AreaIndex=1
+Filter="Hex:0000000000"
+
+[cxDBPivotGrid2/cxDBPivotGridField4: TcxDBPivotGridField]
+=
+SortOrder="soNone"
+GroupExpanded="True"
+Visible="True"
+Width=200
+Area="faFilter"
+AreaIndex=2
+Filter="Hex:0000000000"
+
+[cxDBPivotGrid2/cxDBPivotGridField5: TcxDBPivotGridField]
+=
+SortOrder="soNone"
+GroupExpanded="True"
+Visible="True"
+Width=77
+Area="faFilter"
+AreaIndex=12
+Filter="Hex:0000000000"
+
+[cxDBPivotGrid2/cxDBPivotGridField6: TcxDBPivotGridField]
+=
+SortOrder="soNone"
+GroupExpanded="True"
+Visible="True"
+Width=0
+Area="faData"
+AreaIndex=0
+Filter="Hex:0000000000"
+
+[cxDBPivotGrid2/cxDBPivotGridField7: TcxDBPivotGridField]
+=
+SortOrder="soNone"
+GroupExpanded="True"
+Visible="True"
+Width=312
+Area="faFilter"
+AreaIndex=17
+Filter="Hex:0000000000"
+
+[cxDBPivotGrid2/cxDBPivotGridField8: TcxDBPivotGridField]
+=
+SortOrder="soNone"
+GroupExpanded="True"
+Visible="True"
+Width=78
+Area="faFilter"
+AreaIndex=15
+Filter="Hex:0000000000"
+
+[cxDBPivotGrid2/cxDBPivotGridField9: TcxDBPivotGridField]
+=
+SortOrder="soNone"
+GroupExpanded="True"
+Visible="True"
+Width=0
+Area="faRow"
+AreaIndex=0
+Filter="Hex:0000000000"
+
+[cxDBPivotGrid2/cxDBPivotGridField10: TcxDBPivotGridField]
+=
+SortOrder="soNone"
+GroupExpanded="True"
+Visible="True"
+Width=150
+Area="faColumn"
+AreaIndex=0
+Filter="Hex:0000000000"
+
+[cxDBPivotGrid2/cxDBPivotGridField11: TcxDBPivotGridField]
+=
+SortOrder="soNone"
+GroupExpanded="True"
+Visible="True"
+Width=0
+Area="faFilter"
+AreaIndex=6
+Filter="Hex:0000000000"
+
+[cxDBPivotGrid2/cxDBPivotGridField12: TcxDBPivotGridField]
+=
+SortOrder="soNone"
+GroupExpanded="True"
+Visible="True"
+Width=0
+Area="faFilter"
+AreaIndex=5
+Filter="Hex:0000000000"
+
+[cxDBPivotGrid2/cxDBPivotGridField13: TcxDBPivotGridField]
+=
+SortOrder="soNone"
+GroupExpanded="True"
+Visible="True"
+Width=0
+Area="faFilter"
+AreaIndex=4
+Filter="Hex:0000000000"
+
+[cxDBPivotGrid2/cxDBPivotGridField14: TcxDBPivotGridField]
+=
+SortOrder="soNone"
+GroupExpanded="True"
+Visible="True"
+Width=0
+Area="faFilter"
+AreaIndex=3
+Filter="Hex:0000000000"
+
+[cxDBPivotGrid2/cxDBPivotGridField15: TcxDBPivotGridField]
+=
+SortOrder="soNone"
+GroupExpanded="True"
+Visible="True"
+Width=0
+Area="faFilter"
+AreaIndex=7
+Filter="Hex:0000000000"
+
+[cxDBPivotGrid2/cxDBPivotGrid2Field1: TcxDBPivotGridField]
+=
+SortOrder="soNone"
+GroupExpanded="True"
+Visible="True"
+Width=0
+Area="faFilter"
+AreaIndex=11
+Filter="Hex:0000000000"
+
+[cxDBPivotGrid2/cxDBPivotGrid2Field2: TcxDBPivotGridField]
+=
+SortOrder="soNone"
+GroupExpanded="True"
+Visible="True"
+Width=0
+Area="faData"
+AreaIndex=1
+Filter="Hex:0000000000"
+
+[cxDBPivotGrid2/cxDBPivotGrid2Field3: TcxDBPivotGridField]
+=
+SortOrder="soNone"
+GroupExpanded="True"
+Visible="True"
+Width=157
+Area="faFilter"
+AreaIndex=8
+Filter="Hex:0000000000"
+
+[cxDBPivotGrid2/cxDBPivotGrid2Field4: TcxDBPivotGridField]
+=
+SortOrder="soNone"
+GroupExpanded="True"
+Visible="True"
+Width=101
+Area="faFilter"
+AreaIndex=13
+Filter="Hex:0000000000"
+
+[cxDBPivotGrid2/cxDBPivotGrid2Field5: TcxDBPivotGridField]
+=
+SortOrder="soNone"
+GroupExpanded="True"
+Visible="True"
+Width=0
+Area="faFilter"
+AreaIndex=9
+Filter="Hex:0000000000"
+
+[cxDBPivotGrid2/cxDBPivotGrid2Field6: TcxDBPivotGridField]
+=
+SortOrder="soNone"
+GroupExpanded="True"
+Visible="True"
+Width=0
+Area="faFilter"
+AreaIndex=10
+Filter="Hex:0000000000"
+
+[cxDBPivotGrid2/cxDBPivotGrid2Field7: TcxDBPivotGridField]
+=
+SortOrder="soNone"
+GroupExpanded="True"
+Visible="True"
+Width=92
+Area="faFilter"
+AreaIndex=14
+Filter="Hex:0000000000"
+
+[cxDBPivotGrid2/cxDBPivotGrid2Field8: TcxDBPivotGridField]
+=
+SortOrder="soAscending"
+GroupExpanded="True"
+Visible="True"
+Width=0
+Area="faColumn"
+AreaIndex=1
+Filter="Hex:0000000000"
+
+[cxDBPivotGrid2/cxDBPivotGrid2Field9: TcxDBPivotGridField]
+=
+SortOrder="soNone"
+GroupExpanded="True"
+Visible="True"
+Width=0
+Area="faFilter"
+AreaIndex=16
+Filter="Hex:0000000000"
+

@@ -1,0 +1,391 @@
+unit UComposicionVtos_Compra;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, UABMBase, FMTBcd, Provider, DBClient, DB, SqlExpr,
+  JvComponentBase, JvFormPlacement, ImgList, ActnList,
+  ComCtrls, JvLabel, JvDBControls, JvExControls, JvGradient, Buttons, StdCtrls,
+  ToolWin, ExtCtrls, Mask, JvExMask, JvToolEdit,DateUtils, cxGraphics,
+  cxControls, cxLookAndFeels, cxLookAndFeelPainters, cxClasses, cxCustomData,
+  cxStyles, cxEdit, cxCustomPivotGrid, cxDBPivotGrid,cxExportPivotGridLink,
+  dxPSGlbl, dxPSUtl, dxPSEngn, dxPrnPg, dxBkgnd, dxWrap, dxPrnDev,
+  dxPSCompsProvider, dxPSFillPatterns, dxPSEdgePatterns, dxPSPDFExportCore,
+  dxPSPDFExport, cxDrawTextUtils, dxPSPrVwStd, dxPSPrVwAdv, dxPSPrVwRibbon,
+  dxPScxPageControlProducer, dxPScxPivotGridLnk, dxPScxEditorProducers,
+  dxPScxExtEditorProducers, dxPSCore, dxPScxCommon, cxCurrencyEdit, dxSkinsCore,
+  dxSkinBlue, dxSkinBlueprint, dxSkinCaramel, dxSkinCoffee, dxSkinDarkRoom,
+  dxSkinDarkSide, dxSkinDevExpressDarkStyle, dxSkinDevExpressStyle, dxSkinFoggy,
+  dxSkinGlassOceans, dxSkinHighContrast, dxSkiniMaginary, dxSkinLilian,
+  dxSkinLiquidSky, dxSkinLondonLiquidSky, dxSkinMcSkin, dxSkinMetropolis,
+  dxSkinMetropolisDark, dxSkinMoneyTwins, dxSkinOffice2007Black,
+  dxSkinOffice2007Blue, dxSkinOffice2007Green, dxSkinOffice2007Pink,
+  dxSkinOffice2007Silver, dxSkinOffice2010Black, dxSkinOffice2010Blue,
+  dxSkinOffice2010Silver, dxSkinOffice2013DarkGray, dxSkinOffice2013LightGray,
+  dxSkinOffice2013White, dxSkinPumpkin, dxSkinSeven, dxSkinSevenClassic,
+  dxSkinSharp, dxSkinSharpPlus, dxSkinSilver, dxSkinSpringTime, dxSkinStardust,
+  dxSkinSummer2008, dxSkinTheAsphaltWorld, dxSkinsDefaultPainters,
+  dxSkinValentine, dxSkinVS2010, dxSkinWhiteprint, dxSkinXmas2008Blue,
+  dxSkinscxPCPainter, dxSkinsdxBarPainter, dxSkinsdxRibbonPainter, JvAppStorage,
+  JvAppIniStorage, System.Actions, dxPScxGridLnk, dxPScxGridLayoutViewLnk,
+  dxPScxVGridLnk, CompBuscador,VirtualUI_SDK, FireDAC.Stan.Intf,
+  FireDAC.Stan.Option, FireDAC.Stan.Param, FireDAC.Stan.Error, FireDAC.DatS,
+  FireDAC.Phys.Intf, FireDAC.DApt.Intf, FireDAC.Stan.Async, FireDAC.DApt,
+  dxSkinBlack, dxSkinOffice2016Colorful, dxSkinOffice2016Dark,
+  dxSkinVisualStudio2013Blue, dxSkinVisualStudio2013Dark,
+  dxSkinVisualStudio2013Light, FireDAC.Comp.DataSet, FireDAC.Comp.Client,
+  dxSkinBasic, dxSkinOffice2019Black, dxSkinOffice2019Colorful,
+  dxSkinOffice2019DarkGray, dxSkinOffice2019White, dxSkinTheBezier,
+  dxBarBuiltInMenu, Vcl.Menus, System.ImageList, Vcl.Grids, Vcl.DBGrids,
+  DataExport, DataToXLS, frCoreClasses, frxClass, frxDBSet;
+
+type
+  TFormComposicionVtosComp = class(TFormABMBase)
+    CDSCompras: TClientDataSet;
+    DSPCompras: TDataSetProvider;
+    DSCompras: TDataSource;
+    pnCabecera: TPanel;
+    Label2: TLabel;
+    Label3: TLabel;
+    Desde: TJvDateEdit;
+    Hasta: TJvDateEdit;
+    UpDown1: TUpDown;
+    CDSComprasID_FC: TIntegerField;
+    CDSComprasTIPOCPBTE: TStringField;
+    CDSComprasCLASECPBTE: TStringField;
+    CDSComprasNROCPBTE: TStringField;
+    CDSComprasCODIGO: TStringField;
+    CDSComprasNOMBRE: TStringField;
+    CDSComprasID_MOVCCCOMPRA: TIntegerField;
+    CDSComprasMESVTO: TSmallintField;
+    CDSComprasANIOVTO: TSmallintField;
+    CDSComprasMESCPR: TSmallintField;
+    CDSComprasANIOCPR: TSmallintField;
+    CDSComprasSEMANACPRA: TWordField;
+    CDSComprasDIASMCPR: TSmallintField;
+    CDSComprasDIASMVTO: TSmallintField;
+    CDSComprasSEMANAVTO: TWordField;
+    cxDBPivotGrid1: TcxDBPivotGrid;
+    cxDBPivotGrid1Field1: TcxDBPivotGridField;
+    cxDBPivotGrid1Field2: TcxDBPivotGridField;
+    cxDBPivotGrid1Field3: TcxDBPivotGridField;
+    cxDBPivotGrid1Field4: TcxDBPivotGridField;
+    cxDBPivotGrid1Field6: TcxDBPivotGridField;
+    cxDBPivotGrid1Field7: TcxDBPivotGridField;
+    cxDBPivotGrid1Field8: TcxDBPivotGridField;
+    cxDBPivotGrid1Field9: TcxDBPivotGridField;
+    cxDBPivotGrid1Field10: TcxDBPivotGridField;
+    cxDBPivotGrid1Field11: TcxDBPivotGridField;
+    cxDBPivotGrid1Field12: TcxDBPivotGridField;
+    cxDBPivotGrid1Field13: TcxDBPivotGridField;
+    cxDBPivotGrid1Field14: TcxDBPivotGridField;
+    cxDBPivotGrid1Field15: TcxDBPivotGridField;
+    cxDBPivotGrid1Field16: TcxDBPivotGridField;
+    cxDBPivotGrid1Field17: TcxDBPivotGridField;
+    Label1: TLabel;
+    ExportarXLS: TAction;
+    SaveDialog: TSaveDialog;
+    btExcelGastoCompra: TBitBtn;
+    btImprimir: TBitBtn;
+    dxComponentPrinter1: TdxComponentPrinter;
+    dxComponentPrinter1Link1: TcxPivotGridReportLink;
+    Label4: TLabel;
+    cxDBPivotGrid1Field5: TcxDBPivotGridField;
+    Label5: TLabel;
+    QCompras: TFDQuery;
+    CDSComprasTOTAL: TFloatField;
+    CDSComprasHABER: TFloatField;
+    CDSComprasSALDO: TFloatField;
+    CDSComprasSALDO_ANTERIOR: TFloatField;
+    CDSComprasDEBE: TFloatField;
+    cxDBPivotGrid1Field18: TcxDBPivotGridField;
+    CDSComprasFECHACOMPRA: TSQLTimeStampField;
+    CDSComprasFECHAVTO: TSQLTimeStampField;
+    PopupMenu1: TPopupMenu;
+    LimpiarFiltros: TMenuItem;
+    QCCprovee: TFDQuery;
+    DSPCCprovee: TDataSetProvider;
+    CDSCCprovee: TClientDataSet;
+    CDSCCproveeCODIGO: TStringField;
+    CDSCCproveeNOMBRE: TStringField;
+    CDSCCproveeHABER: TFloatField;
+    CDSCCproveeDEBE: TFloatField;
+    CDSCCproveeSALDO: TFloatField;
+    DSCCprovee: TDataSource;
+    PageControl1: TPageControl;
+    TabSheet1: TTabSheet;
+    TabSheet2: TTabSheet;
+    PnCabeceraCC: TPanel;
+    Ldesde: TLabel;
+    lHasta: TLabel;
+    LComposCCprovee: TLabel;
+    CCdesde: TJvDateEdit;
+    CChasta: TJvDateEdit;
+    PnCuerpoCC: TPanel;
+    DBGCCprovee: TDBGrid;
+    DataToXLS: TDataToXLS;
+    frxReport1: TfrxReport;
+    UpDown2: TUpDown;
+    frxDBDataset1: TfrxDBDataset;
+    Imprimir: TAction;
+    procedure FormShow(Sender: TObject);
+    procedure BuscarExecute(Sender: TObject);
+    procedure CDSComprasCalcFields(DataSet: TDataSet);
+    procedure UpDown1Click(Sender: TObject; Button: TUDBtnType);
+    procedure FormCreate(Sender: TObject);
+    procedure FormDestroy(Sender: TObject);
+    procedure FormClose(Sender: TObject; var Action: TCloseAction);
+    procedure Label1Click(Sender: TObject);
+    procedure ExportarXLSExecute(Sender: TObject);
+    procedure LimpiarFiltrosClick(Sender: TObject);
+    procedure ImprimirExecute(Sender: TObject);
+    procedure sbEstadoDblClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  FormComposicionVtosComp: TFormComposicionVtosComp;
+
+implementation
+
+{$R *.dfm}
+uses UDMain_FD;
+
+procedure TFormComposicionVtosComp.ImprimirExecute(Sender: TObject);
+begin
+  inherited;
+  if PageControl1.ActivePageIndex=1   then
+  begin
+
+      if Not(CDSCCprovee.IsEmpty)  Then
+
+      begin
+        frxReport1.PrintOptions.Printer:=PrNomListados;
+        frxReport1.SelectPrinter;
+        frxReport1.LoadFromFile(DMMain_FD.PathReportesLst+'\ListadoProveeCC.fr3');
+        frxReport1.ShowReport;
+      end
+    else ShowMessage('No Hay datos para Listar......');
+  end;
+
+  if pageControl1.ActivePageIndex=0 then
+  begin
+    dxComponentPrinter1.Preview(True);
+  end;
+end;
+
+procedure TFormComposicionVtosComp.BuscarExecute(Sender: TObject);
+var i:Integer;
+begin
+  inherited;
+
+  if PageControl1.ActivePageIndex=0 then
+  begin
+
+    CDSCompras.Close;
+    CDSCompras.Params.ParamByName('desde').AsDate:=Desde.Date;
+    CDSCompras.Params.ParamByName('hasta').AsDate:=Hasta.Date;
+    CDSCompras.Open;
+  end;
+  if pageControl1.ActivePageIndex=1 then
+  begin
+
+    CDSCCprovee.Close;
+    CDSCCprovee.Params.ParamByName('desde').AsDate:=CCdesde.Date;
+    CDSCCprovee.Params.ParamByName('hasta').AsDate:=CChasta.Date;
+    CDSCCprovee.Open;
+  end;
+
+  for i:=0 to cxDBPivotGrid1.FieldCount-1 do
+    cxDBPivotGrid1.Fields[i].ExpandAll;
+end;
+
+procedure TFormComposicionVtosComp.CDSComprasCalcFields(DataSet: TDataSet);
+begin
+  inherited;
+  CDSComprasSEMANACPRA.Value:=NthDayOfWeek(CDSComprasFECHACOMPRA.AsDateTime);
+  CDSComprasSEMANAVTO.Value :=NthDayOfWeek(CDSComprasFECHAVTO.AsDateTime);
+
+
+end;
+
+procedure TFormComposicionVtosComp.ExportarXLSExecute(Sender: TObject);
+begin
+  inherited;
+  if PageControl1.ActivePageIndex=0 then
+    begin
+    if VirtualUI.Active then
+      VirtualUI.StdDialogs:=False;
+    IF NOT (CDSCompras.IsEmpty) THEN
+      BEGIN
+        cxDBPivotGrid1.OptionsView.DataFields     :=False;
+        cxDBPivotGrid1.OptionsView.ColumnFields   :=False;
+        cxDBPivotGrid1.OptionsView.RowFields      :=False;
+        cxDBPivotGrid1.OptionsView.FilterFields   :=False;
+        cxDBPivotGrid1.OptionsView.FilterSeparator:=False;
+        SaveDialog.FileName:='VencimientosCompras';
+        SaveDialog.DefaultExt:='XLS';
+        if SaveDialog.Execute Then
+          if SaveDialog.FileName<>'' then
+            begin
+              if VirtualUI.Active then
+                cxExportPivotGridToExcel(SaveDialog.FileName+'.'+SaveDialog.DefaultExt, cxDBPivotGrid1)
+              else
+                cxExportPivotGridToExcel(SaveDialog.FileName, cxDBPivotGrid1);
+
+              if VirtualUI.Active then
+                begin
+                  VirtualUI.StdDialogs:=False;
+                  VirtualUI.DownloadFile(SaveDialog.FileName+'.'+SaveDialog.DefaultExt);
+                end;
+            end;
+        cxDBPivotGrid1.OptionsView.DataFields     :=True;
+        cxDBPivotGrid1.OptionsView.ColumnFields   :=True;
+        cxDBPivotGrid1.OptionsView.RowFields      :=True;
+        cxDBPivotGrid1.OptionsView.FilterFields   :=false;
+        cxDBPivotGrid1.OptionsView.FilterSeparator:=True;
+      END
+    ELSE
+      ShowMessage('No hay datos visibles');
+  end;
+
+    if PageControl1.ActivePageIndex=1 then
+      begin
+        if SaveDialog.Execute Then
+          begin
+           DataToXLS.SaveToFile(SaveDialog.FileName);
+          end;
+
+      end;
+end;
+
+procedure TFormComposicionVtosComp.FormClose(Sender: TObject;
+  var Action: TCloseAction);
+begin
+  inherited;
+  Action:=caFree;
+  //*************************************************************
+  cxDBPivotGrid1.StoreToIniFile(ExtractFilePath(ParamStr(0))+'_grillaVtosCompra');
+  //*************************************************************
+end;
+
+procedure TFormComposicionVtosComp.FormCreate(Sender: TObject);
+begin
+  inherited;
+  AutoSize:=False;
+  JvAppIniFileStorage1.FileName:=(sender as TForm).Name+'_'+DMMain_FD.Nombre_PC;
+  cxDBPivotGrid1.OptionsView.FilterFields:=False;
+end;
+
+procedure TFormComposicionVtosComp.FormDestroy(Sender: TObject);
+begin
+  inherited;
+  FormComposicionVtosComp:=nil;
+end;
+
+procedure TFormComposicionVtosComp.FormShow(Sender: TObject);
+VAR M,D,A:Word;
+begin
+  inherited;
+  DecodeDate(Date,A,M,D);
+  Desde.Date:=EncodeDate(A,M,1);
+  Hasta.Date:=EncodeDate(A,M,DaysInMonth(Desde.Date));
+  CCdesde.Date:=EncodeDate(A,M,1);
+  CChasta.Date:=EncodeDate(A,M,DaysInMonth(Desde.Date));
+ //*************************************************************
+  cxDBPivotGrid1.RestoreFromIniFile(ExtractFilePath(ParamStr(0))+'_grillaVtosCompra');
+ //*************************************************************
+  PageControl1.ActivePageIndex:=0;
+end;
+
+procedure TFormComposicionVtosComp.Label1Click(Sender: TObject);
+begin
+  inherited;
+  cxDBPivotGrid1.OptionsView.FilterFields:=Not(cxDBPivotGrid1.OptionsView.FilterFields);
+end;
+
+procedure TFormComposicionVtosComp.LimpiarFiltrosClick(Sender: TObject);
+var
+ APivot: TcxDBPivotGrid;
+ I:Integer;
+begin    //Limpiar Filtros cxPivotGrid
+  // if not (PopupMenu.PopupComponent is TcxDBPivotGrid) then Abort;
+   // Limpiar Filtros de cxDBPivot
+   APivot:=cxDBPivotGrid1;
+   APivot.DataController.BeginUpdate;
+   for I := 0 to APivot.FieldCount - 1 do
+       APivot.Fields[I].Filter.Clear;
+   APivot.DataController.EndUpdate;
+
+   for i:=0 to cxDBPivotGrid1.FieldCount-1 do
+     cxDBPivotGrid1.Fields[i].ExpandAll;
+end;
+
+procedure TFormComposicionVtosComp.sbEstadoDblClick(Sender: TObject);
+begin
+  inherited;
+   frxReport1.DesignReport;
+end;
+
+procedure TFormComposicionVtosComp.UpDown1Click(Sender: TObject;
+  Button: TUDBtnType);
+var d,m,y:word;
+begin
+if PageControl1.ActivePageIndex=0 then
+  begin
+
+    DecodeDate(Desde.Date,y,m,d);
+    if Button=btnext Then
+      if m=12 Then
+        begin
+          m:=1;y:=y+1;
+        end
+      else
+        m:=m+1
+    else
+      if Button=btPrev Then
+        if m=1 Then
+          begin
+            m:=12;y:=y-1;
+          end
+        else
+          m:=m-1;
+
+    Desde.Date:=EncodeDate(y,m,1);
+    Hasta.Date:=EncodeDate(y,m,DaysInMonth(Desde.date));
+    //if dbcCtas.Text<>'' Then
+    Buscar.Execute;
+    //  Desde.SetFocus;
+    end
+    else
+    begin
+          DecodeDate(CCdesde.Date,y,m,d);
+    if Button=btnext Then
+      if m=12 Then
+        begin
+          m:=1;y:=y+1;
+        end
+      else
+        m:=m+1
+    else
+      if Button=btPrev Then
+        if m=1 Then
+          begin
+            m:=12;y:=y-1;
+          end
+        else
+          m:=m-1;
+
+    CCdesde.Date:=EncodeDate(y,m,1);
+    CChasta.Date:=EncodeDate(y,m,DaysInMonth(CCdesde.date));
+    //if dbcCtas.Text<>'' Then
+    Buscar.Execute;
+    //  Desde.SetFocus;
+    end;
+end;
+
+end.

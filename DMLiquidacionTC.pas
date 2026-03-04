@@ -1,0 +1,251 @@
+unit DMLiquidacionTC;
+
+interface
+
+uses
+  SysUtils, Classes, FMTBcd, DB, Provider, DBClient, SqlExpr,
+  IBGenerator, FireDAC.Stan.Intf, FireDAC.Stan.Option, FireDAC.Stan.Param,
+  FireDAC.Stan.Error, FireDAC.DatS, FireDAC.Phys.Intf, FireDAC.DApt.Intf,
+  FireDAC.Stan.Async, FireDAC.DApt, FireDAC.Comp.DataSet, FireDAC.Comp.Client;
+
+type
+  TDatosLiquidacionTC = class(TDataModule)
+    QTerminales: TFDQuery;
+    CDSTerminales: TClientDataSet;
+    DSPTerminales: TDataSetProvider;
+    DSTerminales: TDataSource;
+    DSLote: TDataSource;
+    QLotes: TFDQuery;
+    CDSLotes: TClientDataSet;
+    DSPLotes: TDataSetProvider;
+    CDSLotesLOTE: TStringField;
+    CDSTerminalesTERMINAL: TStringField;
+    CDSMovTC: TClientDataSet;
+    DSPMovTC: TDataSetProvider;
+    DSMovTC: TDataSource;
+    QMovTc: TFDQuery;
+    CDSMovTCID_MOV_TC: TIntegerField;
+    CDSMovTCACREDITADA: TStringField;
+    CDSMovTCCAN_CUOTAS: TIntegerField;
+    CDSMovTCNRO_LOTE: TStringField;
+    CDSMovTCCOEFICIENTE: TFloatField;
+    CDSMovTCCOTIZACION: TFloatField;
+    CDSMovTCFECHA: TSQLTimeStampField;
+    CDSMovTCFECHA_ACREDITACION: TSQLTimeStampField;
+    CDSMovTCID_CAJA: TIntegerField;
+    CDSMovTCID_MOV_CAJA: TIntegerField;
+    CDSMovTCID_CUENTA_BANCO: TIntegerField;
+    CDSMovTCID_CUENTA_CAJA: TIntegerField;
+    CDSMovTCID_TC: TIntegerField;
+    CDSMovTCIMPORTE: TFloatField;
+    CDSMovTCIMPORTE_NETO: TFloatField;
+    CDSMovTCIMPORTE_RECARGO: TFloatField;
+    CDSMovTCN_DOCU: TStringField;
+    CDSMovTCNRO_CUPON: TIntegerField;
+    CDSMovTCTITULAR: TStringField;
+    CDSMovTCVALORCUOTA: TFloatField;
+    CDSMovTCTIPOP_COMPROB: TStringField;
+    CDSMovTCCLASE_COMPROB: TStringField;
+    CDSMovTCID_COMPROBANTE: TIntegerField;
+    CDSMovTCNRO_COMPROBANTE: TStringField;
+    CDSMovTCSUCURSAL: TIntegerField;
+    QLiqCab: TFDQuery;
+    QLiqCabID: TIntegerField;
+    QLiqCabID_TC: TIntegerField;
+    QLiqCabFECHA: TSQLTimeStampField;
+    QLiqCabPERIODO_LIQUIDADO: TStringField;
+    QLiqCabFECHA_FISCAL: TSQLTimeStampField;
+    QLiqCabLETRA: TStringField;
+    QLiqCabTIPOCPBTE: TStringField;
+    QLiqCabCLASECPBTE: TStringField;
+    QLiqCabSUC: TStringField;
+    QLiqCabNUMERO: TStringField;
+    QLiqCabNUMEROCPBTE: TStringField;
+    QLiqCabTOTAL_PRESENTACION: TFloatField;
+    QLiqCabARANCEL: TFloatField;
+    QLiqCabIVA: TFloatField;
+    QLiqCabIIBB: TFloatField;
+    QLiqCabGANANCIAS: TFloatField;
+    QLiqCabCOSTO_FINANCIERO: TFloatField;
+    QLiqCabTOTAL_ACREDITADO: TFloatField;
+    QLiqCabCUIT: TStringField;
+    QLiqCabRAZONSOCIAL: TStringField;
+    QLiqCabSUCURSAL: TIntegerField;
+    QLiqCabPRESENTACION_ADICIONAL: TFloatField;
+    QLiqCabNRO_LIQUIDACION: TStringField;
+    QLiqCabNRO_LOTE: TStringField;
+    QLiqCabNRO_TERMINAL: TStringField;
+    QLiqCabID_CTA_BANCO: TIntegerField;
+    QLiqCabNOMBRE_CTABCO: TStringField;
+    QLiqCabMUESTRATARJETA: TStringField;
+    QLiqCabMUESTRASUCURSAL: TStringField;
+    QLiqDet: TFDQuery;
+    QLiqDetID: TIntegerField;
+    QLiqDetID_LIQCAB: TIntegerField;
+    QLiqDetID_MOV_TCREDITO: TIntegerField;
+    QLiqDetIMPORTE: TFloatField;
+    QLiqDetFECHA_MOV: TSQLTimeStampField;
+    QLiqDetCUOTAS: TSmallintField;
+    QLiqDetNRO_CUPON: TIntegerField;
+    QRetenciones: TFDQuery;
+    QRetencionesID_MOV_RETENCIONES: TIntegerField;
+    QRetencionesID_RETENCION: TIntegerField;
+    QRetencionesDETALLE: TStringField;
+    QRetencionesTIPOCPBTE: TStringField;
+    QRetencionesCLASECPBTE: TStringField;
+    QRetencionesNROCPBTE: TStringField;
+    QRetencionesID_CPBTE: TIntegerField;
+    QRetencionesFECHA: TSQLTimeStampField;
+    QRetencionesFECHA_RETENCION: TSQLTimeStampField;
+    QRetencionesNRO_RETENCION: TStringField;
+    QRetencionesIMPORTE: TFloatField;
+    QRetencionesCODIGO_CLIENTE: TStringField;
+    QRetencionesCUIT_CLIENTE: TStringField;
+    QRetencionesJURIDICCION: TIntegerField;
+    QRetencionesNOMBRE_CLIENTE: TStringField;
+    QBuscadorCtaBco: TFDQuery;
+    CDSBuscadorCtaBco: TClientDataSet;
+    DSPBuscadorCtaBco: TDataSetProvider;
+    CDSBuscadorCtaBcoID_CUENTA: TIntegerField;
+    CDSBuscadorCtaBcoNOMBRE: TStringField;
+    CDSBuscadorCtaBcoRAZONSOCIAL: TStringField;
+    QBuscadorTRet: TFDQuery;
+    QBuscadorTRetID_RETENCION: TIntegerField;
+    QBuscadorTRetDETALLE: TStringField;
+    DSPBuscadorTRet: TDataSetProvider;
+    CDSBuscadorTRet: TClientDataSet;
+    CDSBuscadorTRetID_RETENCION: TIntegerField;
+    CDSBuscadorTRetDETALLE: TStringField;
+    QBuscadorTC: TFDQuery;
+    DSPBuscadorTC: TDataSetProvider;
+    CDSBuscadorTC: TClientDataSet;
+    CDSBuscadorTCID_TC: TIntegerField;
+    CDSBuscadorTCDESCRIPCION: TStringField;
+    QBuscaLiquidacion: TFDQuery;
+    DSPBuscaLiquidacion: TDataSetProvider;
+    CDSBuscaLiquidacion: TClientDataSet;
+    CDSBuscaLiquidacionID: TIntegerField;
+    CDSBuscaLiquidacionFECHA: TSQLTimeStampField;
+    CDSBuscaLiquidacionFECHA_FISCAL: TSQLTimeStampField;
+    CDSBuscaLiquidacionNUMEROCPBTE: TStringField;
+    CDSBuscaLiquidacionMUESTRATARJETA: TStringField;
+    CDSBuscaLiquidacionMUESTRAIDCTABANCO: TIntegerField;
+    CDSBuscaLiquidacionMUESTRANOMBRECTA: TStringField;
+    IBGId_Retenciones: TIBGenerator;
+    QLiq_Iva: TFDQuery;
+    QLiq_IvaID_IMPUESTO: TIntegerField;
+    QLiq_IvaCODIGO_GRAVAMEN: TIntegerField;
+    QLiq_IvaDETALLE: TStringField;
+    QLiq_IvaID_LIQ: TIntegerField;
+    QLiq_IvaNETO: TFloatField;
+    QLiq_IvaTASA: TFloatField;
+    QLiq_IvaIMPORTE: TFloatField;
+    IBGIVA: TIBGenerator;
+    IBGIIBB: TIBGenerator;
+    QLiq_IIBB: TFDQuery;
+    QLiq_IIBBID_PERCEPCION: TIntegerField;
+    QLiq_IIBBCODIGO_PERCEPCION: TIntegerField;
+    QLiq_IIBBDETALLE: TStringField;
+    QLiq_IIBBID_LIQ: TIntegerField;
+    QLiq_IIBBNETO: TFloatField;
+    QLiq_IIBBTASA: TFloatField;
+    QLiq_IIBBIMPORTE: TFloatField;
+    QLiq_IIBBJURIDICION: TIntegerField;
+    CDSBuscaIVA: TClientDataSet;
+    DSPBuscaIVA: TDataSetProvider;
+    CDSBuscaIVACODIGO: TIntegerField;
+    CDSBuscaIVADESCRIPCION: TStringField;
+    CDSBuscaIVACOLUMNA: TSmallintField;
+    QGravamen: TFDQuery;
+    QGravamenCODIGO: TIntegerField;
+    QGravamenDESCRIPCION: TStringField;
+    QGravamenTASA: TFloatField;
+    QPercepIB: TFDQuery;
+    QPercepIBCODIGO: TIntegerField;
+    QPercepIBDESCRIPCION: TStringField;
+    QPercepIBTASA: TFloatField;
+    QPercepIBMINIMOAPLICABLE: TFloatField;
+    QPercepIBCOLUMNA: TSmallintField;
+    QPercepIBJURIDICION: TIntegerField;
+    CDSBuscaPercepIIBB: TClientDataSet;
+    DSPBuscaPercepIIBB: TDataSetProvider;
+    CDSBuscaPercepIIBBCODIGO: TIntegerField;
+    CDSBuscaPercepIIBBDESCRIPCION: TStringField;
+    CDSBuscaPercepIIBBCOLUMNA: TSmallintField;
+    CDSBuscaPercepIIBBJURIDICION: TIntegerField;
+    QJuridicion: TFDQuery;
+    QRegimen: TFDQuery;
+    CDSJuridicion: TClientDataSet;
+    DSPJuridicion: TDataSetProvider;
+    CDSJuridicionCODIGO: TIntegerField;
+    CDSJuridicionDETALLE: TStringField;
+    DSPRegimen: TDataSetProvider;
+    CDSRegimen: TClientDataSet;
+    CDSRegimenCODIGO: TIntegerField;
+    CDSRegimenDETALLE: TStringField;
+    QLiqCabING_LIBROIVA: TStringField;
+    QLiqCabCONTABILIZA: TStringField;
+    CDSBuscaLiquidacionING_LIBROIVA: TStringField;
+    IBGPercepcionIVA: TIBGenerator;
+    QLiq_PerIva: TFDQuery;
+    DSPBuscaPercepIVA: TDataSetProvider;
+    CDSBuscaPercepIVA: TClientDataSet;
+    CDSBuscaPercepIVACODIGO: TIntegerField;
+    CDSBuscaPercepIVADESCRIPCION: TStringField;
+    QLiq_PerIvaID_PERCEPCION: TIntegerField;
+    QLiq_PerIvaCODIGO_PERCEPCION: TIntegerField;
+    QLiq_PerIvaDETALLE: TStringField;
+    QLiq_PerIvaID_LIQ: TIntegerField;
+    QLiq_PerIvaNETO: TFloatField;
+    QLiq_PerIvaTASA: TFloatField;
+    QLiq_PerIvaIMPORTE: TFloatField;
+    QLiq_PerIvaCODIGOREGIMEN: TIntegerField;
+    QPercepIva: TFDQuery;
+    QPercepIvaCODIGO: TIntegerField;
+    QPercepIvaDESCRIPCION: TStringField;
+    QPercepIvaTASA: TFloatField;
+    QPercepIvaMINIMOAPLICABLE: TFloatField;
+    QPercepIvaCOLUMNA: TSmallintField;
+    QPercepIvaCODIGOREGIMEN: TIntegerField;
+    CDSMovTCSALDO_IMPORTE: TFloatField;
+    CDSMovTCSALDO_IMPORTE_ORIGINAL: TFloatField;
+    QLiqCabIMPORTES_EXENTOS: TFloatField;
+    CDSMovTCSELECCION: TBooleanField;
+    CDSRegimenCOD_IMPUESTO: TIntegerField;
+    CDSBuscaIVATASA: TFloatField;
+    CDSBuscaPercepIIBBTASA: TFloatField;
+    CDSBuscaPercepIIBBMINIMOAPLICABLE: TFloatField;
+    QCtaCaja: TFDQuery;
+    QCtaCajaID_CUENTA: TIntegerField;
+    QCtaCajaID_TIPO_CTA: TIntegerField;
+    QCtaCajaNOMBRE: TStringField;
+    QCtaCajaNRO_CUENTA: TStringField;
+    QCtaCajaID_BANCO: TIntegerField;
+    QCtaCajaCUIT: TStringField;
+    QCtaCajaRAZONSOCIAL: TStringField;
+    QCtaCajaMUESTRABANCO: TStringField;
+    QLiqCabINGRESAR_RESUMENBANCARIO: TStringField;
+    CDSMovTCDESCRIPCION_TC: TStringField;
+    QLiqCabMUESTRADEPOSITADO: TIntegerField;
+    spIngresaMovBco: TFDStoredProc;
+    procedure DataModuleDestroy(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  DatosLiquidacionTC: TDatosLiquidacionTC;
+
+implementation
+
+uses DMBuscadoresForm,UDMain_FD;
+{$R *.dfm}
+
+procedure TDatosLiquidacionTC.DataModuleDestroy(Sender: TObject);
+begin
+  DatosLiquidacionTC:=NIL;
+end;
+
+end.

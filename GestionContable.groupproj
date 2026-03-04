@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{B64D31AF-BB40-4E6C-A605-13553ACA4000}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="Menu.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\ContableFD\PContable.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="Menu">
+        <MSBuild Projects="Menu.dproj"/>
+    </Target>
+    <Target Name="Menu:Clean">
+        <MSBuild Projects="Menu.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Menu:Make">
+        <MSBuild Projects="Menu.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="PContable">
+        <MSBuild Projects="..\ContableFD\PContable.dproj"/>
+    </Target>
+    <Target Name="PContable:Clean">
+        <MSBuild Projects="..\ContableFD\PContable.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="PContable:Make">
+        <MSBuild Projects="..\ContableFD\PContable.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="Menu;PContable"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="Menu:Clean;PContable:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="Menu:Make;PContable:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

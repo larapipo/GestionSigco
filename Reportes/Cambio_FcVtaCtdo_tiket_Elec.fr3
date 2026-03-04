@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<TfrxReport Version="6.8.5" DotMatrixReport="False" IniFile="\Software\Fast Reports" PreviewOptions.Buttons="4095" PreviewOptions.Zoom="1" PrintOptions.Printer="Por defecto" PrintOptions.PrintOnSheet="0" ReportOptions.CreateDate="39638.1218494444" ReportOptions.Description.Text="" ReportOptions.LastChange="44526.4843931944" ScriptLanguage="PascalScript" ScriptText.Text="var unitario:Real;&#13;&#10;&#13;&#10;procedure DetalleOnBeforePrint(Sender: TfrxComponent);&#13;&#10;begin&#13;&#10;//  Unitario:=0;&#13;&#10;//  if &#60;frDBcabecera.&#34;DESGLOZAIVA&#34;&#62;='N' Then&#13;&#10;//    Unitario:=&#60;frDBDetalles.&#34;Total&#34;&#62;*(1+&#60;frDBDetalles.&#34;IVA_Tasa&#34;&#62;*0.01)&#13;&#10;//  else&#13;&#10;//    Unitario:=&#60;frDBDetalles.&#34;Total&#34;&#62;;&#13;&#10;&#13;&#10;end;&#13;&#10;&#13;&#10;procedure PageHeader1OnBeforePrint(Sender: TfrxComponent);&#13;&#10;begin&#13;&#10;&#13;&#10;&#13;&#10; end;&#13;&#10;&#13;&#10;begin&#13;&#10;&#13;&#10;end.">
+  <Datasets>
+    <item DataSet="frDBcabecera" DataSetName="frDBcabecera"/>
+    <item DataSet="frDBCajaMov" DataSetName="frDBCajaMov"/>
+    <item DataSet="frDBDetalles" DataSetName="frDBDetalles"/>
+    <item DataSet="frDBEmpresa" DataSetName="frDBEmpresa"/>
+    <item DataSet="frDBImpuestos" DataSetName="frDBImpuestos"/>
+  </Datasets>
+  <Variables>
+    <item Name="MascaraUnitario" Value="',0.000'"/>
+    <item Name="MascaraCantidad" Value="',0.000'"/>
+    <item Name="MascaraTotal" Value="',0.00'"/>
+    <item Name="MascaraTotalGral" Value="',0.00'"/>
+    <item Name="MascaraIvaTasa" Value="'0.0'"/>
+    <item Name="MascaraIvaImporte" Value="'###,##0.00'"/>
+    <item Name="CodigoBarra" Value="'2012906366206000571442976656251202111138'"/>
+    <item Name="SaldoAnterior" Value="'Saldo'"/>
+    <item Name="ImprimirSaldo" Value="'S'"/>
+    <item Name="Copyname0"/>
+    <item Name="copyname1" Value="ORIGINAL"/>
+    <item Name="copyname2" Value="TRIPLICADO"/>
+    <item Name="CodigoQR" Value="'https://www.afip.gob.ar/fe/qr/?p=Uo9sPN8YEY8n8YmYPcLZQ64YEY8oC38nBJ4nBJ0p8YmYOtLfT28w8Z0mC30mC30mC30m8YmYS7HlLdHX8ZeYDI8i8dHfS6z3RN0YEY8s8YmYRd9lGsrm8ZeYDJ8q8YmYQMrmRt9qPI8w8ZGvDZWYB29jRsvbP64YEY9GHLCYB29ZT7eYEY8n8YmYT6bmRqHlOr9bOo8w8Zav8YmYRd9lH6zZKcLZ8ZeYC30mC30mC30mC28i8dHfS6z3RsH1TNGYEY958YmYOszaGNLq8ZeYDp4qD38vDpOsDJOoDJ4YVG'"/>
+  </Variables>
+  <TfrxDataPage Name="Data" Height="1000" Left="0" Top="0" Width="1000"/>
+  <TfrxReportPage Name="Page1" PaperWidth="76" PaperHeight="306" PaperSize="218" LeftMargin="0" RightMargin="0" TopMargin="0" BottomMargin="0" MirrorMargins="True" ColumnWidth="0" ColumnPositions.Text="" Frame.Typ="0" EndlessHeight="True" MirrorMode="0" HGuides.Text="" VGuides.Text="">
+    <TfrxDetailData Name="Detalle" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Frame.Typ="0" Height="37.67718" Left="0" Top="514.01608" Width="287.24428" OnBeforePrint="DetalleOnBeforePrint" AllowSplit="True" Columns="1" ColumnWidth="200" ColumnGap="20" DataSet="frDBDetalles" DataSetName="frDBDetalles" PrintIfDetailEmpty="True" RowCount="0" Stretched="True">
+      <TfrxMemoView Name="Memo12" AllowVectorExport="True" Left="51.35436" Top="0" Width="202.67718" Height="30.11812" StretchMode="smMaxHeight" DataField="Detalle" DataSet="frDBDetalles" DataSetName="frDBDetalles" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial Narrow" Font.Style="0" Frame.Typ="0" HideZeros="True" ParentFont="False" Text="[frDBDetalles.&#34;Detalle&#34;]"/>
+      <TfrxMemoView Name="Memo5" AllowVectorExport="True" Left="3.77953" Top="0" Width="48.22047" Height="15" StretchMode="smMaxHeight" DataField="Cantidad" DataSet="frDBDetalles" DataSetName="frDBDetalles" DisplayFormat.DecimalSeparator="," DisplayFormat.FormatStr="%2.2n" DisplayFormat.Kind="fkNumeric" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial Narrow" Font.Style="0" Frame.Typ="0" HAlign="haRight" HideZeros="True" ParentFont="False" Text="[frDBDetalles.&#34;Cantidad&#34;]"/>
+    </TfrxDetailData>
+    <TfrxMasterData Name="MasterData1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Frame.Typ="0" Height="6" Left="0" Top="483.77984" Visible="False" Width="287.24428" Columns="1" ColumnWidth="200" ColumnGap="20" DataSet="frDBcabecera" DataSetName="frDBcabecera" RowCount="0"/>
+    <TfrxPageHeader Name="PageHeader1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Frame.Typ="0" Height="405.26005" Left="0" Top="18.89765" Width="287.24428" OnBeforePrint="PageHeader1OnBeforePrint">
+      <TfrxMemoView Name="Memo4" AllowVectorExport="True" Left="140.23624" Top="38.11812" Width="132" Height="18" StretchMode="smMaxHeight" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial Narrow" Font.Style="0" Frame.Typ="0" HAlign="haRight" HideZeros="True" ParentFont="False" Text="[&#60;frDBcabecera.&#34;LETRAFAC&#34;&#62;+'-'+&#60;frDBcabecera.&#34;SUCFAC&#34;&#62;+'-'+&#60;frDBcabecera.&#34;NUMEROFAC&#34;&#62;]"/>
+      <TfrxMemoView Name="Memo20" AllowVectorExport="True" Left="6.22047" Top="38.11812" Width="96" Height="18" StretchMode="smMaxHeight" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial Narrow" Font.Style="0" Frame.Typ="0" HideZeros="True" ParentFont="False" Text="[frDBcabecera.&#34;FECHAVTA&#34;]"/>
+      <TfrxLineView Name="Line1" AllowVectorExport="True" Left="7.22047" Top="354.66945" Width="276.69295" Height="0" Color="0" Frame.Typ="4" Frame.Width="0.100000001490116"/>
+      <TfrxMemoView Name="Memo7" AllowVectorExport="True" Left="56.69295" Top="360.05535" Width="94.48825" Height="18.89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial Narrow" Font.Style="0" Frame.Typ="0" HAlign="haCenter" ParentFont="False" VAlign="vaCenter" Text="Detalle"/>
+      <TfrxLineView Name="Line3" AllowVectorExport="True" Left="7.55906" Top="386.51206" Width="276.69295" Height="0" Color="0" Frame.Typ="4" Frame.Width="0.100000001490116"/>
+      <TfrxMemoView Name="Memo9" AllowVectorExport="True" Left="6.22047" Top="58.35436" Width="173.85838" Height="18.89765" Font.Charset="1" Font.Color="0" Font.Height="-15" Font.Name="Arial" Font.Style="1" Frame.Typ="0" ParentFont="False" Text="Lacteos Amanecer "/>
+      <TfrxMemoView Name="Memo81" AllowVectorExport="True" Left="6.22047" Top="114.14966" Width="222.99227" Height="15.11812" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="0" Frame.Typ="0" ParentFont="False" Text="[frDBEmpresa.&#34;DIRECCION&#34;] - Te:"/>
+      <TfrxMemoView Name="Memo82" AllowVectorExport="True" Left="6.22047" Top="129.26778" Width="151.1812" Height="15.11812" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="0" Frame.Typ="0" ParentFont="False" Text="7600 - Mar del Plata"/>
+      <TfrxMemoView Name="Memo83" AllowVectorExport="True" Left="6.22047" Top="99.03154" Width="162.51979" Height="15.11812" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="0" Frame.Typ="0" ParentFont="False" Text="Fiambres - Quesos - Lacteos"/>
+      <TfrxMemoView Name="Memo3" AllowVectorExport="True" Left="6.22047" Top="214.19697" Width="211.65368" Height="18.89765" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="0" Frame.Typ="0" ParentFont="False" Text="Sucursal :.Constitucion"/>
+      <TfrxMemoView Name="frEmpresaCUIT" AllowVectorExport="True" Left="51.57483" Top="146.16543" Width="132.28355" Height="15.11812" DataSetName="frEmpresa" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="0" Frame.Typ="0" ParentFont="False" Text="30-71598315-6"/>
+      <TfrxMemoView Name="Memo39" AllowVectorExport="True" Left="6.22047" Top="146.50402" Width="41.57483" Height="15.11812" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="0" Frame.Typ="0" ParentFont="False" Text="Cuit:"/>
+      <TfrxMemoView Name="frEmpresaNRO_AGTE_RET_INGBRUTOS" AllowVectorExport="True" Left="6.22047" Top="161.84261" Width="139.84261" Height="15.11812" DataSetName="frEmpresa" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="0" Frame.Typ="0" ParentFont="False" Text="Nro.IIBB: 30-71598315-6"/>
+      <TfrxMemoView Name="Memo40" AllowVectorExport="True" Left="6.22047" Top="176.51979" Width="181.41744" Height="15.11812" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="0" Frame.Typ="0" ParentFont="False" Text="Inicio Actividad:07-09-2017"/>
+      <TfrxMemoView Name="Memo2" AllowVectorExport="True" Left="6.22047" Top="191.51979" Width="177.63791" Height="18.89765" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="0" Frame.Typ="0" ParentFont="False" Text="Responsablel Inscripto"/>
+      <TfrxMemoView Name="Memo10" AllowVectorExport="True" Left="7.55906" Top="79.03154" Width="120.94496" Height="18.89765" Frame.Typ="0" Text="de SANRAY S.A"/>
+      <TfrxMemoView Name="Memo13" AllowVectorExport="True" Left="7.55906" Top="360.71676" Width="34.01577" Height="18.89765" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial Narrow" Font.Style="0" Frame.Typ="0" HAlign="haCenter" ParentFont="False" Text="Cant."/>
+      <TfrxLineView Name="Line4" AllowVectorExport="True" Left="11.33859" Top="239.7718" Width="276.69295" Height="0" Color="0" Frame.Typ="4" Frame.Width="0.100000001490116"/>
+      <TfrxMemoView Name="frDBcabeceraRAZONSOCIAL" AllowVectorExport="True" Left="18.89765" Top="266.22851" Width="279.68522" Height="18.89765" DataField="RAZONSOCIAL" DataSet="frDBcabecera" DataSetName="frDBcabecera" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="Arial" Font.Style="0" Frame.Typ="0" ParentFont="False" Text="[frDBcabecera.&#34;RAZONSOCIAL&#34;]"/>
+      <TfrxMemoView Name="frDBcabeceraDIRECCION" AllowVectorExport="True" Left="18.89765" Top="285.90569" Width="279.68522" Height="18.89765" DataField="DIRECCION" DataSet="frDBcabecera" DataSetName="frDBcabecera" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="Arial" Font.Style="0" Frame.Typ="0" ParentFont="False" Text="[frDBcabecera.&#34;DIRECCION&#34;]"/>
+      <TfrxMemoView Name="frDBcabeceraLOCALIDAD" AllowVectorExport="True" Left="18.89765" Top="305.58287" Width="120.94496" Height="18.89765" DataField="LOCALIDAD" DataSet="frDBcabecera" DataSetName="frDBcabecera" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="Arial" Font.Style="0" Frame.Typ="0" ParentFont="False" Text="[frDBcabecera.&#34;LOCALIDAD&#34;]"/>
+      <TfrxMemoView Name="frDBcabeceraCUIT" AllowVectorExport="True" Left="18.89765" Top="325.48052" Width="105.82684" Height="18.89765" DataField="CUIT" DataSet="frDBcabecera" DataSetName="frDBcabecera" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="Arial" Font.Style="0" Frame.Typ="0" ParentFont="False" Text="[frDBcabecera.&#34;CUIT&#34;]"/>
+      <TfrxMemoView Name="frDBcabeceraMUESTRAIVA" AllowVectorExport="True" Left="139.84261" Top="326.48052" Width="120.94496" Height="18.89765" DataField="MUESTRAIVA" DataSet="frDBcabecera" DataSetName="frDBcabecera" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="Arial" Font.Style="0" Frame.Typ="0" ParentFont="False" Text="[frDBcabecera.&#34;MUESTRAIVA&#34;]"/>
+      <TfrxMemoView Name="Memo18" AllowVectorExport="True" Left="18.89765" Top="243.55133" Width="94.48825" Height="18.89765" Frame.Typ="0" Text="Cliente:"/>
+      <TfrxMemoView Name="Memo21" AllowVectorExport="True" Left="7.55906" Top="7.55906" Width="151.1812" Height="18.89765" Font.Charset="1" Font.Color="0" Font.Height="-19" Font.Name="Arial" Font.Style="1" Frame.Typ="0" ParentFont="False" Text="Tiket de Cambio"/>
+    </TfrxPageHeader>
+    <TfrxReportSummary Name="ReportSummary1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Frame.Typ="0" Height="473.63822" Left="0" Top="612.28386" Width="287.24428">
+      <TfrxLineView Name="Line2" AllowVectorExport="True" Left="5.22047" Top="53.35436" Width="269.7953" Height="0" Color="0" Frame.Typ="4" Frame.Width="0.100000001490116"/>
+      <TfrxMemoView Name="Memo6" AllowVectorExport="True" Left="49.13389" Top="428.28386" Width="162.51979" Height="37.7953" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial Narrow" Font.Style="0" Frame.Typ="0" HAlign="haCenter" ParentFont="False" VAlign="vaCenter" Text="Gracias Por su Visita"/>
+      <TfrxLineView Name="Line5" AllowVectorExport="True" Left="4.55906" Top="2" Width="269.7953" Height="0" Color="0" Frame.Typ="4" Frame.Width="0.100000001490116"/>
+      <TfrxPictureView Name="Picture2" AllowVectorExport="True" Left="52.91342" Top="291.02381" Width="124.72449" Height="105.82684" DataField="QRIMAGE" DataSet="frDBcabecera" DataSetName="frDBcabecera" Frame.Typ="0" HightQuality="False" Transparent="False" TransparentColor="16777215"/>
+    </TfrxReportSummary>
+  </TfrxReportPage>
+</TfrxReport>

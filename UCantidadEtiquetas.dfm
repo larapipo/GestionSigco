@@ -1,0 +1,157 @@
+object FormCantidadEtiquetas: TFormCantidadEtiquetas
+  Left = 508
+  Top = 199
+  Caption = 'Cantidad de Etiquetas'
+  ClientHeight = 402
+  ClientWidth = 600
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OnClose = FormClose
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  OnShow = FormShow
+  TextHeight = 13
+  object pnPrincipal: TPanel
+    Left = 24
+    Top = 8
+    Width = 538
+    Height = 178
+    Color = clHighlight
+    ParentBackground = False
+    TabOrder = 0
+    object pnArticulo: TPanel
+      Left = 1
+      Top = 1
+      Width = 536
+      Height = 71
+      Align = alTop
+      Color = clGradientInactiveCaption
+      Enabled = False
+      ParentBackground = False
+      TabOrder = 0
+      object Label1: TLabel
+        Left = 16
+        Top = 4
+        Width = 145
+        Height = 19
+        Caption = 'Art'#237'culo a Repetir'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clBlue
+        Font.Height = -16
+        Font.Name = 'Tahoma'
+        Font.Style = [fsBold]
+        ParentFont = False
+      end
+      object edDetalle: TEdit
+        Left = 111
+        Top = 27
+        Width = 406
+        Height = 27
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -16
+        Font.Name = 'Tahoma'
+        Font.Style = [fsBold]
+        ParentFont = False
+        TabOrder = 0
+        Text = 'edDetalle'
+      end
+      object edCodigo: TEdit
+        Left = 16
+        Top = 27
+        Width = 89
+        Height = 27
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -16
+        Font.Name = 'Tahoma'
+        Font.Style = [fsBold]
+        ParentFont = False
+        TabOrder = 1
+        Text = 'Edit1'
+      end
+    end
+    object pnPie: TPanel
+      Left = 1
+      Top = 153
+      Width = 536
+      Height = 24
+      Align = alBottom
+      TabOrder = 1
+    end
+    object pnBoton: TPanel
+      Left = 1
+      Top = 112
+      Width = 536
+      Height = 41
+      Align = alBottom
+      TabOrder = 2
+      object JvGradient1: TJvGradient
+        Left = 1
+        Top = 1
+        Width = 534
+        Height = 39
+        Style = grVertical
+        StartColor = clWhite
+        EndColor = clGradientActiveCaption
+        ExplicitLeft = 64
+        ExplicitTop = 16
+        ExplicitWidth = 100
+        ExplicitHeight = 41
+      end
+      object BitBtn1: TBitBtn
+        Left = 402
+        Top = 5
+        Width = 115
+        Height = 32
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -16
+        Font.Name = 'Tahoma'
+        Font.Style = [fsBold]
+        Kind = bkOK
+        NumGlyphs = 2
+        ParentFont = False
+        TabOrder = 0
+        OnClick = BitBtn1Click
+      end
+      object BitBtn2: TBitBtn
+        Left = 285
+        Top = 5
+        Width = 115
+        Height = 32
+        Caption = 'Cancelar'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -16
+        Font.Name = 'Tahoma'
+        Font.Style = [fsBold]
+        Kind = bkCancel
+        NumGlyphs = 2
+        ParentFont = False
+        TabOrder = 1
+      end
+    end
+    object edCantidad: TJvCalcEdit
+      Left = 397
+      Top = 78
+      Width = 121
+      Height = 27
+      DecimalPlaces = 0
+      DisplayFormat = '0'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Height = -16
+      Font.Name = 'Tahoma'
+      Font.Style = [fsBold]
+      ParentFont = False
+      ShowButton = False
+      TabOrder = 3
+      DecimalPlacesAlwaysShown = False
+    end
+  end
+end

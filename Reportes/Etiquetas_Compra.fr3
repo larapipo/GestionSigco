@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<TfrxReport Version="2024.1.8" DotMatrixReport="False" IniFile="\Software\Fast Reports" PreviewOptions.Buttons="4095" PreviewOptions.Zoom="1" PrintOptions.Copies="2" PrintOptions.Printer="Por defecto" PrintOptions.PrintOnSheet="0" ReportOptions.CreateDate="39638.1218210417" ReportOptions.Description.Text="" ReportOptions.LastChange="45688.7026123958" ScriptLanguage="PascalScript" ScriptText.Text="begin&#13;&#10;&#13;&#10;end.">
+  <Datasets>
+    <item DataSet="frDSEtiquetas" DataSetName="frDSEtiq"/>
+  </Datasets>
+  <Variables>
+    <item Name="CODIGO" Value="'00028556'"/>
+    <item Name="DETALLE" Value="'ACEITE SOLUBLE &#34;A&#34; - 20 LTS'"/>
+    <item Name="PRECIO" Value="'0.00'"/>
+    <item Name="CODIGOBARRA" Value="'100000000'"/>
+  </Variables>
+  <TfrxDataPage Name="Data" HGuides.Text="" VGuides.Text="" Height="1000" Left="0" Top="0" Width="1000"/>
+  <TfrxReportPage Name="Page1" HGuides.Text="" VGuides.Text="" PaperWidth="210" PaperHeight="297" PaperSize="9" LeftMargin="6" RightMargin="6" TopMargin="6" BottomMargin="6" ColumnWidth="198" ColumnPositions.Text="0" Frame.Typ="0" MirrorMode="0">
+    <TfrxMasterData Name="MasterData1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Frame.Typ="0" Height="88.88188" Left="0" Top="18.89765" Width="748.34694" Columns="3" ColumnWidth="249.448818897638" ColumnGap="0.377952755905512" DataSet="frDSEtiquetas" DataSetName="frDSEtiq" RowCount="0">
+      <TfrxShapeView Name="Shape1" AllowVectorExport="True" Left="0.77953" Top="0" Width="245.66945" Height="86.92919" Frame.Typ="0"/>
+      <TfrxMemoView Name="Memo3" AllowVectorExport="True" Left="5.77953" Top="62.10235" Width="241" Height="18" StretchMode="smMaxHeight" DataField="DETALLE" DataSet="frDSEtiquetas" DataSetName="frDSEtiq" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Courier New" Font.Style="0" Frame.Typ="0" HideZeros="True" ParentFont="False" Text="[frDSEtiq.&#34;DETALLE&#34;]"/>
+      <TfrxMemoView Name="Memo4" AllowVectorExport="True" Left="3.77953" Top="1" Width="181.41744" Height="15.11812" DataField="CODIGOARTICULO" DataSet="frDSEtiquetas" DataSetName="frDSEtiq" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" Frame.Typ="0" ParentFont="False" Text="[frDSEtiq.&#34;CODIGOARTICULO&#34;]"/>
+      <TfrxBarCodeView Name="BarCode1" AllowVectorExport="True" ShiftMode="smDontShift" Left="11.33859" Top="18.89765" Width="100" Height="37.7953" BarType="bcCode128B" DataField="MUESTRACODIGOBARRA" DataSet="frDSEtiquetas" DataSetName="frDSEtiq" Frame.Typ="0" Rotation="0" ShowText="False" TestLine="False" Text="12345678" WideBarRatio="2" Zoom="0.8" ColorBar="0" BarcodeText.TextSettings.Font.Charset="1" BarcodeText.TextSettings.Font.Color="0" BarcodeText.TextSettings.Font.Height="-12" BarcodeText.TextSettings.Font.Name="Arial" BarcodeText.TextSettings.Font.Style="0" BarcodeText.TextSettings.BarTextPos="btpBottom" BarcodeText.SupSettings.Font.Charset="1" BarcodeText.SupSettings.Font.Color="-16777208" BarcodeText.SupSettings.Font.Height="-9" BarcodeText.SupSettings.Font.Name="Arial" BarcodeText.SupSettings.Font.Style="0" BarcodeText.SupSettings.BarTextPos="btpTop"/>
+      <TfrxMemoView Name="Memo1" AllowVectorExport="True" Left="113.3859" Top="22.67718" Width="124.72449" Height="34.01577" DisplayFormat.FormatStr="%2.2n" DisplayFormat.Kind="fkNumeric" Font.Charset="1" Font.Color="0" Font.Height="-24" Font.Name="Arial" Font.Style="1" Frame.Typ="0" HAlign="haRight" ParentFont="False" Text="[frDSEtiq.&#34;MUESTRAPRECIOVTA&#34;]"/>
+    </TfrxMasterData>
+  </TfrxReportPage>
+</TfrxReport>

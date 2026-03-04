@@ -1,0 +1,12 @@
+elcondorsanluis.no-ip.org:C:\Gestion\Tablas IB\GESTIONV3.LAR
+elcondoralem.no-ip.org:C:\Gestion\Tablas IB\GESTIONV3.LAR
+C:\Proyectos Delphi\GestionComercial\Tablas IB\GESTIONV3.LAR
+gomeriadamico.no-ip.org:C:\Gestion\Tablas IB\GESTIONV3.LAR
+chiarco1.mine.nu:C:\Gestion\Tablas IB\GESTIONV3.LAR
+chiarco3.mine.nu:C:\Gestion\Tablas IB\GESTIONV3.LAR
+localhost:C:\Proyectos Delphi\GestionComercial\Tablas IB\GESTIONV3.LAR
+localhost:C:\Proyectos Delphi\GestionComercial\Tablas IB\GESTIONV3.LAR
+localhost:C:\Proyectos Delphi\GestionComercial\Tablas IB\GESTIONV3.fdb
+localhost:C:\Proyectos Delphi\GestionComercial\Tablas IB\GESTIONV3.fdb
+localhost:C:\Proyectos Delphi\GestionComercial\Tablas IB\GESTIONV3.fdb
+localhost:C:\Proyectos Delphi\GestionComercial\Tablas IB\GESTIONV3.fdb

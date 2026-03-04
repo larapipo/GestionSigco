@@ -1,0 +1,40 @@
+create procedure DETALLE_MOV_CAJA_CPBTE (
+    ID_COMPROBANTE integer,
+    TIPO_COMPROB varchar(2),
+    TIPOOPERACION varchar(1))
+returns (
+    ID_CAJA integer,
+    DETALLE varchar(25),
+    TARJETA varchar(25),
+    DEBE numeric(15,2),
+    HABER numeric(15,2),
+    ID_MOV_CAJA integer,
+    ID_TPAGO integer,
+    ID_FPAGO integer,
+    NRO_CAJA integer,
+    ID_CTA_CAJA integer,
+    NOMBRE_CAJA varchar(25))
+as
+begin
+  for select c.id_mov_caja ,c.id_tpago,c.id_fpago,c.debe,c.haber,c.id_caja,c.id_cuenta_caja from caja_mov c
+    where c.id_comprobante = :id_comprobante and
+          c.tipo_comprob   = :tipo_comprob and
+          c.tipo_operacion = :tipooperacion
+    into :id_mov_caja,:id_tpago,:id_fpago,:debe,:haber,:id_caja,:id_cta_caja
+  do
+    begin
+      select cc.nombre from cuenta_caja cc where cc.id_cuenta=:id_caja
+        into :nombre_caja;
+      tarjeta='';
+      if (id_tpago=1) then detalle='Efectivo';
+        else
+      if (id_tpago=4) then
+        begin
+          detalle='Tarjeta de Cred.';
+          select (select tc.descripcion from t_credito tc where tc.id_tc=mt.id_tc) from mov_tcredito
+            mt where mt.id_mov_caja=:id_mov_caja
+          into :tarjeta;
+        end
+      suspend;
+    end
+end

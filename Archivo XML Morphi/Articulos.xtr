@@ -1,0 +1,128 @@
+<XmlTransformation Version="1.0"><Transform Direction="ToCds"><SelectEach dest="DATAPACKET\ROWDATA\ROW" from="\EXPORT\DOCUMENTOS_VENTA\ROW"><Select dest="@CTE_CODIGO" from="@CTE_CODIGO"/><Select dest="@NOMBRE" from="@NOMBRE"/><Select dest="@NUMERO" from="@NUMERO"/><Select dest="@FECHA" from="@FECHA"/><Select dest="@HORA" from="@HORA"/><Select dest="@COD_CLIENTE" from="@COD_CLIENTE"/><Select dest="@CLIENTE" from="@CLIENTE"/><Select dest="@CUIT" from="@CUIT"/><Select dest="@TIPOIVA" from="@TIPOIVA"/><Select dest="@SUBTOTAL" from="@SUBTOTAL"/><Select dest="@DESCUENTO" from="@DESCUENTO"/><Select dest="@TOTAL" from="@TOTAL"/></SelectEach></Transform><XmlSchema RootName="EXPORT"><![CDATA[<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="EXPORT" type="EXPORTType"/>
+  <xs:complexType name="EXPORTType">
+    <xs:sequence>
+      <xs:element name="ST_PRODUCTOS" type="ST_PRODUCTOSType"/>
+      <xs:element name="PROD_VENDIDOS" type="PROD_VENDIDOSType"/>
+      <xs:element name="DOCUMENTOS_VENTA" type="DOCUMENTOS_VENTAType"/>
+      <xs:element name="FORMAS_DE_PAGO" type="FORMAS_DE_PAGOType"/>
+      <xs:element name="ARQUEO_CAJA" type="ARQUEO_CAJAType"/>
+      <xs:element name="EGRESOS_CAJA" type="EGRESOS_CAJAType"/>
+    </xs:sequence>
+    <xs:attribute name="Fecha" type="xs:string"/>
+    <xs:attribute name="Hora" type="xs:string"/>
+    <xs:attribute name="Exportado" type="xs:string"/>
+    <xs:attribute name="Sucursal" type="xs:string"/>
+  </xs:complexType>
+  <xs:element name="ST_PRODUCTOS" type="ST_PRODUCTOSType"/>
+  <xs:complexType name="ST_PRODUCTOSType">
+    <xs:sequence>
+      <xs:element name="ROW" type="ROWType" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+    <xs:attribute name="MODO" type="xs:string"/>
+    <xs:attribute name="KEYFIELD" type="xs:string"/>
+  </xs:complexType>
+  <xs:element name="ROW" type="ROWType"/>
+  <xs:complexType name="ROWType">
+    <xs:sequence/>
+    <xs:attribute name="COD_ARTICU" type="xs:string"/>
+    <xs:attribute name="COD_RUBRO" type="xs:string"/>
+    <xs:attribute name="RUBRO" type="xs:string"/>
+    <xs:attribute name="DESCRIPCION" type="xs:string"/>
+    <xs:attribute name="IMPORTE1" type="xs:string"/>
+    <xs:attribute name="IMPORTE2" type="xs:string"/>
+  </xs:complexType>
+  <xs:element name="PROD_VENDIDOS" type="PROD_VENDIDOSType"/>
+  <xs:complexType name="PROD_VENDIDOSType">
+    <xs:sequence>
+      <xs:element name="ROW" type="ROWType" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+    <xs:attribute name="MODO" type="xs:string"/>
+    <xs:attribute name="KEYFIELD" type="xs:string"/>
+  </xs:complexType>
+  <xs:element name="ROW" type="ROWType"/>
+  <xs:complexType name="ROWType">
+    <xs:sequence/>
+    <xs:attribute name="COD_RUBRO" type="xs:string"/>
+    <xs:attribute name="RUBRO" type="xs:string"/>
+    <xs:attribute name="COD_ARTICU" type="xs:string"/>
+    <xs:attribute name="DESCRIPCION" type="xs:string"/>
+    <xs:attribute name="UNITARIO" type="xs:string"/>
+    <xs:attribute name="CANTIDAD" type="xs:string"/>
+    <xs:attribute name="IMPORTE_C_DESCUENTO" type="xs:string"/>
+  </xs:complexType>
+  <xs:element name="DOCUMENTOS_VENTA" type="DOCUMENTOS_VENTAType"/>
+  <xs:complexType name="DOCUMENTOS_VENTAType">
+    <xs:sequence>
+      <xs:element name="ROW" type="ROWType" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+    <xs:attribute name="MODO" type="xs:string"/>
+    <xs:attribute name="KEYFIELD" type="xs:string"/>
+  </xs:complexType>
+  <xs:element name="ROW" type="ROWType"/>
+  <xs:complexType name="ROWType">
+    <xs:sequence/>
+    <xs:attribute name="CTE_CODIGO" type="xs:string"/>
+    <xs:attribute name="NOMBRE" type="xs:string"/>
+    <xs:attribute name="NUMERO" type="xs:string"/>
+    <xs:attribute name="FECHA" type="xs:string"/>
+    <xs:attribute name="HORA" type="xs:string"/>
+    <xs:attribute name="COD_CLIENTE" type="xs:string"/>
+    <xs:attribute name="CLIENTE" type="xs:string"/>
+    <xs:attribute name="CUIT" type="xs:string"/>
+    <xs:attribute name="TIPOIVA" type="xs:string"/>
+    <xs:attribute name="SUBTOTAL" type="xs:string"/>
+    <xs:attribute name="DESCUENTO" type="xs:string"/>
+    <xs:attribute name="TOTAL" type="xs:string"/>
+    <xs:attribute name="MOZO" type="xs:string"/>
+    <xs:attribute name="MESA" type="xs:string"/>
+  </xs:complexType>
+  <xs:element name="FORMAS_DE_PAGO" type="FORMAS_DE_PAGOType"/>
+  <xs:complexType name="FORMAS_DE_PAGOType">
+    <xs:sequence>
+      <xs:element name="ROW" type="ROWType" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+    <xs:attribute name="MODO" type="xs:string"/>
+    <xs:attribute name="KEYFIELD" type="xs:string"/>
+  </xs:complexType>
+  <xs:element name="ROW" type="ROWType"/>
+  <xs:complexType name="ROWType">
+    <xs:sequence/>
+    <xs:attribute name="FORMAPAGO" type="xs:string"/>
+    <xs:attribute name="IMPORTE" type="xs:string"/>
+    <xs:attribute name="DB_KEY" type="xs:string"/>
+  </xs:complexType>
+  <xs:element name="ARQUEO_CAJA" type="ARQUEO_CAJAType"/>
+  <xs:complexType name="ARQUEO_CAJAType">
+    <xs:sequence>
+      <xs:element name="ROW" type="ROWType" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+    <xs:attribute name="MODO" type="xs:string"/>
+    <xs:attribute name="KEYFIELD" type="xs:string"/>
+  </xs:complexType>
+  <xs:element name="ROW" type="ROWType"/>
+  <xs:complexType name="ROWType">
+    <xs:sequence/>
+    <xs:attribute name="FORMAPAGO" type="xs:string"/>
+    <xs:attribute name="IMPORTE" type="xs:string"/>
+    <xs:attribute name="DB_KEY" type="xs:string"/>
+  </xs:complexType>
+  <xs:element name="EGRESOS_CAJA" type="EGRESOS_CAJAType"/>
+  <xs:complexType name="EGRESOS_CAJAType">
+    <xs:sequence>
+      <xs:element name="ROW" type="ROWType" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+    <xs:attribute name="MODO" type="xs:string"/>
+    <xs:attribute name="KEYFIELD" type="xs:string"/>
+  </xs:complexType>
+  <xs:element name="ROW" type="ROWType"/>
+  <xs:complexType name="ROWType">
+    <xs:sequence/>
+    <xs:attribute name="TIPO_EGRESO" type="xs:string"/>
+    <xs:attribute name="RUBRO_CAJA" type="xs:string"/>
+    <xs:attribute name="DESCRIPCION" type="xs:string"/>
+    <xs:attribute name="IMPORTE" type="xs:string"/>
+    <xs:attribute name="DB_KEY" type="xs:string"/>
+  </xs:complexType>
+</xs:schema>]]></XmlSchema><CdsSkeleton/><XslTransform/><Skeleton><![CDATA[<?xml version="1.0"?><DATAPACKET Version="2.0"><METADATA><FIELDS><FIELD attrname="CTE_CODIGO" fieldtype="string" WIDTH="1"/><FIELD attrname="NOMBRE" fieldtype="string" WIDTH="25"/><FIELD attrname="NUMERO" fieldtype="string" WIDTH="5"/><FIELD attrname="FECHA" fieldtype="string" WIDTH="10"/><FIELD attrname="HORA" fieldtype="string" WIDTH="8"/><FIELD attrname="COD_CLIENTE" fieldtype="string" WIDTH="6"/><FIELD attrname="CLIENTE" fieldtype="string" WIDTH="16"/><FIELD attrname="CUIT" fieldtype="string" WIDTH="10"/><FIELD attrname="TIPOIVA" fieldtype="string" WIDTH="2"/><FIELD attrname="SUBTOTAL" fieldtype="string" WIDTH="7"/><FIELD attrname="DESCUENTO" fieldtype="string" WIDTH="7"/><FIELD attrname="TOTAL" fieldtype="string" WIDTH="7"/></FIELDS><PARAMS/></METADATA><ROWDATA/><METADATA><FIELDS><FIELD attrname="CTE_CODIGO" fieldtype="string" WIDTH="1"/><FIELD attrname="NOMBRE" fieldtype="string" WIDTH="25"/><FIELD attrname="NUMERO" fieldtype="string" WIDTH="5"/><FIELD attrname="FECHA" fieldtype="string" WIDTH="10"/><FIELD attrname="HORA" fieldtype="string" WIDTH="8"/><FIELD attrname="COD_CLIENTE" fieldtype="string" WIDTH="6"/><FIELD attrname="CLIENTE" fieldtype="string" WIDTH="16"/><FIELD attrname="CUIT" fieldtype="string" WIDTH="10"/><FIELD attrname="TIPOIVA" fieldtype="string" WIDTH="2"/><FIELD attrname="SUBTOTAL" fieldtype="string" WIDTH="7"/><FIELD attrname="DESCUENTO" fieldtype="string" WIDTH="7"/><FIELD attrname="TOTAL" fieldtype="string" WIDTH="7"/></FIELDS><PARAMS/></METADATA><ROWDATA/></DATAPACKET>
+]]></Skeleton></XmlTransformation>

@@ -1,0 +1,7 @@
+﻿[DBDaySource]
+Visible=True
+LayerNames=DBDaySorce
+
+[Module Settings]
+ModelLayerNames=DBDaySorce
+

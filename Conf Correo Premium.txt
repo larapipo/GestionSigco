@@ -1,0 +1,13 @@
+[Correo]
+DirCorreo=administracion@premiumseguridad.com.ar
+NombreCuenat=administracion@premiumseguridad.com.ar
+AsuntoCorreo=Mensaje
+NombreServido=mail.premiumseguridad.com.ar
+Autenticacion=S
+Remitente=Premium
+puerto=587
+Clave=Espana2998
+AutenticacionSASL=N
+MetodoSSL=1
+UsaTLS=0
+Modo=0

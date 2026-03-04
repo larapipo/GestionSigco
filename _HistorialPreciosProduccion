@@ -1,0 +1,196 @@
+﻿[Main]
+Version=2
+
+[cxDBPivotGrid1: TcxDBPivotGrid]
+=
+SourceDPI=96
+Prefilter="Hex:FBFFFFFF0000000000"
+PrefilterActive="False"
+
+[cxDBPivotGrid1/cxDBPivotGrid1CODIGO_STK: TcxDBPivotGridField]
+=
+SourceDPI=96
+SortOrder="soNone"
+GroupExpanded="True"
+Visible="True"
+Width=90
+Area="faRow"
+AreaIndex=0
+Filter="Hex:0000000000"
+
+[cxDBPivotGrid1/cxDBPivotGrid1DETALLE_STK: TcxDBPivotGridField]
+=
+SourceDPI=96
+SortOrder="soNone"
+GroupExpanded="False"
+Visible="True"
+Width=320
+Area="faRow"
+AreaIndex=1
+Filter="Hex:0000000000"
+
+[cxDBPivotGrid1/cxDBPivotGrid1FPRECIO_OLD: TcxDBPivotGridField]
+=
+SourceDPI=96
+SortOrder="soNone"
+GroupExpanded="True"
+Visible="True"
+Width=71
+Area="faData"
+AreaIndex=0
+Filter="Hex:0000000000"
+
+[cxDBPivotGrid1/cxDBPivotGrid1FPRECIO_NEW: TcxDBPivotGridField]
+=
+SourceDPI=96
+SortOrder="soNone"
+GroupExpanded="True"
+Visible="True"
+Width=65
+Area="faData"
+AreaIndex=1
+Filter="Hex:0000000000"
+
+[cxDBPivotGrid1/cxDBPivotGrid1ANIO: TcxDBPivotGridField]
+=
+SourceDPI=96
+SortOrder="soNone"
+GroupExpanded="True"
+Visible="True"
+Width=0
+Area="faFilter"
+AreaIndex=0
+Filter="Hex:0000000000"
+
+[cxDBPivotGrid1/cxDBPivotGrid1MES: TcxDBPivotGridField]
+=
+SourceDPI=96
+SortOrder="soNone"
+GroupExpanded="True"
+Visible="True"
+Width=0
+Area="faFilter"
+AreaIndex=1
+Filter="Hex:0000000000"
+
+[cxDBPivotGrid1/cxDBPivotGrid1ANIO_MES: TcxDBPivotGridField]
+=
+SourceDPI=96
+SortOrder="soNone"
+GroupExpanded="False"
+Visible="True"
+Width=120
+Area="faFilter"
+AreaIndex=5
+Filter="Hex:0000000000"
+
+[cxDBPivotGrid1/cxDBPivotGrid1ID: TcxDBPivotGridField]
+=
+SourceDPI=96
+SortOrder="soNone"
+GroupExpanded="True"
+Visible="False"
+Width=20
+Area="faRow"
+AreaIndex=2
+Filter="Hex:0000000000"
+
+[cxDBPivotGrid1/cxDBPivotGrid1FECHA: TcxDBPivotGridField]
+=
+SourceDPI=96
+SortOrder="soNone"
+GroupExpanded="False"
+Visible="True"
+Width=0
+Area="faFilter"
+AreaIndex=4
+Filter="Hex:0000000000"
+
+[cxDBPivotGrid1/cxDBPivotGrid1Field1: TcxDBPivotGridField]
+=
+SourceDPI=96
+SortOrder="soNone"
+GroupExpanded="True"
+Visible="True"
+Width=64
+Area="faFilter"
+AreaIndex=6
+Filter="Hex:0000000000"
+
+[cxDBPivotGrid1/cxDBPivotGrid1Field2: TcxDBPivotGridField]
+=
+SourceDPI=96
+SortOrder="soNone"
+GroupExpanded="True"
+Visible="True"
+Width=0
+Area="faFilter"
+AreaIndex=2
+Filter="Hex:0000000000"
+
+[cxDBPivotGrid1/cxDBPivotGrid1Field3: TcxDBPivotGridField]
+=
+SourceDPI=96
+SortOrder="soNone"
+GroupExpanded="True"
+Visible="True"
+Width=0
+Area="faFilter"
+AreaIndex=3
+Filter="Hex:0000000000"
+
+[cxDBPivotGrid1/cxDBPivotGrid1Field4: TcxDBPivotGridField]
+=
+SourceDPI=96
+SortOrder="soNone"
+GroupExpanded="True"
+Visible="True"
+Width=0
+Area="faColumn"
+AreaIndex=0
+Filter="Hex:0000000000"
+
+[cxDBPivotGrid1/cxDBPivotGrid1VARIACION: TcxDBPivotGridField]
+=
+SourceDPI=96
+SortOrder="soNone"
+GroupExpanded="True"
+Visible="True"
+Width=41
+Area="faData"
+AreaIndex=2
+Filter="Hex:0000000000"
+
+[cxDBPivotGrid1/cxDBPivotGrid1Field5: TcxDBPivotGridField]
+=
+SourceDPI=96
+SortOrder="soNone"
+GroupExpanded="True"
+Visible="True"
+Width=0
+Area="faRow"
+AreaIndex=3
+Filter="Hex:0000000000"
+
+[cxDBPivotGrid1/cxDBPivotGrid1Field6: TcxDBPivotGridField]
+=
+SourceDPI=96
+SortOrder="soNone"
+GroupExpanded="True"
+Visible="True"
+Width=0
+Area="faRow"
+AreaIndex=4
+Filter="Hex:0000000000"
+
+[cxDBPivotGrid1/cxDBPivotGrid1Field7: TcxDBPivotGridField]
+=
+SourceDPI=96
+SortOrder="soNone"
+GroupExpanded="True"
+Visible="True"
+Width=60
+Area="faRow"
+AreaIndex=5
+Filter="Hex:0000000000"
+

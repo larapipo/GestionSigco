@@ -1,0 +1,2278 @@
+object FormCtaCteCompra: TFormCtaCteCompra
+  Left = 242
+  Top = 105
+  BorderWidth = 1
+  Caption = 'Cta. Corrientes de Proveedores'
+  ClientHeight = 725
+  ClientWidth = 821
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  Font.Style = []
+  FormStyle = fsMDIChild
+  Position = poScreenCenter
+  Visible = True
+  OnActivate = FormActivate
+  OnClose = FormClose
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  OnResize = FormResize
+  OnShow = FormShow
+  TextHeight = 13
+  object pnPrincipal: TPanel
+    Left = 0
+    Top = 0
+    Width = 821
+    Height = 725
+    Align = alClient
+    BevelOuter = bvNone
+    Caption = 'pnPrincipal'
+    Color = clGradientInactiveCaption
+    ParentBackground = False
+    TabOrder = 0
+    OnDblClick = pnPrincipalDblClick
+    DesignSize = (
+      821
+      725)
+    object SpeedButton2: TSpeedButton
+      Left = 136
+      Top = 660
+      Width = 26
+      Height = 25
+      Action = EnviarCorreo
+      Anchors = [akLeft, akBottom]
+      Glyph.Data = {
+        76010000424D7601000000000000760000002800000020000000100000000100
+        04000000000000010000120B0000120B00001000000000000000000000000000
+        800000800000008080008000000080008000808000007F7F7F00BFBFBF000000
+        FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFFFF00333333333333
+        3333333333333333333333333333333333333FFFFFFFFFFFFFFF000000000000
+        000077777777777777770FFFFFFFFFFFFFF07F3333FFF33333370FFFF777FFFF
+        FFF07F333777333333370FFFFFFFFFFFFFF07F3333FFFFFF33370FFFF777777F
+        FFF07F33377777733FF70FFFFFFFFFFF99907F3FFF33333377770F777FFFFFFF
+        9CA07F77733333337F370FFFFFFFFFFF9A907FFFFFFFFFFF7FF7000000000000
+        0000777777777777777733333333333333333333333333333333333333333333
+        3333333333333333333333333333333333333333333333333333333333333333
+        3333333333333333333333333333333333333333333333333333}
+      NumGlyphs = 2
+      ExplicitTop = 597
+    end
+    object Label5: TLabel
+      Left = 458
+      Top = 701
+      Width = 75
+      Height = 13
+      Anchors = [akLeft, akBottom]
+      Caption = 'Filtra Pto de Vta'
+      ExplicitTop = 638
+    end
+    object SpeedButton1: TSpeedButton
+      Left = 268
+      Top = 660
+      Width = 101
+      Height = 24
+      Action = AplicacionesCC
+      Anchors = [akLeft, akBottom]
+      ExplicitTop = 597
+    end
+    object Label6: TLabel
+      Left = 359
+      Top = 586
+      Width = 28
+      Height = 13
+      Anchors = [akLeft, akBottom]
+      Caption = 'Obras'
+      ExplicitTop = 527
+    end
+    object btImprimir: TBitBtn
+      Left = 575
+      Top = 659
+      Width = 75
+      Height = 28
+      Action = Imprimir
+      Anchors = [akLeft, akBottom]
+      Caption = '&Imprimir'
+      Glyph.Data = {
+        56070000424D5607000000000000360400002800000028000000140000000100
+        0800000000002003000000000000000000000001000000000000000000000000
+        80000080000000808000800000008000800080800000C0C0C000C0DCC000F0CA
+        A600000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        000000000000000000000000000000000000F0FBFF00A4A0A000808080000000
+        FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFFFF00030303030303
+        0303030303030303030303030303030303030303030303030303030303030303
+        03030303030303030303030303030303030303030303030303FFFFFF03030303
+        030303030303FFFFFF0303030000000303030303030303030300000003030303
+        F8F8F8FFFFFFFFFFFFFFFFFFFFF8F8F8FFFF0300000000000000000000000000
+        00000000000303F8F8F8F8F8F8F8F8F8F8F8F8F8F8F8F8F8F8FF0300FF070707
+        070707070707070707070707000303F8FF030303030303030303030303030303
+        F8FF0300FF070707070707070707070707070707000303F8FF03030303030303
+        0303030303030303F8FF0300FF0707070707070707070707F9F90707000303F8
+        FF030303030303030303030303030303F8FF0300FFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFF000303F8FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF8FF03F80000F8F8
+        F8F8F8F8F8F8F8F8F8F80000F80303F8F8F8F8F8F8F8F8F8F8F8F8F8F8F8F8F8
+        F8030303030000000000000000000000000000030303030303F8F8F8F8F8F8F8
+        F8F8F8F8F8F8F8FF03030303030000FFFFFFFFFFFFFFFFFFFF00000303030303
+        03F8F8FF03FFFFFFFFFFFFFFFFF8F80303030303030300FF0000000000000000
+        FF000303030303030303F8FFF8F8F8F8F8F8F8F803F8FF0303030303030300FF
+        FFFFFFFFFFFFFFFFFF000303030303030303F8FF03FFFFFFFFFFFFFFFFF8FF03
+        03030303030300FF0000000000000000FF000303030303030303F8FFF8F8F8F8
+        F8F8F8F803F8FF0303030303030300FFFFFFFFFFFFFFFFFFFF00030303030303
+        0303F8FF03FFFF030303030303F8FF0303030303030300FF0000FFFFFFFFFFFF
+        FF000303030303030303F8FFF8F803030303030303F8FF0303030303030300FF
+        FFFFFFFFFFFFFFFFFF000303030303030303F8FFFFFFFFFFFFFFFFFFFFF8FF03
+        0303030303030000000000000000000000000303030303030303F8F8F8F8F8F8
+        F8F8F8F8F8F80303030303030303030303030303030303030303030303030303
+        0303030303030303030303030303030303030303030303030303030303030303
+        0303030303030303030303030303030303030303030303030303}
+      NumGlyphs = 2
+      TabOrder = 0
+    end
+    object btVerCC: TBitBtn
+      Left = 494
+      Top = 659
+      Width = 75
+      Height = 28
+      Action = TraerCtaCte
+      Anchors = [akLeft, akBottom]
+      Caption = 'Ver CC'
+      Glyph.Data = {
+        36030000424D3603000000000000360000002800000010000000100000000100
+        1800000000000003000000000000000000000000000000000000FF00FFFF00FF
+        0000001C1F1C383F38383F38383F38383F38383F38FF00FFFF00FFFF00FF0000
+        002F2F2F707F70707F70FF00FF0000000000A700006C383F38383F38383F3838
+        3F38383F38FF00FF0000005F5F5FCFCFCF5F5F5F383F38FF00FFFF00FF000037
+        0000DF0000A3000024FF00FFFF00FFFF00FF0000005F5F5FCFCFCFE0E0E0A8A8
+        A85F5F5FFF00FFFF00FF0000000000A74C4FEF0000CB00006C0000000000005F
+        5F5FCBCBCBDBDBDBE0E0E0A8A8A8E0E0E05F5F5FFF00FFFF00FF0000373434E7
+        7C87FF0000A70000A3000024CFCFCFE0E0E0707070707070E0E0E0A8A8A8A8A8
+        A85F5F5FFF00FFFF00FF181B3F606FFF4C4F7F0000000000CB00006C70707070
+        7070E0E0E0707070E0E0E0E0E0E0A8A8A85F5F5FFF00FFFF00FFFF00FF000000
+        00000000000000006F0000A338385C707070707070E0E0E0E0E0E0A8A8A8E0E0
+        E05F5F5FFF00FFFF00FFFF00FFFF00FFFF00FF0000007F7F7F0000CB00006CA8
+        A8A8707070707070E0E0E0A8A8A8A8A8A85F5F5FFF00FFFF00FFFF00FFFF00FF
+        FF00FF000000EFEFEF00006F3434BF181B3FE0E0E0E0E0E0E0E0E0EFEFEFDFDF
+        DF5F5F5FFF00FFFF00FFFF00FFFF00FFFF00FF000000EFEFEF3838387C87FF34
+        3B5BA8A8A8EFEFEFDFDFDFCFCFCFA8A8A85F5F5FFF00FFFF00FFFF00FFFF00FF
+        FF00FF000000EFEFEF707070707070EFEFEFDFDFDFCFCFCFE0E0E0A8A8A8E0E0
+        E05F5F5FFF00FFFF00FFFF00FFFF00FFFF00FF000000EFEFEFEFEFEFDFDFDFCF
+        CFCF707070707070E0E0E0EFEFEF7F7F7F000000FF00FFFF00FFFF00FFFF00FF
+        FF00FF000000DFDFDFCFCFCF707070707070E0E0E0EFEFEF7F7F7F000000FF00
+        FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FF000000EFEFEF707070E0E0E0EF
+        EFEF7F7F7F000000FF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FF
+        FF00FF000000EFEFEFEFEFEF7F7F7F000000FF00FFFF00FFFF00FFFF00FFFF00
+        FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FF000000FFFFFF000000FF00FFFF
+        00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FF}
+      TabOrder = 1
+    end
+    object btExcel: TBitBtn
+      Left = 28
+      Top = 660
+      Width = 75
+      Height = 25
+      Anchors = [akLeft, akBottom]
+      Caption = 'Excel'
+      Glyph.Data = {
+        36030000424D3603000000000000360000002800000010000000100000000100
+        1800000000000003000000000000000000000000000000000000FF00FFFF00FF
+        FF00FFFF00FFFF00FFFF00FFFF00FFFF00FF233F3F237F7F237F7F237F7F001F
+        000F4B000F4B000F2C00FF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF
+        00FF237F7F47FFFF47FFFF47FFFF0F2C00005F3F1F97000F4B00FF00FF18233F
+        4F88AF2F737F4F534F2F302FFF00FFFF00FF237F7F233F7F00007747BFBF237F
+        7F237F7F1F97000F4B00FF00FF30477F9BD7FF63C0FF48B7FF30A3E34F93B733
+        7797003F3F233F3F000077237F7F0F4B001F77001F97000F4B00FF00FF30477F
+        77C8FFA7DBFF8FD0FF8FD0FF8FD0FF83CCFF0000770000EF0000AF0000777F14
+        000F4B003F14003F0000FF00FF3B477F4BBBFFBFEFFF8FE7FF8FE7FF8FE7FF8F
+        E7FF0000770000EF7F14007F1400BF28000F4B003F33007F1400FF00FF47477F
+        67C0FFA3DFFF8FFFFF8FFFFF8FFFFF8FFFFF0000770000EF3F0037000037FF28
+        00FF2800FF28007F1400FF00FF18577F77C8FF6FC7FFA7FFFF8FFFFF8FFFFF8F
+        FFFF00003700007700007700003F7F14007F14007F14003F1400FF00FF285C7F
+        77C8FF58BCFFCBF3FFCFFFFFBFFFFFAFFFFFAFFFFFAFFFFFAFFFFF93E3FFD0FF
+        FF83C3DB171817FF00FFFF00FF30607F8BD0FF77C8FF5FBFFF77C8FF7FCCFF9B
+        D7FFD3FFFFBFFFFFBFFFFFA7E7FFDFFFFFCFF3FF33575FFF00FFFF00FF30607F
+        97FFFF8FFFFF8FFFFF8FFFFF8FFFFF83EFFF77DBFFA7DFFFC7EBFFCBEBFFF7FF
+        FFF7FFFF7BAFC7FF00FFFF00FF30607F9FFFFF8FFFFF8FFFFF8FFFFF8FFFFF8F
+        FFFF8FFFFF8FFFFF83FFFF43BFF73B63833B647F435B7FFF00FFFF00FF30537F
+        B7FBFF8FFFFF8FFFFFAFFFFFA3DBFF9BDBFF9FEBFFAFFBFFAFFFFF67D7FF3737
+        37FF00FFFF00FFFF00FFFF00FFFF00FF93B7FF88D7FF7FD7FF87C7FF1C1F1CFF
+        00FF23233F47477F3B477F30537FFF00FF000000000000000000FF00FFFF00FF
+        FF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FF000000FF00FFFF00
+        FFFF00FF000000000000FF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF
+        00FFFF00FFFF00FFFF00FF000000000000000000FF00FF000000}
+      TabOrder = 2
+      OnClick = btExcelClick
+    end
+    object BitBtn2: TBitBtn
+      Left = 656
+      Top = 659
+      Width = 75
+      Height = 28
+      Hint = 'Cerrar la ventana actual'
+      Anchors = [akLeft, akBottom]
+      Caption = '&Salir'
+      Glyph.Data = {
+        56070000424D5607000000000000360400002800000028000000140000000100
+        0800000000002003000000000000000000000001000000000000000000000000
+        80000080000000808000800000008000800080800000C0C0C000C0DCC000F0CA
+        A600000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        000000000000000000000000000000000000F0FBFF00A4A0A000808080000000
+        FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFFFF00030707070707
+        070707070707070707070707070703FFFFFFFFFFFFFFFFFFFFFFFF0303030303
+        03FFF8F8F8F8F8F8F8F8F8F8F8F8FF07FF07FF07F8F8F8F8F8F8F8F8F8F8F8F8
+        F8F8030303030303F8F8F8F8F8F8F8F8F8F8F8F8F80707FF07FF07F8F8F8F8F8
+        F8F8F8F8F8F8F8F8F8FF030303FFFFF8F8F80404040404040000F8F8F8FFFFFF
+        040404040404F8F8F8F8F8F8F8F8F8F8F8030303F8F8F8F8F803030303030304
+        FD05000007FFFFFF0403030303030303030303F8FFF8F8F8FF030303F8FF0303
+        030303030303030405FD0500FFFFFFFF0403030303030303030303F8F807F8F8
+        FF030303F8FF03030303030303030304FD05FD00FFFFFFFF0403030303030303
+        030303F8FFF807F8FF030303F8FF0303030303030303030405FD0500FFFEFFFE
+        0403030303030303030303F8F807F8F8FF030303F8FF03030303030303030304
+        FD05FD00FFFFFFFF0403030303030303030303F8FFF807F8FF030303F8FF0303
+        030303030303030405FD0500FFFEFFFE0403030303030303030303F8F807F8F8
+        FF030303F8FF03030303030303030304FD05FD00FFFFFFFF0403030303030303
+        030303F8FFF807F8FF030303F8FF0303030303030303030405FD0500FFFEFFFE
+        0403030303030303030303F8F807F8F8FF030303F8FF03030303030303030304
+        FD05FD00FEFFFEFF0403030303030303030303F8FFF807F8FF030303F8FF0303
+        030303030303030405FD0500FFFEFFFE0403030303030303030303F8F807F8F8
+        FF030303F8FF03030303030303030304FD05FD00FEFFFEFF0403030303030303
+        030303F8FFF8FFF8FFFFFFFFF8FF030303030303030303040404040404040404
+        0403030303030303030303F8F8F8F8F8F8F8F8F8F80303030303030303030303
+        03030303030303030303030303030303030303030303FFFFFFFFFFFF03030303
+        0303030303030303030000000000000303030303030303030303030303F8F8F8
+        F8F8F8FF0303030303030303030303030300FAFAFAFA00030303030303030303
+        0303030303F8FFFFFFFFF8FF0303030303030303030303030300000000000003
+        03030303030303030303030303F8F8F8F8F8F803030303030303}
+      NumGlyphs = 2
+      TabOrder = 3
+      OnClick = BitBtn2Click
+    end
+    object dbcGrupo: TJvDBLookupCombo
+      Left = 8
+      Top = 604
+      Width = 210
+      Height = 21
+      Color = clBtnFace
+      DisplayEmpty = 'Sin Selecci'#243'n'
+      EmptyValue = '-1'
+      Enabled = False
+      Anchors = [akLeft, akBottom]
+      LookupField = 'ID'
+      LookupDisplay = 'DETALLE'
+      LookupSource = DSFiltroCab
+      TabOrder = 4
+      OnChange = dbcObraChange
+    end
+    object chbUsaFiltro: TCheckBox
+      Left = 224
+      Top = 605
+      Width = 102
+      Height = 17
+      Anchors = [akLeft, akBottom]
+      Caption = 'Usa Filtro Cpbtes'
+      TabOrder = 5
+      OnClick = chbUsaFiltroClick
+    end
+    object chVistaOP: TCheckBox
+      Left = 10
+      Top = 632
+      Width = 142
+      Height = 17
+      Anchors = [akLeft, akBottom]
+      Caption = 'Vista OP Reducida'
+      TabOrder = 6
+      OnClick = chbUsaFiltroClick
+    end
+    object btHistorial: TBitBtn
+      Left = 391
+      Top = 659
+      Width = 97
+      Height = 28
+      Anchors = [akLeft, akBottom]
+      Caption = 'Historial'
+      Glyph.Data = {
+        F6060000424DF606000000000000360000002800000018000000180000000100
+        180000000000C0060000120B0000120B00000000000000000000FF00FFFF00FF
+        FF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00
+        FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF
+        00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FF
+        FF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00
+        FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF
+        00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FF
+        FF00FFFF00FFFF00FFFF00FFFF00FFFF00FF9635119635119635119635119635
+        1196351196351196351196351196351196351196351196351196351196351196
+        3511963511963511963511963511963511963511963511FF00FF963511FEF6EB
+        FEF3E6FEEFE0FEEDD9FEEAD1FEE6CBFEE2C4FEDEBDFEDAB6FED9B0FED5AAFED3
+        A5FECF9FFECE9CFECC98FECB96FECB96FECB96FECB96FECB96FECB96963511FF
+        00FF963511FEF8F3FEF6EEFEF4E7FEF0E2FEEEDAFEEAD4FEE6CEFEE3C6FEE0BF
+        FEDCB8FED9B2FED7ACFED3A6FED0A0FECF9DFECE98FECB96FECB96FECB96FECB
+        96FECB96963511FF00FF963511FEFBF8FEFAF4FEF7F0817E7F817E7F817E7FFE
+        EBD5FEE7CFFEE5C9817E7F817E7F817E7FFED7ADFED4A7FED1A3817E7F817E7F
+        817E7FFECB96FECB96FECB96963511FF00FF963511FEFEFEFEFBFBFEFBF7FEF8
+        F2FEF4EBFEF3E6FEEFDEFEEDD9FEE9D0FEE5CAFEE1C4FEDEBCFEDCB5FED8B0FE
+        D5A9FED3A4FED09FFECE9AFECB98FECB96FECB96963511FF00FF963511FEFEFE
+        FEFEFEFEFEFB2D56F82D56F82D56F8FEF3E6FEF0E1FEEDDA8B28038B28038B28
+        03FEE0BDFEDCB7FED9B10182BF0182BF0182BFFECF9DFECC98FECB96963511FF
+        00FF963511FEFEFEFEFEFEFEFEFE2D56F82D56F82D56F8FEF6EFFEF4E9FEF2E2
+        8B28038B28038B2803FEE3C7FEE0C0FEDDB80182BF0182BF0182BFFED0A1FECF
+        9EFECE99963511FF00FF963511FEFEFEFEFEFEFEFEFE2D56F82D56F82D56F8FE
+        FAF4FEF7F0FEF4EA8B28038B28038B2803FEE7D0FEE5C9FEE1C10182BF0182BF
+        0182BFFED5A9FED1A4FED09E963511FF00FF963511FEFEFEFEFEFEFEFEFEFEFE
+        FEFEFEFEFEFEFEFEFCFBFEFAF7FEF7F2FEF4EBFEF2E6FEF0E1FEEDD9FEE9D3FE
+        E5CAFEE2C4FEE0BCFEDCB6FED8B0FED5AAFED3A4963511FF00FF963511FEFEFE
+        FEFEFEFEFEFEA19F9FA19F9FA19F9FFEFEFEFEFCFCFEFBF7A19F9FA19F9FA19F
+        9FFEF0E1FEEEDCFEEAD49A9A9A9A9A9A9A9A9AFEDCB8FED9B1FED7AB963511FF
+        00FF963511FEFEFEFEFEFEFEFEFEFEFEFEFEFEFEFEFEFEFEFEFEFEFEFEFEFEFE
+        FEFCFAFEFAF4FEF7EFFEF4EAFEF2E3FEEFDDFEEBD7FEE7CFFEE5C7FEE1C1FEDD
+        BBFEDAB4963511FF00FF963511FEFEFEFEFEFEFEFEFEBD8281BD8281BD8281FE
+        FEFEFEFEFEFEFEFED96401D96401D96401FEF7F2FEF4EBFEF2E5008201008201
+        008201FEE5CAFEE2C4FEDEBC963511FF00FF963511FEFEFEFEFEFEFEFEFEBD82
+        81BD8281BD8281FEFEFEFEFEFEFEFEFED96401D96401D96401FEFAF7FEF8F2FE
+        F6EE008201008201008201FEEAD3FEE6CCFEE3C5963511FF00FF963511FEFEFE
+        FEFEFEFEFEFEBD8281BD8281BD8281FEFEFEFEFEFEFEFEFED96401D96401D964
+        01FEFEFCFEFBF8FEF8F4008201008201008201FEEEDCFEEAD5FEE6CE963511FF
+        00FF963511FEFEFEFEFEFEFEFEFEFEFEFEFEFEFEFEFEFEFEFEFEFEFEFEFEFEFE
+        FEFEFEFEFEFEFEFEFEFEFEFEFEFEFEFEFCFAFEFAF6FEF8F0FEF4EBFEF2E3FEEF
+        DEFEEBD7963511FF00FF963511DCDCDCDCDCDCDCDCDCDCDCDCDCDCDCDCDCDCDC
+        DCDCDCDCDCDCDCDCDCDCDCDCDCDCDCDCDCDCDCDCDCDCDCDCDCDCDCDCDCDCDCDC
+        DCDCDCDCDCDCDCDCDCDCDCDC963511FF00FF9635119844109844109844109844
+        1098441098441098441098441098441098441098441098441098441098441098
+        4410984410984410984410984410984410984410963511FF00FFBD580CE97F1E
+        E97F1EE97F1EE97F1EE97F1EE97F1EE97F1EE97F1EE97F1EE97F1EE97F1EE97F
+        1EE97F1EE97F1EE97F1EE97F1EE97F1EE97F1EE97F1EE97F1EE97F1EBD580CFF
+        00FFFF00FFBD580CBD580CBD580CBD580CBD580CBD580CBD580CBD580CBD580C
+        BD580CBD580CBD580CBD580CBD580CBD580CBD580CBD580CBD580CBD580CBD58
+        0CBD580CFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF
+        00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FF
+        FF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00
+        FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF
+        00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FF}
+      TabOrder = 7
+      OnClick = btHistorialClick
+    end
+    object chVistaFc: TCheckBox
+      Left = 126
+      Top = 632
+      Width = 117
+      Height = 17
+      Anchors = [akLeft, akBottom]
+      Caption = 'Vista Fc Reducida'
+      TabOrder = 8
+      OnClick = chbUsaFiltroClick
+    end
+    object dbfPtoVta: TJvDBFindEdit
+      Left = 539
+      Top = 698
+      Width = 47
+      Height = 21
+      Alignment = taCenter
+      DisabledColor = clScrollBar
+      Anchors = [akLeft, akBottom]
+      Flat = False
+      ParentFlat = False
+      TabOrder = 9
+      Text = ''
+      DataField = 'PUNTOVTA'
+      DataSource = DSMovCC
+      FindStyle = fsFilter
+    end
+    object pcCtaCte: TPageControl
+      Left = 0
+      Top = 72
+      Width = 821
+      Height = 507
+      ActivePage = MovObra
+      Align = alTop
+      Anchors = [akLeft, akTop, akRight, akBottom]
+      TabOrder = 10
+      TabPosition = tpBottom
+      object TabSheet2: TTabSheet
+        Caption = 'Cta.Cte'
+        ImageIndex = 1
+        DesignSize = (
+          813
+          481)
+        object dbgMovimientos: TDBGrid
+          Left = 0
+          Top = 0
+          Width = 813
+          Height = 451
+          Align = alTop
+          Anchors = [akLeft, akTop, akRight, akBottom]
+          DataSource = DSMovCC
+          DefaultDrawing = False
+          Options = [dgTitles, dgColumnResize, dgColLines, dgRowLines, dgTabs, dgRowSelect, dgConfirmDelete, dgCancelOnExit]
+          PopupMenu = PopupMenu1
+          TabOrder = 0
+          TitleFont.Charset = DEFAULT_CHARSET
+          TitleFont.Color = clWindowText
+          TitleFont.Height = -11
+          TitleFont.Name = 'MS Sans Serif'
+          TitleFont.Style = []
+          OnCellClick = dbgMovimientosCellClick
+          OnDrawColumnCell = dbgMovimientosDrawColumnCell
+          OnDblClick = VerComprobanteExecute
+          Columns = <
+            item
+              Expanded = False
+              FieldName = 'FECHACOMPRA'
+              Title.Alignment = taCenter
+              Title.Font.Charset = DEFAULT_CHARSET
+              Title.Font.Color = clWindowText
+              Title.Font.Height = -11
+              Title.Font.Name = 'MS Sans Serif'
+              Title.Font.Style = [fsBold]
+              Width = 89
+              Visible = True
+            end
+            item
+              Expanded = False
+              FieldName = 'FECHAVTO'
+              Title.Alignment = taCenter
+              Title.Caption = 'Fecha.Vto'
+              Title.Font.Charset = DEFAULT_CHARSET
+              Title.Font.Color = clWindowText
+              Title.Font.Height = -11
+              Title.Font.Name = 'MS Sans Serif'
+              Title.Font.Style = [fsBold]
+              Width = 94
+              Visible = True
+            end
+            item
+              Expanded = False
+              FieldName = 'TIPOCPBTE'
+              Title.Alignment = taCenter
+              Title.Caption = 'Tp'
+              Title.Font.Charset = DEFAULT_CHARSET
+              Title.Font.Color = clWindowText
+              Title.Font.Height = -11
+              Title.Font.Name = 'MS Sans Serif'
+              Title.Font.Style = [fsBold]
+              Width = 45
+              Visible = True
+            end
+            item
+              Expanded = False
+              FieldName = 'DETALLE'
+              Title.Alignment = taCenter
+              Title.Font.Charset = DEFAULT_CHARSET
+              Title.Font.Color = clWindowText
+              Title.Font.Height = -11
+              Title.Font.Name = 'MS Sans Serif'
+              Title.Font.Style = [fsBold]
+              Width = 158
+              Visible = True
+            end
+            item
+              Expanded = False
+              FieldName = 'DEBE'
+              Title.Alignment = taCenter
+              Title.Font.Charset = DEFAULT_CHARSET
+              Title.Font.Color = clWindowText
+              Title.Font.Height = -11
+              Title.Font.Name = 'MS Sans Serif'
+              Title.Font.Style = [fsBold]
+              Width = 102
+              Visible = True
+            end
+            item
+              Expanded = False
+              FieldName = 'HABER'
+              Title.Alignment = taCenter
+              Title.Font.Charset = DEFAULT_CHARSET
+              Title.Font.Color = clWindowText
+              Title.Font.Height = -11
+              Title.Font.Name = 'MS Sans Serif'
+              Title.Font.Style = [fsBold]
+              Width = 100
+              Visible = True
+            end
+            item
+              Color = 16776176
+              Expanded = False
+              FieldName = 'SALDO'
+              Title.Alignment = taCenter
+              Title.Font.Charset = DEFAULT_CHARSET
+              Title.Font.Color = clWindowText
+              Title.Font.Height = -11
+              Title.Font.Name = 'MS Sans Serif'
+              Title.Font.Style = [fsBold]
+              Width = 84
+              Visible = True
+            end
+            item
+              Color = clAqua
+              Expanded = False
+              FieldName = 'SaldoCC'
+              Title.Alignment = taCenter
+              Title.Caption = 'Saldo.C.C'
+              Title.Font.Charset = DEFAULT_CHARSET
+              Title.Font.Color = clWindowText
+              Title.Font.Height = -11
+              Title.Font.Name = 'MS Sans Serif'
+              Title.Font.Style = [fsBold]
+              Width = 107
+              Visible = True
+            end>
+        end
+        object edDebe: TJvCalcEdit
+          Left = 391
+          Top = 458
+          Width = 105
+          Height = 21
+          DisplayFormat = ',0.00'
+          Enabled = False
+          Anchors = [akLeft, akBottom]
+          ShowButton = False
+          TabOrder = 1
+          DisabledTextColor = clBlack
+          DecimalPlacesAlwaysShown = False
+        end
+        object edHaber: TJvCalcEdit
+          Left = 502
+          Top = 457
+          Width = 105
+          Height = 21
+          DisplayFormat = ',0.00'
+          Enabled = False
+          Anchors = [akLeft, akBottom]
+          ShowButton = False
+          TabOrder = 2
+          DisabledTextColor = clBlack
+          DecimalPlacesAlwaysShown = False
+        end
+      end
+      object MovObra: TTabSheet
+        Caption = 'Movimiento x Obra'
+        ImageIndex = 2
+        object cxGrid1: TcxGrid
+          Left = 0
+          Top = 0
+          Width = 813
+          Height = 481
+          Align = alClient
+          TabOrder = 0
+          object cxGrid1DBTableView1: TcxGridDBTableView
+            Navigator.Buttons.CustomButtons = <>
+            ScrollbarAnnotations.CustomAnnotations = <>
+            DataController.DataSource = DSMovCC
+            DataController.Summary.DefaultGroupSummaryItems = <
+              item
+                Format = ',0.00;-,0.00;-'
+                Kind = skSum
+                Position = spFooter
+                FieldName = 'DEBE'
+                Column = cxGrid1DBTableView1DEBE
+              end
+              item
+                Format = ',0.00;-,0.00;-'
+                Kind = skSum
+                Position = spFooter
+                FieldName = 'HABER'
+                Column = cxGrid1DBTableView1HABER
+              end
+              item
+                Format = ',0.00;-,0.00;-'
+                Kind = skSum
+                Position = spFooter
+                FieldName = 'SALDO'
+                Column = cxGrid1DBTableView1SALDO
+              end>
+            DataController.Summary.FooterSummaryItems = <
+              item
+                Format = ',0.00;-,0.00;-'
+                Kind = skSum
+                FieldName = 'DEBE'
+                Column = cxGrid1DBTableView1DEBE
+              end
+              item
+                Format = ',0.00;-,0.00;-'
+                Kind = skSum
+                FieldName = 'HABER'
+                Column = cxGrid1DBTableView1HABER
+              end>
+            DataController.Summary.SummaryGroups = <>
+            OptionsView.Footer = True
+            OptionsView.FooterMultiSummaries = True
+            OptionsView.GroupFooterMultiSummaries = True
+            OptionsView.GroupFooters = gfAlwaysVisible
+            Styles.Group = cxStyle1
+            Styles.GroupByBox = cxStyle1
+            Styles.GroupFooterSortedSummary = cxStyle1
+            object cxGrid1DBTableView1FECHACOMPRA: TcxGridDBColumn
+              DataBinding.FieldName = 'FECHACOMPRA'
+              HeaderAlignmentHorz = taCenter
+              Width = 82
+            end
+            object cxGrid1DBTableView1TIPOCPBTE: TcxGridDBColumn
+              DataBinding.FieldName = 'TIPOCPBTE'
+              HeaderAlignmentHorz = taCenter
+              Width = 68
+            end
+            object cxGrid1DBTableView1CLASECPBTE: TcxGridDBColumn
+              DataBinding.FieldName = 'CLASECPBTE'
+              HeaderAlignmentHorz = taCenter
+              Width = 62
+            end
+            object cxGrid1DBTableView1NROCPBTE: TcxGridDBColumn
+              DataBinding.FieldName = 'NROCPBTE'
+              HeaderAlignmentHorz = taCenter
+              Width = 114
+            end
+            object cxGrid1DBTableView1DETALLE: TcxGridDBColumn
+              DataBinding.FieldName = 'DETALLE'
+              HeaderAlignmentHorz = taCenter
+              Width = 152
+            end
+            object cxGrid1DBTableView1DEBE: TcxGridDBColumn
+              DataBinding.FieldName = 'DEBE'
+              HeaderAlignmentHorz = taCenter
+              Width = 85
+            end
+            object cxGrid1DBTableView1HABER: TcxGridDBColumn
+              DataBinding.FieldName = 'HABER'
+              HeaderAlignmentHorz = taCenter
+              Width = 93
+            end
+            object cxGrid1DBTableView1SALDO: TcxGridDBColumn
+              DataBinding.FieldName = 'SALDO'
+              HeaderAlignmentHorz = taCenter
+              Width = 90
+            end
+            object cxGrid1DBTableView1MUESTRAOBRA: TcxGridDBColumn
+              DataBinding.FieldName = 'MUESTRAOBRA'
+              Visible = False
+              GroupIndex = 0
+              HeaderAlignmentHorz = taCenter
+            end
+          end
+          object cxGrid1Level1: TcxGridLevel
+            GridView = cxGrid1DBTableView1
+          end
+        end
+      end
+      object TabSheet1: TTabSheet
+        Caption = 'Mov.Aux.'
+        object cxGMovAux: TcxGrid
+          Left = 0
+          Top = 0
+          Width = 813
+          Height = 481
+          Align = alClient
+          TabOrder = 0
+          LookAndFeel.NativeStyle = False
+          LookAndFeel.SkinName = 'iMaginary'
+          object cxGMovAuxDBTableView1: TcxGridDBTableView
+            Navigator.Buttons.CustomButtons = <>
+            ScrollbarAnnotations.CustomAnnotations = <>
+            DataController.DataSource = DSMov
+            DataController.Summary.DefaultGroupSummaryItems = <>
+            DataController.Summary.FooterSummaryItems = <
+              item
+                Format = ',0.00'
+                Kind = skSum
+                Column = cxGMovAuxDBTableView1DEBE
+              end
+              item
+                Format = ',0.00'
+                Kind = skSum
+                Column = cxGMovAuxDBTableView1HABER
+              end>
+            DataController.Summary.SummaryGroups = <>
+            OptionsView.Footer = True
+            OptionsView.FooterMultiSummaries = True
+            OptionsView.GroupByBox = False
+            object cxGMovAuxDBTableView1FECHA: TcxGridDBColumn
+              DataBinding.FieldName = 'FECHA'
+              HeaderAlignmentHorz = taCenter
+              Options.Editing = False
+              Options.Filtering = False
+              Options.Focusing = False
+              Options.Moving = False
+              Width = 83
+            end
+            object cxGMovAuxDBTableView1MUESTRATIPO: TcxGridDBColumn
+              DataBinding.FieldName = 'MUESTRATIPO'
+              HeaderAlignmentHorz = taCenter
+              Width = 262
+            end
+            object cxGMovAuxDBTableView1TIPOCPBTE: TcxGridDBColumn
+              DataBinding.FieldName = 'TIPOCPBTE'
+              HeaderAlignmentHorz = taCenter
+              Options.Editing = False
+              Options.Filtering = False
+              Options.Focusing = False
+              Options.Moving = False
+              Width = 44
+            end
+            object cxGMovAuxDBTableView1CLASECPBTE: TcxGridDBColumn
+              DataBinding.FieldName = 'CLASECPBTE'
+              HeaderAlignmentHorz = taCenter
+              Options.Editing = False
+              Options.Filtering = False
+              Options.Focusing = False
+              Options.Moving = False
+              Width = 44
+            end
+            object cxGMovAuxDBTableView1NROCPBTE: TcxGridDBColumn
+              DataBinding.FieldName = 'NROCPBTE'
+              HeaderAlignmentHorz = taCenter
+              Options.Editing = False
+              Options.Filtering = False
+              Options.Focusing = False
+              Options.Moving = False
+            end
+            object cxGMovAuxDBTableView1DEBE: TcxGridDBColumn
+              DataBinding.FieldName = 'DEBE'
+              HeaderAlignmentHorz = taCenter
+              Options.Editing = False
+              Options.Filtering = False
+              Options.Focusing = False
+              Options.Moving = False
+              Width = 99
+            end
+            object cxGMovAuxDBTableView1HABER: TcxGridDBColumn
+              DataBinding.FieldName = 'HABER'
+              HeaderAlignmentHorz = taCenter
+              Options.Editing = False
+              Options.Filtering = False
+              Options.Focusing = False
+              Options.Moving = False
+            end
+          end
+          object cxGMovAuxLevel1: TcxGridLevel
+            GridView = cxGMovAuxDBTableView1
+          end
+        end
+      end
+    end
+    object dbcObra: TJvDBLookupCombo
+      Left = 359
+      Top = 604
+      Width = 354
+      Height = 21
+      Color = clBtnFace
+      DisplayEmpty = 'Sin Selecci'#243'n'
+      EmptyValue = '-1'
+      Anchors = [akLeft, akBottom]
+      LookupField = 'CODIGO'
+      LookupDisplay = 'DETALLE'
+      LookupSource = DSObra
+      TabOrder = 11
+      OnChange = dbcObraChange
+    end
+    object pnCabecera: TPanel
+      Left = 0
+      Top = 0
+      Width = 821
+      Height = 72
+      Align = alTop
+      BevelOuter = bvNone
+      TabOrder = 12
+      object Label2: TLabel
+        Left = 564
+        Top = 6
+        Width = 31
+        Height = 13
+        Caption = 'Desde'
+      end
+      object Label3: TLabel
+        Left = 675
+        Top = 6
+        Width = 28
+        Height = 13
+        Caption = 'Hasta'
+      end
+      object Label1: TLabel
+        Left = 8
+        Top = 6
+        Width = 49
+        Height = 13
+        Caption = 'Proveedor'
+      end
+      object Label4: TLabel
+        Left = 627
+        Top = 52
+        Width = 66
+        Height = 13
+        Caption = 'Saldo Anterior'
+      end
+      object lbSaldoInicial: TLabel
+        Left = 764
+        Top = 52
+        Width = 26
+        Height = 13
+        Alignment = taRightJustify
+        Caption = '0.00'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clBlue
+        Font.Height = -11
+        Font.Name = 'MS Sans Serif'
+        Font.Style = [fsBold]
+        ParentFont = False
+      end
+      object edNombreProveedor: TEdit
+        Left = 87
+        Top = 25
+        Width = 257
+        Height = 21
+        Color = clInfoBk
+        Enabled = False
+        TabOrder = 0
+      end
+      object UpDown1: TUpDown
+        Left = 786
+        Top = 25
+        Width = 16
+        Height = 20
+        Hint = 'Cambia el Per'#237'odo'
+        Max = 10000
+        ParentShowHint = False
+        Position = 100
+        ShowHint = True
+        TabOrder = 1
+        OnClick = UpDown1Click
+      end
+      object ceProveedor: TJvComboEdit
+        Left = 8
+        Top = 25
+        Width = 73
+        Height = 21
+        ButtonWidth = 16
+        ClickKey = 16397
+        Glyph.Data = {
+          4E000000424D4E000000000000003E000000280000000A000000040000000100
+          010000000000100000000000000000000000020000000200000000000000FFFF
+          FF00FFC000003300000033000000FFC00000}
+        MaxLength = 6
+        TabOrder = 2
+        Text = ''
+        OnButtonClick = BuscarProveedorExecute
+        OnKeyPress = ceProveedorKeyPress
+      end
+      object desde: TJvDateEdit
+        Left = 564
+        Top = 25
+        Width = 105
+        Height = 21
+        Glyph.Data = {
+          76050000424D760500000000000036000000280000001C0000000C0000000100
+          2000000000004005000000000000000000000000000000000000FF00FF00FF00
+          FF00FF00FF008080800080808000808080008080800080808000808080008080
+          800080808000808080008080800080808000FF00FF00FF00FF00FFFFFF00FFFF
+          FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+          FF00FFFFFF00FFFFFF00FF00FF00FF00FF000000000000000000800000000000
+          0000800000008000000000000000800000000000000000000000800000008080
+          8000FF00FF008080800080808000808080008080800080808000808080008080
+          80008080800080808000808080008080800080808000FFFFFF00FF00FF00FF00
+          FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+          FF00FFFFFF00FFFFFF008000000080808000FF00FF0080808000FFFFFF00FF00
+          FF00FFFFFF00FFFFFF00FFFFFF00FF00FF00FFFFFF00FFFFFF00FFFFFF00FF00
+          FF0080808000FFFFFF00FF00FF00FF00FF00FFFFFF0000000000000000000000
+          0000FFFFFF00000000000000000000000000C0C0C000FFFFFF00800000008080
+          8000FF00FF0080808000FFFFFF00808080008080800080808000FF00FF008080
+          80008080800080808000FF00FF00FFFFFF0080808000FFFFFF00FF00FF00FF00
+          FF00FFFFFF00FFFFFF0000000000FFFFFF00FFFFFF00C0C0C000FFFFFF00C0C0
+          C00000000000FFFFFF008000000080808000FF00FF0080808000FFFFFF00FF00
+          FF0080808000FFFFFF00FF00FF00FF00FF00FF00FF00FF00FF0080808000FFFF
+          FF0080808000FFFFFF00FF00FF00FF00FF00FFFFFF00FFFFFF0000000000FFFF
+          FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF0000000000FFFFFF00800000008080
+          8000FF00FF0080808000FFFFFF00FF00FF0080808000FFFFFF00FF00FF00FF00
+          FF00FFFFFF00FFFFFF0080808000FF00FF0080808000FFFFFF00FF00FF00FF00
+          FF00FFFFFF00FFFFFF0000000000FFFFFF00FFFFFF0000000000000000000000
+          0000C0C0C000FFFFFF008000000080808000FF00FF0080808000FFFFFF00FF00
+          FF0080808000FFFFFF00FF00FF00808080008080800080808000FF00FF00FF00
+          FF0080808000FFFFFF00FF00FF00FF00FF00FFFFFF000000000000000000FFFF
+          FF00FFFFFF0000000000FFFFFF00FFFFFF00FFFFFF00FFFFFF00800000008080
+          8000FF00FF0080808000FFFFFF008080800080808000FFFFFF00FF00FF008080
+          8000FFFFFF00FFFFFF00FFFFFF00FFFFFF0080808000FFFFFF00FF00FF00FF00
+          FF00FFFFFF00FFFFFF0000000000FFFFFF00FFFFFF0000000000000000000000
+          000000000000FFFFFF008000000080808000FF00FF0080808000FFFFFF00FF00
+          FF0080808000FF00FF00FF00FF0080808000808080008080800080808000FF00
+          FF0080808000FFFFFF00FF00FF00FF00FF00FFFFFF00FFFFFF00FFFFFF00FFFF
+          FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00800000008080
+          8000FF00FF0080808000FFFFFF00FF00FF00FF00FF00FF00FF00FF00FF00FF00
+          FF00FF00FF00FF00FF00FF00FF00FF00FF0080808000FFFFFF00FF00FF00FF00
+          FF00FFFFFF00C0C0C000C0C0C000C0C0C000C0C0C000C0C0C000C0C0C000C0C0
+          C000C0C0C000FFFFFF008000000080808000FF00FF0080808000FFFFFF00FFFF
+          FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+          FF0080808000FFFFFF00FF00FF00FF00FF000000000000000000000000000000
+          0000000000000000000000000000000000000000000000000000FF00FF00FF00
+          FF00FF00FF008080800080808000808080008080800080808000808080008080
+          80008080800080808000808080008080800080808000FF00FF00}
+        ImageKind = ikCustom
+        NumGlyphs = 2
+        PopupColor = clBtnFace
+        ShowNullDate = False
+        TabOrder = 3
+        OnAcceptDate = desdeAcceptDate
+      end
+      object hasta: TJvDateEdit
+        Left = 675
+        Top = 25
+        Width = 105
+        Height = 21
+        Glyph.Data = {
+          76050000424D760500000000000036000000280000001C0000000C0000000100
+          2000000000004005000000000000000000000000000000000000FF00FF00FF00
+          FF00FF00FF008080800080808000808080008080800080808000808080008080
+          800080808000808080008080800080808000FF00FF00FF00FF00FFFFFF00FFFF
+          FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+          FF00FFFFFF00FFFFFF00FF00FF00FF00FF000000000000000000800000000000
+          0000800000008000000000000000800000000000000000000000800000008080
+          8000FF00FF008080800080808000808080008080800080808000808080008080
+          80008080800080808000808080008080800080808000FFFFFF00FF00FF00FF00
+          FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+          FF00FFFFFF00FFFFFF008000000080808000FF00FF0080808000FFFFFF00FF00
+          FF00FFFFFF00FFFFFF00FFFFFF00FF00FF00FFFFFF00FFFFFF00FFFFFF00FF00
+          FF0080808000FFFFFF00FF00FF00FF00FF00FFFFFF0000000000000000000000
+          0000FFFFFF00000000000000000000000000C0C0C000FFFFFF00800000008080
+          8000FF00FF0080808000FFFFFF00808080008080800080808000FF00FF008080
+          80008080800080808000FF00FF00FFFFFF0080808000FFFFFF00FF00FF00FF00
+          FF00FFFFFF00FFFFFF0000000000FFFFFF00FFFFFF00C0C0C000FFFFFF00C0C0
+          C00000000000FFFFFF008000000080808000FF00FF0080808000FFFFFF00FF00
+          FF0080808000FFFFFF00FF00FF00FF00FF00FF00FF00FF00FF0080808000FFFF
+          FF0080808000FFFFFF00FF00FF00FF00FF00FFFFFF00FFFFFF0000000000FFFF
+          FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF0000000000FFFFFF00800000008080
+          8000FF00FF0080808000FFFFFF00FF00FF0080808000FFFFFF00FF00FF00FF00
+          FF00FFFFFF00FFFFFF0080808000FF00FF0080808000FFFFFF00FF00FF00FF00
+          FF00FFFFFF00FFFFFF0000000000FFFFFF00FFFFFF0000000000000000000000
+          0000C0C0C000FFFFFF008000000080808000FF00FF0080808000FFFFFF00FF00
+          FF0080808000FFFFFF00FF00FF00808080008080800080808000FF00FF00FF00
+          FF0080808000FFFFFF00FF00FF00FF00FF00FFFFFF000000000000000000FFFF
+          FF00FFFFFF0000000000FFFFFF00FFFFFF00FFFFFF00FFFFFF00800000008080
+          8000FF00FF0080808000FFFFFF008080800080808000FFFFFF00FF00FF008080
+          8000FFFFFF00FFFFFF00FFFFFF00FFFFFF0080808000FFFFFF00FF00FF00FF00
+          FF00FFFFFF00FFFFFF0000000000FFFFFF00FFFFFF0000000000000000000000
+          000000000000FFFFFF008000000080808000FF00FF0080808000FFFFFF00FF00
+          FF0080808000FF00FF00FF00FF0080808000808080008080800080808000FF00
+          FF0080808000FFFFFF00FF00FF00FF00FF00FFFFFF00FFFFFF00FFFFFF00FFFF
+          FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00800000008080
+          8000FF00FF0080808000FFFFFF00FF00FF00FF00FF00FF00FF00FF00FF00FF00
+          FF00FF00FF00FF00FF00FF00FF00FF00FF0080808000FFFFFF00FF00FF00FF00
+          FF00FFFFFF00C0C0C000C0C0C000C0C0C000C0C0C000C0C0C000C0C0C000C0C0
+          C000C0C0C000FFFFFF008000000080808000FF00FF0080808000FFFFFF00FFFF
+          FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+          FF0080808000FFFFFF00FF00FF00FF00FF000000000000000000000000000000
+          0000000000000000000000000000000000000000000000000000FF00FF00FF00
+          FF00FF00FF008080800080808000808080008080800080808000808080008080
+          80008080800080808000808080008080800080808000FF00FF00}
+        ImageKind = ikCustom
+        NumGlyphs = 2
+        PopupColor = clBtnFace
+        ShowNullDate = False
+        TabOrder = 4
+        OnAcceptDate = hastaAcceptDate
+      end
+    end
+  end
+  object DSMovCC: TDataSource
+    DataSet = CDSMovCC
+    Left = 584
+    Top = 112
+  end
+  object DSPMovCC: TDataSetProvider
+    DataSet = QMovCC
+    Options = [poAllowCommandText, poUseQuoteChar]
+    Left = 432
+    Top = 112
+  end
+  object ActionList1: TActionList
+    Left = 288
+    Top = 288
+    object BuscarProveedor: TAction
+      Caption = 'BuscarProveedor'
+      ShortCut = 16397
+      OnExecute = BuscarProveedorExecute
+    end
+    object TraerCtaCte: TAction
+      Caption = 'Ver CC'
+      OnExecute = TraerCtaCteExecute
+    end
+    object Imprimir: TAction
+      Caption = '&Imprimir'
+      OnExecute = ImprimirExecute
+    end
+    object VerComprobante: TAction
+      Caption = '&Ver Comprobante'
+      OnExecute = VerComprobanteExecute
+    end
+    object FiltrarDebitos: TAction
+      Caption = 'Ver los Debitos'
+      OnExecute = FiltrarDebitosExecute
+    end
+    object FiltraCreditos: TAction
+      Caption = 'Ver los Creditos'
+      OnExecute = FiltraCreditosExecute
+    end
+    object TodosMovimientos: TAction
+      Caption = 'Todos los Movimientos'
+      OnExecute = TodosMovimientosExecute
+    end
+    object EnviarCorreo: TAction
+      OnExecute = EnviarCorreoExecute
+    end
+    object Comprobantes: TAction
+      Caption = 'Comprobantes'
+    end
+    object AplicacionesCC: TAction
+      Caption = 'Aplicaciones C.C.'
+      OnExecute = AplicacionesCCExecute
+    end
+  end
+  object frCtaCte: TfrxReport
+    Version = '2024.1.8'
+    DotMatrixReport = False
+    IniFile = '\Software\Fast Reports'
+    PreviewOptions.Buttons = [pbPrint, pbLoad, pbSave, pbExport, pbZoom, pbFind, pbOutline, pbPageSetup, pbTools, pbEdit, pbNavigator, pbExportQuick]
+    PreviewOptions.Zoom = 1.000000000000000000
+    PrintOptions.Printer = 'Por defecto'
+    PrintOptions.PrintOnSheet = 0
+    ReportOptions.CreateDate = 39638.742840162030000000
+    ReportOptions.LastChange = 39638.742840162030000000
+    ScriptLanguage = 'PascalScript'
+    ScriptText.Strings = (
+      'begin'
+      ''
+      'end.')
+    Left = 488
+    Top = 488
+    Datasets = <>
+    Variables = <>
+    Style = <>
+  end
+  object frDBDSCtaCte: TfrxDBDataset
+    UserName = 'frDBDSCtaCte'
+    CloseDataSource = False
+    DataSet = CDSMovCC
+    BCDToCurrency = False
+    DataSetOptions = []
+    Left = 736
+    Top = 400
+  end
+  object DSPProveedor: TDataSetProvider
+    DataSet = DMMain_FD.QProveedores
+    Left = 32
+    Top = 128
+  end
+  object CDSProveedor: TClientDataSet
+    Aggregates = <>
+    Params = <
+      item
+        DataType = ftString
+        Name = 'Codigo'
+        ParamType = ptInput
+      end>
+    ProviderName = 'DSPProveedor'
+    Left = 104
+    Top = 128
+    object CDSProveedorCODIGO: TStringField
+      FieldName = 'CODIGO'
+      Origin = 'CODIGO'
+      ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
+      Required = True
+      Size = 6
+    end
+    object CDSProveedorNOMBRE: TStringField
+      FieldName = 'NOMBRE'
+      Origin = 'NOMBRE'
+      Required = True
+      Size = 35
+    end
+    object CDSProveedorRAZON_SOCIAL: TStringField
+      FieldName = 'RAZON_SOCIAL'
+      Origin = 'RAZON_SOCIAL'
+      Size = 35
+    end
+    object CDSProveedorN_DE_CUENTA: TStringField
+      FieldName = 'N_DE_CUENTA'
+      Origin = 'N_DE_CUENTA'
+      Size = 14
+    end
+    object CDSProveedorID_COD_POSTAL: TIntegerField
+      FieldName = 'ID_COD_POSTAL'
+      Origin = 'ID_COD_POSTAL'
+    end
+    object CDSProveedorCOD_POSTAL: TStringField
+      FieldName = 'COD_POSTAL'
+      Origin = 'COD_POSTAL'
+      Size = 8
+    end
+    object CDSProveedorLOCALIDAD: TStringField
+      FieldName = 'LOCALIDAD'
+      Origin = 'LOCALIDAD'
+      Size = 15
+    end
+    object CDSProveedorDIRECCION: TStringField
+      FieldName = 'DIRECCION'
+      Origin = 'DIRECCION'
+      Size = 35
+    end
+    object CDSProveedorTELEFONO_1: TStringField
+      FieldName = 'TELEFONO_1'
+      Origin = 'TELEFONO_1'
+      Size = 10
+    end
+    object CDSProveedorTELEFONO_2: TStringField
+      FieldName = 'TELEFONO_2'
+      Origin = 'TELEFONO_2'
+      Size = 10
+    end
+    object CDSProveedorCONDICION_IVA: TIntegerField
+      FieldName = 'CONDICION_IVA'
+      Origin = 'CONDICION_IVA'
+      Required = True
+    end
+    object CDSProveedorN_DE_CUIT: TStringField
+      FieldName = 'N_DE_CUIT'
+      Origin = 'N_DE_CUIT'
+      Size = 13
+    end
+    object CDSProveedorACTIVO: TStringField
+      FieldName = 'ACTIVO'
+      Origin = 'ACTIVO'
+      Size = 1
+    end
+    object CDSProveedorRETIENE_IVA: TStringField
+      FieldName = 'RETIENE_IVA'
+      Origin = 'RETIENE_IVA'
+      Size = 1
+    end
+    object CDSProveedorRETIENE_IB: TStringField
+      FieldName = 'RETIENE_IB'
+      Origin = 'RETIENE_IB'
+      Size = 1
+    end
+    object CDSProveedorRETIENE_GANANCIAS: TStringField
+      FieldName = 'RETIENE_GANANCIAS'
+      Origin = 'RETIENE_GANANCIAS'
+      Size = 1
+    end
+    object CDSProveedorIVA_SERVICIOS: TStringField
+      FieldName = 'IVA_SERVICIOS'
+      Origin = 'IVA_SERVICIOS'
+      Size = 1
+    end
+    object CDSProveedorPRECIOS_CON_IVA: TStringField
+      FieldName = 'PRECIOS_CON_IVA'
+      Origin = 'PRECIOS_CON_IVA'
+      Size = 1
+    end
+    object CDSProveedorOBSERVACIONES: TMemoField
+      FieldName = 'OBSERVACIONES'
+      Origin = 'OBSERVACIONES'
+      BlobType = ftMemo
+    end
+    object CDSProveedorNOMBRE_REPRESENTANTE: TStringField
+      FieldName = 'NOMBRE_REPRESENTANTE'
+      Origin = 'NOMBRE_REPRESENTANTE'
+      Size = 35
+    end
+    object CDSProveedorDIRECCION_REPRESENTANTE: TStringField
+      FieldName = 'DIRECCION_REPRESENTANTE'
+      Origin = 'DIRECCION_REPRESENTANTE'
+      Size = 35
+    end
+    object CDSProveedorTELEFONO_REPRESENTANTE: TStringField
+      FieldName = 'TELEFONO_REPRESENTANTE'
+      Origin = 'TELEFONO_REPRESENTANTE'
+      Size = 25
+    end
+    object CDSProveedorTIPO_PROVEEDOR: TStringField
+      FieldName = 'TIPO_PROVEEDOR'
+      Origin = 'TIPO_PROVEEDOR'
+      Required = True
+      Size = 1
+    end
+    object CDSProveedorFECHAULTIMACOMPRA: TSQLTimeStampField
+      FieldName = 'FECHAULTIMACOMPRA'
+      Origin = 'FECHAULTIMACOMPRA'
+    end
+    object CDSProveedorFECHAALTA: TSQLTimeStampField
+      FieldName = 'FECHAALTA'
+      Origin = 'FECHAALTA'
+    end
+    object CDSProveedorID_PERC_IVA: TIntegerField
+      FieldName = 'ID_PERC_IVA'
+      Origin = 'ID_PERC_IVA'
+    end
+    object CDSProveedorID_PERC_IBB: TIntegerField
+      FieldName = 'ID_PERC_IBB'
+      Origin = 'ID_PERC_IBB'
+    end
+    object CDSProveedorID_PERC_IBB_2: TIntegerField
+      FieldName = 'ID_PERC_IBB_2'
+      Origin = 'ID_PERC_IBB_2'
+    end
+    object CDSProveedorRUBRO: TIntegerField
+      FieldName = 'RUBRO'
+      Origin = 'RUBRO'
+    end
+    object CDSProveedorID_FACTURAPORDEFECTO: TIntegerField
+      FieldName = 'ID_FACTURAPORDEFECTO'
+      Origin = 'ID_FACTURAPORDEFECTO'
+    end
+    object CDSProveedorEXENTO_GANACIA: TStringField
+      FieldName = 'EXENTO_GANACIA'
+      Origin = 'EXENTO_GANACIA'
+      Required = True
+      FixedChar = True
+      Size = 1
+    end
+    object CDSProveedorCODIGO_REGIMEN_RET_GANACIA: TIntegerField
+      FieldName = 'CODIGO_REGIMEN_RET_GANACIA'
+      Origin = 'CODIGO_REGIMEN_RET_GANACIA'
+      Required = True
+    end
+    object CDSProveedorEXENTO_RETENCION_IB: TStringField
+      FieldName = 'EXENTO_RETENCION_IB'
+      Origin = 'EXENTO_RETENCION_IB'
+      Required = True
+      FixedChar = True
+      Size = 1
+    end
+    object CDSProveedorID_TASA_RETENCION_IB: TIntegerField
+      FieldName = 'ID_TASA_RETENCION_IB'
+      Origin = 'ID_TASA_RETENCION_IB'
+      Required = True
+    end
+    object CDSProveedorNRO_IIBB: TStringField
+      FieldName = 'NRO_IIBB'
+      Origin = 'NRO_IIBB'
+      Size = 15
+    end
+    object CDSProveedorCORREO: TStringField
+      FieldName = 'CORREO'
+      Origin = 'CORREO'
+      Size = 100
+    end
+    object CDSProveedorCONV_MULTI: TStringField
+      FieldName = 'CONV_MULTI'
+      Origin = 'CONV_MULTI'
+      Required = True
+      FixedChar = True
+      Size = 1
+    end
+    object CDSProveedorMONEDA_PRECIOS: TIntegerField
+      FieldName = 'MONEDA_PRECIOS'
+      Origin = 'MONEDA_PRECIOS'
+    end
+    object CDSProveedorTELEDISCADO: TStringField
+      FieldName = 'TELEDISCADO'
+      Origin = 'TELEDISCADO'
+      ProviderFlags = []
+      Size = 6
+    end
+    object CDSProveedorDESPERIVA: TStringField
+      FieldName = 'DESPERIVA'
+      Origin = 'DESCRIPCION'
+      ProviderFlags = []
+    end
+    object CDSProveedorDESPERIB: TStringField
+      FieldName = 'DESPERIB'
+      Origin = 'DESCRIPCION'
+      ProviderFlags = []
+    end
+    object CDSProveedorDESPERIB2: TStringField
+      FieldName = 'DESPERIB2'
+      Origin = 'DESCRIPCION'
+      ProviderFlags = []
+    end
+    object CDSProveedorMUESTRADETALLERETIIBB: TStringField
+      FieldName = 'MUESTRADETALLERETIIBB'
+      Origin = 'DETALLE'
+      ProviderFlags = []
+      Size = 25
+    end
+    object CDSProveedorMUESTRATASARETIIBB: TFloatField
+      FieldName = 'MUESTRATASARETIIBB'
+      Origin = 'TASA'
+      ProviderFlags = []
+    end
+    object CDSProveedorMUESTRAMINIMPONIRETIIBB: TFloatField
+      FieldName = 'MUESTRAMINIMPONIRETIIBB'
+      Origin = 'MINIMO_IMPONIBLE'
+      ProviderFlags = []
+    end
+    object CDSProveedorSALDO_INICIAL: TFloatField
+      FieldName = 'SALDO_INICIAL'
+      Origin = 'SALDO_INICIAL'
+    end
+  end
+  object PopupMenu1: TPopupMenu
+    Left = 360
+    Top = 160
+    object VerComprobante1: TMenuItem
+      Action = VerComprobante
+    end
+    object VerlosDebitos1: TMenuItem
+      Action = FiltrarDebitos
+    end
+    object VerlosCreditos1: TMenuItem
+      Action = FiltraCreditos
+    end
+    object TodoslosMovimientos1: TMenuItem
+      Action = TodosMovimientos
+    end
+    object N1: TMenuItem
+      Caption = '-'
+    end
+    object Comprobantes1: TMenuItem
+      Action = Comprobantes
+    end
+  end
+  object DSPEmpresa: TDataSetProvider
+    DataSet = DMMain_FD.QEmpresa
+    Left = 72
+    Top = 200
+  end
+  object SaveDialog: TSaveDialog
+    DefaultExt = 'XLS'
+    Left = 264
+    Top = 344
+  end
+  object frxDBProveedor: TfrxDBDataset
+    UserName = 'frxDBProveedor'
+    CloseDataSource = False
+    DataSet = CDSProveedor
+    BCDToCurrency = False
+    DataSetOptions = []
+    Left = 704
+    Top = 544
+  end
+  object frxDBEmpresa: TfrxDBDataset
+    UserName = 'frxDBEmpresa'
+    CloseDataSource = False
+    DataSet = CDSEmpresa
+    BCDToCurrency = False
+    DataSetOptions = []
+    Left = 576
+    Top = 528
+    FieldDefs = <
+      item
+        FieldName = 'NOMBRE'
+        FieldAlias = 'NOMBRE'
+      end
+      item
+        FieldName = 'ACTIVIDAD'
+        FieldAlias = 'ACTIVIDAD'
+      end
+      item
+        FieldName = 'DIRECCION'
+        FieldAlias = 'DIRECCION'
+      end
+      item
+        FieldName = 'LOCALIDAD'
+        FieldAlias = 'LOCALIDAD'
+      end
+      item
+        FieldName = 'CORREO'
+        FieldAlias = 'CORREO'
+      end
+      item
+        FieldName = 'TELEFONO1'
+        FieldAlias = 'TELEFONO1'
+      end
+      item
+        FieldName = 'TELEFONO2'
+        FieldAlias = 'TELEFONO2'
+      end
+      item
+        FieldName = 'CUIT'
+        FieldAlias = 'CUIT'
+      end
+      item
+        FieldName = 'CONDICIONIVA'
+        FieldAlias = 'CONDICIONIVA'
+      end
+      item
+        FieldName = 'NRO_AGTE_RET_INGBRUTOS'
+        FieldAlias = 'NRO_AGTE_RET_INGBRUTOS'
+      end
+      item
+        FieldName = 'LOGO'
+        FieldAlias = 'LOGO'
+      end
+      item
+        FieldName = 'CPOSTAL'
+        FieldAlias = 'CPOSTAL'
+      end
+      item
+        FieldName = 'NRO_AGTE_RET_GANANCIA'
+        FieldAlias = 'NRO_AGTE_RET_GANANCIA'
+      end
+      item
+        FieldName = 'AG_RET_GANANCIA'
+        FieldAlias = 'AG_RET_GANANCIA'
+      end
+      item
+        FieldName = 'AG_RET_ING_BRUTOS'
+        FieldAlias = 'AG_RET_ING_BRUTOS'
+      end
+      item
+        FieldName = 'AG_PERCEPCION_ING_BRUTOS'
+        FieldAlias = 'AG_PERCEPCION_ING_BRUTOS'
+      end
+      item
+        FieldName = 'TASA_PERCEPCION_IB'
+        FieldAlias = 'TASA_PERCEPCION_IB'
+      end
+      item
+        FieldName = 'MINO_IMP_PERCEP_IB'
+        FieldAlias = 'MINO_IMP_PERCEP_IB'
+      end
+      item
+        FieldName = 'PROVINCIA'
+        FieldAlias = 'PROVINCIA'
+      end
+      item
+        FieldName = 'TASA_RET_IIBB'
+        FieldAlias = 'TASA_RET_IIBB'
+      end
+      item
+        FieldName = 'MINIMO_IMP_RET_IIBB'
+        FieldAlias = 'MINIMO_IMP_RET_IIBB'
+      end
+      item
+        FieldName = 'PUNITORIOS'
+        FieldAlias = 'PUNITORIOS'
+      end
+      item
+        FieldName = 'FECHA_INICIO_ACTI'
+        FieldAlias = 'FECHA_INICIO_ACTI'
+      end
+      item
+        FieldName = 'NRO_RENSPA'
+        FieldAlias = 'NRO_RENSPA'
+      end
+      item
+        FieldName = 'NRO_RUCA'
+        FieldAlias = 'NRO_RUCA'
+      end
+      item
+        FieldName = 'CUIT_AUTORIZADO'
+        FieldAlias = 'CUIT_AUTORIZADO'
+      end
+      item
+        FieldName = 'NOMBRE_AUTORIZADO'
+        FieldAlias = 'NOMBRE_AUTORIZADO'
+      end
+      item
+        FieldName = 'CBU'
+        FieldAlias = 'CBU'
+      end
+      item
+        FieldName = 'ID_CPOSTAL'
+        FieldAlias = 'ID_CPOSTAL'
+      end
+      item
+        FieldName = 'COD_ACTIVIDAD'
+        FieldAlias = 'COD_ACTIVIDAD'
+      end
+      item
+        FieldName = 'NOMBRE_FANTASIA'
+        FieldAlias = 'NOMBRE_FANTASIA'
+      end
+      item
+        FieldName = 'CODIGO_COT'
+        FieldAlias = 'CODIGO_COT'
+      end
+      item
+        FieldName = 'DIRECCION_NRO'
+        FieldAlias = 'DIRECCION_NRO'
+      end
+      item
+        FieldName = 'AG_PERCEPCION_IVA'
+        FieldAlias = 'AG_PERCEPCION_IVA'
+      end
+      item
+        FieldName = 'MIN_IMP_PERCEPCION_IVA'
+        FieldAlias = 'MIN_IMP_PERCEPCION_IVA'
+      end
+      item
+        FieldName = 'TASA_LEY15311'
+        FieldAlias = 'TASA_LEY15311'
+      end>
+  end
+  object CDSEmpresa: TClientDataSet
+    Aggregates = <>
+    Params = <>
+    ProviderName = 'DSPEmpresa'
+    Left = 168
+    Top = 160
+  end
+  object DSFiltroDet: TDataSource
+    DataSet = QFiltroD
+    Left = 272
+    Top = 664
+  end
+  object DSFiltroCab: TDataSource
+    DataSet = QFiltroC
+    Left = 256
+    Top = 560
+  end
+  object frxPDFExport1: TfrxPDFExport
+    UseFileCache = True
+    ShowProgress = True
+    OverwritePrompt = False
+    DataOnly = False
+    EmbedFontsIfProtected = False
+    InteractiveFormsFontSubset = 'A-Z,a-z,0-9,#43-#47 '
+    OpenAfterExport = False
+    PrintOptimized = False
+    Outline = False
+    Background = False
+    HTMLTags = True
+    Quality = 95
+    Transparency = False
+    Author = 'FastReport'
+    Subject = 'FastReport PDF export'
+    Creator = 'FastReport'
+    ProtectionFlags = [ePrint, eModify, eCopy, eAnnot]
+    HideToolbar = False
+    HideMenubar = False
+    HideWindowUI = False
+    FitWindow = False
+    CenterWindow = False
+    PrintScaling = False
+    PdfA = False
+    PDFStandard = psNone
+    PDFVersion = pv17
+    Left = 688
+    Top = 416
+  end
+  object JvFormStorage: TJvFormStorage
+    AppStorage = JvAppIniFileStorage1
+    AppStoragePath = '%FORM_NAME%\'
+    Options = [fpSize, fpLocation]
+    StoredValues = <>
+    Left = 568
+    Top = 256
+  end
+  object CDSMovCC: TClientDataSet
+    Active = True
+    Aggregates = <>
+    AutoCalcFields = False
+    Params = <
+      item
+        DataType = ftString
+        Name = 'codigo'
+        ParamType = ptInput
+      end
+      item
+        DataType = ftDate
+        Name = 'desde'
+        ParamType = ptInput
+      end
+      item
+        DataType = ftDate
+        Name = 'hasta'
+        ParamType = ptInput
+      end
+      item
+        DataType = ftInteger
+        Name = 'ID_OBRA'
+        ParamType = ptInput
+      end>
+    ProviderName = 'DSPMovCC'
+    Left = 512
+    Top = 112
+    object CDSMovCCID_MOVCCCOMP: TIntegerField
+      FieldName = 'ID_MOVCCCOMP'
+      Origin = 'ID_MOVCCCOMP'
+    end
+    object CDSMovCCID_CPBTE: TIntegerField
+      FieldName = 'ID_CPBTE'
+      Origin = 'ID_CPBTE'
+    end
+    object CDSMovCCCLIENTE: TStringField
+      FieldName = 'CLIENTE'
+      Origin = 'CLIENTE'
+      Size = 6
+    end
+    object CDSMovCCTIPOCPBTE: TStringField
+      DisplayLabel = 'Tipo'
+      FieldName = 'TIPOCPBTE'
+      Origin = 'TIPOCPBTE'
+      Size = 2
+    end
+    object CDSMovCCCLASECPBTE: TStringField
+      DisplayLabel = 'Clase'
+      FieldName = 'CLASECPBTE'
+      Origin = 'CLASECPBTE'
+      Size = 2
+    end
+    object CDSMovCCNROCPBTE: TStringField
+      DisplayLabel = 'Nro.Cpbte'
+      FieldName = 'NROCPBTE'
+      Origin = 'NROCPBTE'
+      Size = 13
+    end
+    object CDSMovCCDETALLE: TStringField
+      DisplayLabel = 'Detalle'
+      FieldName = 'DETALLE'
+      Origin = 'DETALLE'
+    end
+    object CDSMovCCID_COMPROBANTE: TIntegerField
+      FieldName = 'ID_COMPROBANTE'
+      Origin = 'ID_COMPROBANTE'
+    end
+    object CDSMovCCSaldoCC: TFloatField
+      DisplayWidth = 10
+      FieldKind = fkInternalCalc
+      FieldName = 'SaldoCC'
+    end
+    object CDSMovCCPUNTOVTA: TStringField
+      FieldName = 'PUNTOVTA'
+      Origin = 'PUNTOVTA'
+      FixedChar = True
+      Size = 4
+    end
+    object CDSMovCCDEBE: TFloatField
+      DisplayLabel = 'Debe'
+      FieldName = 'DEBE'
+      Origin = 'DEBE'
+    end
+    object CDSMovCCHABER: TFloatField
+      DisplayLabel = 'Haber'
+      FieldName = 'HABER'
+      Origin = 'HABER'
+    end
+    object CDSMovCCSALDO: TFloatField
+      DisplayLabel = 'Saldo'
+      FieldName = 'SALDO'
+      Origin = 'SALDO'
+    end
+    object CDSMovCCFECHACOMPRA: TSQLTimeStampField
+      DisplayLabel = 'Fecha'
+      FieldName = 'FECHACOMPRA'
+      Origin = 'FECHACOMPRA'
+    end
+    object CDSMovCCFECHAVTO: TSQLTimeStampField
+      DisplayLabel = 'Fecha Vto.'
+      FieldName = 'FECHAVTO'
+      Origin = 'FECHAVTO'
+    end
+    object CDSMovCCID_OBRA: TIntegerField
+      DisplayLabel = 'Co.Obra'
+      FieldName = 'ID_OBRA'
+      Origin = 'ID_OBRA'
+    end
+    object CDSMovCCMUESTRAOBRA: TStringField
+      DisplayLabel = 'Obra'
+      FieldName = 'MUESTRAOBRA'
+      Origin = 'DETALLE'
+      ProviderFlags = []
+      ReadOnly = True
+      Size = 100
+    end
+  end
+  object CDSAplicaciones: TClientDataSet
+    Aggregates = <>
+    Params = <
+      item
+        DataType = ftInteger
+        Name = 'Id'
+        ParamType = ptInput
+      end>
+    ProviderName = 'DSPAplicaciones'
+    Left = 168
+    Top = 296
+    object CDSAplicacionesID_MOV: TIntegerField
+      FieldName = 'ID_MOV'
+      Origin = 'ID_MOV'
+      ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
+      Required = True
+    end
+    object CDSAplicacionesID_MOVCCCOMPRA: TIntegerField
+      FieldName = 'ID_MOVCCCOMPRA'
+      Origin = 'ID_MOVCCCOMPRA'
+      Required = True
+    end
+    object CDSAplicacionesFECHA: TSQLTimeStampField
+      FieldName = 'FECHA'
+      Origin = 'FECHA'
+    end
+    object CDSAplicacionesPROVEEDOR: TStringField
+      FieldName = 'PROVEEDOR'
+      Origin = 'PROVEEDOR'
+      Required = True
+      Size = 6
+    end
+    object CDSAplicacionesID_CPBTE: TIntegerField
+      FieldName = 'ID_CPBTE'
+      Origin = 'ID_CPBTE'
+      Required = True
+    end
+    object CDSAplicacionesTIPOCPBTE: TStringField
+      FieldName = 'TIPOCPBTE'
+      Origin = 'TIPOCPBTE'
+      Required = True
+      Size = 2
+    end
+    object CDSAplicacionesCLASECPBTE: TStringField
+      FieldName = 'CLASECPBTE'
+      Origin = 'CLASECPBTE'
+      Size = 2
+    end
+    object CDSAplicacionesNUMEROCPBTE: TStringField
+      FieldName = 'NUMEROCPBTE'
+      Origin = 'NUMEROCPBTE'
+      Required = True
+      Size = 13
+    end
+    object CDSAplicacionesAPLICA_ID_CPBTE: TIntegerField
+      FieldName = 'APLICA_ID_CPBTE'
+      Origin = 'APLICA_ID_CPBTE'
+      Required = True
+    end
+    object CDSAplicacionesAPLICA_TIPOCPBTE: TStringField
+      FieldName = 'APLICA_TIPOCPBTE'
+      Origin = 'APLICA_TIPOCPBTE'
+      Size = 2
+    end
+    object CDSAplicacionesAPLICA_CLASECPBTE: TStringField
+      FieldName = 'APLICA_CLASECPBTE'
+      Origin = 'APLICA_CLASECPBTE'
+      Size = 2
+    end
+    object CDSAplicacionesAPLICA_NROCPBTE: TStringField
+      FieldName = 'APLICA_NROCPBTE'
+      Origin = 'APLICA_NROCPBTE'
+      Size = 13
+    end
+    object CDSAplicacionesDETALLE: TStringField
+      FieldName = 'DETALLE'
+      Origin = 'DETALLE'
+    end
+    object CDSAplicacionesIMPORTE: TFloatField
+      FieldName = 'IMPORTE'
+    end
+    object CDSAplicacionesAPLICA_NETO: TFloatField
+      FieldName = 'APLICA_NETO'
+    end
+  end
+  object DSPAplicaciones: TDataSetProvider
+    DataSet = QApli
+    Left = 104
+    Top = 296
+  end
+  object DSPMov: TDataSetProvider
+    DataSet = QMov
+    Left = 320
+    Top = 648
+  end
+  object CDSMov: TClientDataSet
+    Aggregates = <>
+    Params = <
+      item
+        DataType = ftString
+        Name = 'codigo'
+        ParamType = ptInput
+      end>
+    ProviderName = 'DSPMov'
+    Left = 296
+    Top = 512
+    object CDSMovID: TIntegerField
+      FieldName = 'ID'
+      Origin = 'ID'
+      ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
+      Required = True
+    end
+    object CDSMovFECHA: TSQLTimeStampField
+      DisplayLabel = 'Fecha'
+      FieldName = 'FECHA'
+      Origin = 'FECHA'
+    end
+    object CDSMovCODIGO_PROV: TStringField
+      DisplayLabel = 'Cod.Prov.'
+      FieldName = 'CODIGO_PROV'
+      Origin = 'CODIGO_PROV'
+      Required = True
+      Size = 6
+    end
+    object CDSMovID_TIPO: TIntegerField
+      FieldName = 'ID_TIPO'
+      Origin = 'ID_TIPO'
+      Required = True
+    end
+    object CDSMovDEBE: TFMTBCDField
+      DisplayLabel = 'Debe'
+      FieldName = 'DEBE'
+      Origin = 'DEBE'
+      DisplayFormat = ',0.00'
+      Precision = 15
+      Size = 3
+    end
+    object CDSMovHABER: TFMTBCDField
+      DisplayLabel = 'Haber'
+      FieldName = 'HABER'
+      Origin = 'HABER'
+      DisplayFormat = ',0.00'
+      Precision = 15
+      Size = 3
+    end
+    object CDSMovID_OP: TIntegerField
+      FieldName = 'ID_OP'
+      Origin = 'ID_OP'
+    end
+    object CDSMovMUESTRATIPO: TStringField
+      DisplayLabel = 'Tipo'
+      FieldName = 'MUESTRATIPO'
+      Origin = 'DETALLE'
+      ProviderFlags = []
+      Size = 50
+    end
+    object CDSMovMUESTRAPROVEEDOR: TStringField
+      DisplayLabel = 'Proveedor'
+      FieldName = 'MUESTRAPROVEEDOR'
+      Origin = 'NOMBRE'
+      ProviderFlags = []
+      Size = 35
+    end
+    object CDSMovTIPOCPBTE: TStringField
+      DisplayLabel = 'Tp.Op'
+      FieldName = 'TIPOCPBTE'
+      Origin = 'TIPOCPBTE'
+      ProviderFlags = []
+      Size = 2
+    end
+    object CDSMovCLASECPBTE: TStringField
+      DisplayLabel = 'Cl.Op'
+      FieldName = 'CLASECPBTE'
+      Origin = 'CLASECPBTE'
+      ProviderFlags = []
+      Size = 2
+    end
+    object CDSMovNROCPBTE: TStringField
+      DisplayLabel = 'Nro.Op'
+      FieldName = 'NROCPBTE'
+      Origin = 'NROCPBTE'
+      ProviderFlags = []
+      Size = 13
+    end
+  end
+  object DSMov: TDataSource
+    DataSet = CDSMov
+    Left = 384
+    Top = 656
+  end
+  object JvAppIniFileStorage1: TJvAppIniFileStorage
+    StorageOptions.BooleanStringTrueValues = 'TRUE, YES, Y'
+    StorageOptions.BooleanStringFalseValues = 'FALSE, NO, N'
+    SubStorages = <>
+    Left = 488
+    Top = 152
+  end
+  object DataToXLS: TDataToXLS
+    DataSet = CDSMovCC
+    Columns = <
+      item
+        DataField = 'CLIENTE'
+        Title = 'Codigo'
+      end
+      item
+        DataField = 'FECHACOMPRA'
+        Title = 'Fehca Compra'
+      end
+      item
+        DataField = 'FECHAVTO'
+        Title = 'Fecha Vto'
+      end
+      item
+        DataField = 'TIPOCPBTE'
+        Title = 'Tp'
+      end
+      item
+        DataField = 'CLASECPBTE'
+        Title = 'Cl'
+      end
+      item
+        DataField = 'NROCPBTE'
+        Title = 'Nro.Cpbte'
+      end
+      item
+        DataField = 'DEBE'
+        Title = 'Debe'
+        Alignment = taRightJustify
+        DataType = ctDouble
+      end
+      item
+        DataField = 'HABER'
+        Title = 'Haber'
+        Alignment = taRightJustify
+        DataType = ctDouble
+      end
+      item
+        DataField = 'SALDO'
+        Title = 'Saldo'
+        Alignment = taRightJustify
+        DataType = ctDouble
+      end
+      item
+        DataField = 'DETALLE'
+        Title = 'Detalle'
+      end
+      item
+        DataField = 'SaldoCC'
+        Title = 'SaldoCC'
+        Alignment = taRightJustify
+        DataType = ctDouble
+      end
+      item
+        DataField = 'PUNTOVTA'
+        Title = 'P.de Vta'
+      end>
+    Title.Font.Charset = DEFAULT_CHARSET
+    Title.Font.Color = clWindowText
+    Title.Font.Height = -13
+    Title.Font.Name = 'Arial'
+    Title.Font.Style = [fsBold]
+    Header.Font.Charset = DEFAULT_CHARSET
+    Header.Font.Color = clWindowText
+    Header.Font.Height = -13
+    Header.Font.Name = 'Arial'
+    Header.Font.Style = [fsBold]
+    Left = 389
+    Top = 303
+  end
+  object QSaldoInicial: TFDQuery
+    Connection = DMMain_FD.fdcGestion
+    SQL.Strings = (
+      
+        'select sum(s.debe)as debe, sum(s.haber) as haber from SALDO_INIC' +
+        'IAL_CTACTE_COMP (:codigo,:desde ) s')
+    Left = 173
+    Top = 103
+    ParamData = <
+      item
+        Name = 'CODIGO'
+        DataType = ftString
+        ParamType = ptInput
+        Size = 6
+        Value = Null
+      end
+      item
+        Name = 'DESDE'
+        DataType = ftDate
+        ParamType = ptInput
+        Value = Null
+      end>
+    object QSaldoInicialDEBE: TFloatField
+      AutoGenerateValue = arDefault
+      FieldName = 'DEBE'
+      Origin = 'DEBE'
+      ProviderFlags = []
+      ReadOnly = True
+    end
+    object QSaldoInicialHABER: TFloatField
+      AutoGenerateValue = arDefault
+      FieldName = 'HABER'
+      Origin = 'HABER'
+      ProviderFlags = []
+      ReadOnly = True
+    end
+  end
+  object QMovCC: TFDQuery
+    Connection = DMMain_FD.fdcGestion
+    SQL.Strings = (
+      
+        'select m.*, o.detalle as MuestraObra from MOV_CTACTE_COMP (:codi' +
+        'go,:desde,:hasta ) m'
+      'left join obras o on o.codigo=m.id_obra'
+      'where m.id_obra=:id_obra or :id_obra=-1'
+      'order by'
+      'm.fechacompra,m.tipocpbte,m.nrocpbte'
+      '')
+    Left = 357
+    Top = 111
+    ParamData = <
+      item
+        Position = 1
+        Name = 'codigo'
+        DataType = ftString
+        ParamType = ptInput
+      end
+      item
+        Position = 2
+        Name = 'desde'
+        DataType = ftDate
+        ParamType = ptInput
+      end
+      item
+        Position = 3
+        Name = 'hasta'
+        DataType = ftDate
+        ParamType = ptInput
+      end
+      item
+        Position = 4
+        Name = 'ID_OBRA'
+        DataType = ftInteger
+        ParamType = ptInput
+      end>
+  end
+  object QPrimerMov: TFDQuery
+    Connection = DMMain_FD.fdcGestion
+    SQL.Strings = (
+      'select min(fechavta) from movccvta')
+    Left = 237
+    Top = 167
+    object QPrimerMovMIN: TSQLTimeStampField
+      AutoGenerateValue = arDefault
+      FieldName = 'MIN'
+      Origin = 'MIN'
+      ProviderFlags = []
+      ReadOnly = True
+    end
+  end
+  object QMov: TFDQuery
+    Connection = DMMain_FD.fdcGestion
+    FormatOptions.AssignedValues = [fvMapRules]
+    FormatOptions.OwnMapRules = True
+    FormatOptions.MapRules = <
+      item
+        SourceDataType = dtDateTime
+        TargetDataType = dtDate
+      end
+      item
+        SourceDataType = dtDouble
+        TargetDataType = dtFmtBCD
+      end>
+    SQL.Strings = (
+      
+        'select m.*,t.detalle as MuestraTipo,p.nombre as MuestraProveedor' +
+        ','
+      
+        'op.tipocpbte,op.clasecpbte,op.nrocpbte from mov_adiccional_cccom' +
+        'p m'
+      'left join tipo_adicional_cccomp t on t.id=m.id_tipo'
+      'left join poveedor p on p.codigo=m.codigo_prov'
+      'left join ordenpago op on op.id_op=m.id_op'
+      'where m.codigo_prov=:codigo'
+      'order by m.fecha')
+    Left = 224
+    Top = 648
+    ParamData = <
+      item
+        Position = 1
+        Name = 'codigo'
+        DataType = ftString
+        ParamType = ptInput
+      end>
+  end
+  object QFiltroC: TFDQuery
+    Connection = DMMain_FD.fdcGestion
+    SQL.Strings = (
+      'select * from TABLA_CPBTE_CCCOMP_CAB')
+    Left = 120
+    Top = 408
+    object QFiltroCID: TIntegerField
+      FieldName = 'ID'
+      Origin = 'ID'
+      ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
+      Required = True
+    end
+    object QFiltroCDETALLE: TStringField
+      FieldName = 'DETALLE'
+      Origin = 'DETALLE'
+      Size = 25
+    end
+    object QFiltroCGRUPO: TSmallintField
+      FieldName = 'GRUPO'
+      Origin = 'GRUPO'
+    end
+  end
+  object QFiltroD: TFDQuery
+    Connection = DMMain_FD.fdcGestion
+    SQL.Strings = (
+      'select tc.*,'
+      'c.denominacion as MuestraComprobante,'
+      'c.tipo_comprob as MuestraTipo,'
+      'c.clase_comprob as MuestraClase,'
+      's.detalle  as MuestraSuc from tabla_cpbte_cccomp_det tc'
+      'left join comprobantes c on c.id_comprobante=tc.id_cpbte'
+      'left join sucursal s on s.codigo=c.sucursal'
+      'where tc.id_cab=:id'
+      'order by s.detalle,c.tipo_comprob,c.clase_comprob')
+    Left = 85
+    Top = 591
+    ParamData = <
+      item
+        Name = 'ID'
+        DataType = ftInteger
+        ParamType = ptInput
+        Value = Null
+      end>
+    object QFiltroDID: TIntegerField
+      FieldName = 'ID'
+      Origin = 'ID'
+      ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
+      Required = True
+    end
+    object QFiltroDID_CAB: TIntegerField
+      FieldName = 'ID_CAB'
+      Origin = 'ID_CAB'
+      Required = True
+    end
+    object QFiltroDID_CPBTE: TIntegerField
+      FieldName = 'ID_CPBTE'
+      Origin = 'ID_CPBTE'
+    end
+    object QFiltroDMUESTRACOMPROBANTE: TStringField
+      AutoGenerateValue = arDefault
+      FieldName = 'MUESTRACOMPROBANTE'
+      Origin = 'DENOMINACION'
+      ProviderFlags = []
+      ReadOnly = True
+      Size = 15
+    end
+    object QFiltroDMUESTRATIPO: TStringField
+      AutoGenerateValue = arDefault
+      FieldName = 'MUESTRATIPO'
+      Origin = 'TIPO_COMPROB'
+      ProviderFlags = []
+      ReadOnly = True
+      Size = 2
+    end
+    object QFiltroDMUESTRACLASE: TStringField
+      AutoGenerateValue = arDefault
+      FieldName = 'MUESTRACLASE'
+      Origin = 'CLASE_COMPROB'
+      ProviderFlags = []
+      ReadOnly = True
+      Size = 2
+    end
+    object QFiltroDMUESTRASUC: TStringField
+      AutoGenerateValue = arDefault
+      FieldName = 'MUESTRASUC'
+      Origin = 'DETALLE'
+      ProviderFlags = []
+      ReadOnly = True
+      Size = 35
+    end
+  end
+  object QApli: TFDQuery
+    Connection = DMMain_FD.fdcGestion
+    SQL.Strings = (
+      'select * from MovAplicaCCCompra where Id_MovCCCompra=:Id ')
+    Left = 21
+    Top = 295
+    ParamData = <
+      item
+        Position = 1
+        Name = 'Id'
+        DataType = ftInteger
+        ParamType = ptInput
+      end>
+  end
+  object QObra: TFDQuery
+    Connection = DMMain_FD.fdcGestion
+    SQL.Strings = (
+      
+        'select codigo,detalle,estado from obras where estado=:estado or ' +
+        ':estado='#39'*'#39)
+    Left = 365
+    Top = 399
+    ParamData = <
+      item
+        Name = 'ESTADO'
+        DataType = ftString
+        ParamType = ptInput
+        Size = 1
+        Value = Null
+      end>
+  end
+  object DSObra: TDataSource
+    DataSet = CDSObra
+    Left = 613
+    Top = 391
+  end
+  object CDSObra: TClientDataSet
+    Aggregates = <>
+    Params = <
+      item
+        DataType = ftString
+        Name = 'ESTADO'
+        ParamType = ptInput
+        Size = 1
+      end>
+    ProviderName = 'DSPObra'
+    Left = 517
+    Top = 399
+  end
+  object DSPObra: TDataSetProvider
+    DataSet = QObra
+    Left = 429
+    Top = 399
+  end
+  object cxStyleRepository1: TcxStyleRepository
+    Left = 32
+    Top = 208
+    PixelsPerInch = 96
+    object cxStyle1: TcxStyle
+      AssignedValues = [svFont]
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = 'Segoe UI Semibold'
+      Font.Style = [fsBold]
+    end
+  end
+end

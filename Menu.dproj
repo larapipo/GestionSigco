@@ -1,0 +1,4073 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{3720D92E-DCC2-42B4-9C4B-275ED49F657E}</ProjectGuid>
+        <MainSource>Menu.dpr</MainSource>
+        <Base>True</Base>
+        <Config Condition="'$(Config)'==''">Debug</Config>
+        <ProjectName Condition="'$(ProjectName)'==''">Menu</ProjectName>
+        <TargetedPlatforms>558083</TargetedPlatforms>
+        <AppType>Application</AppType>
+        <FrameworkType>VCL</FrameworkType>
+        <ProjectVersion>20.1</ProjectVersion>
+        <Platform Condition="'$(Platform)'==''">Win32</Platform>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Config)'=='Base' or '$(Base)'!=''">
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="('$(Platform)'=='Android64' and '$(Base)'=='true') or '$(Base_Android64)'!=''">
+        <Base_Android64>true</Base_Android64>
+        <CfgParent>Base</CfgParent>
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="('$(Platform)'=='iOSDevice64' and '$(Base)'=='true') or '$(Base_iOSDevice64)'!=''">
+        <Base_iOSDevice64>true</Base_iOSDevice64>
+        <CfgParent>Base</CfgParent>
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="('$(Platform)'=='Win32' and '$(Base)'=='true') or '$(Base_Win32)'!=''">
+        <Base_Win32>true</Base_Win32>
+        <CfgParent>Base</CfgParent>
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="('$(Platform)'=='Win64' and '$(Base)'=='true') or '$(Base_Win64)'!=''">
+        <Base_Win64>true</Base_Win64>
+        <CfgParent>Base</CfgParent>
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Config)'=='Release' or '$(Cfg_1)'!=''">
+        <Cfg_1>true</Cfg_1>
+        <CfgParent>Base</CfgParent>
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="('$(Platform)'=='Android64' and '$(Cfg_1)'=='true') or '$(Cfg_1_Android64)'!=''">
+        <Cfg_1_Android64>true</Cfg_1_Android64>
+        <CfgParent>Cfg_1</CfgParent>
+        <Cfg_1>true</Cfg_1>
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="('$(Platform)'=='iOSDevice64' and '$(Cfg_1)'=='true') or '$(Cfg_1_iOSDevice64)'!=''">
+        <Cfg_1_iOSDevice64>true</Cfg_1_iOSDevice64>
+        <CfgParent>Cfg_1</CfgParent>
+        <Cfg_1>true</Cfg_1>
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="('$(Platform)'=='Win32' and '$(Cfg_1)'=='true') or '$(Cfg_1_Win32)'!=''">
+        <Cfg_1_Win32>true</Cfg_1_Win32>
+        <CfgParent>Cfg_1</CfgParent>
+        <Cfg_1>true</Cfg_1>
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="('$(Platform)'=='Win64' and '$(Cfg_1)'=='true') or '$(Cfg_1_Win64)'!=''">
+        <Cfg_1_Win64>true</Cfg_1_Win64>
+        <CfgParent>Cfg_1</CfgParent>
+        <Cfg_1>true</Cfg_1>
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Config)'=='Debug' or '$(Cfg_2)'!=''">
+        <Cfg_2>true</Cfg_2>
+        <CfgParent>Base</CfgParent>
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="('$(Platform)'=='Android64' and '$(Cfg_2)'=='true') or '$(Cfg_2_Android64)'!=''">
+        <Cfg_2_Android64>true</Cfg_2_Android64>
+        <CfgParent>Cfg_2</CfgParent>
+        <Cfg_2>true</Cfg_2>
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="('$(Platform)'=='iOSDevice64' and '$(Cfg_2)'=='true') or '$(Cfg_2_iOSDevice64)'!=''">
+        <Cfg_2_iOSDevice64>true</Cfg_2_iOSDevice64>
+        <CfgParent>Cfg_2</CfgParent>
+        <Cfg_2>true</Cfg_2>
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="('$(Platform)'=='Win32' and '$(Cfg_2)'=='true') or '$(Cfg_2_Win32)'!=''">
+        <Cfg_2_Win32>true</Cfg_2_Win32>
+        <CfgParent>Cfg_2</CfgParent>
+        <Cfg_2>true</Cfg_2>
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="('$(Platform)'=='Win64' and '$(Cfg_2)'=='true') or '$(Cfg_2_Win64)'!=''">
+        <Cfg_2_Win64>true</Cfg_2_Win64>
+        <CfgParent>Cfg_2</CfgParent>
+        <Cfg_2>true</Cfg_2>
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Base)'!=''">
+        <DCC_E>false</DCC_E>
+        <DCC_F>false</DCC_F>
+        <DCC_K>false</DCC_K>
+        <DCC_N>false</DCC_N>
+        <DCC_S>false</DCC_S>
+        <DCC_ImageBase>00400000</DCC_ImageBase>
+        <SanitizedProjectName>Menu</SanitizedProjectName>
+        <DCC_Namespace>Vcl;Vcl.Imaging;Vcl.Touch;Vcl.Samples;Vcl.Shell;System;Xml;Data;Datasnap;Web;Soap;Winapi;$(DCC_Namespace)</DCC_Namespace>
+        <VerInfo_Locale>11274</VerInfo_Locale>
+        <VerInfo_Keys>CompanyName=;FileDescription=;FileVersion=1.0.0.0;InternalName=;LegalCopyright=;LegalTrademarks=;OriginalFilename=;ProductName=;ProductVersion=1.0.0.0;Comments=;CFBundleName=</VerInfo_Keys>
+        <Custom_Styles>&quot;Aqua Light Slate|VCLSTYLE|$(BDSCOMMONDIR)\Styles\AquaLightSlate.vsf&quot;;Glow|VCLSTYLE|$(BDSCOMMONDIR)\Styles\Glow.vsf;&quot;Iceberg Classico|VCLSTYLE|$(BDSCOMMONDIR)\Styles\IcebergClassico.vsf&quot;;&quot;Lavender Classico|VCLSTYLE|$(BDSCOMMONDIR)\Styles\LavenderClassico.vsf&quot;;Sky|VCLSTYLE|$(BDSCOMMONDIR)\Styles\Sky.vsf;&quot;Slate Classico|VCLSTYLE|$(BDSCOMMONDIR)\Styles\SlateClassico.vsf&quot;;&quot;Tablet Dark|VCLSTYLE|$(BDSCOMMONDIR)\Styles\TabletDark.vsf&quot;;&quot;Tablet Light|VCLSTYLE|$(BDSCOMMONDIR)\Styles\TabletLight.vsf&quot;;&quot;Windows10 Blue|VCLSTYLE|$(BDSCOMMONDIR)\Styles\Windows10Blue.vsf&quot;;&quot;Windows10 Dark|VCLSTYLE|$(BDSCOMMONDIR)\Styles\Windows10Dark.vsf&quot;;&quot;Windows10 Green|VCLSTYLE|$(BDSCOMMONDIR)\Styles\Windows10Green.vsf&quot;;&quot;Windows10 Purple|VCLSTYLE|$(BDSCOMMONDIR)\Styles\Windows10Purple.vsf&quot;;&quot;Windows10 SlateGray|VCLSTYLE|$(BDSCOMMONDIR)\Styles\Windows10SlateGray.vsf&quot;;Amakrits|VCLSTYLE|$(BDSCOMMONDIR)\Styles\Amakrits.vsf;&quot;Amethyst Kamri|VCLSTYLE|$(BDSCOMMONDIR)\Styles\AmethystKamri.vsf&quot;;&quot;Aqua Graphite|VCLSTYLE|$(BDSCOMMONDIR)\Styles\AquaGraphite.vsf&quot;;Auric|VCLSTYLE|$(BDSCOMMONDIR)\Styles\Auric.vsf;Carbon|VCLSTYLE|$(BDSCOMMONDIR)\Styles\Carbon.vsf;&quot;Charcoal Dark Slate|VCLSTYLE|$(BDSCOMMONDIR)\Styles\CharcoalDarkSlate.vsf&quot;;&quot;Cobalt XEMedia|VCLSTYLE|$(BDSCOMMONDIR)\Styles\CobaltXEMedia.vsf&quot;;&quot;Cyan Dusk|VCLSTYLE|$(BDSCOMMONDIR)\Styles\CyanDusk.vsf&quot;;&quot;Cyan Night|VCLSTYLE|$(BDSCOMMONDIR)\Styles\CyanNight.vsf&quot;;&quot;Emerald Light Slate|VCLSTYLE|$(BDSCOMMONDIR)\Styles\EmeraldLightSlate.vsf&quot;;&quot;Golden Graphite|VCLSTYLE|$(BDSCOMMONDIR)\Styles\GoldenGraphite.vsf&quot;;Light|VCLSTYLE|$(BDSCOMMONDIR)\Styles\Light.vsf;Luna|VCLSTYLE|$(BDSCOMMONDIR)\Styles\Luna.vsf;Obsidian|VCLSTYLE|$(BDSCOMMONDIR)\Styles\Obsidian.vsf;&quot;Onyx Blue|VCLSTYLE|$(BDSCOMMONDIR)\Styles\OnyxBlue.vsf&quot;;&quot;Ruby Graphite|VCLSTYLE|$(BDSCOMMONDIR)\Styles\RubyGraphite.vsf&quot;;&quot;Sapphire Kamri|VCLSTYLE|$(BDSCOMMONDIR)\Styles\SapphireKamri.vsf&quot;;Silver|VCLSTYLE|$(BDSCOMMONDIR)\Styles\Silver.vsf;&quot;Smokey Quartz Kamri|VCLSTYLE|$(BDSCOMMONDIR)\Styles\SmokeyQuartzKamri.vsf&quot;;&quot;Turquoise Gray|VCLSTYLE|$(BDSCOMMONDIR)\Styles\TurquoiseGray.vsf&quot;</Custom_Styles>
+        <DCC_MapFile>3</DCC_MapFile>
+        <DCC_GenerateStackFrames>true</DCC_GenerateStackFrames>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Base_Android64)'!=''">
+        <Android_LauncherIcon192>$(BDS)\bin\Artwork\Android\FM_LauncherIcon_192x192.png</Android_LauncherIcon192>
+        <EnabledSysJars>activity-1.7.2.dex.jar;annotation-experimental-1.3.0.dex.jar;annotation-jvm-1.6.0.dex.jar;annotations-13.0.dex.jar;appcompat-1.2.0.dex.jar;appcompat-resources-1.2.0.dex.jar;billing-6.0.1.dex.jar;biometric-1.1.0.dex.jar;browser-1.4.0.dex.jar;cloud-messaging.dex.jar;collection-1.1.0.dex.jar;concurrent-futures-1.1.0.dex.jar;core-1.10.1.dex.jar;core-common-2.2.0.dex.jar;core-ktx-1.10.1.dex.jar;core-runtime-2.2.0.dex.jar;cursoradapter-1.0.0.dex.jar;customview-1.0.0.dex.jar;documentfile-1.0.0.dex.jar;drawerlayout-1.0.0.dex.jar;error_prone_annotations-2.9.0.dex.jar;exifinterface-1.3.6.dex.jar;firebase-annotations-16.2.0.dex.jar;firebase-common-20.3.1.dex.jar;firebase-components-17.1.0.dex.jar;firebase-datatransport-18.1.7.dex.jar;firebase-encoders-17.0.0.dex.jar;firebase-encoders-json-18.0.0.dex.jar;firebase-encoders-proto-16.0.0.dex.jar;firebase-iid-interop-17.1.0.dex.jar;firebase-installations-17.1.3.dex.jar;firebase-installations-interop-17.1.0.dex.jar;firebase-measurement-connector-19.0.0.dex.jar;firebase-messaging-23.1.2.dex.jar;fmx.dex.jar;fragment-1.2.5.dex.jar;google-play-licensing.dex.jar;interpolator-1.0.0.dex.jar;javax.inject-1.dex.jar;kotlin-stdlib-1.8.22.dex.jar;kotlin-stdlib-common-1.8.22.dex.jar;kotlin-stdlib-jdk7-1.8.22.dex.jar;kotlin-stdlib-jdk8-1.8.22.dex.jar;kotlinx-coroutines-android-1.6.4.dex.jar;kotlinx-coroutines-core-jvm-1.6.4.dex.jar;legacy-support-core-utils-1.0.0.dex.jar;lifecycle-common-2.6.1.dex.jar;lifecycle-livedata-2.6.1.dex.jar;lifecycle-livedata-core-2.6.1.dex.jar;lifecycle-runtime-2.6.1.dex.jar;lifecycle-service-2.6.1.dex.jar;lifecycle-viewmodel-2.6.1.dex.jar;lifecycle-viewmodel-savedstate-2.6.1.dex.jar;listenablefuture-1.0.dex.jar;loader-1.0.0.dex.jar;localbroadcastmanager-1.0.0.dex.jar;okio-jvm-3.4.0.dex.jar;play-services-ads-22.2.0.dex.jar;play-services-ads-base-22.2.0.dex.jar;play-services-ads-identifier-18.0.0.dex.jar;play-services-ads-lite-22.2.0.dex.jar;play-services-appset-16.0.1.dex.jar;play-services-base-18.1.0.dex.jar;play-services-basement-18.1.0.dex.jar;play-services-cloud-messaging-17.0.1.dex.jar;play-services-location-21.0.1.dex.jar;play-services-maps-18.1.0.dex.jar;play-services-measurement-base-20.1.2.dex.jar;play-services-measurement-sdk-api-20.1.2.dex.jar;play-services-stats-17.0.2.dex.jar;play-services-tasks-18.0.2.dex.jar;print-1.0.0.dex.jar;profileinstaller-1.3.0.dex.jar;room-common-2.2.5.dex.jar;room-runtime-2.2.5.dex.jar;savedstate-1.2.1.dex.jar;sqlite-2.1.0.dex.jar;sqlite-framework-2.1.0.dex.jar;startup-runtime-1.1.1.dex.jar;tracing-1.0.0.dex.jar;transport-api-3.0.0.dex.jar;transport-backend-cct-3.1.8.dex.jar;transport-runtime-3.1.8.dex.jar;user-messaging-platform-2.0.0.dex.jar;vectordrawable-1.1.0.dex.jar;vectordrawable-animated-1.1.0.dex.jar;versionedparcelable-1.1.1.dex.jar;viewpager-1.0.0.dex.jar;work-runtime-2.7.0.dex.jar</EnabledSysJars>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Base_iOSDevice64)'!=''">
+        <iOS_AppStore1024>$(BDS)\bin\Artwork\iOS\iPhone\FM_ApplicationIcon_1024x1024.png</iOS_AppStore1024>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Base_Win32)'!=''">
+        <DCC_Namespace>System.Win;Data.Win;Datasnap.Win;Web.Win;Soap.Win;Xml.Win;Bde;$(DCC_Namespace)</DCC_Namespace>
+        <BT_BuildType>Debug</BT_BuildType>
+        <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
+        <VerInfo_Keys>CompanyName=;FileDescription=$(MSBuildProjectName);FileVersion=1.0.0.0;InternalName=;LegalCopyright=;LegalTrademarks=;OriginalFilename=;ProductName=$(MSBuildProjectName);ProductVersion=1.0.0.0;Comments=;ProgramID=com.embarcadero.$(MSBuildProjectName)</VerInfo_Keys>
+        <VerInfo_Locale>1033</VerInfo_Locale>
+        <Manifest_File>$(BDS)\bin\default_app.manifest</Manifest_File>
+        <Icon_MainIcon>Menu_Icon11.ico</Icon_MainIcon>
+        <UWP_DelphiLogo44>$(BDS)\bin\Artwork\Windows\UWP\delphi_UwpDefault_44.png</UWP_DelphiLogo44>
+        <UWP_DelphiLogo150>$(BDS)\bin\Artwork\Windows\UWP\delphi_UwpDefault_150.png</UWP_DelphiLogo150>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Base_Win64)'!=''">
+        <Manifest_File>$(BDS)\bin\default_app.manifest</Manifest_File>
+        <Icon_MainIcon>Menu_Icon11.ico</Icon_MainIcon>
+        <UWP_DelphiLogo44>$(BDS)\bin\Artwork\Windows\UWP\delphi_UwpDefault_44.png</UWP_DelphiLogo44>
+        <UWP_DelphiLogo150>$(BDS)\bin\Artwork\Windows\UWP\delphi_UwpDefault_150.png</UWP_DelphiLogo150>
+        <DCC_Namespace>System.Win;Data.Win;Datasnap.Win;Web.Win;Soap.Win;Xml.Win;$(DCC_Namespace)</DCC_Namespace>
+        <BT_BuildType>Debug</BT_BuildType>
+        <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
+        <VerInfo_Keys>CompanyName=;FileDescription=$(MSBuildProjectName);FileVersion=1.0.0.0;InternalName=;LegalCopyright=;LegalTrademarks=;OriginalFilename=;ProgramID=com.embarcadero.$(MSBuildProjectName);ProductName=$(MSBuildProjectName);ProductVersion=1.0.0.0;Comments=</VerInfo_Keys>
+        <VerInfo_Locale>1033</VerInfo_Locale>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Cfg_1)'!=''">
+        <DCC_Define>RELEASE;$(DCC_Define)</DCC_Define>
+        <DCC_DebugInformation>0</DCC_DebugInformation>
+        <DCC_LocalDebugSymbols>false</DCC_LocalDebugSymbols>
+        <DCC_SymbolReferenceInfo>0</DCC_SymbolReferenceInfo>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Cfg_1_Android64)'!=''">
+        <BT_BuildType>Debug</BT_BuildType>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Cfg_1_iOSDevice64)'!=''">
+        <BT_BuildType>Debug</BT_BuildType>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Cfg_1_Win32)'!=''">
+        <AppDPIAwarenessMode>PerMonitorV2</AppDPIAwarenessMode>
+        <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
+        <VerInfo_MajorVer>8</VerInfo_MajorVer>
+        <VerInfo_MinorVer>9</VerInfo_MinorVer>
+        <VerInfo_Debug>true</VerInfo_Debug>
+        <VerInfo_Special>true</VerInfo_Special>
+        <VerInfo_Locale>1033</VerInfo_Locale>
+        <VerInfo_Keys>CompanyName=;FileDescription=$(MSBuildProjectName);FileVersion=8.9.0.4;InternalName=;LegalCopyright=;LegalTrademarks=;OriginalFilename=;ProductName=$(MSBuildProjectName);ProductVersion=8.9.0.0;Comments=;ProgramID=com.embarcadero.$(MSBuildProjectName);SpecialBuild=</VerInfo_Keys>
+        <VerInfo_AutoIncVersion>true</VerInfo_AutoIncVersion>
+        <VerInfo_Build>4</VerInfo_Build>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Cfg_1_Win64)'!=''">
+        <AppDPIAwarenessMode>PerMonitorV2</AppDPIAwarenessMode>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Cfg_2)'!=''">
+        <DCC_Define>DEBUG;$(DCC_Define)</DCC_Define>
+        <DCC_Optimize>false</DCC_Optimize>
+        <DCC_GenerateStackFrames>true</DCC_GenerateStackFrames>
+        <DCC_RangeChecking>true</DCC_RangeChecking>
+        <DCC_IntegerOverflowCheck>true</DCC_IntegerOverflowCheck>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Cfg_2_Android64)'!=''">
+        <BT_BuildType>Debug</BT_BuildType>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Cfg_2_iOSDevice64)'!=''">
+        <BT_BuildType>Debug</BT_BuildType>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Cfg_2_Win32)'!=''">
+        <AppDPIAwarenessMode>PerMonitorV2</AppDPIAwarenessMode>
+        <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
+        <VerInfo_MajorVer>8</VerInfo_MajorVer>
+        <VerInfo_MinorVer>9</VerInfo_MinorVer>
+        <VerInfo_Release>1</VerInfo_Release>
+        <VerInfo_Locale>1033</VerInfo_Locale>
+        <VerInfo_Keys>CompanyName=;FileDescription=$(MSBuildProjectName);FileVersion=8.9.1.9;InternalName=;LegalCopyright=;LegalTrademarks=;OriginalFilename=;ProductName=$(MSBuildProjectName);ProductVersion=8.6.1.0;Comments=;ProgramID=com.embarcadero.$(MSBuildProjectName);SpecialBuild=</VerInfo_Keys>
+        <VerInfo_Debug>true</VerInfo_Debug>
+        <VerInfo_PreRelease>true</VerInfo_PreRelease>
+        <VerInfo_Special>true</VerInfo_Special>
+        <VerInfo_AutoIncVersion>true</VerInfo_AutoIncVersion>
+        <VerInfo_Build>9</VerInfo_Build>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Cfg_2_Win64)'!=''">
+        <AppDPIAwarenessMode>PerMonitorV2</AppDPIAwarenessMode>
+    </PropertyGroup>
+    <ItemGroup>
+        <DelphiCompile Include="$(MainSource)">
+            <MainSource>MainSource</MainSource>
+        </DelphiCompile>
+        <DCCReference Include="UMenu.pas">
+            <Form>FMenu</Form>
+        </DCCReference>
+        <DCCReference Include="UAcercaDe.pas">
+            <Form>FormAcercaDe</Form>
+        </DCCReference>
+        <DCCReference Include="DMClientes.pas">
+            <Form>DatosClientes</Form>
+            <DesignClass>TDataModule</DesignClass>
+        </DCCReference>
+        <DCCReference Include="DMCompra.pas">
+            <Form>DatosCompra</Form>
+            <DesignClass>TDataModule</DesignClass>
+        </DCCReference>
+        <DCCReference Include="DMProveedores.pas">
+            <Form>DatosProveedores</Form>
+            <DesignClass>TDataModule</DesignClass>
+        </DCCReference>
+        <DCCReference Include="DMStock.pas">
+            <Form>DatosStock</Form>
+            <DesignClass>TDataModule</DesignClass>
+        </DCCReference>
+        <DCCReference Include="DMVenta.pas">
+            <Form>DatosVentas</Form>
+            <DesignClass>TDataModule</DesignClass>
+        </DCCReference>
+        <DCCReference Include="DMRecibos.pas">
+            <Form>DatosRecibos</Form>
+            <DesignClass>TDataModule</DesignClass>
+        </DCCReference>
+        <DCCReference Include="DMVentaCtdo.pas">
+            <Form>DatosVentasCtdo</Form>
+            <DesignClass>TDataModule</DesignClass>
+        </DCCReference>
+        <DCCReference Include="UBuscadorCpbte.pas">
+            <Form>FormBuscaCpbte</Form>
+        </DCCReference>
+        <DCCReference Include="ComposicionPrecio.pas">
+            <Form>FormComposicionPrecio</Form>
+        </DCCReference>
+        <DCCReference Include="DMCompraCtdo.pas">
+            <Form>DatosCompraCtdo</Form>
+            <DesignClass>TDataModule</DesignClass>
+        </DCCReference>
+        <DCCReference Include="DMPresupuesto.pas">
+            <Form>DatosPresupuesto</Form>
+            <DesignClass>TDataModule</DesignClass>
+        </DCCReference>
+        <DCCReference Include="UCtaCteCompra.pas">
+            <Form>FormCtaCteCompra</Form>
+        </DCCReference>
+        <DCCReference Include="DMOPagos.pas">
+            <Form>DatosOPago</Form>
+            <DesignClass>TDataModule</DesignClass>
+        </DCCReference>
+        <DCCReference Include="UCarteraCheques.pas">
+            <Form>FormCarteraCheques</Form>
+        </DCCReference>
+        <DCCReference Include="UCtaCteVta.pas">
+            <Form>FormCtaCteVta</Form>
+        </DCCReference>
+        <DCCReference Include="USaldosClientes.pas">
+            <Form>FormSaldosClientes</Form>
+        </DCCReference>
+        <DCCReference Include="USaldosProveedores.pas">
+            <Form>FormSaldosProveedores</Form>
+        </DCCReference>
+        <DCCReference Include="UConsultaArticuloVendido.pas">
+            <Form>FormArticulosVendidos</Form>
+        </DCCReference>
+        <DCCReference Include="UPlanillaCheTercero.pas">
+            <Form>FormPlanillaCheTercero</Form>
+        </DCCReference>
+        <DCCReference Include="UCaja.pas">
+            <Form>FormCaja</Form>
+        </DCCReference>
+        <DCCReference Include="UCambioPrecio.pas">
+            <Form>FormCambioPrecios</Form>
+        </DCCReference>
+        <DCCReference Include="UBuscarPresupuestos.pas">
+            <Form>FormBuscarPresupuestos</Form>
+        </DCCReference>
+        <DCCReference Include="UListaPreciosPersonalizada.pas">
+            <Form>FormListaPreciosPersonalizada</Form>
+        </DCCReference>
+        <DCCReference Include="URetenciones.pas">
+            <Form>FormRetenciones</Form>
+        </DCCReference>
+        <DCCReference Include="UEmpresa.pas">
+            <Form>FormEmpresa</Form>
+        </DCCReference>
+        <DCCReference Include="UConsultaStock.pas">
+            <Form>FormConsultaStock</Form>
+        </DCCReference>
+        <DCCReference Include="UPresentacion.pas">
+            <Form>FormPresentacion</Form>
+        </DCCReference>
+        <DCCReference Include="UABMBase.pas">
+            <Form>FormABMBase</Form>
+        </DCCReference>
+        <DCCReference Include="UGastosRubros.pas">
+            <Form>FormGastosRubro</Form>
+        </DCCReference>
+        <DCCReference Include="UComprobantes.pas">
+            <Form>FormComprobantes</Form>
+        </DCCReference>
+        <DCCReference Include="UMovValoresIngreso.pas">
+            <Form>FrameMovValoresIngreso</Form>
+            <DesignClass>TFrame</DesignClass>
+        </DCCReference>
+        <DCCReference Include="UEgresoCaja.pas">
+            <Form>FormEgresoCaja</Form>
+        </DCCReference>
+        <DCCReference Include="UGastosCuentas.pas">
+            <Form>FormGastosCuentas</Form>
+        </DCCReference>
+        <DCCReference Include="ULocalidades.pas">
+            <Form>FormLocalidades</Form>
+        </DCCReference>
+        <DCCReference Include="UAlicuotasIva.pas">
+            <Form>FormAlicuotasIva</Form>
+        </DCCReference>
+        <DCCReference Include="UAperturaCaja.pas">
+            <Form>FormAperturaCaja</Form>
+        </DCCReference>
+        <DCCReference Include="UAjustesCCProveedores.pas">
+            <Form>FormAjusteCCProveedores</Form>
+        </DCCReference>
+        <DCCReference Include="UInformeVta.pas">
+            <Form>FormInformeVta</Form>
+        </DCCReference>
+        <DCCReference Include="USucursal.pas">
+            <Form>FormSucursal</Form>
+        </DCCReference>
+        <DCCReference Include="UTransferencia.pas">
+            <Form>FormTransferencias</Form>
+        </DCCReference>
+        <DCCReference Include="UOPago_2.pas">
+            <Form>FormOPago_2</Form>
+        </DCCReference>
+        <DCCReference Include="UCompraCtdo_2.pas">
+            <Form>FormCompraCtdo_2</Form>
+        </DCCReference>
+        <DCCReference Include="UFacturaCtdo_2.pas">
+            <Form>FormCpbteCtdo_2</Form>
+        </DCCReference>
+        <DCCReference Include="UClientes_2.pas">
+            <Form>FormClientes_2</Form>
+        </DCCReference>
+        <DCCReference Include="UProveedor_2.pas">
+            <Form>FormProveedor_2</Form>
+        </DCCReference>
+        <DCCReference Include="UStock_2.pas">
+            <Form>FormStock_2</Form>
+        </DCCReference>
+        <DCCReference Include="UMarcas_2.pas">
+            <Form>FormMarca_2</Form>
+        </DCCReference>
+        <DCCReference Include="URubro_2.pas">
+            <Form>FormRubro_2</Form>
+        </DCCReference>
+        <DCCReference Include="USubRubro_2.pas">
+            <Form>FormSubRubros_2</Form>
+        </DCCReference>
+        <DCCReference Include="UDepositos_2.pas">
+            <Form>FormDepositos_2</Form>
+        </DCCReference>
+        <DCCReference Include="UPresupuesto_2.pas">
+            <Form>FormPresupuesto_2</Form>
+        </DCCReference>
+        <DCCReference Include="UControlNumeracion.pas">
+            <Form>FormControlNumeracion</Form>
+        </DCCReference>
+        <DCCReference Include="UAplicacionesCCCompra_2.pas">
+            <Form>FormAplicacionesCCCompra_2</Form>
+        </DCCReference>
+        <DCCReference Include="UControlCtaCte.pas">
+            <Form>FormControlCC</Form>
+        </DCCReference>
+        <DCCReference Include="URecibo_2.pas">
+            <Form>FormRecibo_2</Form>
+        </DCCReference>
+        <DCCReference Include="UAplicacionesCCVta_2.pas">
+            <Form>FormAplicacionesCCVta_2</Form>
+        </DCCReference>
+        <DCCReference Include="UControlCalculoImpuesto.pas">
+            <Form>FormControlImpuestos</Form>
+        </DCCReference>
+        <DCCReference Include="UMovValoresEgresos.pas">
+            <Form>FrameMovValoresEgresos</Form>
+            <DesignClass>TFrame</DesignClass>
+        </DCCReference>
+        <DCCReference Include="UInscripcion_2.pas">
+            <Form>FormInscripcion_2</Form>
+        </DCCReference>
+        <DCCReference Include="UCompra_2.pas">
+            <Form>FormCompra_2</Form>
+        </DCCReference>
+        <DCCReference Include="UGraficoVentas.pas">
+            <Form>FormGraficoVentas</Form>
+        </DCCReference>
+        <DCCReference Include="UPercepcionIB_2.pas">
+            <Form>FormPercepcionIB_2</Form>
+        </DCCReference>
+        <DCCReference Include="UPercepcionIva_2.pas">
+            <Form>FormPercepcionIva_2</Form>
+        </DCCReference>
+        <DCCReference Include="UTarjetaCredito_2.pas">
+            <Form>FormTCredito_2</Form>
+        </DCCReference>
+        <DCCReference Include="UChequeras_2.pas">
+            <Form>FormChequeras_2</Form>
+        </DCCReference>
+        <DCCReference Include="UCtaCaja_2.pas">
+            <Form>FormCtaCaja_2</Form>
+        </DCCReference>
+        <DCCReference Include="UFPago_2.pas">
+            <Form>FormFormaPago_2</Form>
+        </DCCReference>
+        <DCCReference Include="UBancos_2.pas">
+            <Form>FormBancos_2</Form>
+        </DCCReference>
+        <DCCReference Include="UAjustesCCClientes_2.pas">
+            <Form>FormAjustesCCVenta_2</Form>
+        </DCCReference>
+        <DCCReference Include="URentabilidad.pas">
+            <Form>FormRentabilidad</Form>
+        </DCCReference>
+        <DCCReference Include="URelacionPagoVencimientoClientes.pas">
+            <Form>FormRelacionPagoSClientes</Form>
+        </DCCReference>
+        <DCCReference Include="UAnalisisCreditoCliente.pas">
+            <Form>FormAnalisisCreditoCliente</Form>
+        </DCCReference>
+        <DCCReference Include="UAjusteMercaderia.pas">
+            <Form>FormAjustesStock</Form>
+        </DCCReference>
+        <DCCReference Include="UTRetenciones.pas">
+            <Form>FormTRetenciones</Form>
+        </DCCReference>
+        <DCCReference Include="UVtaArticulosExentos.pas">
+            <Form>FormArticulosExentosVendidos</Form>
+        </DCCReference>
+        <DCCReference Include="URemitos.pas">
+            <Form>FormRemitos</Form>
+        </DCCReference>
+        <DCCReference Include="DMRemitos.pas">
+            <Form>DatosRemitos</Form>
+            <DesignClass>TDataModule</DesignClass>
+        </DCCReference>
+        <DCCReference Include="UAgenda.pas">
+            <Form>FormAgenda</Form>
+        </DCCReference>
+        <DCCReference Include="UCondicionPago.pas">
+            <Form>FormCondicionPago</Form>
+        </DCCReference>
+        <DCCReference Include="UProvincia.pas">
+            <Form>FormProvincia</Form>
+        </DCCReference>
+        <DCCReference Include="UZona.pas">
+            <Form>FormZonas</Form>
+        </DCCReference>
+        <DCCReference Include="UGastosBancarios.pas">
+            <Form>FormMovEgr_IngBancos</Form>
+        </DCCReference>
+        <DCCReference Include="UConceptosBancarios.pas">
+            <Form>FormConceptosBancarios</Form>
+        </DCCReference>
+        <DCCReference Include="UDepositosBancarios.pas">
+            <Form>FormDepositosBancarios</Form>
+        </DCCReference>
+        <DCCReference Include="UResumenBco.pas">
+            <Form>FormResumenBco</Form>
+        </DCCReference>
+        <DCCReference Include="UBuscadorBoletaDeposito.pas">
+            <Form>FormBuscadorBoletaDepositos</Form>
+        </DCCReference>
+        <DCCReference Include="UTransferenciaEfectivo.pas">
+            <Form>FormTransferenciaEfectivo</Form>
+        </DCCReference>
+        <DCCReference Include="UTransferenciaCh3.pas">
+            <Form>FormTransferenciaChe3</Form>
+        </DCCReference>
+        <DCCReference Include="UControlCalculoImpuestoCompra.pas">
+            <Form>FormControlImpuestoCompra</Form>
+        </DCCReference>
+        <DCCReference Include="UCargos.pas">
+            <Form>FormCargos</Form>
+        </DCCReference>
+        <DCCReference Include="UPersonal.pas">
+            <Form>FormPersonal</Form>
+        </DCCReference>
+        <DCCReference Include="UAplicacionesNCCompra.pas">
+            <Form>FormAplicacionesNCCompra</Form>
+        </DCCReference>
+        <DCCReference Include="UAplicacionesNCVenta.pas">
+            <Form>FormAplicacionesNCVta</Form>
+        </DCCReference>
+        <DCCReference Include="UPlanCuentaDeGastos.pas">
+            <Form>FormPlanCuentaGastos</Form>
+        </DCCReference>
+        <DCCReference Include="UAdelantosSueldos.pas">
+            <Form>FormAdelantosSueldo</Form>
+        </DCCReference>
+        <DCCReference Include="USaldosGastos.pas">
+            <Form>FormSaldoGastos</Form>
+        </DCCReference>
+        <DCCReference Include="UChequesACaja.pas">
+            <Form>FormCheACaja</Form>
+        </DCCReference>
+        <DCCReference Include="UMoneda.pas">
+            <Form>FormMonedas</Form>
+        </DCCReference>
+        <DCCReference Include="UOpciones.pas">
+            <Form>FormOpciones</Form>
+        </DCCReference>
+        <DCCReference Include="UIngresoCaja.pas">
+            <Form>FormIngresoCaja</Form>
+        </DCCReference>
+        <DCCReference Include="UMuestraOPago.pas">
+            <Form>FormMuestraOPago</Form>
+        </DCCReference>
+        <DCCReference Include="UChequesEmitidos.pas">
+            <Form>FormChequesEmitidos</Form>
+        </DCCReference>
+        <DCCReference Include="UMuestraChe3.pas">
+            <Form>FormMuestraChe3</Form>
+        </DCCReference>
+        <DCCReference Include="UMuestraCheEmitidos.pas">
+            <Form>FormMuestraCheEmitidos</Form>
+        </DCCReference>
+        <DCCReference Include="UConsultaExistencia.pas">
+            <Form>FormExistencias</Form>
+        </DCCReference>
+        <DCCReference Include="UControlCierreFiscal.pas">
+            <Form>FormCierresFiscales</Form>
+        </DCCReference>
+        <DCCReference Include="UCambioPrecio_2.pas">
+            <Form>FormCambioPrecio_2</Form>
+        </DCCReference>
+        <DCCReference Include="UVentaPorCliente.pas">
+            <Form>FormVentaPorCliente</Form>
+        </DCCReference>
+        <DCCReference Include="UVtaPorClienteProducto.pas">
+            <Form>FormVtaClienteProducto</Form>
+        </DCCReference>
+        <DCCReference Include="UFacturarRemitos.pas">
+            <Form>FormFacturarRemitos</Form>
+        </DCCReference>
+        <DCCReference Include="UBuscaDirectorio.pas">
+            <Form>FormBuscaDirectorio</Form>
+        </DCCReference>
+        <DCCReference Include="UConfiguraIni.pas">
+            <Form>FormConfiguraIni</Form>
+        </DCCReference>
+        <DCCReference Include="UListaPresupuestos.pas">
+            <Form>FormListaPresupuestos</Form>
+        </DCCReference>
+        <DCCReference Include="UBuscaCajasCerradas.pas">
+            <Form>FormBuscaCajasCerradas</Form>
+        </DCCReference>
+        <DCCReference Include="UUnidades.pas">
+            <Form>FormUnidades</Form>
+        </DCCReference>
+        <DCCReference Include="UControladorCaja.pas">
+            <Form>FormControlCaja</Form>
+        </DCCReference>
+        <DCCReference Include="UControlComprobantesNoImpresos.pas">
+            <Form>FormControlCompNoImpresos</Form>
+        </DCCReference>
+        <DCCReference Include="UCtaCteEmpleados.pas">
+            <Form>FormCtaCteEmpleados</Form>
+        </DCCReference>
+        <DCCReference Include="UIngresosCtaEmpleados.pas">
+            <Form>FormIngresoEmpleados</Form>
+        </DCCReference>
+        <DCCReference Include="UBuscadorIngresosCtaEmpleados.pas">
+            <Form>FormBuscadorIngresosEmpleados</Form>
+        </DCCReference>
+        <DCCReference Include="UControlComisiones.pas">
+            <Form>FormControlComisiones</Form>
+        </DCCReference>
+        <DCCReference Include="UListadoCheEmitidos.pas">
+            <Form>FormListadoCheEmitidos</Form>
+        </DCCReference>
+        <DCCReference Include="UControlAsignaVendedor.pas">
+            <Form>FormAsignacionVendedor</Form>
+        </DCCReference>
+        <DCCReference Include="UListadoFcPorVendedor.pas">
+            <Form>FormFacturaPorVendedor</Form>
+        </DCCReference>
+        <DCCReference Include="UControlAperturaCaja.pas">
+            <Form>FormControlAperturaCaja</Form>
+        </DCCReference>
+        <DCCReference Include="USaldoClientesMensual.pas">
+            <Form>FormSaldoClientesMensual</Form>
+        </DCCReference>
+        <DCCReference Include="UCorrectorDecimales.pas">
+            <Form>FormCorrectorDecimales</Form>
+        </DCCReference>
+        <DCCReference Include="UManejadorTrigger.pas">
+            <Form>FormManejadorTriggers</Form>
+        </DCCReference>
+        <DCCReference Include="UFacturarRemitosAgrupados.pas">
+            <Form>FormFacturaRemitoAgrupado</Form>
+        </DCCReference>
+        <DCCReference Include="USaldoProveedoresMensual.pas">
+            <Form>FormSaldoProveedorMensual</Form>
+        </DCCReference>
+        <DCCReference Include="UListadoArtGravEnIngBrutosVentas.pas">
+            <Form>FormListadoArtGravIngBrutosVentas</Form>
+        </DCCReference>
+        <DCCReference Include="UListadoPercepciones.pas">
+            <Form>FormListaPercepciones</Form>
+        </DCCReference>
+        <DCCReference Include="UFacModelo.pas">
+            <Form>FormFacModelo</Form>
+        </DCCReference>
+        <DCCReference Include="DMFacModelo.pas">
+            <Form>DatosModelo</Form>
+            <DesignClass>TDataModule</DesignClass>
+        </DCCReference>
+        <DCCReference Include="UFacturarModelos.pas">
+            <Form>FormFacturarModelos</Form>
+        </DCCReference>
+        <DCCReference Include="UGrupoModelo.pas">
+            <Form>FormGrupoModelo</Form>
+        </DCCReference>
+        <DCCReference Include="UOrdenCompra.pas">
+            <Form>FormOrdenCompra</Form>
+        </DCCReference>
+        <DCCReference Include="DMOrdenCompra.pas">
+            <Form>DatosOrdenCompra</Form>
+            <DesignClass>TDataModule</DesignClass>
+        </DCCReference>
+        <DCCReference Include="UPreciosEspecialesClientes.pas">
+            <Form>FormPreciosEspecialesClientes</Form>
+        </DCCReference>
+        <DCCReference Include="UAjusteStockCero.pas">
+            <Form>FormAjusteStockCero</Form>
+        </DCCReference>
+        <DCCReference Include="UAnalisisIngresosEgresos.pas">
+            <Form>FormAnalisisEgresosIngresos</Form>
+        </DCCReference>
+        <DCCReference Include="UDatosClienteCabeceraCpbte.pas">
+            <Form>FormDatosClienteCabeceraCpbte</Form>
+        </DCCReference>
+        <DCCReference Include="URemplazoCheques.pas">
+            <Form>FormRemplazoCheques</Form>
+        </DCCReference>
+        <DCCReference Include="UMuestraDepositos.pas">
+            <Form>FormMuestraDepositos</Form>
+        </DCCReference>
+        <DCCReference Include="UCorrectorDeCero.pas">
+            <Form>FormCorrectorCeros</Form>
+        </DCCReference>
+        <DCCReference Include="UComparacionCompraVenta.pas">
+            <Form>FormRelacionCompraVenta</Form>
+        </DCCReference>
+        <DCCReference Include="UStockProduccion.pas">
+            <Form>FormStockProduccion</Form>
+        </DCCReference>
+        <DCCReference Include="UCostosFijos.pas">
+            <Form>FormCostosFijos</Form>
+        </DCCReference>
+        <DCCReference Include="UOrdenProduccion.pas">
+            <Form>FormOrdenProduccion</Form>
+        </DCCReference>
+        <DCCReference Include="UOProduccionProceso.pas">
+            <Form>FormOProduccionProcesando</Form>
+        </DCCReference>
+        <DCCReference Include="UOProduccionIniciada.pas">
+            <Form>FormOProduccionIniciadas</Form>
+        </DCCReference>
+        <DCCReference Include="UOCompraAutorizacion.pas">
+            <Form>FormOCompraAutorizar</Form>
+        </DCCReference>
+        <DCCReference Include="UOCompraRecepcion.pas">
+            <Form>FormOCompraRecepcion</Form>
+        </DCCReference>
+        <DCCReference Include="UOCompraImpresion.pas">
+            <Form>FormOCompraImpresion</Form>
+        </DCCReference>
+        <DCCReference Include="UCategoriaProductos.pas">
+            <Form>FormCategoriaProductos</Form>
+        </DCCReference>
+        <DCCReference Include="UProductos.pas">
+            <Form>FormProductos</Form>
+        </DCCReference>
+        <DCCReference Include="UOrdenDeTrabajo.pas">
+            <Form>FormOrdenDeTrabajo</Form>
+        </DCCReference>
+        <DCCReference Include="DMOrdenTrabajo.pas">
+            <Form>DatosOrdenDeTrabajo</Form>
+            <DesignClass>TDataModule</DesignClass>
+        </DCCReference>
+        <DCCReference Include="UTransportes.pas">
+            <Form>FormTransportes</Form>
+        </DCCReference>
+        <DCCReference Include="UOCompraNuevas.pas">
+            <Form>FormOCompraNuevas</Form>
+        </DCCReference>
+        <DCCReference Include="UOCompraRealizadas.pas">
+            <Form>FormOCompraRealizadas</Form>
+        </DCCReference>
+        <DCCReference Include="UControlCpbteEmitidos.pas">
+            <Form>FormControlCpbteEmitidos</Form>
+        </DCCReference>
+        <DCCReference Include="UGraficoIntegrado.pas">
+            <Form>FormGraficoIntegrado</Form>
+        </DCCReference>
+        <DCCReference Include="UListadoRecibos.pas">
+            <Form>FormListadoRecibos</Form>
+        </DCCReference>
+        <DCCReference Include="UAnalisiCobranza.pas">
+            <Form>FormAnalisisCobranza</Form>
+        </DCCReference>
+        <DCCReference Include="ULstCompraPorRubro.pas">
+            <Form>FormListadoCompraPorRubro</Form>
+        </DCCReference>
+        <DCCReference Include="UPlanRubo_SubRubro_Stock.pas">
+            <Form>FormPlanRubro_SubRubro_Stock</Form>
+        </DCCReference>
+        <DCCReference Include="ULibroIvaBase.pas">
+            <Form>FormLibroIvaBase</Form>
+        </DCCReference>
+        <DCCReference Include="ULibroIvaCompra_2.pas">
+            <Form>FormLibroIvaCompra_2</Form>
+        </DCCReference>
+        <DCCReference Include="ULibroIvaVenta_2.pas">
+            <Form>FormLibroIvaVenta_2</Form>
+        </DCCReference>
+        <DCCReference Include="UListadoOtPuntaje.pas">
+            <Form>FormMovimientosPuntaje</Form>
+        </DCCReference>
+        <DCCReference Include="ULstOTrabajoArchivada.pas">
+            <Form>FormOrdenTrabajoArchivadas</Form>
+        </DCCReference>
+        <DCCReference Include="UListadoOTPorCliente_ConDetalle.pas">
+            <Form>FormOrdenesTrabajoPorClienteDetalle</Form>
+        </DCCReference>
+        <DCCReference Include="URubrosProveedores.pas">
+            <Form>FormRubrosProveedores</Form>
+        </DCCReference>
+        <DCCReference Include="ULogin.pas">
+            <Form>FormLogin</Form>
+        </DCCReference>
+        <DCCReference Include="UListadoMovCaja.pas">
+            <Form>FormListadoMovCaja</Form>
+        </DCCReference>
+        <DCCReference Include="UExportadorFcComp.pas">
+            <Form>FormExportarFcComp</Form>
+        </DCCReference>
+        <DCCReference Include="UImportarFcComp.pas">
+            <Form>FormImportarFcComp</Form>
+        </DCCReference>
+        <DCCReference Include="UAsignarCodigoBarra.pas">
+            <Form>FormAsignaCodigoBarra</Form>
+        </DCCReference>
+        <DCCReference Include="UCajaUser.pas">
+            <Form>FormAsignaCajaUsuario</Form>
+        </DCCReference>
+        <DCCReference Include="UExportaArticulos.pas">
+            <Form>FormExportaStock</Form>
+        </DCCReference>
+        <DCCReference Include="UImportarStock.pas">
+            <Form>FormImportarStock</Form>
+        </DCCReference>
+        <DCCReference Include="UExportadorFcVta.pas">
+            <Form>FormExportaFcVta_XML</Form>
+        </DCCReference>
+        <DCCReference Include="UImportarFcVta.pas">
+            <Form>FormImportarFcVta</Form>
+        </DCCReference>
+        <DCCReference Include="UExpotadorClientes.pas">
+            <Form>FormExportarClientes</Form>
+        </DCCReference>
+        <DCCReference Include="UImportarClientes.pas">
+            <Form>FormImportarClientes</Form>
+        </DCCReference>
+        <DCCReference Include="UImportarProveedores.pas">
+            <Form>FormImportarProveedores</Form>
+        </DCCReference>
+        <DCCReference Include="UExpotadorProveedores.pas">
+            <Form>FormExportaProveedores</Form>
+        </DCCReference>
+        <DCCReference Include="UNotaPedido.pas">
+            <Form>FormNotaPedido</Form>
+        </DCCReference>
+        <DCCReference Include="URelacionStockProveedor.pas">
+            <Form>FormRelacionStockProveedor</Form>
+        </DCCReference>
+        <DCCReference Include="UDetalleDeNotaPedido.pas">
+            <Form>FormDetallesNotaPedido</Form>
+        </DCCReference>
+        <DCCReference Include="UBuscaProveedorStock.pas">
+            <Form>FormBuscaProveedorStock</Form>
+        </DCCReference>
+        <DCCReference Include="UMovStockPorDeposito.pas">
+            <Form>FormMovTransferenciaStock</Form>
+        </DCCReference>
+        <DCCReference Include="UCronogramaOT.pas">
+            <Form>FormCronogramaOT</Form>
+        </DCCReference>
+        <DCCReference Include="UMovPorProductos.pas">
+            <Form>FormMovProductos</Form>
+        </DCCReference>
+        <DCCReference Include="UListaPrecioEspecial.pas">
+            <Form>FormListaPrecioEspecial</Form>
+        </DCCReference>
+        <DCCReference Include="UListadoOPago.pas">
+            <Form>FormListadoOPago</Form>
+        </DCCReference>
+        <DCCReference Include="UListadoOTrabajoEmpleados.pas">
+            <Form>FormListadoOTrabajoEmpleados</Form>
+        </DCCReference>
+        <DCCReference Include="UControlUnidadesStock.pas">
+            <Form>FormControlUnidadesStock</Form>
+        </DCCReference>
+        <DCCReference Include="UListadoDepositosBancarios.pas">
+            <Form>FormListadoDepositoBco</Form>
+        </DCCReference>
+        <DCCReference Include="UComparacionPrecios.pas">
+            <Form>FormComparativaPrecios</Form>
+        </DCCReference>
+        <DCCReference Include="UArticulosAModificarPrecio.pas">
+            <Form>FormArticulosAModificarPrecio</Form>
+        </DCCReference>
+        <DCCReference Include="ULogFile.pas">
+            <Form>FormLog</Form>
+        </DCCReference>
+        <DCCReference Include="URemplazoChequesTercero.pas">
+            <Form>FormRemplazoChequesTerceros</Form>
+        </DCCReference>
+        <DCCReference Include="UListadoMovimientosStock.pas">
+            <Form>FormListadoMovStock</Form>
+        </DCCReference>
+        <DCCReference Include="UInventario.pas">
+            <Form>FormInventario</Form>
+        </DCCReference>
+        <DCCReference Include="UConsultaStockXSerie.pas">
+            <Form>FormConsultaXSerie</Form>
+        </DCCReference>
+        <DCCReference Include="UBuscaArticuloSerie.pas">
+            <Form>FormArticulosSeries</Form>
+        </DCCReference>
+        <DCCReference Include="UListadoPoliticaPrecios.pas">
+            <Form>FormListaPoliticasPrecios</Form>
+        </DCCReference>
+        <DCCReference Include="UBuscadorClientes.pas">
+            <Form>FormBuscadorClientes</Form>
+        </DCCReference>
+        <DCCReference Include="UBuscadorArticulos.pas">
+            <Form>FormBuscadorArticulos</Form>
+        </DCCReference>
+        <DCCReference Include="UComprometido.pas">
+            <Form>FormStockComprometido</Form>
+        </DCCReference>
+        <DCCReference Include="UControlMovStockVta.pas">
+            <Form>FormControlMovStockVta</Form>
+        </DCCReference>
+        <DCCReference Include="URemplazoSeries.pas">
+            <Form>FormRemplazoSeries</Form>
+        </DCCReference>
+        <DCCReference Include="UBuscadorSeries.pas">
+            <Form>FormBuscadorSeries</Form>
+        </DCCReference>
+        <DCCReference Include="UComisionesVendedores.pas">
+            <Form>FormComisionesVendedores</Form>
+        </DCCReference>
+        <DCCReference Include="UControlComisionesPorArticulo.pas">
+            <Form>FormControlComisionesPorArticulo</Form>
+        </DCCReference>
+        <DCCReference Include="UUltimaVtaCliente.pas">
+            <Form>FormUltimaVta</Form>
+        </DCCReference>
+        <DCCReference Include="URecepcionMercaderia.pas">
+            <Form>FormRecepcionMercaderia</Form>
+        </DCCReference>
+        <DCCReference Include="DMRecepMerca.pas">
+            <Form>DatosRecepMerca</Form>
+            <DesignClass>TDataModule</DesignClass>
+        </DCCReference>
+        <DCCReference Include="UBuscarRecepcionesPendientes.pas">
+            <Form>FormBuscarRecepcionesPendientes</Form>
+        </DCCReference>
+        <DCCReference Include="UResumenMovStock.pas">
+            <Form>FormResumenMovStock</Form>
+        </DCCReference>
+        <DCCReference Include="UListadoCostoArtVenta.pas">
+            <Form>FormListadoCostoArtVendidos</Form>
+        </DCCReference>
+        <DCCReference Include="UListadoVtaRubro_SubRubro.pas">
+            <Form>FormListadoVtaRubro</Form>
+        </DCCReference>
+        <DCCReference Include="UListadoSaldosEmpleados.pas">
+            <Form>FormSaldosEmpleados</Form>
+        </DCCReference>
+        <DCCReference Include="USaldoIngresos.pas">
+            <Form>FormSaldoIngresos</Form>
+        </DCCReference>
+        <DCCReference Include="UControlCantidadesStock.pas">
+            <Form>FormControlCantidadesStock</Form>
+        </DCCReference>
+        <DCCReference Include="UJuridiccion.pas">
+            <Form>FormJuridiccion</Form>
+        </DCCReference>
+        <DCCReference Include="UAdministradorSeries.pas">
+            <Form>FormAdministradorSeries</Form>
+        </DCCReference>
+        <DCCReference Include="UReasignaCtaGastoIngreso.pas">
+            <Form>FormReasignaCtasGastosIngresos</Form>
+        </DCCReference>
+        <DCCReference Include="UComprobantesUsuarios.pas">
+            <Form>FormComprobantesUsuarios</Form>
+        </DCCReference>
+        <DCCReference Include="UTasaRetGanancias.pas">
+            <Form>FormTasaRetGanancia</Form>
+        </DCCReference>
+        <DCCReference Include="UAjustesSeries.pas">
+            <Form>FormAjustesSeries</Form>
+        </DCCReference>
+        <DCCReference Include="UListadoRetencionesGanamcia.pas">
+            <Form>FormListadoRetencionesGanancias</Form>
+        </DCCReference>
+        <DCCReference Include="UFtp.pas">
+            <Form>FormFTP</Form>
+        </DCCReference>
+        <DCCReference Include="UCorreo.pas">
+            <Form>FormCorreo</Form>
+        </DCCReference>
+        <DCCReference Include="UBuscadorTipoComprobante.pas">
+            <Form>FormBuscadorComprobantes</Form>
+        </DCCReference>
+        <DCCReference Include="UAnulacionOPago.pas">
+            <Form>FormAnulacionOPago</Form>
+        </DCCReference>
+        <DCCReference Include="DMAnulacionOPagos.pas">
+            <Form>DatosAnulacionOPago</Form>
+            <DesignClass>TDataModule</DesignClass>
+        </DCCReference>
+        <DCCReference Include="UBuscadorChePropios.pas">
+            <Form>FormBuscadorChePropios</Form>
+        </DCCReference>
+        <DCCReference Include="UAnulacionChequesPropios.pas">
+            <Form>FormAnulaCheques</Form>
+        </DCCReference>
+        <DCCReference Include="UAvisoProceso.pas">
+            <Form>FormProceso</Form>
+        </DCCReference>
+        <DCCReference Include="UListadoTransfBanco.pas">
+            <Form>FormListadoTransfBanco</Form>
+        </DCCReference>
+        <DCCReference Include="UListadoDebitosBco.pas">
+            <Form>FormListadoDebitosBco</Form>
+        </DCCReference>
+        <DCCReference Include="UListadoDebitos.pas">
+            <Form>FormListadoDebitos</Form>
+        </DCCReference>
+        <DCCReference Include="UAnulacionRecibos.pas">
+            <Form>FormAnulacionRecibos</Form>
+        </DCCReference>
+        <DCCReference Include="DMAnulacionRecibos.pas">
+            <Form>DatosAnulacionRecibo</Form>
+            <DesignClass>TDataModule</DesignClass>
+        </DCCReference>
+        <DCCReference Include="UDetalleArticulosVendidos.pas">
+            <Form>FormDetalleArticulosVendidos</Form>
+        </DCCReference>
+        <DCCReference Include="ULstVtaSucursalDeCliente.pas">
+            <Form>FormListadoVta_SucursalCliente</Form>
+        </DCCReference>
+        <DCCReference Include="UTasaRetIIBB.pas">
+            <Form>FormTasaRetIIBB</Form>
+        </DCCReference>
+        <DCCReference Include="UStockPendiente.pas">
+            <Form>FormStockPendiente</Form>
+        </DCCReference>
+        <DCCReference Include="UListadoRetencionesCobranza.pas">
+            <Form>FormListadoRetencionesCobranza</Form>
+        </DCCReference>
+        <DCCReference Include="UListadoRetencionesPagos_IB.pas">
+            <Form>FormListadoRetencionesOPago_IB</Form>
+        </DCCReference>
+        <DCCReference Include="UListadoTCRecibidas.pas">
+            <Form>FormListadoMovTarjetasCreditoRecibidas</Form>
+        </DCCReference>
+        <DCCReference Include="UListadoPercIB_FcVta.pas">
+            <Form>FormListadoPercIB_FcVta</Form>
+        </DCCReference>
+        <DCCReference Include="UBuscadorRetGanancia.pas">
+            <Form>FormBuscadoRetGanancia</Form>
+        </DCCReference>
+        <DCCReference Include="UbuscadorRetIIBB.pas">
+            <Form>FormBuscadorRetIIBB</Form>
+        </DCCReference>
+        <DCCReference Include="UListadoTxStockPendientes.pas">
+            <Form>FormListadoTxStockPendientes</Form>
+        </DCCReference>
+        <DCCReference Include="UListadoFcCompraPorProveedor.pas">
+            <Form>FormListadoFcCompraPorProveedor</Form>
+        </DCCReference>
+        <DCCReference Include="UBuscadorProveedor.pas">
+            <Form>FormBuscadorProveedor</Form>
+        </DCCReference>
+        <DCCReference Include="UAvisoCambioPrecio.pas">
+            <Form>FormAvisoCambioPrecio</Form>
+        </DCCReference>
+        <DCCReference Include="UAnulacionAdelantosSueldo.pas">
+            <Form>FormAnulacionAdelantos</Form>
+        </DCCReference>
+        <DCCReference Include="UAnulacionDepositosBancarios.pas">
+            <Form>FormAnulacionDepositoBancario</Form>
+        </DCCReference>
+        <DCCReference Include="UListadoOperacionesClientes.pas">
+            <Form>FormListadoOpercionesCliente</Form>
+        </DCCReference>
+        <DCCReference Include="UControlIntegridadVentas.pas">
+            <Form>FormControlIntegridad</Form>
+        </DCCReference>
+        <DCCReference Include="UEleccionCaja.pas">
+            <Form>FormEleccionCaja</Form>
+        </DCCReference>
+        <DCCReference Include="UControlSaldoCtaCteVta.pas">
+            <Form>FormControlSaldoCtaCteVta</Form>
+        </DCCReference>
+        <DCCReference Include="Utarjetacreditocompras.pas">
+            <Form>FormTarjetaCreditoCompra</Form>
+        </DCCReference>
+        <DCCReference Include="UControlIntegridadCompra.pas">
+            <Form>FormControlIntegridadCompra</Form>
+        </DCCReference>
+        <DCCReference Include="URemitoObra.pas">
+            <Form>FormRemitoObra</Form>
+        </DCCReference>
+        <DCCReference Include="DMRemitosObra.pas">
+            <Form>DatosRemitosObra</Form>
+            <DesignClass>TDataModule</DesignClass>
+        </DCCReference>
+        <DCCReference Include="UObras.pas">
+            <Form>FormObras</Form>
+        </DCCReference>
+        <DCCReference Include="UBuscadorObras.pas">
+            <Form>FormBuscadorObras</Form>
+        </DCCReference>
+        <DCCReference Include="UPadronProveeEmbargo.pas">
+            <Form>FormPadronEmbargos</Form>
+        </DCCReference>
+        <DCCReference Include="UDetalleObras.pas">
+            <Form>FormDetallesObras</Form>
+        </DCCReference>
+        <DCCReference Include="UListaPreciosProveedor.pas">
+            <Form>FormListaPreciosProvee</Form>
+        </DCCReference>
+        <DCCReference Include="UChequesTercero.pas">
+            <Form>FormCheTercero</Form>
+        </DCCReference>
+        <DCCReference Include="UImportarClientesExcel.pas">
+            <Form>FormImportarClientesExcel</Form>
+        </DCCReference>
+        <DCCReference Include="UConsultaArticuloProveedores.pas">
+            <Form>FormConsultaArticuloProveedores</Form>
+        </DCCReference>
+        <DCCReference Include="UTasas_Ret_perc.pas">
+            <Form>FormTasasRet_Perc</Form>
+        </DCCReference>
+        <DCCReference Include="UListaPreciosTabla.pas">
+            <Form>FormListaPreciosTabla</Form>
+        </DCCReference>
+        <DCCReference Include="UMuestraListaCodBarra.pas">
+            <Form>FormMuestraListaCodigoBarra</Form>
+        </DCCReference>
+        <DCCReference Include="UTasasPerc_Ret_IIBB.pas">
+            <Form>FormTasaPercep_Ret</Form>
+        </DCCReference>
+        <DCCReference Include="URMAEnvio.pas">
+            <Form>FormRMAEnvios</Form>
+        </DCCReference>
+        <DCCReference Include="UImportarStockExcel.pas">
+            <Form>FormImportarStockExcel</Form>
+        </DCCReference>
+        <DCCReference Include="UEtiquetas.pas">
+            <Form>FormEtiquetas</Form>
+        </DCCReference>
+        <DCCReference Include="UBuscadorChequeras.pas">
+            <Form>FormBuscadorChequeras</Form>
+        </DCCReference>
+        <DCCReference Include="UListadoArtRMA.pas">
+            <Form>FormListadoRMA</Form>
+        </DCCReference>
+        <DCCReference Include="URMARecepcion.pas">
+            <Form>FormRMARecepcion</Form>
+        </DCCReference>
+        <DCCReference Include="URechazoRma.pas">
+            <Form>FormRechazoRMA</Form>
+        </DCCReference>
+        <DCCReference Include="UBuscadorTipoCpbte.pas">
+            <Form>FormBuscadorTipoCpbte</Form>
+        </DCCReference>
+        <DCCReference Include="UTiketVta.pas">
+            <Form>FormTicketVta</Form>
+        </DCCReference>
+        <DCCReference Include="DMTicket.pas">
+            <Form>DatosVentasTicket</Form>
+            <DesignClass>TDataModule</DesignClass>
+        </DCCReference>
+        <DCCReference Include="UNotaPedidoCliente.pas">
+            <Form>FormNotaPedidoCliente</Form>
+        </DCCReference>
+        <DCCReference Include="DMNPedidoCliente.pas">
+            <Form>DatosNPedidoClientes</Form>
+            <DesignClass>TDataModule</DesignClass>
+        </DCCReference>
+        <DCCReference Include="UNPedidoClientePendientes.pas">
+            <Form>FormNPedidoClientePendientes</Form>
+        </DCCReference>
+        <DCCReference Include="UDistribuidores.pas">
+            <Form>FormDistribuidores</Form>
+        </DCCReference>
+        <DCCReference Include="ULiquidacionTC.pas">
+            <Form>FormLiquidacionTC</Form>
+        </DCCReference>
+        <DCCReference Include="UConciliacionChePropios.pas">
+            <Form>FormConciliacionChePropios</Form>
+        </DCCReference>
+        <DCCReference Include="UResumenTC.pas">
+            <Form>FormResumentTC</Form>
+        </DCCReference>
+        <DCCReference Include="UVtasRubro_Subrubro.pas">
+            <Form>FormVtaRubro_SubRubro</Form>
+        </DCCReference>
+        <DCCReference Include="UImportarProveedoresExcel.pas">
+            <Form>FormImportarProveedoresExcel</Form>
+        </DCCReference>
+        <DCCReference Include="UListadoGastosTC.pas">
+            <Form>FormGastosTC</Form>
+        </DCCReference>
+        <DCCReference Include="UFiltroCpbte_Vta.pas">
+            <Form>FormFiltroCpbte_vta</Form>
+        </DCCReference>
+        <DCCReference Include="UActualizaCosto_Venta_excel.pas">
+            <Form>FormActulizaCostoVta_excel</Form>
+        </DCCReference>
+        <DCCReference Include="UFiltroCpbte_Compra.pas">
+            <Form>FormFiltroCpbte_Compra</Form>
+        </DCCReference>
+        <DCCReference Include="UIngAjustesExcel.pas">
+            <Form>FormIngAjusCCExcel</Form>
+        </DCCReference>
+        <DCCReference Include="URenombrarColumnaGrilla.pas">
+            <Form>FormRenombrarColumnaGrilla</Form>
+        </DCCReference>
+        <DCCReference Include="UListadoRelacionCompraVenta.pas">
+            <Form>FormListadoRelacionCompraVenta</Form>
+        </DCCReference>
+        <DCCReference Include="UClonadoListaPrecio.pas">
+            <Form>FormClonadorListaPrecio</Form>
+        </DCCReference>
+        <DCCReference Include="UListadoVtaArticulosClientesSuc.pas">
+            <Form>FormListadoVtaArticulosClienteSuc</Form>
+        </DCCReference>
+        <DCCReference Include="UListadoCpbteGastosBco.pas">
+            <Form>FormListadoCpbteGastoBco</Form>
+        </DCCReference>
+        <DCCReference Include="UHistorico_PrecioSombraPorArticulo.pas">
+            <Form>FormHistorico_PrecSombra_Art</Form>
+        </DCCReference>
+        <DCCReference Include="UABPrecioSombra.pas">
+            <Form>FormABPrecioSombra</Form>
+        </DCCReference>
+        <DCCReference Include="UCambioPrecio_sombra.pas">
+            <Form>FormCambioPrecioSombra</Form>
+        </DCCReference>
+        <DCCReference Include="UAsignaVendedorRC.pas">
+            <Form>FormAsignacionCobradorRC</Form>
+        </DCCReference>
+        <DCCReference Include="UListadoRecibosPorVendedor.pas">
+            <Form>FormListadoRecibosPorCobrador</Form>
+        </DCCReference>
+        <DCCReference Include="UUltimasVtasMensual.pas">
+            <Form>FormUltimaVtaMensual</Form>
+        </DCCReference>
+        <DCCReference Include="UCodigoProveedor_stock.pas">
+            <Form>FormCodigoDeProveedores_Stock</Form>
+        </DCCReference>
+        <DCCReference Include="UBuscadorDepositos.pas">
+            <Form>FormBuscadorDepositos</Form>
+        </DCCReference>
+        <DCCReference Include="UPedidosCumplidos.pas">
+            <Form>FormPedidosCumplidos</Form>
+        </DCCReference>
+        <DCCReference Include="UFlujoFondos.pas">
+            <Form>FormFlujoFondos</Form>
+        </DCCReference>
+        <DCCReference Include="UListadoClientesCondVta.pas">
+            <Form>FormListadoClienteConVenta</Form>
+        </DCCReference>
+        <DCCReference Include="UListadoFacVencidas.pas">
+            <Form>FormListadoFacVencidas</Form>
+        </DCCReference>
+        <DCCReference Include="UListadovtaPorVendedor.pas">
+            <Form>FormlistadoVtaPorVendedor</Form>
+        </DCCReference>
+        <DCCReference Include="UBuscadorSubRubrosStock.pas">
+            <Form>FormBuscadorSubRubroStock</Form>
+        </DCCReference>
+        <DCCReference Include="UComposicionCobranza.pas">
+            <Form>FormComposicionCobranza</Form>
+        </DCCReference>
+        <DCCReference Include="UBuscadorClientesAgenda.pas">
+            <Form>FormBuscadorClientesAgenda</Form>
+        </DCCReference>
+        <DCCReference Include="USaldoClientesMensualAFecha.pas">
+            <Form>FormSaldoClientesAlDia</Form>
+        </DCCReference>
+        <DCCReference Include="UABCClientes.pas">
+            <Form>FormABCClientes</Form>
+        </DCCReference>
+        <DCCReference Include="UAlias.pas">
+            <Form>FormAlias</Form>
+        </DCCReference>
+        <DCCReference Include="UListCpbteNoImportados.pas">
+            <Form>FormListaNoImportados</Form>
+        </DCCReference>
+        <DCCReference Include="UListadoCpbteVtaPorTipo.pas">
+            <Form>FormListadoCpbteVtaPorTipo</Form>
+        </DCCReference>
+        <DCCReference Include="UCodigoBarra.pas">
+            <Form>FormCodigosBarra</Form>
+        </DCCReference>
+        <DCCReference Include="UPresentaciones.pas">
+            <Form>Formpresentaciones</Form>
+        </DCCReference>
+        <DCCReference Include="UDetalleOperacionesProvee.pas">
+            <Form>FormDetalleOperacionesProvee</Form>
+        </DCCReference>
+        <DCCReference Include="UChe3DeppositadosAntes.pas">
+            <Form>FormChe3DepositadoAntes</Form>
+        </DCCReference>
+        <DCCReference Include="UDetalleCompraArticulo.pas">
+            <Form>formDetalleCompraArticulo</Form>
+        </DCCReference>
+        <DCCReference Include="URegimenRetencionIVA.pas">
+            <Form>FormRegimenRetencionIVA</Form>
+        </DCCReference>
+        <DCCReference Include="URemitosPendientesFacturacion.pas">
+            <Form>FormRtoPendientes</Form>
+        </DCCReference>
+        <DCCReference Include="UPersonalAcciones.pas">
+            <Form>FormPersonalAcciones</Form>
+        </DCCReference>
+        <DCCReference Include="UListadoConsumosTC.pas">
+            <Form>FormListadoConsumosTC</Form>
+        </DCCReference>
+        <DCCReference Include="UTransf_Interbnacarias.pas">
+            <Form>FormTransferenciasInterbancarias</Form>
+        </DCCReference>
+        <DCCReference Include="URemplazoValoresIngresados.pas">
+            <Form>FormReemplazoValoresIng</Form>
+        </DCCReference>
+        <DCCReference Include="UAsignarLote.pas">
+            <Form>FormAsignacionLoteTC</Form>
+        </DCCReference>
+        <DCCReference Include="UPasaACC.pas">
+            <Form>FormTransformaFactura</Form>
+        </DCCReference>
+        <DCCReference Include="UCambiaNumeroCpbte.pas">
+            <Form>FormCambiaNroCpbte</Form>
+        </DCCReference>
+        <DCCReference Include="UPlantillas.pas">
+            <Form>FormPlantillas</Form>
+        </DCCReference>
+        <DCCReference Include="UAbonosGrupos.pas">
+            <Form>FormAbonosGrupos</Form>
+        </DCCReference>
+        <DCCReference Include="UListadoAjuestesStock.pas">
+            <Form>FormListadoAjustesStock</Form>
+        </DCCReference>
+        <DCCReference Include="UAbonosGrilla.pas">
+            <Form>FormAbonosGrilla</Form>
+        </DCCReference>
+        <DCCReference Include="UGeneradorCupones.pas">
+            <Form>FormGeneradorCupones</Form>
+        </DCCReference>
+        <DCCReference Include="UDescuentosUsuarios.pas">
+            <Form>FormDescuentosUsuarios</Form>
+        </DCCReference>
+        <DCCReference Include="UListaPreciosUsuario.pas">
+            <Form>FormListaPrecioUsuarios</Form>
+        </DCCReference>
+        <DCCReference Include="UReciboAbonos.pas">
+            <Form>FormReciboAbonos</Form>
+        </DCCReference>
+        <DCCReference Include="UAbonosCupon.pas">
+            <Form>FormAbonosCupon</Form>
+        </DCCReference>
+        <DCCReference Include="UAdminstracionTareas.pas">
+            <Form>FormAdminTareas</Form>
+        </DCCReference>
+        <DCCReference Include="UPresupuestoOC.pas">
+            <Form>FormPresupuestoOC</Form>
+        </DCCReference>
+        <DCCReference Include="UDescto_Presupuesto_oc.pas">
+            <Form>FormDescuentosPresupOC</Form>
+        </DCCReference>
+        <DCCReference Include="URecargos_Presupuesto_oc.pas">
+            <Form>FormRecargosPresupOC</Form>
+        </DCCReference>
+        <DCCReference Include="UBuscadorArticulosProveedor.pas">
+            <Form>FormBuscadorArtiProv</Form>
+        </DCCReference>
+        <DCCReference Include="UFecha.pas">
+            <Form>FormFecha</Form>
+        </DCCReference>
+        <DCCReference Include="UBuscaCupones.pas">
+            <Form>FormBuscadorCupones</Form>
+        </DCCReference>
+        <DCCReference Include="UCambiaClienteFecha_Recibo.pas">
+            <Form>FormCambioClienteFecha_RC</Form>
+        </DCCReference>
+        <DCCReference Include="UListadoVtasVsCobros.pas">
+            <Form>FormVentasVsCobranza</Form>
+        </DCCReference>
+        <DCCReference Include="UControlRetenciones.pas">
+            <Form>FormControlRetenciones</Form>
+        </DCCReference>
+        <DCCReference Include="UControlCuponTC.pas">
+            <Form>FormControlCuponTC</Form>
+        </DCCReference>
+        <DCCReference Include="UTxCajaPendientes.pas">
+            <Form>FormTxPendientes</Form>
+        </DCCReference>
+        <DCCReference Include="UDetallesNc_Rec.pas">
+            <Form>FormdetallesNc_Rec</Form>
+        </DCCReference>
+        <DCCReference Include="UListaBuscadorOrdenCompra.pas">
+            <Form>FormListaOrdenCompra</Form>
+        </DCCReference>
+        <DCCReference Include="UMuestraCpbteCtaCteVta.pas">
+            <Form>FormMuestraCpbteCtaCteVta</Form>
+        </DCCReference>
+        <DCCReference Include="UImportarMarcasExcel.pas">
+            <Form>FormImportarMarcasExcel</Form>
+        </DCCReference>
+        <DCCReference Include="UCambioClienteFactura.pas">
+            <Form>FormCambiaClienteFactura</Form>
+        </DCCReference>
+        <DCCReference Include="UListadoCpbteCompPorTipo.pas">
+            <Form>FormListadoCpbteCompPorTipo</Form>
+        </DCCReference>
+        <DCCReference Include="UCategoriaCliente.pas">
+            <Form>FormCategoriasClientes</Form>
+        </DCCReference>
+        <DCCReference Include="UClientesIncidencias.pas">
+            <Form>FormClientesIncidencias</Form>
+        </DCCReference>
+        <DCCReference Include="UNotaVenta.pas">
+            <Form>FormNotaVta</Form>
+        </DCCReference>
+        <DCCReference Include="UDepositosUsuarios.pas">
+            <Form>FormDepositosUsuarios</Form>
+        </DCCReference>
+        <DCCReference Include="UListadoConsumosObras.pas">
+            <Form>FormListadoConsumosObras</Form>
+        </DCCReference>
+        <DCCReference Include="UABMLineaNotaVta.pas">
+            <Form>FormABMLineaNotavta</Form>
+        </DCCReference>
+        <DCCReference Include="UNotasVersion.pas">
+            <Form>FormNotas</Form>
+        </DCCReference>
+        <DCCReference Include="UUsuariosAutorizanPrecios.pas">
+            <Form>FormUsuariosAutorizan</Form>
+        </DCCReference>
+        <DCCReference Include="UListadoTxCaja.pas">
+            <Form>FormListadoTxCaja</Form>
+        </DCCReference>
+        <DCCReference Include="UListadoNVPendientes.pas">
+            <Form>FormListadoNVPendientes</Form>
+        </DCCReference>
+        <DCCReference Include="UListadoAcreditacionesTC.pas">
+            <Form>FormListadoAcreditacionesTC</Form>
+        </DCCReference>
+        <DCCReference Include="UBuscadorNotaVenta.pas">
+            <Form>FormBuscadorNotaVenta</Form>
+        </DCCReference>
+        <DCCReference Include="UControlNroRto.pas">
+            <Form>FormControlNroRto</Form>
+        </DCCReference>
+        <DCCReference Include="UListadoRtosAFiscal.pas">
+            <Form>FormRtosAFiscal</Form>
+        </DCCReference>
+        <DCCReference Include="UListadoStock.pas">
+            <Form>FormListadoStock</Form>
+        </DCCReference>
+        <DCCReference Include="UReArmaResumenBco.pas">
+            <Form>FormReArmaResumenBco</Form>
+        </DCCReference>
+        <DCCReference Include="UControlErroresMov.pas">
+            <Form>FormControlErroresMovimientos</Form>
+        </DCCReference>
+        <DCCReference Include="UPlantillas_Grillas.pas">
+            <Form>FormPlantillas_Grillas</Form>
+        </DCCReference>
+        <DCCReference Include="UIngresoURL.pas">
+            <Form>FormURL</Form>
+        </DCCReference>
+        <DCCReference Include="UListadoStockGeneral.pas">
+            <Form>FormListadoStockGral</Form>
+        </DCCReference>
+        <DCCReference Include="UNotaTransfStock.pas">
+            <Form>FormNota_TransfStock</Form>
+        </DCCReference>
+        <DCCReference Include="UListadoNotaPedido.pas">
+            <Form>FormListadoNotaPedido</Form>
+        </DCCReference>
+        <DCCReference Include="DMNotasTransf.pas">
+            <Form>DatosNotaTransferencia</Form>
+            <DesignClass>TDataModule</DesignClass>
+        </DCCReference>
+        <DCCReference Include="UBuscadorNotaTransf.pas">
+            <Form>FormBuscadorNotaTransferencia</Form>
+        </DCCReference>
+        <DCCReference Include="UCambioCodigoCliente.pas">
+            <Form>FormCambioCodigoCliente</Form>
+        </DCCReference>
+        <DCCReference Include="USaldoClientes_x_Cliente.pas">
+            <Form>FormsaldoClientes_x_Cliente</Form>
+        </DCCReference>
+        <DCCReference Include="UGeoPosicionClientes.pas">
+            <Form>FormPosicionGeoClientes</Form>
+        </DCCReference>
+        <DCCReference Include="UGoogleMap.pas">
+            <Form>FormGoogleMap</Form>
+        </DCCReference>
+        <DCCReference Include="UMuestraUltimoNroCpbte.pas">
+            <Form>FormMuestraUltimoProximoNroCpbte</Form>
+        </DCCReference>
+        <DCCReference Include="UVtaPorVendedorDiaria.pas">
+            <Form>FormVtaVendedorDiaria</Form>
+        </DCCReference>
+        <DCCReference Include="UAvisoCambioPrecioCompra.pas">
+            <Form>FormAvisoCambioPrecioCompra</Form>
+        </DCCReference>
+        <DCCReference Include="UIngresoCotizacion.pas">
+            <Form>FormCotizacion</Form>
+        </DCCReference>
+        <DCCReference Include="UControlChe3.pas">
+            <Form>FormControlChe3</Form>
+        </DCCReference>
+        <DCCReference Include="UMuestraSaldoCliente.pas">
+            <Form>FormSaldoUnCLiente</Form>
+        </DCCReference>
+        <DCCReference Include="UChequesEmitidosDetalle.pas">
+            <Form>FormChequesEmitidosDetalle</Form>
+        </DCCReference>
+        <DCCReference Include="UUsuariosAdminNP.pas">
+            <Form>FormUsuariosAdminNP</Form>
+        </DCCReference>
+        <DCCReference Include="UGrupoDetalleFacturacion.pas">
+            <Form>FormGrupoDetalleFactura</Form>
+        </DCCReference>
+        <DCCReference Include="UAsignaGrupoDetalleVta.pas">
+            <Form>FormAgrupamientoDetalle</Form>
+        </DCCReference>
+        <DCCReference Include="UProveedor_x_CtaOrden.pas">
+            <Form>FormProveedor_x_CtaOrden</Form>
+        </DCCReference>
+        <DCCReference Include="UCambiaClaseComprobante.pas">
+            <Form>FormCambiarClaseCpbte</Form>
+        </DCCReference>
+        <DCCReference Include="DMMainForm_2.pas">
+            <Form>DMMain_2</Form>
+            <DesignClass>TDataModule</DesignClass>
+        </DCCReference>
+        <DCCReference Include="DMBuscadoresForm.pas">
+            <Form>DMBuscadores</Form>
+            <DesignClass>TDataModule</DesignClass>
+        </DCCReference>
+        <DCCReference Include="DMStoreProcedureForm.pas">
+            <Form>DMStoreProcedure</Form>
+            <DesignClass>TDataModule</DesignClass>
+        </DCCReference>
+        <DCCReference Include="UPlanillaArmado.pas">
+            <Form>FormPlanillaArmado</Form>
+        </DCCReference>
+        <DCCReference Include="DMArmadoProductos.pas">
+            <Form>DatosArmadoProductos</Form>
+            <DesignClass>TDataModule</DesignClass>
+        </DCCReference>
+        <DCCReference Include="UBuscadorPlanillaProduccion.pas">
+            <Form>FormBuscadorPlanillaArmadoProduccion</Form>
+        </DCCReference>
+        <DCCReference Include="UCambiaProv_Fecha_OPago.pas">
+            <Form>FormCambiaProvFecha_OPago</Form>
+        </DCCReference>
+        <DCCReference Include="UFacturarPlantillas.pas">
+            <Form>FormFacturaPlantillas</Form>
+        </DCCReference>
+        <DCCReference Include="UConfiguracionRecibo.pas">
+            <Form>FormConfiguracionRecibo</Form>
+        </DCCReference>
+        <DCCReference Include="DMNotaVenta.pas">
+            <Form>DatosNotaVenta</Form>
+            <DesignClass>TDataModule</DesignClass>
+        </DCCReference>
+        <DCCReference Include="DMPresupuestoOC.pas">
+            <Form>DatosPresupuestoOC</Form>
+            <DesignClass>TDataModule</DesignClass>
+        </DCCReference>
+        <DCCReference Include="USumaAplicaciones.pas">
+            <Form>FormSumaAplicaciones</Form>
+        </DCCReference>
+        <DCCReference Include="UMuestraCpbteCtaCteCompra.pas">
+            <Form>FormMuestraCpbteCtaCteCompra</Form>
+        </DCCReference>
+        <DCCReference Include="DMCaja.pas">
+            <Form>DatosCaja</Form>
+            <DesignClass>TDataModule</DesignClass>
+        </DCCReference>
+        <DCCReference Include="UConfiguracionOrdenPago.pas">
+            <Form>FormConfiguracionOPago</Form>
+        </DCCReference>
+        <DCCReference Include="UMontoATransferir.pas">
+            <Form>FormMontoATransferir</Form>
+        </DCCReference>
+        <DCCReference Include="URecepcionGarantias.pas">
+            <Form>FormRecepGarantia</Form>
+        </DCCReference>
+        <DCCReference Include="DMLiquidacionTC.pas">
+            <Form>DatosLiquidacionTC</Form>
+            <DesignClass>TDataModule</DesignClass>
+        </DCCReference>
+        <DCCReference Include="UControlItemCompra.pas">
+            <Form>FormControlDetalleComp</Form>
+        </DCCReference>
+        <DCCReference Include="UListadoStockConsignacion.pas">
+            <Form>FormStockConsignacion</Form>
+        </DCCReference>
+        <DCCReference Include="DMGastosBancarios.pas">
+            <Form>DatosGastosBco</Form>
+            <DesignClass>TDataModule</DesignClass>
+        </DCCReference>
+        <DCCReference Include="UListadoRecepGtias.pas">
+            <Form>FormListadoRecepGtias</Form>
+        </DCCReference>
+        <DCCReference Include="UJuridicion_Localidad.pas">
+            <Form>FormJuridicion_Localidad</Form>
+        </DCCReference>
+        <DCCReference Include="UConsultaPrecio.pas">
+            <Form>FormConsultaPrecio</Form>
+        </DCCReference>
+        <DCCReference Include="UGtias_Ext.pas">
+            <Form>FormGtias_Ext</Form>
+        </DCCReference>
+        <DCCReference Include="UListadoRecibosPorVendedor_2.pas">
+            <Form>FormListadoRecibosPorCobrador_2</Form>
+        </DCCReference>
+        <DCCReference Include="UControlMesesGtia.pas">
+            <Form>FormControlGtia</Form>
+        </DCCReference>
+        <DCCReference Include="UAsignacionJuridiccion.pas">
+            <Form>FormAsignacionJuridiccion</Form>
+        </DCCReference>
+        <DCCReference Include="UCambiaDespositoFc.pas">
+            <Form>FormCambioDeposito</Form>
+        </DCCReference>
+        <DCCReference Include="UJuridiccionExcepcion.pas">
+            <Form>FormJuridicion_Sucursal</Form>
+        </DCCReference>
+        <DCCReference Include="UListadoClientesUltimaVta.pas">
+            <Form>FormListadoUltimaVtaCliente</Form>
+        </DCCReference>
+        <DCCReference Include="UCantidadEtiquetas.pas">
+            <Form>FormCantidadEtiquetas</Form>
+        </DCCReference>
+        <DCCReference Include="UBuscadorBaseDatos.pas">
+            <Form>FormBuscadorBaseDatos</Form>
+        </DCCReference>
+        <DCCReference Include="UImagen.pas">
+            <Form>FormImagen</Form>
+        </DCCReference>
+        <DCCReference Include="UDepositoTxMercaderia.pas">
+            <Form>FormMuestraDepositoTransferencia</Form>
+        </DCCReference>
+        <DCCReference Include="USumaAplicacionesRc.pas">
+            <Form>FormSumaAplicacionesRc</Form>
+        </DCCReference>
+        <DCCReference Include="UPanelControlOP.pas">
+            <Form>FormControlOP</Form>
+        </DCCReference>
+        <DCCReference Include="UListadoChePorOrdenPago.pas">
+            <Form>FormListadoChePor_OPago</Form>
+        </DCCReference>
+        <DCCReference Include="UNumeroOperacion.pas">
+            <Form>FormNumeroOperacion</Form>
+        </DCCReference>
+        <DCCReference Include="UServicioTecnico.pas">
+            <Form>FormServicioTecnico</Form>
+        </DCCReference>
+        <DCCReference Include="UArticulosSTExterno.pas">
+            <Form>FormArticulos_STExterno</Form>
+        </DCCReference>
+        <DCCReference Include="UAcopio.pas">
+            <Form>FormAcopio</Form>
+        </DCCReference>
+        <DCCReference Include="UBuscadorAcopios.pas">
+            <Form>FormBuscadorAcopios</Form>
+        </DCCReference>
+        <DCCReference Include="URtoEntregaAcopio.pas">
+            <Form>FormRtoEntregaAcopio</Form>
+        </DCCReference>
+        <DCCReference Include="UListadoCompraArticulosProveedor.pas">
+            <Form>FormLisCompraArt_Proveedor</Form>
+        </DCCReference>
+        <DCCReference Include="ULstComparativoArtPorCompra.pas">
+            <Form>FormComparaArtPorCompra</Form>
+        </DCCReference>
+        <DCCReference Include="UTransferenciasStockAnulada.pas">
+            <Form>FormTransfStockAnuladas</Form>
+        </DCCReference>
+        <DCCReference Include="UCambioProveedorFactura.pas">
+            <Form>FormCambiaProveedorFactura</Form>
+        </DCCReference>
+        <DCCReference Include="UCambioCodigoStock.pas">
+            <Form>FormCambioCodigoStock</Form>
+        </DCCReference>
+        <DCCReference Include="UListarFacturasFrezadas.pas">
+            <Form>FormListadoFacturasClonadas</Form>
+        </DCCReference>
+        <DCCReference Include="URelacionCobranzaVencimiento.pas">
+            <Form>FormRelacionCobranzaVencimiento</Form>
+        </DCCReference>
+        <DCCReference Include="UIngresaNroOP.pas">
+            <Form>FormIngresaNroOP</Form>
+        </DCCReference>
+        <DCCReference Include="UIngresoCantNV.pas">
+            <Form>FormIngresoCantidad</Form>
+        </DCCReference>
+        <DCCReference Include="UValorCuotaTC.pas">
+            <Form>FormValorCuotaTC</Form>
+        </DCCReference>
+        <DCCReference Include="UIngresoCantNT.pas">
+            <Form>FormIngresoCantidadNT</Form>
+        </DCCReference>
+        <DCCReference Include="ULista_Stock_rub_subrub.pas">
+            <Form>FormLista_Stock_Rub_SubRub</Form>
+        </DCCReference>
+        <DCCReference Include="UBuscadorCtaContables.pas">
+            <Form>FormBuscadorCtaContable</Form>
+        </DCCReference>
+        <DCCReference Include="DMContableForm.pas">
+            <Form>DMContable</Form>
+            <DesignClass>TDataModule</DesignClass>
+        </DCCReference>
+        <DCCReference Include="UCtaContables.pas">
+            <Form>FrameCtaContable</Form>
+            <DesignClass>TFrame</DesignClass>
+        </DCCReference>
+        <DCCReference Include="UListadoGastoRefContable.pas">
+            <Form>FormListadoGastoRefContable</Form>
+        </DCCReference>
+        <DCCReference Include="UConfiguraPath.pas">
+            <Form>FormConfiguraPath</Form>
+        </DCCReference>
+        <DCCReference Include="UClaveVerificada.pas">
+            <Form>FormClaveVerificada</Form>
+        </DCCReference>
+        <DCCReference Include="UAdministraEstadoStock.pas">
+            <Form>FormAdminEstadosStock</Form>
+        </DCCReference>
+        <DCCReference Include="UImportarPorcentajes.pas">
+            <Form>FormImportarPorcentajes</Form>
+        </DCCReference>
+        <DCCReference Include="UNumeroInterno.pas">
+            <Form>FormNumeroInterno</Form>
+        </DCCReference>
+        <DCCReference Include="UImportarRubroExcel.pas">
+            <Form>FormImportarRubroExcel</Form>
+        </DCCReference>
+        <DCCReference Include="UImportarSubRubroExcel.pas">
+            <Form>FormImportarSubRubroExcel</Form>
+        </DCCReference>
+        <DCCReference Include="UIngresoLotePersonal.pas">
+            <Form>FormRetiroLotesPersonal</Form>
+        </DCCReference>
+        <DCCReference Include="UPanelVtas_Compras.pas">
+            <Form>FormPanelVtas_Compras</Form>
+        </DCCReference>
+        <DCCReference Include="UCambioCajaMov.pas">
+            <Form>FormCambioCajaMov</Form>
+        </DCCReference>
+        <DCCReference Include="UBuscadorReciboNroInt.pas">
+            <Form>FormBuscadorReciboNroInt</Form>
+        </DCCReference>
+        <DCCReference Include="UImportarVtas_PtoVta.pas">
+            <Form>FormImportarVtas_PtoVtaMorphi</Form>
+        </DCCReference>
+        <DCCReference Include="USeleccionCajaNC.pas">
+            <Form>FormSeleccionCajaNC</Form>
+        </DCCReference>
+        <DCCReference Include="UReemplazoSubRubro.pas">
+            <Form>FormRemplazoSubRubro</Form>
+        </DCCReference>
+        <DCCReference Include="UMuestraArtPorSubRub.pas">
+            <Form>FormMuestraArtPorSubRubros</Form>
+        </DCCReference>
+        <DCCReference Include="UCambioListaClientes.pas">
+            <Form>FormCambioListaCliente</Form>
+        </DCCReference>
+        <DCCReference Include="UBuscadorMarcas.pas">
+            <Form>FormBuscadorMarca</Form>
+        </DCCReference>
+        <DCCReference Include="UVencimientos.pas">
+            <Form>FormVencimientos</Form>
+        </DCCReference>
+        <DCCReference Include="UABMVencimientos.pas">
+            <Form>FormABMVencimientos</Form>
+        </DCCReference>
+        <DCCReference Include="UFiltroComprobantesVenta.pas">
+            <Form>FormFiltroCpbtes</Form>
+        </DCCReference>
+        <DCCReference Include="UABCCompraArticulos.pas">
+            <Form>FormABCCompraArticulos</Form>
+        </DCCReference>
+        <DCCReference Include="UControlCpbteRecibidos.pas">
+            <Form>FormCpbteRecibidos</Form>
+        </DCCReference>
+        <DCCReference Include="UImpresionCUponesAbonos.pas">
+            <Form>FormImpresionCuponesAbonos</Form>
+        </DCCReference>
+        <DCCReference Include="UResumenVentas.pas">
+            <Form>FormResumenVentas</Form>
+        </DCCReference>
+        <DCCReference Include="UGrafico.pas">
+            <Form>FormGrafico</Form>
+        </DCCReference>
+        <DCCReference Include="UResumenVtasRubros_Subr_anual.pas">
+            <Form>FormResumenVtaRubro_Sub_Anual</Form>
+        </DCCReference>
+        <DCCReference Include="UResumenVtasAnualVendedor.pas">
+            <Form>FormResumenAnualVtasVendedor</Form>
+        </DCCReference>
+        <DCCReference Include="UPrecioEspecialCliente.pas">
+            <Form>FormLstPreciosEspecialesClientes</Form>
+        </DCCReference>
+        <DCCReference Include="UPagosPersonalAnual.pas">
+            <Form>FormPagosPersonalAnual</Form>
+        </DCCReference>
+        <DCCReference Include="UCambioArticuloVta.pas">
+            <Form>FormCambiaArticuloEnVtas</Form>
+        </DCCReference>
+        <DCCReference Include="UCambioVendedor.pas">
+            <Form>FormCambioVendedor</Form>
+        </DCCReference>
+        <DCCReference Include="UCheCompartidos.pas">
+            <Form>FormCheCompartidos</Form>
+        </DCCReference>
+        <DCCReference Include="UControlRtosVsPedido.pas">
+            <Form>FormControlRtosVsPedido</Form>
+        </DCCReference>
+        <DCCReference Include="UBuscadorCheCompartido.pas">
+            <Form>FormBuscadoCheCompartido</Form>
+        </DCCReference>
+        <DCCReference Include="UListadoChRecibidos.pas">
+            <Form>FormListadoChRecibidos</Form>
+        </DCCReference>
+        <DCCReference Include="UNotasCambio.pas">
+            <Form>FormNotas_Cambio</Form>
+        </DCCReference>
+        <DCCReference Include="DMNotasCambio.pas">
+            <Form>DatosNotasCambio</Form>
+            <DesignClass>TDataModule</DesignClass>
+        </DCCReference>
+        <DCCReference Include="UModoVenta.pas">
+            <Form>FormModoVta</Form>
+        </DCCReference>
+        <DCCReference Include="UConfiguracionNotaCambio.pas">
+            <Form>FormConfiguracionNotaCambio</Form>
+        </DCCReference>
+        <DCCReference Include="UBuscadorCambiosArticulos.pas">
+            <Form>FormBuscadorCambios</Form>
+        </DCCReference>
+        <DCCReference Include="UClienteCotizacion.pas">
+            <Form>FormClienteCotizacion</Form>
+        </DCCReference>
+        <DCCReference Include="UMovTemporalStock.pas">
+            <Form>FormMovTemporalesStock</Form>
+        </DCCReference>
+        <DCCReference Include="UControlMovCtaCteVta_detalle.pas">
+            <Form>FormControlMovCtaVta_Detalles</Form>
+        </DCCReference>
+        <DCCReference Include="UReferenciasPreciosClientes.pas">
+            <Form>FormReferencias</Form>
+        </DCCReference>
+        <DCCReference Include="UAsignacionesEmpleados.pas">
+            <Form>FormAsignacionesPersonal</Form>
+        </DCCReference>
+        <DCCReference Include="UListadoCpbteVta.pas">
+            <Form>FormListadoCpbteVta</Form>
+        </DCCReference>
+        <DCCReference Include="UListadoCpbteCompra.pas">
+            <Form>FormListCpbteCompra</Form>
+        </DCCReference>
+        <DCCReference Include="UStock_descuentos.pas">
+            <Form>FormStock_Dstos</Form>
+        </DCCReference>
+        <DCCReference Include="UListaPorSucursal.pas">
+            <Form>FormListaSucursal</Form>
+        </DCCReference>
+        <DCCReference Include="UComposicionIvaVta.pas">
+            <Form>FormComposicionIvaVta</Form>
+        </DCCReference>
+        <DCCReference Include="UBuscadorReciboCupon.pas">
+            <Form>FormBuscadorPagoCupones</Form>
+        </DCCReference>
+        <DCCReference Include="UControlVtoCupones.pas">
+            <Form>FormControlVtoCupones</Form>
+        </DCCReference>
+        <DCCReference Include="UIngresosCtaEmpleadoLote.pas">
+            <Form>FormIngresoPorLotePersonal</Form>
+        </DCCReference>
+        <DCCReference Include="UComprobContabilizar.pas">
+            <Form>FormCpbteContabilizar</Form>
+        </DCCReference>
+        <DCCReference Include="UGraficoEgresos.pas">
+            <Form>FormGraficoEgresos</Form>
+        </DCCReference>
+        <DCCReference Include="UConceptosPlantillas.pas">
+            <Form>FormConceptosPlantillas</Form>
+        </DCCReference>
+        <DCCReference Include="UListadoOperaciones.pas">
+            <Form>FormListaPorOperaciones</Form>
+        </DCCReference>
+        <DCCReference Include="UControlItemVta.pas">
+            <Form>FormControlDetalleVta</Form>
+        </DCCReference>
+        <DCCReference Include="UPanelImportacionVtas.pas">
+            <Form>FormPanelImportacionVta</Form>
+        </DCCReference>
+        <DCCReference Include="UCambiaFechaNroChe.pas">
+            <Form>FormModificarDatosChPropio</Form>
+        </DCCReference>
+        <DCCReference Include="USeleccionLista.pas">
+            <Form>FormSeleccionLista</Form>
+        </DCCReference>
+        <DCCReference Include="DMImportacion.pas">
+            <Form>DatosImportacion</Form>
+            <DesignClass>TDataModule</DesignClass>
+        </DCCReference>
+        <DCCReference Include="DMImportacion_Input.pas">
+            <Form>DatosImportacionInput</Form>
+            <DesignClass>TDataModule</DesignClass>
+        </DCCReference>
+        <DCCReference Include="UPanelImportacionComp.pas">
+            <Form>FormPanelImportacionComp</Form>
+        </DCCReference>
+        <DCCReference Include="DMImportacionComp.pas">
+            <Form>DatosImportacioComp</Form>
+            <DesignClass>TDataModule</DesignClass>
+        </DCCReference>
+        <DCCReference Include="DMImportacionComp_Input.pas">
+            <Form>DatosImportacionComp_Input</Form>
+            <DesignClass>TDataModule</DesignClass>
+        </DCCReference>
+        <DCCReference Include="UImportarCobroCupones.pas">
+            <Form>FormImportarCobroCupones</Form>
+        </DCCReference>
+        <DCCReference Include="UListadoChe3PorCpbteIng.pas">
+            <Form>FormListadoChe3PorCpbte</Form>
+        </DCCReference>
+        <DCCReference Include="UMuestraEstadoCta.pas">
+            <Form>formEstadoCta</Form>
+        </DCCReference>
+        <DCCReference Include="UArtFacRtos.pas">
+            <Form>FormActFacturacionRtos</Form>
+        </DCCReference>
+        <DCCReference Include="UCtroCosto.pas">
+            <Form>FormCtroCosto</Form>
+        </DCCReference>
+        <DCCReference Include="UAsignacionCtroCosto.pas">
+            <Form>FormAsignacionCentroCosto</Form>
+        </DCCReference>
+        <DCCReference Include="UListadoPorCtrosCosto.pas">
+            <Form>FormLstPorCtroCosto</Form>
+        </DCCReference>
+        <DCCReference Include="UInformeGeneral.pas">
+            <Form>FormInformeGeneral</Form>
+        </DCCReference>
+        <DCCReference Include="UArticulosFacCompra.pas">
+            <Form>FormReempArticuloFcCompra</Form>
+        </DCCReference>
+        <DCCReference Include="UFiltroRubGastos.pas">
+            <Form>FormFiltroRubGastos</Form>
+        </DCCReference>
+        <DCCReference Include="UCajaResumen.pas">
+            <Form>FormCajaResumen</Form>
+        </DCCReference>
+        <DCCReference Include="UControlCuponAbono.pas">
+            <Form>FormControlCuponAbono</Form>
+        </DCCReference>
+        <DCCReference Include="UCambiaFecha_Cta_LiqTC.pas">
+            <Form>FormCambioFechaLiqTC</Form>
+        </DCCReference>
+        <DCCReference Include="UCambiaFecha_GastoBco.pas">
+            <Form>FormCambioFechaGastoBco</Form>
+        </DCCReference>
+        <DCCReference Include="UBuscadorRetenciones.pas">
+            <Form>FormBuscadorRetenciones</Form>
+        </DCCReference>
+        <DCCReference Include="UCambioFechaFiscal.pas">
+            <Form>FormFechaFiscal</Form>
+        </DCCReference>
+        <DCCReference Include="UListadoMovStock_Diario.pas">
+            <Form>FormListadoMovStockDiario</Form>
+        </DCCReference>
+        <DCCReference Include="UBuscadorGastoBancario.pas">
+            <Form>FormBuscadorGastosBancarios</Form>
+        </DCCReference>
+        <DCCReference Include="UBuscarPorNroReferencia.pas">
+            <Form>FormBuscarPorNroReferenica</Form>
+        </DCCReference>
+        <DCCReference Include="UConsolidacionDeudaClientes.pas">
+            <Form>FormConsolidacionDeudaCliente</Form>
+        </DCCReference>
+        <DCCReference Include="UOPagoExcluidasGanacia.pas">
+            <Form>FormOPagoExcluidasGanancia</Form>
+        </DCCReference>
+        <DCCReference Include="UListadoSeries.pas">
+            <Form>FormListadoSeries</Form>
+        </DCCReference>
+        <DCCReference Include="UBuscadorHojaCarga.pas">
+            <Form>FormBuscadorHojaCarga</Form>
+        </DCCReference>
+        <DCCReference Include="UGastosIngresosConsolidados.pas">
+            <Form>FormGastosIngresosConsolidados</Form>
+        </DCCReference>
+        <DCCReference Include="UCopiaPrecios.pas">
+            <Form>FormCopiaPrecios</Form>
+        </DCCReference>
+        <DCCReference Include="UTipoServicio.pas">
+            <Form>FormTipoServicio</Form>
+        </DCCReference>
+        <DCCReference Include="ULstStock_Precio_Fisico.pas">
+            <Form>FormLstStock_Precio_Fisico</Form>
+        </DCCReference>
+        <DCCReference Include="UComposicionVta_Cobros.pas">
+            <Form>FormComposicionVtas_Cobros</Form>
+        </DCCReference>
+        <DCCReference Include="UNovedadesStock.pas">
+            <Form>FormNovedadesStock</Form>
+        </DCCReference>
+        <DCCReference Include="UAsignacionCtaGastoStock.pas">
+            <Form>FormAsignacionCtaGastoStock</Form>
+        </DCCReference>
+        <DCCReference Include="UDetalleCarnes.pas">
+            <Form>FormMovimientosCarnes</Form>
+        </DCCReference>
+        <DCCReference Include="UControlsStockRubros.pas">
+            <Form>FormControlStockRubros</Form>
+        </DCCReference>
+        <DCCReference Include="UListadoPagosPersonal.pas">
+            <Form>FormListadoPagoPersonal</Form>
+        </DCCReference>
+        <DCCReference Include="UControlMovChe3.pas">
+            <Form>FormControlMovChe3</Form>
+        </DCCReference>
+        <DCCReference Include="UCambioVendedor_clientes.pas">
+            <Form>FormClientes_Vendedor</Form>
+        </DCCReference>
+        <DCCReference Include="UMovSalidaChe3.pas">
+            <Form>FormMovSalidaChe3</Form>
+        </DCCReference>
+        <DCCReference Include="UControlRetIIBTarjeta.pas">
+            <Form>FormControlIIBBLiq</Form>
+        </DCCReference>
+        <DCCReference Include="UTablaChequesTercero.pas">
+            <Form>FormTablaCheques3</Form>
+        </DCCReference>
+        <DCCReference Include="UControl_Rto_Fc.pas">
+            <Form>FormControlAsignacionRto_Fc</Form>
+        </DCCReference>
+        <DCCReference Include="UMuestraIngresosPersonal.pas">
+            <Form>FormMuestraIngresosPersonal</Form>
+        </DCCReference>
+        <DCCReference Include="UImprimirLoteVales.pas">
+            <Form>FormImpresionLoteVales</Form>
+        </DCCReference>
+        <DCCReference Include="UExistenciasConMov.pas">
+            <Form>FormExistenciaConMov</Form>
+        </DCCReference>
+        <DCCReference Include="UMovStockDiario.pas">
+            <Form>FormMovStockDiario</Form>
+        </DCCReference>
+        <DCCReference Include="UURelacionPagoVencimientoProveed.pas">
+            <Form>FormRelacionPagosProveedores</Form>
+        </DCCReference>
+        <DCCReference Include="URevisionMovChe3.pas">
+            <Form>FormRevisionMovChe3</Form>
+        </DCCReference>
+        <DCCReference Include="USaldoProveedorAFecha.pas">
+            <Form>FormSaldoProveedorAlDia</Form>
+        </DCCReference>
+        <DCCReference Include="UReImportacionAplicacionesCompra.pas">
+            <Form>FormReImpAplicacionesCompra</Form>
+        </DCCReference>
+        <DCCReference Include="UBuscadorLiqTC.pas">
+            <Form>FormBuscadorLiquidacionTC</Form>
+        </DCCReference>
+        <DCCReference Include="UReImportacionAplicacionesVta.pas">
+            <Form>FormReImpAplicacionesVta</Form>
+        </DCCReference>
+        <DCCReference Include="UCompIngresosEgresos.pas">
+            <Form>FormComposicionIngEgre</Form>
+        </DCCReference>
+        <DCCReference Include="UComposicionVtos_Compra.pas">
+            <Form>FormComposicionVtosComp</Form>
+        </DCCReference>
+        <DCCReference Include="UFiscalizacion.pas">
+            <Form>FormFiscalizacion</Form>
+        </DCCReference>
+        <DCCReference Include="UClonarCpbtes.pas">
+            <Form>FormClonarCpbtes</Form>
+        </DCCReference>
+        <DCCReference Include="UComposicionVtos_Vtas.pas">
+            <Form>FormComposicionDeudaVta</Form>
+        </DCCReference>
+        <DCCReference Include="UControlRtosHuerfanos.pas">
+            <Form>FormControlRtosHuerfanos</Form>
+        </DCCReference>
+        <DCCReference Include="UCalculadorFinaciero.pas">
+            <Form>FormCalculadorFinanciero</Form>
+        </DCCReference>
+        <DCCReference Include="URecepcionTxStock.pas">
+            <Form>FormRecepcionTxStock</Form>
+        </DCCReference>
+        <DCCReference Include="UFiscalizarLote.pas">
+            <Form>FormFiscalizacionLote</Form>
+        </DCCReference>
+        <DCCReference Include="UValoresImportacionVtas.pas">
+            <Form>FormValoresIngresarImporVtas</Form>
+        </DCCReference>
+        <DCCReference Include="UImportarAjustes.pas">
+            <Form>FormPanelImportacionAjustesStock</Form>
+        </DCCReference>
+        <DCCReference Include="UImportarAjustesStk.pas">
+            <Form>FormImportacionAjustesStk</Form>
+        </DCCReference>
+        <DCCReference Include="UImportacionEstadoStock.pas">
+            <Form>FormImportacionExistencias</Form>
+        </DCCReference>
+        <DCCReference Include="UVtas_Fondos.pas">
+            <Form>FormComposicionIngresos</Form>
+        </DCCReference>
+        <DCCReference Include="UControlFactModelo.pas">
+            <Form>FormControlFcModelo</Form>
+        </DCCReference>
+        <DCCReference Include="UFacturaProduccion.pas">
+            <Form>FormCpbte_Produccion</Form>
+        </DCCReference>
+        <DCCReference Include="UListadoArtiPendientesOC.pas">
+            <Form>FormArtPendientesOC</Form>
+        </DCCReference>
+        <DCCReference Include="UBuscadorComprobantes.pas">
+            <Form>FormBuscaComprobantes</Form>
+        </DCCReference>
+        <DCCReference Include="UNroCuit_Doc.pas">
+            <Form>FormCuit_Doc</Form>
+        </DCCReference>
+        <DCCReference Include="UBuscadorPorObs.pas">
+            <Form>FormBuscadorPorObs</Form>
+        </DCCReference>
+        <DCCReference Include="UFormResolcucion3668.pas">
+            <Form>FormResolucion3668</Form>
+        </DCCReference>
+        <DCCReference Include="UImportacionPreventa.pas">
+            <Form>FormImportacionPreventas</Form>
+        </DCCReference>
+        <DCCReference Include="UPizarronOT.pas">
+            <Form>FormPizarronOT</Form>
+        </DCCReference>
+        <DCCReference Include="UPizarronAcopios.pas">
+            <Form>FormPizarronAcopios</Form>
+        </DCCReference>
+        <DCCReference Include="UFrameAcopios.pas">
+            <Form>FrameAcopios</Form>
+            <DesignClass>TFrame</DesignClass>
+        </DCCReference>
+        <DCCReference Include="ULstMercaderiaAcopio.pas">
+            <Form>FormLstMercaderiaAcopio</Form>
+        </DCCReference>
+        <DCCReference Include="UPlanillaPedido.pas">
+            <Form>FormPlanillaPedido</Form>
+        </DCCReference>
+        <DCCReference Include="ULoteSeriales.pas">
+            <Form>FormLoteSeriales</Form>
+        </DCCReference>
+        <DCCReference Include="UBuscadorAcopiosActivos.pas">
+            <Form>FormBuscadorAcopiosActivos</Form>
+        </DCCReference>
+        <DCCReference Include="UControlGrillaVta.pas">
+            <Form>FormControlDetalle</Form>
+        </DCCReference>
+        <DCCReference Include="UCantidadCuotas.pas">
+            <Form>FormCantidadCuotas</Form>
+        </DCCReference>
+        <DCCReference Include="UFiltroRubros.pas">
+            <Form>FormFiltroRubros</Form>
+        </DCCReference>
+        <DCCReference Include="UPedidoPorCliente.pas">
+            <Form>FormPedidoPorCliente</Form>
+        </DCCReference>
+        <DCCReference Include="UEntregasAcopios.pas">
+            <Form>FormListadoEntregasAcopios</Form>
+        </DCCReference>
+        <DCCReference Include="UGeneradorDebitosTC.pas">
+            <Form>FormClientesDebTC</Form>
+        </DCCReference>
+        <DCCReference Include="UBorradorPedido.pas">
+            <Form>FormBorradorPedido</Form>
+        </DCCReference>
+        <DCCReference Include="UTiketPago.pas">
+            <Form>FormABMBase2</Form>
+        </DCCReference>
+        <DCCReference Include="UPrestadores.pas">
+            <Form>FormPrestadores</Form>
+        </DCCReference>
+        <DCCReference Include="DMRtosMk.pas">
+            <Form>DatosRtoMk</Form>
+            <DesignClass>TDataModule</DesignClass>
+        </DCCReference>
+        <DCCReference Include="UDetalleEntregasAcopio.pas">
+            <Form>FormMuestraEntregasAcopios</Form>
+        </DCCReference>
+        <DCCReference Include="UComprobantesAfip.pas">
+            <Form>FormCodComprobantesAfip</Form>
+        </DCCReference>
+        <DCCReference Include="URubrosFueraPromo.pas">
+            <Form>FormRubrosFueraPromocion</Form>
+        </DCCReference>
+        <DCCReference Include="UNovedadesFacturacion.pas">
+            <Form>FormNovedadesFacturacion</Form>
+        </DCCReference>
+        <DCCReference Include="UPanelComisionObjetivos.pas">
+            <Form>FormComisionVtaObjetivo</Form>
+        </DCCReference>
+        <DCCReference Include="UImportacionFacCompra.pas">
+            <Form>FormImportacionCompraGral</Form>
+        </DCCReference>
+        <DCCReference Include="UClientes_Adicionales.pas">
+            <Form>FormClientesAdicionales</Form>
+        </DCCReference>
+        <DCCReference Include="UDetalleRegConsolidacion.pas">
+            <Form>FormRegConsolidacion</Form>
+        </DCCReference>
+        <DCCReference Include="UProyeccionAnuales.pas">
+            <Form>FormProyeccionAnuales</Form>
+        </DCCReference>
+        <DCCReference Include="UImportacionFacVta.pas">
+            <Form>FormImportacionFacturasVtaGral</Form>
+        </DCCReference>
+        <DCCReference Include="UCambiarNro.pas">
+            <Form>FormCambiarNro</Form>
+        </DCCReference>
+        <DCCReference Include="UCantidadPedir.pas">
+            <Form>FormCantidadPedir</Form>
+        </DCCReference>
+        <DCCReference Include="URegLiquiComisiones.pas">
+            <Form>FormRegLiquidacionComi</Form>
+        </DCCReference>
+        <DCCReference Include="UAdministraGarantes.pas">
+            <Form>FormAdministracionGarantes</Form>
+        </DCCReference>
+        <DCCReference Include="ULstPlantillas.pas">
+            <Form>FormLstPlantillas</Form>
+        </DCCReference>
+        <DCCReference Include="UFeriados.pas">
+            <Form>FormFeriados</Form>
+        </DCCReference>
+        <DCCReference Include="UMuestraGarantes.pas">
+            <Form>FormGarantes</Form>
+        </DCCReference>
+        <DCCReference Include="UPreciosCompra.pas">
+            <Form>FormTrazabilidadPreciosCompra</Form>
+        </DCCReference>
+        <DCCReference Include="UImportarDsctos.pas">
+            <Form>FormImpDscto</Form>
+        </DCCReference>
+        <DCCReference Include="UEntregas_VtaAnticipada.pas">
+            <Form>FormEntregas_VtaAnticipadas</Form>
+        </DCCReference>
+        <DCCReference Include="UResumenCaja.pas">
+            <Form>FormResumenCaja</Form>
+        </DCCReference>
+        <DCCReference Include="UConsolidacionAcopioRtos.pas">
+            <Form>FormConsolidacionAcopioRemitos</Form>
+        </DCCReference>
+        <DCCReference Include="UVtas_Rec.pas">
+            <Form>FormVta_Rec</Form>
+        </DCCReference>
+        <DCCReference Include="UListadoOTrabajo.pas">
+            <Form>FormListadoOT</Form>
+        </DCCReference>
+        <DCCReference Include="UBuscadorCpbteNro.pas">
+            <Form>FormBuscadorComprobNro</Form>
+        </DCCReference>
+        <DCCReference Include="UAsignacionCtroCostoFVta.pas">
+            <Form>FormAsignaCtroCostoVta</Form>
+        </DCCReference>
+        <DCCReference Include="UGeneradorCuotasVtos.pas">
+            <Form>FormCuotasVencimientos</Form>
+        </DCCReference>
+        <DCCReference Include="UBuscadorVencimientos.pas">
+            <Form>FormBuscadorVencimientos</Form>
+        </DCCReference>
+        <DCCReference Include="UDetalleMovCaja_Cpbte.pas">
+            <Form>FormDetalleValores</Form>
+        </DCCReference>
+        <DCCReference Include="UImportarCobroRipsa.pas">
+            <Form>FormCobrosRipsa</Form>
+        </DCCReference>
+        <DCCReference Include="UVistasGrillas.pas">
+            <Form>FormVistaGrillas</Form>
+        </DCCReference>
+        <DCCReference Include="UCobroConTarjetaCredito.pas">
+            <Form>FormCobroConTarjetasCredito</Form>
+        </DCCReference>
+        <DCCReference Include="UPedidosMorphi.pas">
+            <Form>FormPedidosMorphi</Form>
+        </DCCReference>
+        <DCCReference Include="UBuscadorDespachos.pas">
+            <Form>FormBuscadorDespachos</Form>
+        </DCCReference>
+        <DCCReference Include="UDespachoImpo.pas">
+            <Form>FormDespachoImpo</Form>
+        </DCCReference>
+        <DCCReference Include="UOrdenTrabajoPendientes.pas">
+            <Form>FormListadoOTrabajoPendientes</Form>
+        </DCCReference>
+        <DCCReference Include="UConversorFcVta_a_Comp.pas">
+            <Form>FormConversorFcVta_a_Compra</Form>
+        </DCCReference>
+        <DCCReference Include="UControlTxBancarias.pas">
+            <Form>FormControlTxBancarias</Form>
+        </DCCReference>
+        <DCCReference Include="UInformeVariablesVtas_Stock.pas">
+            <Form>FormVtas_UnicoStock</Form>
+        </DCCReference>
+        <DCCReference Include="UCobranzaPorLote.pas">
+            <Form>FormCobranza_x_lote</Form>
+        </DCCReference>
+        <DCCReference Include="UBuscadorXidentificador.pas">
+            <Form>FormBuscadorXidentific</Form>
+        </DCCReference>
+        <DCCReference Include="uMainConsultaCuit.pas">
+            <Form>FormConsultaCuit</Form>
+        </DCCReference>
+        <DCCReference Include="UListadoRtosDetalle.pas">
+            <Form>FormListadoRtosDetalle</Form>
+        </DCCReference>
+        <DCCReference Include="UMotivosOT.pas">
+            <Form>FormMotivosOTrabajo</Form>
+        </DCCReference>
+        <DCCReference Include="UControlChePropio.pas">
+            <Form>FormControlChequesDuplicados</Form>
+        </DCCReference>
+        <DCCReference Include="URubroClientes.pas">
+            <Form>FormRubroClientes</Form>
+        </DCCReference>
+        <DCCReference Include="UPlanerOTrabajo.pas">
+            <Form>FormPlanerOTrabajo</Form>
+        </DCCReference>
+        <DCCReference Include="UAjustesLotes.pas">
+            <Form>FormAjusteLotes</Form>
+        </DCCReference>
+        <DCCReference Include="UCuentaCCAcopio.pas">
+            <Form>FormCTaCteAcopio</Form>
+        </DCCReference>
+        <DCCReference Include="UCashFlow_LF.pas">
+            <Form>FormCahsFlow_LF</Form>
+        </DCCReference>
+        <DCCReference Include="UNroSeries.pas">
+            <Form>FormNroSeries</Form>
+        </DCCReference>
+        <DCCReference Include="UAnexosRtoTransporte.pas">
+            <Form>FormAnexosRtoTransporte</Form>
+        </DCCReference>
+        <DCCReference Include="UAdminTransporte.pas">
+            <Form>FormAdminTransporte</Form>
+        </DCCReference>
+        <DCCReference Include="UVencimientosTransp.pas">
+            <Form>FormVtosTransportes</Form>
+        </DCCReference>
+        <DCCReference Include="UUnidadesTR.pas">
+            <Form>FormUnidadesTr</Form>
+        </DCCReference>
+        <DCCReference Include="UUnidadesTR_Anexos.pas">
+            <Form>FormUnidadesAnexos</Form>
+        </DCCReference>
+        <DCCReference Include="UPanificacionProduccion.pas">
+            <Form>FormPlanificacion_Produccion</Form>
+        </DCCReference>
+        <DCCReference Include="UOrdenDeTrabajo_Estaciones.pas">
+            <Form>FormEstacionProduccion</Form>
+        </DCCReference>
+        <DCCReference Include="ULeerArchivoTCVisa.pas">
+            <Form>FormLeerArchivoTCVisa</Form>
+        </DCCReference>
+        <DCCReference Include="ULstMovCaja.pas">
+            <Form>FormLstMovCajaGeneral</Form>
+        </DCCReference>
+        <DCCReference Include="UBuscadorClientesAbonos.pas">
+            <Form>FormBuscadorClientesAbonados</Form>
+        </DCCReference>
+        <DCCReference Include="ULstControlOTrabajo.pas">
+            <Form>FormControlOTrabajo</Form>
+        </DCCReference>
+        <DCCReference Include="UBuscadorAjustesLotes.pas">
+            <Form>FormBuscadorAjustesLotes</Form>
+        </DCCReference>
+        <DCCReference Include="UTipoAdicionalCompra.pas">
+            <Form>FormAdicionalesCompra</Form>
+        </DCCReference>
+        <DCCReference Include="UMovAuxCCComp.pas">
+            <Form>FormMovAuxCCComp</Form>
+        </DCCReference>
+        <DCCReference Include="UBuscadorTipoAdCompra.pas">
+            <Form>FormBuscadorTipoMovCCComp</Form>
+        </DCCReference>
+        <DCCReference Include="UBuscadorMovAuxCCComp.pas">
+            <Form>FormBuscadorMovAuxCCComp</Form>
+        </DCCReference>
+        <DCCReference Include="UArticulosUsadosRtos.pas">
+            <Form>FormArticulosUsadosRtos</Form>
+        </DCCReference>
+        <DCCReference Include="UExportarExcelListaPrecios.pas">
+            <Form>FormExportarExcelLista</Form>
+        </DCCReference>
+        <DCCReference Include="UFiltroMarcas.pas">
+            <Form>FormFiltrosMarcas</Form>
+        </DCCReference>
+        <DCCReference Include="UDetalleMovProduccion.pas">
+            <Form>FormDetalleMovimientosProduccion</Form>
+        </DCCReference>
+        <DCCReference Include="UOrdenProduccionSector.pas">
+            <Form>FormSectoresProduccion</Form>
+        </DCCReference>
+        <DCCReference Include="UProduccion_PDiario.pas">
+            <Form>FormProducc_Diario</Form>
+        </DCCReference>
+        <DCCReference Include="UProduccion_Material.pas">
+            <Form>FormProduccionMateriales</Form>
+        </DCCReference>
+        <DCCReference Include="..\Prueba LocalSQL\UControlDuplicadoProduccion.pas">
+            <Form>FormControlDuplicadoProduccion</Form>
+        </DCCReference>
+        <DCCReference Include="USaldosClientesXLS.pas">
+            <Form>FormSaldosClientesXLS</Form>
+        </DCCReference>
+        <DCCReference Include="UChequesAnulados.pas">
+            <Form>FormChequesAnulados</Form>
+        </DCCReference>
+        <DCCReference Include="UEtiquetas_2.pas">
+            <Form>FormEtiquetaOP</Form>
+        </DCCReference>
+        <DCCReference Include="UPedidosResumen.pas">
+            <Form>FormPedidosResumen</Form>
+        </DCCReference>
+        <DCCReference Include="USaldosProveedoresXLS.pas">
+            <Form>FormSaldoProveedoresXLS</Form>
+        </DCCReference>
+        <DCCReference Include="UExportadorRtos.pas">
+            <Form>FormExportaRe</Form>
+        </DCCReference>
+        <DCCReference Include="UImportarRtos.pas">
+            <Form>FormImportarRtos</Form>
+        </DCCReference>
+        <DCCReference Include="UPedidos.pas">
+            <Form>FormPedidos</Form>
+        </DCCReference>
+        <DCCReference Include="UMuestraHRuta.pas">
+            <Form>FormMuestraHRuta</Form>
+        </DCCReference>
+        <DCCReference Include="UMotivosVales.pas">
+            <Form>FormMotivosPersonal</Form>
+        </DCCReference>
+        <DCCReference Include="UImportarEmpleadosExcel.pas">
+            <Form>FormImportarEmpleadosXLS</Form>
+        </DCCReference>
+        <DCCReference Include="UPendientesOC.pas">
+            <Form>FormPendientesOC</Form>
+        </DCCReference>
+        <DCCReference Include="UDetallePedidos.pas">
+            <Form>FormDetallePedidosRealizados</Form>
+        </DCCReference>
+        <DCCReference Include="UExportarLibroIvaComp_excel.pas">
+            <Form>FormExportarLibroIvaExcel</Form>
+        </DCCReference>
+        <DCCReference Include="UListadoAjustesCtasCtes.pas">
+            <Form>FormListadoAjustesCC</Form>
+        </DCCReference>
+        <DCCReference Include="UMotivosAjustesCCVta.pas">
+            <Form>FormMotivosAjustesCCVta</Form>
+        </DCCReference>
+        <DCCReference Include="UMotivosAjustesCCComp.pas">
+            <Form>FormMotivosAjustesCCComp</Form>
+        </DCCReference>
+        <DCCReference Include="UImpresionChePropios.pas">
+            <Form>FormImpresionChePropios</Form>
+        </DCCReference>
+        <DCCReference Include="UFactura_2.pas">
+            <Form>FormCpbte_2</Form>
+        </DCCReference>
+        <DCCReference Include="UPrecios_x_Cantidades.pas">
+            <Form>FormPreciosPorCantidades</Form>
+        </DCCReference>
+        <DCCReference Include="UPlantillasNoFacturadas.pas">
+            <Form>FormPlantillasNoFacturables</Form>
+        </DCCReference>
+        <DCCReference Include="URtoTroqueles.pas">
+            <Form>FormRtoTroqueles</Form>
+        </DCCReference>
+        <DCCReference Include="UListadoPresuDetalle.pas">
+            <Form>FormLstPresupuestoDetalle</Form>
+        </DCCReference>
+        <DCCReference Include="UHistorialCajas.pas">
+            <Form>FormHistorialCajas</Form>
+        </DCCReference>
+        <DCCReference Include="UMotivoAjusteStock.pas">
+            <Form>FormMotivoAjustesStock</Form>
+        </DCCReference>
+        <DCCReference Include="URetencionIva_Efectuadas.pas">
+            <Form>FormRetIva_EfectuadasLiq</Form>
+        </DCCReference>
+        <DCCReference Include="USucursalesExportacionIVA.pas">
+            <Form>FormSucursalesExportacion</Form>
+        </DCCReference>
+        <DCCReference Include="UMovTarjetaCredito.pas">
+            <Form>FormMovTarjetaCredito</Form>
+        </DCCReference>
+        <DCCReference Include="UHistorialMovCaja.pas">
+            <Form>FormHistorialMovCaja</Form>
+        </DCCReference>
+        <DCCReference Include="UExportarLibroIvaVta_excel.pas">
+            <Form>FormExportarLibroIvaVtaExcel</Form>
+        </DCCReference>
+        <DCCReference Include="URevisionValoresIngreso.pas">
+            <Form>FormRevisionValoresIngreso</Form>
+        </DCCReference>
+        <DCCReference Include="URevisionValoresEgresados.pas">
+            <Form>FormRevisionValoresEgresados</Form>
+        </DCCReference>
+        <DCCReference Include="DMLiborIvaVta.pas">
+            <Form>DatosLibroIvaVta</Form>
+            <DesignClass>TDataModule</DesignClass>
+        </DCCReference>
+        <DCCReference Include="DMLiborIvaCompra.pas">
+            <Form>DatosLibroIvaCompra</Form>
+            <DesignClass>TDataModule</DesignClass>
+        </DCCReference>
+        <DCCReference Include="DMCtaCteVta.pas">
+            <Form>DatosCCVta</Form>
+            <DesignClass>TDataModule</DesignClass>
+        </DCCReference>
+        <DCCReference Include="UImprimirHojaCargaAgrupada.pas">
+            <Form>FormImpresionHojaCargaAgrupada</Form>
+        </DCCReference>
+        <DCCReference Include="UReciboExpress.pas">
+            <Form>FormReciboExpress</Form>
+        </DCCReference>
+        <DCCReference Include="DMResumenVtas.pas">
+            <Form>DatosResumenVtas</Form>
+            <DesignClass>TDataModule</DesignClass>
+        </DCCReference>
+        <DCCReference Include="ULstTransfInterbancaria.pas">
+            <Form>FormLstTransferenciasInterBancarias</Form>
+        </DCCReference>
+        <DCCReference Include="UCambioFechaTransferenciaEfe.pas">
+            <Form>FormCambioFechaTransferencia</Form>
+        </DCCReference>
+        <DCCReference Include="URevisionVencimientos.pas">
+            <Form>FormRevisionVencimientos</Form>
+        </DCCReference>
+        <DCCReference Include="UBusca_Det_Ing_Egre.pas">
+            <Form>FormBusdadorDetIngEgr</Form>
+        </DCCReference>
+        <DCCReference Include="UDepurarLog.pas">
+            <Form>FormDepurarLog</Form>
+        </DCCReference>
+        <DCCReference Include="DMSaldosClientes.pas">
+            <Form>DatosSaldoClientes</Form>
+            <DesignClass>TDataModule</DesignClass>
+        </DCCReference>
+        <DCCReference Include="UListadoGralCCtePersonal.pas">
+            <Form>FormListadoCCtaPersonal</Form>
+        </DCCReference>
+        <DCCReference Include="ULiqGranos.pas">
+            <Form>FormLiqGranos</Form>
+        </DCCReference>
+        <DCCReference Include="DMLiqGranos.pas">
+            <Form>DatosLiqGranos</Form>
+            <DesignClass>TDataModule</DesignClass>
+        </DCCReference>
+        <DCCReference Include="UCrearLstPersonalizada.pas">
+            <Form>FormCrearLstPersonalizada</Form>
+        </DCCReference>
+        <DCCReference Include="UCambiaNroSolo.pas">
+            <Form>FormCambiaNroOPago</Form>
+        </DCCReference>
+        <DCCReference Include="UZPrint.pas">
+            <Form>FormPrintVirtual</Form>
+        </DCCReference>
+        <DCCReference Include="UListadoArticulosPresupuesto.pas">
+            <Form>FormListadoArticulosPresupuesto</Form>
+        </DCCReference>
+        <DCCReference Include="UModCotizCpbte.pas">
+            <Form>FormCambioCotizCpbte</Form>
+        </DCCReference>
+        <DCCReference Include="UResumenGeneralCajas.pas">
+            <Form>FormResumenGralCajas</Form>
+        </DCCReference>
+        <DCCReference Include="UBuscadorPresupuestos.pas">
+            <Form>FormBuscadorPresupuestos</Form>
+        </DCCReference>
+        <DCCReference Include="ULstChequesBCRA.pas">
+            <Form>FormLstCheRechazados</Form>
+        </DCCReference>
+        <DCCReference Include="UProxyBCRA.pas"/>
+        <DCCReference Include="UClientModuleBCRA.pas">
+            <Form>CModuleBCRA</Form>
+            <DesignClass>TDataModule</DesignClass>
+        </DCCReference>
+        <DCCReference Include="UPromoCanArt.pas">
+            <Form>FormPromo_x_Cant</Form>
+        </DCCReference>
+        <DCCReference Include="UReproweb.pas">
+            <Form>FormReproWeb</Form>
+        </DCCReference>
+        <DCCReference Include="UAdminFcCredito.pas">
+            <Form>FormAdministracionFcCredito</Form>
+        </DCCReference>
+        <DCCReference Include="USeparadorTXT.pas">
+            <Form>FormSepardorTXT</Form>
+        </DCCReference>
+        <DCCReference Include="ListadoHist_Precio.pas">
+            <Form>FormListadoHistorialPrecio</Form>
+        </DCCReference>
+        <DCCReference Include="DMPtoVtaMorphi.pas">
+            <Form>DatosImportaPtoVtaMorphi</Form>
+            <DesignClass>TDataModule</DesignClass>
+        </DCCReference>
+        <DCCReference Include="SystelConn.pas"/>
+        <DCCReference Include="UAdministradorPLU.pas">
+            <Form>FormAdministradorPLU</Form>
+        </DCCReference>
+        <DCCReference Include="UUsuariosRubStock.pas">
+            <Form>FormUsuarioRubroLista</Form>
+        </DCCReference>
+        <DCCReference Include="ULstOProduccionDetalle.pas">
+            <Form>FormListadoPedidosPI</Form>
+        </DCCReference>
+        <DCCReference Include="UListadoComprasCabDet.pas">
+            <Form>FormListadoComprasCabDet</Form>
+        </DCCReference>
+        <DCCReference Include="UArqueoCaja.pas">
+            <Form>FormArqueoCaja</Form>
+        </DCCReference>
+        <DCCReference Include="UIngresoValores.pas">
+            <Form>FormValores</Form>
+        </DCCReference>
+        <DCCReference Include="UEleccionCliente.pas">
+            <Form>FormEleccionClientes</Form>
+        </DCCReference>
+        <DCCReference Include="URubrosOrdenador.pas">
+            <Form>FormRubroOrdenador</Form>
+        </DCCReference>
+        <DCCReference Include="UStockTipoAdicional.pas">
+            <Form>FormStockTipoAdicional</Form>
+        </DCCReference>
+        <DCCReference Include="URecpcionRepartoExpress.pas">
+            <Form>FormRecepRepartoExpress</Form>
+        </DCCReference>
+        <DCCReference Include="UPresupuetoIncidencias.pas">
+            <Form>FormPresupuestoIncidencias</Form>
+        </DCCReference>
+        <DCCReference Include="UListaCheRemplazados.pas">
+            <Form>FormListadoCheRemp</Form>
+        </DCCReference>
+        <DCCReference Include="UPlantillaRecReparto.pas">
+            <Form>FormPlantillaRecepReparto</Form>
+        </DCCReference>
+        <DCCReference Include="USeccionCategoria.pas">
+            <Form>FormSeccionCategorias</Form>
+        </DCCReference>
+        <DCCReference Include="UStockTree.pas">
+            <Form>FormArmadoAdicionalPlantillaPedidos</Form>
+        </DCCReference>
+        <DCCReference Include="UEsquemaLista.pas">
+            <Form>FormEsquemaPrecios</Form>
+        </DCCReference>
+        <DCCReference Include="UABCProveedores.pas">
+            <Form>FormABCProveedores</Form>
+        </DCCReference>
+        <DCCReference Include="UCargarLoteTC.pas">
+            <Form>FormCargaLoteTC</Form>
+        </DCCReference>
+        <DCCReference Include="UListadoPedidosPrevision.pas">
+            <Form>FormListadoPedidosPrevision</Form>
+        </DCCReference>
+        <DCCReference Include="DMListaPrecioEspecial.pas">
+            <Form>DatosListaPrecioEspecial</Form>
+            <DesignClass>TDataModule</DesignClass>
+        </DCCReference>
+        <DCCReference Include="UCargaDetalleOC.pas">
+            <Form>FormControlDetalleOC</Form>
+        </DCCReference>
+        <DCCReference Include="UReasigancionPedidos.pas">
+            <Form>FormReAsignacionPedidos</Form>
+        </DCCReference>
+        <DCCReference Include="UAltaEventoTareas.pas">
+            <Form>FormAltaEventoTareas</Form>
+        </DCCReference>
+        <DCCReference Include="URestaurarPapelera.pas">
+            <Form>FormRestaurarPapelera</Form>
+        </DCCReference>
+        <DCCReference Include="UCargaSectorObras.pas">
+            <Form>FormCargaSectorObra</Form>
+        </DCCReference>
+        <DCCReference Include="DMListaPreciosProv.pas">
+            <Form>DatosListaPrecioProv</Form>
+            <DesignClass>TDataModule</DesignClass>
+        </DCCReference>
+        <DCCReference Include="UBorradorInventario.pas">
+            <Form>FormBorradorInventario</Form>
+        </DCCReference>
+        <DCCReference Include="UStockAlquiler.pas">
+            <Form>FormStockAlquiler</Form>
+        </DCCReference>
+        <DCCReference Include="UCtrFechasEventosTareas.pas">
+            <Form>FormGestionFechasEventos</Form>
+        </DCCReference>
+        <DCCReference Include="DMOrdenProduccion.pas">
+            <Form>DatosOProduccion</Form>
+            <DesignClass>TDataModule</DesignClass>
+        </DCCReference>
+        <DCCReference Include="UAltaObraSocial.pas">
+            <Form>FormObraSocial</Form>
+        </DCCReference>
+        <DCCReference Include="UImportarMercadoPago.pas">
+            <Form>FormImportarMercadoPago</Form>
+        </DCCReference>
+        <DCCReference Include="UPacientes.pas">
+            <Form>FormPacientes</Form>
+        </DCCReference>
+        <DCCReference Include="UBuscadorCpbte_Despachante.pas">
+            <Form>FormBuscaCpbteDesp</Form>
+        </DCCReference>
+        <DCCReference Include="UListadoVentasCabDet.pas">
+            <Form>FormListadoVentasCabDet</Form>
+        </DCCReference>
+        <DCCReference Include="UBuscadorCodRipsa.pas">
+            <Form>FormBuscadorCodRipsa</Form>
+        </DCCReference>
+        <DCCReference Include="UPaises.pas">
+            <Form>FormPaises</Form>
+        </DCCReference>
+        <DCCReference Include="UNotaCreditoAplicaAFactura.pas">
+            <Form>FormNotaCreditoAplicaAFactura</Form>
+        </DCCReference>
+        <DCCReference Include="UListadoArtiProduccion.pas">
+            <Form>FormListadoArticulosProduccion</Form>
+        </DCCReference>
+        <DCCReference Include="DMImportarStock.pas">
+            <Form>DatosImportarStock</Form>
+            <DesignClass>TDataModule</DesignClass>
+        </DCCReference>
+        <DCCReference Include="DMImportacionStock_Remoto.pas">
+            <Form>DatosImportarStockRemoto</Form>
+            <DesignClass>TDataModule</DesignClass>
+        </DCCReference>
+        <DCCReference Include="DMComprobantes.pas">
+            <Form>DatosComprobantes</Form>
+            <DesignClass>TDataModule</DesignClass>
+        </DCCReference>
+        <DCCReference Include="UAltaConsulta_CAEA.pas">
+            <Form>FormAltaConsulta_CAEA</Form>
+        </DCCReference>
+        <DCCReference Include="UGraficaVentas.pas">
+            <Form>FormABMBase4</Form>
+        </DCCReference>
+        <DCCReference Include="DMAcopio.pas">
+            <Form>DatosAcopio</Form>
+            <DesignClass>TDataModule</DesignClass>
+        </DCCReference>
+        <DCCReference Include="DMPedidos.pas">
+            <Form>DatosPedidos</Form>
+            <DesignClass>TDataModule</DesignClass>
+        </DCCReference>
+        <DCCReference Include="ULectorLibroIvaDigital.pas">
+            <Form>FormLectorLibroIvaDigital</Form>
+        </DCCReference>
+        <DCCReference Include="UCierreCajaGeneral.pas">
+            <Form>FormCierreCajaGeneral</Form>
+        </DCCReference>
+        <DCCReference Include="UBuscadorCuentaGastos.pas">
+            <Form>FormBuscadorCuentaGastos</Form>
+        </DCCReference>
+        <DCCReference Include="DMCierreCajaGeneral.pas">
+            <Form>DatosCierreCajaGeneral</Form>
+            <DesignClass>TDataModule</DesignClass>
+        </DCCReference>
+        <DCCReference Include="UControlUsuarios_2.pas">
+            <Form>FormControlUsuarios_2</Form>
+        </DCCReference>
+        <DCCReference Include="UDetallesEntregas.pas">
+            <Form>FormDetalleEntregas</Form>
+        </DCCReference>
+        <DCCReference Include="UListadoNovedadesEntregas.pas">
+            <Form>FormEntregasPedidos</Form>
+        </DCCReference>
+        <DCCReference Include="UTipoObra.pas">
+            <Form>FormTipoObra</Form>
+        </DCCReference>
+        <DCCReference Include="UMontoAnticipo.pas">
+            <Form>FormMontoAnticipo</Form>
+        </DCCReference>
+        <DCCReference Include="UPersonalCategorias.pas">
+            <Form>FormPersonalCategorias</Form>
+        </DCCReference>
+        <DCCReference Include="UPersonalABMConceptos.pas">
+            <Form>FormABMPersonalConceptos</Form>
+        </DCCReference>
+        <DCCReference Include="UPersonal_Liquidacion.pas">
+            <Form>FormPersonalliquidacion</Form>
+        </DCCReference>
+        <DCCReference Include="DMLiquidacionSueldos.pas">
+            <Form>DatosLiquidacionSueldo</Form>
+            <DesignClass>TDataModule</DesignClass>
+        </DCCReference>
+        <DCCReference Include="UStock_CargaExpress.pas">
+            <Form>FormStock_Express</Form>
+        </DCCReference>
+        <DCCReference Include="UBuscadorSubRubrosStock_2.pas">
+            <Form>FormBuscadorSubRubro_RubroStock</Form>
+        </DCCReference>
+        <DCCReference Include="UDepositosVendedor.pas">
+            <Form>FormDepositoVendedor</Form>
+        </DCCReference>
+        <DCCReference Include="UEgresos.pas">
+            <Form>FormEgresos</Form>
+        </DCCReference>
+        <DCCReference Include="UControlCheCompartidos.pas">
+            <Form>FormControlCheCompartidos</Form>
+        </DCCReference>
+        <DCCReference Include="DMLstRefContable.pas">
+            <Form>DatosLstRefContable</Form>
+            <DesignClass>TDataModule</DesignClass>
+        </DCCReference>
+        <DCCReference Include="UImportacionFacCompraAFIP.pas">
+            <Form>FormImportarFcCompraAFIP</Form>
+        </DCCReference>
+        <DCCReference Include="UCambiarBcoTX.pas">
+            <Form>FormCambiaBcoTx</Form>
+        </DCCReference>
+        <DCCReference Include="UCopola.pas">
+            <Form>FormLeerCopola</Form>
+        </DCCReference>
+        <DCCReference Include="UTipoLiquidacion.pas">
+            <Form>FormTipoLiquidacionSueldos</Form>
+        </DCCReference>
+        <DCCReference Include="UMatafuegos.pas">
+            <Form>FormMatafuego</Form>
+        </DCCReference>
+        <DCCReference Include="UInformeSemanal.pas">
+            <Form>FormInformeSemanal</Form>
+        </DCCReference>
+        <DCCReference Include="UImportacionFacVentaAFIP.pas">
+            <Form>FormImportarFcVentaAFIP</Form>
+        </DCCReference>
+        <DCCReference Include="ULecturaRelojPersonal.pas">
+            <Form>FormLectorRelojPersonal</Form>
+        </DCCReference>
+        <DCCReference Include="UControlNetosOPago.pas">
+            <Form>FormControlNetosOPago</Form>
+        </DCCReference>
+        <DCCReference Include="UAgregarMovCaja_Efectivo.pas">
+            <Form>FormAgregarMovCaja_Efectivo</Form>
+        </DCCReference>
+        <DCCReference Include="UNextBin.pas">
+            <Form>FormNextByn</Form>
+        </DCCReference>
+        <DCCReference Include="UCambioListaPrecios.pas">
+            <Form>FormCambioListaPrecios</Form>
+        </DCCReference>
+        <DCCReference Include="UOProduccionIncidencias.pas">
+            <Form>FormOProduccionIncidencias</Form>
+        </DCCReference>
+        <DCCReference Include="UHoras_2.pas">
+            <Form>FormIngresoHoras</Form>
+        </DCCReference>
+        <DCCReference Include="UAnulacionOProduccion.pas">
+            <Form>FormAnulacionOProduccion</Form>
+        </DCCReference>
+        <DCCReference Include="UMapaHojaCarga.pas">
+            <Form>FormMapaHojaCarga</Form>
+        </DCCReference>
+        <DCCReference Include="UPlanillaSalucla.pas">
+            <Form>FormPlanillaCarnes</Form>
+        </DCCReference>
+        <DCCReference Include="UImportarHASAR.pas">
+            <Form>FormImportarHasar</Form>
+        </DCCReference>
+        <DCCReference Include="UEtiquetas_Compra.pas">
+            <Form>FormEtiquetasCompra</Form>
+        </DCCReference>
+        <DCCReference Include="UBorradorOCompra.pas">
+            <Form>FormBorradorOC</Form>
+        </DCCReference>
+        <DCCReference Include="UListadoCliente_LDR.pas">
+            <Form>FormListadoClientes_LDR</Form>
+        </DCCReference>
+        <DCCReference Include="UBorradorInventarioConsulta.pas">
+            <Form>FormBorradorInventarioConsulta</Form>
+        </DCCReference>
+        <DCCReference Include="UListadoBorradoOC.pas">
+            <Form>FormListadoBorradoOC</Form>
+        </DCCReference>
+        <DCCReference Include="UPedidoCOT.pas">
+            <Form>FormPedidoCOT</Form>
+        </DCCReference>
+        <DCCReference Include="UImportarLoteCheques.pas">
+            <Form>FormImportarLoteChePropios</Form>
+        </DCCReference>
+        <DCCReference Include="DMConversorVta_Comp.pas">
+            <Form>DatosConversorVta_Comp</Form>
+            <DesignClass>TDataModule</DesignClass>
+        </DCCReference>
+        <DCCReference Include="UPruebaGoogle.pas">
+            <Form>FormTestGoogleMap</Form>
+        </DCCReference>
+        <DCCReference Include="UListasActualizables.pas">
+            <Form>FormListasActualizanPrecio</Form>
+        </DCCReference>
+        <DCCReference Include="DMWordPress.pas">
+            <Form>DatosWordPress</Form>
+            <DesignClass>TDataModule</DesignClass>
+        </DCCReference>
+        <DCCReference Include="WooCommerceAPI.pas"/>
+        <DCCReference Include="ULstPercepcionesIvaVta.pas">
+            <Form>FormLstPercepcionesIvaVta</Form>
+        </DCCReference>
+        <DCCReference Include="UDashBoardCliente.pas">
+            <Form>FormDashBoardCliente</Form>
+        </DCCReference>
+        <DCCReference Include="UCopiasBK_Thread_JV.pas"/>
+        <DCCReference Include="UAltaProductosCliente.pas">
+            <Form>FormAltaProdutosCliente</Form>
+        </DCCReference>
+        <DCCReference Include="UHistorialPreciosProduccion.pas">
+            <Form>FormHistorialPreciosProduccion</Form>
+        </DCCReference>
+        <DCCReference Include="UPersonalNovedades.pas">
+            <Form>FormPersonalNovedades</Form>
+        </DCCReference>
+        <DCCReference Include="UPrevisionCompraProveedor.pas">
+            <Form>FormPrevisionCompraProveedor</Form>
+        </DCCReference>
+        <DCCReference Include="UImportarRubGastos.pas">
+            <Form>FormImportarRubGastos</Form>
+        </DCCReference>
+        <DCCReference Include="UVentaCentroCosto.pas">
+            <Form>FormVentasPorCentroCosto</Form>
+        </DCCReference>
+        <DCCReference Include="URecibosTemporales.pas">
+            <Form>FormReciboTemporal</Form>
+        </DCCReference>
+        <DCCReference Include="UArchivosAxum.pas">
+            <Form>FormAxum</Form>
+        </DCCReference>
+        <DCCReference Include="UListadoArticulosUsoProduccion.pas">
+            <Form>FormAticulosUsadosProduccion</Form>
+        </DCCReference>
+        <DCCReference Include="UListadoValoresOrdenPago.pas">
+            <Form>FormListadoValoresOPago</Form>
+        </DCCReference>
+        <DCCReference Include="UImportarStockProveedorXLS.pas">
+            <Form>FormImportaProveeStockXLS</Form>
+        </DCCReference>
+        <DCCReference Include="UCambioPrecioExpress.pas">
+            <Form>FormCambioPrecioExpres</Form>
+        </DCCReference>
+        <DCCReference Include="UIncrementoMargen.pas">
+            <Form>FormIncrementoMargen</Form>
+        </DCCReference>
+        <DCCReference Include="ULectorPedidosApp.pas">
+            <Form>FormLectorPedidosApp</Form>
+        </DCCReference>
+        <DCCReference Include="UUsuariosRubrosMovil.pas">
+            <Form>FormRubrosListaMovil</Form>
+        </DCCReference>
+        <DCCReference Include="UUsuariosMovil.pas">
+            <Form>FormUsuariosMoviles</Form>
+        </DCCReference>
+        <DCCReference Include="UCompCarnesMedias.pas">
+            <Form>FormMediasResesCompra</Form>
+        </DCCReference>
+        <DCCReference Include="UAsignaObra.pas">
+            <Form>FormAsignaObras</Form>
+        </DCCReference>
+        <DCCReference Include="UListadoGastosObra.pas">
+            <Form>FormListadoGastosObra</Form>
+        </DCCReference>
+        <DCCReference Include="UListadoRecepciones.pas">
+            <Form>FormListadoRecepciones</Form>
+        </DCCReference>
+        <DCCReference Include="UControlChe3_Opago.pas">
+            <Form>FormControlChe3_OP</Form>
+        </DCCReference>
+        <DCCReference Include="UProductosVariables.pas"/>
+        <DCCReference Include="UCambioProveedorListaPrecios.pas">
+            <Form>FormCambioProveedorLista</Form>
+        </DCCReference>
+        <DCCReference Include="UInformarCAEA.pas">
+            <Form>FormInformarCAEA</Form>
+        </DCCReference>
+        <DCCReference Include="UDMain_FD.pas">
+            <Form>DMMain_FD</Form>
+            <DesignClass>TDataModule</DesignClass>
+        </DCCReference>
+        <DCCReference Include="ULotesStock.pas">
+            <Form>FormLotesStock</Form>
+        </DCCReference>
+        <DCCReference Include="ULoteProduccion.pas">
+            <Form>FormLoteProduccion</Form>
+        </DCCReference>
+        <DCCReference Include="UGeneradorPartesDiarios.pas">
+            <Form>FormGeneradorParteDiarios</Form>
+        </DCCReference>
+        <DCCReference Include="USectoresPedido.pas">
+            <Form>FormSectorPedidos</Form>
+        </DCCReference>
+        <DCCReference Include="UStock_Variaciones.pas">
+            <Form>FormStockVariaciones</Form>
+        </DCCReference>
+        <DCCReference Include="URemitarPedidosAgrupados.pas">
+            <Form>FormPedidosAProcesar</Form>
+        </DCCReference>
+        <DCCReference Include="UPresupuestosACobrar.pas">
+            <Form>FormPrespuestoAlCobro</Form>
+        </DCCReference>
+        <DCCReference Include="UListaLotes.pas">
+            <Form>FormListaLotes</Form>
+        </DCCReference>
+        <DCCReference Include="UDetalleFacturaPresupuesto.pas">
+            <Form>FormDetallePresuFac</Form>
+        </DCCReference>
+        <DCCReference Include="UBorradorRegistrPikeo.pas">
+            <Form>FormBorradoRegistroPikeo</Form>
+        </DCCReference>
+        <DCCReference Include="UListadoMateriasPrimasUsadas.pas">
+            <Form>FormListadoMateriasPrimasUsadas</Form>
+        </DCCReference>
+        <DCCReference Include="UBalanzaSerie.pas">
+            <Form>FormLecturaBascula</Form>
+        </DCCReference>
+        <DCCReference Include="UKanbanPresupuesto.pas">
+            <Form>FormKanbanPrespuesto</Form>
+        </DCCReference>
+        <DCCReference Include="UControlDepositosStock.pas">
+            <Form>FormDepositosControlados</Form>
+        </DCCReference>
+        <DCCReference Include="UEmisionRotulos_2.pas">
+            <Form>FormRotulos_2</Form>
+        </DCCReference>
+        <DCCReference Include="UCargaCheRc.pas">
+            <Form>FormCargaChe3</Form>
+        </DCCReference>
+        <DCCReference Include="UListadoTarjetasCSV.pas">
+            <Form>FormLoteLiquidacion</Form>
+        </DCCReference>
+        <DCCReference Include="UMuestraCuponTarjeta.pas">
+            <Form>FormMuestraCuponTarjeta</Form>
+        </DCCReference>
+        <DCCReference Include="C:\Program Files (x86)\Embarcadero\Studio\23.0\Librerias\Feafip JC\FE_Utils2.pas">
+            <Form>dmFE1</Form>
+            <DesignClass>TDataModule</DesignClass>
+        </DCCReference>
+        <DCCReference Include="C:\Program Files (x86)\Embarcadero\Studio\23.0\Librerias\Feafip JC\Arca_personaServiceA51.pas"/>
+        <DCCReference Include="UOdenTarjetasC.pas">
+            <Form>FormOrdenTC</Form>
+        </DCCReference>
+        <DCCReference Include="UConultasIA.pas">
+            <Form>FormConsultaIA</Form>
+        </DCCReference>
+        <DCCReference Include="UFirebirdSQLFromIA.pas"/>
+        <DCCReference Include="ULectorPDF.pas">
+            <Form>FormLeerPDF</Form>
+        </DCCReference>
+        <DCCReference Include="UOpenAILeerPDF.pas"/>
+        <DCCReference Include="C:\Program Files (x86)\Embarcadero\Studio\23.0\Librerias\Feafip JC\UArca_Fex.pas">
+            <Form>dmFEX</Form>
+            <DesignClass>TDataModule</DesignClass>
+        </DCCReference>
+        <DCCReference Include="UArticulosEceptuadosIVA.pas">
+            <Form>FormArtciculosEceptuadosIVAVta</Form>
+        </DCCReference>
+        <DCCReference Include="UPrecioImportFNC_VCL.pas"/>
+        <DCCReference Include="UNovedadesDetVtas.pas">
+            <Form>FormNovedadesDetVentas</Form>
+        </DCCReference>
+        <DCCReference Include="UUsuariosAdminNP_Movil.pas">
+            <Form>FormAdministrador_NP_Movil</Form>
+        </DCCReference>
+        <DCCReference Include="UEleccionTransporte.pas">
+            <Form>FormEleccionTransporte</Form>
+        </DCCReference>
+        <DCCReference Include="URegistroDiarioOP.pas">
+            <Form>FormRegistroDiarioOP</Form>
+        </DCCReference>
+        <DCCReference Include="UBuscadoDetalleOP.pas">
+            <Form>FormBuscadoDetalleOP</Form>
+        </DCCReference>
+        <DCCReference Include="UControlTransacciones.pas">
+            <Form>FormControlTransacciones</Form>
+        </DCCReference>
+        <DCCReference Include="UAsignarSectorProduccion.pas">
+            <Form>FormAsignarSectorProduccion</Form>
+        </DCCReference>
+        <DCCReference Include="UReasignacionPartesDiarios.pas">
+            <Form>FormReasignacionPartesDiarios</Form>
+        </DCCReference>
+        <DCCReference Include="UHojaDeCarga.pas">
+            <Form>FormHojaDeCarga</Form>
+        </DCCReference>
+        <DCCReference Include="URferenciasTCPlataformas.pas">
+            <Form>FormRef_TCPlataformas</Form>
+        </DCCReference>
+        <DCCReference Include="UNovedadesFact.pas">
+            <Form>FormListadoNovedadesFac</Form>
+        </DCCReference>
+        <DCCReference Include="ULeerOrdenWP.pas">
+            <Form>FormLeerOrdenWP</Form>
+        </DCCReference>
+        <None Include="ModelSupport_Menu\default.txvpck"/>
+        <None Include="ModelSupport_Menu\ULeerOrdenWP\default.txvpck"/>
+        <None Include="ModelSupport_Menu\Menu\default.txvpck"/>
+        <None Include="ModelSupport_Menu\ULeerOrdenWP\default.txaPackage"/>
+        <None Include="ModelSupport_Menu\ComposicionPrecio\default.txvpck"/>
+        <None Include="ModelSupport_Menu\DMAcopio\default.txvpck"/>
+        <None Include="agents.md"/>
+        <BuildConfiguration Include="Base">
+            <Key>Base</Key>
+        </BuildConfiguration>
+        <BuildConfiguration Include="Release">
+            <Key>Cfg_1</Key>
+            <CfgParent>Base</CfgParent>
+        </BuildConfiguration>
+        <BuildConfiguration Include="Debug">
+            <Key>Cfg_2</Key>
+            <CfgParent>Base</CfgParent>
+        </BuildConfiguration>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Delphi.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Delphi.Personality>
+                <Source>
+                    <Source Name="MainSource">Menu.dpr</Source>
+                </Source>
+                <Excluded_Packages>
+                    <Excluded_Packages Name="C:\Users\Public\Documents\Embarcadero\Studio\23.0\Bpl\OpenAIPackage.bpl">File C:\Users\Public\Documents\Embarcadero\Studio\23.0\Bpl\OpenAIPackage.bpl not found</Excluded_Packages>
+                    <Excluded_Packages Name="C:\Users\Public\Documents\Embarcadero\Studio\23.0\Bpl\OpenAssistantPkg.bpl">File C:\Users\Public\Documents\Embarcadero\Studio\23.0\Bpl\OpenAssistantPkg.bpl not found</Excluded_Packages>
+                    <Excluded_Packages Name="$(BDSBIN)\dcloffice2k290.bpl">Microsoft Office 2000 Sample Automation Server Wrapper Components</Excluded_Packages>
+                    <Excluded_Packages Name="$(BDSBIN)\dclofficexp290.bpl">Microsoft Office XP Sample Automation Server Wrapper Components</Excluded_Packages>
+                </Excluded_Packages>
+            </Delphi.Personality>
+            <Platforms>
+                <Platform value="Android64">True</Platform>
+                <Platform value="iOSDevice64">True</Platform>
+                <Platform value="iOSSimARM64">True</Platform>
+                <Platform value="Win32">True</Platform>
+                <Platform value="Win64">True</Platform>
+            </Platforms>
+            <Deployment Version="4">
+                <DeployFile LocalName="Menu.exe" Configuration="Debug" Class="ProjectOutput">
+                    <Platform Name="Win32">
+                        <RemoteName>Menu.exe</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="Menu.exe" Configuration="Release" Class="ProjectOutput">
+                    <Platform Name="Win32">
+                        <RemoteName>Menu.exe</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_Menu\ULeerOrdenWP\default.txaPackage" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_Menu\ULeerOrdenWP\default.txaPackage" Configuration="Release" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="agents.md" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployClass Name="AdditionalDebugSymbols">
+                    <Platform Name="iOSSimulator">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="OSX32">
+                        <RemoteDir>Contents\MacOS</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="Win32">
+                        <Operation>0</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="AndroidClasses">
+                    <Platform Name="Android">
+                        <RemoteDir>classes</RemoteDir>
+                        <Operation>64</Operation>
+                    </Platform>
+                    <Platform Name="Android64">
+                        <RemoteDir>classes</RemoteDir>
+                        <Operation>64</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="AndroidFileProvider">
+                    <Platform Name="Android">
+                        <RemoteDir>res\xml</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="Android64">
+                        <RemoteDir>res\xml</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="AndroidLibnativeArmeabiFile">
+                    <Platform Name="Android">
+                        <RemoteDir>library\lib\armeabi</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="Android64">
+                        <RemoteDir>library\lib\armeabi</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="AndroidLibnativeArmeabiv7aFile">
+                    <Platform Name="Android64">
+                        <RemoteDir>library\lib\armeabi-v7a</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="AndroidLibnativeMipsFile">
+                    <Platform Name="Android">
+                        <RemoteDir>library\lib\mips</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="Android64">
+                        <RemoteDir>library\lib\mips</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="AndroidServiceOutput">
+                    <Platform Name="Android">
+                        <RemoteDir>library\lib\armeabi-v7a</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="Android64">
+                        <RemoteDir>library\lib\arm64-v8a</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="AndroidServiceOutput_Android32">
+                    <Platform Name="Android64">
+                        <RemoteDir>library\lib\armeabi-v7a</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="AndroidSplashImageDef">
+                    <Platform Name="Android">
+                        <RemoteDir>res\drawable</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="Android64">
+                        <RemoteDir>res\drawable</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="AndroidSplashImageDefV21">
+                    <Platform Name="Android">
+                        <RemoteDir>res\drawable-anydpi-v21</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="Android64">
+                        <RemoteDir>res\drawable-anydpi-v21</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="AndroidSplashStyles">
+                    <Platform Name="Android">
+                        <RemoteDir>res\values</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="Android64">
+                        <RemoteDir>res\values</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="AndroidSplashStylesV21">
+                    <Platform Name="Android">
+                        <RemoteDir>res\values-v21</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="Android64">
+                        <RemoteDir>res\values-v21</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="AndroidSplashStylesV31">
+                    <Platform Name="Android">
+                        <RemoteDir>res\values-v31</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="Android64">
+                        <RemoteDir>res\values-v31</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="Android_AdaptiveIcon">
+                    <Platform Name="Android">
+                        <RemoteDir>res\drawable-anydpi-v26</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="Android64">
+                        <RemoteDir>res\drawable-anydpi-v26</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="Android_AdaptiveIconBackground">
+                    <Platform Name="Android">
+                        <RemoteDir>res\drawable</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="Android64">
+                        <RemoteDir>res\drawable</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="Android_AdaptiveIconForeground">
+                    <Platform Name="Android">
+                        <RemoteDir>res\drawable</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="Android64">
+                        <RemoteDir>res\drawable</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="Android_AdaptiveIconMonochrome">
+                    <Platform Name="Android">
+                        <RemoteDir>res\drawable</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="Android64">
+                        <RemoteDir>res\drawable</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="Android_AdaptiveIconV33">
+                    <Platform Name="Android">
+                        <RemoteDir>res\drawable-anydpi-v33</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="Android64">
+                        <RemoteDir>res\drawable-anydpi-v33</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="Android_Colors">
+                    <Platform Name="Android">
+                        <RemoteDir>res\values</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="Android64">
+                        <RemoteDir>res\values</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="Android_ColorsDark">
+                    <Platform Name="Android">
+                        <RemoteDir>res\values-night-v21</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="Android64">
+                        <RemoteDir>res\values-night-v21</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="Android_DefaultAppIcon">
+                    <Platform Name="Android">
+                        <RemoteDir>res\drawable</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="Android64">
+                        <RemoteDir>res\drawable</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="Android_LauncherIcon144">
+                    <Platform Name="Android">
+                        <RemoteDir>res\drawable-xxhdpi</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="Android64">
+                        <RemoteDir>res\drawable-xxhdpi</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="Android_LauncherIcon192">
+                    <Platform Name="Android">
+                        <RemoteDir>res\drawable-xxxhdpi</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="Android64">
+                        <RemoteDir>res\drawable-xxxhdpi</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="Android_LauncherIcon36">
+                    <Platform Name="Android">
+                        <RemoteDir>res\drawable-ldpi</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="Android64">
+                        <RemoteDir>res\drawable-ldpi</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="Android_LauncherIcon48">
+                    <Platform Name="Android">
+                        <RemoteDir>res\drawable-mdpi</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="Android64">
+                        <RemoteDir>res\drawable-mdpi</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="Android_LauncherIcon72">
+                    <Platform Name="Android">
+                        <RemoteDir>res\drawable-hdpi</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="Android64">
+                        <RemoteDir>res\drawable-hdpi</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="Android_LauncherIcon96">
+                    <Platform Name="Android">
+                        <RemoteDir>res\drawable-xhdpi</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="Android64">
+                        <RemoteDir>res\drawable-xhdpi</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="Android_NotificationIcon24">
+                    <Platform Name="Android">
+                        <RemoteDir>res\drawable-mdpi</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="Android64">
+                        <RemoteDir>res\drawable-mdpi</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="Android_NotificationIcon36">
+                    <Platform Name="Android">
+                        <RemoteDir>res\drawable-hdpi</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="Android64">
+                        <RemoteDir>res\drawable-hdpi</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="Android_NotificationIcon48">
+                    <Platform Name="Android">
+                        <RemoteDir>res\drawable-xhdpi</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="Android64">
+                        <RemoteDir>res\drawable-xhdpi</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="Android_NotificationIcon72">
+                    <Platform Name="Android">
+                        <RemoteDir>res\drawable-xxhdpi</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="Android64">
+                        <RemoteDir>res\drawable-xxhdpi</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="Android_NotificationIcon96">
+                    <Platform Name="Android">
+                        <RemoteDir>res\drawable-xxxhdpi</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="Android64">
+                        <RemoteDir>res\drawable-xxxhdpi</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="Android_SplashImage426">
+                    <Platform Name="Android">
+                        <RemoteDir>res\drawable-small</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="Android64">
+                        <RemoteDir>res\drawable-small</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="Android_SplashImage470">
+                    <Platform Name="Android">
+                        <RemoteDir>res\drawable-normal</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="Android64">
+                        <RemoteDir>res\drawable-normal</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="Android_SplashImage640">
+                    <Platform Name="Android">
+                        <RemoteDir>res\drawable-large</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="Android64">
+                        <RemoteDir>res\drawable-large</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="Android_SplashImage960">
+                    <Platform Name="Android">
+                        <RemoteDir>res\drawable-xlarge</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="Android64">
+                        <RemoteDir>res\drawable-xlarge</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="Android_Strings">
+                    <Platform Name="Android">
+                        <RemoteDir>res\values</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="Android64">
+                        <RemoteDir>res\values</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="Android_VectorizedNotificationIcon">
+                    <Platform Name="Android">
+                        <RemoteDir>res\drawable-anydpi-v24</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="Android64">
+                        <RemoteDir>res\drawable-anydpi-v24</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="Android_VectorizedSplash">
+                    <Platform Name="Android">
+                        <RemoteDir>res\drawable</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="Android64">
+                        <RemoteDir>res\drawable</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="Android_VectorizedSplashDark">
+                    <Platform Name="Android">
+                        <RemoteDir>res\drawable-night-anydpi-v21</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="Android64">
+                        <RemoteDir>res\drawable-night-anydpi-v21</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="Android_VectorizedSplashV31">
+                    <Platform Name="Android">
+                        <RemoteDir>res\drawable-anydpi-v31</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="Android64">
+                        <RemoteDir>res\drawable-anydpi-v31</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="Android_VectorizedSplashV31Dark">
+                    <Platform Name="Android">
+                        <RemoteDir>res\drawable-night-anydpi-v31</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="Android64">
+                        <RemoteDir>res\drawable-night-anydpi-v31</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="DebugSymbols">
+                    <Platform Name="iOSSimulator">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="OSX32">
+                        <RemoteDir>Contents\MacOS</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="Win32">
+                        <Operation>0</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="DependencyFramework">
+                    <Platform Name="OSX32">
+                        <RemoteDir>Contents\MacOS</RemoteDir>
+                        <Operation>1</Operation>
+                        <Extensions>.framework</Extensions>
+                    </Platform>
+                    <Platform Name="OSX64">
+                        <RemoteDir>Contents\MacOS</RemoteDir>
+                        <Operation>1</Operation>
+                        <Extensions>.framework</Extensions>
+                    </Platform>
+                    <Platform Name="OSXARM64">
+                        <RemoteDir>Contents\MacOS</RemoteDir>
+                        <Operation>1</Operation>
+                        <Extensions>.framework</Extensions>
+                    </Platform>
+                    <Platform Name="Win32">
+                        <Operation>0</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="DependencyModule">
+                    <Platform Name="iOSDevice32">
+                        <Operation>1</Operation>
+                        <Extensions>.dylib</Extensions>
+                    </Platform>
+                    <Platform Name="iOSDevice64">
+                        <Operation>1</Operation>
+                        <Extensions>.dylib</Extensions>
+                    </Platform>
+                    <Platform Name="iOSSimARM64">
+                        <Operation>1</Operation>
+                        <Extensions>.dylib</Extensions>
+                    </Platform>
+                    <Platform Name="OSX32">
+                        <RemoteDir>Contents\MacOS</RemoteDir>
+                        <Operation>1</Operation>
+                        <Extensions>.dylib</Extensions>
+                    </Platform>
+                    <Platform Name="OSX64">
+                        <RemoteDir>Contents\MacOS</RemoteDir>
+                        <Operation>1</Operation>
+                        <Extensions>.dylib</Extensions>
+                    </Platform>
+                    <Platform Name="OSXARM64">
+                        <RemoteDir>Contents\MacOS</RemoteDir>
+                        <Operation>1</Operation>
+                        <Extensions>.dylib</Extensions>
+                    </Platform>
+                    <Platform Name="Win32">
+                        <Operation>0</Operation>
+                        <Extensions>.dll;.bpl</Extensions>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Required="true" Name="DependencyPackage">
+                    <Platform Name="iOSDevice32">
+                        <Operation>1</Operation>
+                        <Extensions>.dylib</Extensions>
+                    </Platform>
+                    <Platform Name="iOSDevice64">
+                        <Operation>1</Operation>
+                        <Extensions>.dylib</Extensions>
+                    </Platform>
+                    <Platform Name="iOSSimARM64">
+                        <Operation>1</Operation>
+                        <Extensions>.dylib</Extensions>
+                    </Platform>
+                    <Platform Name="OSX32">
+                        <RemoteDir>Contents\MacOS</RemoteDir>
+                        <Operation>1</Operation>
+                        <Extensions>.dylib</Extensions>
+                    </Platform>
+                    <Platform Name="OSX64">
+                        <RemoteDir>Contents\MacOS</RemoteDir>
+                        <Operation>1</Operation>
+                        <Extensions>.dylib</Extensions>
+                    </Platform>
+                    <Platform Name="OSXARM64">
+                        <RemoteDir>Contents\MacOS</RemoteDir>
+                        <Operation>1</Operation>
+                        <Extensions>.dylib</Extensions>
+                    </Platform>
+                    <Platform Name="Win32">
+                        <Operation>0</Operation>
+                        <Extensions>.bpl</Extensions>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="File">
+                    <Platform Name="Android">
+                        <Operation>0</Operation>
+                    </Platform>
+                    <Platform Name="Android64">
+                        <Operation>0</Operation>
+                    </Platform>
+                    <Platform Name="iOSDevice32">
+                        <Operation>0</Operation>
+                    </Platform>
+                    <Platform Name="iOSDevice64">
+                        <Operation>0</Operation>
+                    </Platform>
+                    <Platform Name="iOSSimARM64">
+                        <Operation>0</Operation>
+                    </Platform>
+                    <Platform Name="OSX32">
+                        <RemoteDir>Contents\Resources\StartUp\</RemoteDir>
+                        <Operation>0</Operation>
+                    </Platform>
+                    <Platform Name="OSX64">
+                        <RemoteDir>Contents\Resources\StartUp\</RemoteDir>
+                        <Operation>0</Operation>
+                    </Platform>
+                    <Platform Name="OSXARM64">
+                        <RemoteDir>Contents\Resources\StartUp\</RemoteDir>
+                        <Operation>0</Operation>
+                    </Platform>
+                    <Platform Name="Win32">
+                        <Operation>0</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="ProjectAndroidManifest">
+                    <Platform Name="Android">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="Android64">
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="ProjectOSXDebug">
+                    <Platform Name="OSX64">
+                        <RemoteDir>..\$(PROJECTNAME).app.dSYM\Contents\Resources\DWARF</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="OSXARM64">
+                        <RemoteDir>..\$(PROJECTNAME).app.dSYM\Contents\Resources\DWARF</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="ProjectOSXEntitlements">
+                    <Platform Name="OSX32">
+                        <RemoteDir>..\</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="OSX64">
+                        <RemoteDir>..\</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="OSXARM64">
+                        <RemoteDir>..\</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="ProjectOSXInfoPList">
+                    <Platform Name="OSX32">
+                        <RemoteDir>Contents</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="OSX64">
+                        <RemoteDir>Contents</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="OSXARM64">
+                        <RemoteDir>Contents</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="ProjectOSXResource">
+                    <Platform Name="OSX32">
+                        <RemoteDir>Contents\Resources</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="OSX64">
+                        <RemoteDir>Contents\Resources</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="OSXARM64">
+                        <RemoteDir>Contents\Resources</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Required="true" Name="ProjectOutput">
+                    <Platform Name="Android">
+                        <RemoteDir>library\lib\armeabi-v7a</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="Android64">
+                        <RemoteDir>library\lib\arm64-v8a</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSDevice32">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSDevice64">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSSimARM64">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="Linux64">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="OSX32">
+                        <RemoteDir>Contents\MacOS</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="OSX64">
+                        <RemoteDir>Contents\MacOS</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="OSXARM64">
+                        <RemoteDir>Contents\MacOS</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="Win32">
+                        <Operation>0</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="ProjectOutput_Android32">
+                    <Platform Name="Android64">
+                        <RemoteDir>library\lib\armeabi-v7a</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="ProjectUWPManifest">
+                    <Platform Name="Win32">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="Win64">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="Win64x">
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="ProjectiOSDeviceDebug">
+                    <Platform Name="iOSDevice32">
+                        <RemoteDir>..\$(PROJECTNAME).app.dSYM\Contents\Resources\DWARF</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSDevice64">
+                        <RemoteDir>..\$(PROJECTNAME).app.dSYM\Contents\Resources\DWARF</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSSimARM64">
+                        <RemoteDir>..\$(PROJECTNAME).app.dSYM\Contents\Resources\DWARF</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="ProjectiOSEntitlements">
+                    <Platform Name="iOSDevice32">
+                        <RemoteDir>..\</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSDevice64">
+                        <RemoteDir>..\</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSSimARM64">
+                        <RemoteDir>..\</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="ProjectiOSInfoPList">
+                    <Platform Name="iOSDevice32">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSDevice64">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSSimARM64">
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="ProjectiOSLaunchScreen">
+                    <Platform Name="iOSDevice64">
+                        <RemoteDir>..\$(PROJECTNAME).launchscreen</RemoteDir>
+                        <Operation>64</Operation>
+                    </Platform>
+                    <Platform Name="iOSSimARM64">
+                        <RemoteDir>..\$(PROJECTNAME).launchscreen</RemoteDir>
+                        <Operation>64</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="ProjectiOSResource">
+                    <Platform Name="iOSDevice32">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSDevice64">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSSimARM64">
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="UWP_DelphiLogo150">
+                    <Platform Name="Win32">
+                        <RemoteDir>Assets</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="Win64">
+                        <RemoteDir>Assets</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="UWP_DelphiLogo44">
+                    <Platform Name="Win32">
+                        <RemoteDir>Assets</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="Win64">
+                        <RemoteDir>Assets</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="iOS_AppStore1024">
+                    <Platform Name="iOSDevice64">
+                        <RemoteDir>..\$(PROJECTNAME).launchscreen\Assets\AppIcon.appiconset</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSSimARM64">
+                        <RemoteDir>..\$(PROJECTNAME).launchscreen\Assets\AppIcon.appiconset</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="iPad_AppIcon152">
+                    <Platform Name="iOSDevice64">
+                        <RemoteDir>..\$(PROJECTNAME).launchscreen\Assets\AppIcon.appiconset</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSSimARM64">
+                        <RemoteDir>..\$(PROJECTNAME).launchscreen\Assets\AppIcon.appiconset</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="iPad_AppIcon167">
+                    <Platform Name="iOSDevice64">
+                        <RemoteDir>..\$(PROJECTNAME).launchscreen\Assets\AppIcon.appiconset</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSSimARM64">
+                        <RemoteDir>..\$(PROJECTNAME).launchscreen\Assets\AppIcon.appiconset</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="iPad_Launch2x">
+                    <Platform Name="iOSDevice64">
+                        <RemoteDir>..\$(PROJECTNAME).launchscreen\Assets\LaunchScreenImage.imageset</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSSimARM64">
+                        <RemoteDir>..\$(PROJECTNAME).launchscreen\Assets\LaunchScreenImage.imageset</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="iPad_LaunchDark2x">
+                    <Platform Name="iOSDevice64">
+                        <RemoteDir>..\$(PROJECTNAME).launchscreen\Assets\LaunchScreenImage.imageset</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSSimARM64">
+                        <RemoteDir>..\$(PROJECTNAME).launchscreen\Assets\LaunchScreenImage.imageset</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="iPad_Notification40">
+                    <Platform Name="iOSDevice64">
+                        <RemoteDir>..\$(PROJECTNAME).launchscreen\Assets\AppIcon.appiconset</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSSimARM64">
+                        <RemoteDir>..\$(PROJECTNAME).launchscreen\Assets\AppIcon.appiconset</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="iPad_Setting58">
+                    <Platform Name="iOSDevice64">
+                        <RemoteDir>..\$(PROJECTNAME).launchscreen\Assets\AppIcon.appiconset</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSSimARM64">
+                        <RemoteDir>..\$(PROJECTNAME).launchscreen\Assets\AppIcon.appiconset</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="iPad_SpotLight80">
+                    <Platform Name="iOSDevice64">
+                        <RemoteDir>..\$(PROJECTNAME).launchscreen\Assets\AppIcon.appiconset</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSSimARM64">
+                        <RemoteDir>..\$(PROJECTNAME).launchscreen\Assets\AppIcon.appiconset</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="iPhone_AppIcon120">
+                    <Platform Name="iOSDevice64">
+                        <RemoteDir>..\$(PROJECTNAME).launchscreen\Assets\AppIcon.appiconset</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSSimARM64">
+                        <RemoteDir>..\$(PROJECTNAME).launchscreen\Assets\AppIcon.appiconset</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="iPhone_AppIcon180">
+                    <Platform Name="iOSDevice64">
+                        <RemoteDir>..\$(PROJECTNAME).launchscreen\Assets\AppIcon.appiconset</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSSimARM64">
+                        <RemoteDir>..\$(PROJECTNAME).launchscreen\Assets\AppIcon.appiconset</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="iPhone_Launch2x">
+                    <Platform Name="iOSDevice64">
+                        <RemoteDir>..\$(PROJECTNAME).launchscreen\Assets\LaunchScreenImage.imageset</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSSimARM64">
+                        <RemoteDir>..\$(PROJECTNAME).launchscreen\Assets\LaunchScreenImage.imageset</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="iPhone_Launch3x">
+                    <Platform Name="iOSDevice64">
+                        <RemoteDir>..\$(PROJECTNAME).launchscreen\Assets\LaunchScreenImage.imageset</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSSimARM64">
+                        <RemoteDir>..\$(PROJECTNAME).launchscreen\Assets\LaunchScreenImage.imageset</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="iPhone_LaunchDark2x">
+                    <Platform Name="iOSDevice64">
+                        <RemoteDir>..\$(PROJECTNAME).launchscreen\Assets\LaunchScreenImage.imageset</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSSimARM64">
+                        <RemoteDir>..\$(PROJECTNAME).launchscreen\Assets\LaunchScreenImage.imageset</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="iPhone_LaunchDark3x">
+                    <Platform Name="iOSDevice64">
+                        <RemoteDir>..\$(PROJECTNAME).launchscreen\Assets\LaunchScreenImage.imageset</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSSimARM64">
+                        <RemoteDir>..\$(PROJECTNAME).launchscreen\Assets\LaunchScreenImage.imageset</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="iPhone_Notification40">
+                    <Platform Name="iOSDevice64">
+                        <RemoteDir>..\$(PROJECTNAME).launchscreen\Assets\AppIcon.appiconset</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSSimARM64">
+                        <RemoteDir>..\$(PROJECTNAME).launchscreen\Assets\AppIcon.appiconset</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="iPhone_Notification60">
+                    <Platform Name="iOSDevice64">
+                        <RemoteDir>..\$(PROJECTNAME).launchscreen\Assets\AppIcon.appiconset</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSSimARM64">
+                        <RemoteDir>..\$(PROJECTNAME).launchscreen\Assets\AppIcon.appiconset</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="iPhone_Setting58">
+                    <Platform Name="iOSDevice64">
+                        <RemoteDir>..\$(PROJECTNAME).launchscreen\Assets\AppIcon.appiconset</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSSimARM64">
+                        <RemoteDir>..\$(PROJECTNAME).launchscreen\Assets\AppIcon.appiconset</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="iPhone_Setting87">
+                    <Platform Name="iOSDevice64">
+                        <RemoteDir>..\$(PROJECTNAME).launchscreen\Assets\AppIcon.appiconset</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSSimARM64">
+                        <RemoteDir>..\$(PROJECTNAME).launchscreen\Assets\AppIcon.appiconset</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="iPhone_Spotlight120">
+                    <Platform Name="iOSDevice64">
+                        <RemoteDir>..\$(PROJECTNAME).launchscreen\Assets\AppIcon.appiconset</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSSimARM64">
+                        <RemoteDir>..\$(PROJECTNAME).launchscreen\Assets\AppIcon.appiconset</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="iPhone_Spotlight80">
+                    <Platform Name="iOSDevice64">
+                        <RemoteDir>..\$(PROJECTNAME).launchscreen\Assets\AppIcon.appiconset</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSSimARM64">
+                        <RemoteDir>..\$(PROJECTNAME).launchscreen\Assets\AppIcon.appiconset</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <ProjectRoot Platform="Android" Name="$(PROJECTNAME)"/>
+                <ProjectRoot Platform="Android64" Name="$(PROJECTNAME)"/>
+                <ProjectRoot Platform="iOSDevice32" Name="$(PROJECTNAME).app"/>
+                <ProjectRoot Platform="iOSDevice64" Name="$(PROJECTNAME).app"/>
+                <ProjectRoot Platform="iOSSimARM64" Name="$(PROJECTNAME).app"/>
+                <ProjectRoot Platform="Linux64" Name="$(PROJECTNAME)"/>
+                <ProjectRoot Platform="OSX32" Name="$(PROJECTNAME).app"/>
+                <ProjectRoot Platform="OSX64" Name="$(PROJECTNAME).app"/>
+                <ProjectRoot Platform="OSXARM64" Name="$(PROJECTNAME).app"/>
+                <ProjectRoot Platform="Win32" Name="$(PROJECTNAME)"/>
+                <ProjectRoot Platform="Win64" Name="$(PROJECTNAME)"/>
+                <ProjectRoot Platform="Win64x" Name="$(PROJECTNAME)"/>
+            </Deployment>
+            <ModelSupport>True</ModelSupport>
+        </BorlandProject>
+        <ProjectFileVersion>12</ProjectFileVersion>
+    </ProjectExtensions>
+    <Import Project="$(BDS)\Bin\CodeGear.Delphi.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Delphi.Targets')"/>
+    <Import Project="$(APPDATA)\Embarcadero\$(BDSAPPDATABASEDIR)\$(PRODUCTVERSION)\UserTools.proj" Condition="Exists('$(APPDATA)\Embarcadero\$(BDSAPPDATABASEDIR)\$(PRODUCTVERSION)\UserTools.proj')"/>
+    <Import Project="$(MSBuildProjectName).deployproj" Condition="Exists('$(MSBuildProjectName).deployproj')"/>
+</Project>

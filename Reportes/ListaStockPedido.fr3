@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<TfrxReport Version="2024.1.8" DotMatrixReport="False" IniFile="\Software\Fast Reports" PreviewOptions.Buttons="167935" PreviewOptions.Zoom="1" PrintOptions.Printer="Default" PrintOptions.PrintOnSheet="0" ReportOptions.CreateDate="45658.9619709375" ReportOptions.Description.Text="" ReportOptions.LastChange="45692.6277969097" ScriptLanguage="PascalScript" ScriptText.Text="&#13;&#10;begin&#13;&#10;&#13;&#10;end.">
+  <Datasets>
+    <item DataSet="frDetalle" DataSetName="frDetalle"/>
+  </Datasets>
+  <TfrxDataPage Name="Data" HGuides.Text="" VGuides.Text="" Height="1000" Left="0" Top="0" Width="1000"/>
+  <TfrxReportPage Name="Page1" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="1" HGuides.Text="" VGuides.Text="" PaperWidth="215.9" PaperHeight="279.4" PaperSize="1" LeftMargin="10" RightMargin="10" TopMargin="10" BottomMargin="10" ColumnWidth="0" ColumnPositions.Text="" Frame.Typ="0" MirrorMode="0">
+    <TfrxReportTitle Name="ReportTitle1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Frame.Typ="0" Height="38.89765" Left="0" Top="18.89765" Width="740.409927">
+      <TfrxMemoView Name="Memo2" AllowVectorExport="True" Left="11.33858967" Top="3.89999999999419E-7" Width="249.44898359" Height="26.45670786" ContentScaleOptions.Constraints.MaxIterationValue="0" ContentScaleOptions.Constraints.MinIterationValue="0" Font.Charset="1" Font.Color="0" Font.Height="-21" Font.Name="Arial" Font.Style="1" Frame.Typ="0" ParentFont="False" Text="Detalle de Pedidos"/>
+    </TfrxReportTitle>
+    <TfrxMasterData Name="MasterData1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Frame.Typ="0" Height="20" Left="0" Top="162.51979" Width="740.409927" ColumnWidth="0" ColumnGap="0" DataSet="frDetalle" DataSetName="frDetalle" RowCount="0">
+      <TfrxMemoView Name="frDetalleCODIGO" IndexTag="1" AllowVectorExport="True" Left="3.77953" Top="0" Width="102.04731" Height="18.89765" ContentScaleOptions.Constraints.MaxIterationValue="0" ContentScaleOptions.Constraints.MinIterationValue="0" DataField="CODIGO" DataSet="frDetalle" DataSetName="frDetalle" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="Arial" Font.Style="0" Frame.Typ="0" ParentFont="False" Text="[frDetalle.&#34;CODIGO&#34;]"/>
+      <TfrxMemoView Name="frDetalleDESCRIPCION" IndexTag="1" AllowVectorExport="True" Left="124.72449" Top="0" Width="359.05535" Height="18.89765" ContentScaleOptions.Constraints.MaxIterationValue="0" ContentScaleOptions.Constraints.MinIterationValue="0" DataField="DESCRIPCION" DataSet="frDetalle" DataSetName="frDetalle" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="Arial" Font.Style="0" Frame.Typ="0" ParentFont="False" Text="[frDetalle.&#34;DESCRIPCION&#34;]"/>
+      <TfrxMemoView Name="frDetalleCANTIDAD" IndexTag="1" AllowVectorExport="True" Left="585.82715" Top="0" Width="139.84261" Height="18.89765" ContentScaleOptions.Constraints.MaxIterationValue="0" ContentScaleOptions.Constraints.MinIterationValue="0" DataField="CANTIDAD" DataSet="frDetalle" DataSetName="frDetalle" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="Arial" Font.Style="0" Frame.Typ="0" HAlign="haRight" ParentFont="False" Text="[frDetalle.&#34;CANTIDAD&#34;]"/>
+    </TfrxMasterData>
+    <TfrxPageFooter Name="PageFooter1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Frame.Typ="0" Height="20" Left="0" Top="241.88992" Width="740.409927">
+      <TfrxMemoView Name="Memo1" AllowVectorExport="True" Left="664.819327" Top="0" Width="75.5906" Height="18.89765" Frame.Typ="0" HAlign="haRight" Text="[Page#]"/>
+    </TfrxPageFooter>
+    <TfrxGroupHeader Name="GroupHeader1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Frame.Color="12632256" Frame.Typ="0" Height="22.67718" Left="0" Top="117.16543" Width="740.409927" Condition="frDetalle.&#34;NOMBRE&#34;">
+      <TfrxMemoView Name="frDetalleNOMBRE" IndexTag="1" AllowVectorExport="True" Left="3.77953" Top="0" Width="578.26809" Height="18.89765" ContentScaleOptions.Constraints.MaxIterationValue="0" ContentScaleOptions.Constraints.MinIterationValue="0" DataField="NOMBRE" DataSet="frDetalle" DataSetName="frDetalle" Frame.Typ="0" Text="[frDetalle.&#34;NOMBRE&#34;]"/>
+    </TfrxGroupHeader>
+  </TfrxReportPage>
+</TfrxReport>

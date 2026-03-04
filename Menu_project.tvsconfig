@@ -1,0 +1,4 @@
+<?xml version="1.0"?>
+<TgConfig Version="3" SubLevelDisabled="False">
+  <Option Name="namespaceFolder.Arca_personaServiceA51" Type="System.String" Value="Arca_personaServiceA51" Category="General" IsBrowsable="False" />
+</TgConfig>

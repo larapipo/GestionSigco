@@ -1,0 +1,373 @@
+<XmlTransformation Version="1.0"><Transform Direction="ToCds" DataEncoding="UTF-8"><SelectEach dest="DATAPACKET\ROWDATA\ROW" from="\S:Envelope"><Select dest="@S" from="@xmlns:S"/><Select dest="@codOperacion" from="\S:Body\ns2:ConsultarLiquidacionPorNroComprobanteResp\respuesta\cabecera\codOperacion"/><Select dest="@cae" from="\S:Body\ns2:ConsultarLiquidacionPorNroComprobanteResp\respuesta\cabecera\cae"/><Select dest="@fechaVencimientoCae" from="\S:Body\ns2:ConsultarLiquidacionPorNroComprobanteResp\respuesta\cabecera\fechaVencimientoCae"/><Select dest="@fechaProcesoAFIP" from="\S:Body\ns2:ConsultarLiquidacionPorNroComprobanteResp\respuesta\cabecera\fechaProcesoAFIP"/><Select dest="@puntoVenta" from="\S:Body\ns2:ConsultarLiquidacionPorNroComprobanteResp\respuesta\emisor\puntoVenta"/><Select dest="@tipoComprobante" from="\S:Body\ns2:ConsultarLiquidacionPorNroComprobanteResp\respuesta\emisor\tipoComprobante"/><Select dest="@nroComprobante" from="\S:Body\ns2:ConsultarLiquidacionPorNroComprobanteResp\respuesta\emisor\nroComprobante"/><Select dest="@emisor_codCaracter" from="\S:Body\ns2:ConsultarLiquidacionPorNroComprobanteResp\respuesta\emisor\codCaracter"/><Select dest="@fechaInicioActividades" from="\S:Body\ns2:ConsultarLiquidacionPorNroComprobanteResp\respuesta\emisor\fechaInicioActividades"/><Select dest="@razonSocial" from="\S:Body\ns2:ConsultarLiquidacionPorNroComprobanteResp\respuesta\emisor\razonSocial"/><Select dest="@emisor_iibb" from="\S:Body\ns2:ConsultarLiquidacionPorNroComprobanteResp\respuesta\emisor\iibb"/><Select dest="@domicilioPuntoVenta" from="\S:Body\ns2:ConsultarLiquidacionPorNroComprobanteResp\respuesta\emisor\domicilioPuntoVenta"/><Select dest="@emisor_situacionIVA" from="\S:Body\ns2:ConsultarLiquidacionPorNroComprobanteResp\respuesta\emisor\situacionIVA"/><Select dest="@emisor_nroRUCA" from="\S:Body\ns2:ConsultarLiquidacionPorNroComprobanteResp\respuesta\emisor\nroRUCA"/><Select dest="@cuit" from="\S:Body\ns2:ConsultarLiquidacionPorNroComprobanteResp\respuesta\receptor\cuit"/><Select dest="@nombre" from="\S:Body\ns2:ConsultarLiquidacionPorNroComprobanteResp\respuesta\receptor\nombre"/><Select dest="@receptor_codCaracter" from="\S:Body\ns2:ConsultarLiquidacionPorNroComprobanteResp\respuesta\receptor\codCaracter"/><Select dest="@receptor_iibb" from="\S:Body\ns2:ConsultarLiquidacionPorNroComprobanteResp\respuesta\receptor\iibb"/><Select dest="@receptor_nroRUCA" from="\S:Body\ns2:ConsultarLiquidacionPorNroComprobanteResp\respuesta\receptor\nroRUCA"/><Select dest="@receptor_situacionIVA" from="\S:Body\ns2:ConsultarLiquidacionPorNroComprobanteResp\respuesta\receptor\situacionIVA"/><Select dest="@domicilio" from="\S:Body\ns2:ConsultarLiquidacionPorNroComprobanteResp\respuesta\receptor\domicilio"/><Select dest="@nombreLocalidad" from="\S:Body\ns2:ConsultarLiquidacionPorNroComprobanteResp\respuesta\receptor\nombreLocalidad"/><Select dest="@codProvincia" from="\S:Body\ns2:ConsultarLiquidacionPorNroComprobanteResp\respuesta\receptor\codProvincia"/><Select dest="@codigoPostal" from="\S:Body\ns2:ConsultarLiquidacionPorNroComprobanteResp\respuesta\receptor\codigoPostal"/><Select dest="@fechaComprobante" from="\S:Body\ns2:ConsultarLiquidacionPorNroComprobanteResp\respuesta\datosLiquidacion\fechaComprobante"/><Select dest="@fechaOperacion" from="\S:Body\ns2:ConsultarLiquidacionPorNroComprobanteResp\respuesta\datosLiquidacion\fechaOperacion"/><Select dest="@codMotivo" from="\S:Body\ns2:ConsultarLiquidacionPorNroComprobanteResp\respuesta\datosLiquidacion\codMotivo"/><Select dest="@fechaRecepcion" from="\S:Body\ns2:ConsultarLiquidacionPorNroComprobanteResp\respuesta\datosLiquidacion\fechaRecepcion"/><Select dest="@fechaFaena" from="\S:Body\ns2:ConsultarLiquidacionPorNroComprobanteResp\respuesta\datosLiquidacion\fechaFaena"/><Select dest="@nroDTE" from="\S:Body\ns2:ConsultarLiquidacionPorNroComprobanteResp\respuesta\dte\nroDTE"/><Select dest="@nroRenspa" from="\S:Body\ns2:ConsultarLiquidacionPorNroComprobanteResp\respuesta\dte\nroRenspa"/><Select dest="@nroItem" from="\S:Body\ns2:ConsultarLiquidacionPorNroComprobanteResp\respuesta\itemDetalleLiquidacion\nroItem"/><Select dest="@codCategoria" from="\S:Body\ns2:ConsultarLiquidacionPorNroComprobanteResp\respuesta\itemDetalleLiquidacion\codCategoria"/><Select dest="@cantidad" from="\S:Body\ns2:ConsultarLiquidacionPorNroComprobanteResp\respuesta\itemDetalleLiquidacion\cantidad"/><Select dest="@cantidadCabezas" from="\S:Body\ns2:ConsultarLiquidacionPorNroComprobanteResp\respuesta\itemDetalleLiquidacion\cantidadCabezas"/><Select dest="@codRaza" from="\S:Body\ns2:ConsultarLiquidacionPorNroComprobanteResp\respuesta\itemDetalleLiquidacion\raza\codRaza"/><Select dest="@tipoLiquidacion" from="\S:Body\ns2:ConsultarLiquidacionPorNroComprobanteResp\respuesta\itemDetalleLiquidacion\tipoLiquidacion"/><Select dest="@precioUnitario" from="\S:Body\ns2:ConsultarLiquidacionPorNroComprobanteResp\respuesta\itemDetalleLiquidacion\precioUnitario"/><Select dest="@alicuotaIVA" from="\S:Body\ns2:ConsultarLiquidacionPorNroComprobanteResp\respuesta\itemDetalleLiquidacion\alicuotaIVA"/><Select dest="@nroTropa" from="\S:Body\ns2:ConsultarLiquidacionPorNroComprobanteResp\respuesta\itemDetalleLiquidacion\nroTropa"/><Select dest="@unidadMedida" from="\S:Body\ns2:ConsultarLiquidacionPorNroComprobanteResp\respuesta\itemDetalleLiquidacion\unidadMedida"/><Select dest="@importeBruto" from="\S:Body\ns2:ConsultarLiquidacionPorNroComprobanteResp\respuesta\itemDetalleLiquidacion\importeBruto"/><Select dest="@importeIVA" from="\S:Body\ns2:ConsultarLiquidacionPorNroComprobanteResp\respuesta\itemDetalleLiquidacion\importeIVA"/><Select dest="@promedioUM" from="\S:Body\ns2:ConsultarLiquidacionPorNroComprobanteResp\respuesta\itemDetalleLiquidacion\promedioUM"/><Select dest="@importeTotal" from="\S:Body\ns2:ConsultarLiquidacionPorNroComprobanteResp\respuesta\itemDetalleLiquidacion\importeTotal"/><Select dest="@codTributo" from="\S:Body\ns2:ConsultarLiquidacionPorNroComprobanteResp\respuesta\tributo\codTributo"/><Select dest="@importe" from="\S:Body\ns2:ConsultarLiquidacionPorNroComprobanteResp\respuesta\tributo\importe"/><Select dest="@datosAdicionales" from="\S:Body\ns2:ConsultarLiquidacionPorNroComprobanteResp\respuesta\datosAdicionales"/><Select dest="@resumenTotales_importeBruto" from="\S:Body\ns2:ConsultarLiquidacionPorNroComprobanteResp\respuesta\resumenTotales\importeBruto"/><Select dest="@importeIVASobreBruto" from="\S:Body\ns2:ConsultarLiquidacionPorNroComprobanteResp\respuesta\resumenTotales\importeIVASobreBruto"/><Select dest="@importeTotalGastos" from="\S:Body\ns2:ConsultarLiquidacionPorNroComprobanteResp\respuesta\resumenTotales\importeTotalGastos"/><Select dest="@importeIVASobreGastos" from="\S:Body\ns2:ConsultarLiquidacionPorNroComprobanteResp\respuesta\resumenTotales\importeIVASobreGastos"/><Select dest="@importeTotalTributos" from="\S:Body\ns2:ConsultarLiquidacionPorNroComprobanteResp\respuesta\resumenTotales\importeTotalTributos"/><Select dest="@importeTotalNeto" from="\S:Body\ns2:ConsultarLiquidacionPorNroComprobanteResp\respuesta\resumenTotales\importeTotalNeto"/><Select dest="@pdf" from="\S:Body\ns2:ConsultarLiquidacionPorNroComprobanteResp\respuesta\pdf"/><Select dest="@servidor" from="\S:Body\ns2:ConsultarLiquidacionPorNroComprobanteResp\respuesta\metadata\servidor"/><Select dest="@fechaHora" from="\S:Body\ns2:ConsultarLiquidacionPorNroComprobanteResp\respuesta\metadata\fechaHora"/></SelectEach></Transform><XmlSchema RootName="Envelope"><![CDATA[<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <element xmlns="http://www.w3.org/2001/XMLSchema" name="Envelope" type="EnvelopeType"/>
+  <complexType xmlns="http://www.w3.org/2001/XMLSchema" name="EnvelopeType">
+    <sequence>
+      <element name="S:Body" type="S:BodyType"/>
+    </sequence>
+    <attribute name="xmlns:S" type="xs:string"/>
+  </complexType>
+  <element xmlns="http://www.w3.org/2001/XMLSchema" name="Body" type="BodyType"/>
+  <complexType xmlns="http://www.w3.org/2001/XMLSchema" name="BodyType">
+    <sequence>
+      <element name="ns2:ConsultarLiquidacionPorNroComprobanteResp" type="ns2:ConsultarLiquidacionPorNroComprobanteRespType"/>
+    </sequence>
+  </complexType>
+  <element xmlns="http://www.w3.org/2001/XMLSchema" name="ConsultarLiquidacionPorNroComprobanteResp" type="ConsultarLiquidacionPorNroComprobanteRespType"/>
+  <complexType xmlns="http://www.w3.org/2001/XMLSchema" name="ConsultarLiquidacionPorNroComprobanteRespType">
+    <sequence>
+      <element name="respuesta" type="respuestaType"/>
+    </sequence>
+    <attribute name="xmlns:ns2" type="xs:string"/>
+  </complexType>
+  <element xmlns="http://www.w3.org/2001/XMLSchema" name="respuesta" type="respuestaType"/>
+  <complexType xmlns="http://www.w3.org/2001/XMLSchema" name="respuestaType">
+    <sequence>
+      <element name="cabecera" type="cabeceraType"/>
+      <element name="emisor" type="emisorType"/>
+      <element name="receptor" type="receptorType"/>
+      <element name="datosLiquidacion" type="datosLiquidacionType"/>
+      <element name="dte" type="dteType"/>
+      <element name="itemDetalleLiquidacion" type="itemDetalleLiquidacionType"/>
+      <element name="tributo" type="tributoType"/>
+      <element name="datosAdicionales" type="datosAdicionalesType"/>
+      <element name="resumenTotales" type="resumenTotalesType"/>
+      <element name="pdf" type="pdfType"/>
+      <element name="metadata" type="metadataType"/>
+    </sequence>
+  </complexType>
+  <element xmlns="http://www.w3.org/2001/XMLSchema" name="cabecera" type="cabeceraType"/>
+  <complexType xmlns="http://www.w3.org/2001/XMLSchema" name="cabeceraType">
+    <sequence>
+      <element name="codOperacion" type="codOperacionType"/>
+      <element name="cae" type="caeType"/>
+      <element name="fechaVencimientoCae" type="fechaVencimientoCaeType"/>
+      <element name="fechaProcesoAFIP" type="fechaProcesoAFIPType"/>
+    </sequence>
+  </complexType>
+  <element xmlns="http://www.w3.org/2001/XMLSchema" name="codOperacion" type="codOperacionType"/>
+  <simpleType xmlns="http://www.w3.org/2001/XMLSchema" name="codOperacionType">
+    <restriction base="xs:string"/>
+  </simpleType>
+  <element xmlns="http://www.w3.org/2001/XMLSchema" name="cae" type="caeType"/>
+  <simpleType xmlns="http://www.w3.org/2001/XMLSchema" name="caeType">
+    <restriction base="xs:string"/>
+  </simpleType>
+  <element xmlns="http://www.w3.org/2001/XMLSchema" name="fechaVencimientoCae" type="fechaVencimientoCaeType"/>
+  <simpleType xmlns="http://www.w3.org/2001/XMLSchema" name="fechaVencimientoCaeType">
+    <restriction base="xs:string"/>
+  </simpleType>
+  <element xmlns="http://www.w3.org/2001/XMLSchema" name="fechaProcesoAFIP" type="fechaProcesoAFIPType"/>
+  <simpleType xmlns="http://www.w3.org/2001/XMLSchema" name="fechaProcesoAFIPType">
+    <restriction base="xs:string"/>
+  </simpleType>
+  <element xmlns="http://www.w3.org/2001/XMLSchema" name="emisor" type="emisorType"/>
+  <complexType xmlns="http://www.w3.org/2001/XMLSchema" name="emisorType">
+    <sequence>
+      <element name="puntoVenta" type="puntoVentaType"/>
+      <element name="tipoComprobante" type="tipoComprobanteType"/>
+      <element name="nroComprobante" type="nroComprobanteType"/>
+      <element name="codCaracter" type="codCaracterType"/>
+      <element name="fechaInicioActividades" type="fechaInicioActividadesType"/>
+      <element name="razonSocial" type="razonSocialType"/>
+      <element name="iibb" type="iibbType"/>
+      <element name="domicilioPuntoVenta" type="domicilioPuntoVentaType"/>
+      <element name="situacionIVA" type="situacionIVAType"/>
+      <element name="nroRUCA" type="nroRUCAType"/>
+    </sequence>
+  </complexType>
+  <element xmlns="http://www.w3.org/2001/XMLSchema" name="puntoVenta" type="puntoVentaType"/>
+  <simpleType xmlns="http://www.w3.org/2001/XMLSchema" name="puntoVentaType">
+    <restriction base="xs:string"/>
+  </simpleType>
+  <element xmlns="http://www.w3.org/2001/XMLSchema" name="tipoComprobante" type="tipoComprobanteType"/>
+  <simpleType xmlns="http://www.w3.org/2001/XMLSchema" name="tipoComprobanteType">
+    <restriction base="xs:string"/>
+  </simpleType>
+  <element xmlns="http://www.w3.org/2001/XMLSchema" name="nroComprobante" type="nroComprobanteType"/>
+  <simpleType xmlns="http://www.w3.org/2001/XMLSchema" name="nroComprobanteType">
+    <restriction base="xs:string"/>
+  </simpleType>
+  <element xmlns="http://www.w3.org/2001/XMLSchema" name="codCaracter" type="codCaracterType"/>
+  <simpleType xmlns="http://www.w3.org/2001/XMLSchema" name="codCaracterType">
+    <restriction base="xs:string"/>
+  </simpleType>
+  <element xmlns="http://www.w3.org/2001/XMLSchema" name="fechaInicioActividades" type="fechaInicioActividadesType"/>
+  <simpleType xmlns="http://www.w3.org/2001/XMLSchema" name="fechaInicioActividadesType">
+    <restriction base="xs:string"/>
+  </simpleType>
+  <element xmlns="http://www.w3.org/2001/XMLSchema" name="razonSocial" type="razonSocialType"/>
+  <simpleType xmlns="http://www.w3.org/2001/XMLSchema" name="razonSocialType">
+    <restriction base="xs:string"/>
+  </simpleType>
+  <element xmlns="http://www.w3.org/2001/XMLSchema" name="iibb" type="iibbType"/>
+  <simpleType xmlns="http://www.w3.org/2001/XMLSchema" name="iibbType">
+    <restriction base="xs:string"/>
+  </simpleType>
+  <element xmlns="http://www.w3.org/2001/XMLSchema" name="domicilioPuntoVenta" type="domicilioPuntoVentaType"/>
+  <simpleType xmlns="http://www.w3.org/2001/XMLSchema" name="domicilioPuntoVentaType">
+    <restriction base="xs:string"/>
+  </simpleType>
+  <element xmlns="http://www.w3.org/2001/XMLSchema" name="situacionIVA" type="situacionIVAType"/>
+  <simpleType xmlns="http://www.w3.org/2001/XMLSchema" name="situacionIVAType">
+    <restriction base="xs:string"/>
+  </simpleType>
+  <element xmlns="http://www.w3.org/2001/XMLSchema" name="nroRUCA" type="nroRUCAType"/>
+  <simpleType xmlns="http://www.w3.org/2001/XMLSchema" name="nroRUCAType">
+    <restriction base="xs:string"/>
+  </simpleType>
+  <element xmlns="http://www.w3.org/2001/XMLSchema" name="receptor" type="receptorType"/>
+  <complexType xmlns="http://www.w3.org/2001/XMLSchema" name="receptorType">
+    <sequence>
+      <element name="cuit" type="cuitType"/>
+      <element name="nombre" type="nombreType"/>
+      <element name="codCaracter" type="codCaracterType"/>
+      <element name="iibb" type="iibbType"/>
+      <element name="nroRUCA" type="nroRUCAType"/>
+      <element name="situacionIVA" type="situacionIVAType"/>
+      <element name="domicilio" type="domicilioType"/>
+      <element name="nombreLocalidad" type="nombreLocalidadType"/>
+      <element name="codProvincia" type="codProvinciaType"/>
+      <element name="codigoPostal" type="codigoPostalType"/>
+    </sequence>
+  </complexType>
+  <element xmlns="http://www.w3.org/2001/XMLSchema" name="cuit" type="cuitType"/>
+  <simpleType xmlns="http://www.w3.org/2001/XMLSchema" name="cuitType">
+    <restriction base="xs:string"/>
+  </simpleType>
+  <element xmlns="http://www.w3.org/2001/XMLSchema" name="nombre" type="nombreType"/>
+  <simpleType xmlns="http://www.w3.org/2001/XMLSchema" name="nombreType">
+    <restriction base="xs:string"/>
+  </simpleType>
+  <element xmlns="http://www.w3.org/2001/XMLSchema" name="codCaracter" type="codCaracterType"/>
+  <simpleType xmlns="http://www.w3.org/2001/XMLSchema" name="codCaracterType">
+    <restriction base="xs:string"/>
+  </simpleType>
+  <element xmlns="http://www.w3.org/2001/XMLSchema" name="iibb" type="iibbType"/>
+  <simpleType xmlns="http://www.w3.org/2001/XMLSchema" name="iibbType">
+    <restriction base="xs:string"/>
+  </simpleType>
+  <element xmlns="http://www.w3.org/2001/XMLSchema" name="nroRUCA" type="nroRUCAType"/>
+  <simpleType xmlns="http://www.w3.org/2001/XMLSchema" name="nroRUCAType">
+    <restriction base="xs:string"/>
+  </simpleType>
+  <element xmlns="http://www.w3.org/2001/XMLSchema" name="situacionIVA" type="situacionIVAType"/>
+  <simpleType xmlns="http://www.w3.org/2001/XMLSchema" name="situacionIVAType">
+    <restriction base="xs:string"/>
+  </simpleType>
+  <element xmlns="http://www.w3.org/2001/XMLSchema" name="domicilio" type="domicilioType"/>
+  <simpleType xmlns="http://www.w3.org/2001/XMLSchema" name="domicilioType">
+    <restriction base="xs:string"/>
+  </simpleType>
+  <element xmlns="http://www.w3.org/2001/XMLSchema" name="nombreLocalidad" type="nombreLocalidadType"/>
+  <simpleType xmlns="http://www.w3.org/2001/XMLSchema" name="nombreLocalidadType">
+    <restriction base="xs:string"/>
+  </simpleType>
+  <element xmlns="http://www.w3.org/2001/XMLSchema" name="codProvincia" type="codProvinciaType"/>
+  <simpleType xmlns="http://www.w3.org/2001/XMLSchema" name="codProvinciaType">
+    <restriction base="xs:string"/>
+  </simpleType>
+  <element xmlns="http://www.w3.org/2001/XMLSchema" name="codigoPostal" type="codigoPostalType"/>
+  <simpleType xmlns="http://www.w3.org/2001/XMLSchema" name="codigoPostalType">
+    <restriction base="xs:string"/>
+  </simpleType>
+  <element xmlns="http://www.w3.org/2001/XMLSchema" name="datosLiquidacion" type="datosLiquidacionType"/>
+  <complexType xmlns="http://www.w3.org/2001/XMLSchema" name="datosLiquidacionType">
+    <sequence>
+      <element name="fechaComprobante" type="fechaComprobanteType"/>
+      <element name="fechaOperacion" type="fechaOperacionType"/>
+      <element name="codMotivo" type="codMotivoType"/>
+      <element name="fechaRecepcion" type="fechaRecepcionType"/>
+      <element name="fechaFaena" type="fechaFaenaType"/>
+    </sequence>
+  </complexType>
+  <element xmlns="http://www.w3.org/2001/XMLSchema" name="fechaComprobante" type="fechaComprobanteType"/>
+  <simpleType xmlns="http://www.w3.org/2001/XMLSchema" name="fechaComprobanteType">
+    <restriction base="xs:string"/>
+  </simpleType>
+  <element xmlns="http://www.w3.org/2001/XMLSchema" name="fechaOperacion" type="fechaOperacionType"/>
+  <simpleType xmlns="http://www.w3.org/2001/XMLSchema" name="fechaOperacionType">
+    <restriction base="xs:string"/>
+  </simpleType>
+  <element xmlns="http://www.w3.org/2001/XMLSchema" name="codMotivo" type="codMotivoType"/>
+  <simpleType xmlns="http://www.w3.org/2001/XMLSchema" name="codMotivoType">
+    <restriction base="xs:string"/>
+  </simpleType>
+  <element xmlns="http://www.w3.org/2001/XMLSchema" name="fechaRecepcion" type="fechaRecepcionType"/>
+  <simpleType xmlns="http://www.w3.org/2001/XMLSchema" name="fechaRecepcionType">
+    <restriction base="xs:string"/>
+  </simpleType>
+  <element xmlns="http://www.w3.org/2001/XMLSchema" name="fechaFaena" type="fechaFaenaType"/>
+  <simpleType xmlns="http://www.w3.org/2001/XMLSchema" name="fechaFaenaType">
+    <restriction base="xs:string"/>
+  </simpleType>
+  <element xmlns="http://www.w3.org/2001/XMLSchema" name="dte" type="dteType"/>
+  <complexType xmlns="http://www.w3.org/2001/XMLSchema" name="dteType">
+    <sequence>
+      <element name="nroDTE" type="nroDTEType"/>
+      <element name="nroRenspa" type="nroRenspaType"/>
+    </sequence>
+  </complexType>
+  <element xmlns="http://www.w3.org/2001/XMLSchema" name="nroDTE" type="nroDTEType"/>
+  <simpleType xmlns="http://www.w3.org/2001/XMLSchema" name="nroDTEType">
+    <restriction base="xs:string"/>
+  </simpleType>
+  <element xmlns="http://www.w3.org/2001/XMLSchema" name="nroRenspa" type="nroRenspaType"/>
+  <simpleType xmlns="http://www.w3.org/2001/XMLSchema" name="nroRenspaType">
+    <restriction base="xs:string"/>
+  </simpleType>
+  <element xmlns="http://www.w3.org/2001/XMLSchema" name="itemDetalleLiquidacion" type="itemDetalleLiquidacionType"/>
+  <complexType xmlns="http://www.w3.org/2001/XMLSchema" name="itemDetalleLiquidacionType">
+    <sequence>
+      <element name="nroItem" type="nroItemType"/>
+      <element name="codCategoria" type="codCategoriaType"/>
+      <element name="cantidad" type="cantidadType"/>
+      <element name="cantidadCabezas" type="cantidadCabezasType"/>
+      <element name="raza" type="razaType"/>
+      <element name="tipoLiquidacion" type="tipoLiquidacionType"/>
+      <element name="precioUnitario" type="precioUnitarioType"/>
+      <element name="alicuotaIVA" type="alicuotaIVAType"/>
+      <element name="nroTropa" type="nroTropaType"/>
+      <element name="unidadMedida" type="unidadMedidaType"/>
+      <element name="importeBruto" type="importeBrutoType"/>
+      <element name="importeIVA" type="importeIVAType"/>
+      <element name="promedioUM" type="promedioUMType"/>
+      <element name="importeTotal" type="importeTotalType"/>
+    </sequence>
+  </complexType>
+  <element xmlns="http://www.w3.org/2001/XMLSchema" name="nroItem" type="nroItemType"/>
+  <simpleType xmlns="http://www.w3.org/2001/XMLSchema" name="nroItemType">
+    <restriction base="xs:string"/>
+  </simpleType>
+  <element xmlns="http://www.w3.org/2001/XMLSchema" name="codCategoria" type="codCategoriaType"/>
+  <simpleType xmlns="http://www.w3.org/2001/XMLSchema" name="codCategoriaType">
+    <restriction base="xs:string"/>
+  </simpleType>
+  <element xmlns="http://www.w3.org/2001/XMLSchema" name="cantidad" type="cantidadType"/>
+  <simpleType xmlns="http://www.w3.org/2001/XMLSchema" name="cantidadType">
+    <restriction base="xs:string"/>
+  </simpleType>
+  <element xmlns="http://www.w3.org/2001/XMLSchema" name="cantidadCabezas" type="cantidadCabezasType"/>
+  <simpleType xmlns="http://www.w3.org/2001/XMLSchema" name="cantidadCabezasType">
+    <restriction base="xs:string"/>
+  </simpleType>
+  <element xmlns="http://www.w3.org/2001/XMLSchema" name="raza" type="razaType"/>
+  <complexType xmlns="http://www.w3.org/2001/XMLSchema" name="razaType">
+    <sequence>
+      <element name="codRaza" type="codRazaType"/>
+    </sequence>
+  </complexType>
+  <element xmlns="http://www.w3.org/2001/XMLSchema" name="codRaza" type="codRazaType"/>
+  <simpleType xmlns="http://www.w3.org/2001/XMLSchema" name="codRazaType">
+    <restriction base="xs:string"/>
+  </simpleType>
+  <element xmlns="http://www.w3.org/2001/XMLSchema" name="tipoLiquidacion" type="tipoLiquidacionType"/>
+  <simpleType xmlns="http://www.w3.org/2001/XMLSchema" name="tipoLiquidacionType">
+    <restriction base="xs:string"/>
+  </simpleType>
+  <element xmlns="http://www.w3.org/2001/XMLSchema" name="precioUnitario" type="precioUnitarioType"/>
+  <simpleType xmlns="http://www.w3.org/2001/XMLSchema" name="precioUnitarioType">
+    <restriction base="xs:string"/>
+  </simpleType>
+  <element xmlns="http://www.w3.org/2001/XMLSchema" name="alicuotaIVA" type="alicuotaIVAType"/>
+  <simpleType xmlns="http://www.w3.org/2001/XMLSchema" name="alicuotaIVAType">
+    <restriction base="xs:string"/>
+  </simpleType>
+  <element xmlns="http://www.w3.org/2001/XMLSchema" name="nroTropa" type="nroTropaType"/>
+  <simpleType xmlns="http://www.w3.org/2001/XMLSchema" name="nroTropaType">
+    <restriction base="xs:string"/>
+  </simpleType>
+  <element xmlns="http://www.w3.org/2001/XMLSchema" name="unidadMedida" type="unidadMedidaType"/>
+  <simpleType xmlns="http://www.w3.org/2001/XMLSchema" name="unidadMedidaType">
+    <restriction base="xs:string"/>
+  </simpleType>
+  <element xmlns="http://www.w3.org/2001/XMLSchema" name="importeBruto" type="importeBrutoType"/>
+  <simpleType xmlns="http://www.w3.org/2001/XMLSchema" name="importeBrutoType">
+    <restriction base="xs:string"/>
+  </simpleType>
+  <element xmlns="http://www.w3.org/2001/XMLSchema" name="importeIVA" type="importeIVAType"/>
+  <simpleType xmlns="http://www.w3.org/2001/XMLSchema" name="importeIVAType">
+    <restriction base="xs:string"/>
+  </simpleType>
+  <element xmlns="http://www.w3.org/2001/XMLSchema" name="promedioUM" type="promedioUMType"/>
+  <simpleType xmlns="http://www.w3.org/2001/XMLSchema" name="promedioUMType">
+    <restriction base="xs:string"/>
+  </simpleType>
+  <element xmlns="http://www.w3.org/2001/XMLSchema" name="importeTotal" type="importeTotalType"/>
+  <simpleType xmlns="http://www.w3.org/2001/XMLSchema" name="importeTotalType">
+    <restriction base="xs:string"/>
+  </simpleType>
+  <element xmlns="http://www.w3.org/2001/XMLSchema" name="tributo" type="tributoType"/>
+  <complexType xmlns="http://www.w3.org/2001/XMLSchema" name="tributoType">
+    <sequence>
+      <element name="codTributo" type="codTributoType"/>
+      <element name="importe" type="importeType"/>
+    </sequence>
+  </complexType>
+  <element xmlns="http://www.w3.org/2001/XMLSchema" name="codTributo" type="codTributoType"/>
+  <simpleType xmlns="http://www.w3.org/2001/XMLSchema" name="codTributoType">
+    <restriction base="xs:string"/>
+  </simpleType>
+  <element xmlns="http://www.w3.org/2001/XMLSchema" name="importe" type="importeType"/>
+  <simpleType xmlns="http://www.w3.org/2001/XMLSchema" name="importeType">
+    <restriction base="xs:string"/>
+  </simpleType>
+  <element xmlns="http://www.w3.org/2001/XMLSchema" name="datosAdicionales" type="datosAdicionalesType"/>
+  <simpleType xmlns="http://www.w3.org/2001/XMLSchema" name="datosAdicionalesType">
+    <restriction base="xs:string"/>
+  </simpleType>
+  <element xmlns="http://www.w3.org/2001/XMLSchema" name="resumenTotales" type="resumenTotalesType"/>
+  <complexType xmlns="http://www.w3.org/2001/XMLSchema" name="resumenTotalesType">
+    <sequence>
+      <element name="importeBruto" type="importeBrutoType"/>
+      <element name="importeIVASobreBruto" type="importeIVASobreBrutoType"/>
+      <element name="importeTotalGastos" type="importeTotalGastosType"/>
+      <element name="importeIVASobreGastos" type="importeIVASobreGastosType"/>
+      <element name="importeTotalTributos" type="importeTotalTributosType"/>
+      <element name="importeTotalNeto" type="importeTotalNetoType"/>
+    </sequence>
+  </complexType>
+  <element xmlns="http://www.w3.org/2001/XMLSchema" name="importeBruto" type="importeBrutoType"/>
+  <simpleType xmlns="http://www.w3.org/2001/XMLSchema" name="importeBrutoType">
+    <restriction base="xs:string"/>
+  </simpleType>
+  <element xmlns="http://www.w3.org/2001/XMLSchema" name="importeIVASobreBruto" type="importeIVASobreBrutoType"/>
+  <simpleType xmlns="http://www.w3.org/2001/XMLSchema" name="importeIVASobreBrutoType">
+    <restriction base="xs:string"/>
+  </simpleType>
+  <element xmlns="http://www.w3.org/2001/XMLSchema" name="importeTotalGastos" type="importeTotalGastosType"/>
+  <simpleType xmlns="http://www.w3.org/2001/XMLSchema" name="importeTotalGastosType">
+    <restriction base="xs:string"/>
+  </simpleType>
+  <element xmlns="http://www.w3.org/2001/XMLSchema" name="importeIVASobreGastos" type="importeIVASobreGastosType"/>
+  <simpleType xmlns="http://www.w3.org/2001/XMLSchema" name="importeIVASobreGastosType">
+    <restriction base="xs:string"/>
+  </simpleType>
+  <element xmlns="http://www.w3.org/2001/XMLSchema" name="importeTotalTributos" type="importeTotalTributosType"/>
+  <simpleType xmlns="http://www.w3.org/2001/XMLSchema" name="importeTotalTributosType">
+    <restriction base="xs:string"/>
+  </simpleType>
+  <element xmlns="http://www.w3.org/2001/XMLSchema" name="importeTotalNeto" type="importeTotalNetoType"/>
+  <simpleType xmlns="http://www.w3.org/2001/XMLSchema" name="importeTotalNetoType">
+    <restriction base="xs:string"/>
+  </simpleType>
+  <element xmlns="http://www.w3.org/2001/XMLSchema" name="pdf" type="pdfType"/>
+  <simpleType xmlns="http://www.w3.org/2001/XMLSchema" name="pdfType">
+    <restriction base="xs:string"/>
+  </simpleType>
+  <element xmlns="http://www.w3.org/2001/XMLSchema" name="metadata" type="metadataType"/>
+  <complexType xmlns="http://www.w3.org/2001/XMLSchema" name="metadataType">
+    <sequence>
+      <element name="servidor" type="servidorType"/>
+      <element name="fechaHora" type="fechaHoraType"/>
+    </sequence>
+  </complexType>
+  <element xmlns="http://www.w3.org/2001/XMLSchema" name="servidor" type="servidorType"/>
+  <simpleType xmlns="http://www.w3.org/2001/XMLSchema" name="servidorType">
+    <restriction base="xs:string"/>
+  </simpleType>
+  <element xmlns="http://www.w3.org/2001/XMLSchema" name="fechaHora" type="fechaHoraType"/>
+  <simpleType xmlns="http://www.w3.org/2001/XMLSchema" name="fechaHoraType">
+    <restriction base="xs:string"/>
+  </simpleType>
+</xs:schema>]]></XmlSchema><CdsSkeleton/><XslTransform/><Skeleton><![CDATA[<?xml version="1.0"?><DATAPACKET Version="2.0"><METADATA><FIELDS><FIELD attrname="S" fieldtype="string" WIDTH="41"/><FIELD attrname="codOperacion" fieldtype="string" WIDTH="3"/><FIELD attrname="cae" fieldtype="string" WIDTH="14"/><FIELD attrname="fechaVencimientoCae" fieldtype="string" WIDTH="10"/><FIELD attrname="fechaProcesoAFIP" fieldtype="string" WIDTH="10"/><FIELD attrname="puntoVenta" fieldtype="string" WIDTH="1"/><FIELD attrname="tipoComprobante" fieldtype="string" WIDTH="3"/><FIELD attrname="nroComprobante" fieldtype="string" WIDTH="1"/><FIELD attrname="emisor_codCaracter" fieldtype="string" WIDTH="3"/><FIELD attrname="fechaInicioActividades" fieldtype="string" WIDTH="10"/><FIELD attrname="razonSocial" fieldtype="string" WIDTH="19"/><FIELD attrname="emisor_iibb" fieldtype="string" WIDTH="11"/><FIELD attrname="domicilioPuntoVenta" fieldtype="string" WIDTH="21"/><FIELD attrname="emisor_situacionIVA" fieldtype="string" WIDTH="2"/><FIELD attrname="emisor_nroRUCA" fieldtype="string" WIDTH="4"/><FIELD attrname="cuit" fieldtype="string" WIDTH="11"/><FIELD attrname="nombre" fieldtype="string" WIDTH="13"/><FIELD attrname="receptor_codCaracter" fieldtype="string" WIDTH="3"/><FIELD attrname="receptor_iibb" fieldtype="string" WIDTH="11"/><FIELD attrname="receptor_nroRUCA" fieldtype="string" WIDTH="4"/><FIELD attrname="receptor_situacionIVA" fieldtype="string" WIDTH="2"/><FIELD attrname="domicilio" fieldtype="string" WIDTH="18"/><FIELD attrname="nombreLocalidad" fieldtype="string" WIDTH="15"/><FIELD attrname="codProvincia" fieldtype="string" WIDTH="1"/><FIELD attrname="codigoPostal" fieldtype="string" WIDTH="4"/><FIELD attrname="fechaComprobante" fieldtype="string" WIDTH="10"/><FIELD attrname="fechaOperacion" fieldtype="string" WIDTH="10"/><FIELD attrname="codMotivo" fieldtype="string" WIDTH="1"/><FIELD attrname="fechaRecepcion" fieldtype="string" WIDTH="10"/><FIELD attrname="fechaFaena" fieldtype="string" WIDTH="10"/><FIELD attrname="nroDTE" fieldtype="string" WIDTH="10"/><FIELD attrname="nroRenspa" fieldtype="string" WIDTH="17"/><FIELD attrname="nroItem" fieldtype="string" WIDTH="1"/><FIELD attrname="codCategoria" fieldtype="string" WIDTH="6"/><FIELD attrname="cantidad" fieldtype="string" WIDTH="2"/><FIELD attrname="cantidadCabezas" fieldtype="string" WIDTH="2"/><FIELD attrname="codRaza" fieldtype="string" WIDTH="4"/><FIELD attrname="tipoLiquidacion" fieldtype="string" WIDTH="1"/><FIELD attrname="precioUnitario" fieldtype="string" WIDTH="3"/><FIELD attrname="alicuotaIVA" fieldtype="string" WIDTH="4"/><FIELD attrname="nroTropa" fieldtype="string" WIDTH="3"/><FIELD attrname="unidadMedida" fieldtype="string" WIDTH="8"/><FIELD attrname="importeBruto" fieldtype="string" WIDTH="4"/><FIELD attrname="importeIVA" fieldtype="string" WIDTH="3"/><FIELD attrname="promedioUM" fieldtype="string" WIDTH="1"/><FIELD attrname="importeTotal" fieldtype="string" WIDTH="4"/><FIELD attrname="codTributo" fieldtype="string" WIDTH="2"/><FIELD attrname="importe" fieldtype="string" WIDTH="3"/><FIELD attrname="datosAdicionales" fieldtype="string" WIDTH="17"/><FIELD attrname="resumenTotales_importeBruto" fieldtype="string" WIDTH="4"/><FIELD attrname="importeIVASobreBruto" fieldtype="string" WIDTH="3"/><FIELD attrname="importeTotalGastos" fieldtype="string" WIDTH="1"/><FIELD attrname="importeIVASobreGastos" fieldtype="string" WIDTH="1"/><FIELD attrname="importeTotalTributos" fieldtype="string" WIDTH="3"/><FIELD attrname="importeTotalNeto" fieldtype="string" WIDTH="4"/><FIELD attrname="pdf" fieldtype="bin.hex" SUBTYPE="Text"/><FIELD attrname="servidor" fieldtype="string" WIDTH="7"/><FIELD attrname="fechaHora" fieldtype="string" WIDTH="19"/></FIELDS><PARAMS/></METADATA><ROWDATA/><METADATA><FIELDS><FIELD attrname="S" fieldtype="string" WIDTH="41"/><FIELD attrname="codOperacion" fieldtype="string" WIDTH="3"/><FIELD attrname="cae" fieldtype="string" WIDTH="14"/><FIELD attrname="fechaVencimientoCae" fieldtype="string" WIDTH="10"/><FIELD attrname="fechaProcesoAFIP" fieldtype="string" WIDTH="10"/><FIELD attrname="puntoVenta" fieldtype="string" WIDTH="1"/><FIELD attrname="tipoComprobante" fieldtype="string" WIDTH="3"/><FIELD attrname="nroComprobante" fieldtype="string" WIDTH="1"/><FIELD attrname="emisor_codCaracter" fieldtype="string" WIDTH="3"/><FIELD attrname="fechaInicioActividades" fieldtype="string" WIDTH="10"/><FIELD attrname="razonSocial" fieldtype="string" WIDTH="19"/><FIELD attrname="emisor_iibb" fieldtype="string" WIDTH="11"/><FIELD attrname="domicilioPuntoVenta" fieldtype="string" WIDTH="21"/><FIELD attrname="emisor_situacionIVA" fieldtype="string" WIDTH="2"/><FIELD attrname="emisor_nroRUCA" fieldtype="string" WIDTH="4"/><FIELD attrname="cuit" fieldtype="string" WIDTH="11"/><FIELD attrname="nombre" fieldtype="string" WIDTH="13"/><FIELD attrname="receptor_codCaracter" fieldtype="string" WIDTH="3"/><FIELD attrname="receptor_iibb" fieldtype="string" WIDTH="11"/><FIELD attrname="receptor_nroRUCA" fieldtype="string" WIDTH="4"/><FIELD attrname="receptor_situacionIVA" fieldtype="string" WIDTH="2"/><FIELD attrname="domicilio" fieldtype="string" WIDTH="18"/><FIELD attrname="nombreLocalidad" fieldtype="string" WIDTH="15"/><FIELD attrname="codProvincia" fieldtype="string" WIDTH="1"/><FIELD attrname="codigoPostal" fieldtype="string" WIDTH="4"/><FIELD attrname="fechaComprobante" fieldtype="string" WIDTH="10"/><FIELD attrname="fechaOperacion" fieldtype="string" WIDTH="10"/><FIELD attrname="codMotivo" fieldtype="string" WIDTH="1"/><FIELD attrname="fechaRecepcion" fieldtype="string" WIDTH="10"/><FIELD attrname="fechaFaena" fieldtype="string" WIDTH="10"/><FIELD attrname="nroDTE" fieldtype="string" WIDTH="10"/><FIELD attrname="nroRenspa" fieldtype="string" WIDTH="17"/><FIELD attrname="nroItem" fieldtype="string" WIDTH="1"/><FIELD attrname="codCategoria" fieldtype="string" WIDTH="6"/><FIELD attrname="cantidad" fieldtype="string" WIDTH="2"/><FIELD attrname="cantidadCabezas" fieldtype="string" WIDTH="2"/><FIELD attrname="codRaza" fieldtype="string" WIDTH="4"/><FIELD attrname="tipoLiquidacion" fieldtype="string" WIDTH="1"/><FIELD attrname="precioUnitario" fieldtype="string" WIDTH="3"/><FIELD attrname="alicuotaIVA" fieldtype="string" WIDTH="4"/><FIELD attrname="nroTropa" fieldtype="string" WIDTH="3"/><FIELD attrname="unidadMedida" fieldtype="string" WIDTH="8"/><FIELD attrname="importeBruto" fieldtype="string" WIDTH="4"/><FIELD attrname="importeIVA" fieldtype="string" WIDTH="3"/><FIELD attrname="promedioUM" fieldtype="string" WIDTH="1"/><FIELD attrname="importeTotal" fieldtype="string" WIDTH="4"/><FIELD attrname="codTributo" fieldtype="string" WIDTH="2"/><FIELD attrname="importe" fieldtype="string" WIDTH="3"/><FIELD attrname="datosAdicionales" fieldtype="string" WIDTH="17"/><FIELD attrname="resumenTotales_importeBruto" fieldtype="string" WIDTH="4"/><FIELD attrname="importeIVASobreBruto" fieldtype="string" WIDTH="3"/><FIELD attrname="importeTotalGastos" fieldtype="string" WIDTH="1"/><FIELD attrname="importeIVASobreGastos" fieldtype="string" WIDTH="1"/><FIELD attrname="importeTotalTributos" fieldtype="string" WIDTH="3"/><FIELD attrname="importeTotalNeto" fieldtype="string" WIDTH="4"/><FIELD attrname="pdf" fieldtype="bin.hex" SUBTYPE="Text"/><FIELD attrname="servidor" fieldtype="string" WIDTH="7"/><FIELD attrname="fechaHora" fieldtype="string" WIDTH="19"/></FIELDS><PARAMS/></METADATA><ROWDATA/></DATAPACKET>
+]]></Skeleton></XmlTransformation>

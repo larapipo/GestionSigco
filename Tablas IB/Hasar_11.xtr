@@ -1,0 +1,1131 @@
+<XmlTransformation Version="1.0"><Transform Direction="ToCds" DataEncoding="UTF-8"><SelectEach dest="DATAPACKET\ROWDATA\ROW" from="\Jornada\Jornada\Documentos\Documento"><Select dest="@Nombre" from="\Items\Cliente\Nombre"/><Select dest="@Direccion" from="\Items\Cliente\Direccion"/><Select dest="@TipoCliente" from="\Items\Cliente\TipoCliente"/><Select dest="@TipoDocumento" from="\Items\Cliente\TipoDocumento"/><Select dest="@SubTipoDocumento" from="\Items\Apertura\SubTipoDocumento"/><Select dest="@CalificadorDocumento" from="\Items\Apertura\CalificadorDocumento"/><Select dest="@TipoAFIP" from="\Items\Apertura\TipoAFIP"/><Select dest="@Fecha" from="\Items\Apertura\Fecha"/><Select dest="@NumeroCompleto" from="\Items\Apertura\NumeroCompleto"/><Select dest="@Base" from="\Items\Totales\Base"/><Select dest="@MontoIVA" from="\Items\Totales\MontoIVA"/><Select dest="@MontoOtrosTributos" from="\Items\Totales\MontoOtrosTributos"/><Select dest="@MontoNoGravado" from="\Items\Totales\MontoNoGravado"/><Select dest="@MontoExento" from="\Items\Totales\MontoExento"/><Select dest="@MontoGravado" from="\Items\Totales\MontoGravado"/><Select dest="@Final" from="\Items\Totales\Final"/><SelectEach dest="Venta\ROWVenta" from="\Items\Venta"><Select dest="@CodigoMatrix" from="\CodigoMatrix"/><Select dest="@Descripcion" from="\Descripcion"/><Select dest="@Cantidad" from="\Cantidad"/><Select dest="@PrecioBase" from="\Desglose\PrecioBase"/><Select dest="@MontoTotalBase" from="\Desglose\MontoTotalBase"/><Select dest="@TasaIVA" from="\Desglose\TasaIVA"/><Select dest="@MontoTotalIVA" from="\Desglose\MontoTotalIVA"/><Select dest="@MontoTotalII" from="\Desglose\MontoTotalII"/><Select dest="@ImpIntFijo" from="\Desglose\ImpIntFijo"/><Select dest="@PrecioFinal" from="\Desglose\PrecioFinal"/><Select dest="@MontoFinal" from="\Desglose\MontoFinal"/></SelectEach></SelectEach></Transform><XmlSchema RootName="Jornada"><![CDATA[<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="Jornada" type="JornadaType"/>
+  <xs:complexType name="JornadaType">
+    <sequence xmlns="http://www.w3.org/2001/XMLSchema">
+      <xs:element name="Jornada" type="JornadaType"/>
+      <xs:element name="Numero" type="NumeroType"/>
+      <xs:element name="Fecha" type="FechaType"/>
+      <xs:element name="Documentos" type="DocumentosType"/>
+    </sequence>
+  </xs:complexType>
+  <xs:element name="Numero" type="NumeroType"/>
+  <xs:simpleType name="NumeroType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:element name="Fecha" type="FechaType"/>
+  <xs:simpleType name="FechaType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:element name="Documentos" type="DocumentosType"/>
+  <xs:complexType name="DocumentosType">
+    <sequence xmlns="http://www.w3.org/2001/XMLSchema">
+      <xs:element name="Documento" type="DocumentoType" minOccurs="0" maxOccurs="unbounded"/>
+    </sequence>
+    <xs:attribute name="type" type="xs:string"/>
+  </xs:complexType>
+  <xs:element name="Documento" type="DocumentoType"/>
+  <xs:complexType name="DocumentoType">
+    <sequence xmlns="http://www.w3.org/2001/XMLSchema">
+      <xs:element name="Orden" type="OrdenType"/>
+      <xs:element name="Items" type="ItemsType"/>
+    </sequence>
+  </xs:complexType>
+  <xs:element name="Orden" type="OrdenType"/>
+  <xs:simpleType name="OrdenType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:element name="Items" type="ItemsType"/>
+  <xs:complexType name="ItemsType">
+    <sequence xmlns="http://www.w3.org/2001/XMLSchema">
+      <xs:element name="Cliente" type="ClienteType"/>
+      <xs:element name="AtributosImpresion" type="AtributosImpresionType"/>
+      <xs:element name="Emisor" type="EmisorType"/>
+      <xs:element name="LineaUsuario" type="LineaUsuarioType" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element name="Apertura" type="AperturaType"/>
+      <xs:element name="Venta" type="VentaType" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element name="DiscriminacionIVA" type="DiscriminacionIVAType"/>
+      <xs:element name="Totales" type="TotalesType"/>
+      <xs:element name="Pago" type="PagoType"/>
+      <xs:element name="Cierre" type="CierreType"/>
+      <xs:element name="ComprobanteReferencia" type="ComprobanteReferenciaType"/>
+      <xs:element name="CierreDiarioEncabezado" type="CierreDiarioEncabezadoType"/>
+      <xs:element name="CierreDiarioContextoTipoComprobante" type="CierreDiarioContextoTipoComprobanteType" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element name="CierreDiarioInformacionDocumento" type="CierreDiarioInformacionDocumentoType" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element name="CierreDiarioIVA" type="CierreDiarioIVAType" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element name="CierreDiarioOtrosTributos" type="CierreDiarioOtrosTributosType" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element name="CierreDiarioTotales" type="CierreDiarioTotalesType" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element name="CierreDiarioContextoTotales" type="CierreDiarioContextoTotalesType" minOccurs="0" maxOccurs="unbounded"/>
+    </sequence>
+    <xs:attribute name="type" type="xs:string"/>
+  </xs:complexType>
+  <xs:element name="Cliente" type="ClienteType"/>
+  <xs:complexType name="ClienteType">
+    <sequence xmlns="http://www.w3.org/2001/XMLSchema">
+      <xs:element name="Orden" type="OrdenType"/>
+      <xs:element name="NroSecuencia" type="NroSecuenciaType"/>
+      <xs:element name="TipoDocumento" type="TipoDocumentoType"/>
+      <xs:element name="TipoCliente" type="TipoClienteType"/>
+      <xs:element name="Nombre" type="NombreType"/>
+      <xs:element name="Direccion" type="DireccionType"/>
+      <xs:element name="NroDocumento" type="NroDocumentoType"/>
+    </sequence>
+  </xs:complexType>
+  <xs:element name="Orden" type="OrdenType"/>
+  <xs:simpleType name="OrdenType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:element name="NroSecuencia" type="NroSecuenciaType"/>
+  <xs:simpleType name="NroSecuenciaType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:element name="TipoDocumento" type="TipoDocumentoType"/>
+  <xs:simpleType name="TipoDocumentoType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:element name="TipoCliente" type="TipoClienteType"/>
+  <xs:simpleType name="TipoClienteType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:element name="Nombre" type="NombreType"/>
+  <xs:simpleType name="NombreType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:element name="Direccion" type="DireccionType"/>
+  <xs:simpleType name="DireccionType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:element name="AtributosImpresion" type="AtributosImpresionType"/>
+  <xs:complexType name="AtributosImpresionType">
+    <sequence xmlns="http://www.w3.org/2001/XMLSchema">
+      <xs:element name="Orden" type="OrdenType"/>
+      <xs:element name="Personalidad" type="PersonalidadType"/>
+      <xs:element name="Producto" type="ProductoType"/>
+      <xs:element name="Modelo" type="ModeloType"/>
+      <xs:element name="ModeloImpresor" type="ModeloImpresorType"/>
+      <xs:element name="Estacion" type="EstacionType"/>
+      <xs:element name="AnchoPapel" type="AnchoPapelType"/>
+      <xs:element name="AltoPapel" type="AltoPapelType"/>
+      <xs:element name="TipoHojaAlto" type="TipoHojaAltoType"/>
+      <xs:element name="TipoHojaAncho" type="TipoHojaAnchoType"/>
+      <xs:element name="ImprimeLeyendasOpcionales" type="ImprimeLeyendasOpcionalesType"/>
+      <xs:element name="ImprimeCodigos" type="ImprimeCodigosType"/>
+      <xs:element name="ImprimeUnidadesMedida" type="ImprimeUnidadesMedidaType"/>
+      <xs:element name="ImprimeMarcos" type="ImprimeMarcosType"/>
+      <xs:element name="ModoEntrenamiento" type="ModoEntrenamientoType"/>
+      <xs:element name="SignoMonetario" type="SignoMonetarioType"/>
+      <xs:element name="UsarColorAlternativo" type="UsarColorAlternativoType"/>
+      <xs:element name="ColorAlternativo" type="ColorAlternativoType"/>
+      <xs:element name="ImprimeQR" type="ImprimeQRType"/>
+      <xs:element name="TipoInterlineado" type="TipoInterlineadoType"/>
+    </sequence>
+  </xs:complexType>
+  <xs:element name="Orden" type="OrdenType"/>
+  <xs:simpleType name="OrdenType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:element name="Personalidad" type="PersonalidadType"/>
+  <xs:simpleType name="PersonalidadType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:element name="Producto" type="ProductoType"/>
+  <xs:simpleType name="ProductoType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:element name="Modelo" type="ModeloType"/>
+  <xs:simpleType name="ModeloType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:element name="ModeloImpresor" type="ModeloImpresorType"/>
+  <xs:simpleType name="ModeloImpresorType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:element name="Estacion" type="EstacionType"/>
+  <xs:simpleType name="EstacionType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:element name="AnchoPapel" type="AnchoPapelType"/>
+  <xs:simpleType name="AnchoPapelType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:element name="AltoPapel" type="AltoPapelType"/>
+  <xs:simpleType name="AltoPapelType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:element name="TipoHojaAlto" type="TipoHojaAltoType"/>
+  <xs:simpleType name="TipoHojaAltoType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:element name="TipoHojaAncho" type="TipoHojaAnchoType"/>
+  <xs:simpleType name="TipoHojaAnchoType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:element name="ImprimeLeyendasOpcionales" type="ImprimeLeyendasOpcionalesType"/>
+  <xs:simpleType name="ImprimeLeyendasOpcionalesType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:element name="ImprimeCodigos" type="ImprimeCodigosType"/>
+  <xs:simpleType name="ImprimeCodigosType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:element name="ImprimeUnidadesMedida" type="ImprimeUnidadesMedidaType"/>
+  <xs:simpleType name="ImprimeUnidadesMedidaType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:element name="ImprimeMarcos" type="ImprimeMarcosType"/>
+  <xs:simpleType name="ImprimeMarcosType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:element name="ModoEntrenamiento" type="ModoEntrenamientoType"/>
+  <xs:simpleType name="ModoEntrenamientoType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:element name="SignoMonetario" type="SignoMonetarioType"/>
+  <xs:simpleType name="SignoMonetarioType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:element name="UsarColorAlternativo" type="UsarColorAlternativoType"/>
+  <xs:simpleType name="UsarColorAlternativoType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:element name="ColorAlternativo" type="ColorAlternativoType"/>
+  <xs:simpleType name="ColorAlternativoType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:element name="ImprimeQR" type="ImprimeQRType"/>
+  <xs:simpleType name="ImprimeQRType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:element name="TipoInterlineado" type="TipoInterlineadoType"/>
+  <xs:simpleType name="TipoInterlineadoType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:element name="Emisor" type="EmisorType"/>
+  <xs:complexType name="EmisorType">
+    <sequence xmlns="http://www.w3.org/2001/XMLSchema">
+      <xs:element name="Orden" type="OrdenType"/>
+      <xs:element name="CUIT" type="CUITType"/>
+      <xs:element name="RazonSocial" type="RazonSocialType"/>
+      <xs:element name="NroRegistro" type="NroRegistroType"/>
+      <xs:element name="FechaInicioActividades" type="FechaInicioActividadesType"/>
+      <xs:element name="IngBrutos" type="IngBrutosType"/>
+      <xs:element name="TipoEmisor" type="TipoEmisorType"/>
+      <xs:element name="TipoHabilitacion" type="TipoHabilitacionType"/>
+      <xs:element name="LimiteM" type="LimiteMType"/>
+    </sequence>
+  </xs:complexType>
+  <xs:element name="Orden" type="OrdenType"/>
+  <xs:simpleType name="OrdenType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:element name="CUIT" type="CUITType"/>
+  <xs:simpleType name="CUITType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:element name="RazonSocial" type="RazonSocialType"/>
+  <xs:simpleType name="RazonSocialType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:element name="NroRegistro" type="NroRegistroType"/>
+  <xs:simpleType name="NroRegistroType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:element name="FechaInicioActividades" type="FechaInicioActividadesType"/>
+  <xs:simpleType name="FechaInicioActividadesType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:element name="IngBrutos" type="IngBrutosType"/>
+  <xs:simpleType name="IngBrutosType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:element name="TipoEmisor" type="TipoEmisorType"/>
+  <xs:simpleType name="TipoEmisorType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:element name="TipoHabilitacion" type="TipoHabilitacionType"/>
+  <xs:simpleType name="TipoHabilitacionType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:element name="LimiteM" type="LimiteMType"/>
+  <xs:simpleType name="LimiteMType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:element name="LineaUsuario" type="LineaUsuarioType"/>
+  <xs:complexType name="LineaUsuarioType">
+    <sequence xmlns="http://www.w3.org/2001/XMLSchema">
+      <xs:element name="Orden" type="OrdenType"/>
+      <xs:element name="Estacion" type="EstacionType"/>
+      <xs:element name="Tipo" type="TipoType"/>
+      <xs:element name="Linea" type="LineaType"/>
+      <xs:element name="Texto" type="TextoType"/>
+    </sequence>
+  </xs:complexType>
+  <xs:element name="Orden" type="OrdenType"/>
+  <xs:simpleType name="OrdenType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:element name="Estacion" type="EstacionType"/>
+  <xs:simpleType name="EstacionType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:element name="Tipo" type="TipoType"/>
+  <xs:simpleType name="TipoType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:element name="Linea" type="LineaType"/>
+  <xs:simpleType name="LineaType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:element name="Texto" type="TextoType"/>
+  <xs:complexType name="TextoType">
+    <sequence xmlns="http://www.w3.org/2001/XMLSchema">
+      <xs:element name="Texto" type="TextoType"/>
+      <xs:element name="Atributos" type="AtributosType"/>
+    </sequence>
+  </xs:complexType>
+  <xs:element name="Texto" type="TextoType"/>
+  <xs:simpleType name="TextoType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:element name="Atributos" type="AtributosType"/>
+  <xs:complexType name="AtributosType">
+    <sequence xmlns="http://www.w3.org/2001/XMLSchema"/>
+    <xs:attribute name="type" type="xs:string"/>
+  </xs:complexType>
+  <xs:element name="Apertura" type="AperturaType"/>
+  <xs:complexType name="AperturaType">
+    <sequence xmlns="http://www.w3.org/2001/XMLSchema">
+      <xs:element name="Orden" type="OrdenType"/>
+      <xs:element name="TipoDocumento" type="TipoDocumentoType"/>
+      <xs:element name="SubTipoDocumento" type="SubTipoDocumentoType"/>
+      <xs:element name="CalificadorDocumento" type="CalificadorDocumentoType"/>
+      <xs:element name="Estacion" type="EstacionType"/>
+      <xs:element name="TipoAFIP" type="TipoAFIPType"/>
+      <xs:element name="POS" type="POSType"/>
+      <xs:element name="Fecha" type="FechaType"/>
+      <xs:element name="Hora" type="HoraType"/>
+      <xs:element name="NumeroDocumento" type="NumeroDocumentoType"/>
+      <xs:element name="NumeroCompleto" type="NumeroCompletoType"/>
+      <xs:element name="IdentificadorCopia" type="IdentificadorCopiaType"/>
+    </sequence>
+  </xs:complexType>
+  <xs:element name="Orden" type="OrdenType"/>
+  <xs:simpleType name="OrdenType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:element name="TipoDocumento" type="TipoDocumentoType"/>
+  <xs:simpleType name="TipoDocumentoType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:element name="SubTipoDocumento" type="SubTipoDocumentoType"/>
+  <xs:simpleType name="SubTipoDocumentoType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:element name="CalificadorDocumento" type="CalificadorDocumentoType"/>
+  <xs:simpleType name="CalificadorDocumentoType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:element name="Estacion" type="EstacionType"/>
+  <xs:simpleType name="EstacionType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:element name="TipoAFIP" type="TipoAFIPType"/>
+  <xs:simpleType name="TipoAFIPType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:element name="POS" type="POSType"/>
+  <xs:simpleType name="POSType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:element name="Fecha" type="FechaType"/>
+  <xs:simpleType name="FechaType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:element name="Hora" type="HoraType"/>
+  <xs:simpleType name="HoraType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:element name="NumeroDocumento" type="NumeroDocumentoType"/>
+  <xs:simpleType name="NumeroDocumentoType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:element name="NumeroCompleto" type="NumeroCompletoType"/>
+  <xs:simpleType name="NumeroCompletoType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:element name="IdentificadorCopia" type="IdentificadorCopiaType"/>
+  <xs:simpleType name="IdentificadorCopiaType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:element name="Venta" type="VentaType"/>
+  <xs:complexType name="VentaType">
+    <sequence xmlns="http://www.w3.org/2001/XMLSchema">
+      <xs:element name="Orden" type="OrdenType"/>
+      <xs:element name="Descripcion" type="DescripcionType"/>
+      <xs:element name="CodigoMatrix" type="CodigoMatrixType"/>
+      <xs:element name="Cantidad" type="CantidadType"/>
+      <xs:element name="UnidadesMatrix" type="UnidadesMatrixType"/>
+      <xs:element name="UnidadMedida" type="UnidadMedidaType"/>
+      <xs:element name="Precio" type="PrecioType"/>
+      <xs:element name="CondicionIVA" type="CondicionIVAType"/>
+      <xs:element name="TasaIVA" type="TasaIVAType"/>
+      <xs:element name="ImpuestoComoCoeficiente" type="ImpuestoComoCoeficienteType"/>
+      <xs:element name="ImpInt" type="ImpIntType"/>
+      <xs:element name="ImpIntFijo" type="ImpIntFijoType"/>
+      <xs:element name="PorBaseImponible" type="PorBaseImponibleType"/>
+      <xs:element name="Desglose" type="DesgloseType"/>
+    </sequence>
+  </xs:complexType>
+  <xs:element name="Orden" type="OrdenType"/>
+  <xs:simpleType name="OrdenType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:element name="Descripcion" type="DescripcionType"/>
+  <xs:simpleType name="DescripcionType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:element name="CodigoMatrix" type="CodigoMatrixType"/>
+  <xs:simpleType name="CodigoMatrixType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:element name="Cantidad" type="CantidadType"/>
+  <xs:simpleType name="CantidadType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:element name="UnidadesMatrix" type="UnidadesMatrixType"/>
+  <xs:simpleType name="UnidadesMatrixType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:element name="UnidadMedida" type="UnidadMedidaType"/>
+  <xs:simpleType name="UnidadMedidaType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:element name="Precio" type="PrecioType"/>
+  <xs:simpleType name="PrecioType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:element name="CondicionIVA" type="CondicionIVAType"/>
+  <xs:simpleType name="CondicionIVAType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:element name="TasaIVA" type="TasaIVAType"/>
+  <xs:simpleType name="TasaIVAType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:element name="ImpuestoComoCoeficiente" type="ImpuestoComoCoeficienteType"/>
+  <xs:simpleType name="ImpuestoComoCoeficienteType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:element name="ImpInt" type="ImpIntType"/>
+  <xs:simpleType name="ImpIntType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:element name="ImpIntFijo" type="ImpIntFijoType"/>
+  <xs:simpleType name="ImpIntFijoType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:element name="PorBaseImponible" type="PorBaseImponibleType"/>
+  <xs:simpleType name="PorBaseImponibleType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:element name="Desglose" type="DesgloseType"/>
+  <xs:complexType name="DesgloseType">
+    <sequence xmlns="http://www.w3.org/2001/XMLSchema">
+      <xs:element name="Cantidad" type="CantidadType"/>
+      <xs:element name="PrecioFinal" type="PrecioFinalType"/>
+      <xs:element name="MontoFinal" type="MontoFinalType"/>
+      <xs:element name="TasaIVA" type="TasaIVAType"/>
+      <xs:element name="PrecioBase" type="PrecioBaseType"/>
+      <xs:element name="MontoTotalBase" type="MontoTotalBaseType"/>
+      <xs:element name="MontoTotalIVA" type="MontoTotalIVAType"/>
+      <xs:element name="MontoTotalII" type="MontoTotalIIType"/>
+      <xs:element name="ImpIntFijo" type="ImpIntFijoType"/>
+      <xs:element name="ConceptosNoGravados" type="ConceptosNoGravadosType"/>
+      <xs:element name="K" type="KType"/>
+    </sequence>
+  </xs:complexType>
+  <xs:element name="Cantidad" type="CantidadType"/>
+  <xs:simpleType name="CantidadType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:element name="PrecioFinal" type="PrecioFinalType"/>
+  <xs:simpleType name="PrecioFinalType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:element name="MontoFinal" type="MontoFinalType"/>
+  <xs:simpleType name="MontoFinalType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:element name="TasaIVA" type="TasaIVAType"/>
+  <xs:simpleType name="TasaIVAType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:element name="PrecioBase" type="PrecioBaseType"/>
+  <xs:simpleType name="PrecioBaseType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:element name="MontoTotalBase" type="MontoTotalBaseType"/>
+  <xs:simpleType name="MontoTotalBaseType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:element name="MontoTotalIVA" type="MontoTotalIVAType"/>
+  <xs:simpleType name="MontoTotalIVAType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:element name="MontoTotalII" type="MontoTotalIIType"/>
+  <xs:simpleType name="MontoTotalIIType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:element name="ImpIntFijo" type="ImpIntFijoType"/>
+  <xs:simpleType name="ImpIntFijoType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:element name="ConceptosNoGravados" type="ConceptosNoGravadosType"/>
+  <xs:simpleType name="ConceptosNoGravadosType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:element name="K" type="KType"/>
+  <xs:simpleType name="KType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:element name="DiscriminacionIVA" type="DiscriminacionIVAType"/>
+  <xs:complexType name="DiscriminacionIVAType">
+    <sequence xmlns="http://www.w3.org/2001/XMLSchema">
+      <xs:element name="Orden" type="OrdenType"/>
+      <xs:element name="CondicionIVA" type="CondicionIVAType"/>
+      <xs:element name="TasaIVA" type="TasaIVAType"/>
+      <xs:element name="Base" type="BaseType"/>
+      <xs:element name="MontoIVA" type="MontoIVAType"/>
+    </sequence>
+  </xs:complexType>
+  <xs:element name="Orden" type="OrdenType"/>
+  <xs:simpleType name="OrdenType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:element name="CondicionIVA" type="CondicionIVAType"/>
+  <xs:simpleType name="CondicionIVAType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:element name="TasaIVA" type="TasaIVAType"/>
+  <xs:simpleType name="TasaIVAType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:element name="Base" type="BaseType"/>
+  <xs:simpleType name="BaseType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:element name="MontoIVA" type="MontoIVAType"/>
+  <xs:simpleType name="MontoIVAType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:element name="Totales" type="TotalesType"/>
+  <xs:complexType name="TotalesType">
+    <sequence xmlns="http://www.w3.org/2001/XMLSchema">
+      <xs:element name="Orden" type="OrdenType"/>
+      <xs:element name="Base" type="BaseType"/>
+      <xs:element name="MontoIVA" type="MontoIVAType"/>
+      <xs:element name="MontoII" type="MontoIIType"/>
+      <xs:element name="MontoOtrosTributos" type="MontoOtrosTributosType"/>
+      <xs:element name="MontoNoGravado" type="MontoNoGravadoType"/>
+      <xs:element name="MontoExento" type="MontoExentoType"/>
+      <xs:element name="MontoGravado" type="MontoGravadoType"/>
+      <xs:element name="AjusteRedondeo" type="AjusteRedondeoType"/>
+      <xs:element name="Final" type="FinalType"/>
+      <xs:element name="ImpresionBase" type="ImpresionBaseType"/>
+      <xs:element name="ImpresionMontoIVA" type="ImpresionMontoIVAType"/>
+      <xs:element name="ImpresionMontoII" type="ImpresionMontoIIType"/>
+      <xs:element name="ImpresionFinal" type="ImpresionFinalType"/>
+      <xs:element name="TipoTotales" type="TipoTotalesType"/>
+    </sequence>
+  </xs:complexType>
+  <xs:element name="Orden" type="OrdenType"/>
+  <xs:simpleType name="OrdenType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:element name="Base" type="BaseType"/>
+  <xs:simpleType name="BaseType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:element name="MontoIVA" type="MontoIVAType"/>
+  <xs:simpleType name="MontoIVAType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:element name="MontoII" type="MontoIIType"/>
+  <xs:simpleType name="MontoIIType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:element name="MontoOtrosTributos" type="MontoOtrosTributosType"/>
+  <xs:simpleType name="MontoOtrosTributosType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:element name="MontoNoGravado" type="MontoNoGravadoType"/>
+  <xs:simpleType name="MontoNoGravadoType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:element name="MontoExento" type="MontoExentoType"/>
+  <xs:simpleType name="MontoExentoType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:element name="MontoGravado" type="MontoGravadoType"/>
+  <xs:simpleType name="MontoGravadoType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:element name="AjusteRedondeo" type="AjusteRedondeoType"/>
+  <xs:simpleType name="AjusteRedondeoType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:element name="Final" type="FinalType"/>
+  <xs:simpleType name="FinalType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:element name="ImpresionBase" type="ImpresionBaseType"/>
+  <xs:simpleType name="ImpresionBaseType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:element name="ImpresionMontoIVA" type="ImpresionMontoIVAType"/>
+  <xs:simpleType name="ImpresionMontoIVAType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:element name="ImpresionMontoII" type="ImpresionMontoIIType"/>
+  <xs:simpleType name="ImpresionMontoIIType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:element name="ImpresionFinal" type="ImpresionFinalType"/>
+  <xs:simpleType name="ImpresionFinalType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:element name="TipoTotales" type="TipoTotalesType"/>
+  <xs:simpleType name="TipoTotalesType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:element name="Pago" type="PagoType"/>
+  <xs:complexType name="PagoType">
+    <sequence xmlns="http://www.w3.org/2001/XMLSchema">
+      <xs:element name="Orden" type="OrdenType"/>
+      <xs:element name="EsCambio" type="EsCambioType"/>
+      <xs:element name="Monto" type="MontoType"/>
+      <xs:element name="Descripcion" type="DescripcionType"/>
+      <xs:element name="Tipo" type="TipoType"/>
+      <xs:element name="Cuotas" type="CuotasType"/>
+      <xs:element name="Desglose" type="DesgloseType"/>
+    </sequence>
+  </xs:complexType>
+  <xs:element name="Orden" type="OrdenType"/>
+  <xs:simpleType name="OrdenType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:element name="EsCambio" type="EsCambioType"/>
+  <xs:simpleType name="EsCambioType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:element name="Monto" type="MontoType"/>
+  <xs:simpleType name="MontoType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:element name="Descripcion" type="DescripcionType"/>
+  <xs:simpleType name="DescripcionType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:element name="Tipo" type="TipoType"/>
+  <xs:simpleType name="TipoType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:element name="Cuotas" type="CuotasType"/>
+  <xs:simpleType name="CuotasType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:element name="Desglose" type="DesgloseType"/>
+  <xs:complexType name="DesgloseType">
+    <sequence xmlns="http://www.w3.org/2001/XMLSchema">
+      <xs:element name="Monto" type="MontoType"/>
+    </sequence>
+  </xs:complexType>
+  <xs:element name="Monto" type="MontoType"/>
+  <xs:simpleType name="MontoType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:element name="Cierre" type="CierreType"/>
+  <xs:complexType name="CierreType">
+    <sequence xmlns="http://www.w3.org/2001/XMLSchema">
+      <xs:element name="Orden" type="OrdenType"/>
+      <xs:element name="TipoDocumento" type="TipoDocumentoType"/>
+      <xs:element name="SubTipoDocumento" type="SubTipoDocumentoType"/>
+      <xs:element name="CalificadorDocumento" type="CalificadorDocumentoType"/>
+      <xs:element name="Estacion" type="EstacionType"/>
+      <xs:element name="Registro" type="RegistroType"/>
+      <xs:element name="Version" type="VersionType"/>
+      <xs:element name="NumeroDocumento" type="NumeroDocumentoType"/>
+      <xs:element name="NumeroCompleto" type="NumeroCompletoType"/>
+      <xs:element name="Totales" type="TotalesType"/>
+    </sequence>
+  </xs:complexType>
+  <xs:element name="Orden" type="OrdenType"/>
+  <xs:simpleType name="OrdenType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:element name="TipoDocumento" type="TipoDocumentoType"/>
+  <xs:simpleType name="TipoDocumentoType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:element name="SubTipoDocumento" type="SubTipoDocumentoType"/>
+  <xs:simpleType name="SubTipoDocumentoType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:element name="CalificadorDocumento" type="CalificadorDocumentoType"/>
+  <xs:simpleType name="CalificadorDocumentoType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:element name="Estacion" type="EstacionType"/>
+  <xs:simpleType name="EstacionType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:element name="Registro" type="RegistroType"/>
+  <xs:simpleType name="RegistroType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:element name="Version" type="VersionType"/>
+  <xs:simpleType name="VersionType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:element name="NumeroDocumento" type="NumeroDocumentoType"/>
+  <xs:simpleType name="NumeroDocumentoType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:element name="NumeroCompleto" type="NumeroCompletoType"/>
+  <xs:simpleType name="NumeroCompletoType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:element name="Totales" type="TotalesType"/>
+  <xs:complexType name="TotalesType">
+    <sequence xmlns="http://www.w3.org/2001/XMLSchema">
+      <xs:element name="Total" type="TotalType"/>
+      <xs:element name="TotalBase" type="TotalBaseType"/>
+      <xs:element name="TotalNoGravado" type="TotalNoGravadoType"/>
+      <xs:element name="TotalGravado" type="TotalGravadoType"/>
+      <xs:element name="TotalExento" type="TotalExentoType"/>
+      <xs:element name="TotalIVA" type="TotalIVAType"/>
+      <xs:element name="TotalII" type="TotalIIType"/>
+      <xs:element name="TotalOtrosTributos" type="TotalOtrosTributosType"/>
+      <xs:element name="TotalPagos" type="TotalPagosType"/>
+      <xs:element name="OperacionesVenta" type="OperacionesVentaType"/>
+      <xs:element name="DiscriminacionIVA" type="DiscriminacionIVAType"/>
+      <xs:element name="DiscriminacionOtrosTributos" type="DiscriminacionOtrosTributosType"/>
+    </sequence>
+  </xs:complexType>
+  <xs:element name="Total" type="TotalType"/>
+  <xs:simpleType name="TotalType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:element name="TotalBase" type="TotalBaseType"/>
+  <xs:simpleType name="TotalBaseType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:element name="TotalNoGravado" type="TotalNoGravadoType"/>
+  <xs:simpleType name="TotalNoGravadoType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:element name="TotalGravado" type="TotalGravadoType"/>
+  <xs:simpleType name="TotalGravadoType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:element name="TotalExento" type="TotalExentoType"/>
+  <xs:simpleType name="TotalExentoType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:element name="TotalIVA" type="TotalIVAType"/>
+  <xs:simpleType name="TotalIVAType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:element name="TotalII" type="TotalIIType"/>
+  <xs:simpleType name="TotalIIType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:element name="TotalOtrosTributos" type="TotalOtrosTributosType"/>
+  <xs:simpleType name="TotalOtrosTributosType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:element name="TotalPagos" type="TotalPagosType"/>
+  <xs:simpleType name="TotalPagosType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:element name="OperacionesVenta" type="OperacionesVentaType"/>
+  <xs:simpleType name="OperacionesVentaType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:element name="DiscriminacionIVA" type="DiscriminacionIVAType"/>
+  <xs:complexType name="DiscriminacionIVAType">
+    <sequence xmlns="http://www.w3.org/2001/XMLSchema">
+      <xs:element name="IVA" type="IVAType"/>
+    </sequence>
+    <xs:attribute name="type" type="xs:string"/>
+  </xs:complexType>
+  <xs:element name="IVA" type="IVAType"/>
+  <xs:complexType name="IVAType">
+    <sequence xmlns="http://www.w3.org/2001/XMLSchema">
+      <xs:element name="TasaIVA" type="TasaIVAType"/>
+      <xs:element name="ImpIntFijo" type="ImpIntFijoType"/>
+      <xs:element name="ImpIntVariable" type="ImpIntVariableType"/>
+      <xs:element name="NetoSinIVA" type="NetoSinIVAType"/>
+      <xs:element name="MontoIVA" type="MontoIVAType"/>
+    </sequence>
+  </xs:complexType>
+  <xs:element name="TasaIVA" type="TasaIVAType"/>
+  <xs:simpleType name="TasaIVAType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:element name="ImpIntFijo" type="ImpIntFijoType"/>
+  <xs:simpleType name="ImpIntFijoType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:element name="ImpIntVariable" type="ImpIntVariableType"/>
+  <xs:simpleType name="ImpIntVariableType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:element name="NetoSinIVA" type="NetoSinIVAType"/>
+  <xs:simpleType name="NetoSinIVAType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:element name="MontoIVA" type="MontoIVAType"/>
+  <xs:simpleType name="MontoIVAType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:element name="DiscriminacionOtrosTributos" type="DiscriminacionOtrosTributosType"/>
+  <xs:complexType name="DiscriminacionOtrosTributosType">
+    <sequence xmlns="http://www.w3.org/2001/XMLSchema"/>
+    <xs:attribute name="type" type="xs:string"/>
+  </xs:complexType>
+  <xs:element name="NroDocumento" type="NroDocumentoType"/>
+  <xs:simpleType name="NroDocumentoType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:element name="ComprobanteReferencia" type="ComprobanteReferenciaType"/>
+  <xs:complexType name="ComprobanteReferenciaType">
+    <sequence xmlns="http://www.w3.org/2001/XMLSchema">
+      <xs:element name="Orden" type="OrdenType"/>
+      <xs:element name="TipoDocumento" type="TipoDocumentoType"/>
+      <xs:element name="SubTipoDocumento" type="SubTipoDocumentoType"/>
+      <xs:element name="CalificadorDocumento" type="CalificadorDocumentoType"/>
+      <xs:element name="Estacion" type="EstacionType"/>
+      <xs:element name="POS" type="POSType"/>
+      <xs:element name="NumeroDocumento" type="NumeroDocumentoType"/>
+    </sequence>
+  </xs:complexType>
+  <xs:element name="Orden" type="OrdenType"/>
+  <xs:simpleType name="OrdenType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:element name="TipoDocumento" type="TipoDocumentoType"/>
+  <xs:simpleType name="TipoDocumentoType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:element name="SubTipoDocumento" type="SubTipoDocumentoType"/>
+  <xs:simpleType name="SubTipoDocumentoType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:element name="CalificadorDocumento" type="CalificadorDocumentoType"/>
+  <xs:simpleType name="CalificadorDocumentoType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:element name="Estacion" type="EstacionType"/>
+  <xs:simpleType name="EstacionType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:element name="POS" type="POSType"/>
+  <xs:simpleType name="POSType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:element name="NumeroDocumento" type="NumeroDocumentoType"/>
+  <xs:simpleType name="NumeroDocumentoType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:element name="CierreDiarioEncabezado" type="CierreDiarioEncabezadoType"/>
+  <xs:complexType name="CierreDiarioEncabezadoType">
+    <sequence xmlns="http://www.w3.org/2001/XMLSchema">
+      <xs:element name="Orden" type="OrdenType"/>
+      <xs:element name="SubTipoDocumento" type="SubTipoDocumentoType"/>
+      <xs:element name="CalificadorDocumento" type="CalificadorDocumentoType"/>
+      <xs:element name="NumeroZeta" type="NumeroZetaType"/>
+      <xs:element name="Remanentes" type="RemanentesType"/>
+      <xs:element name="MemoriaFiscalPorAcabarse" type="MemoriaFiscalPorAcabarseType"/>
+      <xs:element name="MemoriaAuditoriaPorAcabarse" type="MemoriaAuditoriaPorAcabarseType"/>
+      <xs:element name="CertificadoExpirado" type="CertificadoExpiradoType"/>
+      <xs:element name="CertificadoPorExpirarse" type="CertificadoPorExpirarseType"/>
+      <xs:element name="FechaExpiracionCertificado" type="FechaExpiracionCertificadoType"/>
+      <xs:element name="CadenaValidacionExpirada" type="CadenaValidacionExpiradaType"/>
+      <xs:element name="CadenaValidacionPorExpirarse" type="CadenaValidacionPorExpirarseType"/>
+      <xs:element name="FechaExpiracionCadenaValidacion" type="FechaExpiracionCadenaValidacionType"/>
+      <xs:element name="NumeroSecuenciaMemoriaAuditoria" type="NumeroSecuenciaMemoriaAuditoriaType"/>
+      <xs:element name="BloqueosJornada" type="BloqueosJornadaType"/>
+      <xs:element name="TotalBloqueos" type="TotalBloqueosType"/>
+      <xs:element name="FechaInicio" type="FechaInicioType"/>
+      <xs:element name="HoraInicio" type="HoraInicioType"/>
+      <xs:element name="FechaCierre" type="FechaCierreType"/>
+      <xs:element name="HoraCierre" type="HoraCierreType"/>
+      <xs:element name="FechaJornada" type="FechaJornadaType"/>
+      <xs:element name="TipoEmisor" type="TipoEmisorType"/>
+      <xs:element name="TipoHabilitacion" type="TipoHabilitacionType"/>
+    </sequence>
+  </xs:complexType>
+  <xs:element name="Orden" type="OrdenType"/>
+  <xs:simpleType name="OrdenType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:element name="SubTipoDocumento" type="SubTipoDocumentoType"/>
+  <xs:simpleType name="SubTipoDocumentoType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:element name="CalificadorDocumento" type="CalificadorDocumentoType"/>
+  <xs:simpleType name="CalificadorDocumentoType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:element name="NumeroZeta" type="NumeroZetaType"/>
+  <xs:simpleType name="NumeroZetaType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:element name="Remanentes" type="RemanentesType"/>
+  <xs:simpleType name="RemanentesType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:element name="MemoriaFiscalPorAcabarse" type="MemoriaFiscalPorAcabarseType"/>
+  <xs:simpleType name="MemoriaFiscalPorAcabarseType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:element name="MemoriaAuditoriaPorAcabarse" type="MemoriaAuditoriaPorAcabarseType"/>
+  <xs:simpleType name="MemoriaAuditoriaPorAcabarseType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:element name="CertificadoExpirado" type="CertificadoExpiradoType"/>
+  <xs:simpleType name="CertificadoExpiradoType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:element name="CertificadoPorExpirarse" type="CertificadoPorExpirarseType"/>
+  <xs:simpleType name="CertificadoPorExpirarseType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:element name="FechaExpiracionCertificado" type="FechaExpiracionCertificadoType"/>
+  <xs:simpleType name="FechaExpiracionCertificadoType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:element name="CadenaValidacionExpirada" type="CadenaValidacionExpiradaType"/>
+  <xs:simpleType name="CadenaValidacionExpiradaType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:element name="CadenaValidacionPorExpirarse" type="CadenaValidacionPorExpirarseType"/>
+  <xs:simpleType name="CadenaValidacionPorExpirarseType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:element name="FechaExpiracionCadenaValidacion" type="FechaExpiracionCadenaValidacionType"/>
+  <xs:simpleType name="FechaExpiracionCadenaValidacionType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:element name="NumeroSecuenciaMemoriaAuditoria" type="NumeroSecuenciaMemoriaAuditoriaType"/>
+  <xs:simpleType name="NumeroSecuenciaMemoriaAuditoriaType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:element name="BloqueosJornada" type="BloqueosJornadaType"/>
+  <xs:simpleType name="BloqueosJornadaType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:element name="TotalBloqueos" type="TotalBloqueosType"/>
+  <xs:simpleType name="TotalBloqueosType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:element name="FechaInicio" type="FechaInicioType"/>
+  <xs:simpleType name="FechaInicioType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:element name="HoraInicio" type="HoraInicioType"/>
+  <xs:simpleType name="HoraInicioType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:element name="FechaCierre" type="FechaCierreType"/>
+  <xs:simpleType name="FechaCierreType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:element name="HoraCierre" type="HoraCierreType"/>
+  <xs:simpleType name="HoraCierreType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:element name="FechaJornada" type="FechaJornadaType"/>
+  <xs:simpleType name="FechaJornadaType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:element name="TipoEmisor" type="TipoEmisorType"/>
+  <xs:simpleType name="TipoEmisorType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:element name="TipoHabilitacion" type="TipoHabilitacionType"/>
+  <xs:simpleType name="TipoHabilitacionType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:element name="CierreDiarioContextoTipoComprobante" type="CierreDiarioContextoTipoComprobanteType"/>
+  <xs:complexType name="CierreDiarioContextoTipoComprobanteType">
+    <sequence xmlns="http://www.w3.org/2001/XMLSchema">
+      <xs:element name="Orden" type="OrdenType"/>
+      <xs:element name="TipoComprobante" type="TipoComprobanteType"/>
+      <xs:element name="SubTipoComprobante" type="SubTipoComprobanteType"/>
+      <xs:element name="CalificadorComprobante" type="CalificadorComprobanteType"/>
+      <xs:element name="Estacion" type="EstacionType"/>
+      <xs:element name="ConLeyenda" type="ConLeyendaType"/>
+    </sequence>
+  </xs:complexType>
+  <xs:element name="Orden" type="OrdenType"/>
+  <xs:simpleType name="OrdenType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:element name="TipoComprobante" type="TipoComprobanteType"/>
+  <xs:simpleType name="TipoComprobanteType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:element name="SubTipoComprobante" type="SubTipoComprobanteType"/>
+  <xs:simpleType name="SubTipoComprobanteType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:element name="CalificadorComprobante" type="CalificadorComprobanteType"/>
+  <xs:simpleType name="CalificadorComprobanteType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:element name="Estacion" type="EstacionType"/>
+  <xs:simpleType name="EstacionType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:element name="ConLeyenda" type="ConLeyendaType"/>
+  <xs:simpleType name="ConLeyendaType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:element name="CierreDiarioInformacionDocumento" type="CierreDiarioInformacionDocumentoType"/>
+  <xs:complexType name="CierreDiarioInformacionDocumentoType">
+    <sequence xmlns="http://www.w3.org/2001/XMLSchema">
+      <xs:element name="Orden" type="OrdenType"/>
+      <xs:element name="PrimerComprobante" type="PrimerComprobanteType"/>
+      <xs:element name="UltimoComprobante" type="UltimoComprobanteType"/>
+      <xs:element name="CantidadEmitidos" type="CantidadEmitidosType"/>
+      <xs:element name="CantidadCancelados" type="CantidadCanceladosType"/>
+    </sequence>
+  </xs:complexType>
+  <xs:element name="Orden" type="OrdenType"/>
+  <xs:simpleType name="OrdenType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:element name="PrimerComprobante" type="PrimerComprobanteType"/>
+  <xs:simpleType name="PrimerComprobanteType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:element name="UltimoComprobante" type="UltimoComprobanteType"/>
+  <xs:simpleType name="UltimoComprobanteType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:element name="CantidadEmitidos" type="CantidadEmitidosType"/>
+  <xs:simpleType name="CantidadEmitidosType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:element name="CantidadCancelados" type="CantidadCanceladosType"/>
+  <xs:simpleType name="CantidadCanceladosType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:element name="CierreDiarioIVA" type="CierreDiarioIVAType"/>
+  <xs:complexType name="CierreDiarioIVAType">
+    <sequence xmlns="http://www.w3.org/2001/XMLSchema">
+      <xs:element name="Orden" type="OrdenType"/>
+      <xs:element name="TasaIVA" type="TasaIVAType"/>
+      <xs:element name="TotalBase" type="TotalBaseType"/>
+      <xs:element name="TotalIVA" type="TotalIVAType"/>
+    </sequence>
+  </xs:complexType>
+  <xs:element name="Orden" type="OrdenType"/>
+  <xs:simpleType name="OrdenType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:element name="TasaIVA" type="TasaIVAType"/>
+  <xs:simpleType name="TasaIVAType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:element name="TotalBase" type="TotalBaseType"/>
+  <xs:simpleType name="TotalBaseType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:element name="TotalIVA" type="TotalIVAType"/>
+  <xs:simpleType name="TotalIVAType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:element name="CierreDiarioOtrosTributos" type="CierreDiarioOtrosTributosType"/>
+  <xs:complexType name="CierreDiarioOtrosTributosType">
+    <sequence xmlns="http://www.w3.org/2001/XMLSchema">
+      <xs:element name="Orden" type="OrdenType"/>
+      <xs:element name="TipoTributo" type="TipoTributoType"/>
+      <xs:element name="TotalBase" type="TotalBaseType"/>
+      <xs:element name="TotalTributo" type="TotalTributoType"/>
+    </sequence>
+  </xs:complexType>
+  <xs:element name="Orden" type="OrdenType"/>
+  <xs:simpleType name="OrdenType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:element name="TipoTributo" type="TipoTributoType"/>
+  <xs:simpleType name="TipoTributoType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:element name="TotalBase" type="TotalBaseType"/>
+  <xs:simpleType name="TotalBaseType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:element name="TotalTributo" type="TotalTributoType"/>
+  <xs:simpleType name="TotalTributoType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:element name="CierreDiarioTotales" type="CierreDiarioTotalesType"/>
+  <xs:complexType name="CierreDiarioTotalesType">
+    <sequence xmlns="http://www.w3.org/2001/XMLSchema">
+      <xs:element name="Orden" type="OrdenType"/>
+      <xs:element name="TotalGravado" type="TotalGravadoType"/>
+      <xs:element name="TotalNoGravado" type="TotalNoGravadoType"/>
+      <xs:element name="TotalExento" type="TotalExentoType"/>
+      <xs:element name="TotalIVA" type="TotalIVAType"/>
+      <xs:element name="TotalOtrosTributos" type="TotalOtrosTributosType"/>
+      <xs:element name="TotalBonificaciones" type="TotalBonificacionesType"/>
+      <xs:element name="TotalFinal" type="TotalFinalType"/>
+    </sequence>
+  </xs:complexType>
+  <xs:element name="Orden" type="OrdenType"/>
+  <xs:simpleType name="OrdenType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:element name="TotalGravado" type="TotalGravadoType"/>
+  <xs:simpleType name="TotalGravadoType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:element name="TotalNoGravado" type="TotalNoGravadoType"/>
+  <xs:simpleType name="TotalNoGravadoType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:element name="TotalExento" type="TotalExentoType"/>
+  <xs:simpleType name="TotalExentoType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:element name="TotalIVA" type="TotalIVAType"/>
+  <xs:simpleType name="TotalIVAType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:element name="TotalOtrosTributos" type="TotalOtrosTributosType"/>
+  <xs:simpleType name="TotalOtrosTributosType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:element name="TotalBonificaciones" type="TotalBonificacionesType"/>
+  <xs:simpleType name="TotalBonificacionesType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:element name="TotalFinal" type="TotalFinalType"/>
+  <xs:simpleType name="TotalFinalType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:element name="CierreDiarioContextoTotales" type="CierreDiarioContextoTotalesType"/>
+  <xs:complexType name="CierreDiarioContextoTotalesType">
+    <sequence xmlns="http://www.w3.org/2001/XMLSchema">
+      <xs:element name="Orden" type="OrdenType"/>
+    </sequence>
+  </xs:complexType>
+  <xs:element name="Orden" type="OrdenType"/>
+  <xs:simpleType name="OrdenType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+</xs:schema>]]></XmlSchema><CdsSkeleton/><XslTransform/><Skeleton><![CDATA[<?xml version="1.0"?><DATAPACKET Version="2.0"><METADATA><FIELDS><FIELD attrname="Nombre" fieldtype="string" WIDTH="23"/><FIELD attrname="Direccion" fieldtype="string" WIDTH="13"/><FIELD attrname="TipoCliente" fieldtype="string" WIDTH="22"/><FIELD attrname="TipoDocumento" fieldtype="string" WIDTH="12"/><FIELD attrname="SubTipoDocumento" fieldtype="string" WIDTH="7"/><FIELD attrname="CalificadorDocumento" fieldtype="string" WIDTH="14"/><FIELD attrname="TipoAFIP" fieldtype="string" WIDTH="2"/><FIELD attrname="Fecha" fieldtype="string" WIDTH="6"/><FIELD attrname="NumeroCompleto" fieldtype="string" WIDTH="14"/><FIELD attrname="Base" fieldtype="string" WIDTH="7"/><FIELD attrname="MontoIVA" fieldtype="string" WIDTH="7"/><FIELD attrname="MontoOtrosTributos" fieldtype="string" WIDTH="1"/><FIELD attrname="MontoNoGravado" fieldtype="string" WIDTH="1"/><FIELD attrname="MontoExento" fieldtype="string" WIDTH="1"/><FIELD attrname="MontoGravado" fieldtype="string" WIDTH="8"/><FIELD attrname="Final" fieldtype="string" WIDTH="8"/><FIELD attrname="Venta" fieldtype="nested"><FIELDS><FIELD attrname="CodigoMatrix" fieldtype="string" WIDTH="8"/><FIELD attrname="Descripcion" fieldtype="string" WIDTH="20"/><FIELD attrname="Cantidad" fieldtype="string" WIDTH="7"/><FIELD attrname="PrecioBase" fieldtype="string" WIDTH="9"/><FIELD attrname="MontoTotalBase" fieldtype="string" WIDTH="7"/><FIELD attrname="TasaIVA" fieldtype="string" WIDTH="4"/><FIELD attrname="MontoTotalIVA" fieldtype="string" WIDTH="6"/><FIELD attrname="MontoTotalII" fieldtype="string" WIDTH="6"/><FIELD attrname="ImpIntFijo" fieldtype="string" WIDTH="2"/><FIELD attrname="PrecioFinal" fieldtype="string" WIDTH="8"/><FIELD attrname="MontoFinal" fieldtype="string" WIDTH="7"/></FIELDS><PARAMS/></FIELD></FIELDS><PARAMS/></METADATA><ROWDATA/><METADATA><FIELDS><FIELD attrname="Nombre" fieldtype="string" WIDTH="23"/><FIELD attrname="Direccion" fieldtype="string" WIDTH="13"/><FIELD attrname="TipoCliente" fieldtype="string" WIDTH="22"/><FIELD attrname="TipoDocumento" fieldtype="string" WIDTH="12"/><FIELD attrname="SubTipoDocumento" fieldtype="string" WIDTH="7"/><FIELD attrname="CalificadorDocumento" fieldtype="string" WIDTH="14"/><FIELD attrname="TipoAFIP" fieldtype="string" WIDTH="2"/><FIELD attrname="Fecha" fieldtype="string" WIDTH="6"/><FIELD attrname="NumeroCompleto" fieldtype="string" WIDTH="14"/><FIELD attrname="Base" fieldtype="string" WIDTH="7"/><FIELD attrname="MontoIVA" fieldtype="string" WIDTH="7"/><FIELD attrname="MontoOtrosTributos" fieldtype="string" WIDTH="1"/><FIELD attrname="MontoNoGravado" fieldtype="string" WIDTH="1"/><FIELD attrname="MontoExento" fieldtype="string" WIDTH="1"/><FIELD attrname="MontoGravado" fieldtype="string" WIDTH="8"/><FIELD attrname="Final" fieldtype="string" WIDTH="8"/><FIELD attrname="Venta" fieldtype="nested"><FIELDS><FIELD attrname="CodigoMatrix" fieldtype="string" WIDTH="8"/><FIELD attrname="Descripcion" fieldtype="string" WIDTH="20"/><FIELD attrname="Cantidad" fieldtype="string" WIDTH="7"/><FIELD attrname="PrecioBase" fieldtype="string" WIDTH="9"/><FIELD attrname="MontoTotalBase" fieldtype="string" WIDTH="7"/><FIELD attrname="TasaIVA" fieldtype="string" WIDTH="4"/><FIELD attrname="MontoTotalIVA" fieldtype="string" WIDTH="6"/><FIELD attrname="MontoTotalII" fieldtype="string" WIDTH="6"/><FIELD attrname="ImpIntFijo" fieldtype="string" WIDTH="2"/><FIELD attrname="PrecioFinal" fieldtype="string" WIDTH="8"/><FIELD attrname="MontoFinal" fieldtype="string" WIDTH="7"/></FIELDS><PARAMS/></FIELD></FIELDS><PARAMS/></METADATA><ROWDATA/></DATAPACKET>
+]]></Skeleton></XmlTransformation>

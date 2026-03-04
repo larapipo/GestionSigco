@@ -1,0 +1,507 @@
+inherited FormImportaProveeStockXLS: TFormImportaProveeStockXLS
+  Caption = 'Importar Proveedor-Stock de Excel'
+  ClientHeight = 614
+  ClientWidth = 604
+  StyleElements = [seFont, seClient, seBorder]
+  ExplicitWidth = 622
+  ExplicitHeight = 655
+  TextHeight = 13
+  inherited pnPrincipal: TPanel
+    Width = 604
+    Height = 561
+    Align = alClient
+    StyleElements = [seFont, seClient, seBorder]
+    ExplicitWidth = 604
+    ExplicitHeight = 561
+    object btn1: TSpeedButton
+      Left = 509
+      Top = 16
+      Width = 23
+      Height = 22
+      Glyph.Data = {
+        56070000424D5607000000000000360400002800000028000000140000000100
+        0800000000002003000000000000000000000001000000000000000000000000
+        80000080000000808000800000008000800080800000C0C0C000C0DCC000F0CA
+        A600000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        000000000000000000000000000000000000F0FBFF00A4A0A000808080000000
+        FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFFFF00030303030303
+        0303030303030303030303030303030303030303030303030303030303030303
+        0303030303030303030303030303030303030303030303030303030303030303
+        0303030303030303030303030303030303030303030303030303030303030303
+        0303030303030303030303030303030303030303030303030303030303030303
+        030303030303030303FFFFFFFFFFFFFFFFFFFFFFFFFFFF0303030303F8000000
+        00000000000000000000030303030303F8F8F8F8F8F8F8F8F8F8F8F8F8F803FF
+        03030303000007FB07FB07FB07FB07FB07FB000303030303F8F803FF03030303
+        030303030303F8FF0303030300FF0007FB07FB07FB07FB07FB07000303030303
+        F8FFF8FF03030303030303030303F803FF03030300FB00FB07FB07FB07FB07FB
+        07FB070003030303F8FFF803FF03030303030303030303F8FF03030300FFFB00
+        FB07FB07FB07FB07FB07FB0003030303F8FF03F8FF03030303030303030303F8
+        03FF030300FBFF0007FB07FB07FB07FB07FB07FB00030303F8FF03F803FFFFFF
+        FFFF030303030303F8FF030300FFFBFF000000000007FB07FB07FB0700030303
+        F8FF0303F8F8F8F8F803FFFFFFFFFFFFF803030300FBFFFBFFFBFFFBFF000000
+        0000000003030303F8FF03030303030303F8F8F8F8F8F8F80303030300FFFBFF
+        FBFFFBFFFBFFFBFFFB00030303030303F8FF0303030303030303030303F8FF03
+        0303030300FBFFFBFFFBFFFBFFFBFFFBFF00030303030303F8FF0303030303FF
+        FFFFFFFFFFF803030303030300FFFBFFFBFF0000000000000003030303030303
+        F807FFFFFFFFF8F8F8F8F8F8F803030303030303030000000000030303030303
+        030303030303030303F8F8F8F8F8030303030303030303030303030303030303
+        0303030303030303030303030303030303030303030303030303030303030303
+        0303030303030303030303030303030303030303030303030303030303030303
+        0303030303030303030303030303030303030303030303030303030303030303
+        0303030303030303030303030303030303030303030303030303030303030303
+        0303030303030303030303030303030303030303030303030303}
+      NumGlyphs = 2
+      OnClick = btn1Click
+    end
+    object btnAyudaFormato: TSpeedButton
+      Left = 538
+      Top = 16
+      Width = 23
+      Height = 22
+      Flat = True
+      Glyph.Data = {
+        56070000424D5607000000000000360400002800000028000000140000000100
+        0800000000002003000000000000000000000001000000000000000000000000
+        80000080000000808000800000008000800080800000C0C0C000C0DCC000F0CA
+        A600000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        000000000000000000000000000000000000F0FBFF00A4A0A000808080000000
+        FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFFFF00030303030303
+        0303030303030303030303030303030303030303030303030303030303030303
+        0303030303030303030303030303030303030303030303030303030303030303
+        0303030303030303030303030303030303030000030303030303030303030303
+        030303030303F8F8FF0303030303030303030303030303030300FFFF00030303
+        03030303030303030303030303F8FF03F8FF0303030303030303030303030303
+        00FFFFFFFF000303030303030303030303030303F8FF030303F8FF0303030303
+        030303030303030300FFFF00F8070003030303030303030303030303F8FF03F8
+        FF07F8FF03030303030303030303030303F8FFFF000003030303030303030303
+        0303030303F8FF03F8F8FF030303030303030303030303030300FFFFF8030303
+        03030303030303030303030303F8FF03F8FF0303030303030303030303030303
+        0303F8FFFF0003030303030303030303030303030303F8FF03F8FF0303030303
+        0303030303030303030000FFFFF8030303030303030303030303030303F8F8FF
+        03F8FF030303030303030303030303030007F800FFFF00030303030303030303
+        03030303F8FF07F8FF03F8FF0303030303030303030303030300FFFFFFFF0003
+        03030303030303030303030303F8FF030303F8FF030303030303030303030303
+        030300FFFF0003030303030303030303030303030303F8FF03F8FF0303030303
+        03030303030303030303030000030303030303030303030303030303030303F8
+        F8FF030303030303030303030303030303030303000003030303030303030303
+        0303030303030303F8F8FF0303030303030303030303030303030300FFFF0003
+        030303030303030303030303030303F8FF03F8FF030303030303030303030303
+        03030300FFFF0003030303030303030303030303030303F8FF03F8FF03030303
+        0303030303030303030303030000030303030303030303030303030303030303
+        F8F8FF0303030303030303030303030303030303030303030303030303030303
+        0303030303030303030303030303030303030303030303030303030303030303
+        0303030303030303030303030303030303030303030303030303}
+      NumGlyphs = 2
+      OnClick = btnAyudaFormatoClick
+    end
+    object edPath: TEdit
+      Left = 8
+      Top = 16
+      Width = 495
+      Height = 21
+      TabOrder = 0
+    end
+    object btImportar: TBitBtn
+      Left = 510
+      Top = 530
+      Width = 83
+      Height = 25
+      Anchors = [akRight, akBottom]
+      Caption = 'Importar'
+      Glyph.Data = {
+        06020000424D0602000000000000760000002800000028000000140000000100
+        0400000000009001000000000000000000001000000000000000000000000000
+        8000008000000080800080000000800080008080000080808000C0C0C0000000
+        FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFFFF00333333333333
+        3333333333FFFFFFFF333FFFFF3330000000033300000333377777777F337777
+        7FF330EFEFEF03307333703337F3FFFF7F37733377F330F4444E033333333033
+        37F777737F333333F7F33099999903333330703337F333337F33333777FF309F
+        FFF903333330000337F333337F33333777733099999903333330003337F3FF3F
+        7F333337773330F44E0003333330033337F7737773333337733330EFEF003333
+        3330333337FFFF7733333337333330000003333333333333377777733333FFFF
+        FFFF3333333333300000000333333F3333377777777F333303333330EFEFEF03
+        33337F333337F3FFFF7F333003333330F4444E0333377F333337F777737F3300
+        03333330EFEFEF0333777F333337F3FFFF7F300003333330F4444E0337777F33
+        3337F777737F330703333330EFEFEF03337773333337F3FF3F7F330333333330
+        F44E0003337FF333FF37F7737773330733370330EFEF00333377FFF77337FFFF
+        7733333000003330000003333337777733377777733333333333333333333333
+        33333333333333333333}
+      NumGlyphs = 2
+      TabOrder = 2
+      OnClick = btImportarClick
+    end
+    object sgStock: TAdvStringGrid
+      Left = 8
+      Top = 43
+      Width = 585
+      Height = 481
+      Anchors = [akLeft, akTop, akRight, akBottom]
+      ColCount = 4
+      DrawingStyle = gdsClassic
+      FixedColor = clWhite
+      FixedCols = 0
+      Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goRangeSelect, goColSizing, goColMoving, goFixedRowDefAlign]
+      TabOrder = 3
+      GridLineColor = 13948116
+      GridFixedLineColor = 11250603
+      OnLoadCell = sgStockLoadCell
+      ActiveCellFont.Charset = DEFAULT_CHARSET
+      ActiveCellFont.Color = 4474440
+      ActiveCellFont.Height = -12
+      ActiveCellFont.Name = 'Segoe UI'
+      ActiveCellFont.Style = [fsBold]
+      ActiveCellColor = 11565130
+      ActiveCellColorTo = 11565130
+      BorderColor = 11250603
+      ControlLook.FixedGradientFrom = clWhite
+      ControlLook.FixedGradientTo = clWhite
+      ControlLook.FixedGradientHoverFrom = clGray
+      ControlLook.FixedGradientHoverTo = clWhite
+      ControlLook.FixedGradientHoverMirrorFrom = clWhite
+      ControlLook.FixedGradientHoverMirrorTo = clWhite
+      ControlLook.FixedGradientHoverBorder = 11645361
+      ControlLook.FixedGradientDownFrom = clWhite
+      ControlLook.FixedGradientDownTo = clWhite
+      ControlLook.FixedGradientDownMirrorFrom = clWhite
+      ControlLook.FixedGradientDownMirrorTo = clWhite
+      ControlLook.FixedGradientDownBorder = 11250603
+      ControlLook.DropDownHeader.Font.Charset = DEFAULT_CHARSET
+      ControlLook.DropDownHeader.Font.Color = clWindowText
+      ControlLook.DropDownHeader.Font.Height = -11
+      ControlLook.DropDownHeader.Font.Name = 'Segoe UI'
+      ControlLook.DropDownHeader.Font.Style = []
+      ControlLook.DropDownHeader.Visible = True
+      ControlLook.DropDownHeader.Buttons = <>
+      ControlLook.DropDownFooter.Font.Charset = DEFAULT_CHARSET
+      ControlLook.DropDownFooter.Font.Color = clWindowText
+      ControlLook.DropDownFooter.Font.Height = -11
+      ControlLook.DropDownFooter.Font.Name = 'Segoe UI'
+      ControlLook.DropDownFooter.Font.Style = []
+      ControlLook.DropDownFooter.Visible = True
+      ControlLook.DropDownFooter.Buttons = <>
+      ControlLook.ToggleSwitch.BackgroundBorderWidth = 1.000000000000000000
+      ControlLook.ToggleSwitch.ButtonBorderWidth = 1.000000000000000000
+      ControlLook.ToggleSwitch.CaptionFont.Charset = DEFAULT_CHARSET
+      ControlLook.ToggleSwitch.CaptionFont.Color = clWindowText
+      ControlLook.ToggleSwitch.CaptionFont.Height = -12
+      ControlLook.ToggleSwitch.CaptionFont.Name = 'Segoe UI'
+      ControlLook.ToggleSwitch.CaptionFont.Style = []
+      ControlLook.ToggleSwitch.Shadow = False
+      Filter = <>
+      FilterDropDown.Font.Charset = DEFAULT_CHARSET
+      FilterDropDown.Font.Color = clWindowText
+      FilterDropDown.Font.Height = -12
+      FilterDropDown.Font.Name = 'Segoe UI'
+      FilterDropDown.Font.Style = []
+      FilterDropDown.TextChecked = 'Checked'
+      FilterDropDown.TextUnChecked = 'Unchecked'
+      FilterDropDownClear = '(All)'
+      FilterEdit.TypeNames.Strings = (
+        'Starts with'
+        'Ends with'
+        'Contains'
+        'Not contains'
+        'Equal'
+        'Not equal'
+        'Larger than'
+        'Smaller than'
+        'Clear')
+      FixedColWidth = 71
+      FixedRowHeight = 22
+      FixedFont.Charset = DEFAULT_CHARSET
+      FixedFont.Color = 3881787
+      FixedFont.Height = -11
+      FixedFont.Name = 'Segoe UI'
+      FixedFont.Style = [fsBold]
+      FloatFormat = '%.2f'
+      HoverButtons.Buttons = <>
+      HTMLSettings.ImageFolder = 'images'
+      HTMLSettings.ImageBaseName = 'img'
+      Look = glCustom
+      PrintSettings.DateFormat = 'dd/mm/yyyy'
+      PrintSettings.Font.Charset = DEFAULT_CHARSET
+      PrintSettings.Font.Color = clWindowText
+      PrintSettings.Font.Height = -12
+      PrintSettings.Font.Name = 'Segoe UI'
+      PrintSettings.Font.Style = []
+      PrintSettings.FixedFont.Charset = DEFAULT_CHARSET
+      PrintSettings.FixedFont.Color = clWindowText
+      PrintSettings.FixedFont.Height = -12
+      PrintSettings.FixedFont.Name = 'Segoe UI'
+      PrintSettings.FixedFont.Style = []
+      PrintSettings.HeaderFont.Charset = DEFAULT_CHARSET
+      PrintSettings.HeaderFont.Color = clWindowText
+      PrintSettings.HeaderFont.Height = -12
+      PrintSettings.HeaderFont.Name = 'Segoe UI'
+      PrintSettings.HeaderFont.Style = []
+      PrintSettings.FooterFont.Charset = DEFAULT_CHARSET
+      PrintSettings.FooterFont.Color = clWindowText
+      PrintSettings.FooterFont.Height = -12
+      PrintSettings.FooterFont.Name = 'Segoe UI'
+      PrintSettings.FooterFont.Style = []
+      PrintSettings.PageNumSep = '/'
+      SearchFooter.ColorTo = clNone
+      SearchFooter.FindNextCaption = 'Find &next'
+      SearchFooter.FindPrevCaption = 'Find &previous'
+      SearchFooter.Font.Charset = DEFAULT_CHARSET
+      SearchFooter.Font.Color = clWindowText
+      SearchFooter.Font.Height = -12
+      SearchFooter.Font.Name = 'Segoe UI'
+      SearchFooter.Font.Style = []
+      SearchFooter.HighLightCaption = 'Highlight'
+      SearchFooter.HintClose = 'Close'
+      SearchFooter.HintFindNext = 'Find next occurrence'
+      SearchFooter.HintFindPrev = 'Find previous occurrence'
+      SearchFooter.HintHighlight = 'Highlight occurrences'
+      SearchFooter.MatchCaseCaption = 'Match case'
+      SearchFooter.ResultFormat = '(%d of %d)'
+      SelectionColor = 13744549
+      SortSettings.HeaderColor = clWhite
+      SortSettings.HeaderColorTo = clWhite
+      SortSettings.HeaderMirrorColor = clWhite
+      SortSettings.HeaderMirrorColorTo = clWhite
+      Version = '9.1.6.6'
+      ColWidths = (
+        71
+        84
+        101
+        128)
+      RowHeights = (
+        22
+        22
+        22
+        22
+        22
+        22
+        22
+        22
+        22
+        22)
+    end
+    object pnAviso: TPanel
+      Left = 152
+      Top = 80
+      Width = 380
+      Height = 177
+      TabOrder = 1
+      Visible = False
+      object lbl1: TLabel
+        Left = 8
+        Top = 128
+        Width = 184
+        Height = 39
+        Caption = 
+          'Establecer este formato para la planilla '#13#10'en Excel.'#13#10'Ordenar la' +
+          's columnas en ese orden.'
+      end
+      object dbgrd1: TDBGrid
+        Left = 8
+        Top = 8
+        Width = 361
+        Height = 105
+        TabOrder = 0
+        TitleFont.Charset = DEFAULT_CHARSET
+        TitleFont.Color = clWindowText
+        TitleFont.Height = -11
+        TitleFont.Name = 'MS Sans Serif'
+        TitleFont.Style = []
+        Columns = <
+          item
+            Expanded = False
+            Title.Caption = 'codigo_Proveedor'
+            Width = 106
+            Visible = True
+          end
+          item
+            Expanded = False
+            Title.Caption = 'Codigo_stock'
+            Width = 95
+            Visible = True
+          end
+          item
+            Expanded = False
+            Title.Caption = 'Codigo_Stock_proveedor'
+            Width = 127
+            Visible = True
+          end>
+      end
+    end
+    object pgEstado: TProgressBar
+      Left = 8
+      Top = 527
+      Width = 150
+      Height = 28
+      Anchors = [akLeft, akBottom]
+      Smooth = True
+      Step = 1
+      TabOrder = 4
+    end
+  end
+  inherited ToolBar1: TToolBar
+    Top = 561
+    Width = 604
+    Align = alBottom
+    ExplicitTop = 561
+    ExplicitWidth = 604
+    inherited btConfirma: TBitBtn
+      Visible = False
+    end
+    inherited btNuevo: TBitBtn
+      Visible = False
+    end
+    inherited btCancelar: TBitBtn
+      Visible = False
+    end
+    inherited btModificar: TBitBtn
+      Visible = False
+    end
+    inherited Pr: TSpeedButton
+      Visible = False
+    end
+    inherited btBuscar: TBitBtn
+      Visible = False
+    end
+    inherited Ne: TSpeedButton
+      Visible = False
+    end
+    inherited btBorrar: TBitBtn
+      Visible = False
+    end
+  end
+  inherited Panel1: TPanel
+    Top = 591
+    Width = 604
+    Align = alBottom
+    StyleElements = [seFont, seClient, seBorder]
+    ExplicitTop = 591
+    ExplicitWidth = 604
+    inherited DBStatusLabel1: TJvDBStatusLabel
+      Height = 21
+    end
+    inherited sbEstado: TStatusBar
+      Width = 515
+      ExplicitWidth = 515
+    end
+  end
+  inherited ActionList1: TActionList
+    Left = 272
+    Top = 328
+  end
+  inherited DSBase: TDataSource
+    Left = 496
+    Top = 64
+  end
+  inherited ImageList1: TImageList
+    Left = 128
+    Top = 144
+  end
+  inherited JvFormStorage: TJvFormStorage
+    PreventResize = False
+  end
+  inherited QBrowse: TSQLQuery
+    Left = 24
+    Top = 504
+  end
+  inherited QUltimoCodigo: TSQLQuery
+    Left = 48
+    Top = 568
+  end
+  inherited QBrowse2: TFDQuery
+    Left = 104
+    Top = 544
+  end
+  inherited QUltimoCodigo2: TFDQuery
+    Left = 152
+    Top = 544
+  end
+  object OpenDialog: TOpenDialog
+    Left = 496
+    Top = 184
+  end
+  object QStock: TFDQuery
+    Connection = DMMain_FD.fdcGestion
+    SQL.Strings = (
+      
+        'insert into proveestock ( id_proveestock, codigo_proveedor, codi' +
+        'go_stk, nrocpbte, tipo_cpbte, clase_cpbte,codigo_facturacion) '
+      
+        '                 values (-1, :codigoproveedor, :codigoarticulo,'#39 +
+        #39','#39#39','#39#39',:codigofacturacion);')
+    Left = 264
+    Top = 403
+    ParamData = <
+      item
+        Name = 'CODIGOPROVEEDOR'
+        DataType = ftString
+        ParamType = ptInput
+        Size = 6
+        Value = Null
+      end
+      item
+        Name = 'CODIGOARTICULO'
+        DataType = ftString
+        ParamType = ptInput
+        Size = 8
+      end
+      item
+        Name = 'CODIGOFACTURACION'
+        ParamType = ptInput
+      end>
+  end
+end

@@ -1,0 +1,204 @@
+object FormMuestraHRuta: TFormMuestraHRuta
+  Left = 0
+  Top = 0
+  BorderStyle = bsDialog
+  Caption = 'Muestra Hoja de Ruta'
+  ClientHeight = 162
+  ClientWidth = 457
+  Color = clGradientInactiveCaption
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  Position = poDesktopCenter
+  OnClose = FormClose
+  OnDestroy = FormDestroy
+  OnShow = FormShow
+  TextHeight = 13
+  object RxLabel58: TJvLabel
+    Left = 7
+    Top = 7
+    Width = 34
+    Height = 13
+    Caption = 'Fecha '
+    ShadowSize = 1
+    ShadowPos = spLeftTop
+    Transparent = True
+  end
+  object RxLabel59: TJvLabel
+    Left = 118
+    Top = 7
+    Width = 65
+    Height = 13
+    Caption = 'Hoja de Ruta'
+    ShadowSize = 1
+    ShadowPos = spLeftTop
+    Transparent = True
+  end
+  object JvLabel1: TJvLabel
+    Left = 118
+    Top = 55
+    Width = 63
+    Height = 13
+    Caption = 'Responsable'
+    ShadowSize = 1
+    ShadowPos = spLeftTop
+    Transparent = True
+  end
+  object dbeFechaVta: TJvDBDateEdit
+    Left = 8
+    Top = 24
+    Width = 92
+    Height = 21
+    Margins.Left = 1
+    Margins.Top = 1
+    DataField = 'FECHA'
+    DataSource = DSHojaRuta
+    ReadOnly = True
+    Glyph.Data = {
+      76050000424D760500000000000036000000280000001C0000000C0000000100
+      2000000000004005000000000000000000000000000000000000FF00FF00FF00
+      FF00FF00FF008080800080808000808080008080800080808000808080008080
+      800080808000808080008080800080808000FF00FF00FF00FF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FF00FF00FF00FF000000000000000000800000000000
+      0000800000008000000000000000800000000000000000000000800000008080
+      8000FF00FF008080800080808000808080008080800080808000808080008080
+      80008080800080808000808080008080800080808000FFFFFF00FF00FF00FF00
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF008000000080808000FF00FF0080808000FFFFFF00FF00
+      FF00FFFFFF00FFFFFF00FFFFFF00FF00FF00FFFFFF00FFFFFF00FFFFFF00FF00
+      FF0080808000FFFFFF00FF00FF00FF00FF00FFFFFF0000000000000000000000
+      0000FFFFFF00000000000000000000000000C0C0C000FFFFFF00800000008080
+      8000FF00FF0080808000FFFFFF00808080008080800080808000FF00FF008080
+      80008080800080808000FF00FF00FFFFFF0080808000FFFFFF00FF00FF00FF00
+      FF00FFFFFF00FFFFFF0000000000FFFFFF00FFFFFF00C0C0C000FFFFFF00C0C0
+      C00000000000FFFFFF008000000080808000FF00FF0080808000FFFFFF00FF00
+      FF0080808000FFFFFF00FF00FF00FF00FF00FF00FF00FF00FF0080808000FFFF
+      FF0080808000FFFFFF00FF00FF00FF00FF00FFFFFF00FFFFFF0000000000FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF0000000000FFFFFF00800000008080
+      8000FF00FF0080808000FFFFFF00FF00FF0080808000FFFFFF00FF00FF00FF00
+      FF00FFFFFF00FFFFFF0080808000FF00FF0080808000FFFFFF00FF00FF00FF00
+      FF00FFFFFF00FFFFFF0000000000FFFFFF00FFFFFF0000000000000000000000
+      0000C0C0C000FFFFFF008000000080808000FF00FF0080808000FFFFFF00FF00
+      FF0080808000FFFFFF00FF00FF00808080008080800080808000FF00FF00FF00
+      FF0080808000FFFFFF00FF00FF00FF00FF00FFFFFF000000000000000000FFFF
+      FF00FFFFFF0000000000FFFFFF00FFFFFF00FFFFFF00FFFFFF00800000008080
+      8000FF00FF0080808000FFFFFF008080800080808000FFFFFF00FF00FF008080
+      8000FFFFFF00FFFFFF00FFFFFF00FFFFFF0080808000FFFFFF00FF00FF00FF00
+      FF00FFFFFF00FFFFFF0000000000FFFFFF00FFFFFF0000000000000000000000
+      000000000000FFFFFF008000000080808000FF00FF0080808000FFFFFF00FF00
+      FF0080808000FF00FF00FF00FF0080808000808080008080800080808000FF00
+      FF0080808000FFFFFF00FF00FF00FF00FF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00800000008080
+      8000FF00FF0080808000FFFFFF00FF00FF00FF00FF00FF00FF00FF00FF00FF00
+      FF00FF00FF00FF00FF00FF00FF00FF00FF0080808000FFFFFF00FF00FF00FF00
+      FF00FFFFFF00C0C0C000C0C0C000C0C0C000C0C0C000C0C0C000C0C0C000C0C0
+      C000C0C0C000FFFFFF008000000080808000FF00FF0080808000FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF0080808000FFFFFF00FF00FF00FF00FF000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000FF00FF00FF00
+      FF00FF00FF008080800080808000808080008080800080808000808080008080
+      80008080800080808000808080008080800080808000FF00FF00}
+    ImageKind = ikCustom
+    NumGlyphs = 2
+    ButtonWidth = 16
+    PopupColor = clBtnFace
+    ShowNullDate = False
+    TabOrder = 0
+  end
+  object dbeSucursal: TDBEdit
+    Left = 118
+    Top = 26
+    Width = 65
+    Height = 21
+    Color = clWhite
+    DataField = 'ID'
+    DataSource = DSHojaRuta
+    ReadOnly = True
+    TabOrder = 1
+  end
+  object DBEdit1: TDBEdit
+    Left = 118
+    Top = 74
+    Width = 283
+    Height = 21
+    Color = clWhite
+    DataField = 'NOMBRE_1'
+    DataSource = DSHojaRuta
+    ReadOnly = True
+    TabOrder = 2
+  end
+  object DSHojaRuta: TDataSource
+    DataSet = QHojaRuta
+    Left = 40
+    Top = 104
+  end
+  object QHojaRuta: TFDQuery
+    Connection = DMMain_FD.fdcGestion
+    SQL.Strings = (
+      
+        'select d.nrocpbte,d.nombre,c.id,c.fecha,c.responsable,p.nombre f' +
+        'rom hojacarga_det d'
+      'left join hojacarga_cab c on c.id=d.id_cab'
+      'left join personal p on p.codigo=c.responsable'
+      ''
+      'where d.id_cpbte=:idcpbte and d.tipocpbte=:tipocpbte')
+    Left = 216
+    Top = 112
+    ParamData = <
+      item
+        Name = 'IDCPBTE'
+        DataType = ftInteger
+        ParamType = ptInput
+        Value = Null
+      end
+      item
+        Name = 'TIPOCPBTE'
+        DataType = ftString
+        ParamType = ptInput
+        Size = 2
+      end>
+    object QHojaRutaNROCPBTE: TStringField
+      FieldName = 'NROCPBTE'
+      Origin = 'NROCPBTE'
+      Size = 13
+    end
+    object QHojaRutaNOMBRE: TStringField
+      FieldName = 'NOMBRE'
+      Origin = 'NOMBRE'
+      Size = 45
+    end
+    object QHojaRutaID: TIntegerField
+      AutoGenerateValue = arDefault
+      FieldName = 'ID'
+      Origin = 'ID'
+      ProviderFlags = [pfInKey]
+      ReadOnly = True
+    end
+    object QHojaRutaFECHA: TSQLTimeStampField
+      AutoGenerateValue = arDefault
+      FieldName = 'FECHA'
+      Origin = 'FECHA'
+      ProviderFlags = []
+      ReadOnly = True
+    end
+    object QHojaRutaRESPONSABLE: TStringField
+      AutoGenerateValue = arDefault
+      FieldName = 'RESPONSABLE'
+      Origin = 'RESPONSABLE'
+      ProviderFlags = []
+      ReadOnly = True
+      Size = 6
+    end
+    object QHojaRutaNOMBRE_1: TStringField
+      AutoGenerateValue = arDefault
+      FieldName = 'NOMBRE_1'
+      Origin = 'NOMBRE'
+      ProviderFlags = []
+      ReadOnly = True
+      Size = 50
+    end
+  end
+end

@@ -1,0 +1,13 @@
+frDBcabecera=frDBcabecera_2
+frDBDetalles=frDBDetalles_2
+frDBImpuestos=frDBImpuestos
+frDBCajaMov=frDBCajaMov
+frDBEfectivo=frDBEfectivo
+frDBTC=frDBTC
+frDBLotes=frDBLotes
+frDBChe3=frDBChe3
+frDBTx=frDBTx
+frDBChComp=frDBChComp
+frDBEmpresa=frDBEmpresa
+frDBSucursal=frDBSucursal
+frDBPercepcionIVA=frDBPercepcionIVA

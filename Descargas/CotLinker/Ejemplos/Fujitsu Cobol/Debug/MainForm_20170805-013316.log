@@ -1,0 +1,884 @@
+
+COBOL97 V50L10 COBOL ERROR REPORT
+Copyright (C) FUJITSU LIMITED 1999, All rights reserved.
+
+
+<<Summary>>
+ The COBOL run-time message occurred:
+  Application       : C:\Users\amiranda\Documents\Embarcadero\Studio\Projects\COT\Ejemplo\Fujitsu Cobol\Debug\MainForm.exe(PID=00000550)
+  Exception Number  : JMP0930I-U [PID:00000550 TID:0000245C] ERROR OCCURRED IN THE 'SET-CSUJETO_GENERADOR' METHOD OF THE SPECIAL CLASS '*OLE'.  SCODE=0x80020006   PGM=PRINTFORM ADR=00401AB9
+  Generation Time   : 08/05/2017(01:33:16)
+  Generation Module : C:\Users\amiranda\Documents\Embarcadero\Studio\Projects\COT\Ejemplo\Fujitsu Cobol\Debug\MainForm.exe
+  Time Stamp        : 08/05/2017(01:33:10)
+  File Size         : 291144bytes
+
+<<Detail>>
+  Thread ID : 0000245C
+  Register : EAX=0019E258  EBX=006B9FA8  ECX=00000000  EDX=E9999999  ESI=02530000
+           : EDI=0253450C  EIP=7596B802  ESP=0019E258  EBP=0019E2B4  EFL=00200246
+           : CS=0023  SS=002B  DS=002B  ES=002B  FS=0053  GS=002B
+  Stack Commit : 0000B000
+  Instruction : Address  +0 +1 +2 +3 +4 +5 +6 +7 +8 +9 +a +b +c +d +e +f
+                7596B7F2 9C 01 00 83 C4 0C 8D 04 24 50 FF 15 90 53 A1 75
+        FAULT ->7596B802 8B 4C 24 54 33 CC E8 33 6A 01 00 8B E5 5D C2 10
+
+  Module File : C:\Users\amiranda\Documents\Embarcadero\Studio\Projects\COT\Ejemplo\Fujitsu Cobol\Debug\MainForm.exe
+  Section Relative Position : .text+00000AB9
+  Export Relative Position : PRINTFORM+00000A81
+  Symbol Relative Position : PRINTFORM+00000AB9
+
+ <Call Stack>
+[  1] --------------------------------------------------------------------------------
+  Module File : C:\Program Files (x86)\Fujitsu COBOL\COBOL\F3BKATCH.dll
+  Section Relative Position : .text+0000290C
+  Export Relative Position : NotifyExecErrorInfo+00000107
+[  2] --------------------------------------------------------------------------------
+  Module File : C:\Program Files (x86)\Fujitsu COBOL\COBOL\F3BIPRCT.dll
+  Section Relative Position : .text+00008F72
+  Export Relative Position : JMP1MESS+000007B2
+[  3] --------------------------------------------------------------------------------
+  Module File : C:\Program Files (x86)\Fujitsu COBOL\COBOL\F3BIOLER.dll
+  Section Relative Position : .text+000035DA
+  Export Relative Position : JMP9OLE0+000035DA
+[  4] --------------------------------------------------------------------------------
+  Module File : C:\Program Files (x86)\Fujitsu COBOL\COBOL\F3BIOLER.dll
+  Section Relative Position : .text+00001224
+  Export Relative Position : JMP9OLE0+00001224
+[  5] --------------------------------------------------------------------------------
+  Module File : C:\Program Files (x86)\Fujitsu COBOL\COBOL\F3BIOLER.dll
+  Section Relative Position : .text+000006EA
+  Export Relative Position : JMP9OLE0+000006EA
+[  6] --------------------------------------------------------------------------------
+  Module File : C:\Program Files (x86)\Fujitsu COBOL\COBOL\F3BIOLER.dll
+  Section Relative Position : .text+00000050
+  Export Relative Position : JMP9OLE0+00000050
+[  7] --------------------------------------------------------------------------------
+  Module File : C:\Program Files (x86)\Fujitsu COBOL\COBOL\F3BISCLS.dll
+  Section Relative Position : .text+00000042
+  Export Relative Position : JMP9SCLS+00000042
+[  8] --------------------------------------------------------------------------------
+  Module File : C:\Users\amiranda\Documents\Embarcadero\Studio\Projects\COT\Ejemplo\Fujitsu Cobol\Debug\MainForm.exe
+  Section Relative Position : .text+00000ABD
+  Export Relative Position : PRINTFORM+00000A85
+  Symbol Relative Position : PRINTFORM+00000ABD
+[  9] --------------------------------------------------------------------------------
+  Module File : C:\Program Files (x86)\Fujitsu COBOL\COBOL\f5ddfcb4.dll
+  Section Relative Position : .text+0001BA9E
+  Export Relative Position : ?InvokeScript@OFjCobCmpScr@@UAGJKPBUSCfInvokeParam@@@Z+0000004E
+[ 10] --------------------------------------------------------------------------------
+  Module File : C:\Program Files (x86)\Fujitsu COBOL\COBOL\f5ddcy41.dll
+  Section Relative Position : .text+0002C3B0
+  Export Relative Position : ?InvokeScript@CCfFormScriptingScope@@UAGJKPBUSCfInvokeParam@@@Z+00000015
+[ 11] --------------------------------------------------------------------------------
+  Module File : C:\Program Files (x86)\Fujitsu COBOL\COBOL\f5ddcy41.dll
+  Section Relative Position : .text+0005618E
+  Export Relative Position : ?vInvokeScript@CCfGroupItem@@UAGJPBUSCfInvokeParam@@@Z+0000007F
+[ 12] --------------------------------------------------------------------------------
+  Module File : C:\Program Files (x86)\Fujitsu COBOL\COBOL\f5ddcy41.dll
+  Section Relative Position : .text+00081291
+  Export Relative Position : ??0SSParam@CCfOleItem@@QAE@PAVOCfOle@@@Z+0000012F
+[ 13] --------------------------------------------------------------------------------
+  Module File : C:\Program Files (x86)\Fujitsu COBOL\COBOL\f5ddka41.dll
+  Section Relative Position : .text+000127F2
+  Export Relative Position : ?mFireEvent@CKaEventConnectionPoint@@QAGJJPAUtagDISPPARAMS@@@Z+0000004D
+[ 14] --------------------------------------------------------------------------------
+  Module File : C:\Program Files (x86)\Fujitsu COBOL\COBOL\f5ddcy41.dll
+  Section Relative Position : .text+0007858C
+  Export Relative Position : ?mFireEvent@OCfOle@@QAGJJPAUtagDISPPARAMS@@PAUtagVARIANT@@@Z+00000026
+[ 15] --------------------------------------------------------------------------------
+  Module File : C:\Program Files (x86)\Fujitsu COBOL\COBOL\f5ddgctl.ocx
+  Section Relative Position : .text+00010345
+  Export Relative Position : ?Release@OCmPush@@UAGKXZ+0000053E
+[ 16] --------------------------------------------------------------------------------
+  Module File : C:\Program Files (x86)\Fujitsu COBOL\COBOL\f5ddgctl.ocx
+  Section Relative Position : .text+000102A2
+  Export Relative Position : ?Release@OCmPush@@UAGKXZ+0000049B
+[ 17] --------------------------------------------------------------------------------
+  Module File : C:\WINDOWS\System32\USER32.dll
+  Section Relative Position : .text+00031B5B
+  Export Relative Position : AddClipboardFormatListener+0000126B
+[ 18] --------------------------------------------------------------------------------
+  Module File : C:\WINDOWS\System32\USER32.dll
+  Section Relative Position : .text+000240F3
+  Export Relative Position : DispatchMessageW+000008B3
+[ 19] --------------------------------------------------------------------------------
+  Module File : C:\WINDOWS\System32\USER32.dll
+  Section Relative Position : .text+00019EB7
+  Export Relative Position : CallWindowProcW+00000097
+[ 20] --------------------------------------------------------------------------------
+  Module File : C:\Program Files (x86)\Fujitsu COBOL\COBOL\f5ddapi.dll
+  Section Relative Position : .text+0001113A
+  Export Relative Position : _CallWindowProcW@20+00000021
+[ 21] --------------------------------------------------------------------------------
+  Module File : C:\Program Files (x86)\Fujitsu COBOL\COBOL\f5ddcy41.dll
+  Section Relative Position : .text+0009E495
+  Export Relative Position : ?sHookWindowProc@OCfWnd@@SGJPAUHWND__@@IIJ@Z+00000532
+[ 22] --------------------------------------------------------------------------------
+  Module File : C:\WINDOWS\System32\USER32.dll
+  Section Relative Position : .text+00031B5B
+  Export Relative Position : AddClipboardFormatListener+0000126B
+[ 23] --------------------------------------------------------------------------------
+  Module File : C:\WINDOWS\System32\USER32.dll
+  Section Relative Position : .text+000240F3
+  Export Relative Position : DispatchMessageW+000008B3
+[ 24] --------------------------------------------------------------------------------
+  Module File : C:\WINDOWS\System32\USER32.dll
+  Section Relative Position : .text+00023D4A
+  Export Relative Position : DispatchMessageW+0000050A
+[ 25] --------------------------------------------------------------------------------
+  Module File : C:\WINDOWS\System32\USER32.dll
+  Section Relative Position : .text+0002DC69
+  Export Relative Position : GetWindowThreadProcessId+00000109
+[ 26] --------------------------------------------------------------------------------
+  Module File : C:\WINDOWS\SYSTEM32\ntdll.dll
+  Section Relative Position : .text+0007311D
+  Export Relative Position : KiUserCallbackDispatcher+0000004D
+[ 27] --------------------------------------------------------------------------------
+  Module File : C:\WINDOWS\System32\USER32.dll
+  Section Relative Position : .text+0000F90F
+  Export Relative Position : SendMessageW+0000013F
+[ 28] --------------------------------------------------------------------------------
+  Module File : C:\WINDOWS\System32\USER32.dll
+  Section Relative Position : .text+0004DF92
+  Export Relative Position : LoadCursorFromFileW+00002D32
+[ 29] --------------------------------------------------------------------------------
+  Module File : C:\WINDOWS\System32\USER32.dll
+  Section Relative Position : .text+0004D8E3
+  Export Relative Position : LoadCursorFromFileW+00002683
+[ 30] --------------------------------------------------------------------------------
+  Module File : C:\WINDOWS\System32\USER32.dll
+  Section Relative Position : .text+0004CD66
+  Export Relative Position : LoadCursorFromFileW+00001B06
+[ 31] --------------------------------------------------------------------------------
+  Module File : C:\WINDOWS\System32\USER32.dll
+  Section Relative Position : .text+0004C272
+  Export Relative Position : LoadCursorFromFileW+00001012
+[ 32] --------------------------------------------------------------------------------
+  Module File : C:\WINDOWS\System32\USER32.dll
+  Section Relative Position : .text+00031B5B
+  Export Relative Position : AddClipboardFormatListener+0000126B
+[ 33] --------------------------------------------------------------------------------
+  Module File : C:\WINDOWS\System32\USER32.dll
+  Section Relative Position : .text+000240F3
+  Export Relative Position : DispatchMessageW+000008B3
+[ 34] --------------------------------------------------------------------------------
+  Module File : C:\WINDOWS\System32\USER32.dll
+  Section Relative Position : .text+00019EB7
+  Export Relative Position : CallWindowProcW+00000097
+[ 35] --------------------------------------------------------------------------------
+  Module File : C:\Program Files (x86)\Fujitsu COBOL\COBOL\f5ddapi.dll
+  Section Relative Position : .text+0001113A
+  Export Relative Position : _CallWindowProcW@20+00000021
+[ 36] --------------------------------------------------------------------------------
+  Module File : C:\Program Files (x86)\Fujitsu COBOL\COBOL\f5ddgctl.ocx
+  Section Relative Position : .text+0001045B
+  Export Relative Position : ?Release@OCmPush@@UAGKXZ+00000654
+[ 37] --------------------------------------------------------------------------------
+  Module File : C:\WINDOWS\System32\USER32.dll
+  Section Relative Position : .text+00031B5B
+  Export Relative Position : AddClipboardFormatListener+0000126B
+[ 38] --------------------------------------------------------------------------------
+  Module File : C:\WINDOWS\System32\USER32.dll
+  Section Relative Position : .text+000240F3
+  Export Relative Position : DispatchMessageW+000008B3
+[ 39] --------------------------------------------------------------------------------
+  Module File : C:\WINDOWS\System32\USER32.dll
+  Section Relative Position : .text+00019EB7
+  Export Relative Position : CallWindowProcW+00000097
+[ 40] --------------------------------------------------------------------------------
+  Module File : C:\Program Files (x86)\Fujitsu COBOL\COBOL\f5ddapi.dll
+  Section Relative Position : .text+0001113A
+  Export Relative Position : _CallWindowProcW@20+00000021
+[ 41] --------------------------------------------------------------------------------
+  Module File : C:\Program Files (x86)\Fujitsu COBOL\COBOL\f5ddcy41.dll
+  Section Relative Position : .text+0009E495
+  Export Relative Position : ?sHookWindowProc@OCfWnd@@SGJPAUHWND__@@IIJ@Z+00000532
+[ 42] --------------------------------------------------------------------------------
+  Module File : C:\WINDOWS\System32\USER32.dll
+  Section Relative Position : .text+00031B5B
+  Export Relative Position : AddClipboardFormatListener+0000126B
+[ 43] --------------------------------------------------------------------------------
+  Module File : C:\WINDOWS\System32\USER32.dll
+  Section Relative Position : .text+000240F3
+  Export Relative Position : DispatchMessageW+000008B3
+[ 44] --------------------------------------------------------------------------------
+  Module File : C:\WINDOWS\System32\USER32.dll
+  Section Relative Position : .text+00023A82
+  Export Relative Position : DispatchMessageW+00000242
+[ 45] --------------------------------------------------------------------------------
+  Module File : C:\WINDOWS\System32\USER32.dll
+  Section Relative Position : .text+00023850
+  Export Relative Position : DispatchMessageW+00000010
+[ 46] --------------------------------------------------------------------------------
+  Module File : C:\Program Files (x86)\Fujitsu COBOL\COBOL\f5ddapi.dll
+  Section Relative Position : .text+000116A9
+  Export Relative Position : _DispatchMessageW@4+00000013
+[ 47] --------------------------------------------------------------------------------
+  Module File : C:\Program Files (x86)\Fujitsu COBOL\COBOL\f5ddcy41.dll
+  Section Relative Position : .text+00095F39
+  Export Relative Position : ?sGetTemporaryCurrentThread@OCfThread@@SGPAV1@XZ+000003B4
+[ 48] --------------------------------------------------------------------------------
+  Module File : C:\Program Files (x86)\Fujitsu COBOL\COBOL\f5ddcy41.dll
+  Section Relative Position : .text+00095AF5
+  Export Relative Position : ?sCapsule@OCfThread@@SGJPBUSCParam@1@PAUSCWork@1@PBUSIParam@1@PAUSIWork@1@@Z+00000032
+[ 49] --------------------------------------------------------------------------------
+  Module File : C:\Program Files (x86)\Fujitsu COBOL\COBOL\f5ddcy41.dll
+  Section Relative Position : .text+00000FBA
+  Export Relative Position : ?mClose@OCfApp@@UAGHH@Z+00000454
+[ 50] --------------------------------------------------------------------------------
+  Module File : C:\Program Files (x86)\Fujitsu COBOL\COBOL\f5ddcy41.dll
+  Section Relative Position : .text+00001754
+  Export Relative Position : ?Load@OCfApp@@UAGJPAUICfModule@@PAUIStorage@@@Z+00000102
+[ 51] --------------------------------------------------------------------------------
+  Module File : C:\Program Files (x86)\Fujitsu COBOL\COBOL\f5ddcy41.dll
+  Section Relative Position : .text+00069AF3
+  Export Relative Position : ?sExeEntry@OCfModule@@SGKPAUHINSTANCE__@@PADHPAPAUICfModule@@PAX@Z+00000084
+[ 52] --------------------------------------------------------------------------------
+  Module File : C:\Users\amiranda\Documents\Embarcadero\Studio\Projects\COT\Ejemplo\Fujitsu Cobol\Debug\MainForm.exe
+  Section Relative Position : .text+00001E95
+  Export Relative Position : PRINTFORM+00001E5D
+  Symbol Relative Position : _WinMain@16+00000026
+[ 53] --------------------------------------------------------------------------------
+  Module File : C:\WINDOWS\SYSTEM32\KERNEL32.dll
+  Section Relative Position : .text+00008744
+  Export Relative Position : BaseThreadInitThunk+00000024
+[ 54] --------------------------------------------------------------------------------
+  Module File : C:\WINDOWS\SYSTEM32\ntdll.dll
+  Section Relative Position : .text+0006482D
+  Export Relative Position : RtlGetAppContainerNamedObjectPath+000000FD
+[ 55] --------------------------------------------------------------------------------
+  Module File : C:\WINDOWS\SYSTEM32\ntdll.dll
+  Section Relative Position : .text+000647FD
+  Export Relative Position : RtlGetAppContainerNamedObjectPath+000000CD
+
+<<System Information>>
+  Computer Name   : WK-ABEL
+  User Name       : amiranda
+  Windows Version : Windows 2000
+  Version Number  : 6.02.9200
+
+<<Environment Variable>>
+  =::=::\
+  ALLUSERSPROFILE=C:\ProgramData
+  APPDATA=C:\Users\amiranda\AppData\Roaming
+  CommonProgramFiles=C:\Program Files (x86)\Common Files
+  CommonProgramFiles(x86)=C:\Program Files (x86)\Common Files
+  CommonProgramW6432=C:\Program Files\Common Files
+  COMPUTERNAME=WK-ABEL
+  ComSpec=C:\WINDOWS\system32\cmd.exe
+  FP_NO_HOST_CHECK=NO
+  HOMEDRIVE=C:
+  HOMEPATH=\Users\amiranda
+  lib=C:\Program Files (x86)\Fujitsu COBOL\COBOL
+  LOCALAPPDATA=C:\Users\amiranda\AppData\Local
+  LOGONSERVER=\\WK-ABEL
+  NUMBER_OF_PROCESSORS=4
+  OneDrive=C:\Users\amiranda\OneDrive
+  OPENSSL_CONF=C:\OpenSSL-Win64\bin\openssl.cfg
+  OS=Windows_NT
+  Path=C:\Program Files (x86)\Skype\Phone\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Users\amiranda\Documents\Embarcadero\Studio\Projects\FECL\Win32\Debug;C:\Users\amiranda\Documents\Embarcadero\Studio\Projects\FECL\Win64\Debug;C:\Program Files\Microsoft\Web Platform Installer\;C:\Program Files (x86)\Microsoft ASP.NET\ASP.NET Web Pages\v1.0\;C:\Program Files (x86)\Windows Kits\8.0\Windows Performance Toolkit\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files (x86)\Fujitsu COBOL\COBOL;C:\Users\Public\Documents\Embarcadero\Studio\16.0\Bpl;C:\Program Files\ValidatorBuddy;C:\Users\amiranda\AppData\Local\Microsoft\WindowsApps;C:\Users\amiranda\AppData\Roaming\Composer\vendor\bin;C:\OpenSSL-Win64\bin;C:\Windows;C:\Windows\System32;C:\Program Files (x86)\EldoS\SecureBlackbox.VCL\Packages;C:\Program Files (x86)\Embarcadero\Studio\16.0\Redist\win32;C:\dcu32int;C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\Bin;
+  PATHEXT=.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC
+  PROCESSOR_ARCHITECTURE=x86
+  PROCESSOR_ARCHITEW6432=AMD64
+  PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 61 Stepping 4, GenuineIntel
+  PROCESSOR_LEVEL=6
+  PROCESSOR_REVISION=3d04
+  ProgramData=C:\ProgramData
+  ProgramFiles=C:\Program Files (x86)
+  ProgramFiles(x86)=C:\Program Files (x86)
+  ProgramW6432=C:\Program Files
+  PSModulePath=C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules\
+  PUBLIC=C:\Users\Public
+  SESSIONNAME=Console
+  SynaProgDir=Synaptics\SynTP
+  SystemDrive=C:
+  SystemRoot=C:\WINDOWS
+  TEMP=C:\Users\amiranda\AppData\Local\Temp
+  TMP=C:\Users\amiranda\AppData\Local\Temp
+  UOIPME_REG_PATH=C:\Program Files\Intel Corporation\USB over IP
+  USERDOMAIN=wk-abel
+  USERDOMAIN_ROAMINGPROFILE=wk-abel
+  USERNAME=amiranda
+  USERPROFILE=C:\Users\amiranda
+  VBOX_MSI_INSTALL_PATH=C:\Program Files\Oracle\VirtualBox\
+  VS100COMNTOOLS=C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\Tools\
+  VS110COMNTOOLS=C:\Program Files (x86)\Microsoft Visual Studio 11.0\Common7\Tools\
+  VS80COMNTOOLS=C:\Program Files (x86)\Microsoft Visual Studio 8\Common7\Tools\
+  VS90COMNTOOLS=c:\Program Files (x86)\Microsoft Visual Studio 9.0\Common7\Tools\
+  windir=C:\WINDOWS
+
+<<Execution Environment Information>>
+  .CBR File    : NONE
+  Program Name : NONE
+  Thread Mode  : SINGLE
+
+<<STACK/HEAP Information>>
+  Stack : 00100000
+  Heap  : 00100000
+
+<<Task List>>
+       0 Idle.exe
+       4 System.exe
+     1A8 smss.exe
+     294 csrss.exe
+     314 csrss.exe
+     32C wininit.exe
+     37C winlogon.exe
+     3B0 services.exe
+     3C4 lsass.exe
+     174 svchost.exe
+     248 svchost.exe
+     26C fontdrvhost.exe
+     2B0 fontdrvhost.exe
+     408 svchost.exe
+     448 svchost.exe
+     488 dwm.exe
+     504 svchost.exe
+     538 svchost.exe
+     578 svchost.exe
+     5AC svchost.exe
+     5C4 svchost.exe
+     5DC svchost.exe
+     644 svchost.exe
+     6B8 svchost.exe
+     6EC svchost.exe
+     700 svchost.exe
+     730 WUDFHost.exe
+     748 atiesrxx.exe
+     750 svchost.exe
+     79C svchost.exe
+     7CC atieclxx.exe
+     7EC svchost.exe
+     7FC svchost.exe
+     804 svchost.exe
+     84C svchost.exe
+     864 svchost.exe
+     86C svchost.exe
+     874 FAService.exe
+     908 svchost.exe
+     94C svchost.exe
+     9BC svchost.exe
+     A00 svchost.exe
+     A24 svchost.exe
+     A70 svchost.exe
+     A88 svchost.exe
+     AC8 svchost.exe
+     978 RtkAudioService64.exe
+     A84 svchost.exe
+     BB4 svchost.exe
+     BB0 QHActiveDefense.exe
+     898 RAVBg64.exe
+     9B4 RAVBg64.exe
+     C18 svchost.exe
+     C94 svchost.exe
+     CEC spoolsv.exe
+     D8C cbVSCService11.exe
+     D98 svchost.exe
+     DA0 svchost.exe
+     DA8 COBATSVC.exe
+     DC0 ibtsiva.exe
+     DD8 svchost.exe
+     DE0 svchost.exe
+     DE8 svchost.exe
+     DF0 svchost.exe
+     E18 svchost.exe
+     E20 svchost.exe
+     E5C svchost.exe
+     E64 svchost.exe
+     E7C svchost.exe
+     E94 SecurityHealthService.exe
+     F64 svchost.exe
+     F9C svchost.exe
+     F98 Memory Compression.exe
+    1028 dasHost.exe
+    10E0 svchost.exe
+    10E8 SynTPEnhService.exe
+    10F0 TrueColorALS.exe
+    10F8 UoipService.exe
+    11D4 igfxext.exe
+    1230 cbService.exe
+    1240 NkPtpEnum.exe
+    1260 sqlwriter.exe
+    1278 svchost.exe
+    1284 CodeMeter.exe
+    1364 svchost.exe
+    1420 svchost.exe
+    15A8 svchost.exe
+    1700 QHWatchdog.exe
+    1878 svchost.exe
+    19F4 FACSMon.exe
+    19FC conhost.exe
+    1B94 FAsenmon.exe
+    1BE8 svchost.exe
+    1B84 SynTPEnh.exe
+     320 sihost.exe
+     7AC svchost.exe
+     858 svchost.exe
+    1768 svchost.exe
+    1B44 svchost.exe
+    1C60 SynTPHelper.exe
+    1C7C taskhostw.exe
+    1D04 explorer.exe
+    1A6C RuntimeBroker.exe
+     E00 svchost.exe
+    2240 SearchIndexer.exe
+     4CC MSASCuiL.exe
+    1804 thunderbird.exe
+     E44 svchost.exe
+     E88 dllhost.exe
+     FFC quickset.exe
+    1CE8 WmiPrvSE.exe
+     ED0 TrueColorUI.exe
+     418 Zoiper.exe
+    21D8 googledrivesync.exe
+    258C FATrayMon.exe
+    25A0 QHSafeTray.exe
+    2630 FATrayAlert.exe
+    266C cbInterface.exe
+    2780 ISHelper.exe
+    27F8 FAAppMonOT.exe
+    2748 googledrivesync.exe
+    26DC IAStorIcon.exe
+     EAC svchost.exe
+    21E4 DellDataVaultWiz.exe
+    2170 DeliveryService.exe
+    2600 DellUpService.exe
+    2568 DellUpTray.exe
+    1068 chrome.exe
+    2770 chrome.exe
+    2464 chrome.exe
+    2578 chrome.exe
+    241C chrome.exe
+    128C chrome.exe
+    1EA4 chrome.exe
+    1DB4 chrome.exe
+    29A8 Skype.exe
+    23E8 Skype.exe
+     9DC SkypeHost.exe
+    2C48 IAStorDataMgrSvc.exe
+    2C90 IntelMeFWService.exe
+    2CAC jhi_service.exe
+    2E40 LMS.exe
+     890 svchost.exe
+    1A40 wmpnetwk.exe
+    28F8 svchost.exe
+    2504 svchost.exe
+    23D8 svchost.exe
+    2FF8 svchost.exe
+    31C0 svchost.exe
+    2090 svchost.exe
+    19D8 svchost.exe
+     E54 svchost.exe
+    2220 ApplicationFrameHost.exe
+     790 bds.exe
+    2990 IFUService.exe
+     8C4 svchost.exe
+    2D88 svchost.exe
+    3958 svchost.exe
+    45A0 taskhostw.exe
+    1644 DriverConsoleApp.exe
+    5750 igfxext.exe
+    3364 OSPPSVC.exe
+    44F0 svchost.exe
+    3F9C MOM.exe
+    141C CCC.exe
+    33C4 Microsoft.StickyNotes.exe
+    29F8 chrome.exe
+    1734 chrome.exe
+    2310 chrome.exe
+    4C98 chrome.exe
+     524 SystemSettings.exe
+    3154 svchost.exe
+    3838 AAM Updates Notifier.exe
+    2F14 TeamViewer_Service.exe
+    5D10 svchost.exe
+    551C ShellExperienceHost.exe
+    59D8 svchost.exe
+    58A8 xampp-control.exe
+    468C SkypeBrowserHost.exe
+     61C rdrleakdiag.exe
+    5A68 xampp-control.exe
+    351C httpd.exe
+    35AC conhost.exe
+     A50 httpd.exe
+    3094 VSSVC.exe
+    31A0 svchost.exe
+    4EA4 1000.exe
+     9D8 conhost.exe
+    4B6C VirtualBox.exe
+    3E68 VBoxSVC.exe
+    1D60 Microsoft.Photos.exe
+    4A60 SkypeBrowserHost.exe
+    2BB0 SkypeBrowserHost.exe
+     478 SkypeBrowserHost.exe
+    2964 svchost.exe
+    43C8 svchost.exe
+     D3C chrome.exe
+    5E84 chrome.exe
+    33A4 VB6.exe
+    2588 chrome.exe
+    1FD0 PowerCOB.exe
+    5FB0 Calculator.exe
+    302C SearchUI.exe
+    375C audiodg.exe
+    4C18 svchost.exe
+    4C74 SearchProtocolHost.exe
+     38C SearchFilterHost.exe
+     550 MainForm.exe
+    5DE0 Cobsnap.exe
+       0 _Total.exe
+
+<<Module List>>
+  00400000 - 00444000  C:\Users\amiranda\Documents\Embarcadero\Studio\Projects\COT\Ejemplo\Fujitsu Cobol\Debug\MainForm.exe
+                         08/05/2017(01:33:10)
+  772D0000 - 7745E000  C:\WINDOWS\SYSTEM32\ntdll.dll
+                         Microsoft Corporation, Sistema operativo Microsoft® Windows®, 10.0.15063.0
+                         06/20/2017(02:15:11)
+  74430000 - 74500000  C:\WINDOWS\SYSTEM32\KERNEL32.dll
+                         Microsoft Corporation, Sistema operativo Microsoft® Windows®, 10.0.15063.0
+                         05/23/2017(09:25:03)
+  75880000 - 75A42000  C:\WINDOWS\System32\KERNELBASE.dll
+                         Microsoft Corporation, Sistema operativo Microsoft® Windows®, 10.0.15063.0
+                         07/07/2017(03:39:01)
+  10000000 - 10054000  C:\Program Files (x86)\Fujitsu COBOL\COBOL\f5ddfcb4.dll
+                         FUJITSU LIMITED, PowerCOBOL97, V5.0L10
+                         02/09/2000(14:03:48)
+  1C000000 - 1C03A000  C:\Program Files (x86)\Fujitsu COBOL\COBOL\F3BIPRCT.dll
+                         FUJITSU LIMITED, COBOL97 RUNTIME SYSTEM, 50.10.1.0
+                         11/08/1999(19:43:36)
+  77070000 - 771AC000  C:\WINDOWS\System32\USER32.dll
+                         Microsoft Corporation, Sistema operativo Microsoft® Windows®, 10.0.15063.0
+                         03/18/2017(17:59:00)
+  73F70000 - 73F91000  C:\WINDOWS\System32\GDI32.dll
+                         Microsoft Corporation, Microsoft® Windows® Operating System, 10.0.15063.483
+                         07/07/2017(03:31:24)
+  743C0000 - 743D6000  C:\WINDOWS\System32\win32u.dll
+                         Microsoft Corporation, Microsoft® Windows® Operating System, 10.0.15063.0
+                         03/18/2017(17:58:59)
+  74BA0000 - 74CF8000  C:\WINDOWS\System32\gdi32full.dll
+                         Microsoft Corporation, Microsoft® Windows® Operating System, 10.0.15063.413
+                         06/03/2017(06:59:17)
+  747A0000 - 74819000  C:\WINDOWS\System32\msvcp_win.dll
+                         Microsoft Corporation, Microsoft® Windows® Operating System, 10.0.15063.0
+                         03/18/2017(17:58:44)
+  757A0000 - 75817000  C:\WINDOWS\System32\ADVAPI32.dll
+                         Microsoft Corporation, Sistema operativo Microsoft® Windows®, 10.0.15063.0
+                         03/18/2017(17:58:39)
+  771B0000 - 772C8000  C:\WINDOWS\System32\ucrtbase.dll
+                         Microsoft Corporation, Microsoft® Windows® Operating System, 10.0.15063.447
+                         06/20/2017(02:14:59)
+  745F0000 - 746AD000  C:\WINDOWS\System32\msvcrt.dll
+                         Microsoft Corporation, Microsoft® Windows® Operating System, 7.0.15063.0
+                         03/18/2017(17:58:44)
+  74980000 - 749C1000  C:\WINDOWS\System32\sechost.dll
+                         Microsoft Corporation, Microsoft® Windows® Operating System, 10.0.15063.0
+                         03/18/2017(17:58:44)
+  74500000 - 745EF000  C:\WINDOWS\System32\comdlg32.dll
+                         Microsoft Corporation, Sistema operativo Microsoft® Windows®, 10.0.15063.0
+                         07/07/2017(03:02:02)
+  73E30000 - 73EF0000  C:\WINDOWS\System32\RPCRT4.dll
+                         Microsoft Corporation, Sistema operativo Microsoft® Windows®, 10.0.15063.0
+                         06/20/2017(02:13:24)
+  75AE0000 - 75D18000  C:\WINDOWS\System32\combase.dll
+                         Microsoft Corporation, Sistema operativo Microsoft® Windows®, 10.0.15063.296
+                         06/20/2017(02:04:39)
+  73DA0000 - 73DC0000  C:\WINDOWS\System32\SspiCli.dll
+                         Microsoft Corporation, Microsoft® Windows® Operating System, 10.0.15063.0
+                         03/18/2017(17:58:44)
+  73D90000 - 73D9A000  C:\WINDOWS\System32\CRYPTBASE.dll
+                         Microsoft Corporation, Microsoft® Windows® Operating System, 10.0.15063.0
+                         03/18/2017(17:58:44)
+  74B40000 - 74B97000  C:\WINDOWS\System32\bcryptPrimitives.dll
+                         Microsoft Corporation, Microsoft® Windows® Operating System, 10.0.15063.138
+                         05/23/2017(09:25:00)
+  74710000 - 7479C000  C:\WINDOWS\System32\shcore.dll
+                         Microsoft Corporation, Sistema operativo Microsoft® Windows®, 10.0.15063.0
+                         03/18/2017(17:58:54)
+  74DA0000 - 74E93000  C:\WINDOWS\System32\ole32.dll
+                         Microsoft Corporation, Sistema operativo Microsoft® Windows®, 10.0.15063.296
+                         07/07/2017(03:26:36)
+  743E0000 - 74425000  C:\WINDOWS\System32\SHLWAPI.dll
+                         Microsoft Corporation, Sistema operativo Microsoft® Windows®, 10.0.15063.0
+                         03/18/2017(17:58:56)
+  74D00000 - 74D96000  C:\WINDOWS\System32\OLEAUT32.dll
+                         Microsoft Corporation, Microsoft® Windows® Operating System, 10.0.15063.332
+                         05/20/2017(05:55:12)
+  75D20000 - 77068000  C:\WINDOWS\System32\SHELL32.dll
+                         Microsoft Corporation, Sistema operativo Microsoft® Windows®, 10.0.15063.0
+                         07/07/2017(03:26:56)
+  75840000 - 75879000  C:\WINDOWS\System32\cfgmgr32.dll
+                         Microsoft Corporation, Microsoft® Windows® Operating System, 10.0.15063.0
+                         03/18/2017(17:58:49)
+  75090000 - 75614000  C:\WINDOWS\System32\windows.storage.dll
+                         Microsoft Corporation, Sistema operativo Microsoft® Windows®, 10.0.15063.0
+                         07/07/2017(03:31:01)
+  2C000000 - 2C023000  C:\Program Files (x86)\Fujitsu COBOL\COBOL\F3BIIO.dll
+                         FUJITSU LIMITED, COBOL97 RUNTIME SYSTEM, 50.10.0.0
+                         04/20/1999(16:07:40)
+  73F60000 - 73F6E000  C:\WINDOWS\System32\kernel.appcore.dll
+                         Microsoft Corporation, Microsoft® Windows® Operating System, 10.0.15063.0
+                         03/18/2017(17:58:46)
+  74EA0000 - 74EE5000  C:\WINDOWS\System32\powrprof.dll
+                         Microsoft Corporation, Sistema operativo Microsoft® Windows®, 10.0.15063.0
+                         03/18/2017(17:58:48)
+  749E0000 - 749F0000  C:\WINDOWS\System32\profapi.dll
+                         Microsoft Corporation, Microsoft® Windows® Operating System, 10.0.15063.0
+                         03/18/2017(17:58:44)
+  73C80000 - 73D0E000  C:\WINDOWS\WinSxS\x86_microsoft.windows.common-controls_6595b64144ccf1df_5.82.15063.413_none_55bc94a37c2a2854\COMCTL32.dll
+                         Microsoft Corporation, Sistema operativo Microsoft® Windows®, 10.0.15063.0
+                         06/03/2017(06:23:23)
+  73B90000 - 73B98000  C:\WINDOWS\SYSTEM32\VERSION.dll
+                         Microsoft Corporation, Microsoft® Windows® Operating System, 10.0.15063.0
+                         03/18/2017(17:58:58)
+  3C000000 - 3C03B000  C:\Program Files (x86)\Fujitsu COBOL\COBOL\F3BIFRM.dll
+                         FUJITSU LIMITED, COBOL97 RUNTIME SYSTEM, 50.10.2.0
+                         02/07/2000(19:19:58)
+  71750000 - 71766000  C:\WINDOWS\SYSTEM32\MPR.dll
+                         Microsoft Corporation, Sistema operativo Microsoft® Windows®, 10.0.15063.0
+                         03/18/2017(17:58:49)
+  00A40000 - 00B93000  C:\Program Files (x86)\Fujitsu COBOL\COBOL\f5ddcy41.dll
+                         FUJITSU LIMITED, PowerCOBOL97, V5.0L10
+                         02/09/2000(14:02:46)
+  74EF0000 - 74F15000  C:\WINDOWS\System32\IMM32.dll
+                         Microsoft Corporation, Microsoft® Windows® Operating System, 10.0.15063.0
+                         03/18/2017(17:59:00)
+  005D0000 - 0060C000  C:\Program Files (x86)\Fujitsu COBOL\COBOL\f5ddapi.dll
+                         11/08/1999(11:10:48)
+  00030000 - 00038000  C:\Program Files (x86)\Fujitsu COBOL\COBOL\F3BISCLS.dll
+                         FUJITSU LIMITED, COBOL97 RUNTIME SYSTEM, 50.10.0.0
+                         04/20/1999(17:35:30)
+  00BA0000 - 00C0F000  C:\Program Files (x86)\Fujitsu COBOL\COBOL\f5ddka41.dll
+                         FUJITSU LIMITED, PowerCOBOL97, V5.0L10
+                         11/08/1999(11:12:38)
+  004D0000 - 004E5000  C:\Program Files (x86)\Fujitsu COBOL\COBOL\F3BIDBG.dll
+                         FUJITSU LIMITED, COBOL97 RUNTIME SYSTEM, 50.10.0.0
+                         04/06/1999(11:59:50)
+  00610000 - 0061F000  C:\Program Files (x86)\Fujitsu COBOL\COBOL\F3BIOLER.dll
+                         FUJITSU LIMITED, COBOL97 RUNTIME SYSTEM, 50.10.0.0
+                         04/20/1999(16:15:42)
+  00620000 - 0062E000  C:\Program Files (x86)\Fujitsu COBOL\COBOL\F3BIPRIO.dll
+                         FUJITSU LIMITED, COBOL97 RUNTIME SYSTEM, 50.10.0.0
+                         04/20/1999(19:30:18)
+  00C10000 - 00C37000  C:\Program Files (x86)\Fujitsu COBOL\COBOL\F3BISCRN.dll
+                         FUJITSU LIMITED, COBOL97 RUNTIME SYSTEM, 50.10.1.0
+                         09/02/1999(09:04:26)
+  00630000 - 00635000  C:\Program Files (x86)\Fujitsu COBOL\COBOL\F3BIAESV.dll
+                         FUJITSU LIMITED, COBOL97 RUNTIME SYSTEM, 50.10.0.0
+                         04/20/1999(16:19:48)
+  00C40000 - 00C4D000  C:\Program Files (x86)\Fujitsu COBOL\COBOL\F3BILANP.dll
+                         FUJITSU LIMITED, COBOL97 RUNTIME SYSTEM, 50.10.1.0
+                         08/31/1999(16:33:24)
+  00C50000 - 00C5A000  C:\Program Files (x86)\Fujitsu COBOL\COBOL\F3BIOLES.dll
+                         FUJITSU LIMITED, COBOL97 RUNTIME SYSTEM, 50.10.0.0
+                         04/20/1999(16:15:10)
+  00C60000 - 00C83000  C:\Program Files (x86)\Fujitsu COBOL\COBOL\F3BILPIO.dll
+                         FUJITSU LIMITED, COBOL97 RUNTIME SYSTEM, 50.10.1.0
+                         08/25/1999(12:04:56)
+  00C90000 - 00C9F000  C:\Program Files (x86)\Fujitsu COBOL\COBOL\F3BKATCH.dll
+                         FUJITSU LIMITED, COBOL97 RUNTIME SYSTEM, 50.10.0.0
+                         09/17/1999(13:17:24)
+  00CA0000 - 00CAD000  C:\Program Files (x86)\Fujitsu COBOL\COBOL\F3BICICL.dll
+                         FUJITSU LIMITED, COBOL97 RUNTIME SYSTEM, 50.10.2.0
+                         02/24/2000(15:48:56)
+  00CB0000 - 00CB8000  C:\Program Files (x86)\Fujitsu COBOL\COBOL\F3BIEFNC.dll
+                         FUJITSU LIMITED, COBOL97 RUNTIME SYSTEM, 50.10.0.0
+                         04/20/1999(18:40:34)
+  72460000 - 724CE000  C:\WINDOWS\SYSTEM32\WINSPOOL.DRV
+                         Microsoft Corporation, Sistema operativo Microsoft® Windows®, 10.0.15063.0
+                         05/23/2017(09:25:18)
+  00CC0000 - 00CC7000  C:\Program Files (x86)\Fujitsu COBOL\COBOL\F3BISQL.dll
+                         FUJITSU LIMITED, COBOL97 RUNTIME SYSTEM, 50.10.0.0
+                         04/23/1999(20:50:18)
+  73D20000 - 73D42000  C:\WINDOWS\SYSTEM32\MSVFW32.dll
+                         Microsoft Corporation, Sistema operativo Microsoft® Windows®, 10.0.15063.0
+                         03/18/2017(17:58:45)
+  60D60000 - 60D85000  C:\WINDOWS\SYSTEM32\oledlg.dll
+                         Microsoft Corporation, Sistema operativo Microsoft® Windows®, 10.0.15063.0
+                         03/18/2017(17:58:41)
+  73BA0000 - 73BC4000  C:\WINDOWS\SYSTEM32\WINMM.dll
+                         Microsoft Corporation, Sistema operativo Microsoft® Windows®, 10.0.15063.0
+                         03/18/2017(17:58:45)
+  73D10000 - 73D18000  C:\WINDOWS\SYSTEM32\WSOCK32.dll
+                         Microsoft Corporation, Sistema operativo Microsoft® Windows®, 10.0.15063.0
+                         03/18/2017(17:58:48)
+  73EF0000 - 73F57000  C:\WINDOWS\System32\WS2_32.dll
+                         Microsoft Corporation, Sistema operativo Microsoft® Windows®, 10.0.15063.0
+                         03/18/2017(17:58:44)
+  727A0000 - 727B8000  C:\WINDOWS\SYSTEM32\bcrypt.dll
+                         Microsoft Corporation, Sistema operativo Microsoft® Windows®, 10.0.15063.0
+                         03/18/2017(17:58:47)
+  73150000 - 73173000  C:\WINDOWS\SYSTEM32\WINMMBASE.dll
+                         Microsoft Corporation, Microsoft® Windows® Operating System, 10.0.15063.0
+                         03/18/2017(17:58:45)
+  00CD0000 - 00CDC000  C:\Program Files (x86)\Fujitsu COBOL\COBOL\F3BILCL.dll
+                         FUJITSU LIMITED, COBOL97 RUNTIME SYSTEM, 50.10.0.0
+                         04/20/1999(19:30:12)
+  00CE0000 - 00CE6000  C:\Program Files (x86)\Fujitsu COBOL\COBOL\F3BIOVLD.dll
+                         FUJITSU LIMITED, COBOL97 RUNTIME SYSTEM, 50.10.0.0
+                         04/12/1999(23:38:54)
+  00CF0000 - 00CF7000  C:\Program Files (x86)\Fujitsu COBOL\COBOL\F3BIETBP.dll
+                         FUJITSU LIMITED, COBOL97 RUNTIME SYSTEM, 50.10.1.0
+                         10/18/1999(19:44:48)
+  02500000 - 02505000  C:\Program Files (x86)\Fujitsu COBOL\COBOL\F3BIPRSE.DLL
+                         FUJITSU LIMITED, COBOL97 RUNTIME SYSTEM, 50.10.2.0
+                         02/07/2000(20:38:26)
+  02510000 - 02514000  C:\Program Files (x86)\Fujitsu COBOL\COBOL\F3BIODSE.DLL
+                         FUJITSU LIMITED, COBOL97 RUNTIME SYSTEM, 50.10.0.0
+                         07/29/1999(09:44:28)
+  02530000 - 02538000  C:\Program Files (x86)\Fujitsu COBOL\COBOL\F3BIMSGE.DLL
+                         FUJITSU LIMITED, COBOL97 RUNTIME SYSTEM, 50.10.1.0
+                         09/24/1999(16:40:28)
+  6FCB0000 - 6FD28000  C:\WINDOWS\system32\uxtheme.dll
+                         Microsoft Corporation, Sistema operativo Microsoft® Windows®, 10.0.15063.0
+                         03/18/2017(17:58:57)
+  61740000 - 618BC000  C:\Program Files (x86)\360\Total Security\safemon\safemon.dll
+                         Qihu 360 Software Co., Ltd., 360 Internet Security, 8, 4, 0, 1420
+                         07/10/2017(05:44:32)
+  73E20000 - 73E26000  C:\WINDOWS\System32\PSAPI.DLL
+                         Microsoft Corporation, Microsoft® Windows® Operating System, 10.0.15063.0
+                         03/18/2017(17:58:39)
+  731C0000 - 731D3000  C:\WINDOWS\SYSTEM32\NETAPI32.dll
+                         Microsoft Corporation, Microsoft® Windows® Operating System, 10.0.15063.0
+                         03/18/2017(17:58:48)
+  72930000 - 7293B000  C:\WINDOWS\SYSTEM32\NETUTILS.DLL
+                         Microsoft Corporation, Microsoft® Windows® Operating System, 10.0.15063.0
+                         03/18/2017(17:58:49)
+  72310000 - 72320000  C:\WINDOWS\SYSTEM32\WKSCLI.DLL
+                         Microsoft Corporation, Microsoft® Windows® Operating System, 10.0.15063.0
+                         03/18/2017(17:58:47)
+  73DC0000 - 73E1E000  C:\WINDOWS\System32\coml2.dll
+                         Microsoft Corporation, Microsoft® Windows® Operating System, 10.0.15063.0
+                         03/18/2017(17:58:54)
+  75A50000 - 75AD3000  C:\WINDOWS\System32\clbcatq.dll
+                         Microsoft Corporation, Microsoft® Windows® Operating System, 10.0.15063.0
+                         03/18/2017(17:58:41)
+  04BD0000 - 04C2A000  C:\Program Files (x86)\Fujitsu COBOL\COBOL\f5ddgctl.ocx
+                         FUJITSU LIMITED, PowerCOBOL97, V5.0L10
+                         02/09/2000(14:04:36)
+  60C50000 - 60C69000  C:\WINDOWS\SYSTEM32\OLEPRO32.DLL
+                         Microsoft Corporation, Microsoft® Windows® Operating System, 10.0.15063.447
+                         06/20/2017(01:30:22)
+  749F0000 - 74B36000  C:\WINDOWS\System32\MSCTF.dll
+                         Microsoft Corporation, Sistema operativo Microsoft® Windows®, 10.0.15063.0
+                         05/20/2017(06:13:30)
+  6F190000 - 6F1B3000  C:\WINDOWS\system32\dwmapi.dll
+                         Microsoft Corporation, Sistema operativo Microsoft® Windows®, 10.0.15063.0
+                         07/07/2017(03:57:23)
+  60AE0000 - 60B47000  C:\WINDOWS\SYSTEM32\TextInputFramework.dll
+                         Microsoft Corporation, Microsoft® Windows® Operating System, 10.0.15063.0
+                         03/18/2017(17:58:44)
+  60A50000 - 60ADF000  C:\WINDOWS\SYSTEM32\CoreMessaging.dll
+                         Microsoft Corporation, Microsoft® Windows® Operating System, 10.0.15063.0
+                         07/07/2017(03:23:46)
+  60820000 - 60A47000  C:\WINDOWS\SYSTEM32\CoreUIComponents.dll
+                         Microsoft Corporation, Microsoft® Windows® Operating System, 10.0.15063.483
+                         07/07/2017(03:37:56)
+  726F0000 - 72718000  C:\WINDOWS\SYSTEM32\ntmarta.dll
+                         Microsoft Corporation, Sistema operativo Microsoft® Windows®, 10.0.15063.0
+                         03/18/2017(17:58:50)
+  6E520000 - 6E5F1000  C:\WINDOWS\SYSTEM32\wintypes.dll
+                         Microsoft Corporation, Sistema operativo Microsoft® Windows®, 10.0.15063.0
+                         03/18/2017(17:58:48)
+  60810000 - 60820000  C:\WINDOWS\SYSTEM32\usermgrcli.dll
+                         Microsoft Corporation, Microsoft® Windows® Operating System, 10.0.15063.0
+                         03/18/2017(17:58:48)
+  60BA0000 - 60C26000  C:\WINDOWS\SYSTEM32\sxs.dll
+                         Microsoft Corporation, Sistema operativo Microsoft® Windows®, 10.0.15063.0
+                         03/18/2017(17:58:40)
+  06D60000 - 07322000  C:\Users\amiranda\Documents\Embarcadero\Studio\Projects\COT\CotLinker.dll
+                         08/04/2017(16:42:46)
+  75620000 - 7579D000  C:\WINDOWS\System32\crypt32.dll
+                         Microsoft Corporation, Sistema operativo Microsoft® Windows®, 10.0.15063.0
+                         05/23/2017(09:25:00)
+  74700000 - 7470E000  C:\WINDOWS\System32\MSASN1.dll
+                         Microsoft Corporation, Microsoft® Windows® Operating System, 10.0.15063.447
+                         06/20/2017(02:04:50)
+  715C0000 - 7166D000  C:\WINDOWS\SYSTEM32\winhttp.dll
+                         Microsoft Corporation, Sistema operativo Microsoft® Windows®, 10.0.15063.0
+                         03/18/2017(17:58:49)
+  46480000 - 46483000  C:\WINDOWS\SYSTEM32\security.dll
+                         Microsoft Corporation, Microsoft® Windows® Operating System, 10.0.15063.0
+                         03/18/2017(17:58:49)
+  722C0000 - 722CA000  C:\WINDOWS\SYSTEM32\SECUR32.DLL
+                         Microsoft Corporation, Microsoft® Windows® Operating System, 10.0.15063.0
+                         03/18/2017(17:58:50)
+  72DB0000 - 72DDF000  C:\WINDOWS\SYSTEM32\iphlpapi.dll
+                         Microsoft Corporation, Sistema operativo Microsoft® Windows®, 10.0.15063.0
+                         03/18/2017(17:58:44)
+  71780000 - 717CE000  C:\WINDOWS\system32\mswsock.dll
+                         Microsoft Corporation, Sistema operativo Microsoft® Windows®, 10.0.15063.0
+                         03/18/2017(17:58:44)
+  0FA50000 - 0FC37000  C:\Windows\System32\msxml6.dll
+                         Microsoft Corporation, Microsoft XML Core Services, 6.30.15063.0
+                         03/18/2017(17:58:46)
+
+<<Thread Information>>
+  Thread ID : 00004AB8
+  Register : EAX=00000000  EBX=00644F50  ECX=00000000  EDX=00000000  ESI=006455C0
+           : EDI=00645780  EIP=7734396C  ESP=0083FD7C  EBP=0083FF80  EFL=00000202
+           : CS=0023  SS=002B  DS=002B  ES=002B  FS=0053  GS=002B
+  Stack Commit : 00002000
+  Module File : C:\WINDOWS\SYSTEM32\ntdll.dll
+  Section Relative Position : .text+0007296C
+  Export Relative Position : ZwWaitForWorkViaWorkerFactory+0000000C
+
+ <Call Stack>
+[  1] --------------------------------------------------------------------------------
+  Module File : C:\WINDOWS\SYSTEM32\KERNEL32.dll
+  Section Relative Position : .text+00008744
+  Export Relative Position : BaseThreadInitThunk+00000024
+[  2] --------------------------------------------------------------------------------
+  Module File : C:\WINDOWS\SYSTEM32\ntdll.dll
+  Section Relative Position : .text+0006482D
+  Export Relative Position : RtlGetAppContainerNamedObjectPath+000000FD
+[  3] --------------------------------------------------------------------------------
+  Module File : C:\WINDOWS\SYSTEM32\ntdll.dll
+  Section Relative Position : .text+000647FD
+  Export Relative Position : RtlGetAppContainerNamedObjectPath+000000CD
+
+  Thread ID : 00004B38
+  Register : EAX=00000000  EBX=00644F50  ECX=00000000  EDX=00000000  ESI=00646C60
+           : EDI=00646E20  EIP=7734396C  ESP=0093FD7C  EBP=0093FF80  EFL=00000202
+           : CS=0023  SS=002B  DS=002B  ES=002B  FS=0053  GS=002B
+  Stack Commit : 00002000
+  Module File : C:\WINDOWS\SYSTEM32\ntdll.dll
+  Section Relative Position : .text+0007296C
+  Export Relative Position : ZwWaitForWorkViaWorkerFactory+0000000C
+
+ <Call Stack>
+[  1] --------------------------------------------------------------------------------
+  Module File : C:\WINDOWS\SYSTEM32\KERNEL32.dll
+  Section Relative Position : .text+00008744
+  Export Relative Position : BaseThreadInitThunk+00000024
+[  2] --------------------------------------------------------------------------------
+  Module File : C:\WINDOWS\SYSTEM32\ntdll.dll
+  Section Relative Position : .text+0006482D
+  Export Relative Position : RtlGetAppContainerNamedObjectPath+000000FD
+[  3] --------------------------------------------------------------------------------
+  Module File : C:\WINDOWS\SYSTEM32\ntdll.dll
+  Section Relative Position : .text+000647FD
+  Export Relative Position : RtlGetAppContainerNamedObjectPath+000000CD
+
+  Thread ID : 00004854
+  Register : EAX=00000000  EBX=00644F50  ECX=00000000  EDX=00000000  ESI=00645800
+           : EDI=006459C0  EIP=7734396C  ESP=00A3FD7C  EBP=00A3FF80  EFL=00000202
+           : CS=0023  SS=002B  DS=002B  ES=002B  FS=0053  GS=002B
+  Stack Commit : 00002000
+  Module File : C:\WINDOWS\SYSTEM32\ntdll.dll
+  Section Relative Position : .text+0007296C
+  Export Relative Position : ZwWaitForWorkViaWorkerFactory+0000000C
+
+ <Call Stack>
+[  1] --------------------------------------------------------------------------------
+  Module File : C:\WINDOWS\SYSTEM32\KERNEL32.dll
+  Section Relative Position : .text+00008744
+  Export Relative Position : BaseThreadInitThunk+00000024
+[  2] --------------------------------------------------------------------------------
+  Module File : C:\WINDOWS\SYSTEM32\ntdll.dll
+  Section Relative Position : .text+0006482D
+  Export Relative Position : RtlGetAppContainerNamedObjectPath+000000FD
+[  3] --------------------------------------------------------------------------------
+  Module File : C:\WINDOWS\SYSTEM32\ntdll.dll
+  Section Relative Position : .text+000647FD
+  Export Relative Position : RtlGetAppContainerNamedObjectPath+000000CD
+

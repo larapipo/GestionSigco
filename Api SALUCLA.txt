@@ -1,0 +1,2 @@
+cliente   ck_42e40ed03ee85e0eb86aaff0a9b2c2c75eb8feed
+clave     cs_4e977345b652a8b55270b8c7b4e0c96896febb48

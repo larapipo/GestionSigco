@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{DCBA178E-AA7C-4E1E-AFFC-FD018B70A366}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="Menu.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\CobrosAbonos\cobros.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="Menu">
+        <MSBuild Projects="Menu.dproj"/>
+    </Target>
+    <Target Name="Menu:Clean">
+        <MSBuild Projects="Menu.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Menu:Make">
+        <MSBuild Projects="Menu.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="cobros">
+        <MSBuild Projects="..\CobrosAbonos\cobros.dproj"/>
+    </Target>
+    <Target Name="cobros:Clean">
+        <MSBuild Projects="..\CobrosAbonos\cobros.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="cobros:Make">
+        <MSBuild Projects="..\CobrosAbonos\cobros.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="Menu;cobros"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="Menu:Clean;cobros:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="Menu:Make;cobros:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

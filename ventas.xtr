@@ -1,0 +1,48 @@
+<XmlTransformation Version="1.0"><Transform Direction="ToCds"><SelectEach dest="DATAPACKET\ROWDATA\ROW" from="\EXPORT\PROD_VENDIDOS\ROW"><Select dest="@COD_ARTICU" from="@COD_ARTICU"/><Select dest="@DESCRIPCION" from="@DESCRIPCION"/><Select dest="@UNITARIO" from="@UNITARIO"/><Select dest="@CANTIDAD" from="@CANTIDAD"/></SelectEach></Transform><XmlSchema RootName="EXPORT"><![CDATA[<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="EXPORT" type="EXPORTType"/>
+  <xs:complexType name="EXPORTType">
+    <xs:sequence>
+      <xs:element name="ST_PRODUCTOS" type="ST_PRODUCTOSType"/>
+      <xs:element name="PROD_VENDIDOS" type="PROD_VENDIDOSType"/>
+    </xs:sequence>
+    <xs:attribute name="Fecha" type="xs:string"/>
+    <xs:attribute name="Hora" type="xs:string"/>
+    <xs:attribute name="Exportado" type="xs:string"/>
+    <xs:attribute name="Sucursal" type="xs:string"/>
+  </xs:complexType>
+  <xs:element name="ST_PRODUCTOS" type="ST_PRODUCTOSType"/>
+  <xs:complexType name="ST_PRODUCTOSType">
+    <xs:sequence>
+      <xs:element name="ROW" type="ROWType" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+    <xs:attribute name="MODO" type="xs:string"/>
+    <xs:attribute name="KEYFIELD" type="xs:string"/>
+  </xs:complexType>
+  <xs:element name="ROW" type="ROWType"/>
+  <xs:complexType name="ROWType">
+    <xs:sequence/>
+    <xs:attribute name="COD_ARTICU" type="xs:string"/>
+    <xs:attribute name="DESCRIPCION" type="xs:string"/>
+    <xs:attribute name="IMPORTE1" type="xs:string"/>
+    <xs:attribute name="IMPORTE2" type="xs:string"/>
+  </xs:complexType>
+  <xs:element name="PROD_VENDIDOS" type="PROD_VENDIDOSType"/>
+  <xs:complexType name="PROD_VENDIDOSType">
+    <xs:sequence>
+      <xs:element name="ROW" type="ROWType" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+    <xs:attribute name="MODO" type="xs:string"/>
+    <xs:attribute name="KEYFIELD" type="xs:string"/>
+  </xs:complexType>
+  <xs:element name="ROW" type="ROWType"/>
+  <xs:complexType name="ROWType">
+    <xs:sequence/>
+    <xs:attribute name="COD_RUBRO" type="xs:string"/>
+    <xs:attribute name="RUBRO" type="xs:string"/>
+    <xs:attribute name="COD_ARTICU" type="xs:string"/>
+    <xs:attribute name="DESCRIPCION" type="xs:string"/>
+    <xs:attribute name="UNITARIO" type="xs:float"/>
+    <xs:attribute name="CANTIDAD" type="xs:float"/>
+  </xs:complexType>
+</xs:schema>]]></XmlSchema><CdsSkeleton/><XslTransform/><Skeleton><![CDATA[<?xml version="1.0"?><DATAPACKET Version="2.0"><METADATA><FIELDS><FIELD attrname="COD_ARTICU" fieldtype="string" WIDTH="6"/><FIELD attrname="DESCRIPCION" fieldtype="string" WIDTH="45"/><FIELD attrname="UNITARIO" fieldtype="r8"/><FIELD attrname="CANTIDAD" fieldtype="r8"/></FIELDS><PARAMS/></METADATA><ROWDATA/><METADATA><FIELDS><FIELD attrname="COD_ARTICU" fieldtype="string" WIDTH="6"/><FIELD attrname="DESCRIPCION" fieldtype="string" WIDTH="45"/><FIELD attrname="UNITARIO" fieldtype="r8"/><FIELD attrname="CANTIDAD" fieldtype="r8"/></FIELDS><PARAMS/></METADATA><ROWDATA/></DATAPACKET>
+]]></Skeleton></XmlTransformation>

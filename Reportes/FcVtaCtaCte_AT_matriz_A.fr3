@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TfrxReport Version="4.6.8" DotMatrixReport="True" IniFile="\Software\Fast Reports" PreviewOptions.Buttons="4095" PreviewOptions.Zoom="1" PrintOptions.Printer="Epson LX-300+" PrintOptions.PrintOnSheet="0" ReportOptions.CreateDate="39689.6732694676" ReportOptions.Description.Text="" ReportOptions.LastChange="39689.7007707292" ScriptLanguage="PascalScript" ScriptText.Text="begin&#13;&#10;&#13;&#10;end." PropData="044C65667403040203546F70031D0108446174617365747301010C3600000020446174615365743D2266724442537562446574616C6C652220446174615365744E616D653D2266724442537562446574616C6C652200010C3400000020446174615365743D22667278446243616265636572612220446174615365744E616D653D22667278446243616265636572612200010C3200000020446174615365743D226672784442446574616C6C652220446174615365744E616D653D226672784442446574616C6C652200010C3600000020446174615365743D226672784442496D70756573746F732220446174615365744E616D653D226672784442496D70756573746F73220000095661726961626C657301010C2C000000204E616D653D224D617363617261556E69746172696F222056616C75653D22272323232C2323302E3030272200010C2C000000204E616D653D224D61736361726143616E7469646164222056616C75653D22272323232C2323302E3030272200010C29000000204E616D653D224D617363617261546F74616C222056616C75653D22272323232C2323302E3030272200010C2D000000204E616D653D224D617363617261546F74616C4772616C222056616C75653D22272323232C2323302E3030272200010C24000000204E616D653D224D61736361726149766154617361222056616C75653D2227302E30272200010C2E000000204E616D653D224D617363617261497661496D706F727465222056616C75653D22272323232C2323302E303027220000055374796C650100">
+  <TfrxDataPage Name="Data" Height="1000" Left="0" Top="0" Width="1000"/>
+  <TfrxDMPPage Name="Page1" PaperWidth="215.89986056" PaperHeight="188.91237799" PaperSize="256" LeftMargin="2.53999835958439" RightMargin="2.53999835958439" TopMargin="4.49791376176403" BottomMargin="4.49791376176403" ColumnWidth="0" ColumnPositions.Text="" HGuides.Text="" VGuides.Text="" FontStyle="0">
+    <TfrxPageFooter Name="PageFooter1" Height="68" Left="0" Top="357" Width="796.799999982337">
+      <TfrxDMPMemoView Name="DMPMemo15" Left="662.4" Top="0" Width="96" Height="17" ShowHint="False" DisplayFormat.FormatStr="%2.2n" DisplayFormat.Kind="fkNumeric" HAlign="haRight" TruncOutboundText="False" Text="[frxDbCabecera.&#34;DSTOIMPORTE&#34;]"/>
+      <TfrxDMPMemoView Name="DMPMemo16" Left="9.6" Top="34" Width="96" Height="17" ShowHint="False" DisplayFormat.FormatStr="%2.2n" DisplayFormat.Kind="fkNumeric" HAlign="haRight" TruncOutboundText="False" Text="[frxDbCabecera.&#34;NETOGRAV2&#34;]"/>
+      <TfrxDMPMemoView Name="DMPMemo17" Left="662.4" Top="34" Width="96" Height="17" ShowHint="False" DisplayFormat.FormatStr="%2.2n" DisplayFormat.Kind="fkNumeric" HAlign="haRight" TruncOutboundText="False" Text="[frxDbCabecera.&#34;TOTAL&#34;]"/>
+      <TfrxSubreport Name="Subreport1" Left="240" Top="34" Width="307.2" Height="17" ShowHint="False" Page="Page2"/>
+      <TfrxDMPMemoView Name="DMPMemo19" Left="528" Top="0" Width="96" Height="17" ShowHint="False" DisplayFormat.FormatStr="%2.2n" DisplayFormat.Kind="fkNumeric" TruncOutboundText="False" Text="[frxDbCabecera.&#34;DSTO&#34;]"/>
+      <TfrxDMPMemoView Name="DMPMemo20" Left="355.2" Top="0" Width="153.6" Height="17" ShowHint="False" TruncOutboundText="False" Text="Bonicficación"/>
+    </TfrxPageFooter>
+    <TfrxPageHeader Name="PageHeader1" Height="255" Left="0" Top="17" Width="796.799999982337">
+      <TfrxDMPMemoView Name="DMPMemo1" Left="105.6" Top="119" Width="230.4" Height="17" ShowHint="False" TruncOutboundText="False" Text="[frxDbCabecera.&#34;RAZONSOCIAL&#34;]"/>
+      <TfrxDMPMemoView Name="DMPMemo2" Left="105.6" Top="136" Width="297.6" Height="17" ShowHint="False" TruncOutboundText="False" Text="[frxDbCabecera.&#34;DIRECCION&#34;]"/>
+      <TfrxDMPMemoView Name="DMPMemo3" Left="105.6" Top="153" Width="297.6" Height="17" ShowHint="False" TruncOutboundText="False" Text="[frxDbCabecera.&#34;CPOSTAL&#34;]- [frxDbCabecera.&#34;LOCALIDAD&#34;]"/>
+      <TfrxDMPMemoView Name="DMPMemo4" Left="105.6" Top="170" Width="297.6" Height="17" ShowHint="False" TruncOutboundText="False" Text="[frxDbCabecera.&#34;MUESTRAIVA&#34;]"/>
+      <TfrxDMPMemoView Name="DMPMemo5" Left="480" Top="170" Width="297.6" Height="17" ShowHint="False" TruncOutboundText="False" Text="[frxDbCabecera.&#34;CUIT&#34;]"/>
+      <TfrxDMPMemoView Name="DMPMemo6" Left="528" Top="51" Width="96" Height="17" ShowHint="False" TruncOutboundText="False" Text="[frxDbCabecera.&#34;FECHAVTA&#34;]"/>
+      <TfrxDMPMemoView Name="DMPMemo7" Left="556.8" Top="17" Width="38.4" Height="17" ShowHint="False" FontStyle="96" ParentFont="False" TruncOutboundText="False" Text="[frxDbCabecera.&#34;TIPOCPBTE&#34;]"/>
+      <TfrxDMPMemoView Name="DMPMemo8" Left="595.2" Top="17" Width="134.4" Height="17" ShowHint="False" FontStyle="96" ParentFont="False" TruncOutboundText="False" Text="[frxDbCabecera.&#34;NROCPBTE&#34;]"/>
+      <TfrxDMPMemoView Name="DMPMemo9" Left="134.4" Top="204" Width="355.2" Height="17" ShowHint="False" FontStyle="1" ParentFont="False" TruncOutboundText="False" Text="[frxDbCabecera.&#34;MUESTRACONDVENTA&#34;]"/>
+    </TfrxPageHeader>
+    <TfrxMasterData Name="MasterData1" Height="17" Left="0" Top="306" Width="796.799999982337" ColumnWidth="0" ColumnGap="0" DataSet="frxDBDetalle" DataSetName="frxDBDetalle" RowCount="0">
+      <TfrxDMPMemoView Name="DMPMemo10" Left="0" Top="0" Width="86.4" Height="17" ShowHint="False" HideZeros="True" TruncOutboundText="False" Text="[frxDBDetalle.&#34;CodigoArticulo&#34;]"/>
+      <TfrxDMPMemoView Name="DMPMemo11" Left="182.4" Top="0" Width="326.4" Height="17" ShowHint="False" TruncOutboundText="False" Text="[frxDBDetalle.&#34;Detalle&#34;]"/>
+      <TfrxDMPMemoView Name="DMPMemo12" Left="96" Top="0" Width="76.8" Height="17" ShowHint="False" DisplayFormat.FormatStr="%2.2n" DisplayFormat.Kind="fkNumeric" HAlign="haRight" TruncOutboundText="False" Text="[frxDBDetalle.&#34;Cantidad&#34;]"/>
+      <TfrxDMPMemoView Name="DMPMemo13" Left="528" Top="0" Width="96" Height="17" ShowHint="False" DisplayFormat.FormatStr="%2.2n" DisplayFormat.Kind="fkNumeric" HAlign="haRight" TruncOutboundText="False" Text="[frxDBDetalle.&#34;Unitario_Total&#34;]"/>
+      <TfrxDMPMemoView Name="DMPMemo14" Left="662.4" Top="0" Width="96" Height="17" ShowHint="False" DisplayFormat.FormatStr="%2.2n" DisplayFormat.Kind="fkNumeric" HAlign="haRight" TruncOutboundText="False" Text="[frxDBDetalle.&#34;Total&#34;]"/>
+    </TfrxMasterData>
+  </TfrxDMPPage>
+  <TfrxDMPPage Name="Page2" PaperWidth="215.89986056" PaperHeight="188.91237799" PaperSize="256" LeftMargin="2.53999835958439" RightMargin="2.53999835958439" TopMargin="4.49791376176403" BottomMargin="4.49791376176403" ColumnWidth="0" ColumnPositions.Text="" HGuides.Text="" VGuides.Text="" FontStyle="0">
+    <TfrxMasterData Name="MasterData2" Height="17" Left="0" Top="17" Width="777.6" ColumnWidth="0" ColumnGap="0" DataSet="frxDBImpuestos" DataSetName="frxDBImpuestos" RowCount="0">
+      <TfrxDMPMemoView Name="DMPMemo18" Left="259.2" Top="0" Width="230.4" Height="17" ShowHint="False" HAlign="haRight" TruncOutboundText="False" Text="[frxDBImpuestos.&#34;IMPORTE&#34;]"/>
+    </TfrxMasterData>
+  </TfrxDMPPage>
+</TfrxReport>

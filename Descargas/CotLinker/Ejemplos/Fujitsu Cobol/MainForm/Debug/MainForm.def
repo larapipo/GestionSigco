@@ -1,0 +1,7 @@
+;; Fujitsu PowerCOBOL generated module-definition file.
+;;    $#Header: C:\xampp\bitingenieria.com.ar\cotlinker\Ejemplos\Fujitsu Cobol\MainForm\Debug\MainForm.def 2017/08/06 21:33#$
+;;
+
+
+EXPORTS
+                PRINTFORM

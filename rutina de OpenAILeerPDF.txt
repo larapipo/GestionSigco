@@ -1,0 +1,55 @@
+{
+  este me da hasta los tokens
+function TOpenAILeerPDF.ExtractInvoiceJSON(const FileId: string; const Model: string): string;
+var
+  Body: TJSONObject;
+  InputArr, UserContent: TJSONArray;
+  UserMsg: TJSONObject;
+  Prompt: string;
+begin
+  Prompt := PromptJSONItems;
+
+  Body := TJSONObject.Create;
+  try
+    Body.AddPair('model', Model);
+
+    // input: arreglo con un mensaje del usuario que incluye:
+    //  - input_text (instrucciones)
+    //  - input_file  (tu PDF por file_id)
+    InputArr := TJSONArray.Create;
+    Body.AddPair('input', InputArr);
+
+    UserMsg := TJSONObject.Create;
+    UserMsg.AddPair('role', 'user');
+    UserContent := TJSONArray.Create;
+    UserMsg.AddPair('content', UserContent);
+
+    // instrucciones
+    UserContent.AddElement(
+      TJSONObject.Create
+        .AddPair('type', 'input_text')
+        .AddPair('text', Prompt)
+    );
+
+    // archivo PDF (¡acá va el file_id!)
+    UserContent.AddElement(
+      TJSONObject.Create
+        .AddPair('type', 'input_file')
+        .AddPair('file_id', FileId)
+    );
+
+    InputArr.AddElement(UserMsg);
+
+    // POST al Responses API
+    Result := HTTPPostJSON(URL_RESPONSES, Body.ToJSON);
+
+    // Tip: si querés extraer SOLO el JSON de salida, podés parsear acá:
+    // según versión puede venir en:
+    //  - "output_text"
+    //  - o dentro de "output"[0].content[0].text
+    // Dejo el bruto para que veas el formato exacto que te devuelve tu cuenta.
+  finally
+    Body.Free;
+  end;
+end;
+}

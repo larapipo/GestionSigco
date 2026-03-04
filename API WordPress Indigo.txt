@@ -1,0 +1,3 @@
+clave cliente  : ck_184eb39434367d7edea5a53b9b9059cd3f68476b
+
+clave secreta  : cs_d715b2acd838d5b182a987047f1cf19e2d91c3b6

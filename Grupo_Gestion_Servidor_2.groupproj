@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{4F039723-A8D1-4D13-A99D-2C028E44F7E6}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="Menu.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\ServidorDataSnapGestion_2\ServidorDSGestion2.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="Menu">
+        <MSBuild Projects="Menu.dproj"/>
+    </Target>
+    <Target Name="Menu:Clean">
+        <MSBuild Projects="Menu.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Menu:Make">
+        <MSBuild Projects="Menu.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="ServidorDSGestion2">
+        <MSBuild Projects="..\ServidorDataSnapGestion_2\ServidorDSGestion2.dproj"/>
+    </Target>
+    <Target Name="ServidorDSGestion2:Clean">
+        <MSBuild Projects="..\ServidorDataSnapGestion_2\ServidorDSGestion2.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ServidorDSGestion2:Make">
+        <MSBuild Projects="..\ServidorDataSnapGestion_2\ServidorDSGestion2.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="Menu;ServidorDSGestion2"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="Menu:Clean;ServidorDSGestion2:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="Menu:Make;ServidorDSGestion2:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>
