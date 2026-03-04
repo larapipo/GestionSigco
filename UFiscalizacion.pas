@@ -1906,8 +1906,6 @@ begin
                 FechaVto := FormatDateTime('yyyymmdd', Now());
               end;
 
-
-
              MensajeEstado('Carga Variables de Factura(AgregarFactura)>'+' Tipo Doc:'+ IntToStr(FTipoDocumento)+
                                                                          ' Cuit Comp:'+ FloatToStr(FCuitPais)+
                                                                          ' Numero   :'+ FloatToStr(FNumero)+

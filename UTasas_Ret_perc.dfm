@@ -396,36 +396,25 @@ inherited FormTasasRet_Perc: TFormTasasRet_Perc
     ExplicitTop = 281
     ExplicitWidth = 624
     inherited btConfirma: TBitBtn
-      DoubleBuffered = True
       Visible = False
     end
     inherited btNuevo: TBitBtn
-      DoubleBuffered = True
       Visible = False
     end
-    inherited btCancelar: TBitBtn
-      DoubleBuffered = True
-    end
     inherited btModificar: TBitBtn
-      DoubleBuffered = True
       Visible = False
     end
     inherited Pr: TSpeedButton
       Visible = False
     end
     inherited btBuscar: TBitBtn
-      DoubleBuffered = True
       Visible = False
     end
     inherited Ne: TSpeedButton
       Visible = False
     end
     inherited btBorrar: TBitBtn
-      DoubleBuffered = True
       Visible = False
-    end
-    inherited btSalir: TBitBtn
-      DoubleBuffered = True
     end
   end
   inherited Panel1: TPanel

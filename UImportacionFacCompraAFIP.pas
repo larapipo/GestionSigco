@@ -392,6 +392,9 @@ var  ARow :Integer;
 begin
   inherited;
   // Colorea Renglones... Verde
+  if (dbgFacturas.DataSource.DataSet.IsEmpty) then
+   exit;
+
   sgFacturasPortal.ArrowColor:= clWhite;
 
   if Not(dbgFacturas.DataSource.DataSet.IsEmpty) then
@@ -933,18 +936,22 @@ procedure TFormImportarFcCompraAFIP.BuscarFacturas;
 var i:Integer;
  desde,hasta:TDateTime;
 begin
-  desde := StrToDate(sgFacturasPortal.Cells[0,1]);
-  hasta := StrToDate(sgFacturasPortal.Cells[0,sgFacturasPortal.RowCount-2]);
-  QFacturasCompras.Close;
-  QFacturasCompras.ParamByName('desde').AsDateTime:=desde;
-  QFacturasCompras.ParamByName('hasta').AsDateTime:=hasta;
-  QFacturasCompras.Open;
-  if not QFacturasCompras.IsEmpty then
+  if Trim(sgFacturasPortal.Cells[0,1])<>'' Then
     begin
-      QFacturasCompras.IndexFieldNames:='FECHACOMPRA';
+      desde := StrToDate(sgFacturasPortal.Cells[0,1]);
+      hasta := StrToDate(sgFacturasPortal.Cells[0,sgFacturasPortal.RowCount-2]);
 
-      for I := 0 to dbgFacturas.ColCount-1 do
-        dbgFacturas.AutoSizeCol(I,5);
+      QFacturasCompras.Close;
+      QFacturasCompras.ParamByName('desde').AsDateTime:=desde;
+      QFacturasCompras.ParamByName('hasta').AsDateTime:=hasta;
+      QFacturasCompras.Open;
+      if not QFacturasCompras.IsEmpty then
+        begin
+          QFacturasCompras.IndexFieldNames:='FECHACOMPRA';
+
+          for I := 0 to dbgFacturas.ColCount-1 do
+            dbgFacturas.AutoSizeCol(I,5);
+        end;
     end;
 
 end;

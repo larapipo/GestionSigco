@@ -105,15 +105,12 @@ type
     CDSMovAplicaCCCompraTIPOCPBTE: TStringField;
     CDSMovAplicaCCCompraCLASECPBTE: TStringField;
     CDSMovAplicaCCCompraNUMEROCPBTE: TStringField;
-    CDSMovAplicaCCCompraIMPORTE: TFMTBCDField;
     CDSMovAplicaCCCompraAPLICA_ID_CPBTE: TIntegerField;
     CDSMovAplicaCCCompraAPLICA_TIPOCPBTE: TStringField;
     CDSMovAplicaCCCompraAPLICA_CLASECPBTE: TStringField;
     CDSMovAplicaCCCompraAPLICA_NROCPBTE: TStringField;
-    CDSMovAplicaCCCompraAPLICA_NETO: TFMTBCDField;
     CDSMovAplicaCCCompraDETALLE: TStringField;
     CDSMovAplicaCCCompraMUESTRAFECHACPBTE: TSQLTimeStampField;
-    CDSMovAplicaCCCompraMUESTRATOTALFACTURA: TFMTBCDField;
     CDSMovAplicaCCCompraCONCILIADO: TStringField;
     DSMovAplicaCCCompra: TDataSource;
     ToolButton2: TToolButton;
@@ -479,6 +476,9 @@ type
     edNroConvenioMacro: TEdit;
     Label18: TLabel;
     btBcoMacro: TButton;
+    CDSMovAplicaCCCompraAPLICA_NETO: TFloatField;
+    CDSMovAplicaCCCompraIMPORTE: TFloatField;
+    CDSMovAplicaCCCompraMUESTRATOTALFACTURA: TFloatField;
     procedure UpDown1Click(Sender: TObject; Button: TUDBtnType);
     procedure FormCreate(Sender: TObject);
     procedure BuscarExecute(Sender: TObject);

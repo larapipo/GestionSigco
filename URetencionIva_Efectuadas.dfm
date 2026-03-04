@@ -1,13 +1,15 @@
 inherited FormRetIva_EfectuadasLiq: TFormRetIva_EfectuadasLiq
   Caption = 'Retencion de I.V.A Efectuadas Liquidaciones'
-  ClientHeight = 598
+  ClientHeight = 638
   ClientWidth = 1117
+  StyleElements = [seFont, seClient, seBorder]
   ExplicitWidth = 1135
-  ExplicitHeight = 639
+  ExplicitHeight = 679
   TextHeight = 13
   inherited pnPrincipal: TPanel
     Width = 1117
     Height = 513
+    StyleElements = [seFont, seClient, seBorder]
     ExplicitWidth = 1117
     ExplicitHeight = 513
     object dbgDetalle: TDBGrid
@@ -482,17 +484,21 @@ inherited FormRetIva_EfectuadasLiq: TFormRetIva_EfectuadasLiq
   inherited Panel1: TPanel
     Top = 543
     Width = 1117
+    StyleElements = [seFont, seClient, seBorder]
     ExplicitTop = 543
     ExplicitWidth = 1117
+    inherited DBStatusLabel1: TJvDBStatusLabel
+      Height = 21
+    end
     inherited sbEstado: TStatusBar
-      Width = 955
+      Width = 1028
       OnDblClick = sbEstadoDblClick
-      ExplicitWidth = 955
+      ExplicitWidth = 1028
     end
   end
   object Memo1: TMemo [3]
-    Left = 254
-    Top = 488
+    Left = 479
+    Top = 520
     Width = 422
     Height = 110
     Lines.Strings = (
@@ -971,10 +977,6 @@ inherited FormRetIva_EfectuadasLiq: TFormRetIva_EfectuadasLiq
     Left = 856
     Top = 176
   end
-  inherited QBrowse: TSQLQuery
-    Left = 40
-    Top = 512
-  end
   inherited QUltimoCodigo: TSQLQuery
     Left = 64
     Top = 480
@@ -1173,6 +1175,7 @@ inherited FormRetIva_EfectuadasLiq: TFormRetIva_EfectuadasLiq
     object CDSRetFECHA: TSQLTimeStampField
       DisplayLabel = 'Fecha'
       FieldName = 'FECHA'
+      Origin = 'FECHA'
       Required = True
     end
   end
@@ -1234,38 +1237,107 @@ inherited FormRetIva_EfectuadasLiq: TFormRetIva_EfectuadasLiq
   object frDBDRetenciones: TfrxDBDataset
     UserName = 'frDBDRetenciones'
     CloseDataSource = False
-    FieldAliases.Strings = (
-      'ID=ID'
-      'ID_ORIGEN=ID_ORIGEN'
-      'FECHA=FECHA'
-      'NUMERO_RETENCION=NUMERO_RETENCION'
-      'CODIGO_PROVEEDOR=CODIGO_PROVEEDOR'
-      'CODIGO_REGIMEN=CODIGO_REGIMEN'
-      'CONCEPTO=CONCEPTO'
-      'OBSERVACIONES=OBSERVACIONES'
-      'ANULADA=ANULADA'
-      'ESTADO=ESTADO'
-      'RAZON_SOCIAL=RAZON_SOCIAL'
-      'N_DE_CUIT=N_DE_CUIT'
-      'CONDICION_IVA=CONDICION_IVA'
-      'COD_CPBTE_CICORE=COD_CPBTE_CICORE'
-      'TIPO_CPBTE=TIPO_CPBTE'
-      'TIPO_LIQUIDACION=TIPO_LIQUIDACION'
-      'TASA=TASA'
-      'BASE_IMPONIBLE=BASE_IMPONIBLE'
-      'MINIMO_NO_IMPONIBLE=MINIMO_NO_IMPONIBLE'
-      'IMPUESTO_RETENIDO=IMPUESTO_RETENIDO'
-      'DIRECCION=DIRECCION'
-      'LOCALIDAD=LOCALIDAD'
-      'COD_POSTAL=COD_POSTAL')
     DataSet = CDSRet
     BCDToCurrency = False
     DataSetOptions = []
     Left = 595
     Top = 290
+    FieldDefs = <
+      item
+        FieldName = 'ID'
+        FieldAlias = 'ID'
+      end
+      item
+        FieldName = 'ID_ORIGEN'
+        FieldAlias = 'ID_ORIGEN'
+      end
+      item
+        FieldName = 'FECHA'
+        FieldAlias = 'FECHA'
+      end
+      item
+        FieldName = 'NUMERO_RETENCION'
+        FieldAlias = 'NUMERO_RETENCION'
+      end
+      item
+        FieldName = 'CODIGO_PROVEEDOR'
+        FieldAlias = 'CODIGO_PROVEEDOR'
+      end
+      item
+        FieldName = 'CODIGO_REGIMEN'
+        FieldAlias = 'CODIGO_REGIMEN'
+      end
+      item
+        FieldName = 'CONCEPTO'
+        FieldAlias = 'CONCEPTO'
+      end
+      item
+        FieldName = 'OBSERVACIONES'
+        FieldAlias = 'OBSERVACIONES'
+      end
+      item
+        FieldName = 'ANULADA'
+        FieldAlias = 'ANULADA'
+      end
+      item
+        FieldName = 'ESTADO'
+        FieldAlias = 'ESTADO'
+      end
+      item
+        FieldName = 'RAZON_SOCIAL'
+        FieldAlias = 'RAZON_SOCIAL'
+      end
+      item
+        FieldName = 'N_DE_CUIT'
+        FieldAlias = 'N_DE_CUIT'
+      end
+      item
+        FieldName = 'CONDICION_IVA'
+        FieldAlias = 'CONDICION_IVA'
+      end
+      item
+        FieldName = 'COD_CPBTE_CICORE'
+        FieldAlias = 'COD_CPBTE_CICORE'
+      end
+      item
+        FieldName = 'TIPO_CPBTE'
+        FieldAlias = 'TIPO_CPBTE'
+      end
+      item
+        FieldName = 'TIPO_LIQUIDACION'
+        FieldAlias = 'TIPO_LIQUIDACION'
+      end
+      item
+        FieldName = 'TASA'
+        FieldAlias = 'TASA'
+      end
+      item
+        FieldName = 'BASE_IMPONIBLE'
+        FieldAlias = 'BASE_IMPONIBLE'
+      end
+      item
+        FieldName = 'MINIMO_NO_IMPONIBLE'
+        FieldAlias = 'MINIMO_NO_IMPONIBLE'
+      end
+      item
+        FieldName = 'IMPUESTO_RETENIDO'
+        FieldAlias = 'IMPUESTO_RETENIDO'
+      end
+      item
+        FieldName = 'DIRECCION'
+        FieldAlias = 'DIRECCION'
+      end
+      item
+        FieldName = 'LOCALIDAD'
+        FieldAlias = 'LOCALIDAD'
+      end
+      item
+        FieldName = 'COD_POSTAL'
+        FieldAlias = 'COD_POSTAL'
+      end>
   end
   object frConsulta: TfrxReport
-    Version = '2022.2.3'
+    Version = '2024.1.8'
     DotMatrixReport = False
     IniFile = '\Software\Fast Reports'
     PreviewOptions.Buttons = [pbPrint, pbLoad, pbSave, pbExport, pbZoom, pbFind, pbOutline, pbPageSetup, pbTools, pbEdit, pbNavigator, pbExportQuick]
@@ -1289,8 +1361,8 @@ inherited FormRetIva_EfectuadasLiq: TFormRetIva_EfectuadasLiq
     Connection = DMMain_FD.fdcGestion
     SQL.Strings = (
       'select r.* from regimenretencioniva r where r.cod_impuesto= 767')
-    Left = 120
-    Top = 376
+    Left = 224
+    Top = 344
     object QRegimenesCOD_IMPUESTO: TIntegerField
       FieldName = 'COD_IMPUESTO'
       Origin = 'COD_IMPUESTO'

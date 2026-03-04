@@ -34,37 +34,36 @@ object DatosOrdenDeTrabajo: TDatosOrdenDeTrabajo
     Top = 368
   end
   object DSPInscripcion: TDataSetProvider
-    DataSet = DMMain_2.QInscripcion
+    DataSet = DMMain_FD.QInscripcion
     Options = []
     Left = 424
     Top = 11
   end
   object DSPDeposito: TDataSetProvider
-    DataSet = DMMain_2.QDeposito
+    DataSet = DMMain_FD.QDeposito
     Options = []
     Left = 424
     Top = 110
   end
   object DSPIva: TDataSetProvider
-    DataSet = DMMain_2.QIva
+    DataSet = DMMain_FD.QIva
     Options = []
     Left = 424
     Top = 159
   end
   object DSPSucursal: TDataSetProvider
-    DataSet = DMMain_2.QSucursal
+    DataSet = DMMain_FD.QSucursal
     Options = []
     Left = 426
     Top = 206
   end
   object DSPLdr: TDataSetProvider
-    DataSet = DMMain_2.QLdr
+    DataSet = DMMain_FD.QLDR
     Options = []
     Left = 424
     Top = 58
   end
   object ibgOT_Det: TIBGenerator
-    DatabaseIBX = DMMain_2.SQLConectionMain
     DatabaseFD = DMMain_FD.fdcGestion
     GeneratorName = 'NEXT_ID_ORDENTRABAJODET'
     SystemGenerators = False
@@ -72,7 +71,6 @@ object DatosOrdenDeTrabajo: TDatosOrdenDeTrabajo
     Top = 56
   end
   object ibgOT_Cab: TIBGenerator
-    DatabaseIBX = DMMain_2.SQLConectionMain
     DatabaseFD = DMMain_FD.fdcGestion
     GeneratorName = 'NEXT_ID_ORDENTRABAJOCAB'
     SystemGenerators = False
@@ -87,7 +85,6 @@ object DatosOrdenDeTrabajo: TDatosOrdenDeTrabajo
     Top = 161
   end
   object ibgOT_Mov: TIBGenerator
-    DatabaseIBX = DMMain_2.SQLConectionMain
     DatabaseFD = DMMain_FD.fdcGestion
     GeneratorName = 'NEXT_ID_ORDENTRABAJOMOV'
     SystemGenerators = False
@@ -119,7 +116,6 @@ object DatosOrdenDeTrabajo: TDatosOrdenDeTrabajo
     Top = 108
   end
   object ibgImpuesto: TIBGenerator
-    DatabaseIBX = DMMain_2.SQLConectionMain
     DatabaseFD = DMMain_FD.fdcGestion
     GeneratorName = 'NEXT_ID_ORDENTRABAJOIMPUESTO'
     SystemGenerators = False
@@ -127,7 +123,7 @@ object DatosOrdenDeTrabajo: TDatosOrdenDeTrabajo
     Top = 104
   end
   object DSPEmpresa: TDataSetProvider
-    DataSet = DMMain_2.QEmpresa
+    DataSet = DMMain_FD.QEmpresa
     Options = []
     Left = 40
     Top = 424
@@ -1653,7 +1649,6 @@ object DatosOrdenDeTrabajo: TDatosOrdenDeTrabajo
     end
     object CDSEmpresaLOGO: TBlobField
       FieldName = 'LOGO'
-      Size = 1
     end
     object CDSEmpresaCPOSTAL: TStringField
       FieldName = 'CPOSTAL'
@@ -1681,36 +1676,26 @@ object DatosOrdenDeTrabajo: TDatosOrdenDeTrabajo
       FixedChar = True
       Size = 1
     end
-    object CDSEmpresaTASA_PERCEPCION_IB: TFMTBCDField
+    object CDSEmpresaTASA_PERCEPCION_IB: TFloatField
       FieldName = 'TASA_PERCEPCION_IB'
-      Precision = 15
-      Size = 3
     end
-    object CDSEmpresaMINO_IMP_PERCEP_IB: TFMTBCDField
+    object CDSEmpresaMINO_IMP_PERCEP_IB: TFloatField
       FieldName = 'MINO_IMP_PERCEP_IB'
-      Precision = 15
-      Size = 3
     end
     object CDSEmpresaPROVINCIA: TIntegerField
       FieldName = 'PROVINCIA'
     end
-    object CDSEmpresaTASA_RET_IIBB: TFMTBCDField
+    object CDSEmpresaTASA_RET_IIBB: TFloatField
       FieldName = 'TASA_RET_IIBB'
       Required = True
-      Precision = 15
-      Size = 3
     end
-    object CDSEmpresaMINIMO_IMP_RET_IIBB: TFMTBCDField
+    object CDSEmpresaMINIMO_IMP_RET_IIBB: TFloatField
       FieldName = 'MINIMO_IMP_RET_IIBB'
       Required = True
-      Precision = 15
-      Size = 3
     end
-    object CDSEmpresaPUNITORIOS: TFMTBCDField
+    object CDSEmpresaPUNITORIOS: TFloatField
       FieldName = 'PUNITORIOS'
       Required = True
-      Precision = 15
-      Size = 3
     end
     object CDSEmpresaFECHA_INICIO_ACTI: TSQLTimeStampField
       FieldName = 'FECHA_INICIO_ACTI'
@@ -1733,17 +1718,44 @@ object DatosOrdenDeTrabajo: TDatosOrdenDeTrabajo
       FieldName = 'CBU'
       Size = 22
     end
+    object CDSEmpresaID_CPOSTAL: TIntegerField
+      FieldName = 'ID_CPOSTAL'
+    end
+    object CDSEmpresaCOD_ACTIVIDAD: TStringField
+      FieldName = 'COD_ACTIVIDAD'
+      Size = 10
+    end
     object CDSEmpresaNOMBRE_FANTASIA: TStringField
       FieldName = 'NOMBRE_FANTASIA'
       Size = 50
+    end
+    object CDSEmpresaCODIGO_COT: TStringField
+      FieldName = 'CODIGO_COT'
+      ReadOnly = True
+      FixedChar = True
+      Size = 1
     end
     object CDSEmpresaDIRECCION_NRO: TStringField
       FieldName = 'DIRECCION_NRO'
       Size = 10
     end
+    object CDSEmpresaAG_PERCEPCION_IVA: TStringField
+      FieldName = 'AG_PERCEPCION_IVA'
+      Required = True
+      FixedChar = True
+      Size = 1
+    end
     object CDSEmpresaMIN_IMP_PERCEPCION_IVA: TFloatField
       FieldName = 'MIN_IMP_PERCEPCION_IVA'
       Required = True
+    end
+    object CDSEmpresaTASA_LEY15311: TFloatField
+      FieldName = 'TASA_LEY15311'
+      Required = True
+    end
+    object CDSEmpresaDIRECCION_OPERACION: TStringField
+      FieldName = 'DIRECCION_OPERACION'
+      Size = 150
     end
   end
   object CDSInscripcion: TClientDataSet
@@ -1759,32 +1771,39 @@ object DatosOrdenDeTrabajo: TDatosOrdenDeTrabajo
     Top = 8
     object CDSInscripcionCODIGO: TIntegerField
       FieldName = 'CODIGO'
+      Origin = 'CODIGO'
+      ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
       Required = True
     end
     object CDSInscripcionDETALLE: TStringField
       FieldName = 'DETALLE'
+      Origin = 'DETALLE'
       Size = 15
     end
     object CDSInscripcionAPLICAPERCEPCIONIVA: TStringField
       FieldName = 'APLICAPERCEPCIONIVA'
+      Origin = 'APLICAPERCEPCIONIVA'
       Required = True
       FixedChar = True
       Size = 1
     end
     object CDSInscripcionAPLICAPERCEPCIONIIBB: TStringField
       FieldName = 'APLICAPERCEPCIONIIBB'
+      Origin = 'APLICAPERCEPCIONIIBB'
       Required = True
       FixedChar = True
       Size = 1
     end
     object CDSInscripcionCOBRASOBRETASA: TStringField
       FieldName = 'COBRASOBRETASA'
+      Origin = 'COBRASOBRETASA'
       Required = True
       FixedChar = True
       Size = 1
     end
     object CDSInscripcionDISCRIMINAIVA: TStringField
       FieldName = 'DISCRIMINAIVA'
+      Origin = 'DISCRIMINAIVA'
       Required = True
       FixedChar = True
       Size = 1
@@ -1808,23 +1827,30 @@ object DatosOrdenDeTrabajo: TDatosOrdenDeTrabajo
     Top = 58
     object CDSLdrCODIGO_CLIENTE: TStringField
       FieldName = 'CODIGO_CLIENTE'
+      Origin = 'CODIGO_CLIENTE'
+      ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
       Required = True
       Size = 6
     end
     object CDSLdrCODIGO_LDR: TIntegerField
       FieldName = 'CODIGO_LDR'
+      Origin = 'CODIGO_LDR'
+      ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
       Required = True
     end
     object CDSLdrNOMBRE: TStringField
       FieldName = 'NOMBRE'
+      Origin = 'NOMBRE'
       Size = 35
     end
     object CDSLdrDIRECCION: TStringField
       FieldName = 'DIRECCION'
+      Origin = 'DIRECCION'
       Size = 35
     end
     object CDSLdrCPOSTAL: TStringField
       FieldName = 'CPOSTAL'
+      Origin = 'CPOSTAL'
       Size = 8
     end
   end
@@ -1841,13 +1867,17 @@ object DatosOrdenDeTrabajo: TDatosOrdenDeTrabajo
     Top = 110
     object CDSDepositoID: TIntegerField
       FieldName = 'ID'
+      Origin = 'ID'
+      ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
     end
     object CDSDepositoNOMBRE: TStringField
       FieldName = 'NOMBRE'
+      Origin = 'NOMBRE'
       Size = 25
     end
     object CDSDepositoSUCURSAL: TIntegerField
       FieldName = 'SUCURSAL'
+      Origin = 'SUCURSAL'
     end
   end
   object CDSIva: TClientDataSet
@@ -1888,30 +1918,36 @@ object DatosOrdenDeTrabajo: TDatosOrdenDeTrabajo
     Top = 206
     object CDSSucursalCODIGO: TIntegerField
       FieldName = 'CODIGO'
+      Origin = 'CODIGO'
+      ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
       Required = True
     end
     object CDSSucursalDETALLE: TStringField
       FieldName = 'DETALLE'
+      Origin = 'DETALLE'
       Size = 35
     end
     object CDSSucursalDIRECCION: TStringField
       FieldName = 'DIRECCION'
+      Origin = 'DIRECCION'
     end
     object CDSSucursalLOCALIDAD: TStringField
       FieldName = 'LOCALIDAD'
+      Origin = 'LOCALIDAD'
     end
     object CDSSucursalTELEFONO1: TStringField
       FieldName = 'TELEFONO1'
+      Origin = 'TELEFONO1'
       Size = 15
     end
     object CDSSucursalTELEFONO2: TStringField
       FieldName = 'TELEFONO2'
+      Origin = 'TELEFONO2'
       Size = 15
     end
-    object CDSSucursalRECARGO: TFMTBCDField
+    object CDSSucursalRECARGO: TFloatField
       FieldName = 'RECARGO'
-      Precision = 15
-      Size = 3
+      Origin = 'RECARGO'
     end
   end
   object CDSBuscadorProductos: TClientDataSet

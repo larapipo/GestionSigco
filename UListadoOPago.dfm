@@ -930,7 +930,6 @@ inherited FormListadoOPago: TFormListadoOPago
           Font.Height = -16
           Font.Name = 'MS Sans Serif'
           Font.Style = []
-          Items.ItemData = {050000000000000000}
           ParentFont = False
           TabOrder = 0
           ViewStyle = vsReport
@@ -1124,7 +1123,7 @@ inherited FormListadoOPago: TFormListadoOPago
             0
             0
             0
-            65)
+            63)
           RowHeights = (
             22
             22
@@ -2393,7 +2392,6 @@ inherited FormListadoOPago: TFormListadoOPago
     inherited btConfirma: TBitBtn
       Width = 39
       Height = 28
-      DoubleBuffered = True
       Visible = False
       ExplicitWidth = 39
       ExplicitHeight = 28
@@ -2402,7 +2400,6 @@ inherited FormListadoOPago: TFormListadoOPago
       Left = 41
       Width = 32
       Height = 28
-      DoubleBuffered = True
       Visible = False
       ExplicitLeft = 41
       ExplicitWidth = 32
@@ -2412,7 +2409,6 @@ inherited FormListadoOPago: TFormListadoOPago
       Left = 73
       Width = 32
       Height = 28
-      DoubleBuffered = True
       Visible = False
       ExplicitLeft = 73
       ExplicitWidth = 32
@@ -2422,7 +2418,6 @@ inherited FormListadoOPago: TFormListadoOPago
       Left = 105
       Width = 24
       Height = 28
-      DoubleBuffered = True
       Visible = False
       ExplicitLeft = 105
       ExplicitWidth = 24
@@ -2438,7 +2433,6 @@ inherited FormListadoOPago: TFormListadoOPago
     inherited btBuscar: TBitBtn
       Left = 144
       Height = 28
-      DoubleBuffered = True
       ExplicitLeft = 144
       ExplicitHeight = 28
     end
@@ -2453,7 +2447,6 @@ inherited FormListadoOPago: TFormListadoOPago
       Left = 234
       Width = 39
       Height = 28
-      DoubleBuffered = True
       Visible = False
       ExplicitLeft = 234
       ExplicitWidth = 39
@@ -2462,7 +2455,6 @@ inherited FormListadoOPago: TFormListadoOPago
     inherited btSalir: TBitBtn
       Left = 273
       Height = 28
-      DoubleBuffered = True
       ExplicitLeft = 273
       ExplicitHeight = 28
     end
@@ -2553,6 +2545,7 @@ inherited FormListadoOPago: TFormListadoOPago
     ExplicitTop = 702
     ExplicitWidth = 1177
     inherited DBStatusLabel1: TJvDBStatusLabel
+      Height = 21
       Visible = False
     end
     inherited sbEstado: TStatusBar
@@ -3541,7 +3534,7 @@ inherited FormListadoOPago: TFormListadoOPago
       end>
   end
   object DSPMovAplicaCCCompra: TDataSetProvider
-    DataSet = DMMain_2.QMovAplicaCCCompra
+    DataSet = DMMain_FD.QMovAplicaCCCompra
     UpdateMode = upWhereKeyOnly
     Left = 296
     Top = 210
@@ -3560,100 +3553,111 @@ inherited FormListadoOPago: TFormListadoOPago
         ParamType = ptInput
       end>
     ProviderName = 'DSPMovAplicaCCCompra'
-    Left = 384
-    Top = 48
+    Left = 456
+    Top = 104
     object CDSMovAplicaCCCompraID_MOV: TIntegerField
       FieldName = 'ID_MOV'
+      Origin = 'ID_MOV'
       ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
       Required = True
     end
     object CDSMovAplicaCCCompraID_MOVCCCOMPRA: TIntegerField
       FieldName = 'ID_MOVCCCOMPRA'
+      Origin = 'ID_MOVCCCOMPRA'
       ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
       Required = True
     end
     object CDSMovAplicaCCCompraFECHA: TSQLTimeStampField
       DisplayLabel = 'Fecha'
       FieldName = 'FECHA'
+      Origin = 'FECHA'
     end
     object CDSMovAplicaCCCompraPROVEEDOR: TStringField
       FieldName = 'PROVEEDOR'
+      Origin = 'PROVEEDOR'
       Required = True
       Size = 6
     end
     object CDSMovAplicaCCCompraID_CPBTE: TIntegerField
       FieldName = 'ID_CPBTE'
+      Origin = 'ID_CPBTE'
       Required = True
     end
     object CDSMovAplicaCCCompraTIPOCPBTE: TStringField
       FieldName = 'TIPOCPBTE'
+      Origin = 'TIPOCPBTE'
       Required = True
       Size = 2
     end
     object CDSMovAplicaCCCompraCLASECPBTE: TStringField
       FieldName = 'CLASECPBTE'
+      Origin = 'CLASECPBTE'
       Size = 2
     end
     object CDSMovAplicaCCCompraNUMEROCPBTE: TStringField
       FieldName = 'NUMEROCPBTE'
+      Origin = 'NUMEROCPBTE'
       Required = True
       Size = 13
     end
-    object CDSMovAplicaCCCompraIMPORTE: TFMTBCDField
-      DisplayLabel = 'Importe'
-      FieldName = 'IMPORTE'
-      DisplayFormat = ',0.00'
-      EditFormat = ',0.00'
-      Precision = 15
-      Size = 3
-    end
     object CDSMovAplicaCCCompraAPLICA_ID_CPBTE: TIntegerField
       FieldName = 'APLICA_ID_CPBTE'
+      Origin = 'APLICA_ID_CPBTE'
       Required = True
     end
     object CDSMovAplicaCCCompraAPLICA_TIPOCPBTE: TStringField
       DisplayLabel = 'Tp'
       FieldName = 'APLICA_TIPOCPBTE'
+      Origin = 'APLICA_TIPOCPBTE'
       Size = 2
     end
     object CDSMovAplicaCCCompraAPLICA_CLASECPBTE: TStringField
       DisplayLabel = 'Cl'
       FieldName = 'APLICA_CLASECPBTE'
+      Origin = 'APLICA_CLASECPBTE'
       Size = 2
     end
     object CDSMovAplicaCCCompraAPLICA_NROCPBTE: TStringField
       DisplayLabel = 'Nro.Cpbte'
       FieldName = 'APLICA_NROCPBTE'
+      Origin = 'APLICA_NROCPBTE'
       EditMask = 'a-####-########;0;_'
       Size = 13
-    end
-    object CDSMovAplicaCCCompraAPLICA_NETO: TFMTBCDField
-      DisplayLabel = 'Importe'
-      FieldName = 'APLICA_NETO'
-      DisplayFormat = ',0.00'
-      Precision = 15
-      Size = 3
     end
     object CDSMovAplicaCCCompraDETALLE: TStringField
       DisplayLabel = 'Detalle'
       FieldName = 'DETALLE'
+      Origin = 'DETALLE'
     end
     object CDSMovAplicaCCCompraMUESTRAFECHACPBTE: TSQLTimeStampField
       DisplayLabel = 'Fecha Fc.'
       FieldName = 'MUESTRAFECHACPBTE'
+      Origin = 'FECHACOMPRA'
       ProviderFlags = []
-    end
-    object CDSMovAplicaCCCompraMUESTRATOTALFACTURA: TFMTBCDField
-      FieldName = 'MUESTRATOTALFACTURA'
-      ProviderFlags = []
-      Precision = 15
-      Size = 3
     end
     object CDSMovAplicaCCCompraCONCILIADO: TStringField
       FieldName = 'CONCILIADO'
+      Origin = 'CONCILIADO'
       Required = True
       FixedChar = True
       Size = 1
+    end
+    object CDSMovAplicaCCCompraAPLICA_NETO: TFloatField
+      DisplayLabel = 'Importe'
+      FieldName = 'APLICA_NETO'
+      Origin = 'APLICA_NETO'
+      DisplayFormat = ',0.00'
+    end
+    object CDSMovAplicaCCCompraIMPORTE: TFloatField
+      DisplayLabel = 'Importe'
+      FieldName = 'IMPORTE'
+      Origin = 'IMPORTE'
+      DisplayFormat = ',0.00'
+    end
+    object CDSMovAplicaCCCompraMUESTRATOTALFACTURA: TFloatField
+      FieldName = 'MUESTRATOTALFACTURA'
+      Origin = 'TOTAL'
+      ProviderFlags = []
     end
   end
   object DSMovAplicaCCCompra: TDataSource

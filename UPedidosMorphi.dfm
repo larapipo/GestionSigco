@@ -648,25 +648,21 @@ inherited FormPedidosMorphi: TFormPedidosMorphi
     ExplicitWidth = 798
     inherited btConfirma: TBitBtn
       Height = 27
-      DoubleBuffered = True
       Visible = False
       ExplicitHeight = 27
     end
     inherited btNuevo: TBitBtn
       Height = 27
-      DoubleBuffered = True
       Visible = False
       ExplicitHeight = 27
     end
     inherited btCancelar: TBitBtn
       Height = 27
-      DoubleBuffered = True
       Visible = False
       ExplicitHeight = 27
     end
     inherited btModificar: TBitBtn
       Height = 27
-      DoubleBuffered = True
       Visible = False
       ExplicitHeight = 27
     end
@@ -677,7 +673,6 @@ inherited FormPedidosMorphi: TFormPedidosMorphi
     end
     inherited btBuscar: TBitBtn
       Height = 27
-      DoubleBuffered = True
       ExplicitHeight = 27
     end
     inherited Ne: TSpeedButton
@@ -688,7 +683,6 @@ inherited FormPedidosMorphi: TFormPedidosMorphi
     inherited btBorrar: TBitBtn
       Width = 74
       Height = 27
-      DoubleBuffered = True
       Visible = False
       ExplicitWidth = 74
       ExplicitHeight = 27
@@ -696,7 +690,6 @@ inherited FormPedidosMorphi: TFormPedidosMorphi
     inherited btSalir: TBitBtn
       Left = 481
       Height = 27
-      DoubleBuffered = True
       ExplicitLeft = 481
       ExplicitHeight = 27
     end

@@ -5529,7 +5529,7 @@ object DMMain_FD: TDMMain_FD
     ParamData = <
       item
         Position = 1
-        Name = 'codigo'
+        Name = 'Codigo'
         DataType = ftString
         ParamType = ptInput
       end>
@@ -7069,10 +7069,10 @@ object DMMain_FD: TDMMain_FD
     Top = 172
     ParamData = <
       item
-        Name = 'ID'
+        Position = 1
+        Name = 'id'
         DataType = ftInteger
         ParamType = ptInput
-        Value = Null
       end>
     object QDepositoID: TIntegerField
       FieldName = 'ID'
@@ -9469,14 +9469,14 @@ object DMMain_FD: TDMMain_FD
     Top = 202
     ParamData = <
       item
-        Name = 'CODIGO'
+        Position = 1
+        Name = 'Codigo'
         DataType = ftString
         ParamType = ptInput
-        Size = 6
-        Value = Null
       end
       item
-        Name = 'LDR'
+        Position = 2
+        Name = 'ldr'
         DataType = ftInteger
         ParamType = ptInput
       end>

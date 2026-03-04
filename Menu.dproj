@@ -183,12 +183,12 @@
         <VerInfo_MinorVer>9</VerInfo_MinorVer>
         <VerInfo_Release>1</VerInfo_Release>
         <VerInfo_Locale>1033</VerInfo_Locale>
-        <VerInfo_Keys>CompanyName=;FileDescription=$(MSBuildProjectName);FileVersion=8.9.1.9;InternalName=;LegalCopyright=;LegalTrademarks=;OriginalFilename=;ProductName=$(MSBuildProjectName);ProductVersion=8.6.1.0;Comments=;ProgramID=com.embarcadero.$(MSBuildProjectName);SpecialBuild=</VerInfo_Keys>
+        <VerInfo_Keys>CompanyName=;FileDescription=$(MSBuildProjectName);FileVersion=8.9.1.10;InternalName=;LegalCopyright=;LegalTrademarks=;OriginalFilename=;ProductName=$(MSBuildProjectName);ProductVersion=8.6.1.0;Comments=;ProgramID=com.embarcadero.$(MSBuildProjectName);SpecialBuild=</VerInfo_Keys>
         <VerInfo_Debug>true</VerInfo_Debug>
         <VerInfo_PreRelease>true</VerInfo_PreRelease>
         <VerInfo_Special>true</VerInfo_Special>
         <VerInfo_AutoIncVersion>true</VerInfo_AutoIncVersion>
-        <VerInfo_Build>9</VerInfo_Build>
+        <VerInfo_Build>10</VerInfo_Build>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Cfg_2_Win64)'!=''">
         <AppDPIAwarenessMode>PerMonitorV2</AppDPIAwarenessMode>
@@ -3039,6 +3039,10 @@
         </DCCReference>
         <DCCReference Include="ULeerOrdenWP.pas">
             <Form>FormLeerOrdenWP</Form>
+        </DCCReference>
+        <DCCReference Include="ActualizaCostoUltCompra.pas">
+            <Form>frmActualizaCostoUltCompra</Form>
+            <FormType>dfm</FormType>
         </DCCReference>
         <None Include="ModelSupport_Menu\default.txvpck"/>
         <None Include="ModelSupport_Menu\ULeerOrdenWP\default.txvpck"/>

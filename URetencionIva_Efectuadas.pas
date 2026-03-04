@@ -15,7 +15,7 @@ uses
   FireDAC.Stan.Error, FireDAC.DatS, FireDAC.Phys.Intf, FireDAC.DApt.Intf,
   FireDAC.Stan.Async, FireDAC.DApt, FireDAC.Comp.DataSet, FireDAC.Comp.Client,
   frxClass, frxDBSet, JvExStdCtrls, JvCombobox, JvDBLookup,StrUtils,
-  frxExportPDF, frxExportBaseDialog, System.ImageList;
+  frxExportPDF, frxExportBaseDialog, System.ImageList, frCoreClasses;
 
 type
   TFormRetIva_EfectuadasLiq = class(TFormABMBase)

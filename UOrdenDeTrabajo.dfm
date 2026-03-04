@@ -6,6 +6,7 @@ inherited FormOrdenDeTrabajo: TFormOrdenDeTrabajo
   ClientHeight = 696
   ClientWidth = 950
   Position = poMainFormCenter
+  StyleElements = [seFont, seClient, seBorder]
   OnActivate = FormActivate
   OnCanResize = FormCanResize
   OnResize = FormResize
@@ -18,6 +19,7 @@ inherited FormOrdenDeTrabajo: TFormOrdenDeTrabajo
     Height = 620
     Align = alClient
     AutoSize = True
+    StyleElements = [seFont, seClient, seBorder]
     ExplicitTop = 23
     ExplicitWidth = 950
     ExplicitHeight = 620
@@ -3772,8 +3774,12 @@ inherited FormOrdenDeTrabajo: TFormOrdenDeTrabajo
     Top = 673
     Width = 950
     Align = alBottom
+    StyleElements = [seFont, seClient, seBorder]
     ExplicitTop = 673
     ExplicitWidth = 950
+    inherited DBStatusLabel1: TJvDBStatusLabel
+      Height = 21
+    end
     inherited sbEstado: TStatusBar
       Left = 155
       Top = -5
@@ -3799,8 +3805,8 @@ inherited FormOrdenDeTrabajo: TFormOrdenDeTrabajo
     Top = 0
     Width = 950
     Height = 23
-    ButtonHeight = 0
-    ButtonWidth = 0
+    ButtonHeight = 21
+    ButtonWidth = 52
     Caption = 'JvToolBar1'
     DrawingStyle = dsGradient
     Menu = MainMenu1
@@ -7326,7 +7332,7 @@ inherited FormOrdenDeTrabajo: TFormOrdenDeTrabajo
     Top = 376
   end
   object DSCategorias: TDataSource
-    Left = 792
+    Left = 784
     Top = 448
   end
   object DSProducto: TDataSource
