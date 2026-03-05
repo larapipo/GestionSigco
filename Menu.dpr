@@ -938,7 +938,7 @@ uses
   URferenciasTCPlataformas in 'URferenciasTCPlataformas.pas' {FormRef_TCPlataformas},
   UNovedadesFact in 'UNovedadesFact.pas' {FormListadoNovedadesFac},
   ULeerOrdenWP in 'ULeerOrdenWP.pas' {FormLeerOrdenWP},
-  ActualizaCostoUltCompra in 'ActualizaCostoUltCompra.pas' {frmActualizaCostoUltCompra};
+  ActualizaCostoUltCompra in 'ActualizaCostoUltCompra.pas' {FormActualizaCostoUltCompra};
 
 {$R *.RES}
 
@@ -963,7 +963,6 @@ begin
   Application.CreateForm(TFMenu, FMenu);
   Application.CreateForm(TdmFE1, dmFE1);
   Application.CreateForm(TdmFEx, dmFEx);
-  Application.CreateForm(TfrmActualizaCostoUltCompra, frmActualizaCostoUltCompra);
   Application.Run;
 end.
 

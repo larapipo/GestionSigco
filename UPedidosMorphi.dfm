@@ -21,7 +21,7 @@ inherited FormPedidosMorphi: TFormPedidosMorphi
       Top = 0
       Width = 798
       Height = 660
-      ActivePage = pgPedidos
+      ActivePage = pgRelaciones
       Align = alClient
       TabOrder = 0
       object pgPedidos: TTabSheet
@@ -167,6 +167,7 @@ inherited FormPedidosMorphi: TFormPedidosMorphi
           Top = 44
           Width = 782
           Height = 129
+          DataSource = DatosPedidosMorphi.DSPedCab
           Options = [dgTitles, dgIndicator, dgColumnResize, dgColLines, dgRowLines, dgTabs, dgRowSelect, dgConfirmDelete, dgCancelOnExit, dgTitleClick, dgTitleHotTrack]
           PopupMenu = PopupMenu1
           TabOrder = 0
@@ -265,6 +266,7 @@ inherited FormPedidosMorphi: TFormPedidosMorphi
           Width = 782
           Height = 320
           Anchors = [akLeft, akTop, akBottom]
+          DataSource = DatosPedidosMorphi.DSPedDet
           Options = [dgTitles, dgIndicator, dgColumnResize, dgColLines, dgRowLines, dgTabs, dgRowSelect, dgConfirmDelete, dgCancelOnExit, dgTitleClick, dgTitleHotTrack]
           TabOrder = 1
           TitleFont.Charset = DEFAULT_CHARSET
@@ -583,14 +585,14 @@ inherited FormPedidosMorphi: TFormPedidosMorphi
           LookAndFeel.SkinName = 'Coffee'
           object cxGrid1DBTableView1: TcxGridDBTableView
             PopupMenu = PopupMenu2
+            DataController.DataSource = DatosPedidosMorphi.DSPedidosMarcados
             OptionsView.GroupByBox = False
             object cxGrid1DBTableView1INDICE: TcxGridDBColumn
               DataBinding.FieldName = 'INDICE'
-              Width = 66
+              Width = 75
             end
             object cxGrid1DBTableView1CTE_CODIGO: TcxGridDBColumn
               DataBinding.FieldName = 'CTE_CODIGO'
-              Width = 89
             end
             object cxGrid1DBTableView1PREFIJO: TcxGridDBColumn
               DataBinding.FieldName = 'PREFIJO'
@@ -606,6 +608,7 @@ inherited FormPedidosMorphi: TFormPedidosMorphi
             end
             object cxGrid1DBTableView1FECHA_LIMITE: TcxGridDBColumn
               DataBinding.FieldName = 'FECHA_LIMITE'
+              Width = 71
             end
             object cxGrid1DBTableView1COD_SUCURSAL_PIDE: TcxGridDBColumn
               DataBinding.FieldName = 'COD_SUCURSAL_PIDE'
@@ -648,21 +651,25 @@ inherited FormPedidosMorphi: TFormPedidosMorphi
     ExplicitWidth = 798
     inherited btConfirma: TBitBtn
       Height = 27
+      DoubleBuffered = True
       Visible = False
       ExplicitHeight = 27
     end
     inherited btNuevo: TBitBtn
       Height = 27
+      DoubleBuffered = True
       Visible = False
       ExplicitHeight = 27
     end
     inherited btCancelar: TBitBtn
       Height = 27
+      DoubleBuffered = True
       Visible = False
       ExplicitHeight = 27
     end
     inherited btModificar: TBitBtn
       Height = 27
+      DoubleBuffered = True
       Visible = False
       ExplicitHeight = 27
     end
@@ -673,6 +680,7 @@ inherited FormPedidosMorphi: TFormPedidosMorphi
     end
     inherited btBuscar: TBitBtn
       Height = 27
+      DoubleBuffered = True
       ExplicitHeight = 27
     end
     inherited Ne: TSpeedButton
@@ -683,6 +691,7 @@ inherited FormPedidosMorphi: TFormPedidosMorphi
     inherited btBorrar: TBitBtn
       Width = 74
       Height = 27
+      DoubleBuffered = True
       Visible = False
       ExplicitWidth = 74
       ExplicitHeight = 27
@@ -690,6 +699,7 @@ inherited FormPedidosMorphi: TFormPedidosMorphi
     inherited btSalir: TBitBtn
       Left = 481
       Height = 27
+      DoubleBuffered = True
       ExplicitLeft = 481
       ExplicitHeight = 27
     end
@@ -1407,6 +1417,7 @@ inherited FormPedidosMorphi: TFormPedidosMorphi
     end
   end
   object DSRelacion: TDataSource
+    DataSet = DatosPedidosMorphi.CDSRelacion
     Left = 164
     Top = 392
   end
@@ -1513,7 +1524,7 @@ inherited FormPedidosMorphi: TFormPedidosMorphi
         ParamType = ptInput
       end>
     ProviderName = 'DSPComprobantePorDefecto'
-    Left = 424
+    Left = 416
     Top = 459
   end
   object QRubro: TFDQuery

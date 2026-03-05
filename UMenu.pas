@@ -2022,6 +2022,9 @@ uses
     TMSFNCRibbonDefaultToolBarButton5: TTMSFNCRibbonDefaultToolBarButton;
     TMSFNCRibbonDefaultToolBarButton6: TTMSFNCRibbonDefaultToolBarButton;
     TMSFNCRibbonDefaultToolBarButton15: TTMSFNCRibbonDefaultToolBarButton;
+    ActualizarCostoUltimaCompa: TAction;
+    ActualizarCostoporlaUltimaCompa1: TMenuItem;
+    N89: TMenuItem;
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
     procedure ProveedoresExecute(Sender: TObject);
     procedure ClientesExecute(Sender: TObject);
@@ -2695,6 +2698,7 @@ uses
     procedure ListadoNovedadesFacturasExecute(Sender: TObject);
     procedure PeidosWebExecute(Sender: TObject);
     procedure tbpMenuGeneralTabClick(Sender: TObject; Page: Integer);
+    procedure ActualizarCostoUltimaCompaExecute(Sender: TObject);
   private
     procedure ThreadElectronicaFin(Sender: TObject);
     procedure ThreadPedidoTxFin(Sender: TObject);
@@ -2919,7 +2923,7 @@ uses
   UEmisionRotulos_2,SYS_InterfaceFE,FE_Utils2, UConultasIA,
   UArticulosEceptuadosIVA, UUsuariosAdminNP_Movil, URegistroDiarioOP,
   UControlTransacciones, UReasignacionPartesDiarios, URferenciasTCPlataformas,
-  UCargaPlataformaJson, UNovedadesFact, ULeerOrdenWP;
+  UCargaPlataformaJson, UNovedadesFact, ULeerOrdenWP, ActualizaCostoUltCompra;
 
 {$R *.DFM}
 // Ejemplo tomado de http://stackoverflow.com/questions/2...event-properly
@@ -6067,6 +6071,13 @@ procedure TFMenu.ActualizaCostoVta_excelExecute(Sender: TObject);
       FormActualizaCostoVta_excel := TFormActualizaCostoVta_excel.Create(Application);
     FormActualizaCostoVta_excel.Show;
   end;
+
+procedure TFMenu.ActualizarCostoUltimaCompaExecute(Sender: TObject);
+begin
+  IF NoT(Assigned(FormActualizaCostoUltCompra)) Then
+    FormActualizaCostoUltCompra := TFormActualizaCostoUltCompra.Create(Application);
+  FormActualizaCostoUltCompra.Show;
+end;
 
 procedure TFMenu.ComprobantesAfipExecute(Sender: TObject);
   begin

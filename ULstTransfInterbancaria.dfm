@@ -1,7 +1,7 @@
 object FormLstTransferenciasInterBancarias: TFormLstTransferenciasInterBancarias
   Left = 0
   Top = 0
-  Caption = 'Listado TransferenciasInterBancarias'
+  Caption = 'Listado  de Transferencias InterBancarias'
   ClientHeight = 631
   ClientWidth = 943
   Color = clBtnFace

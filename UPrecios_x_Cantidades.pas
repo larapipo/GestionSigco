@@ -21,6 +21,7 @@ type
     procedure btCerrarClick(Sender: TObject);
     procedure dbgPrecioCantidadColEnter(Sender: TObject);
     procedure dbgPrecioCantidadKeyPress(Sender: TObject; var Key: Char);
+    procedure FormResize(Sender: TObject);
   private
     { Private declarations }
   public
@@ -71,6 +72,13 @@ end;
 procedure TFormPreciosPorCantidades.FormDestroy(Sender: TObject);
 begin
   FormPreciosPorCantidades:=nil;
+end;
+
+procedure TFormPreciosPorCantidades.FormResize(Sender: TObject);
+begin
+  if FormPreciosPorCantidades<>nil Then
+    if FormPreciosPorCantidades.Width>655 Then
+      FormPreciosPorCantidades.Width:=655;
 end;
 
 end.

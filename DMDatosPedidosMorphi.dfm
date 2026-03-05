@@ -338,14 +338,14 @@ object DatosPedidosMorphi: TDatosPedidosMorphi
         Name = 'IDDESDE'
         DataType = ftLargeint
         ParamType = ptInput
-        Value = Null
+        Value = 0
       end
       item
         Position = 2
         Name = 'IDHASTA'
         DataType = ftLargeint
         ParamType = ptInput
-        Value = Null
+        Value = 0
       end>
   end
   object QPedidosMarcados: TFDQuery

@@ -2,47 +2,56 @@ inherited FormListadoRetencionesOPago_IB: TFormListadoRetencionesOPago_IB
   Left = 291
   Top = 87
   Caption = 'Retenciones de Ing. Brutos a Proveedores'
-  ClientHeight = 609
-  ClientWidth = 841
+  ClientHeight = 653
+  ClientWidth = 851
   StyleElements = [seFont, seClient, seBorder]
-  ExplicitWidth = 859
-  ExplicitHeight = 650
+  OnResize = FormResize
+  ExplicitWidth = 869
+  ExplicitHeight = 694
   TextHeight = 13
   inherited pnPrincipal: TPanel
-    Width = 841
-    Height = 537
+    Width = 851
+    Height = 600
+    Align = alClient
     StyleElements = [seFont, seClient, seBorder]
-    ExplicitWidth = 841
+    ExplicitWidth = 851
     ExplicitHeight = 537
     object lbl2: TLabel
       Left = 8
-      Top = 491
+      Top = 544
       Width = 13
-      Height = 13
+      Height = 12
+      Anchors = [akLeft, akBottom]
       Caption = 'Tp'
       FocusControl = dbeTIPOCPBTE_ORIGEN
+      ExplicitTop = 499
     end
     object lbl3: TLabel
       Left = 41
-      Top = 493
+      Top = 546
       Width = 9
-      Height = 13
+      Height = 12
+      Anchors = [akLeft, akBottom]
       Caption = 'Cl'
       FocusControl = dbeCLASECPBTE_ORIGEN
+      ExplicitTop = 501
     end
     object lbl4: TLabel
       Left = 77
-      Top = 493
+      Top = 546
       Width = 48
-      Height = 13
+      Height = 12
+      Anchors = [akLeft, akBottom]
       Caption = 'Nro.Cpbte'
       FocusControl = dbeNROCPBTE_ORIGEN
+      ExplicitTop = 501
     end
     object lbl1: TLabel
       Left = 8
-      Top = 474
-      Width = 92
+      Top = 525
+      Width = 105
       Height = 16
+      Anchors = [akLeft, akBottom]
       Caption = 'Cpbte.Origen'
       FocusControl = dbeNROCPBTE_ORIGEN
       Font.Charset = DEFAULT_CHARSET
@@ -51,6 +60,7 @@ inherited FormListadoRetencionesOPago_IB: TFormListadoRetencionesOPago_IB
       Font.Name = 'MS Sans Serif'
       Font.Style = [fsBold]
       ParentFont = False
+      ExplicitTop = 488
     end
     object RxLabel1: TJvLabel
       Left = 520
@@ -106,10 +116,11 @@ inherited FormListadoRetencionesOPago_IB: TFormListadoRetencionesOPago_IB
       OnClick = UpDown1Click
     end
     object dbgDetalle: TDBGrid
-      Left = 8
-      Top = 60
-      Width = 825
-      Height = 408
+      Left = 4
+      Top = 66
+      Width = 842
+      Height = 452
+      Anchors = [akLeft, akTop, akBottom]
       Ctl3D = False
       DataSource = DSRetencionesIB
       DrawingStyle = gdsClassic
@@ -211,38 +222,45 @@ inherited FormListadoRetencionesOPago_IB: TFormListadoRetencionesOPago_IB
           Title.Font.Height = -11
           Title.Font.Name = 'MS Sans Serif'
           Title.Font.Style = [fsBold]
+          Width = 92
           Visible = True
         end>
     end
     object dbeTIPOCPBTE_ORIGEN: TDBEdit
       Left = 8
-      Top = 510
+      Top = 563
       Width = 30
       Height = 21
+      Anchors = [akLeft, akBottom]
       DataField = 'TIPOCPBTE_ORIGEN'
       DataSource = DSRetencionesIB
       Enabled = False
       TabOrder = 4
+      ExplicitTop = 526
     end
     object dbeCLASECPBTE_ORIGEN: TDBEdit
       Left = 41
-      Top = 510
+      Top = 563
       Width = 30
       Height = 21
+      Anchors = [akLeft, akBottom]
       DataField = 'CLASECPBTE_ORIGEN'
       DataSource = DSRetencionesIB
       Enabled = False
       TabOrder = 5
+      ExplicitTop = 526
     end
     object dbeNROCPBTE_ORIGEN: TDBEdit
       Left = 77
-      Top = 510
+      Top = 563
       Width = 173
       Height = 21
+      Anchors = [akLeft, akBottom]
       DataField = 'NROCPBTE_ORIGEN'
       DataSource = DSRetencionesIB
       Enabled = False
       TabOrder = 6
+      ExplicitTop = 526
     end
     object Desde: TJvDateEdit
       Left = 520
@@ -302,7 +320,7 @@ inherited FormListadoRetencionesOPago_IB: TFormListadoRetencionesOPago_IB
     end
     object Hasta: TJvDateEdit
       Left = 632
-      Top = 20
+      Top = 18
       Width = 89
       Height = 21
       Glyph.Data = {
@@ -360,7 +378,7 @@ inherited FormListadoRetencionesOPago_IB: TFormListadoRetencionesOPago_IB
       Left = 8
       Top = 0
       Width = 185
-      Height = 54
+      Height = 63
       Caption = 'Informa en ARBA'
       ItemIndex = 2
       Items.Strings = (
@@ -397,10 +415,11 @@ inherited FormListadoRetencionesOPago_IB: TFormListadoRetencionesOPago_IB
     end
   end
   inherited ToolBar1: TToolBar
-    Top = 537
-    Width = 841
+    Top = 600
+    Width = 851
+    Align = alBottom
     ExplicitTop = 537
-    ExplicitWidth = 841
+    ExplicitWidth = 851
     inherited btConfirma: TBitBtn
       Visible = False
     end
@@ -494,19 +513,20 @@ inherited FormListadoRetencionesOPago_IB: TFormListadoRetencionesOPago_IB
     end
   end
   inherited Panel1: TPanel
-    Top = 567
-    Width = 841
+    Top = 630
+    Width = 851
+    Align = alBottom
     StyleElements = [seFont, seClient, seBorder]
     ExplicitTop = 567
-    ExplicitWidth = 841
+    ExplicitWidth = 851
     inherited DBStatusLabel1: TJvDBStatusLabel
       Height = 21
       Visible = False
     end
     inherited sbEstado: TStatusBar
-      Width = 752
+      Width = 762
       OnDblClick = sbEstadoDblClick
-      ExplicitWidth = 752
+      ExplicitWidth = 762
     end
   end
   inherited ActionList1: TActionList
@@ -535,9 +555,13 @@ inherited FormListadoRetencionesOPago_IB: TFormListadoRetencionesOPago_IB
       Caption = 'Export To XLS Web'
       OnExecute = ExportToXLSExecute
     end
+    object ExportarRetencionesIIB_V2: TAction
+      Caption = 'Exportar Retenciones de IIB v.2'
+      OnExecute = ExportarRetencionesIIB_V2Execute
+    end
   end
   inherited DSBase: TDataSource
-    Left = 464
+    Left = 552
   end
   inherited ImageList1: TImageList
     Bitmap = {
@@ -944,9 +968,12 @@ inherited FormListadoRetencionesOPago_IB: TFormListadoRetencionesOPago_IB
       807F807F807FC03FC0FFC0FFC0FFE07F00000000000000000000000000000000
       000000000000}
   end
+  inherited JvFormStorage: TJvFormStorage
+    PreventResize = False
+  end
   inherited QUltimoCodigo: TSQLQuery
-    Left = 104
-    Top = 216
+    Left = 80
+    Top = 312
   end
   inherited QBrowse2: TFDQuery
     Left = 64
@@ -987,8 +1014,8 @@ inherited FormListadoRetencionesOPago_IB: TFormListadoRetencionesOPago_IB
     Top = 264
   end
   object PopupMenu: TPopupMenu
-    Left = 272
-    Top = 128
+    Left = 328
+    Top = 120
     object ExportarenTxt1: TMenuItem
       Action = ExportarTXTSiap
     end
@@ -1000,6 +1027,12 @@ inherited FormListadoRetencionesOPago_IB: TFormListadoRetencionesOPago_IB
     end
     object ExportToXLSWeb1: TMenuItem
       Action = ExportToXLS
+    end
+    object N1: TMenuItem
+      Caption = '-'
+    end
+    object ExportarRetencionesdeIIBv21: TMenuItem
+      Action = ExportarRetencionesIIB_V2
     end
   end
   object SaveDialog: TSaveDialog
@@ -1039,8 +1072,8 @@ inherited FormListadoRetencionesOPago_IB: TFormListadoRetencionesOPago_IB
     DataSet = CDSRetIB
     BCDToCurrency = False
     DataSetOptions = []
-    Left = 432
-    Top = 384
+    Left = 440
+    Top = 400
     FieldDefs = <
       item
         FieldName = 'ID'
@@ -1358,6 +1391,16 @@ inherited FormListadoRetencionesOPago_IB: TFormListadoRetencionesOPago_IB
     object CDSRetIBFECHA: TSQLTimeStampField
       DisplayLabel = 'Fecha'
       FieldName = 'FECHA'
+    end
+    object CDSRetIBALICUOTA: TStringField
+      FieldKind = fkCalculated
+      FieldName = 'ALICUOTA'
+      Calculated = True
+    end
+    object CDSRetIBMONTOIMPONIBLE: TStringField
+      FieldKind = fkCalculated
+      FieldName = 'MONTOIMPONIBLE'
+      Calculated = True
     end
   end
   object DSPRetIB: TDataSetProvider

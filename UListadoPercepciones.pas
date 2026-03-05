@@ -143,6 +143,8 @@ type
     CDSPercepTCFECHAFISCAL: TSQLTimeStampField;
     CDSPercepcionesFECHA: TSQLTimeStampField;
     CDSPercepcionesFECHAFISCAL: TSQLTimeStampField;
+    N1: TMenuItem;
+    ExportarPercepcionIB_Menusal_v2: TAction;
     procedure UpDown1Click(Sender: TObject; Button: TUDBtnType);
     procedure FormShow(Sender: TObject);
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
@@ -161,6 +163,7 @@ type
       Field: TField);
     procedure FormResize(Sender: TObject);
     procedure dbgDetalleDblClick(Sender: TObject);
+    procedure ExportarPercepcionIB_Menusal_v2Execute(Sender: TObject);
   private
     { Private declarations }
   public
@@ -404,6 +407,81 @@ begin
     end;
   CDSPercepciones.First;
 
+end;
+
+procedure TFormListaPercepciones.ExportarPercepcionIB_Menusal_v2Execute(
+  Sender: TObject);
+var
+  ArchiTxt: TextFile;
+  Cuit,Fecha,TipoCpbte,Importe,Letra,Alicuota,MontoImponible: String;
+  ImporteInt:Integer;
+begin
+  if VirtualUI.Active then
+    VirtualUI.StdDialogs:=False;
+
+  SaveDialog1.FileName:='AR-'+DMMain_FD.GetCuitEmpresa+' Percepciones IIBB'+FormatDateTime('YYYYMM',Desde.Date);
+  SaveDialog1.DefaultExt:='txt';
+
+  SaveDialog1.FileName:=SaveDialog1.FileName+'.'+SaveDialog1.DefaultExt;
+
+  CDSPercepciones.First;
+  if SaveDialog1.Execute Then
+  if SaveDialog1.FileName<>'' then
+    begin
+      if Not(AnsiEndsText('txt',SaveDialog1.FileName)) then
+        SaveDialog1.FileName:=SaveDialog1.FileName+'.'+SaveDialog1.DefaultExt;
+
+      AssignFile(ArchiTxt, SaveDialog1.FileName);
+      Rewrite(ArchiTxt);
+      while not (CDSPercepciones.Eof) do
+        begin
+          if CDSPercepcionesTIPOPERCEPCION.Value='IIBB' Then
+            begin
+              Cuit   := CDSPercepcionesCUIT.AsString;
+              Fecha  := FormatDateTime('dd/mm/yyyy',CDSPercepcionesFECHAFISCAL.AsDateTime);
+              Importe:= '';
+              if (CDSPercepcionesTIPOCPBTE.Value='FC') or (CDSPercepcionesTIPOCPBTE.Value='FO') or (CDSPercepcionesTIPOCPBTE.Value='GX')
+               or (CDSPercepcionesTIPOCPBTE.Value='LQ') Then
+                TipoCpbte:='F'
+              else
+                if CDSPercepcionesTIPOCPBTE.Value='NC' Then
+                  TipoCpbte:='C'
+                else
+                  if CDSPercepcionesTIPOCPBTE.Value='ND' Then
+                    TipoCpbte:='D';
+              Importe        := FormatFloat('00000000.00',CDSPercepcionesIMPORTE.AsFloat);
+              ImporteInt     := Trunc(CDSPercepcionesIMPORTE.AsFloat*100);
+              Alicuota       := FormatFloat('00.00',CDSPercepcionesTASA.AsFloat);
+              MontoImponible := FormatFloat('00000000000.00',CDSPercepcionesNETO.AsFloat);
+              if TipoCpbte='C' then
+                begin
+                  delete(importe,1,1);
+                  Importe:='-'+Importe;
+                end;
+              Letra:=Copy(CDSPercepcionesNROCPBTE.AsString,1,1);
+              if (Not(Letra[1] in ['A','B','C','D'])) Then Letra:='A';
+              if ImporteInt>0 then
+              WriteLn(ArchiTxt,Cuit,                                     //Cuit
+                               Fecha,                                    //Fecha dd/mm/aaaa
+                               TipoCpbte,                                //Tipo Cpbte
+                               Letra, //Letra Comprobante
+                               '0'+Copy(CDSPercepcionesNROCPBTE.AsString,2,4),
+                               Copy(CDSPercepcionesNROCPBTE.AsString,6,8),
+                               MontoImponible,
+                               Alicuota,
+                               Importe,
+                               fecha,
+                               'A'); //Importe con 2 digitos
+            end;
+          CDSPercepciones.Next;
+        end;
+      CloseFile(ArchiTxt);
+      if VirtualUI.Active then
+        VirtualUI.DownloadFile(SaveDialog1.FileName)
+      else
+        ShowMessage('Archivo Generado Exitosamente en .....'+SaveDialog1.FileName+'..... ');
+    end;
+  CDSPercepciones.First;
 end;
 
 procedure TFormListaPercepciones.ExportarXLSExecute(Sender: TObject);

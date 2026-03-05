@@ -570,14 +570,12 @@ inherited FormListaPercepciones: TFormListaPercepciones
     ExplicitWidth = 1027
     inherited btConfirma: TBitBtn
       Width = 31
-      DoubleBuffered = True
       Visible = False
       ExplicitWidth = 31
     end
     inherited btNuevo: TBitBtn
       Left = 33
       Width = 24
-      DoubleBuffered = True
       Visible = False
       ExplicitLeft = 33
       ExplicitWidth = 24
@@ -585,7 +583,6 @@ inherited FormListaPercepciones: TFormListaPercepciones
     inherited btCancelar: TBitBtn
       Left = 57
       Width = 32
-      DoubleBuffered = True
       Visible = False
       ExplicitLeft = 57
       ExplicitWidth = 32
@@ -593,7 +590,6 @@ inherited FormListaPercepciones: TFormListaPercepciones
     inherited btModificar: TBitBtn
       Left = 89
       Width = 32
-      DoubleBuffered = True
       Visible = False
       ExplicitLeft = 89
       ExplicitWidth = 32
@@ -604,7 +600,6 @@ inherited FormListaPercepciones: TFormListaPercepciones
     end
     inherited btBuscar: TBitBtn
       Left = 136
-      DoubleBuffered = True
       ExplicitLeft = 136
     end
     inherited Ne: TSpeedButton
@@ -613,13 +608,11 @@ inherited FormListaPercepciones: TFormListaPercepciones
     end
     inherited btBorrar: TBitBtn
       Left = 226
-      DoubleBuffered = True
       Visible = False
       ExplicitLeft = 226
     end
     inherited btSalir: TBitBtn
       Left = 301
-      DoubleBuffered = True
       ExplicitLeft = 301
     end
     object ToolButton1: TToolButton
@@ -744,12 +737,13 @@ inherited FormListaPercepciones: TFormListaPercepciones
     ExplicitTop = 608
     ExplicitWidth = 1027
     inherited DBStatusLabel1: TJvDBStatusLabel
+      Height = 21
       Visible = False
     end
     inherited sbEstado: TStatusBar
-      Width = 865
+      Width = 938
       OnDblClick = sbEstadoDblClick
-      ExplicitWidth = 865
+      ExplicitWidth = 938
     end
   end
   inherited ActionList1: TActionList
@@ -780,6 +774,10 @@ inherited FormListaPercepciones: TFormListaPercepciones
     object ExportarPercepcionesIVA: TAction
       Caption = 'Exportar Percepciones IVA'
       OnExecute = ExportarPercepcionesIVAExecute
+    end
+    object ExportarPercepcionIB_Menusal_v2: TAction
+      Caption = 'ExportarPercepcionIB_Menusal_v2'
+      OnExecute = ExportarPercepcionIB_Menusal_v2Execute
     end
   end
   inherited ImageList1: TImageList
@@ -1324,6 +1322,9 @@ inherited FormListaPercepciones: TFormListaPercepciones
     object ExportarPercepcionesIVA1: TMenuItem
       Action = ExportarPercepcionesIVA
     end
+    object N1: TMenuItem
+      Caption = '-'
+    end
   end
   object DataToAscii1: TDataToAscii
     DataSet = CDSPercepciones
@@ -1669,8 +1670,8 @@ inherited FormListaPercepciones: TFormListaPercepciones
   object dxComponentPrinter1: TdxComponentPrinter
     CurrentLink = dxComponentPrinter1Link1
     Version = 0
-    Left = 636
-    Top = 295
+    Left = 732
+    Top = 279
     PixelsPerInch = 96
     object dxComponentPrinter1Link1: TdxGridReportLink
       Active = True

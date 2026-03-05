@@ -41,13 +41,8 @@ inherited FormPromo_x_Cant: TFormPromo_x_Cant
       Anchors = [akLeft, akTop, akRight, akBottom]
       TabOrder = 1
       object cxGrid1DBTableView1: TcxGridDBTableView
-        Navigator.Buttons.CustomButtons = <>
-        ScrollbarAnnotations.CustomAnnotations = <>
         DataController.DataSource = DSArtPromo
         DataController.Options = [dcoAssignGroupingValues, dcoAssignMasterDetailKeys, dcoSaveExpanding, dcoImmediatePost]
-        DataController.Summary.DefaultGroupSummaryItems = <>
-        DataController.Summary.FooterSummaryItems = <>
-        DataController.Summary.SummaryGroups = <>
         OptionsView.GroupByBox = False
         Styles.Group = cxStyle1
         object cxGrid1DBTableView1CODIGO: TcxGridDBColumn
@@ -580,10 +575,6 @@ inherited FormPromo_x_Cant: TFormPromo_x_Cant
   inherited JvFormStorage: TJvFormStorage
     Options = [fpState, fpSize, fpLocation]
     PreventResize = False
-  end
-  inherited QBrowse: TSQLQuery
-    Left = 16
-    Top = 432
   end
   inherited QUltimoCodigo: TSQLQuery
     Left = 24

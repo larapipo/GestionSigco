@@ -1674,8 +1674,8 @@ object DatosStock: TDatosStock
         ParamType = ptInput
       end>
     ProviderName = 'DSPBuscaTablaPrecioDet'
-    Left = 504
-    Top = 440
+    Left = 488
+    Top = 416
     object CDSBuscaTablaPrecioDetCODIGO: TIntegerField
       DisplayLabel = 'Codigo'
       DisplayWidth = 10
@@ -1717,8 +1717,8 @@ object DatosStock: TDatosStock
     Aggregates = <>
     Params = <>
     ProviderName = 'DSPBuscaTablaPrecioCab'
-    Left = 504
-    Top = 392
+    Left = 488
+    Top = 360
     object CDSBuscaTablaPrecioCabID: TIntegerField
       DisplayLabel = 'Id'
       DisplayWidth = 10

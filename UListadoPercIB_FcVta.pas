@@ -117,6 +117,11 @@ type
     pnPie: TPanel;
     edIIBB: TMaskEdit;
     edTotalFC: TMaskEdit;
+    ExportarPercepccionesIIBB_V2: TAction;
+    N2: TMenuItem;
+    ExportarPercepccionesIIBBV21: TMenuItem;
+    CDSPercepcionesALICUOTA: TStringField;
+    CDSPercepcionesPERCEPCION_IB_TASA: TFloatField;
     procedure UpDown1Click(Sender: TObject; Button: TUDBtnType);
     procedure FormShow(Sender: TObject);
     procedure ImprimirExecute(Sender: TObject);
@@ -132,6 +137,7 @@ type
     procedure dbgRetencionesDblClick(Sender: TObject);
     procedure ExportarTexto_3Execute(Sender: TObject);
     procedure ExportarXLSExecute(Sender: TObject);
+    procedure ExportarPercepccionesIIBB_V2Execute(Sender: TObject);
   private
     { Private declarations }
   public
@@ -352,6 +358,9 @@ begin
         if (cbSeparador.Text=',') then
           CDSPercepcionesTOTAL_STR.Value     := FormatFloat('00000000,00',CDSPercepcionesTOTAL_CALCULADO.AsFloat);
     end;
+  CDSPercepcionesALICUOTA.Value  := FormatFloat('00.00',CDSPercepcionesPERCEPCION_IB_TASA.AsFloat)
+
+
 end;
 
 procedure TFormListadoPercIB_FcVta.dbgRetencionesDblClick(Sender: TObject);
@@ -376,6 +385,82 @@ begin
         FormCpbteCtdo_2.Recuperar.Execute;
         FormCpbteCtdo_2.Show;
       end;
+end;
+
+procedure TFormListadoPercIB_FcVta.ExportarPercepccionesIIBB_V2Execute(
+  Sender: TObject);
+var
+  ArchiTxt: TextFile;
+  Nombre,Cuit,Fecha,TipoAfip,Letra,SucFac,NroFac,Total,Percep,TipoOp,Alicuota: String;
+  i:byte;
+  y,m,d:Word;
+  ano,mes:String;
+begin
+ if VirtualUI.Active then
+    VirtualUI.StdDialogs:=False;
+ DecodeDate(Desde.Date,y,m,d);
+ ano:=IntToStr(y);
+ mes:=IntToStr(m);
+ mes:=Copy('00',1,2-length(mes))+mes;
+ cuit:=CDSEmpresaCUIT.Value;
+ while Pos('-',cuit)>0 do
+   Delete(cuit,Pos('-',cuit),1);
+ case rgInforma.ItemIndex of
+   0:nombre:='AR'+'-'+Cuit+'-'+ano+mes+'1-7'+'-'+'LOTE1';
+   1:nombre:='AR'+'-'+Cuit+'-'+ano+mes+'2-7'+'-'+'LOTE1';
+   2:nombre:='AR'+'-'+Cuit+'-'+ano+mes+'0-7'+'-'+'LOTE1';
+ end;
+  //nombre:='AR'+Cuit+ano+mes+'07'+'LOTE1';
+// nombre:='AR'+'-'+Cuit+'-'+ano+mes+'07'+'-'+'LOTE1';
+ if not DirectoryExists(ExtractFilePath(ParamStr(0))+'Archivos Temporales') then
+    CreateDir(ExtractFilePath(ParamStr(0))+'Archivos Temporales');
+  if rgInforma.ItemIndex=2 then
+    DataToTxtWeb.Fields[8].Save:=False
+  else
+    DataToTxtWeb.Fields[8].Save:=True;
+
+  SaveDialog.DefaultExt:='txt';
+  SaveDialog.FileName  :=nombre;
+
+  SaveDialog.FileName:=SaveDialog.FileName+'.'+SaveDialog.DefaultExt;
+
+  CDSPercepciones.First;
+  if SaveDialog.Execute Then
+    if SaveDialog.FileName<>'' then
+
+    begin
+      AssignFile(ArchiTxt, SaveDialog.FileName);
+      Rewrite(ArchiTxt);
+      while not (CDSPercepciones.Eof) do
+        begin
+          Cuit    := CDSPercepcionesCUIT.AsString;
+          Fecha   := FormatDateTime('dd/mm/yyyy',CDSPercepcionesFECHAVTA.AsDateTime);
+          TipoAfip:= CDSPercepcionesTIPO_CPBTE_AFIP.AsString;
+          Letra   := CDSPercepcionesLETRAFAC.AsString;
+          SucFac  := CDSPercepcionesSUCFAC.AsString;
+          NroFac  := CDSPercepcionesNUMEROFAC.AsString;
+          Total   := CDSPercepcionesTOTAL_STR.AsString;
+          Percep  := CDSPercepcionesPERCEPCION_STR.AsString;
+          Fecha   := FormatDateTime('dd/mm/yyyy',CDSPercepcionesFECHAVTA.AsDateTime);
+          Alicuota:= CDSPercepcionesALICUOTA.AsString;
+          TipoOp  := CDSPercepcionesTIPOOP.AsString;
+          if rgInforma.ItemIndex=2 then
+            WriteLn(ArchiTxt,Cuit,Fecha ,TipoAfip,Letra,SucFac,NroFac,
+                             Total,Percep,TipoOp)
+          else
+            WriteLn(ArchiTxt,Cuit,Fecha ,TipoAfip,Letra,SucFac,NroFac,
+                             Alicuota ,Total,Percep,Fecha,TipoOp);
+
+
+          CDSPercepciones.Next;
+        end;
+      CloseFile(ArchiTxt);
+      if VirtualUI.Active then
+          VirtualUI.DownloadFile(SaveDialog.FileName)
+      else
+        ShowMessage('Archivo Generado Exitosamente en .....'+SaveDialog.FileName+'..... ');
+    end;
+  CDSPercepciones.First;
 end;
 
 procedure TFormListadoPercIB_FcVta.ExportarTexto_3Execute(Sender: TObject);

@@ -4335,11 +4335,9 @@ begin
        FormPreciosPorCantidades.Visible:=True;
        FormPreciosPorCantidades.Show;
        FormPreciosPorCantidades.BringToFront;
-
      end
    else
      FormPreciosPorCantidades.Visible:=False;
-
 end;
 
 

@@ -1164,3 +1164,33 @@ PCDELPHI12	Tue Mar 03 11:39:42 2026
 	Uncommitted work may have been lost.
 	Error reading data from the connection.
 
+
+PCDELPHI12	Thu Mar 05 13:01:25 2026
+	INET/inet_error: read errno = 10054, server host = 26.109.142.119, address = 26.109.142.119/3050
+
+
+PCDELPHI12	Thu Mar 05 13:01:25 2026
+	REMOTE INTERFACE/gds__detach: Unsuccesful detach from database.
+	Uncommitted work may have been lost.
+	Error writing data to the connection.
+
+
+PCDELPHI12	Thu Mar 05 13:02:54 2026
+	INET/inet_error: read errno = 10054, server host = 26.109.142.119, address = 26.109.142.119/3050
+
+
+PCDELPHI12	Thu Mar 05 13:02:54 2026
+	REMOTE INTERFACE/gds__detach: Unsuccesful detach from database.
+	Uncommitted work may have been lost.
+	Error reading data from the connection.
+
+
+PCDELPHI12	Thu Mar 05 15:48:18 2026
+	XNET error: Server shutdown detected
+
+
+PCDELPHI12	Thu Mar 05 15:48:18 2026
+	REMOTE INTERFACE/gds__detach: Unsuccesful detach from database.
+	Uncommitted work may have been lost.
+	Error writing data to the connection.
+

@@ -1,34 +1,34 @@
 inherited FormLstPercepcionesIvaVta: TFormLstPercepcionesIvaVta
   Caption = 'Listado Percepciones Iva en Ventas'
   ClientHeight = 616
-  ClientWidth = 936
+  ClientWidth = 1021
   StyleElements = [seFont, seClient, seBorder]
-  ExplicitWidth = 954
+  ExplicitWidth = 1039
   ExplicitHeight = 657
   TextHeight = 13
   inherited pnPrincipal: TPanel
-    Width = 936
+    Width = 1021
     Height = 563
     Align = alClient
     StyleElements = [seFont, seClient, seBorder]
-    ExplicitWidth = 1025
+    ExplicitWidth = 936
     ExplicitHeight = 563
     object pnCabecera: TPanel
       Left = 0
       Top = 0
-      Width = 936
+      Width = 1021
       Height = 73
       Align = alTop
       BevelOuter = bvNone
       Color = clMenuHighlight
       ParentBackground = False
       TabOrder = 0
-      ExplicitWidth = 1025
+      ExplicitWidth = 936
       DesignSize = (
-        936
+        1021
         73)
       object RxLabel1: TJvLabel
-        Left = 701
+        Left = 786
         Top = 6
         Width = 33
         Height = 13
@@ -50,7 +50,7 @@ inherited FormLstPercepcionesIvaVta: TFormLstPercepcionesIvaVta
         ExplicitLeft = 960
       end
       object RxLabel3: TJvLabel
-        Left = 805
+        Left = 890
         Top = 6
         Width = 30
         Height = 13
@@ -105,7 +105,7 @@ inherited FormLstPercepcionesIvaVta: TFormLstPercepcionesIvaVta
         HotTrackFont.Style = []
       end
       object Hasta: TJvDateEdit
-        Left = 805
+        Left = 890
         Top = 27
         Width = 97
         Height = 21
@@ -160,10 +160,10 @@ inherited FormLstPercepcionesIvaVta: TFormLstPercepcionesIvaVta
         PopupColor = clBtnFace
         ShowNullDate = False
         TabOrder = 0
-        ExplicitLeft = 894
+        ExplicitLeft = 805
       end
       object Desde: TJvDateEdit
-        Left = 701
+        Left = 786
         Top = 27
         Width = 97
         Height = 21
@@ -218,10 +218,10 @@ inherited FormLstPercepcionesIvaVta: TFormLstPercepcionesIvaVta
         PopupColor = clBtnFace
         ShowNullDate = False
         TabOrder = 1
-        ExplicitLeft = 790
+        ExplicitLeft = 701
       end
       object UpDown1: TUpDown
-        Left = 905
+        Left = 990
         Top = 26
         Width = 18
         Height = 22
@@ -233,7 +233,7 @@ inherited FormLstPercepcionesIvaVta: TFormLstPercepcionesIvaVta
         ShowHint = True
         TabOrder = 2
         OnClick = UpDown1Click
-        ExplicitLeft = 994
+        ExplicitLeft = 905
       end
       object ComboBox: TComboBox
         Left = 7
@@ -745,7 +745,7 @@ inherited FormLstPercepcionesIvaVta: TFormLstPercepcionesIvaVta
     object dbgRetenciones: TDBGrid
       Left = 0
       Top = 73
-      Width = 936
+      Width = 1021
       Height = 455
       TabStop = False
       Align = alClient
@@ -913,7 +913,7 @@ inherited FormLstPercepcionesIvaVta: TFormLstPercepcionesIvaVta
     object Panel2: TPanel
       Left = 0
       Top = 528
-      Width = 936
+      Width = 1021
       Height = 35
       Align = alBottom
       BevelOuter = bvNone
@@ -921,12 +921,12 @@ inherited FormLstPercepcionesIvaVta: TFormLstPercepcionesIvaVta
       Enabled = False
       ParentBackground = False
       TabOrder = 2
-      ExplicitWidth = 1025
+      ExplicitWidth = 936
       DesignSize = (
-        936
+        1021
         35)
       object JvLabel2: TJvLabel
-        Left = 493
+        Left = 578
         Top = 10
         Width = 46
         Height = 13
@@ -948,7 +948,7 @@ inherited FormLstPercepcionesIvaVta: TFormLstPercepcionesIvaVta
         ExplicitLeft = 767
       end
       object JvLabel3: TJvLabel
-        Left = 294
+        Left = 379
         Top = 10
         Width = 43
         Height = 13
@@ -970,7 +970,7 @@ inherited FormLstPercepcionesIvaVta: TFormLstPercepcionesIvaVta
         ExplicitLeft = 568
       end
       object JvLabel4: TJvLabel
-        Left = 729
+        Left = 814
         Top = 10
         Width = 25
         Height = 13
@@ -992,7 +992,7 @@ inherited FormLstPercepcionesIvaVta: TFormLstPercepcionesIvaVta
         ExplicitLeft = 818
       end
       object edTotal: TEdit
-        Left = 760
+        Left = 845
         Top = 6
         Width = 132
         Height = 21
@@ -1000,10 +1000,10 @@ inherited FormLstPercepcionesIvaVta: TFormLstPercepcionesIvaVta
         Anchors = [akRight]
         TabOrder = 0
         Text = 'edTotal'
-        ExplicitLeft = 849
+        ExplicitLeft = 760
       end
       object edNC: TEdit
-        Left = 546
+        Left = 631
         Top = 6
         Width = 132
         Height = 21
@@ -1011,10 +1011,10 @@ inherited FormLstPercepcionesIvaVta: TFormLstPercepcionesIvaVta
         Anchors = [akRight]
         TabOrder = 1
         TextHint = 'N.Credito'
-        ExplicitLeft = 635
+        ExplicitLeft = 546
       end
       object edFc: TEdit
-        Left = 346
+        Left = 431
         Top = 6
         Width = 132
         Height = 21
@@ -1022,38 +1022,34 @@ inherited FormLstPercepcionesIvaVta: TFormLstPercepcionesIvaVta
         Anchors = [akRight]
         TabOrder = 2
         TextHint = 'Facturas'
-        ExplicitLeft = 435
+        ExplicitLeft = 346
       end
     end
   end
   inherited ToolBar1: TToolBar
     Top = 563
-    Width = 936
+    Width = 1021
     Align = alBottom
     ButtonHeight = 27
     ExplicitTop = 563
-    ExplicitWidth = 1025
+    ExplicitWidth = 936
     inherited btConfirma: TBitBtn
       Height = 27
-      DoubleBuffered = True
       Visible = False
       ExplicitHeight = 27
     end
     inherited btNuevo: TBitBtn
       Height = 27
-      DoubleBuffered = True
       Visible = False
       ExplicitHeight = 27
     end
     inherited btCancelar: TBitBtn
       Height = 27
-      DoubleBuffered = True
       Visible = False
       ExplicitHeight = 27
     end
     inherited btModificar: TBitBtn
       Height = 27
-      DoubleBuffered = True
       Visible = False
       ExplicitHeight = 27
     end
@@ -1064,7 +1060,6 @@ inherited FormLstPercepcionesIvaVta: TFormLstPercepcionesIvaVta
     end
     inherited btBuscar: TBitBtn
       Height = 27
-      DoubleBuffered = True
       ExplicitHeight = 27
     end
     inherited Ne: TSpeedButton
@@ -1074,26 +1069,23 @@ inherited FormLstPercepcionesIvaVta: TFormLstPercepcionesIvaVta
     end
     inherited btBorrar: TBitBtn
       Height = 27
-      DoubleBuffered = True
       Visible = False
       ExplicitHeight = 27
     end
     inherited btSalir: TBitBtn
       Height = 27
-      DoubleBuffered = True
       ExplicitHeight = 27
     end
     object ToolButton1: TToolButton
-      Left = 2
+      Left = 557
       Top = 0
       Width = 52
       Caption = 'ToolButton1'
-      Wrap = True
       Style = tbsSeparator
     end
     object btImprimir: TBitBtn
-      Left = 2
-      Top = 79
+      Left = 609
+      Top = 0
       Width = 75
       Height = 27
       Caption = '&Imprimir'
@@ -1162,24 +1154,24 @@ inherited FormLstPercepcionesIvaVta: TFormLstPercepcionesIvaVta
       OnClick = btImprimirClick
     end
     object ToolButton2: TToolButton
-      Left = 77
-      Top = 79
+      Left = 684
+      Top = 0
       Width = 53
       Caption = 'ToolButton2'
       ImageIndex = 0
       Style = tbsSeparator
     end
     object Button1: TButton
-      Left = 130
-      Top = 79
+      Left = 737
+      Top = 0
       Width = 104
       Height = 27
       Action = ExportarCICORE
       TabOrder = 8
     end
     object Button2: TButton
-      Left = 234
-      Top = 79
+      Left = 841
+      Top = 0
       Width = 128
       Height = 27
       Action = ExportarContribuyente
@@ -1188,15 +1180,18 @@ inherited FormLstPercepcionesIvaVta: TFormLstPercepcionesIvaVta
   end
   inherited Panel1: TPanel
     Top = 593
-    Width = 936
+    Width = 1021
     Align = alBottom
     StyleElements = [seFont, seClient, seBorder]
     ExplicitTop = 593
-    ExplicitWidth = 1025
+    ExplicitWidth = 936
+    inherited DBStatusLabel1: TJvDBStatusLabel
+      Height = 21
+    end
     inherited sbEstado: TStatusBar
-      Width = 774
+      Width = 932
       OnDblClick = sbEstadoDblClick
-      ExplicitWidth = 863
+      ExplicitWidth = 847
     end
   end
   inherited ActionList1: TActionList
@@ -1225,6 +1220,8 @@ inherited FormLstPercepcionesIvaVta: TFormLstPercepcionesIvaVta
   end
   inherited JvFormStorage: TJvFormStorage
     PreventResize = False
+    Left = 312
+    Top = 288
   end
   object QPercepciones: TFDQuery
     Connection = DMMain_FD.fdcGestion
@@ -1278,7 +1275,7 @@ inherited FormLstPercepcionesIvaVta: TFormLstPercepcionesIvaVta
   object DSPPercepciones: TDataSetProvider
     DataSet = QPercepciones
     Options = []
-    Left = 472
+    Left = 456
     Top = 384
   end
   object CDSPercepciones: TClientDataSet
@@ -1713,7 +1710,7 @@ inherited FormLstPercepcionesIvaVta: TFormLstPercepcionesIvaVta
     DefaultExt = 'txt'
     FileName = 'Percepciones'
     Title = 'Archivo de Retenciones'
-    Left = 344
+    Left = 320
     Top = 208
   end
   object frxPDFExport1: TfrxPDFExport

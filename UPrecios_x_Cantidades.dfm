@@ -3,8 +3,8 @@ object FormPreciosPorCantidades: TFormPreciosPorCantidades
   Top = 0
   BorderIcons = []
   Caption = 'Precios x Cantidades'
-  ClientHeight = 246
-  ClientWidth = 622
+  ClientHeight = 267
+  ClientWidth = 639
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -14,27 +14,29 @@ object FormPreciosPorCantidades: TFormPreciosPorCantidades
   Position = poOwnerFormCenter
   OnCreate = FormCreate
   OnDestroy = FormDestroy
+  OnResize = FormResize
   TextHeight = 13
   object pnPreciosPorCant: TPanel
     Left = 0
     Top = 0
-    Width = 622
-    Height = 246
+    Width = 639
+    Height = 267
     Align = alClient
     BorderStyle = bsSingle
     Caption = 'pnPreciosPorCant'
     Color = clMenuHighlight
     ParentBackground = False
     TabOrder = 0
-    ExplicitWidth = 552
+    ExplicitWidth = 622
+    ExplicitHeight = 246
     DesignSize = (
-      618
-      242)
+      635
+      263)
     object dbgPrecioCantidad: TDBGrid
       Left = 1
       Top = 1
-      Width = 616
-      Height = 179
+      Width = 633
+      Height = 200
       Align = alTop
       Anchors = [akLeft, akTop, akRight, akBottom]
       DataSource = DatosStock.DSListaArtSubDet
@@ -150,17 +152,18 @@ object FormPreciosPorCantidades: TFormPreciosPorCantidades
     end
     object DBNavigator1: TDBNavigator
       Left = 20
-      Top = 189
+      Top = 210
       Width = 145
       Height = 24
       DataSource = DatosStock.DSListaArtSubDet
       VisibleButtons = [nbInsert, nbDelete, nbEdit, nbPost, nbCancel]
       Anchors = [akLeft, akBottom]
       TabOrder = 1
+      ExplicitTop = 189
     end
     object btCerrar: TBitBtn
       Left = 448
-      Top = 186
+      Top = 207
       Width = 81
       Height = 27
       Anchors = [akLeft, akBottom]
@@ -202,13 +205,13 @@ object FormPreciosPorCantidades: TFormPreciosPorCantidades
         78C70000558D00002A4600000000000000000000000000000000}
       TabOrder = 2
       OnClick = btCerrarClick
+      ExplicitTop = 186
     end
   end
   object JvFormStorage: TJvFormStorage
     AppStorage = JvAppIniFileStorage1
     AppStoragePath = '%FORM_NAME%\'
     Options = [fpState, fpSize, fpLocation, fpActiveControl]
-    PreventResize = True
     StoredValues = <>
     Left = 436
     Top = 130

@@ -3,13 +3,13 @@ inherited FormListadoPercIB_FcVta: TFormListadoPercIB_FcVta
   Top = 114
   Caption = 'Listado de Percepcion de Ingresos Brutos en Fc. de Vta'
   ClientHeight = 622
-  ClientWidth = 961
+  ClientWidth = 986
   StyleElements = [seFont, seClient, seBorder]
-  ExplicitWidth = 979
+  ExplicitWidth = 1004
   ExplicitHeight = 663
   TextHeight = 13
   inherited pnPrincipal: TPanel
-    Width = 961
+    Width = 986
     Height = 569
     Align = alClient
     StyleElements = [seFont, seClient, seBorder]
@@ -18,7 +18,7 @@ inherited FormListadoPercIB_FcVta: TFormListadoPercIB_FcVta
     object dbgRetenciones: TDBGrid
       Left = 0
       Top = 73
-      Width = 961
+      Width = 986
       Height = 455
       TabStop = False
       Align = alClient
@@ -153,13 +153,14 @@ inherited FormListadoPercIB_FcVta: TFormListadoPercIB_FcVta
     object pnCabecera: TPanel
       Left = 0
       Top = 0
-      Width = 961
+      Width = 986
       Height = 73
       Align = alTop
       BevelOuter = bvNone
       Color = clMenuHighlight
       ParentBackground = False
       TabOrder = 1
+      ExplicitWidth = 961
       object JvLabel1: TJvLabel
         Left = 227
         Top = 3
@@ -423,13 +424,14 @@ inherited FormListadoPercIB_FcVta: TFormListadoPercIB_FcVta
     object pnPie: TPanel
       Left = 0
       Top = 528
-      Width = 961
+      Width = 986
       Height = 41
       Align = alBottom
       BevelOuter = bvNone
       Color = clMenuHighlight
       ParentBackground = False
       TabOrder = 2
+      ExplicitWidth = 961
       object edIIBB: TMaskEdit
         Left = 624
         Top = 12
@@ -452,20 +454,18 @@ inherited FormListadoPercIB_FcVta: TFormListadoPercIB_FcVta
   end
   inherited ToolBar1: TToolBar
     Top = 569
-    Width = 961
+    Width = 986
     Align = alBottom
     ExplicitTop = 569
     ExplicitWidth = 961
     inherited btConfirma: TBitBtn
       Width = 31
-      DoubleBuffered = True
       Visible = False
       ExplicitWidth = 31
     end
     inherited btNuevo: TBitBtn
       Left = 33
       Width = 16
-      DoubleBuffered = True
       Visible = False
       ExplicitLeft = 33
       ExplicitWidth = 16
@@ -473,7 +473,6 @@ inherited FormListadoPercIB_FcVta: TFormListadoPercIB_FcVta
     inherited btCancelar: TBitBtn
       Left = 49
       Width = 32
-      DoubleBuffered = True
       Visible = False
       ExplicitLeft = 49
       ExplicitWidth = 32
@@ -481,7 +480,6 @@ inherited FormListadoPercIB_FcVta: TFormListadoPercIB_FcVta
     inherited btModificar: TBitBtn
       Left = 81
       Width = 30
-      DoubleBuffered = True
       Visible = False
       ExplicitLeft = 81
       ExplicitWidth = 30
@@ -493,7 +491,6 @@ inherited FormListadoPercIB_FcVta: TFormListadoPercIB_FcVta
     end
     inherited btBuscar: TBitBtn
       Left = 126
-      DoubleBuffered = True
       ExplicitLeft = 126
     end
     inherited Ne: TSpeedButton
@@ -503,13 +500,11 @@ inherited FormListadoPercIB_FcVta: TFormListadoPercIB_FcVta
     end
     inherited btBorrar: TBitBtn
       Left = 216
-      DoubleBuffered = True
       Visible = False
       ExplicitLeft = 216
     end
     inherited btSalir: TBitBtn
       Left = 291
-      DoubleBuffered = True
       ExplicitLeft = 291
     end
     object ToolButton1: TToolButton
@@ -600,7 +595,7 @@ inherited FormListadoPercIB_FcVta: TFormListadoPercIB_FcVta
   end
   inherited Panel1: TPanel
     Top = 599
-    Width = 961
+    Width = 986
     Align = alBottom
     StyleElements = [seFont, seClient, seBorder]
     OnDblClick = Panel1DblClick
@@ -611,7 +606,7 @@ inherited FormListadoPercIB_FcVta: TFormListadoPercIB_FcVta
       Visible = False
     end
     inherited sbEstado: TStatusBar
-      Width = 872
+      Width = 897
       OnDblClick = sbEstadoDblClick
       ExplicitWidth = 872
     end
@@ -636,6 +631,10 @@ inherited FormListadoPercIB_FcVta: TFormListadoPercIB_FcVta
     object ExportarXLS: TAction
       Caption = 'Exportar XLS'
       OnExecute = ExportarXLSExecute
+    end
+    object ExportarPercepccionesIIBB_V2: TAction
+      Caption = 'ExportarPercepccionesIIBB_V2'
+      OnExecute = ExportarPercepccionesIIBB_V2Execute
     end
   end
   inherited ImageList1: TImageList
@@ -1234,6 +1233,12 @@ inherited FormListadoPercIB_FcVta: TFormListadoPercIB_FcVta
     object ExportarXLS1: TMenuItem
       Action = ExportarXLS
     end
+    object N2: TMenuItem
+      Caption = '-'
+    end
+    object ExportarPercepccionesIIBBV21: TMenuItem
+      Action = ExportarPercepccionesIIBB_V2
+    end
   end
   object CDSPercepciones: TClientDataSet
     Aggregates = <>
@@ -1374,6 +1379,15 @@ inherited FormListadoPercIB_FcVta: TFormListadoPercIB_FcVta
     object CDSPercepcionesFECHAVTA: TSQLTimeStampField
       DisplayLabel = 'Fecha'
       FieldName = 'FECHAVTA'
+      Required = True
+    end
+    object CDSPercepcionesALICUOTA: TStringField
+      FieldKind = fkCalculated
+      FieldName = 'ALICUOTA'
+      Calculated = True
+    end
+    object CDSPercepcionesPERCEPCION_IB_TASA: TFloatField
+      FieldName = 'PERCEPCION_IB_TASA'
       Required = True
     end
   end
@@ -1705,6 +1719,12 @@ inherited FormListadoPercIB_FcVta: TFormListadoPercIB_FcVta
       item
         DataField = 'MUESTRASUCURSAL'
         Title = 'Suc.de Vta'
+      end
+      item
+        DataField = 'PERCEPCION_IB_TASA'
+        Title = 'Alicuota'
+        Alignment = taRightJustify
+        DataType = ctDouble
       end>
     Title.Font.Charset = DEFAULT_CHARSET
     Title.Font.Color = clWindowText
@@ -1746,8 +1766,8 @@ inherited FormListadoPercIB_FcVta: TFormListadoPercIB_FcVta
     PdfA = False
     PDFStandard = psNone
     PDFVersion = pv17
-    Left = 624
-    Top = 288
+    Left = 640
+    Top = 280
   end
   object QPercepciones: TFDQuery
     Connection = DMMain_FD.fdcGestion
@@ -1761,7 +1781,7 @@ inherited FormListadoPercIB_FcVta: TFormListadoPercIB_FcVta
       
         '       f.PERCEPCION_IB_BASEIMPONIBLE,f.nrocpbte,s.detalle as Mue' +
         'straSucursal,'
-      '       cp.codigo_afip'
+      '       cp.codigo_afip,f.percepcion_IB_tasa'
       '       from fcvtacab f'
       'left join sucursal s on s.codigo=f.sucursal'
       'left join comprobantes cp on cp.clase_comprob=F.ClaseCpbte and'

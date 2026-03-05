@@ -103,6 +103,11 @@ type
     CDSRetIBNETO_GRAVADO: TFloatField;
     CDSRetIBTASA_RETENCION: TFloatField;
     CDSRetIBFECHA: TSQLTimeStampField;
+    ExportarRetencionesIIB_V2: TAction;
+    N1: TMenuItem;
+    ExportarRetencionesdeIIBv21: TMenuItem;
+    CDSRetIBALICUOTA: TStringField;
+    CDSRetIBMONTOIMPONIBLE: TStringField;
     procedure UpDown1Click(Sender: TObject; Button: TUDBtnType);
     procedure BuscarExecute(Sender: TObject);
     procedure FormShow(Sender: TObject);
@@ -117,6 +122,8 @@ type
     procedure ExportarTxtWebExecute(Sender: TObject);
     procedure CDSRetIBCalcFields(DataSet: TDataSet);
     procedure ExportToXLSExecute(Sender: TObject);
+    procedure FormResize(Sender: TObject);
+    procedure ExportarRetencionesIIB_V2Execute(Sender: TObject);
   private
     { Private declarations }
   public
@@ -227,10 +234,10 @@ end;
 procedure TFormListadoRetencionesOPago_IB.FormCreate(Sender: TObject);
 begin
   inherited;
-  AutoSize:=True;
-  ArchivoIni := TIniFile.Create(ExtractFilePath(ParamStr(0))+DMMain_FD.UsuarioActivo+'LstRetencionesIIBB.ini');
-  edActividad.Text     :=ArchivoIni.ReadString('Actividad','codigo','6');
-  cbSeparador.ItemIndex:=ArchivoIni.ReadInteger('separador','codigo',1);
+  AutoSize             := False;
+  ArchivoIni           := TIniFile.Create(ExtractFilePath(ParamStr(0))+DMMain_FD.UsuarioActivo+'LstRetencionesIIBB.ini');
+  edActividad.Text     := ArchivoIni.ReadString('Actividad','codigo','6');
+  cbSeparador.ItemIndex:= ArchivoIni.ReadInteger('separador','codigo',1);
   ArchivoIni.Free;
   CDSEmpresa.Close;
   CDSEmpresa.Open;
@@ -242,6 +249,14 @@ begin
   FormListadoRetencionesOPago_IB:=nil;
 end;
 
+procedure TFormListadoRetencionesOPago_IB.FormResize(Sender: TObject);
+begin
+  inherited;
+  if FormListadoRetencionesOPago_IB<>nil Then
+    if FormListadoRetencionesOPago_IB.Width<>869 Then
+      FormListadoRetencionesOPago_IB.Width:=869;
+end;
+
 procedure TFormListadoRetencionesOPago_IB.CDSRetIBCalcFields(DataSet: TDataSet);
 begin
   inherited;
@@ -251,7 +266,69 @@ begin
   else
     if (cbSeparador.Text=',') then
       CDSRetIBTOTAL_STR.Value   := FormatFloat('00000000,00',CDSRetIBTOTAL.AsFloat);
+  CDSRetIBALICUOTA.AsString       := FormatFloat('00.00',CDSRetIBTASA_RETENCION.AsFloat);
+  CDSRetIBMONTOIMPONIBLE.AsString := FormatFloat('00000000000.00',CDSRetIBNETO_GRAVADO.AsFloat);
+end;
 
+procedure TFormListadoRetencionesOPago_IB.ExportarRetencionesIIB_V2Execute(Sender: TObject);
+var nombre:string;
+ano,mes,cuit:string;
+d,m,y:Word;
+  ArchiTxt: TextFile;
+  Fecha,TipoCpbte,Importe,alicuota,MontoImponible: String;
+
+begin
+  inherited;
+  DecodeDate(Desde.Date,y,m,d);
+  ano:=IntToStr(y);
+  mes:=IntToStr(m);
+  mes:=Copy('00',1,2-length(mes))+mes;
+  cuit:=CDSEmpresaCUIT.Value;
+  while Pos('-',cuit)>0 do
+    Delete(cuit,Pos('-',cuit),1);
+  case rgInforma.ItemIndex of
+    0:nombre:='AR'+'-'+Cuit+'-'+ano+mes+'1-6'+'-'+'LOTE1';
+    1:nombre:='AR'+'-'+Cuit+'-'+ano+mes+'2-6'+'-'+'LOTE1';
+    2:nombre:='AR'+'-'+Cuit+'-'+ano+mes+'0-6'+'-'+'LOTE1';
+  end;
+
+  if VirtualUI.Active then
+     VirtualUI.StdDialogs:=False;
+
+  SaveDialog.FileName:=Nombre;
+  SaveDialog.DefaultExt:='txt';
+
+  SaveDialog.FileName:=SaveDialog.FileName+'.'+SaveDialog.DefaultExt;
+
+  CDSRetIB.First;
+  if SaveDialog.Execute Then
+    begin
+      AssignFile(ArchiTxt, SaveDialog.FileName);
+      Rewrite(ArchiTxt);
+      while not (CDSRetIB.Eof) do
+        begin
+           Cuit:=CDSRetIBCUIT.AsString;
+              //Delete(Cuit,3,1);
+              //Delete(Cuit,11,1);
+           Fecha:= FormatDateTime('dd/mm/yyyy',CDSRetIBFECHA.AsDateTime);
+
+           WriteLn(ArchiTxt,Cuit,                                     //Cuit
+                            Fecha,                                    //Fecha dd/mm/aaaa
+                            CDSRetIBSUC.AsString,
+                            CDSRetIBNUMERO.AsString,
+                            CDSRetIBMONTOIMPONIBLE.AsString,
+                            CDSRetIBALICUOTA.AsString,
+                            CDSRetIBTOTAL_STR.AsString,
+                            CDSRetIBTIPO_OP.AsString); //Importe con 2 digitos
+          CDSRetIB.Next;
+        end;
+      CloseFile(ArchiTxt);
+      if Not(VirtualUI.Active) then
+        ShowMessage('Archivo Generado Exitosamente en .....'+SaveDialog.FileName+'..... ');
+    end;
+  CDSRetIB.First;
+  if VirtualUI.Active then
+    VirtualUI.DownloadFile(SaveDialog.FileName);
 end;
 
 procedure TFormListadoRetencionesOPago_IB.ExportarTxtExecute(
