@@ -31,83 +31,92 @@ object FormActualizaCostoUltCompra: TFormActualizaCostoUltCompra
     Align = alTop
     BevelOuter = bvNone
     TabOrder = 0
-    ExplicitWidth = 780
-    object lblRubro: TLabel
-      Left = 16
-      Top = 16
-      Width = 35
-      Height = 13
-      Caption = 'Rubro:'
-    end
-    object lblSubRubro: TLabel
-      Left = 340
-      Top = 16
-      Width = 52
-      Height = 13
-      Caption = 'Subrubro:'
-    end
-    object lblFechaDesde: TLabel
-      Left = 16
-      Top = 52
-      Width = 67
-      Height = 13
-      Caption = 'Fecha desde:'
-    end
-    object dtpDesde: TDateTimePicker
-      Left = 88
-      Top = 50
-      Width = 160
-      Height = 21
-      Date = 46085.000000000000000000
-      Time = 0.714453217595291800
-      TabOrder = 2
-    end
-    object btnEjecutar: TButton
-      Left = 360
-      Top = 48
-      Width = 144
-      Height = 28
-      Caption = 'Actualizar costos'
-      TabOrder = 3
-      OnClick = btnEjecutarClick
-    end
-    object btnRollback: TButton
-      Left = 520
-      Top = 48
-      Width = 184
-      Height = 28
-      Caption = 'Revertir '#250'ltimos cambios'
-      TabOrder = 4
-      OnClick = btnRollbackClick
-    end
-    object btnCerrar: TButton
-      Left = 520
-      Top = 86
-      Width = 184
-      Height = 25
-      Caption = 'Cerrar'
-      TabOrder = 5
-      OnClick = btnCerrarClick
-    end
-    object dbLookupRubro: TJvDBLookupCombo
-      Left = 88
-      Top = 14
-      Width = 220
-      Height = 21
-      LookupField = 'CODIGO_RUBRO'
-      LookupDisplay = 'DETALLE_RUBRO'
-      LookupSource = dsRubros
+    object pnCabecera: TPanel
+      Left = 0
+      Top = 0
+      Width = 982
+      Height = 105
+      Align = alTop
+      Color = clMenuHighlight
+      ParentBackground = False
       TabOrder = 0
-    end
-    object dbLookupSubRubro: TJvDBLookupCombo
-      Left = 420
-      Top = 14
-      Width = 220
-      Height = 21
-      LookupField = 'CODIGO_SUBRUBRO'
-      LookupDisplay = 'DETALLE_SUBRUBRO'
-      LookupSource = dsSubRubros
-      TabOrder = 1
+      object lblSubRubro: TLabel
+        Left = 340
+        Top = 16
+        Width = 52
+        Height = 13
+        Caption = 'Subrubro:'
+      end
+      object lblRubro: TLabel
+        Left = 16
+        Top = 16
+        Width = 35
+        Height = 13
+        Caption = 'Rubro:'
+      end
+      object lblFechaDesde: TLabel
+        Left = 16
+        Top = 52
+        Width = 67
+        Height = 13
+        Caption = 'Fecha desde:'
+      end
+      object dbLookupSubRubro: TJvDBLookupCombo
+        Left = 420
+        Top = 14
+        Width = 220
+        Height = 21
+        LookupField = 'CODIGO_SUBRUBRO'
+        LookupDisplay = 'DETALLE_SUBRUBRO'
+        LookupSource = dsSubRubros
+        TabOrder = 0
+      end
+      object dbLookupRubro: TJvDBLookupCombo
+        Left = 88
+        Top = 14
+        Width = 220
+        Height = 21
+        LookupField = 'CODIGO_RUBRO'
+        LookupDisplay = 'DETALLE_RUBRO'
+        LookupSource = dsRubros
+        TabOrder = 1
+      end
+      object dtpDesde: TDateTimePicker
+        Left = 88
+        Top = 50
+        Width = 160
+        Height = 21
+        Date = 46085.000000000000000000
+        Time = 0.714453217595291800
+        TabOrder = 2
+      end
+      object btnRollback: TButton
+        Left = 520
+        Top = 48
+        Width = 144
+        Height = 28
+        Caption = 'Revertir '#250'ltimos cambios'
+        TabOrder = 3
+        OnClick = btnRollbackClick
+      end
+      object btnEjecutar: TButton
+        Left = 360
+        Top = 48
+        Width = 144
+        Height = 28
+        Caption = 'Actualizar costos'
+        TabOrder = 4
+        OnClick = btnEjecutarClick
+      end
+      object btnCerrar: TButton
+        Left = 720
+        Top = 48
+        Width = 144
+        Height = 28
+        Caption = 'Cerrar'
+        TabOrder = 5
+        OnClick = btnCerrarClick
+      end
     end
   end
   object pnlLog: TPanel
@@ -144,7 +153,6 @@ object FormActualizaCostoUltCompra: TFormActualizaCostoUltCompra
     Height = 328
     Align = alClient
     TabOrder = 2
-    ExplicitWidth = 417
     object lblCambios: TLabel
       Left = 1
       Top = 1
@@ -200,7 +208,6 @@ object FormActualizaCostoUltCompra: TFormActualizaCostoUltCompra
     Align = alBottom
     BevelOuter = bvNone
     TabOrder = 3
-    ExplicitWidth = 780
     object lblStatus: TLabel
       Left = 16
       Top = 36

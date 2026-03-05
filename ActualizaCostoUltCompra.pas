@@ -56,6 +56,7 @@ type
     QSubRubrosDETALLE_SUBRUBRO: TStringField;
     QSubRubrosCODIGO_RUBRO: TStringField;
     spActualiza: TFDStoredProc;
+    pnCabecera: TPanel;
     procedure FormCreate(Sender: TObject);
     procedure btnEjecutarClick(Sender: TObject);
     procedure btnRollbackClick(Sender: TObject);
